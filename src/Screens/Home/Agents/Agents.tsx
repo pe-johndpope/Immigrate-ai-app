@@ -64,7 +64,7 @@ const DATA = [
 const Agents = () => {
   const [flippedAgentIds, setFlippedAgentIds] = useState<string[]>([])
   const renderItem = ({ item }) => (
-    flippedAgentIds.includes(item.id) ? 
+    !flippedAgentIds.includes(item.id) ? 
       <Item
       id={item.id}
       title={item.title}
