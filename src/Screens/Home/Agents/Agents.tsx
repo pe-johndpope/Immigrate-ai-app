@@ -7,6 +7,7 @@ import {
   StyleSheet,
   Text,
   StatusBar,
+  ScrollView,
   Image,
 } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
@@ -61,14 +62,16 @@ const DATA = [
 ];
 
 const Agents = () => {
-  const [flip, setFlip] = useState(true);
+  const [flippedAgentIds, setFlippedAgentIds] = useState<string[]>([])
   const renderItem = ({ item }) => (
-    flip? 
+    flippedAgentIds.includes(item.id) ? 
       <Item
+      id={item.id}
       title={item.title}
       email={item.email}
       image={item.image}
       position={item.position} /> : <FlippedAgent
+                                      id={item.id}
                                       title={item.title}
                                       phone={item.phone}
                                       email={item.email}
@@ -76,9 +79,21 @@ const Agents = () => {
                                       position={item.position}/>
   );
 
-  const Item = ({ title, image, email, position }) => (
+  const onToggleAgentFlip = (agentId: string) : void => {
+    const flipped = flippedAgentIds.includes(agentId)
+
+    if (flipped) {
+      // show back (flip) 
+      setFlippedAgentIds([...flippedAgentIds].filter(id => id !== agentId))
+    } else {
+      // show front 
+      setFlippedAgentIds([...flippedAgentIds, agentId])
+    }
+  }
+
+  const Item = ({ id, title, image, email, position }) => (
     
-    <TouchableOpacity onPress={() => setFlip(!flip)}>
+    <TouchableOpacity onPress={() => onToggleAgentFlip(id)}>
       <View>
         <View style={styles.item}>
           <Text style={styles.title}>{title}</Text>
@@ -89,9 +104,9 @@ const Agents = () => {
     </TouchableOpacity>
   );
 
-  const FlippedAgent = ({ title, image, email, position, phone }) => (
+  const FlippedAgent = ({ id, title, image, email, position, phone }) => (
     
-    <TouchableOpacity onPress={() => setFlip(!flip)}>
+    <TouchableOpacity onPress={() => onToggleAgentFlip(id)}>
       <View>
         <View style={styles.item}>
           <Text style={styles.title2}>{title}</Text>
@@ -116,7 +131,7 @@ const Agents = () => {
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
       />
-    </SafeAreaView>
+   </SafeAreaView>
   );
 };
 
