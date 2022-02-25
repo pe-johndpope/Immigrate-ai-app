@@ -1,0 +1,861 @@
+version: "3.0"
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- ask_name:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- request_eligibility:
+    use_entities: true
+- inform:
+    use_entities: true
+- faq:
+    use_entities: true
+entities:
+- travel_purposes
+- number
+- education
+- time
+- location
+- duration
+- desired_province
+- english_test
+slots:
+  name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: name_form
+        requested_slot: name
+  travel_purposes:
+    type: rasa.shared.core.slots.CategoricalSlot
+    initial_value: null
+    influence_conversation: true
+    values:
+    - work
+    - study
+    - visit
+    - vacation
+    mappings:
+    - entity: travel_purposes
+      type: from_entity
+      conditions:
+      - active_loop: eligibility_form
+    - type: from_entity
+      entity: travel_purposes
+  program_length:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: program_length
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: program_length
+  education_acceptance:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: education_acceptance
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: education_acceptance
+  visit_length:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: visit_length
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: visit_length
+  children_canada:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: children_canada
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: children_canada
+  passport_country:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: passport_country
+  date_of_birth:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - type: custom
+  english_test:
+    type: categorical
+    values:
+    - ielts
+    - celpip
+    - neither
+    mappings:
+    - entity: english_test
+      type: from_entity
+      conditions:
+      - active_loop: eligibility_form
+    - type: from_entity
+      entity: english_test
+  english_speaking_score:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: number
+      type: from_entity
+      conditions:
+      - active_loop: eligibility_form
+  english_listening_score:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: number
+      type: from_entity
+      conditions:
+      - active_loop: eligibility_form
+  english_writing_score:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: number
+      type: from_entity
+      conditions:
+      - active_loop: eligibility_form
+  english_reading_score:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: number
+      type: from_entity
+      conditions:
+      - active_loop: eligibility_form
+  french_test:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: french_test
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: french_test
+  french_speaking_score:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: number
+      type: from_entity
+      conditions:
+      - active_loop: eligibility_form
+  french_listening_score:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: number
+      type: from_entity
+      conditions:
+      - active_loop: eligibility_form
+  french_writing_score:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: number
+      type: from_entity
+      conditions:
+      - active_loop: eligibility_form
+  french_reading_score:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: number
+      type: from_entity
+      conditions:
+      - active_loop: eligibility_form
+  job_offer:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: job_offer
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: job_offer
+  work_experience_canada:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: number
+      type: from_entity
+      conditions:
+      - active_loop: eligibility_form
+  work_experience_global:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: number
+      type: from_entity
+      conditions:
+      - active_loop: eligibility_form
+  skilled_trade:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: skilled_trade
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: skilled_trade
+  certified_skill_trade:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: certified_skill_trade
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: certified_skill_trade
+  education:
+    type: rasa.shared.core.slots.CategoricalSlot
+    initial_value: null
+    influence_conversation: true
+    values:
+    - secondary
+    - post_secondary
+    - undergraduate
+    - graduate
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: education
+    - type: from_entity
+      entity: education
+  healthcare_professional:
+    type: rasa.shared.core.slots.BooleanSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: british_columbia_form
+        requested_slot: healthcare_professional
+      - active_loop: nova_scotia_form
+        requested_slot: healthcare_professional
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: british_columbia_form
+        requested_slot: healthcare_professional
+      - active_loop: nova_scotia_form
+        requested_slot: healthcare_professional
+  occupation:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: eligibility_form
+        requested_slot: occupation
+  net_worth:
+    type: rasa.shared.core.slots.FloatSlot
+    initial_value: null
+    influence_conversation: true
+    max_value: 1.0
+    min_value: 0.0
+    mappings:
+    - entity: number
+      type: from_entity
+      conditions:
+      - active_loop: alberta_form
+      - active_loop: british_columbia_form
+      - active_loop: nova_scotia_form
+      - active_loop: ontario_form
+      - active_loop: prince_edward_island_form
+      - active_loop: quebec_form
+      - active_loop: saskatchewan_form
+      - active_loop: yukon_form
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: manitoba_form
+        requested_slot: net_worth
+      - active_loop: new_brunswick_form
+        requested_slot: net_worth
+      - active_loop: newfoundland_and_labrador_form
+        requested_slot: net_worth
+      - active_loop: northwest_territories_form
+        requested_slot: net_worth
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: manitoba_form
+        requested_slot: net_worth
+      - active_loop: new_brunswick_form
+        requested_slot: net_worth
+      - active_loop: newfoundland_and_labrador_form
+        requested_slot: net_worth
+      - active_loop: northwest_territories_form
+        requested_slot: net_worth
+  check_provincial:
+    type: bool
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: provincial_form
+        requested_slot: check_provincial
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: provincial_form
+        requested_slot: check_provincial
+  desired_province:
+    type: categorical
+    values:
+    - alberta
+    - british_columbia
+    - manitoba
+    - new_brunswick
+    - newfoundland_and_labrador
+    - nova_scotia
+    - ontario
+    - northwest_territories
+    - quebec
+    - saskatchewan
+    - yukon
+    influence_conversation: true
+    mappings:
+    - entity: desired_province
+      type: from_entity
+      conditions:
+      - active_loop: provincial_form
+    - type: from_entity
+      entity: desired_province
+  farmer:
+    type: bool
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: alberta_form
+        requested_slot: farmer
+      - active_loop: manitoba_form
+        requested_slot: farmer
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: alberta_form
+        requested_slot: farmer
+      - active_loop: manitoba_form
+        requested_slot: farmer
+  work_permit:
+    type: bool
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: alberta_form
+        requested_slot: work_permit
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: alberta_form
+        requested_slot: work_permit
+  degree_canada:
+    type: bool
+    mappings:
+    - intent: affirm
+      type: from_intent
+      value: true
+      conditions:
+      - active_loop: british_columbia_form
+        requested_slot: degree_canada
+      - active_loop: manitoba_form
+        requested_slot: degree_canada
+      - active_loop: new_brunswick_form
+        requested_slot: degree_canada
+      - active_loop: newfoundland_and_labrador_form
+        requested_slot: degree_canada
+      - active_loop: nova_scotia_form
+        requested_slot: degree_canada
+      - active_loop: ontario_form
+        requested_slot: degree_canada
+      - active_loop: prince_edward_island_form
+        requested_slot: degree_canada
+    - intent: deny
+      type: from_intent
+      value: false
+      conditions:
+      - active_loop: british_columbia_form
+        requested_slot: degree_canada
+      - active_loop: manitoba_form
+        requested_slot: degree_canada
+      - active_loop: new_brunswick_form
+        requested_slot: degree_canada
+      - active_loop: newfoundland_and_labrador_form
+        requested_slot: degree_canada
+      - active_loop: nova_scotia_form
+        requested_slot: degree_canada
+      - active_loop: ontario_form
+        requested_slot: degree_canada
+      - active_loop: prince_edward_island_form
+        requested_slot: degree_canada
+responses:
+  utter_default:
+  - text: I'm sorry, I don't understand that yet. Would you like to speak to an agent?
+  utter_ask_name:
+  - text: Hi! I'm Andrea at Immigrate.ai! What's your name?
+  utter_name:
+  - text: Hi {name}! Here are some things I can do (or you can ask me anything)
+    buttons:
+    - payload: /request_eligibility
+      title: Determine eligibility
+    - payload: Do I have to invest my own money if I want to apply through the Start-up Visa Program?
+      title: Do I have to invest my own money if I want to apply through the Start-up Visa Program?
+    - payload: Where can I take a third-party language test for my immigration application?
+      title: Where can I take a third-party language test for my immigration application?
+    - payload: Does the one year of work experience to qualify under the Canadian Experience Class include non-paid employment?
+      title: Does the one year of work experience to qualify under the Canadian Experience Class include non-paid employment?
+    - payload: What happens if my PR card expires?
+      title: What happens if my PR card expires?
+  utter_greet:
+  - text: Hey! How are you?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  utter_submit:
+  - text: All done!
+  utter_ask_travel_purposes:
+  - text: What is your purpose for travelling to Canada?
+    buttons:
+    - payload: move
+      title: Move
+    - payload: study
+      title: Study
+    - payload: work
+      title: Work
+    - payload: visit
+      title: Tourism/Family Visit
+    - payload: transit
+      title: Transit
+  utter_ask_program_length:
+  - text: Is your desired program longer than 6 months?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+  utter_ask_education_acceptance:
+  - text: Have you been accepted into an educational institution in Canada?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+  utter_ask_visit_length:
+  - text: Do you want to visit Canada for more than 6 months?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+  utter_ask_children_canada:
+  - text: Do you have children or grandchildren in Canada?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+  utter_ask_passport_country:
+  - text: What country is your passport from?
+  utter_ask_date_of_birth:
+  - text: What is your date of birth?
+  utter_ask_english_test:
+  - text: Have you taken one of the following English tests?
+    buttons:
+    - payload: '/inform{{"english_test": "celpip"}}'
+      title: CELPIP
+    - payload: '/inform{{"english_test": "ielts"}}'
+      title: IELTS
+    - payload: '/inform{{"english_test": "neither"}}'
+      title: None
+  utter_ask_english_speaking_score:
+  - text: What was your English speaking score?
+  utter_ask_english_listening_score:
+  - text: What was your English listening score?
+  utter_ask_english_writing_score:
+  - text: What was your English writing score?
+  utter_ask_english_reading_score:
+  - text: What was your English reading score?
+  utter_ask_french_test:
+  - text: Have you taken an approved French test?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+  utter_ask_french_speaking_score:
+  - text: What was your French speaking score?
+  utter_ask_french_listening_score:
+  - text: What was your French listening score?
+  utter_ask_french_writing_score:
+  - text: What was your French writing score?
+  utter_ask_french_reading_score:
+  - text: What was your French reading score?
+  utter_ask_job_offer:
+  - text: Do you have a job offer in Canada (or are currently working in Canada)?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+  utter_ask_work_experience_canada:
+  - text: How many years of skilled work experience do you have in Canada? (In a NOC 0, A, or B occupation)
+  utter_ask_work_experience_global:
+  - text: How many years of global work experience do you have in your present occupation?
+  utter_ask_skilled_trade:
+  - buttons:
+    - payload: /affirm
+      title: Industrial, electrical and construction trades
+    - payload: /affirm
+      title: Maintenance and equipment operation trades
+    - payload: /affirm
+      title: Supervisors and technical occupations in natural resources, agriculture and related production
+    - payload: /affirm
+      title: Processing, manufacturing and utilities supervisors and central control operators
+    - payload: /affirm
+      title: Chefs, cooks, butchers and bakers.
+    - payload: /deny
+      title: None
+    text: Are you in one of these occupations?
+  utter_ask_certified_skill_trade:
+  - text: Are you certified in your skilled trade by a Canadian provincial or territorial body?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+  utter_ask_education:
+  - buttons:
+    - payload: None
+      title: Less than secondary School
+    - payload: secondary
+      title: Secondary School Diploma
+    - payload: undergraduate
+      title: Bachelor's Degree
+    - payload: graduate
+      title: Master's Degree
+    - payload: doctorate
+      title: PhD or higher
+    text: What is your highest level of education?
+  utter_ask_healthcare_professional:
+  - text: Are you a healthcare professional?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+  utter_ask_degree_canada:
+  - text: Did you graduate within Canada?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+  utter_ask_occupation:
+  - buttons:
+    - payload: '0'
+      title: '0'
+    - payload: A
+      title: A
+    - payload: B
+      title: B
+    - payload: C
+      title: C
+    - payload: D
+      title: D
+    text: What is your NOC Category?
+  utter_ask_net_worth:
+  - text: What is your net worth?
+  utter_ask_check_provincial:
+  - text: Would you also like to check the provincial programs?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+  utter_ask_desired_province:
+  - text: What is your preferred province to migrate to?
+    buttons:
+    - payload: '/inform{{"desired_province": "alberta"}}'
+      title: Alberta
+    - payload: '/inform{{"desired_province": "british_columbia"}}'
+      title: British Columbia
+    - payload: '/inform{{"desired_province": "manitoba"}}'
+      title: Manitoba
+    - payload: '/inform{{"desired_province": "new_brunswick"}}'
+      title: New Brunswick
+    - payload: '/inform{{"desired_province": "newfoundland_and_labrador"}}'
+      title: Newfoundland and Labrador
+    - payload: '/inform{{"desired_province": "northwest_territories"}}'
+      title: Northwest Territories
+    - payload: '/inform{{"desired_province": "nova_scotia"}}'
+      title: Nova Scotia
+    - payload: '/inform{{"desired_province": "ontario"}}'
+      title: Ontario
+    - payload: '/inform{{"desired_province": "prince_edward_island"}}'
+      title: Prince Edward Island
+    - payload: '/inform{{"desired_province": "quebec"}}'
+      title: Quebec
+    - payload: '/inform{{"desired_province": "saskatchewan"}}'
+      title: Saskatchewan
+    - payload: '/inform{{"desired_province": "yukon"}}'
+      title: Yukon
+  utter_ask_farmer:
+  - text: Are you a farmer?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+  utter_ask_work_permit:
+  - text: Do you have a work permit?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+  utter_eligibility_agent:
+  - text: Would you like to speak to an agent to further discuss eligibility?
+    buttons:
+    - payload: /request_agent
+      title: Yes
+    - payload: null
+      title: No
+  utter_agent:
+  - text: You may reach out to Gurpreeet Chadok at gurpreet@castlemorelaw.com
+  - text: You may reach out to Shireen Kapoor at shireen@ace-law.ca
+  - text: You may reach out to Rekha Samuel at rekha@canmerge.net
+  utter_faq/letter_of_support:
+  - text: You may work with Canada Startup Company to get a letter of support.
+  utter_faq/why_canada:
+  - text: Canada is a nice country
+actions:
+- action_determine_province
+- ask_faq
+- action_determine_eligibility
+- validate_eligibility_form
+- validate_provincial_form
+forms:
+  name_form:
+    ignored_intents:
+    - ask_name
+    required_slots:
+    - name
+  eligibility_form:
+    ignored_intents: []
+    required_slots:
+    - travel_purposes
+    - visit_length
+    - children_canada
+    - program_length
+    - education_acceptance
+    - passport_country
+    - education
+    - english_test
+    - english_listening_score
+    - english_reading_score
+    - english_speaking_score
+    - english_writing_score
+    - french_test
+    - french_listening_score
+    - french_reading_score
+    - french_speaking_score
+    - french_writing_score
+    - occupation
+    - skilled_trade
+    - certified_skill_trade
+    - job_offer
+    - work_experience_canada
+    - work_experience_global
+  provincial_form:
+    ignored_intents: []
+    required_slots:
+    - check_provincial
+    - desired_province
+  alberta_form:
+    ignored_intents: []
+    required_slots:
+    - farmer
+    - net_worth
+    - work_permit
+  british_columbia_form:
+    ignored_intents: []
+    required_slots:
+    - healthcare_professional
+    - degree_canada
+    - net_worth
+  manitoba_form:
+    ignored_intents: []
+    required_slots:
+    - farmer
+    - net_worth
+    - degree_canada
+  new_brunswick_form:
+    ignored_intents: []
+    required_slots:
+    - net_worth
+    - degree_canada
+  newfoundland_and_labrador_form:
+    ignored_intents: []
+    required_slots:
+    - net_worth
+    - degree_canada
+  northwest_territories_form:
+    ignored_intents: []
+    required_slots:
+    - net_worth
+  nova_scotia_form:
+    ignored_intents: []
+    required_slots:
+    - healthcare_professional
+    - net_worth
+    - degree_canada
+  ontario_form:
+    ignored_intents: []
+    required_slots:
+    - net_worth
+    - degree_canada
+  prince_edward_island_form:
+    ignored_intents: []
+    required_slots:
+    - net_worth
+    - degree_canada
+  quebec_form:
+    ignored_intents: []
+    required_slots:
+    - net_worth
+  saskatchewan_form:
+    ignored_intents: []
+    required_slots:
+    - net_worth
+  yukon_form:
+    ignored_intents: []
+    required_slots:
+    - net_worth
+e2e_actions: []

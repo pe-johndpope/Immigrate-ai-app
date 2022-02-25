@@ -1,0 +1,356 @@
+responses:
+  utter_faq/203:
+  - text: "The Interim Federal Health Program (IFHP) covers certain health-care benefits\
+      \ for specific groups of people until they become eligible for provincial or\
+      \ territorial health insurance, such as:\n\nprotected people, including resettled\
+      \ refugees,\nrefugee claimants, and\ncertain other groups.\n\nThe IFHP doesn\u2019\
+      t provide services directly to you. Instead, the services are provided by health\
+      \ professionals. A company called Medavie Blue Cross manages IFHP claims. They\
+      \ cover the cost of services from IFHP-registered health-care providers (doctors,\
+      \ dentists, hospitals, pharmacies) if you are eligible.\nFind out more about\
+      \ who is eligible for IFHP and the services available to them."
+  utter_faq/204:
+  - text: "The Interim Federal Health Program (IFHP) provides the following coverages:\n\
+      \nbasic health-care services (such as doctor visits, hospital care, lab tests),\n\
+      supplemental services (such as limited vision care, urgent dental care),\nprescription\
+      \ drug coverage (medications and products), and \nin some cases, one Immigration\
+      \ Medical Exam (IME). \n\nThe\_IFHP\_doesn\u2019t cover services or products\
+      \ that you can claim under other insurance plans, such as:\n\nprovincial or\
+      \ territorial health care, or\nprivate insurance plans.\n\nFind out more about\
+      \ the products and services covered by the IFHP and how long you will be covered."
+  utter_faq/205:
+  - text: 'Yes. The Interim Federal Health Program provides coverage for mental health
+      services provided by:
+
+
+      general practitioners/family doctors,
+
+      mental health hospitals and
+
+      clinics.
+
+
+      Family doctors/general practitioners can diagnose and treat some mental health
+      problems. Depending on your situation, they may refer you to other mental health
+      professionals, such as:
+
+
+      clinical psychologists,
+
+      psychotherapists,
+
+      counselling therapists or
+
+      psychiatrists who specialize in mental health.
+
+
+      When your physician refers you, you are also covered for the mental health services
+      these professionals provide. Mental health professionals can help you improve
+      or maintain your mental health with:
+
+
+      therapy,
+
+      counselling,
+
+      medication or
+
+      a combination of these options.
+
+
+      Any health-care providers you see must be registered with the Interim Federal
+      Health Program administrator, Medavie Blue Cross.'
+  utter_faq/206:
+  - text: "Any of these documents will prove your eligibility for the Interim Federal\
+      \ Health Program (IFHP):\n\nAn Acknowledgement of Claim and Notice to Return\
+      \ for Interview Letter\u2014you get this letter after you make a refugee claim\
+      \ and you\u2019re scheduled for an interview.\nA Refugee Protection Claimant\
+      \ Document\u2014you get this document after your interview and we either\n \
+      \ \nrefer your refugee claim to the Immigration and Refugee Board of Canada\
+      \ (IRB), or\ndecide your claim isn\u2019t eligible to be referred to the IRB\
+      \ but you are eligible to apply for a pre-removal risk assessment\n\nAn Interim\
+      \ Federal Health Certificate\u2014you get this certificate if you\u2019re a\
+      \ resettled refugee going to live in Canada or a member of another eligible\
+      \ beneficiary group.\n\nAn officer from Immigration, Refugees and Citizenship\
+      \ Canada or the Canada Border Services Agency will give you your IFHP eligibility\
+      \ document.\nFind out how to get health services through IFHP"
+  utter_faq/207:
+  - text: "Start date:\nYour Interim Federal Health Program (IFHP) coverage starts\
+      \ on the date your eligibility document is issued.\nEnd date:\nIf you made a\
+      \ refugee claim from within Canada\nYou are eligible for coverage until:\n\n\
+      you withdraw your refugee claim, or\nthe Immigration and Refugee Board of Canada\
+      \ (IRB) finds you abandoned your refugee claim, or\nyour refugee claim isn\u2019\
+      t eligible and you can\u2019t apply for a pre-removal risk assessment (PRRA),\
+      \ or\nyou leave Canada. \n\nYour IFHP coverage will automatically expire 90\
+      \ days from the decision date if:\n\nthe IRB finds you to be a Convention refugee,\
+      \ or \nyou get a positive decision on your PRRA application. \n\nDuring this\
+      \ time, you must contact the province or territory you live in to find out when\
+      \ you can apply for health coverage. In some provinces, you can apply as soon\
+      \ as you get a positive decision. In these cases, you should apply right away.\n\
+      If you are a refugee resettled from outside Canada\nIn Canada, the government\
+      \ of your province or territory covers health services. When you first arrive,\
+      \ it may take some time for you to be covered for these services. Until then,\
+      \ your health care will be covered by the Interim Federal Health Program (IFHP).\
+      \ \nBasic Coverage\nThe IFHP gives you basic coverage (for example, doctor visits\
+      \ and hospital care) until you become eligible for provincial or territorial\
+      \ health coverage, which typically occurs within 3 months. During this time,\
+      \ you must apply for health insurance from the province or territory where you\
+      \ live. \nSupplemental and Prescription Drug Coverage\nIn most cases, your supplemental\
+      \ and prescription drug coverage will be valid for 12 months from the date you\
+      \ arrive in Canada. If you are still eligible after this, you must apply to\
+      \ extend your IFHP coverage or contact the Immigration, Refugees, Citizenship\
+      \ Canada office in your area.\nFind out more about who is eligible for the IFHP\
+      \ and the services available to them.\n\nNote: Your coverage can be cancelled\
+      \ without notice if your immigration status changes."
+  utter_faq/208:
+  - text: "Follow these steps:\n\nFind a health-care provider who is registered with\
+      \ Medavie Blue Cross.\n    \nMedavie Blue Cross is the company that manages\
+      \ Interim Federal Health Program (IFHP) claims. \nIf your health-care provider\
+      \ isn\u2019t registered with Medavie Blue Cross, they can easily register.\n\
+      \n\nShow your IFHP eligibility document to your health-care provider before\
+      \ they treat you.\nAfter you are treated, your health-care provider may give\
+      \ you a claim form. You must sign this form to prove you were given the health\
+      \ service or product.\n\n\nNote:\n\nBefore using any services, ask if the provider\
+      \ takes part in the Interim Federal Health Program (IFHP) and agrees to send\
+      \ their bill to Medavie Blue Cross.\nYou don\u2019t have to accept services\
+      \ from health-care providers who don\u2019t take part in the IFHP. For example,\
+      \ if a pharmacy asks you to pay for medication, you can find another pharmacy\
+      \ that is registered with the IFHP.\nIf you go to a pharmacy that is not located\
+      \ in your province of residence (e.g. if you live in Ontario and request a prescription\
+      \ medication in Quebec), your claim may be rejected. Make sure that you tell\
+      \ us if you move to another province.\nIf you are eligible for coverage for\
+      \ the service or product under the IFHP, you won\u2019t have to pay for it.\
+      \ \nIf you pay a provider for a service or product that is covered by the IFHP,\
+      \ you won\u2019t get any money back.\nIf you need a health-care service or product\
+      \ that isn\u2019t covered you will have to pay for it.\n\n\nFind out more about\
+      \ how to get health services and products."
+  utter_faq/209:
+  - text: "After you are treated, your health-care provider may give you a claim form.\
+      \ You must sign this form to prove you received the health service or product.\n\
+      If you are eligible for coverage for the service or product under the Interim\
+      \ Federal Health Program, you won\u2019t have to pay for it."
+  utter_faq/210:
+  - text: "You may get a letter from Medavie Blue Cross asking you to confirm if you\
+      \ were given health services or products on a given date.\nYou should:\n\nanswer\
+      \ the question,\nsign the letter, and\nreturn it to Medavie Blue Cross.\n\n\
+      This isn\u2019t a bill. This will help to prevent fraud. Signing this letter\
+      \ won\u2019t affect your health coverage or your immigration status."
+  utter_faq/211:
+  - text: 'No, you do not have to get certain vaccinations. The pre-departure vaccination
+      services offered through the IFHP are voluntary.
+
+      If a panel physician associated with the International Organization for Migration
+      does your immigration medical exam, they may offer you vaccines to update your
+      immunization status before you arrive in Canada. If you choose to get vaccinated
+      overseas, you should bring your vaccination record to Canada.'
+  utter_faq/212:
+  - text: "You can register to become a health-care provider with the Interim Federal\
+      \ Health Program (IFHP) online or on paper (PDF, 335 KB). For detailed instructions\
+      \ on how to register, call Medavie Blue Cross at 1-888-614-1880.\nNote: Pharmacies\
+      \ must register to become IFHP providers by calling Medavie Blue Cross.\_Once\
+      \ registered, pharmacies must contact their software vendors to update their\
+      \ carrier codes so that IFHP pharmacy claims can be submitted electronically\
+      \ to Medavie Blue Cross.\nEach new registered provider will receive a complete\
+      \ kit including:\n\nwelcome letter,\nclaim forms,\ndirect deposit request form,\n\
+      benefit grids, and\nthe IFHP Information Handbook for Health Care Professionals\
+      \ (PDF, 6.89 MB)."
+  utter_faq/213:
+  - text: "To check your patient\u2019s eligibility for the Interim Federal Health\
+      \ Program (IFHP) before you provide a service:\n\nAsk for their eligibility\
+      \ document. This could be\n  \nan Interim Federal Health Certificate\na Refugee\
+      \ Protection Claimant Document\nan Acknowledgement of Claim and Notice to Return\
+      \ for Interview Letter\n\nConfirm their identity with:\n  \nan immigration document\
+      \ that has a photo\na government-issued identification that has a photo\n\n\
+      Check their eligibility for IFHP using their identification number (the 8 to\
+      \ 10 digit number on their eligibility document) and by either \n  \ncalling\
+      \ Medavie Blue Cross\nlogging into the IFHP Secure Provider Web Portal\n\n\n\
+      If you have questions about the types of benefits and services covered, you\
+      \ can also contact Medavie Blue Cross by\n\nemail: CIC_Inquiry@medavie.bluecross.ca\n\
+      fax: 506-867-3841\n\nTo find out more about checking patient eligibility, see\
+      \ our quick reference guide (PDF, 242 KB). You can also see examples of IFHP\
+      \ eligibility documents in the IFHP Information Handbook for Health Care Professionals\
+      \ (PDF, 6.9 MB)."
+  utter_faq/214:
+  - text: 'It takes two business days for the Medavie Blue Cross system to show if
+      a patient is eligible. Patients are still eligible during this period.
+
+      All Interim Federal Health Program (IFHP) clients are eligible for coverage
+      starting on the date their IFHP eligibility document is issued.
+
+      If a patient requests services or products during this period, please follow
+      these procedures, also found on the Medavie Provider website (PDF, 229 KB).'
+  utter_faq/215:
+  - text: 'Yes. The IFHP Basic Coverage covers:
+
+
+      mental  health services provided by physicians (such as psychiatrists, general
+      or  family practitioners), or
+
+      services  provided by mental health hospitals.
+
+
+      The  IFHP also covers mental health services provided by allied health professionals  (such
+      as clinical psychologists, psychotherapists, or counselling therapists)  under
+      the IFHP Supplemental Coverage (PDF, 484 KB). To become an IFHP registered provider,
+      allied health professionals must be  licensed in the province or territory in
+      which they practice with their  provincial or territorial licensing body.
+
+      Notes:
+
+
+      The  IFHP does not require prior approval for the services provided by physicians
+      or  mental health hospitals.
+
+      Medavie Blue Cross  requires prior approval for mental health services provided
+      by allied health  professionals.'
+  utter_faq/216:
+  - text: 'Prior  approval requests must be accompanied by:
+
+
+      A letter from a  physician that indicates the diagnosis and referral for assessment
+      / psychotherapy / counselling therapy and
+
+      the Initial  Assessment report.
+
+
+      The  Initial Assessment can be conducted upon referral from a physician and
+      must  include a:
+
+
+      clinical  interview,
+
+      brief  psychometric screening (where appropriate) and
+
+      a  report to the IFHP indicating a treatment plan and expected duration of  treatment
+      (if applicable).
+
+
+      This  assessment can be billed to a maximum of 2 hours. The provider should
+      not  proceed with further treatment until they get prior approval.
+
+      For more information,  refer to the IFHP  Supplemental Benefit Grid (PDF, 484
+      KB), Note 2.'
+  utter_faq/217:
+  - text: "The IFHP will initially  approve up to 10 one-hour sessions, not including\
+      \ the initial assessment. If more  treatment is needed, providers can submit\
+      \ a request to the IFHP. It must be accompanied by a  physician\u2019s recommendation\
+      \ for more sessions. A discharge summary report must  be submitted to both the\
+      \ referring physician and IFHP once treatment is  completed.\nThe IFHP does\
+      \ not cover group psychotherapy sessions or the following services:\n\nPsychoanalysis\n\
+      Psycho-educational assessments\nLife skills training\nExpressive arts therapy\n\
+      Hypnotherapy\nSex therapy"
+  utter_faq/218:
+  - text: 'If  interpretation is needed during the treatment/counselling, the IFHP
+      will  reimburse $28.95/per hour for interpretation services (i.e., for 10 hours
+      of  therapy IFHP will reimburse 10 hours of interpretation services)
+
+      Interpreters must be  registered with the IFHP to be reimbursed for their services.'
+  utter_faq/219:
+  - text: 'Rates for services/products provided are in line with:
+
+
+      provincial/territorial health insurance rates (where applicable),
+
+      usual or customary fees for a given service (where applicable), or
+
+      standard Interim Federal Health Program rates.
+
+
+      The IFHP Benefit Grids list the services and products covered. Benefits are
+      subject to limits and maximum dollar amounts, and some benefits require special
+      authorization from Medavie Blue Cross.
+
+      For more information, please consult the IFHP Information Handbook for Health
+      Care Professionals (PDF, 6.9 MB).'
+  utter_faq/220:
+  - text: "No. Health-care providers may not charge the Interim Federal Health Program\
+      \ (IFHP) clients for covered services.\nFor more information on the IFHP, see\
+      \ the Medavie Blue Cross guides:\n\nIFHP Information Handbook for Health Care\
+      \ Professionals (PDF, 6.9 MB)\nQuick Reference Guide \u2013 Verify Patient Coverage\
+      \ (PDF, 242 KB)\nSecure Web Portal and Electronic Claims Submissions Service\
+      \ Guide (October 2011) (PDF, 3.1 MB)\nElectronic Dental Claims Quick Reference\
+      \ Guide (PDF, 166 KB)\nClaims Procedures for Point of Sale (POS) Claims Transmissions\
+      \ (PDF, 229 KB)"
+  utter_faq/221:
+  - text: "No. The IFHP is a payer of last resort, meaning that it provides benefits\
+      \ to those who lack public health insurance or comprehensive private health\
+      \ insurance.\nThe IFHP does not cover the cost of health-care services or products\
+      \ that a person may claim (even in part) under a public or private health insurance\
+      \ plan. The IFHP does not coordinate benefits with other insurance plans/programs\
+      \ so co-payments aren\u2019t possible."
+  utter_faq/222:
+  - text: 'You can register as an IFHP pre-departure medical services provider if
+      you are a:
+
+
+      panel physician or
+
+      panel radiologist or
+
+      certified secondary care provider (such as a hospital or facility) that provides
+      services to refugees overseas
+
+
+      Registration with IFHP is based on your:
+
+
+      location
+
+      scope of clinical practice
+
+      affiliation with the International Organization for Migration (IOM)
+
+      panel membership status.
+
+
+      For more information, consult the IFHP PDMS Provider Website.'
+  utter_faq/223:
+  - text: "To ensure you will be reimbursed, you must check the eligibility status\
+      \ of each Interim Federal Health Program client before you provide any services.\n\
+      If you are affiliated with the International Organization for Migration (IOM),\
+      \ you will have client eligibility confirmed by the IRCC visa office. To confirm\
+      \ client eligibility, you must: \n\nConfirm that the client\u2019s name appears\
+      \ on the list received from visa offices. \nConfirm that the identity of the\
+      \ person matches the person in the identification document. \nKeep a copy of\
+      \ the list of eligible clients received from visa offices.\n\nIf you are not\
+      \ affiliated with the IOM, you must:\n\nConfirm that the client has an Interim\
+      \ Federal Health Certificate.\nConfirm that the identity of the person on the\
+      \ Interim Federal Health Certificate matches the person in the identification\
+      \ document.\nKeep a photocopy of the client\u2019s Interim Federal Health Certificate\
+      \ in their records.\n\nFor services to be reimbursed, as a non-IOM affiliated\
+      \ provider you must attach a copy of the client\u2019s Interim Federal Health\
+      \ Certificate to claims sent to Medavie Blue Cross."
+  utter_faq/224:
+  - text: 'If you are a panel physician affiliated with the International Organization
+      for Migration (IOM), you can provide vaccination services covered by the IFHP
+      to eligible clients.
+
+      Immunizations can only be provided in countries where IOM has the capacity to
+      deliver vaccinations. The IFHP has developed instructions for the delivery of
+      vaccination services, including:
+
+
+      standard operating procedures
+
+      vaccination schedules
+
+      consent forms
+
+      documentation worksheets'
+  utter_faq/225:
+  - text: 'Rates for services/products provided are in line with:
+
+
+      usual or customary fees for a given service or product (where applicable) or
+
+      maximum fees or rates for specific benefits as approved by the IFHP
+
+
+      Certain services and products covered by the IFHP need prior approval to confirm
+      clinical and/or administrative criteria. Benefits are subject to limits and
+      maximum dollar amounts as determined by IFHP.
+
+      Consult the IFHP pre-departure medical services benefit grid or the IFHP Information
+      Handbook for Pre-Departure Medical Services Providers.'
+  utter_faq/226:
+  - text: No, you cannot charge eligible clients for services covered by the IFHP.

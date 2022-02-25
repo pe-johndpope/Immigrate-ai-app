@@ -1,0 +1,403 @@
+responses:
+  utter_faq/169:
+  - text: "No new applications under the farm management stream\n As of March\_10,\
+      \ 2018, we\u2019re no longer accepting new applications under the farm management\
+      \ stream of the Self-Employed Persons Program. We\u2019ll continue to process\
+      \ applications received before March\_10, 2018.\n\nTo qualify as a self-employed\
+      \ person, you must have two years of relevant experience and show that you intend\
+      \ to become self-employed in Canada.\nYou must also score at least 35 points\
+      \ on a selection grid designed to determine whether you will be able to make\
+      \ an economic contribution to Canada."
+  utter_faq/170:
+  - text: "No new applications under the farm management stream\n As of March\_10,\
+      \ 2018, we\u2019re no longer accepting new applications under the farm management\
+      \ stream of the Self-Employed Persons Program. We\u2019ll continue to process\
+      \ applications received before March\_10, 2018.\n\nYou must:\n\nmeet the definition\
+      \ of a self-employed person;\npass a medical examination; and\npass criminal\
+      \ and security checks.\n\nFind out more about how to apply."
+  utter_faq/171:
+  - text: See this detailed definition of relevant experience.
+  utter_faq/172:
+  - text: "Cultural activities include jobs generally seen as part of Canada\u2019\
+      s artistic and cultural fields. Examples include:\n\nauthors and writers,\n\
+      creative and performing artists,\nmusicians,\npainters,\nsculptors and other\
+      \ visual artists,\ntechnical support and other jobs in motion pictures,\ncreative\
+      \ designers and\ncraftspeople.\n\nEmployment and Social Development Canada (ESDC)\
+      \ provides a full list of qualifying activities for self-employed persons."
+  utter_faq/173:
+  - text: "There is no formal definition of \u201Csignificant contribution.\u201D\
+      \ Visa officers can use their judgment. A contribution to athletics or the arts,\
+      \ even at less than a national standard, may still be significant at the local\
+      \ level.\nPlease note that you must contribute to economic activities in Canada.\
+      \ This does not mean you cannot contribute to some activities outside of Canada."
+  utter_faq/174:
+  - text: 'There is no regulated minimum net worth requirement. However, you will
+      have to satisfy a visa officer that you have enough money to:
+
+
+      settle in Canada with your dependants and
+
+      finance the work on which your selection was based.
+
+
+      Find out more about the funds you need.'
+  utter_faq/175:
+  - text: 'If you applied as a self-employed person on or after March 3, 2011, you
+      must include the results of an English or French language test with your application.
+      This will ensure your language skills are considered when we assess your application.
+
+      It must be a third-party language test from an agency approved by IRCC.
+
+      This rule applies to all self-employed applicants who want to claim points for
+      their language skills.'
+  utter_faq/176:
+  - text: "To qualify for the Start-up Visa Program, you must meet all 4 eligibility\
+      \ requirements, as well as the admissibility requirements to enter Canada.\n\
+      Eligibility requirements for the Start-up Visa Program\nYou must:\n\nhave a\
+      \ qualifying business\nhave a letter of support from a designated organization\n\
+      meet the language requirements, and \nhave enough money to settle and live in\
+      \ Canada before you make money from your business\n\nAdmissibility requirements\
+      \ to enter Canada\nTo be eligible to come to Canada, you must meet the admissibility\
+      \ requirements to enter Canada. These apply to all applicants, not just Start-up\
+      \ Visa Program applicants.\nWe may refuse your application if you are inadmissible\
+      \ to Canada."
+  utter_faq/177:
+  - text: "First, you must pitch your business idea to a\_designated organization\
+      \ and convince it to support your start-up company. Once a designated organization\
+      \ decides to support your business, it will send us a commitment certificate\
+      \ and give you a letter of support.\nThe process to pitch your idea varies for\
+      \ each designated organization. You must contact the designated organization\
+      \ to find out what you must do to seek its support. If you meet all eligibility\
+      \ criteria, you can submit a completed application, which must include your\
+      \ letter of support."
+  utter_faq/178:
+  - text: "You need to contact the designated organization to find out how to get\
+      \ its support.\nYou need to convince the organization that you have a business\
+      \ idea that is worth supporting.\nThe process to pitch your idea is different\
+      \ for each organization. Each organization has its own requirements. For example,\
+      \ you may be asked to present your business concept in person or submit a detailed\
+      \ business plan.\nIf you reach an agreement with a designated organization,\
+      \ it will send you a letter of support. You need to include this letter when\
+      \ you submit your application to us. This is the proof you need to show that\
+      \ the venture capital fund, angel investor group, or business incubator is supporting\
+      \ your business idea.\nThe organization will also send a commitment certificate\
+      \ directly to us. We\u2019ll use both your letter of support and the organization's\
+      \ commitment certificate to assess your application."
+  utter_faq/179:
+  - text: 'To get support from a venture capital fund or an angel investor group,
+      you need a sizable investment from them.
+
+      To get support from a business incubator, you must be accepted into a designated
+      Canadian business incubator program. Getting into these programs is a competitive
+      process with limited spots available.
+
+      Contact a designated organization to find out how to get their support.'
+  utter_faq/180:
+  - text: "First, the designated organization(s) that you seek support from will review\
+      \ the viability of your business proposal.\nNext, Immigration, Refugees and\
+      \ Citizenship Canada will review your immigration application, if you have received\
+      \ the necessary support to apply, to make sure you\u2019re eligible to become\
+      \ a permanent resident.\nFinally, your application may also be subject to an\
+      \ independent peer review process. This is designed to protect against fraud\
+      \ and to ensure that your activities and those of the designated organization\
+      \ are in line with industry standards for this type of support."
+  utter_faq/181:
+  - text: 'No. To get a letter of support, you need to convince a designated organization
+      that your business idea is worth supporting. To do that, contact the designated
+      organization you think may be interested in your start-up business and find
+      out how you can pitch your idea.
+
+      Each designated organization has its own requirements. For example, you may
+      be asked to present your business concept in person or submit a detailed business
+      plan.'
+  utter_faq/182:
+  - text: "To apply for a start-up visa, you must show that you have reached Canadian\
+      \ Language Benchmark 5 in listening, reading, writing and speaking.\nWith your\
+      \ application, you must submit the results of a third-party language test that\
+      \ show that you meet the requirement.\nFind out more about the Start-up Visa\
+      \ Program\u2019s language requirements."
+  utter_faq/183:
+  - text: "The amount of money you need depends on how many family members will be\
+      \ coming with you.\nIn some cases, the designated organization may give you\
+      \ additional money to help cover your living expenses. You can\u2019t use the\
+      \ investment money for your start-up business to cover your living expenses."
+  utter_faq/184:
+  - text: 'Yes. Up to 5 people can apply through the Start-up Visa Program as owners
+      of a single business.
+
+      When reviewing your proposal, the designated organization will decide who is
+      essential or non-essential to the business. An essential person is critical
+      to the proposed start-up. Without this person, the designated organization would
+      not invest or support the proposal.
+
+      If we refuse the application of an essential person, all related applicants
+      will be refused.
+
+      Find out more about the eligibility requirements.'
+  utter_faq/185:
+  - text: 'An essential person is considered to be critical to the business and will
+      be specifically identified as essential by the designated organization on the
+      commitment certificate and letter of support.
+
+      If we refuse the application of an essential person, all related applicants
+      will be refused.'
+  utter_faq/186:
+  - text: "If the investment comes from a designated Canadian venture capital fund,\
+      \ you must secure a minimum investment of $200,000.\nIf the investment comes\
+      \ from a designated Canadian angel investor group, you must secure a minimum\
+      \ investment of $75,000.\nYou don\u2019t need to secure a financial investment\
+      \ from a business incubator. You must be accepted into a Canadian business incubator\
+      \ program.\nSee the list of designated organizations for more information."
+  utter_faq/187:
+  - text: 'Angel investors usually invest their own money into a start-up business.
+      Venture capital funds are limited partnerships that have a fund of pooled investment
+      capital to invest in a number of companies.
+
+      Also, angel investor groups invest in companies at an earlier stage of development,
+      compared to venture capital funds.
+
+      Minimum investment amounts are determined based on consultation with industry
+      associations and represent typical investment amounts in each industry.
+
+      See the list of designated organizations for more information.'
+  utter_faq/188:
+  - text: "No, you\u2019re not required to invest any of your own money. The minimum\
+      \ investment required is an investment that comes from a designated Canadian\
+      \ venture capital fund or angel investor group."
+  utter_faq/189:
+  - text: "Receiving support from multiple designated venture capital funds or angel\
+      \ investor groups is known as syndication. If you have syndicated support, then\
+      \ all investment organizations involved in the syndication must be identified.\
+      \ Only one commitment certificate will be sent electronically to us and one\
+      \ letter of support will be provided to you.\nIf a designated venture capital\
+      \ fund invests in your business, the minimum total investment amount is\_$200,000,\
+      \ even if a designated angel group also invests in your business.\nIf at least\
+      \ one designated angel group but no designated venture capital fund invests\
+      \ in your business, the minimum total investment amount is\_$75,000."
+  utter_faq/190:
+  - text: "If your business fails, it doesn\u2019t affect your permanent resident\
+      \ status. We recognize that not every business will succeed and this program\
+      \ is designed so that the risk is shared between the public and private sector."
+  utter_faq/191:
+  - text: "To meet the eligibility criteria for one of the skilled worker programs\
+      \ under Express Entry:\n\nFederal Skilled Worker Program,\_\nCanadian Experience\
+      \ Class, or\nFederal Skilled Trades Program,\n\nwhen creating your Express Entry\
+      \ profile, you must fill in all the information related to the language test\
+      \ you took for your first and, if applicable, second official languages. \n\
+      \ The test must be a third-party language test from an agency approved by IRCC.\n\
+      If you apply under the Provincial Nominee Program (PNP) in a semi- or low-skilled\
+      \ job, the province will require you to complete a third-party language test\
+      \ before they nominate you.\nThis does not apply if you are a temporary foreign\
+      \ worker in a semi- or low-skilled job who:\n\nentered Canada on or before July\
+      \ 1, 2012, and\nhas been nominated in a PNP employer-driven stream by July 1,\
+      \ 2013.\n\nA test will show if your language skills meet a minimum standard\
+      \ in each of these four abilities:\n\nlistening,\nspeaking,\nreading, and\n\
+      writing.\n\nYou must be prepared to submit a copy of your test results when\
+      \ you apply for permanent residence. If we request a copy of your test results\
+      \ and you do not submit them, your application will be considered incomplete\
+      \ and we will send it back to you.\n\nNote: Completing an Express Entry profile\
+      \ is the first step to immigrate to Canada permanently as a skilled worker.\
+      \ Completing an Express Entry profile does not guarantee that you will receive\
+      \ an Invitation to Apply for permanent residence. An Invitation to Apply for\
+      \ permanent residence will be based on your score and rank in the Express Entry\
+      \ pool using the Comprehensive Ranking System.\n\nIf you apply as a Self-employed\
+      \ Person under the Business Immigration Program, you must include the results\
+      \ of a third-party language test or you will not be given points for your language\
+      \ skills."
+  utter_faq/192:
+  - text: "You must prove your language skills by taking a third-party language test\
+      \ from an agency designated by us.\n When creating your Express Entry profile,\
+      \ you must fill in all the information related to the language test you have\
+      \ taken in English and/or French for your first and second official language.\n\
+      \ You also need to make sure that you meet the minimum language threshold in\
+      \ order to be eligible for the program.\nYour language test results must be\
+      \ valid (written in the last two years) when you submit your application for\
+      \ permanent residence. If they expire, you should retake the test and provide\
+      \ us with valid results. Otherwise, your application will be rejected as incomplete\
+      \ or may be refused.\n\nNote: Completing an Express Entry profile is the first\
+      \ step to immigrate to Canada permanently as a skilled worker. Completing an\
+      \ Express Entry profile does not guarantee that you will receive an Invitation\
+      \ to Apply for permanent residence. An Invitation to Apply for permanent residence\
+      \ will be based on your score and rank in the Express Entry pool using the Comprehensive\
+      \ Ranking System."
+  utter_faq/193:
+  - text: "You need to make  sure that you meet the minimum  language threshold in\
+      \ order to be eligible for the program.\n  You  must meet the minimum level\
+      \ of \n\nCLB 5 (English) or NCLC 5 (French) for speaking and listening, and\
+      \ \nCLB 4 (English) or NCLC 4 (French) for reading and writing.\n\nYou must\
+      \ prove your language skills by taking a third-party  language test from an\
+      \  agency approved by Immigration, Refugees and Citizenship Canada (IRCC).\n\
+      \  When creating your Express Entry profile,  you must fill in all the information\
+      \ related to the language test you have  taken for your first and, if applicable,\
+      \ second official languages.\n  If you are invited to apply, your test  results\
+      \ must  not be more than two years old on the day you submit your application\
+      \ for  permanent residence.\n  This rule applies to all applicants who  want\
+      \ to be considered under the Federal Skilled Trades Program.\n\nNote: Completing\
+      \ an Express Entry profile is the first step to  immigrate to Canada permanently\
+      \ as a skilled worker. Completing an Express  Entry profile does not guarantee\
+      \ that you will receive an Invitation to Apply  for permanent residence. An\
+      \ Invitation to Apply for permanent residence will be  based on your score and\
+      \ rank in the Express Entry pool using the Comprehensive Ranking System."
+  utter_faq/194:
+  - text: 'If you apply under the Provincial Nominee Program in a semi- or low-skilled
+      job, the province will require that you have a third-party language test before
+      they will nominate you.
+
+      This test will show whether your language skills meet a minimum standard in
+      each of these four categories:
+
+
+      listening,
+
+      speaking,
+
+      reading and
+
+      writing.
+
+
+      To meet the eligibility criteria for one of the following skilled worker programs
+      under Express Entry:
+
+
+      Federal Skilled Worker Program,
+
+      Canadian Experience Class, or
+
+      Federal Skilled Trades Program,
+
+
+      when creating your Express Entry profile, you must fill in all the information
+      related to the language test you took for your first and, if applicable, second
+      official languages.
+
+      You must be prepared to submit a copy of your test results when you apply for
+      permanent residence. If we request a copy of your test results and you do not
+      submit them, your application will be considered incomplete and we will send
+      it back to you.
+
+      The test must be a third-party language test from an agency approved by IRCC.
+
+      You should check the website of the province you want to nominate you to find
+      out more about whether you need to take a test.'
+  utter_faq/195:
+  - text: 'If you applied as a self-employed person on or after March 3, 2011, you
+      must include the results of an English or French language test with your application.
+      This will ensure your language skills are considered when we assess your application.
+
+      It must be a third-party language test from an agency approved by IRCC.
+
+      This rule applies to all self-employed applicants who want to claim points for
+      their language skills.'
+  utter_faq/196:
+  - text: "Before you complete an Express Entry profile, you need to take a language\
+      \ test. This will show that your language skills meet minimum requirements in\
+      \ each of these four categories:\n\nlistening,\nspeaking,\nreading and\nwriting.\n\
+      \nYou will then need to include the test results when you complete your Express\
+      \ Entry profile.\nYou will need to take a language test to meet the eligibility\
+      \ criteria of these programs:\n\nFederal Skilled Worker Program\nCanadian Experience\
+      \ Class\nFederal Skilled Trades Program\n\nThe language standard you need to\
+      \ meet depends on the program you apply for.\nWe do not provide language testing.\
+      \ You will need to be tested by a \u201Cthird-party\u201D agency that we have\
+      \ approved.\nYou need to arrange to take a language test from any of the approved\
+      \ agencies. You will have to pay the cost to write the test.\n\nNote: Completing\
+      \ an Express Entry profile is the first step to immigrate to Canada permanently\
+      \ as a skilled worker. Completing an Express Entry profile does not guarantee\
+      \ that you will receive an Invitation to Apply for permanent residence. An Invitation\
+      \ to Apply for permanent residence will be based on your score and rank in the\
+      \ Express Entry pool using the Comprehensive Ranking System."
+  utter_faq/197:
+  - text: 'No, there are no exceptions to this rule. Each of the programs under Express
+      Entry requires the submission of third-party language results. You will include
+      the results of your test(s) in your Express Entry profile. Canada wants to assess
+      all applicants against the same standards, no matter their language of origin,
+      nationality or ethnicity.
+
+      Even someone from an English-speaking country, who speaks English as a first
+      language, would need to take the test. Similarly, someone from a French-speaking
+      country, who speaks French as a first language, needs to take a test.
+
+
+      Note: Completing an Express Entry profile is the first step to immigrate to
+      Canada permanently as a skilled worker. Completing an Express Entry profile
+      does not guarantee that you will receive an Invitation to Apply for permanent
+      residence. An Invitation to Apply for permanent residence will be based on your
+      score and rank in the Express Entry pool using the Comprehensive Ranking System.'
+  utter_faq/198:
+  - text: 'First, you will know ahead of time whether or not your language abilities
+      qualify to immigrate to Canada under one of these programs.
+
+      Second, you will get an objective, realistic assessment of your language ability.
+      The test will also reveal areas where you could improve.
+
+      A third-party language test is the most efficient way to have your language
+      skills assessed. This helps us to process applications more quickly.
+
+      Also, many regulatory bodies and industries will need you to have language testing.
+      Taking the test gets you one step closer toward getting a job in Canada.
+
+
+      Note: Completing an Express Entry profile is the first step to immigrate to
+      Canada permanently as a skilled worker. Completing an Express Entry profile
+      does not guarantee that you will receive an Invitation to Apply for permanent
+      residence. An Invitation to Apply for permanent residence will be based on your
+      score and rank in the Express Entry pool using the Comprehensive Ranking System.'
+  utter_faq/199:
+  - text: "Inside Canada:\n\nThe Canadian English Language Proficiency Index Program\
+      \ (General test) can be taken through Paragon Testing Enterprises Inc.\nThe\
+      \ International English Language Testing System (General test) can be taken\
+      \ through Cambridge Assessment English, IDP Australia and The British Council\n\
+      The Test d\u2019\xE9valuation de fran\xE7ais (TEF Canada) can be taken through\
+      \ The Paris Chamber of Commerce and Industry.\nThe Test de connaissance du fran\xE7\
+      ais (TCF Canada) (in French only) can be taken through France Education International\
+      \ (FEI).\n\nOutside Canada:\n\nThe Canadian English Language Proficiency Index\
+      \ Program (General test) can be taken through Paragon Testing Enterprises Inc.\n\
+      The International English Language Testing System (General test) can be taken\
+      \ through Cambridge Assessment English, IDP Australia and The British Council.\n\
+      The Test d\u2019\xE9valuation de fran\xE7ais (TEF Canada) can be taken through\
+      \ The Paris Chamber of Commerce and Industry.\nThe Test de connaissance du fran\xE7\
+      ais (TCF Canada) (in French only) can be taken through le France Education International\
+      \ (FEI).\n\nCheck the website of each approved language testing agency for test\
+      \ locations and dates."
+  utter_faq/200:
+  - text: "If you want to immigrate to Canada through  the Provincial Nominee Program\
+      \ (PNP), a Canadian  province or territory has to nominate you.\n  The first\
+      \ thing you need to do is apply to  the PNP in the province or territory where\
+      \ you want to settle. To qualify,  you must have the skills, education and work\
+      \ experience you will need to settle  in Canada and support yourself and your\
+      \ family.\n  The province or territory will assess if  you will be able to meet\
+      \ their economic or labour market needs, and those of  Canada. They can tell\
+      \ you how long it will take to process your  application.\n  After the province\
+      \ or territory approves  your application, your next step is to apply for permanent\
+      \ residence within the time period they set out. The province or territory will\
+      \ let you know whether you must apply  through the Express Entry system or through\
+      \ regular application process:\n\nNomination  under an Express Entry PNP stream:\
+      \ If you are not already in the Express  Entry pool, you will need  to complete\
+      \ an Express  Entry profile and be  accepted into the pool. You can begin the\
+      \ process by using our Come to Canada tool.\nor\n\nNomination  under a non-Express\
+      \ Entry PNP stream: Permanent resident applicants who were nominated under a\
+      \ non-Express  Entry PNP stream should apply for permanent residence  using\
+      \ the regular  application process\n\nThe selection process and conditions to\
+      \ get  a Provincial Nominee Certificate may be different from one province to\
+      \ the  next. Check their websites to find out what you need to do before you\
+      \ apply.\nNote: The province of Quebec chooses its  own immigrants. If you \
+      \ want to live there, contact the Minist\xE8re  de l\u2019Immigration, de la\
+      \ Diversit\xE9 et de l\u2019Inclusion du Qu\xE9bec."
+  utter_faq/201:
+  - text: "After the  province or territory approves your application and you have\
+      \ a Provincial  Nominee Certificate, your next step is to apply for permanent\
+      \ residence within  the time period they set out.\nThe type of nomination issued\
+      \ to you by the  province or territory will determine how you will apply for\
+      \ permanent residence  with us. If you were nominated under a province or territory\u2019\
+      s Express Entry  stream, you will need to create an Express  Entry profile,\
+      \ if you do not already have one, and apply for permanent  residence online.\
+      \ The system will guide you through the application process.\n  For all other\
+      \ nominations, fill out the forms\_using the instruction guide to help you.\
+      \ This  guide will also tell you all the documents you need to send with your\
+      \  forms, and where to send them."
+  utter_faq/202:
+  - text: 'Yes, you can. As a permanent resident, you have the right to live, work
+      or study anywhere in Canada.
+
+      However, if you became a permanent resident through the Provincial Nominee Program,
+      the province that nominated you has chosen you to bring skills to their province.'

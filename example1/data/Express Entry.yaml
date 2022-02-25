@@ -1,0 +1,613 @@
+nlu:
+  - intent: faq/47
+    examples: |
+      - What changes have recently been made to Express Entry?
+      - How has Express Entry changed recently?
+      - How has the Express Entry system changed?
+  - intent: faq/48
+    examples: |
+      - When I try to submit my Express Entry profile or my application, I get an error. What can I do?
+      - What should I do if I try to submit my Express Entry profie and I receive an error?
+      - I keep getting an error when I try to submit my Express Entry profile or my application. How do I fix this?
+  - intent: faq/49
+    examples: |
+      - Can I ask to only be considered for one of the programs under Express Entry?
+      - Am I able to request that I only be considered for one of the programs available under Express Entry?
+      - Is it possible to be considered for only one of the progrms under Express Entry?
+  - intent: faq/50
+    examples: |
+      - Do I need to include medical exams and police certificates for an Express Entry application to be complete?
+      - Am I required to include all medical exam confirmation letters and police certificates for my application for permanent residence to be complete?
+      - If I'm applying for Express Entry, do I have to provide all of my medical exams and police certificates in order to complete my application?
+  - intent: faq/51
+    examples: |
+      - What happens if a country has special procedures for getting police certificates?
+      - Where do I find more information about countries with special procedures for getting police certificates?
+      - What do I do if a country has a certain process for obtaining police certificates?
+  - intent: faq/52
+    examples: |
+      - Do I need to include proof of funds for Express Entry?
+      - Will I be asked to prove how much money I have for Express Entry?
+      - How do I prove that I meet the settlement fund requirements for Express Entry?
+  - intent: faq/53
+    examples: |
+      - I am in the Express Entry pool. How do I find out what programs I am eligible for?
+      - Which programs am I eligible for if I am in the Express Entry pool?
+      - If I'm in the express entry pool, where do I go to see which programs I am eligible for?
+  - intent: faq/54
+    examples: |
+      - "I\u2019m in the Express Entry pool. How can I look for a job in Canada?"
+      - How do I look for a job in Canada if I am in the Express Entry pool?
+      - How do I start my job search in Canada if I am in the Express Entry pool?
+  - intent: faq/55
+    examples: |
+      - Can I have more than one Express Entry profile?
+      - Can I create more than one Express Entry profile to increase my chance at finding a job?
+      - Am I allowed to have multiple express entry profiles?
+  - intent: faq/56
+    examples: |
+      - In my online profile or application I am getting validation errors or it tells me that fields are incomplete when they are not. What do I do?
+      - I finished my online profile and application but I keep getting validation errors and it is telling me that it's incomplete when it is not. How do I fix this?
+      - What do I do if I completed my online profile but I keep receiving validation errors or it tells me that fields are incomplete when they aren't?
+  - intent: faq/57
+    examples: |
+      - Do I need an Educational Credential Assessment to apply under Express  Entry?
+      - Is an Educational Credential Assessment required for my Express Entry application?
+      - To apply for Express Entry do I need to have a valid Educational Credential Assessment?
+  - intent: faq/58
+    examples: |
+      - "The online tool said I was eligible for Express Entry, but my completed profile says I\u2019m not. Which one is right?"
+      - My Express Entry profile says that I am not eligible but the online tool that I used beforehand said that I was eligible. Which one is correct?
+      - What does it mean if the online tool indicated that I would be eligible for Express Entry but after completing my profile, it is now stating that I am not eligible?
+  - intent: faq/59
+    examples: |
+      - Can I use my existing Job Bank account to get matched with employers for Express Entry?
+      - I already have a Job Bank account. Can I use this to get matched with employers for Express Entry?
+      - Will the Job Bank account I already have match me with employers for Express Entry?
+  - intent: faq/60
+    examples: |
+      - My personal  reference code is not working. What should I do?
+      - What can I do if my personal reference code is not working?
+      - I started an Express Entry profile but now my reference code isn't working. What do I do?
+  - intent: faq/61
+    examples: |
+      - What do I need to create an Express Entry profile?
+      - What's needed to create my Express Entry profile?
+      - What information is required to complete my Express Entry profile?
+  - intent: faq/62
+    examples: |
+      - I am a native English or French speaker. Why do I need to take a language test for Express Entry?
+      - If my native language is English or French, why do I still have to take a language test for Express Entry?
+      - Do I still need to complete a language test for Express Entry if my native language is English or French?
+  - intent: faq/63
+    examples: |
+      - What kind of language test can I use for Express Entry?
+      - Which language tests are accepted for Express Entry?
+      - Are there certain language tests that Express Entry accepts?
+  - intent: faq/64
+    examples: |
+      - "A message in my account says my profile was updated. I didn\u2019t update it  today (or don\u2019t see an update). What happened?"
+      - I just received a message saying that my Express Entry profile was updated, however, I haven't updated it today. Should I be concerned?
+      - What does it mean if I receive a message saying my profile has been updated but I don't see an update?
+  - intent: faq/65
+    examples: |
+      - I accidently withdrew my Express Entry profile. How can I fix this?
+      - What should I do if I withdrew my Express Entry profile not purposefully?
+      - I've withdrawn my Express Entry profile accidentally. Is there a way to fix this?
+  - intent: faq/66
+    examples: |
+      - "I was found not eligible for Express Entry and I can\u2019t change my  profile. What do I do?"
+      - I am ineligible for Express Entry and am now unable to make changes to my profile. What should I do?
+      - If I've been found to be ineligible for Express Entry, how do I change my profile?
+  - intent: faq/67
+    examples: |
+      - How do I update my Express Entry profile before submitting it?
+      - I would like to update my Express Entry profile before submitting it. How do I do this?
+      - Is there a way to update my Express Entry profile before submitting it?
+  - intent: faq/68
+    examples: |
+      - "Some fields in my Express Entry profile are greyed out and I can\u2019t  change them. How do I update them?"
+      - How do I modify fields that are greyed out in my Express Entry profile?
+      - Is it possible to update some fields that have been greyed out in my Express Entry profile?
+  - intent: faq/69
+    examples: |
+      - How do I confirm that my Express Entry profile is complete?
+      - How can I confirm that I've completed my Express Entry profile?
+      - Is there a way to tell that I've fully completed my Express Entry profile?
+  - intent: faq/70
+    examples: |
+      - I already submitted my Express Entry profile. Can I still update it?
+      - Can I still update my Express Entry profile after I've submitted it?
+      - How do I updated my Express Entry profile after submitting it?
+  - intent: faq/71
+    examples: |
+      - Where can I find my Express Entry profile number and/or Job Seeker  validation code?
+      - Where would I find the validation code or Express Entry profile number?
+      - I am looking for my job seeker validation code or Express Entry profile number. Where is it located in my profile?
+  - intent: faq/72
+    examples: |
+      - How do I withdraw my Express Entry profile?
+      - Am I able to withdraw my Express Entry profile?
+      - Is it possible for an Express Entry profile to be withdrawn?
+  - intent: faq/73
+    examples: |
+      - In an Express Entry profile, should I only include the minimum work experience needed to qualify for one of the programs, or should I include more?
+      - Is there an advantage to including more work experience than the minimum needed to qualify for one of the programs in my Express Entry profile?
+      - How much work experience should I include in my Express Entry profile?
+  - intent: faq/74
+    examples: |
+      - "In an Express Entry profile, what do you mean by the \u201Cdate the applicant first became qualified to practice this occupation.\u201D?"
+      - What does "date the applicant first became qualified to practice this occupation" mean in my Express Entry profile?
+      - I don't understand what is meant by "date the applicant first became qualified to practice this occupation" ?
+  - intent: faq/75
+    examples: |
+      - How do I fill out my Express Entry profile when I have maintained my status?
+      - If I've maintained my status, how should I fill out my Express Entry profile?
+      - How does maintained status affect my Express Entry profile?
+  - intent: faq/76
+    examples: |
+      - How do I get education points for Express Entry if I have 2 or more degrees or diplomas?
+      - How do I ensure that I will get full education points for Express Entry if I have more than 2 degrees or diplomas?
+      - What are the requirements to get education points for Express Entry if I've obtained 2 or more degrees or diplomas?
+  - intent: faq/77
+    examples: |
+      - If my Express Entry profile expires, will the system keep my information?
+      - My Express Entry profile is about to expire, will the system automatically keep my information?
+      - Will the system keep my information if my Express Entry profile expired?
+  - intent: faq/78
+    examples: |
+      - Can I be eligible for more than one program under Express Entry?
+      - If I meet the requirements, can I be eligible for multiple programs under express entry?
+      - Is it possible to meet the criteria for more than one program under Express Entry?
+  - intent: faq/79
+    examples: |
+      - Can I be invited to apply if I've lost my username or password?
+      - I've lost my username or password. Can I still be invited to apply?
+      - What happens if I lose my username or password and am invited to apply?
+  - intent: faq/80
+    examples: |
+      - Why did you change the number of points for a valid job offer in Express Entry?
+      - What was the purpose of changing the point system for a valid job offer under Express Entry?
+      - Why were the valid job offer points changed in Express Entry?
+  - intent: faq/81
+    examples: |
+      - Do I need a permanent job offer for Express Entry?
+      - Does Express Entry require that I have a permanent job?
+      - Do permanent jobs only count as a valid job offer for Express Entry?
+  - intent: faq/82
+    examples: |
+      - What makes a job offer valid under Express Entry?
+      - What does Express Entry consider to be a valid job offer?
+      - What is a valid job offer as per Express Entry?
+  - intent: faq/83
+    examples: |
+      - What do you mean by Primary Occupation?
+      - What is a Primary Occupation?
+      - I don't understand what is meant by Primary Occupation?
+  - intent: faq/84
+    examples: |
+      - How do I find my National Occupation Classification (NOC) code?
+      - Where can my National Occupation Classification code be found?
+      - What is my National Occupation Classification code?
+  - intent: faq/85
+    examples: |
+      - "Why didn\u2019t I get points for my job offer in Express Entry?"
+      - Why wasn't I eligible to recieve points from the ranking system for a job offer in Express Entry?
+      - What are the requirements to receive points for a job offer in Express Entry?
+  - intent: faq/86
+    examples: |
+      - I am working in Canada on a valid work permit. Does this count as a job offer?
+      - Does working in Canada on a valid work permit count as a job offer?
+      - If I am already working in Canada on a work permit can I use that to count as a job offer?
+  - intent: faq/87
+    examples: |
+      - There is no National Occupation Classification (NOC) code on my work permit. What should I put in my Express Entry profile?
+      - My work permit doesn't have a National Occupation Classification code, what should I put on my Express Entry profile?
+      - What should I enter on my Express Entry profile if my work permit doesn't have a National Occupation Classification code?
+  - intent: faq/88
+    examples: |
+      - If I am waiting for a new work permit and I have job offer points, do I have to remove the job offer from my Express Entry profile?
+      - I'm currently awaiting a new work permit and have job offer points. Should I remove the job offer from my Express Entry profile?
+      - Do I need to remove a job offer from my Express Entry profile if I have job offer points and am waiting for a new work permit?
+  - intent: faq/89
+    examples: |
+      - "What work experience can I count towards the Federal Skilled Trades Program\u2019s two-year requirement?"
+      - What types of work experience can be counted towards the two-year requirement for the Federal Skilled Trades Program?
+      - What work experience will count towards meeting the two-year requirement for the Federal Skilled Trades Program?
+  - intent: faq/90
+    examples: |
+      - Can I count student work experience toward the Express Entry work requirement?
+      - Does student work experience count towards Express Entry work requirements?
+      - Can work experience gained as a student satisfy Express Entry work requirements?
+  - intent: faq/91
+    examples: |
+      - "I have been working in Canada for the last six months but didn\u2019t get points for work experience. Why not?"
+      - Why didn't I receive points for work experience that I gained while working in Canada for the last 6 months?
+      - Why wasn't I awarded points for work experience while working in Canada for the last 6 months?
+  - intent: faq/92
+    examples: |
+      - "If I\u2019ve maintained my status while in the Express Entry pool, will I still get the job offer points?"
+      - Will I still get the job offer points if I've maintained my status while in the Express Entry pool?
+      - If I show in my Express Entry profile that I have a job offer while maintaining my status in the Express Entry pool, will I still get points for the job offer?
+  - intent: faq/93
+    examples: |
+      - What if I am invited to apply for Express Entry while waiting for a new work permit?
+      - I'm waiting for a new work permit and have been invited to apply for Express Entry. What happens now?
+      - What happens if I am invited to apply for Express Entry while I'm waiting for a new work permit?
+  - intent: faq/94
+    examples: |
+      - I was invited to apply through Express Entry but my work permit expired. What do I do?
+      - My work permit expired but I was invited to apply through Express Entry. What happens now?
+      - What should I do if I was invited to apply through Express Entry but my work permit expired?
+  - intent: faq/95
+    examples: |
+      - "I didn\u2019t get a Job Seeker Validation Code in the message you sent to my account. Why not?"
+      - Why wouldn't I have received a Job Seeker Validation Code in the message sent to my account?
+      - I received an Express Entry profile number but not a Job Seeker Validation Code. Why did this happen?
+  - intent: faq/96
+    examples: |
+      - Do I need a job offer to get into the Express Entry pool?
+      - Am I required to have a job offer to enter the Express Entry pool?
+      - Does the Express Entry pool require a job offer beforehand?
+  - intent: faq/97
+    examples: |
+      - How do I register with / create a Job Match account in Job Bank?
+      - How do I make a Job Match account in Job Bank?
+      - Do I have to register a Job Match account in Job Bank?
+  - intent: faq/98
+    examples: |
+      - I received a letter asking me to pay additional fees for my Express Entry application. How do I pay the additional fees?
+      - How do I pay the additional fees for my Express Entry application?
+      - How do I make additional payments or other fees for my Express Entry application?
+  - intent: faq/99
+    examples: |
+      - What do I do if I have technical problems when applying online?
+      - I'm having techical difficulties with my online application. What should I do?
+      - Who can I contact if I am having technical issues with my application process?
+  - intent: faq/100
+    examples: |
+      - What can I apply for online?
+      - What permits am I able to apply for online?
+      - Can I apply for all permits online?
+  - intent: faq/101
+    examples: |
+      - What is a personal document checklist?
+      - What is meant by a peronal document checklist?
+      - What is a personal document checklist used for?
+  - intent: faq/102
+    examples: |
+      - What is a personal reference code?
+      - What is meant by a personal reference code?
+      - What is a personal reference code used for?
+  - intent: faq/103
+    examples: |
+      - "What if I don\u2019t know how to answer a question in my online application?"
+      - I am unsure of how to answer a certain question in my online applicaiton. What should I do?
+      - I don't know how to answer a specific question in my online application, where do I go for a more detailed explanation?
+  - intent: faq/104
+    examples: |
+      - How do I exit and save my online application?
+      - Can I save my online application to complete at a later time?
+      - How do I exit and save my online application to come back to later?
+  - intent: faq/105
+    examples: |
+      - What does it mean when I electronically sign my online application?
+      - What is meant by "electronically signing" my application?
+      - How does electronically signing my online application work?
+  - intent: faq/106
+    examples: |
+      - What do I do if the online application system is down?
+      - What should I do if the system for my online application is down?
+      - How will I know if the online application system is down?
+  - intent: faq/107
+    examples: |
+      - Who can I contact if I have questions about GCKey or Sign-In Partner (SecureKey Concierge)?
+      - I have questions about GCKey or one of the other Sign-In Partners. Who should I speak to?
+      - Is there somebody I can speak to if I have questions regarding GCKey?
+  - intent: faq/108
+    examples: |
+      - How do I get a GCKey?
+      - How does one obtain a GCKey?
+      - Can I create a GCKey?
+  - intent: faq/109
+    examples: |
+      - What do I do if I lost my GCKey username or password?
+      - I've lost my GCKey username or password. What should I do?
+      - I can't find my GCKey username or password. How do I create a new password?
+  - intent: faq/110
+    examples: |
+      - "I recently reset my account, but I don\u2019t see my application. How can I get it back?"
+      - I can't see my application after recently resetting my account. Is there a way of recovering the application?
+      - How do I get my application back after resetting my account?
+  - intent: faq/111
+    examples: |
+      - How do I upload more supporting documents after I have already submitted my online application for permanent residence through Express Entry?
+      - Can I upload more supporting documents after aready having submitted my online appliation for PR through Express Entry?
+      - Is it possible to send more documents through my account after submitting my application for permanent residence through Express Entry?
+  - intent: faq/112
+    examples: |
+      - Who is a federal skilled worker?
+      - What kinds of workers fall under the category of a federal skilled worker?
+      - What occupations can make someone designated as a federal skilled worker?
+  - intent: faq/113
+    examples: |
+      - What is arranged employment for the Federal Skilled Worker Program?
+      - What does arranged employment mean under the Federal Skilled Worker Program?
+      - How does arranged employment work for someone under the Federal Skilled Worker Program?
+  - intent: faq/114
+    examples: |
+      - What are the minimum requirements to apply as a federal skilled worker?
+      - Are there any minimum requirements for federal skilled workers?
+      - How does one meet the requirements for federal skilled workers?
+  - intent: faq/115
+    examples: |
+      - How do I find my Canadian Language Benchmark (CLB) level with my test results?
+      - How can I confirm that I meet the minimum CLB level required with my test results?
+      - How can I find the CLB level of my language test results for IELTS?
+      - How can I find the CLB level of my language test results for CELPIP?
+      - How can I find the CLB level of my language test results for TEF?
+  - intent: faq/116
+    examples: |
+      - If I do not meet the language threshold in one of the four skill areas, can I still submit an Express Entry profile?
+      - Do I need to meet the threshold in all four language skill areas in order to be considered under the Federal Skilled Worker program?
+      - To be selected as a federal skilled worker, do I need to meet the language threshold in all four skill areas?
+  - intent: faq/117
+    examples: |
+      - What is the pass mark for the federal skilled worker selection grid?
+      - I am interested in the Federal Skilled worker stream. What is the minimum pass mark I need to meet on the Federal Skilled Worker selection grid?
+      - What minimum pass mark do I need on the federal skilled worker grid to be eligible for the federal skilled worker stream?
+  - intent: faq/118
+    examples: |
+      - Can I be chosen to apply for permanent residence as a federal skilled worker if I am 47 years old or over?
+      - If I am older than 47, can I still be chosen to apply for permanent residence as a federal skilled worker?
+      - Is it possible to still be chosen to apply for permanent residence under the federal skilled worker program if I am older than 47?
+  - intent: faq/119
+    examples: |
+      - The employer I work for temporarily in Canada wants to offer me a full-time job. Will I need a new LMIA for Express Entry?
+      - I am currently working temporarily for my employer in Canada but they would like to offer me a full-time position. Is a new LMIA needed for Express Entry?
+      - Is a new LMIA needed for Express Entry if the employer I am working for temporarily has offered me a full-time role?
+  - intent: faq/120
+    examples: |
+      - I work in Canada on an LMIA-exempt work permit. How do I get job offer points for Express Entry?
+      - How do I get job offer points for Express Entry if I am working in Canada on an LMIA-exempt work permit?
+      - Is is possible to get job offer points for Express Entry if my work permit is LMIA-exempt?
+  - intent: faq/121
+    examples: |
+      - I am working in Canada on a post-graduation work permit. Do I need a Labour Market Impact Assessment?
+      - Do I need a LMIA if I am working in Canada on a post-graduation work permit?
+      - Is a LMIA required to work in Canada on a post-graduation work permit?
+  - intent: faq/122
+    examples: |
+      - How can I get the most possible points for the Adaptability factor under the Federal Skilled Worker program?
+      - How do I obtain the maximum amount of points for the adaptability factor for the Federal Skilled Worker Program?
+      - If I am applying under the Federal Skilled Worker Program, how do I ensure that I can get the most possible points for the Adaptability factor?
+  - intent: faq/123
+    examples: |
+      - Can I count my work as a teaching assistant toward the work experience requirement?
+      - Can I count experience as a teaching assistant toward my total work experience requirement?
+      - I have experience as a research assistant at my post-secondary educational institution. Can I use this experience toward the work experience requirement?
+  - intent: faq/124
+    examples: |
+      - Can I re-use my Educational Credential Assessment (ECA) report to submit my Express Entry profile?
+      - Am I allowed to re-use my Educational Credential Assessment report for my Express Entry profile submission?
+      - Will my ECA report be accepted to submit my Express Entry profile even though I am re-using the assessment?
+  - intent: faq/125
+    examples: |
+      - What are the language requirements for the Federal Skilled Worker Program?
+      - How do I prove that I meet the language requirements for the Federal Skilled Worker Program?
+      - What language requirements must be met to be eligible for the Federal Skilled Worker Program?
+  - intent: faq/126
+    examples: |
+      - Are any Federal Skilled Worker immigration applicants exempt from the mandatory language test?
+      - Are there any exemptions from the mandatory language test for Federal Skilled Worker immigration applicants?
+      - May I be exempt from the language test requirement for the Federal Skilled Worker Program if English is my native language?
+  - intent: faq/127
+    examples: |
+      - How does a third-party language test help me with my immigration process?
+      - How could a language test from a third-party assist me with the immigration process?
+      - How could a language test taken via a third-party help me with the immigration process?
+  - intent: faq/128
+    examples: |
+      - Where can I take a third-party language test for my immigration application?
+      - I would like to take a third-party language test for my immigration application. Where can I go for this?
+      - Where can I go to take a third-party language test for my immigration application?
+  - intent: faq/129
+    examples: |
+      - How can I immigrate to the province of Quebec as a skilled worker?
+      - How does the application process work if I would like to immigrate to Quebec as a skilled worker?
+      - I would like to immigrate to Quebec under the Federal Skilled Worker program. How do I apply for this?
+  - intent: faq/130
+    examples: |
+      - Do I need an Educational Credential Assessment (ECA) to apply as a federal skilled worker?
+      - Is an Educational Credential Assessment required for my federal skilled worker application?
+      - To apply as a federal skilled worker do I need to have a valid Educational Credential Assessment?
+  - intent: faq/131
+    examples: |
+      - Where can I get an educational credential assessment (ECA)?
+      - Are there certain organizations that I must get an ECA from?
+      - Where can I go to get an ECA for my immigration application?
+  - intent: faq/132
+    examples: |
+      - Does an Educational Credential Assessment (ECA) mean that I can be licensed in a regulated profession?
+      - Does getting an ECA mean that my work experience and professional credentials are automatically recognized in Canada?
+      - Do ECAs validate my work experience and credentials so that they are recgonzied in Canada?
+  - intent: faq/133
+    examples: |
+      - How much does an Educational Credential Assessment (ECA) cost, and how long does it take to get one?
+      - How long does it take to obtain an Educational Credential Assessment and how much do they cost?
+      - Is there a standardized price for getting an ECA? How long will it take to get it?
+  - intent: faq/134
+    examples: |
+      - How long is an Educational Credential Assessment (ECA) report valid for?
+      - Are ECAs valid for a certain period of time?
+      - How long can ECAs be valid for?
+  - intent: faq/135
+    examples: |
+      - What credential should I get assessed for immigration purposes?
+      - Which of my credentials should be assessed in order to obtain the most points for immigration purposes?
+      - If I have more than one degree or diploma, how do I choose which credential I should have assessed?
+  - intent: faq/136
+    examples: |
+      - Am I eligible to apply as a permanent resident under the Canadian Experience Class?
+      - How do I determine my eligibility as a permanent resident under the Canadian Experience Class?
+      - How is eligiblity determined for applying as a permanent resident under the Canadian Experience Class?
+  - intent: faq/137
+    examples: |
+      - How do I apply to immigrate if I have work experience in Canada?
+      - If I have work experience in Canada, how can I apply to immigrate?
+      - What is the process for applying to immigrate if I have previous Canadian work experience?
+  - intent: faq/138
+    examples: |
+      - Who cannot apply for permanent residence under the Canadian Experience Class?
+      - Who is ineligible for permanent residence under the Canadian Experience Class?
+      - How is ineligiblity determined when applying for permanent residence under the Canadian Experience Class?
+  - intent: faq/139
+    examples: |
+      - Can I complete an Express Entry profile before I have a year of work experience?
+      - Should I complete my Express Entry profile before having a year of work experience?
+      - If I do not have a full year of work experience, should I still complete an Express Entry profile?
+  - intent: faq/140
+    examples: |
+      - If I worked or studied in Canada illegally, can I use that experience in my Canadian Experience Class application?
+      - Can I use experienced gained without authorization in my Canadian Experience Class application?
+      - If I have experience from working or studying in Canada illegally, can I use that towards my application under the Canadian Experience Class?
+  - intent: faq/141
+    examples: |
+      - "Do I need a medical exam to apply for permanent residence, if I\u2019ve already had one for my permit?"
+      - If I already had a medical exam for my work permit, do I need another one to apply for permanent residence?
+      - Do I need to have another medical to apply for permanent residence if I had a medical exam previously for my permit?
+  - intent: faq/142
+    examples: |
+      - Can I apply under the Canadian Experience Class if I am currently living in Quebec and I plan to live elsewhere in Canada?
+      - If I am currently living in Quebec but plan to live elsewhere in Canada, can I apply for the Canadian Experience Class?
+      - Am I allowed to apply under the Canadian Experience Class if I currently am working in Quebec but plan to live elsewhere in Canada?
+  - intent: faq/143
+    examples: |
+      - Can I renew my post-graduation work permit?
+      - Can post-graduation work permits be renewed?
+      - Is it possible to renew a post-graduation work permit?
+  - intent: faq/144
+    examples: |
+      - Do skilled temporary foreign workers need a certain education level to apply for permanent residence?
+      - Is there a certain education level require to apply for permanent residence as a skilled temporary foreign worker?
+      - Do I need a certain level of education to apply to stay permanently in Canada as a temporary foreign worker?
+  - intent: faq/145
+    examples: |
+      - Can I still be eligible for Canadian Experience Class if I have returned to my country?
+      - If I have returned to my country, can I still be eligible to apply under the Canadian Experience Class?
+      - Is it true that returning to my country won't impact my eligiblity to apply under the Canadian Experience Class?
+  - intent: faq/146
+    examples: |
+      - What are the language requirements I need to meet in order to apply for permanent residence under the Canadian Experience Class?
+      - What is the minimum language requirement that I need to have to apply for permanent residence under the Canadian Experience Class?
+      - Under the Canadian Experience Class, what level of language proficiency do I need to meet in order to be eligible to apply for permanent residence?
+  - intent: faq/147
+    examples: |
+      - I graduated a while ago, then earned one-year of work experience and now I am back in school. Can I apply for permanent residence under the Canadian Experience Class?
+      - Can I apply for permanent residence under the Canadian Experience Class even if I graduated a while ago, earned one-year of work experience, and now am back in school?
+      - Under the Canadian Experience Class, am I eligible to apply for permanent residence if I graduated, earned one year of work experience, and then returned to school once again?
+  - intent: faq/148
+    examples: |
+      - I am currently studying in Canada. Can I immigrate permanently?
+      - How can I immigrate to Canada permanenty if I am currently studying in Canada?
+      - Can I immigrate to Canada permanently if I am currently studying in Canada?
+  - intent: faq/149
+    examples: |
+      - I am from an English-speaking country. Do I still need to provide proof of language ability to apply under the Canadian Experience Class?
+      - Is everyone required to provide proof of language proficiency to apply under the Canadian Experience Class even if they're from an English-speaking country?
+      - Will I still need to prove my language ability in English or French if I am applying under the Canadian Experience Class and I am from an English or French-speaking country?
+  - intent: faq/150
+    examples: |
+      - I have a PhD and am in a post-doctoral program. Do I qualify for the Canadian Experience Class?
+      - Will I qualify for the Canadian Experience Class if I have a PhD and am in a post-doctoral program?
+      - How can I qualify for the Canadian Experience Class if I am in a post-doctoral program and have obtained a PhD?
+  - intent: faq/151
+    examples: |
+      - What kind of work experience do I need to apply for permanent residence under the Canadian Experience Class?
+      - To apply for permanent residence under the Canadian Experience Class, what kind of work experience is needed?
+      - To apply for permanent residence under the Canadian Experience Class, what kind of skilled work must my experience include?
+  - intent: faq/152
+    examples: |
+      - Can I count both high-skilled and low-skilled experience toward the work experience required to apply under the Canadian Experience Class?
+      - Am I allowed to include both high and low-skilled experience towards the required experience needed to apply under the Canadian Experience Class?
+      - I am applying under the Canadian Experience Class and was wondering if I am able to include low and high-skilled experience towards the requirement?
+  - intent: faq/153
+    examples: |
+      - Can I count experience I got in Canada while waiting for a decision on my refugee application?
+      - Does experience gained while waiting for a decision on my refugee application count under the Canadian Experience Class?
+      - If I was a refugee claimant who had authorization to work or study while waiting for a decision on my claim, can I use that experience I got while in Canada toward my requirement to apply under the Canadian Experience Class?
+  - intent: faq/154
+    examples: |
+      - Can I count part-time work toward the work experience requirement?
+      - Does part-time work count toward the required experience?
+      - Can I use part-time work experience towards the work experience requirement?
+  - intent: faq/155
+    examples: |
+      - While working under a post-graduate work permit to get experience to qualify for the Canadian Experience Class, can I switch employers?
+      - Can I switch employers while working under a post-graduate work permit to get experience to qualify for the Canadian Experience Class?
+      - In order to qualify for the Canadian Experience Class, am I allowed to switch employers whilst working under a post-graduate work permit?
+  - intent: faq/156
+    examples: |
+      - How much work experience do I need to be eligible for the Canadian Experience Class?
+      - How much work experience is needed in order to meet the eligibility requirements for the Canadian Experience Class?
+      - To be eligible for permanent residence under the Canadian Experience Class, how much work experience do I need to have?
+  - intent: faq/157
+    examples: |
+      - Does the one year of work experience to qualify under the Canadian Experience Class include non-paid employment? Is there a minimum wage requirement for qualifying employment?
+      - Does non-paid employment count toward the one year of work experience to qualify under the Canadian Experience Class?
+      - Does non-paid employment qualify under the Canadian Experience Class for the minimum one-year of work experience?
+  - intent: faq/158
+    examples: |
+      - Are any Federal Skilled Worker immigration applicants exempt from the mandatory language test?
+      - Are there any exemptions from the mandatory language test for Federal Skilled Worker immigration applicants?
+      - Can I be exempt from the mandatory language test if I am applying to immigrate to Canada under the Federal Skilled Worker program?
+  - intent: faq/159
+    examples: |
+      - What are the language requirements for the Federal Skilled Trades Program?
+      - What level of language proficiency do I need to immigrate under the Federal Skilled Trades Program?
+      - What are the language requirements to immigrate under the Federal Skilled Trades Program?
+  - intent: faq/160
+    examples: |
+      - What language test do I need for Express Entry?
+      - What is the minimum language requirement that I need to have for Express Entry?
+      - What are the language test requirements for Express Entry?
+  - intent: faq/161
+    examples: |
+      - What is a certificate of qualification for the Federal Skilled Trades Program?
+      - What does a certificate of qualification for the Federal Skilled Trades Program prove?
+      - What is the purpose of a certificate of qualification for the Federal Skilled Trades Program?
+  - intent: faq/162
+    examples: |
+      - How can I get a certificate of qualification from a provincial, territorial or federal body for the Federal Skilled Trades Program?
+      - Who do I contact to obtain a certificate of qualification for the Federal Skilled Trades Program?
+      - Where do I go to get a certificate of qualification for the Federal Skilled Trades Program?
+  - intent: faq/163
+    examples: |
+      - How can I qualify for the Federal Skilled Trades Program if the province or territory where I plan to live and work does not give Certificates of Qualification in my trade?
+      - What happens if the province I plan to live and work in does not give Certificates of Qualification in my trade? Can I still qualify for the Federal Skilled Trades Program?
+      - Can I still qualify for the Federal Skilled Trades Program if Certificates of Qualification for my trade are not given by the province I plan to live and work in?
+  - intent: faq/164
+    examples: |
+      - What is a qualifying job offer for the Federal Skilled Trades Program?
+      - What is considered to be a qualifying job offer under the Federal Skilled Trades Program?
+      - Under the Federal Skilled Trades Program, what jobs are considered to be qualifying?
+  - intent: faq/165
+    examples: |
+      - If I come to Canada under the Federal Skilled Trades Program, will I be qualified to work in any province or territory?
+      - Will I be qualified to work in any province or territory if I come to Canada under the Federal Skilled Trades Program?
+      - Under the Federal Skilled Trades Program, will I be qualified to work in any province or territory if I come to Canada?
+  - intent: faq/166
+    examples: |
+      - How do I get points for a provincial nomination under Express Entry?
+      - Under Express Entry, how do I get points for a provincial nomination?
+      - What provincial nomination certificate must I have in order to get points for said nomination under Express Entry?
+  - intent: faq/167
+    examples: |
+      - I have a nomination certificate from a province or territory. How do I apply through Express Entry?
+      - How do I apply through Express Entry if I have a nomination certificate from a province or territory?
+      - What is the requirement for provincial nominees to use Express Entry?
+  - intent: faq/168
+    examples: |
+      - Why are the requirements for provincial nominees different under  Express Entry?
+      - Why are different things required for provincial nominees under Express Entry?
+      - What is different about the requirements for provincial nominees under Express Entry?

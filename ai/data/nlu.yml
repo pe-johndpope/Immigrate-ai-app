@@ -1,0 +1,358 @@
+version: "3.0"
+nlu:
+  - intent: request_agent
+    examples: |
+      - Can I speak to an agent?
+      - May I talk to an agent?
+  - intent: need_help
+    examples: |
+      - I need help
+      - Help me immigrate
+      - How can I come to Canada,
+      - I want to come to Canada
+      - I need help now
+      - Please help me
+      - I need help to immigrate to Canada
+  - intent: faq/letter_of_support
+    examples: |
+      - How can I get support from a designated organization for the startup visa?
+      - How can I get the letter of support to apply for the startup visa?
+  - intent: faq/why_canada
+    examples: |
+      - Why should I migrate to Canada?
+      - Whats so nice about Canada?
+      - Why should I visit Canada?
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - Yeah
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+  - intent: request_eligibility
+    examples: |
+      - Am I eligible to travel to Canada?
+      - May I enter Canada?
+  - intent: inform
+    examples: |
+      - I'd like to [move](travel_purposes) there
+      - I'd like to [visit](travel_purposes) there
+      - I want to [study](travel_purposes) there
+      - I want to [work](travel_purposes:work)
+      - I want to [Work](travel_purposes:work)
+      - I'd like a [vacation](travel_purposes)
+      - I have a [Bachelor's Degree](education)
+      - I completed a [Masters](education)
+      - I completed my [Doctorate](education)
+      - [visit](travel_purposes)
+      - [transit](travel_purposes)
+      - I'd like to [transit](travel_purposes) through Canada
+      - [alberta](provinces)
+  - lookup: travel_purposes
+    examples: |
+      - move
+      - visit
+      - work
+      - study
+      - vacation
+      - transit
+  - lookup: education
+    examples: |
+      - Bachelor's Degree
+      - Associate's Degree
+      - High School Diploma
+      - Masters
+      - Doctorate
+  - lookup: desired_province
+    examples: |
+      - Alberta
+      - British Columbia
+      - New Brunswick
+      - Newfoundland and Labrador
+      - Nova Scotia
+      - Prince Edward Island
+      - Ontario
+      - Manitoba
+      - Quebec
+      - Saskatchewan
+      - Yukon
+  - lookup: english_test
+    examples: |
+      - CELPIP
+      - IELTS
+      - neither
+  - lookup: countries
+    examples: |
+      - Afghanistan
+      - Albania
+      - Algeria
+      - Andorra
+      - Angola
+      - Antigua and Barbuda
+      - Argentina
+      - Armenia
+      - Australia
+      - Austria
+      - Azerbaijan
+      - The Bahamas
+      - Bahrain
+      - Bangladesh
+      - Barbados
+      - Belarus
+      - Belgium
+      - Belize
+      - Benin
+      - Bhutan
+      - Bolivia
+      - Bosnia and Herzegovina
+      - Botswana
+      - Brazil
+      - Brunei
+      - Bulgaria
+      - Burkina Faso
+      - Burundi
+      - Cabo Verde
+      - Cambodia
+      - Cameroon
+      - Canada
+      - Central African Republic
+      - Chad
+      - Chile
+      - China
+      - Colombia
+      - Comoros
+      - Congo, Democratic Republic of the
+      - Congo, Republic of the
+      - Costa Rica
+      - Côte d’Ivoire
+      - Croatia
+      - Cuba
+      - Cyprus
+      - Czech Republic
+      - Denmark
+      - Djibouti
+      - Dominica
+      - Dominican Republic
+      - East Timor (Timor-Leste)
+      - Ecuador
+      - Egypt
+      - El Salvador
+      - Equatorial Guinea
+      - Eritrea
+      - Estonia
+      - Eswatini
+      - Ethiopia
+      - Fiji
+      - Finland
+      - France
+      - Gabon
+      - The Gambia
+      - Georgia
+      - Germany
+      - Ghana
+      - Greece
+      - Grenada
+      - Guatemala
+      - Guinea
+      - Guinea-Bissau
+      - Guyana
+      - Haiti
+      - Honduras
+      - Hungary
+      - Iceland
+      - India
+      - Indonesia
+      - Iran
+      - Iraq
+      - Ireland
+      - Israel
+      - Italy
+      - Jamaica
+      - Japan
+      - Jordan
+      - Kazakhstan
+      - Kenya
+      - Kiribati
+      - Korea, North
+      - Korea, South
+      - Kosovo
+      - Kuwait
+      - Kyrgyzstan
+      - Laos
+      - Latvia
+      - Lebanon
+      - Lesotho
+      - Liberia
+      - Libya
+      - Liechtenstein
+      - Lithuania
+      - Luxembourg
+      - Madagascar
+      - Malawi
+      - Malaysia
+      - Maldives
+      - Mali
+      - Malta
+      - Marshall Islands
+      - Mauritania
+      - Mauritius
+      - Mexico
+      - Micronesia, Federated States of
+      - Moldova
+      - Monaco
+      - Mongolia
+      - Montenegro
+      - Morocco
+      - Mozambique
+      - Myanmar (Burma)
+      - Namibia
+      - Nauru
+      - Nepal
+      - Netherlands
+      - New Zealand
+      - Nicaragua
+      - Niger
+      - Nigeria
+      - North Macedonia
+      - Norway
+      - Oman
+      - Pakistan
+      - Palau
+      - Panama
+      - Papua New Guinea
+      - Paraguay
+      - Peru
+      - Philippines
+      - Poland
+      - Portugal
+      - Qatar
+      - Romania
+      - Russia
+      - Rwanda
+      - Saint Kitts and Nevis
+      - Saint Lucia
+      - Saint Vincent and the Grenadines
+      - Samoa
+      - San Marino
+      - Sao Tome and Principe
+      - Saudi Arabia
+      - Senegal
+      - Serbia
+      - Seychelles
+      - Sierra Leone
+      - Singapore
+      - Slovakia
+      - Slovenia
+      - Solomon Islands
+      - Somalia
+      - South Africa
+      - Spain
+      - Sri Lanka
+      - Sudan
+      - Sudan, South
+      - Suriname
+      - Sweden
+      - Switzerland
+      - Syria
+      - Taiwan
+      - Tajikistan
+      - Tanzania
+      - Thailand
+      - Togo
+      - Tonga
+      - Trinidad and Tobago
+      - Tunisia
+      - Turkey
+      - Turkmenistan
+      - Tuvalu
+      - Uganda
+      - Ukraine
+      - United Arab Emirates
+      - United Kingdom
+      - United States
+      - Uruguay
+      - Uzbekistan
+      - Vanuatu
+      - Vatican City
+      - Venezuela
+      - Vietnam
+      - Yemen
+      - Zambia
+      - Zimbabwe

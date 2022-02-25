@@ -1,0 +1,219 @@
+nlu:
+  - intent: faq/227
+    examples: |
+      - How can I check the status of my application?
+      - Where do I find my application status?
+      - Is there a way to check on the status of my application?
+  - intent: faq/228
+    examples: |
+      - How long will it take to process my application?
+      - How long are the application processing times?
+      - How long will it take for my application to be processed?
+  - intent: faq/229
+    examples: |
+      - What happens after I send in my application?
+      - I've sent in my application. What happens next?
+      - What are the next steps following the submission of an application?
+  - intent: faq/230
+    examples: |
+      - How long must I stay in Canada to keep my permanent resident status?
+      - How long do I need to be in Canada in order to maintain my permanent resident status?
+      - How many days must I be in Canada to keep my status as a permanent resident?
+  - intent: faq/231
+    examples: |
+      - Can I lose my permanent resident status?
+      - How can I lose my status as a permanent resident?
+      - Is it possible to lose permanent resident status?
+  - intent: faq/232
+    examples: |
+      - Can I give up my permanent resident status?
+      - How can I give up my status as a permanent resident?
+      - How do I renounce my permanent resident status?
+  - intent: faq/233
+    examples: |
+      - Why would I give up my permanent resident status?
+      - Why would I want to renounce my permanent resident status?
+      - What are some reasons for giving up one's status as a permanent resident?
+  - intent: faq/234
+    examples: |
+      - What is the difference between the Change of Address and the Address Notification online services?
+      - Is there a difference between the Change of Address and the Address Notification services online?
+      - How are the Address Notification and Change of Adress online services different?
+  - intent: faq/235
+    examples: |
+      - What does the immigration category on my Confirmation of Permanent Residence document mean?
+      - I noticed an immigration category on my Confirmation of Permanent Residence. What does this mean?
+      - What is the purpose of the immigration category on my Confirmation of Permanent Residence?
+  - intent: faq/236
+    examples: |
+      - How can I determine whether I can apply for permanent residence?
+      - How do I know if I can apply for permanent residence?
+      - How can I find out if I am eligible to apply for permanent residency?
+  - intent: faq/237
+    examples: |
+      - If I am granted citizenship, what happens to my permanent resident card?
+      - What happens to my permanent resident card if I am granted citizenship?
+      - Do I still need my permanent resident card if I am granted citizenship?
+  - intent: faq/238
+    examples: |
+      - "My family and I applied for permanent residence. Why can\u2019t I see the application status on CAS?"
+      - Why can't I find my application status for permanent residence on CAS?
+      - Why am I unable to see my permanent residence application status on CAS?
+  - intent: faq/239
+    examples: |
+      - Which family members can come with me to Canada when I immigrate?
+      - Which of my family members are able to come with me when I immigrate to Canada?
+      - Which of my family members are eligible to come to Canada with me when I immigrate?
+  - intent: faq/240
+    examples: |
+      - How do I renew my permanent resident card?
+      - Can I renew my permanent resident card?
+      - What are the steps for permanent resident card renewal?
+  - intent: faq/241
+    examples: |
+      - How long will it take to process my PR card?
+      - How long does PR card processing take?
+      - What is the processing time for PR cards?
+  - intent: faq/242
+    examples: |
+      - How can I get a permanent resident card?
+      - How do I apply for a PR card?
+      - Where do I get a PR card?
+  - intent: faq/243
+    examples: |
+      - What should I do if my PR card has been lost, stolen or destroyed?
+      - What do I do if I lose my PR card?
+      - My PR card has been lost or stolen. What should I do?
+  - intent: faq/244
+    examples: |
+      - What happens if my PR card expires?
+      - My PR card has expired. What should I do?
+      - If my PR card expires, what happens to my PR status?
+  - intent: faq/245
+    examples: |
+      - I am a new permanent resident of Canada. Do I need to apply for a permanent resident card?
+      - Do I need to apply for a PR card if I am a new permanent resident of Canada?
+      - Is there an application process for getting a permanent resident card if I am a new permanent resident of Canada?
+  - intent: faq/246
+    examples: |
+      - How do I pay the fee for my permanent resident card?
+      - What are the methods of payment for my permanent resident card fee?
+      - What can I use to pay the fee for my permanent resident card?
+  - intent: faq/247
+    examples: |
+      - What should I do if my new permanent resident card has a mistake or something is missing?
+      - My permanent card has a mistake on it. What should I do?
+      - What do I do if my name is spelt wrong on my permanent resident card?
+  - intent: faq/248
+    examples: |
+      - Will I get my permanent resident card by mail?
+      - If I am a new permanent resident living in Canada, how will I receive my PR card?
+      - Will my PR card be delivered to me by mail?
+  - intent: faq/249
+    examples: |
+      - How much does a permanent resident card cost?
+      - What is the fee for a permanent resident card?
+      - How much does it cost to apply for a permanent resident card?
+  - intent: faq/250
+    examples: |
+      - Should I submit photos  with my PR card application?
+      - Do I need to submit photos along with my PR card application?
+      - Are photos required to be submitted along with my PR card application?
+  - intent: faq/251
+    examples: |
+      - If I am granted citizenship, what happens to my permanent resident card?
+  - intent: faq/252
+    examples: |
+      - When should I apply for a permanent resident card?
+      - When is the best time to apply for a permanent resident card?
+      - When do I apply for a permanent resident card?
+  - intent: faq/253
+    examples: |
+      - How can I avoid delays or refusals in processing my permanent resident card application?
+      - Is there a way to avoid delays in processing my application for PR?
+      - What is the best way to avoid delays or refusals in processing my application for PR card?
+  - intent: faq/254
+    examples: |
+      - Who can apply for a permanent resident card?
+      - Who is eligible to apply for a permanent resident card?
+      - Can I apply for a permanent resident card?
+  - intent: faq/255
+    examples: |
+      - I was told that my permanent resident card was sent to me but I did not get it yet. What should I do?
+      - What should I do if I was told that my permanent resident card was sent to me but I still have not received it?
+      - It's been more than 6 weeks since I was told that my permanent resident card was sent to me and I still haven't received it. What should I do?
+  - intent: faq/256
+    examples: |
+      - I legally changed my name. How do I update my PR card?
+      - If I legally change my name how do I update my PR card?
+      - How do I update my PR card after legally changing my name?
+  - intent: faq/257
+    examples: |
+      - I have reclaimed my Indigenous name. How do I update my PR card?
+      - Can I update my PR card after reclaiming my Indigenous name?
+      - How do I update my PR card after reclaiming my Indigenous name?
+  - intent: faq/258
+    examples: |
+      - Can I travel outside Canada without my PR card?
+      - Am I allowed to travel outside of Canada without my permanent resident card?
+      - Do I need to have my PR card with me if I travel outside of Canada?
+  - intent: faq/259
+    examples: |
+      - Can my time abroad count toward my permanent resident status?
+      - How can my time spent travelling abroad count towards my PR status?
+      - What are the conditions for time being spent abroad counting towards PR status?
+  - intent: faq/260
+    examples: |
+      - I need to leave Canada and I do not have a permanent resident card. Can I later return to Canada without a PR card?
+      - Will I be able to return to Canada if I leave the country but do not yet have a PR card?
+      - Are you allowed to return to Canada without having received a PR card yet?
+  - intent: faq/261
+    examples: |
+      - "What do I do if my PR card isn\u2019t ready before I travel?"
+      - What should I do if I don't receive my PR card before travelling?
+      - What should I do if I need to travel but my PR card isn't ready?
+  - intent: faq/262
+    examples: |
+      - What happens if my permanent resident card expires while I am outside Canada?
+      - What should I do if my PR card expires while I am abroad?
+      - What will happen if I am abroad when my PR card expires?
+  - intent: faq/263
+    examples: |
+      - I am outside Canada and do not have a PR card. How can I return to Canada?
+      - How do I return to Canada if I do not have a PR card?
+      - I went travelling abroad and do not have a PR card. How can I come back to Canada?
+  - intent: faq/264
+    examples: |
+      - Can I get my permanent resident card processed urgently?
+      - Is there a way to process my PR card urgently?
+      - Is there an urgent processing stream for PR cards?
+  - intent: faq/265
+    examples: |
+      - How do I prove that I need urgent processing for my permanent resident card application?
+      - What proof can be used to show that I require my permanent resident card application to be processed urgently?
+      - What proof can I use to support my request to have my PR card application processed urgently?
+  - intent: faq/266
+    examples: |
+      - "What\u2019s the pilot project to improve the family reunification process for protected persons?"
+      - How is the family reunification process for eligible protected persons being improved?
+      - What changes are coming to the family reunification process for eligible protected persons?
+  - intent: faq/267
+    examples: |
+      - Am I eligible to apply to the pilot project for my dependent family members living outside Canada?
+      - How do I know if myself and my dependent family members are eligible to apply to the family reunification pilot project?
+      - How is eligibility for the family reunification pilot project determined?
+  - intent: faq/268
+    examples: |
+      - I applied for permanent residence as a protected person. Does my family abroad qualify for the processing pilot?
+      - Does my family living abroad qualify for the processing pilot if I applied for permanent residence as a protected person?
+      - I am a protected person who applied for permanent residence in 2020. Will my family living abroad qualify for the processing pilot?
+  - intent: faq/269
+    examples: |
+      - What regions are included in the pilot project to improve the family reunification process for protected persons?
+      - Are there specific regions that are included in the family reunification process for protected persons pilot project?
+      - Which regions will be included in the family reunification process for protected persons pilot project?
+  - intent: faq/270
+    examples: |
+      - "What should I do if I\u2019m eligible for the protected persons family reunification pilot, but I can\u2019t find my dependent family members, or they don\u2019t want to come to Canada?"
+      - If I am eligible for the protected persons family reunification pilot but my dependents don't want to come to Canada, what should I do?
+      - I am eligible for the protected persons family reunification process but I can't find my dependent family members. What should I do?

@@ -1,0 +1,171 @@
+nlu:
+  - intent: faq/169
+    examples: |
+      - How can I qualify to immigrate to Canada as a self-employed person?
+      - As a self-employed person, what do I need in order to qualify to immigrate to Canada?
+      - What requirements need to be met in order to qualify to immigrate to Canada as a self-employed person?
+  - intent: faq/170
+    examples: |
+      - How do I immigrate to Canada to become a self-employed person?
+      - If I am self-employed, how can I immigrate to Canada?
+      - "How can I immigrate to Canada as a self-employed person? "
+  - intent: faq/171
+    examples: |
+      - What is the relevant experience requirement to immigrate as self-employed persons?
+      - I would like to immigrate to Canada as a self-employed individual, what relevant experience is required?
+      - What is qualifies as relevant experience to be eligible to immigrate as a self-employed person?
+  - intent: faq/172
+    examples: |
+      - Under the Self-Employed Persons Program, what does cultural activities mean?
+      - What are cultural activities as per the Self-Employed Persons Program?
+      - Which jobs are considered cultural activities under the self-employed persons program?
+  - intent: faq/173
+    examples: |
+      - Under the Self-Employed Persons Program, what is meant by a significant contribution?
+      - What kind of contribution is considered a "significant contribution" as per the Self-Employed Persons Program?
+      - How is "significant contribution" defined under the Self-Employed Persons Program?
+  - intent: faq/174
+    examples: |
+      - Is there a net worth requirement for the self-employed program?
+      - Do I need to have a minimum net worth for the self-employed program?
+      - I want to apply to the self-employed program. What is the minimum net worth requirement?
+  - intent: faq/175
+    examples: |
+      - What are the language requirements to immigrate under the program for self-employed people?
+      - Are there language requirements to apply under the self-employed program?
+      - What is the minimum language requirement to qualify as a person under the self-employed program?
+  - intent: faq/176
+    examples: |
+      - How can I qualify for the Start-up Visa Program?
+      - What are the requirements to qualify for the Start-up Visa Program?
+      - How can I be eligible for the Start-up Visa Program?
+  - intent: faq/177
+    examples: |
+      - What is the application process for the Start-up Visa Program?
+      - How do I apply for the Start-up Visa Program?
+      - How does the application process for the Start-up Visa work?
+  - intent: faq/178
+    examples: |
+      - How can I get support from a designated organization?
+      - How do I pitch my idea to get support from a designated organization?
+      - What is the process for gaining support from a designated organization?
+  - intent: faq/179
+    examples: |
+      - What is the difference between support from venture capital funds, angel investor groups, and business incubators?
+      - How is support different between angel investors, business incubators, and venture capital funds?
+      - Is there a difference in support between venture capital funds, angel investor groups, and business incubators?
+  - intent: faq/180
+    examples: |
+      - Who will review my Start-up Visa Program application?
+      - Who reviews my application for the Start-up Visa Program?
+      - What is the process for reviewing my application for the Start-up Visa Program?
+  - intent: faq/181
+    examples: |
+      - Is there an application form to get a letter of support from a designated organization?
+      - Do I have to apply to get a letter of support from a designated organization?
+      - Is there a form or application process that I have to complete to obtain a letter of support from a designated organization?
+  - intent: faq/182
+    examples: |
+      - What level of language proficiency do I need for a start-up visa?
+      - Are there language requirements for the Start-up Visa program?
+      - What is the minimum language requirement to qualify for the Start-up Visa program?
+  - intent: faq/183
+    examples: |
+      - How much money do I need to cover living expenses when I get to Canada through the Start-up Visa Program?
+      - Do I need to have a minimum net worth for the Start-Up Visa program?
+      - Under the Start-up Visa Program, what is the minimum amount of money that I'll need to cover living expenses once I get to Canada?
+  - intent: faq/184
+    examples: |
+      - Can an entrepreneurial team immigrate to Canada together through the Start-up Visa Program?
+      - Can more than one person from a business immigrate together through the Start-up Visa Program?
+      - Can multiple people from the same business come to Canada through the Start-up Visa Program?
+  - intent: faq/185
+    examples: |
+      - What is an essential person under the Start-up Visa Program?
+      - Who is considered an essential person through the Start-up Visa Program?
+      - What is the definition of an essential person as per the Start-up Visa Program?
+  - intent: faq/186
+    examples: |
+      - What is the minimum investment that I need to apply through the Start-up Visa Program?
+      - Do I have to have a minimum investment in order to apply for the Start-up Visa Program?
+      - In order to be eligible for the Start-up Visa Program, what is the minimum investment required?
+  - intent: faq/187
+    examples: |
+      - Why is there a different minimum investment from a venture capital fund and an angel investor group?
+      - Why is there a difference between venture capital fund and angel investor group minimum investment amounts?
+      - How was the different in minimum investment amounts between an angel investor group and venture capital fund determined?
+  - intent: faq/188
+    examples: |
+      - Do I have to invest my own money if I want to apply through the Start-up Visa Program?
+      - Am I required to invest any of my own money in order to be eligible for the Start-up Visa Program?
+      - Do I need to invest any of my personal money as a part of the required minimum investment amount?
+  - intent: faq/189
+    examples: |
+      - What happens if I receive investment support from more than one designated organization?
+      - Is it possible to receive investment support from multiple designated organizations?
+      - Am I allowed to obtain investment support from more than one kind of designated organization?
+  - intent: faq/190
+    examples: |
+      - If I immigrate through the Start-up Visa Program, what happens if my business fails?
+      - What happens if my business fails after I immigrate to Canada under the Start-up Visa Program?
+      - Will my status as a permanent resident be affected if my business fails after immigrating to Canada through the Start-up Visa Program?
+  - intent: faq/191
+    examples: |
+      - Do I need a language test to immigrate to Canada?
+      - What kind of language test do I need to immigrate to Canada?
+      - Are there language test requirements to immigrate to Canada?
+  - intent: faq/192
+    examples: |
+      - What are the language requirements for the Federal Skilled Worker Program?
+      - What level of language proficiency do I need for the Federal Skilled Worker Program?
+      - What is the minimum language requirement to qualify for the Federal Skilled Worker program?
+  - intent: faq/193
+    examples: |
+      - What are the language requirements for the Federal Skilled Trades Program?
+      - What level of language proficiency do I need for the Federal Skilled Trades Program?
+      - What is the minimum language requirement to qualify for the Federal Skilled Trades program?
+  - intent: faq/194
+    examples: |
+      - What are the language requirements for provincial nominees?
+      - What level of language proficiency do I need as a provincial nominee?
+      - What is the minimum language requirement for provincial nominees?
+  - intent: faq/195
+    examples: |
+      - What are the language requirements to immigrate under the program for self-employed people?
+      - What level of language proficiency do I need to immigrate as a self-employed person?
+      - What is the minimum language requirement for those coming to Canada as a self-employed person?
+  - intent: faq/196
+    examples: |
+      - What language test do I need for Express Entry?
+      - What is the minimum language requirement that I need to have for Express Entry?
+      - What are the language test requirements for Express Entry?
+  - intent: faq/197
+    examples: |
+      - Are any Federal Skilled Worker immigration applicants exempt from the mandatory language test?
+      - Are there any exemptions from the mandatory language test for Federal Skilled Worker applicants?
+      - Can I be exempt from the mandatory language test if I am applying to immigrate to Canada under the Federal Skilled Worker program?
+  - intent: faq/198
+    examples: |
+      - How does a third-party language test help me with my immigration process?
+      - How could a language test from a third-party assist me with the immigration process?
+      - How could a language test taken via a third-party help me with the immigration process?
+  - intent: faq/199
+    examples: |
+      - Where can I take a third-party language test for my immigration application?
+      - Who do I contact to take a third-party language test for my immigration application?
+      - I would like to take a third-party language test for my immigration application. Where can I go for this?
+  - intent: faq/200
+    examples: |
+      - How do I apply to immigrate to Canada as a provincial nominee?
+      - How does the provincial nominee application process work?
+      - I would like to immigrate to Canada under the provincial nominee program. How do I apply for this?
+  - intent: faq/201
+    examples: |
+      - I was nominated by the province to immigrate to Canada, what should I do?
+      - If I am nominated by the province to immigrate to Canada, what are my next steps?
+      - The province has nominated me to immigrate to Canada under the provincial nominee program. What do I do next?
+  - intent: faq/202
+    examples: |
+      - "I am a new permanent resident in Canada. Can I live somewhere other than the \u201Ccity of destination\u201D on my Confirmation of Permanent Residence?"
+      - I've recently become a permanent resident in Canada. Am I able to live anywhere other than my designated "city of destination" on my Confirmation of Permanent Residence?
+      - Is it possible to live anywhere other than my "city of desination" as listed on my Confirmation of Permanent Residence as a new permanent resident?

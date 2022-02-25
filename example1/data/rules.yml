@@ -1,0 +1,342 @@
+version: "3.0"
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: utter agents
+    steps:
+      - intent: request_agent
+      - action: utter_agent
+
+  - rule: activate name form
+    conversation_start: true
+    steps:
+      - intent: need_help # intent that triggers form activation
+      - action: name_form # run the form
+      - active_loop: name_form # this form is active
+
+  - rule: submit name form
+    condition:
+      - active_loop: name_form # this form must be active
+    steps:
+      - action: name_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_name
+
+  - rule: activate eligibility form
+    steps:
+      - intent: request_eligibility # intent that triggers form activation
+      - action: eligibility_form # run the form
+      - active_loop: eligibility_form # this form is active
+
+  - rule: submit eligibility form
+    condition:
+      - active_loop: eligibility_form # this form must be active
+    steps:
+      - action: eligibility_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_eligibility
+      - action: provincial_form
+      - active_loop: provincial_form
+      - slot_was_set:
+          - requested_slot: null
+      - active_loop: null
+      - slot_was_set:
+          - desired_province: null
+      - action: utter_eligibility_agent
+
+  # There is one form for each province which is triggered based on user's response to the provincial form
+  # The provincial form is automatically triggered after the eligibility form but will switch to utter_eligibility_agent if user doesn't care about provincial eligibility
+
+  - rule: trigger ab form
+    condition:
+      - active_loop: provincial_form
+    steps:
+      - action: provincial_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - slot_was_set:
+          - desired_province: alberta
+      - action: alberta_form
+      - active_loop: alberta_form
+
+  - rule: submit alberta form
+    condition:
+      - active_loop: alberta_form # this form must be active
+    steps:
+      - action: alberta_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_province
+
+  - rule: trigger british_columbia form
+    condition:
+      - active_loop: provincial_form
+    steps:
+      - action: provincial_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - slot_was_set:
+          - desired_province: british_columbia
+      - action: british_columbia_form
+      - active_loop: british_columbia_form
+
+  - rule: submit british_columbia form
+    condition:
+      - active_loop: british_columbia_form # this form must be active
+    steps:
+      - action: british_columbia_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_province
+
+  - rule: trigger manitoba form
+    condition:
+      - active_loop: provincial_form
+    steps:
+      - action: provincial_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - slot_was_set:
+          - desired_province: manitoba
+      - action: manitoba_form
+      - active_loop: manitoba_form
+
+  - rule: submit manitoba form
+    condition:
+      - active_loop: manitoba_form # this form must be active
+    steps:
+      - action: manitoba_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_province
+
+  - rule: trigger new_brunswick form
+    condition:
+      - active_loop: provincial_form
+    steps:
+      - action: provincial_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - slot_was_set:
+          - desired_province: new_brunswick
+      - action: new_brunswick_form
+      - active_loop: new_brunswick_form
+
+  - rule: submit new_brunswick form
+    condition:
+      - active_loop: new_brunswick_form # this form must be active
+    steps:
+      - action: new_brunswick_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_province
+
+  - rule: trigger newfoundland_and_labrador form
+    condition:
+      - active_loop: provincial_form
+    steps:
+      - action: provincial_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - slot_was_set:
+          - desired_province: newfoundland_and_labrador
+      - action: newfoundland_and_labrador_form
+      - active_loop: newfoundland_and_labrador_form
+
+  - rule: submit newfoundland_and_labrador form
+    condition:
+      - active_loop: newfoundland_and_labrador_form # this form must be active
+    steps:
+      - action: newfoundland_and_labrador_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_province
+
+  - rule: trigger northwest_territories form
+    condition:
+      - active_loop: provincial_form
+    steps:
+      - action: provincial_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - slot_was_set:
+          - desired_province: northwest_territories
+      - action: northwest_territories_form
+      - active_loop: northwest_territories_form
+
+  - rule: submit northwest_territories form
+    condition:
+      - active_loop: northwest_territories_form # this form must be active
+    steps:
+      - action: northwest_territories_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_province
+
+  - rule: trigger nova_scotia form
+    condition:
+      - active_loop: provincial_form
+    steps:
+      - action: provincial_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - slot_was_set:
+          - desired_province: nova_scotia
+      - action: nova_scotia_form
+      - active_loop: nova_scotia_form
+
+  - rule: submit nova_scotia form
+    condition:
+      - active_loop: nova_scotia_form # this form must be active
+    steps:
+      - action: nova_scotia_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_province
+
+  - rule: trigger ontario form
+    condition:
+      - active_loop: provincial_form
+    steps:
+      - action: provincial_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - slot_was_set:
+          - desired_province: ontario
+      - action: ontario_form
+      - active_loop: ontario_form
+
+  - rule: submit ontario form
+    condition:
+      - active_loop: ontario_form # this form must be active
+    steps:
+      - action: ontario_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_province
+
+  - rule: trigger prince_edward_island form
+    condition:
+      - active_loop: provincial_form
+    steps:
+      - action: provincial_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - slot_was_set:
+          - desired_province: prince_edward_island
+      - action: prince_edward_island_form
+      - active_loop: prince_edward_island_form
+
+  - rule: submit prince_edward_island form
+    condition:
+      - active_loop: prince_edward_island_form # this form must be active
+    steps:
+      - action: prince_edward_island_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_province
+
+  - rule: trigger quebec form
+    condition:
+      - active_loop: provincial_form
+    steps:
+      - action: provincial_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - slot_was_set:
+          - desired_province: quebec
+      - action: quebec_form
+      - active_loop: quebec_form
+
+  - rule: submit quebec form
+    condition:
+      - active_loop: quebec_form # this form must be active
+    steps:
+      - action: quebec_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_province
+
+  - rule: trigger yukon form
+    condition:
+      - active_loop: provincial_form
+    steps:
+      - action: provincial_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - slot_was_set:
+          - desired_province: saskatchewan
+      - action: saskatchewan_form
+      - active_loop: saskatchewan_form
+
+  - rule: submit saskatchewan form
+    condition:
+      - active_loop: saskatchewan_form # this form must be active
+    steps:
+      - action: saskatchewan_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_province
+
+  - rule: trigger yukon form
+    condition:
+      - active_loop: provincial_form
+    steps:
+      - action: provincial_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - slot_was_set:
+          - desired_province: yukon
+      - action: yukon_form
+      - active_loop: yukon_form
+
+  - rule: submit yukon form
+    condition:
+      - active_loop: yukon_form # this form must be active
+    steps:
+      - action: yukon_form # run the form
+      - active_loop: null # the form is no longer active because it has been filled
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_determine_province
+
+  - rule: respond to FAQs
+    steps:
+      - intent: faq
+      - action: utter_faq
+
+  - rule: fallback
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default
