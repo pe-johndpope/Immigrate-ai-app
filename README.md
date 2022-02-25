@@ -30,7 +30,7 @@ Run the duckling server with: `docker run -p 8000:8000 rasa/duckling`.
 
 ### Rasa
 
-Rasa is the primary NLF library driving the chat bot. Rasa relies on the the Rasa server where hooks for processing input data are posted. The Rasa server is run with `rasa run --enable-api --cors "*"` (for the application) or `rasa interactive` (for Rasa testing) and is hosted at `http://localhost:5005`.
+Rasa is the primary NLP library driving the chat bot. Rasa relies on the the Rasa server where hooks for processing input data are posted. The Rasa server is run with `rasa run --enable-api --cors "*"` (for the application) or `rasa interactive` (for Rasa testing) and is hosted at `http://localhost:5005`.
 
 ### Rasa Actions Server
 
