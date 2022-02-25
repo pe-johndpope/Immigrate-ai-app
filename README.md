@@ -24,7 +24,7 @@ own mobile device, install `Expo Go` and scan the QRCode provided on the metro b
 
 ### Duckling 
 
-Duckling is a tool used by Rasa to transform unstructed data ("the date __today__") into structured data (ex. `{ utc_datetime: 2345432367 }`).
+Duckling is a tool used by Rasa to transform unstructured data ("the date __today__") into structured data (ex. `{ utc_datetime: 2345432367 }`).
 
 Run the duckling server with: `docker run -p 8000:8000 rasa/duckling`.
 
