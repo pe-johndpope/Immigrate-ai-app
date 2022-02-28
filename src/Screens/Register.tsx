@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import Icon from 'react-native-vector-icons/Ionicons';
 import { View, Text, StyleSheet, TouchableOpacity} from "react-native";
+
 import { auth } from '../Firebase/config'
 import Background from "../components/Background";
 import LogoRegister from "../components/LogoRegister";
@@ -11,17 +13,16 @@ import {
   passwordValidator,
   nameValidator,
 } from "../components/utils";
-import Icon from 'react-native-vector-icons/Ionicons';
-
-
+import { AuthContext } from "../Contexts";
 
 const RegisterScreen = ({ navigation }) => {
+  const { onSignUpWithEmailAndPassword } = useContext(AuthContext)
+
   const [name, setName] = useState({ value: "", error: "" });
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
 
-
-    const _onSignUpPressed = () => {
+    const onSignUpPressed = () => {
       const nameError = nameValidator(name.value);
       const emailError = emailValidator(email.value);
       const passwordError = passwordValidator(password.value);
@@ -32,21 +33,16 @@ const RegisterScreen = ({ navigation }) => {
         setPassword({ ...password, error: passwordError });
         return;
       }
-      const emailStr = email.value;
-      const passStr = password.value;
-  
-      auth.createUserWithEmailAndPassword(emailStr, passStr)
-      .then((user)=>{
-        console.log(user);
-        navigation.navigate('Dashboard');
+
+      onSignUpWithEmailAndPassword(email.value, password.value)
+      .then(async () => {
         auth.currentUser.updateProfile({
           displayName: name.value,
         })
+        .then(() => {
+          navigation.navigate('Dashboard');
+        })
       })
-      .catch((re)=>{
-        console.log(re);
-      })
-  
     };
    
          
@@ -91,7 +87,7 @@ const RegisterScreen = ({ navigation }) => {
         secureTextEntry
       />
 
-      <Button mode="contained" onPress={_onSignUpPressed} style={styles.button}>
+      <Button mode="contained" onPress={onSignUpPressed} style={styles.button}>
         Sign Up
       </Button>
 
