@@ -223,7 +223,8 @@ const Home = () => {
             }}
           >
             {"Hey,\n"}
-            {"Sohom"}
+            {/* {"Sohom"} */}
+            {auth?.currentUser?.displayName}
           </Text>
           {isEnabled ? move : learn}
         </View>

@@ -40,7 +40,6 @@ const RegisterScreen = ({ navigation }) => {
           displayName: name.value,
         })
         .then(() => {
-          alert("Updated user profile")
           navigation.navigate('Dashboard');
         })
       })

@@ -76,7 +76,6 @@ const AuthContextProvider: React.FC = ({
       db.collection("users").doc(user.uid).set({
         uid: user.uid,
         email: user.email,
-        accountInitialized: false
       })
       .then(() => onSignOut())
     })
