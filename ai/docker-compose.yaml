@@ -1,0 +1,30 @@
+version: "3"
+services:
+  rasa-server:
+    build: 
+      context: .
+      dockerfile: Dockerfile.rasa
+    image: rasa/rasa:latest-full
+    ports:
+      - 5005:5005
+    command:
+      - run
+      - --enable-api
+      - --cors
+      - "*"
+
+  action-server:
+    build: 
+      context: .
+      dockerfile: Dockerfile.actions
+    image: rasa/rasa:latest-full 
+    ports:
+      - 5055:5055
+    command:
+      - run
+      - actions
+
+  duckling:
+    image: rasa/duckling:latest
+    ports:
+      - 8000:8000

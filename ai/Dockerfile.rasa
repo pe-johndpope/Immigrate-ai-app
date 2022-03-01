@@ -1,0 +1,10 @@
+FROM rasa/rasa:latest-full
+WORKDIR /
+
+USER root
+
+COPY . .
+
+RUN /opt/venv/bin/python -m pip install --upgrade pip
+
+EXPOSE 5005

@@ -16,9 +16,10 @@ export default function LandingPage({navigation}){
     return (
         <View style={styles.container}>
             <Onboarding />
-            <Button style ={{marginBottom: "2%"}}
-                    onPress={() => navigation.navigate('Login')}
-                >
+            <Button 
+                style ={{marginBottom: "2%"}}
+                onPress={() => navigation.navigate('Login')}
+            >
                     Login
                 </Button>
                 <ButtonSignup style ={{marginBottom: "15%"}}
