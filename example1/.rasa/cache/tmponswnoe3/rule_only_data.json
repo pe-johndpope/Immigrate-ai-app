@@ -1,0 +1,11 @@
+{
+  "rule_only_slots": [
+    "desired_province"
+  ],
+  "rule_only_loops": [
+    "name_form",
+    "eligibility_form",
+    "ontario_form",
+    "provincial_form"
+  ]
+}
