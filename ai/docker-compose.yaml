@@ -1,0 +1,31 @@
+version: "3"
+services:
+  rasa-server:
+    image: rasa/rasa:3.0.8-full
+    volumes:
+      - ./:/app
+    environment:
+      RASA_DUCKLING_HTTP_URL: "http://duckling:8000"
+    ports:
+      - 5005:5005
+    command:
+      - run
+      - --enable-api
+      - --cors
+      - "*"
+      - "-vv"
+
+  action-server:
+    image: rasa/rasa:3.0.8-full 
+    volumes:
+      - ./:/app
+    ports:
+      - 5055:5055
+    command:
+      - run
+      - actions
+
+  duckling:
+    image: rasa/duckling:latest
+    ports:
+      - 8000:8000
