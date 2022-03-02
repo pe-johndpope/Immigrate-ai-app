@@ -1,10 +1,14 @@
 version: "3"
 services:
   rasa-server:
-    build: 
-      context: .
-      dockerfile: Dockerfile.rasa
-    image: rasa/rasa:latest-full
+    # build: 
+    #   context: .
+    #   dockerfile: Dockerfile.rasa
+    image: rasa/rasa:3.0.8-full
+    volumes:
+      - ./:/app
+    environment:
+      RASA_DUCKLING_HTTP_URL: "http://duckling:8000"
     ports:
       - 5005:5005
     command:
@@ -14,10 +18,13 @@ services:
       - "*"
 
   action-server:
-    build: 
-      context: .
-      dockerfile: Dockerfile.actions
-    image: rasa/rasa:latest-full 
+    # build: 
+    #   context: .
+    #   dockerfile: Dockerfile.actions
+    # image: rasa/rasa:latest-full 
+    image: rasa/rasa:3.0.8-full 
+    volumes:
+      - ./:/app
     ports:
       - 5055:5055
     command:
