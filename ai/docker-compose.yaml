@@ -1,9 +1,6 @@
 version: "3"
 services:
   rasa-server:
-    # build: 
-    #   context: .
-    #   dockerfile: Dockerfile.rasa
     image: rasa/rasa:3.0.8-full
     volumes:
       - ./:/app
@@ -18,10 +15,6 @@ services:
       - "*"
 
   action-server:
-    # build: 
-    #   context: .
-    #   dockerfile: Dockerfile.actions
-    # image: rasa/rasa:latest-full 
     image: rasa/rasa:3.0.8-full 
     volumes:
       - ./:/app

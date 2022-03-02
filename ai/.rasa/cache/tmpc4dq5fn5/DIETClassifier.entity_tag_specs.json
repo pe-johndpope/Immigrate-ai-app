@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-education",
+      "2": "I-education",
+      "3": "L-education",
+      "4": "U-education",
+      "5": "B-provinces",
+      "6": "I-provinces",
+      "7": "L-provinces",
+      "8": "U-provinces",
+      "9": "B-travel_purposes",
+      "10": "I-travel_purposes",
+      "11": "L-travel_purposes",
+      "12": "U-travel_purposes",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-education": 1,
+      "I-education": 2,
+      "L-education": 3,
+      "U-education": 4,
+      "B-provinces": 5,
+      "I-provinces": 6,
+      "L-provinces": 7,
+      "U-provinces": 8,
+      "B-travel_purposes": 9,
+      "I-travel_purposes": 10,
+      "L-travel_purposes": 11,
+      "U-travel_purposes": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]
