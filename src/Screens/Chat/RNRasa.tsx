@@ -112,11 +112,13 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
       sender: `${userId}`,
     };
     try {
+      console.log(rasaMessageObj)
       const response = await fetch(`${host}/webhooks/rest/webhook`, {
         ...fetchOptions,
         body: JSON.stringify(rasaMessageObj),
       });
       const messagesJson: IRasaResponse[] = await response.json();
+      console.log(messagesJson)
       let customMessage = messagesJson?.find((message) => message.hasOwnProperty('custom'))
       const newRecivieMess = parseMessages(messagesJson);
       if (!isValidNotEmptyArray(newRecivieMess)) {
