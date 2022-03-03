@@ -8,9 +8,11 @@ import {
   Button,
   Linking,
   ImageBackground,
-  ScrollView
+  ScrollView,
+  Dimensions
 } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
+const {width, height} = Dimensions.get('window');
 
 
 export default function Quebec() {
@@ -18,18 +20,16 @@ export default function Quebec() {
   const redirect = "https://workstudyvisa.com/life-montreal-immigrants/"
 
   const definition = (
-    <ScrollView>
-
+    <ScrollView>    
     <View style={styles.facts}>
           <ImageBackground source={require("../../../Images/Quebec.png")} style={styles.image} blurRadius={4}>
           <View style={styles.innerContainer}>
             <Text style={styles.factHeaderText}>Montreal Facts</Text>
-            <Text style= {styles.factText}>{"    Population: 1,780,200"}</Text>
-            <Text style= {styles.weather}>{"    Temperature: 4.3 C°"}</Text>
-            <Text style= {styles.weather}>{"    Housing: $559,566"}</Text>
-            <Text style= {styles.hashtags}>{"          #french #culture\n      #party #fun #diverse"}</Text>
+            <Text style= {styles.factText}>{"Population: 1,780,200"}</Text>
+            <Text style= {styles.factText}>{"Temperature: 4.3 C°"}</Text>
+            <Text style= {styles.factText}>{"Housing: $559,566"}</Text>
+            <Text style= {styles.hashtags}>{"#french #culture\n#party #fun #diverse"}</Text>
             <View style = {{marginVertical: -1,}}>
-              <Button color="#ffffff" title ="Learn More" onPress={()=> Linking.openURL(redirect)}></Button>
               </View> 
           </View>
       </ImageBackground>
@@ -41,7 +41,7 @@ export default function Quebec() {
     <View style={styles.locationView}>
       <Image
         source={require("../../../Images/Quebec.png")}
-        style={{ width: 180, borderRadius: 23, height: 200, zIndex: -1 }}
+        style={styles.imageView}
       />
       <View style={{ marginVertical: "-21%", marginLeft: "2%" }}>
         <Icon name="location-outline" size={24} color="#FFFFFF" />
@@ -49,7 +49,7 @@ export default function Quebec() {
       <View style={{ marginVertical: "30%", padding: -10 }}>
         <Text style={styles.locationText}>Montreal, QC</Text>
       </View>
-      <View style={{ flexDirection: "row", width: 150, alignItems: "center" }}>
+      <View style={{ flexDirection: "row", width: width * 0.4, alignItems: "center" }}>
         <View style={{ paddingHorizontal: 5, paddingVertical: 8 }}></View>
       </View>
     </View>
@@ -62,6 +62,7 @@ export default function Quebec() {
   );
 }
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -69,58 +70,49 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  button: {
-    height: "7%",
-    marginVertical: 4,
-  },
   text: {
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: width * 0.039,
     lineHeight: 99,
     color: "#000000",
   },
   facts: {
     backgroundColor: "#FFD0D0",
-    height: 200,
-    width: 180,
-    borderRadius: 23,
+    width: width * 0.45, 
+    borderRadius: 23, 
+    height: height * 0.24,
     shadowColor: "#000000",
     shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.35,
     shadowRadius: 4,
   },
   factHeaderText: {
-    fontWeight: "800",
-    fontSize: 18,
-    color: "#D8F2FF",
+    fontWeight: "700",
     fontFamily: 'Avenir Next',
-    marginTop:12,
-    marginLeft: "12%",
+    fontSize: width * 0.039,
+    color: "#D8F2FF",
+    marginTop:height * 0.02,
+    textAlign: 'center'
   },
   factText: {
     fontWeight: "500",
-    fontSize: 15,
+    fontSize: width * 0.031,
     fontFamily: 'Avenir Next',
     color: "#FFFFFF",
-    marginTop: 10,
-
-  },
-  weather: {
-    fontWeight: "500",
-    fontSize: 15,
-    fontFamily: 'Avenir Next',
-    color: "#FFFFFF",
-    marginTop: 6,
+    marginTop:height * 0.015,
+    textAlign: 'center'
   },
   hashtags: {
-    fontWeight: "800",
-    fontSize: 13,
+    fontWeight: "700",
+    fontSize: width * 0.031,
     color: "#D8F2FF",
-    marginTop: 12,
+    fontFamily: 'Avenir Next',
+    textAlign: 'center',
+    marginTop:height * 0.01,
   },
   locationText: {
     zIndex: 1,
-    fontSize: 18,
+    fontSize: width * 0.04,
     fontWeight: "700",    
     fontFamily: 'Avenir Next',
     color: "#FFFFFF",
@@ -129,13 +121,13 @@ const styles = StyleSheet.create({
     
   },
   locationView: {
-    height: 200,
-    width: 180,
-    borderRadius: 23,
-    shadowColor: "#000000",
-    shadowOffset: { width: 2, height: 2 },
-    shadowOpacity: 0.35,
-    shadowRadius: 4,
+        width: width * 0.45, 
+        borderRadius: 23, 
+        height: height * 0.24,
+        shadowColor: "#000000",
+        shadowOffset: { width: 2, height: 2 },
+        shadowOpacity: 0.35,
+        shadowRadius: 4,
   },
   image: {
     flex: 1,
@@ -146,6 +138,10 @@ const styles = StyleSheet.create({
   },
   innerContainer: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0, 0.4)'
+    backgroundColor: 'rgba(0,0,0, 0.5)'
   },
+  imageView: {
+    width: width * 0.45, borderRadius: 23, height: height * 0.24
+  }
 });
+                                       

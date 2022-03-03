@@ -1,9 +1,6 @@
 import React,{useState} from "react";
-import { View, Text, Image,StatusBar , StyleSheet,TouchableOpacity, Button, Linking} from "react-native";
-import { useFonts} from '@expo-google-fonts/dev';
-import { TouchableHighlight, TouchableWithoutFeedback } from "react-native-gesture-handler";
-import Icon from 'react-native-vector-icons/Ionicons';
-import { text } from "stream/consumers";
+import { View, Text, Image,StatusBar , StyleSheet,TouchableOpacity, Button, Linking, Dimensions} from "react-native";
+const {width, height} = Dimensions.get('window');
 
 
 const colors = {
@@ -23,10 +20,11 @@ export default function Ielts(){
       const card =  <View
       style={{
         backgroundColor: "#D66E5A",
-        height: 200,
-        width: 180,
-        borderRadius: 23,
-        shadowColor: "#00000",
+        width: width * 0.45, 
+        borderRadius: 23, 
+        elevation: 8,
+        height: height * 0.24,
+        shadowColor: "#000000",
         shadowOffset: { width: 2, height: 2 },
         shadowOpacity: 0.35,
         shadowRadius: 4,
@@ -39,17 +37,18 @@ export default function Ielts(){
       const definition = <View
       style={{
         backgroundColor: "#FFAC9C",
-        height: 200,
-        width: 180,
-        borderRadius: 23,
-        shadowColor: "#00000",
+        width: width * 0.45, 
+        borderRadius: 23, 
+        height: height * 0.24,
+        shadowColor: "#000000",
+        elevation: 8,
         shadowOffset: { width: 2, height: 2 },
         shadowOpacity: 0.35,
         shadowRadius: 4,
       }}
     >
-        <Text style = {styles.text}>    {"      The International  \n         English Language  \n            Testing System,  \n          is a standardized \n          English test one\n                 must take."}</Text>
-        <Button title ="Learn More" onPress={()=> Linking.openURL("https://www.ieltscanada.ca/")}></Button>
+        <Text style = {styles.text}>    {"The International English Language Testing System, is an international standardized test of English language proficiency"}</Text>
+        <Text style = {styles.hyperLink} onPress={()=> Linking.openURL("https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html")}>Learn More</Text>
       </View>
 
       return(
@@ -75,19 +74,26 @@ export default function Ielts(){
         flex: 1, 
         alignItems: 'center',
         fontWeight: '300',
-        fontSize: 14,
+        fontSize: 13.5,
+        fontFamily: 'Avenir Next',
         color: '#000000',
-        fontFamily: "Avenir Next",
-        marginVertical: 20,
+        marginVertical: height * 0.03,
+        textAlign: "center",
+        padding: 5
       },
       text2: {
         flex: 1, 
         alignItems: 'center',
         fontWeight: 'bold',
-        fontSize: 35,
+        fontSize: width * 0.09,
+        fontFamily: 'Avenir Next',
         color: '#FFFFFF',
-        fontFamily: "Avenir Next",
-        marginVertical: 75,
-        marginLeft: 46,
+        textAlign: "center",
+        marginTop: height * 0.08
       },
+      hyperLink: {
+        marginLeft: width * 0.13,
+        color: '#0091FF',
+        marginBottom: height * 0.004
+      }
     });

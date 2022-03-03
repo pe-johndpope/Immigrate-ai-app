@@ -2,16 +2,24 @@ import * as React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { BlurView } from 'expo-blur';
-import { Button, View, StyleSheet } from 'react-native';
+import { Button, View, StyleSheet, Dimensions, Platform, SafeAreaView} from 'react-native';
 
 // Screensh
 import Chat from '../Chat/Chat';
 import Home from './Home';
 import ProfileScreen from '../ProfileMain'
+const {width, height} = Dimensions.get('window');
 
+var dashHeight;
+function ChooseHeight(){
+    if ((height/width) > (1920/1080)) {
+        return height * 0.06
+  } else {
+        return height * 0.09
+  }
+}
 
-
-
+const DashHeightPerOS = {}
 const Tab = createBottomTabNavigator();
 
 function Dashboard({navigation}) {
@@ -22,13 +30,13 @@ function Dashboard({navigation}) {
         let iconName;
         let rn = route.name;
         
-        if (rn === 'Chat') {
-          return <Icon name= "chatbubbles-outline"  size={32} color={"#493d8a"} />;
+        if (rn === "  ") {
+          return <Icon name= "chatbubbles-outline"  size={25} color={"#493d8a"} />;
 
-        } else if (rn === "Home") {
+        } else if (rn === " ") {
           return <Icon name="home-outline" size={25} color={color} />;
 
-        } else if (rn === "Profile") {
+        } else if (rn === "   ") {
           return <Icon name="person-circle-outline" size={25} color={color} />;
         }
 
@@ -36,23 +44,23 @@ function Dashboard({navigation}) {
         return <Icon name={iconName} size={size} color={color} />;
       },
       tabBarStyle: {
-        height: 80,
+        height: Platform.OS == 'ios'? height * 0.09 : height * 0.06,
         backgroundColor: "#EFF5F8",
     },
     })}>
-        <Tab.Screen name="Home" component={Home} options={{headerShown: false,}}/>
-        <Tab.Screen name="Chat" component={Chat}options={{
+        <Tab.Screen name=" " component={Home} options={{headerShown: false,}}/>
+        <Tab.Screen name="  " component={Chat}options={{
           headerShown: false,
           headerTransparent: true,
           title: "Immigrate.ai",
-          tabBarLabel: 'Chat',
+          tabBarLabel: '',
           headerTintColor: "#FFFFFF",
           headerBackground: () => (
             <BlurView tint="dark" intensity={100} style={StyleSheet.absoluteFill} />
           ),
 
         }} />
-        <Tab.Screen name="Profile" component={ProfileScreen} options={{headerShown: false,}}/>
+        <Tab.Screen name="   " component={ProfileScreen} options={{headerShown: false,}}/>
 
       </Tab.Navigator>
   );

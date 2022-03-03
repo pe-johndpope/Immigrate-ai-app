@@ -8,10 +8,12 @@ import {
   Button,
   Linking,
   ImageBackground,
-  ScrollView
+  ScrollView,
+  Dimensions
 } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 
+const {width, height} = Dimensions.get('window');
 
 export default function Vancouver() {
   const [flip, setFlip] = useState(false);
@@ -23,12 +25,11 @@ export default function Vancouver() {
           <ImageBackground source={require("../../../Images/vancouver.png")} style={styles.image} blurRadius={4}>
           <View style={styles.innerContainer}>
             <Text style={styles.factHeaderText}>Vancouver Facts</Text>
-            <Text style= {styles.factText}>{"    Population: 631,486"}</Text>
-            <Text style= {styles.weather}>{"    Temperature: 11.3 C°"}</Text>
-            <Text style= {styles.weather}>{"    Housing: $1,230,000"}</Text>
-            <Text style= {styles.hashtags}>{"         #nature #beaches\n            #city #weather"}</Text>
-           <View style = {{marginVertical: 0,}}>
-             <Button color="#ffffff" title ="Learn More" onPress={()=> Linking.openURL(redirect)}></Button>
+            <Text style= {styles.factText}>{"Population: 631,486"}</Text>
+            <Text style= {styles.factText}>{"Temperature: 11.3 C°"}</Text>
+            <Text style= {styles.factText}>{"Housing: $1,230,000"}</Text>
+            <Text style= {styles.hashtags}>{"#nature #beaches\n#city #weather"}</Text>
+           <View style = {{}}>
            </View> 
           </View>
       </ImageBackground>
@@ -40,15 +41,15 @@ export default function Vancouver() {
     <View style={styles.locationView}>
       <Image
         source={require("../../../Images/vancouver.png")}
-        style={{ width: 180, borderRadius: 23, height: 200, zIndex: -1 }}
+        style={styles.imageView}
       />
       <View style={{ marginVertical: "-21%", marginLeft: "2%" }}>
         <Icon name="location-outline" size={24} color="#FFFFFF" />
       </View>
-      <View style={{ marginVertical: "30%", padding: -10 }}>
+      <View style={{ marginVertical: "30%", padding: '-10%' }}>
         <Text style={styles.locationText}>Vancouver, BC</Text>
       </View>
-      <View style={{ flexDirection: "row", width: 150, alignItems: "center" }}>
+      <View style={{ flexDirection: "row",width: width * 0.4, alignItems: "center" }}>
         <View style={{ paddingHorizontal: 5, paddingVertical: 8 }}></View>
       </View>
     </View>
@@ -70,52 +71,47 @@ const styles = StyleSheet.create({
   },
   text: {
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: width * 0.039,
     lineHeight: 99,
     color: "#000000",
   },
   facts: {
     backgroundColor: "#FFD0D0",
-    height: 200,
-    width: 180,
-    borderRadius: 23,
+    width: width * 0.45, 
+    borderRadius: 23, 
+    height: height * 0.24,
     shadowColor: "#000000",
     shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.35,
     shadowRadius: 4,
   },
   factHeaderText: {
-    fontWeight: "800",
-    fontSize: 18,
+    fontWeight: "700",
+    fontSize: width * 0.039,
     color: "#D8F2FF",
     fontFamily: 'Avenir Next',
-    marginTop:12,
-    marginLeft: "8%",
+    marginTop:height * 0.02,
+    textAlign: 'center'
   },
   factText: {
     fontWeight: "500",
-    fontSize: 15,
+    fontSize: width * 0.031,
     fontFamily: 'Avenir Next',
     color: "#FFFFFF",
-    marginTop: 10,
-
-  },
-  weather: {
-    fontWeight: "500",
-    fontSize: 15,
-    fontFamily: 'Avenir Next',
-    color: "#FFFFFF",
-    marginTop: 6,
+    marginTop:height * 0.015,
+    textAlign: 'center'
   },
   hashtags: {
-    fontWeight: "800",
-    fontSize: 13,
+    fontWeight: "700",
+    fontSize: width * 0.031,
     color: "#D8F2FF",
-    marginTop: 12,
+    fontFamily: 'Avenir Next',
+    textAlign: 'center',
+    marginTop:height * 0.01,
   },
   locationText: {
     zIndex: 1,
-    fontSize: 18,
+    fontSize: width * 0.04,
     fontWeight: "700",    
     fontFamily: 'Avenir Next',
     color: "#FFFFFF",
@@ -124,13 +120,13 @@ const styles = StyleSheet.create({
     
   },
   locationView: {
-    height: 200,
-    width: 180,
-    borderRadius: 23,
-    shadowColor: "#000000",
-    shadowOffset: { width: 2, height: 2 },
-    shadowOpacity: 0.35,
-    shadowRadius: 4,
+        width: width * 0.45, 
+        borderRadius: 23, 
+        height: height * 0.24,
+        shadowColor: "#000000",
+        shadowOffset: { width: 2, height: 2 },
+        shadowOpacity: 0.35,
+        shadowRadius: 4,
   },
   image: {
     flex: 1,
@@ -143,4 +139,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'rgba(0,0,0, 0.5)'
   },
+  imageView: {
+    width: width * 0.45, borderRadius: 23, height: height * 0.24
+  }
 });
