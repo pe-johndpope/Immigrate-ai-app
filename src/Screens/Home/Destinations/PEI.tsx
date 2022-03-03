@@ -8,10 +8,11 @@ import {
   Button,
   Linking,
   ImageBackground,
-  ScrollView
+  ScrollView,
+  Dimensions
 } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
-
+const {width, height} = Dimensions.get('window');
 
 export default function PEI() {
   const [flip, setFlip] = useState(false);
@@ -24,12 +25,11 @@ export default function PEI() {
           <ImageBackground source={require("../../../Images/PEI.png")} style={styles.image} blurRadius={4}>
           <View style={styles.innerContainer}>
             <Text style={styles.factHeaderText}>Cavendish Facts</Text>
-            <Text style= {styles.factText}>{"    Population: 156,947"}</Text>
-            <Text style= {styles.weather}>{"    Temperature: 8.9 C°"}</Text>
-            <Text style= {styles.weather}>{"    Housing: $369,838"}</Text>
-            <Text style= {styles.hashtags}>{"      #warm #coast #golf \n              #beach #fish"}</Text>
+            <Text style= {styles.factText}>{"Population: 156,947"}</Text>
+            <Text style= {styles.factText}>{"Temperature: 8.9 C°"}</Text>
+            <Text style= {styles.factText}>{"Housing: $369,838"}</Text>
+            <Text style= {styles.hashtags}>{"#warm #coast #golf\n#beach #fish"}</Text>
             <View style = {{marginVertical: -1,}}>
-              <Button color="#ffffff" title ="Learn More" onPress={()=> Linking.openURL(redirect)}></Button>
               </View> 
           </View>
           
@@ -42,7 +42,7 @@ export default function PEI() {
     <View style={styles.locationView}>
       <Image
         source={require("../../../Images/PEI.png")}
-        style={{ width: 180, borderRadius: 23, height: 200, zIndex: -1 }}
+        style={styles.imageView}
       />
       <View style={{ marginVertical: "-21%", marginLeft: "2%" }}>
         <Icon name="location-outline" size={24} color="#FFFFFF" />
@@ -50,7 +50,7 @@ export default function PEI() {
       <View style={{ marginVertical: "30%", padding: -10 }}>
         <Text style={styles.locationText}>Cavendish, PEI</Text>
       </View>
-      <View style={{ flexDirection: "row", width: 150, alignItems: "center" }}>
+      <View style={{ flexDirection: "row", width: width * 0.4, alignItems: "center" }}>
         <View style={{ paddingHorizontal: 5, paddingVertical: 8 }}></View>
       </View>
     </View>
@@ -63,6 +63,7 @@ export default function PEI() {
   );
 }
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -70,58 +71,49 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  button: {
-    height: "7%",
-    marginVertical: 4,
-  },
   text: {
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: width * 0.039,
     lineHeight: 99,
     color: "#000000",
   },
   facts: {
     backgroundColor: "#FFD0D0",
-    height: 200,
-    width: 180,
-    borderRadius: 23,
+    width: width * 0.45, 
+    borderRadius: 23, 
+    height: height * 0.24,
     shadowColor: "#000000",
     shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.35,
     shadowRadius: 4,
   },
   factHeaderText: {
-    fontWeight: "800",
-    fontSize: 18,
-    color: "#D8F2FF",
+    fontWeight: "700",
+    fontSize: width * 0.039,
     fontFamily: 'Avenir Next',
-    marginTop:12,
-    marginLeft: "8%",
+    color: "#D8F2FF",
+    marginTop:height * 0.02,
+    textAlign: 'center'
   },
   factText: {
     fontWeight: "500",
-    fontSize: 15,
-    fontFamily: 'Avenir Next',
+    fontSize: width * 0.031,
     color: "#FFFFFF",
-    marginTop: 10,
-
-  },
-  weather: {
-    fontWeight: "500",
-    fontSize: 15,
+    marginTop:height * 0.015,
     fontFamily: 'Avenir Next',
-    color: "#FFFFFF",
-    marginTop: 6,
+    textAlign: 'center'
   },
   hashtags: {
-    fontWeight: "800",
-    fontSize: 13,
+    fontWeight: "700",
+    fontSize: width * 0.031,
     color: "#D8F2FF",
-    marginTop: 12,
+    fontFamily: 'Avenir Next',
+    textAlign: 'center',
+    marginTop:height * 0.01,
   },
   locationText: {
     zIndex: 1,
-    fontSize: 18,
+    fontSize: width * 0.04,
     fontWeight: "700",    
     fontFamily: 'Avenir Next',
     color: "#FFFFFF",
@@ -130,13 +122,13 @@ const styles = StyleSheet.create({
     
   },
   locationView: {
-    height: 200,
-    width: 180,
-    borderRadius: 23,
-    shadowColor: "#000000",
-    shadowOffset: { width: 2, height: 2 },
-    shadowOpacity: 0.35,
-    shadowRadius: 4,
+        width: width * 0.45, 
+        borderRadius: 23, 
+        height: height * 0.24,
+        shadowColor: "#000000",
+        shadowOffset: { width: 2, height: 2 },
+        shadowOpacity: 0.35,
+        shadowRadius: 4,
   },
   image: {
     flex: 1,
@@ -147,6 +139,9 @@ const styles = StyleSheet.create({
   },
   innerContainer: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0, 0.4)'
+    backgroundColor: 'rgba(0,0,0, 0.5)'
   },
+  imageView: {
+    width: width * 0.45, borderRadius: 23, height: height * 0.24
+  }
 });

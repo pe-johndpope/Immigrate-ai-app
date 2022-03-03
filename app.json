@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    // "owner": "sohom1357",
+    "owner": "sohom1357",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -28,6 +28,19 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+      "androidStatusBar": {
+        "hidden": true
+      },
+      "plugins": [
+        [
+          "expo-navigation-bar",
+          {
+            "position": "relative",
+            "visibility": "hidden",
+            "behavior": "inset-touch"
+          }
+        ]
+      ]
     }
-  }
 }

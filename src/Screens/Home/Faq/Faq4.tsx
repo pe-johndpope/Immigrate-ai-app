@@ -25,9 +25,8 @@ export default function Faq4(){
       const card =  <View
       style={{
         backgroundColor: "#EFF5F8",
-        height: 150,
+        height: 140,
         width: 300,
-        marginLeft: 12,
         flex:1,
         justifyContent: "center",
         alignItems: "center",
@@ -45,8 +44,7 @@ export default function Faq4(){
       const definition = <View
       style={{
         backgroundColor: "#EFF5F8",
-        marginLeft: 12,
-        height: 150,
+        height: 300,
         width: 300,
         borderRadius: 23,
         shadowColor: "#00000",
@@ -57,7 +55,7 @@ export default function Faq4(){
     >   
         <ScrollView>
              <Text style = {styles.text}> {answer}</Text>
-             <Button title="Back to Question" onPress = { () => setFlip(!flip)}></Button>
+             <Text style = {styles.flipButton} onPress = { () => setFlip(!flip)}>Back to Question</Text>
 
         </ScrollView>
        
@@ -89,7 +87,7 @@ export default function Faq4(){
         fontFamily: 'Avenir Next',
         fontWeight: "300",
         padding: 25,
-        fontSize: 17,
+        fontSize: 16,
         color: '#000000',
       },
       text2: {
@@ -102,7 +100,10 @@ export default function Faq4(){
         fontFamily: 'Avenir Next',
         color: '#000000',
         marginVertical: 12,
-        
-
       },
+      flipButton: {
+        textAlign: 'center',
+        color: '#0091FF',
+        paddingBottom: 10,
+      }
     });

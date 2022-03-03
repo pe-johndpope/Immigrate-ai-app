@@ -8,9 +8,11 @@ import {
   Button,
   Linking,
   ImageBackground,
-  ScrollView
+  ScrollView,
+  Dimensions
 } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
+const {width, height} = Dimensions.get('window');
 
 
 export default function Toronto() {
@@ -23,12 +25,11 @@ export default function Toronto() {
           <ImageBackground source={require("../../../Images/toronto.png")} style={styles.image} blurRadius={4}>
           <View style={styles.innerContainer}>
             <Text style={styles.factHeaderText}>Toronto Facts</Text>
-            <Text style= {styles.factText}>{"    Population: 3,060,000"}</Text>
-            <Text style= {styles.weather}>{"    Temperature: 3.9 C°"}</Text>
-            <Text style= {styles.weather}>{"    Housing: $1,199,450"}</Text>
-            <Text style= {styles.hashtags}>{"      #city #diverse #snow \n               #fun #party"}</Text>
+            <Text style= {styles.factText}>{"Population: 3,060,000"}</Text>
+            <Text style= {styles.factText}>{"Temperature: 3.9 C°"}</Text>
+            <Text style= {styles.factText}>{"Housing: $1,199,450"}</Text>
+            <Text style= {styles.hashtags}>{"#city #diverse #snow \n#fun #party"}</Text>
             <View style = {{marginVertical: -1,}}>
-              <Button color="#ffffff" title ="Learn More" onPress={()=> Linking.openURL(redirect)}></Button>
               </View> 
           </View>
       </ImageBackground>
@@ -40,7 +41,7 @@ export default function Toronto() {
     <View style={styles.locationView}>
       <Image
         source={require("../../../Images/toronto.png")}
-        style={{ width: 180, borderRadius: 23, height: 200, zIndex: -1 }}
+        style={styles.imageView}
       />
       <View style={{ marginVertical: "-21%", marginLeft: "2%" }}>
         <Icon name="location-outline" size={24} color="#FFFFFF" />
@@ -68,58 +69,49 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  button: {
-    height: "7%",
-    marginVertical: 4,
-  },
   text: {
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: width * 0.039,
     lineHeight: 99,
     color: "#000000",
   },
   facts: {
     backgroundColor: "#FFD0D0",
-    height: 200,
-    width: 180,
-    borderRadius: 23,
+    width: width * 0.45, 
+    borderRadius: 23, 
+    height: height * 0.24,
     shadowColor: "#000000",
     shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.35,
     shadowRadius: 4,
   },
   factHeaderText: {
-    fontWeight: "800",
-    color: "#FFD1C8",
-    fontSize: 18,
+    fontWeight: "700",
+    fontSize: width * 0.039,
+    color: "#D8F2FF",
+    marginTop:height * 0.02,
     fontFamily: 'Avenir Next',
-    marginTop:12,
-    marginLeft: "15%",
+    textAlign: 'center'
   },
   factText: {
     fontWeight: "500",
-    fontSize: 15,
-    fontFamily: 'Avenir Next',
+    fontSize: width * 0.031,
     color: "#FFFFFF",
-    marginTop: 10,
-
-  },
-  weather: {
-    fontWeight: "500",
-    fontSize: 15,
     fontFamily: 'Avenir Next',
-    color: "#FFFFFF",
-    marginTop: 7,
+    marginTop:height * 0.015,
+    textAlign: 'center'
   },
   hashtags: {
     fontWeight: "700",
-    fontSize: 13,
-    color: "#FFD1C8",
-    marginTop: 12,
+    fontSize: width * 0.031,
+    color: "#D8F2FF",
+    textAlign: 'center',
+    fontFamily: 'Avenir Next',
+    marginTop:height * 0.01,
   },
   locationText: {
     zIndex: 1,
-    fontSize: 18,
+    fontSize: width * 0.04,
     fontWeight: "700",    
     fontFamily: 'Avenir Next',
     color: "#FFFFFF",
@@ -128,13 +120,13 @@ const styles = StyleSheet.create({
     
   },
   locationView: {
-    height: 200,
-    width: 180,
-    borderRadius: 23,
-    shadowColor: "#000000",
-    shadowOffset: { width: 2, height: 2 },
-    shadowOpacity: 0.35,
-    shadowRadius: 4,
+        width: width * 0.45, 
+        borderRadius: 23, 
+        height: height * 0.24,
+        shadowColor: "#000000",
+        shadowOffset: { width: 2, height: 2 },
+        shadowOpacity: 0.35,
+        shadowRadius: 4,
   },
   image: {
     flex: 1,
@@ -145,6 +137,10 @@ const styles = StyleSheet.create({
   },
   innerContainer: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0, 0.4)'
+    backgroundColor: 'rgba(0,0,0, 0.5)'
   },
+  imageView: {
+    width: width * 0.45, borderRadius: 23, height: height * 0.24
+  }
 });
+

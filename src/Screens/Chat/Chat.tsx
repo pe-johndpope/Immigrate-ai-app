@@ -12,8 +12,12 @@
  import styles from './styles';
  
  // your host http://localhost:5005. Apps work better on https so you can use ngrok if development
+<<<<<<< HEAD
+ const HOST = 'https://chat.immigrate.ai';
+=======
 //  const HOST = 'http://localhost:5005'; // DEV
  const HOST = 'https://chat.immigrate.ai'; // PROD
+>>>>>>> 75d02f9e4ad10c5bceb30d2544f3d10e7760b9ac
  
  // Avatar images
  const botAvatar = "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"

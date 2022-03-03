@@ -1,22 +1,24 @@
 import React,{useState} from "react";
-import { View, Text, StyleSheet,TouchableOpacity, Button, Linking} from "react-native";
+import { View, Text, StyleSheet,TouchableOpacity, Button, Linking, Dimensions} from "react-native";
+const {width, height} = Dimensions.get('window');
 
 
 
-  
+
 export default function NOC(){
 
       const [flip, setFlip] = useState(false);
       const card =  <View
       style={{
-        backgroundColor: "#43428A",
-        height: 200,
-        width: 180,
-        borderRadius: 23,
-        shadowColor: "#000000",
-        shadowOffset: { width: 2, height: 2 },
-        shadowOpacity: 0.35,
-        shadowRadius: 4,
+          backgroundColor: "#43428A",
+          width: width * 0.45, 
+          borderRadius: 23, 
+          height: height * 0.24,
+          elevation: 8,
+          shadowColor: "#000000",
+          shadowOffset: { width: 2, height: 2 },
+          shadowOpacity: 0.35,
+          shadowRadius: 4,
       }}>
                   <Text style = {styles.text2}>N.O.C</Text>
 
@@ -25,18 +27,19 @@ export default function NOC(){
 
       const definition = <View
       style={{
-        backgroundColor: "#CCC6EE",
-        height: 200,
-        width: 180,
-        borderRadius: 23,
-        shadowColor: "#00000",
-        shadowOffset: { width: 2, height: 2 },
-        shadowOpacity: 0.35,
-        shadowRadius: 4,
+          backgroundColor: "#CCC6EE",
+          width: width * 0.45, 
+          borderRadius: 23, 
+          height: height * 0.24,
+          elevation: 8,
+          shadowColor: "#000000",
+          shadowOffset: { width: 2, height: 2 },
+          shadowOpacity: 0.35,
+          shadowRadius: 4,
       }}
     >
         <Text style = {styles.text}>    {" We use the National\n           Occupational \n     Classification (NOC)\n       system to classify\n       jobs (occupations)"}</Text>
-        <Button title ="Learn More" onPress={()=> Linking.openURL("https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/find-national-occupation-code.html")}></Button>
+        <Text style = {styles.hyperLink} onPress={()=> Linking.openURL("https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/find-national-occupation-code.html")}>Learn More</Text>
       </View>
 
       return(
@@ -63,18 +66,24 @@ export default function NOC(){
         fontWeight: "300",
         alignItems: 'center',
         fontSize: 15,
-        fontFamily: "Avenir Next",
         color: '#000000',
-        marginVertical: 30,
+        fontFamily: 'Avenir Next',
+        marginVertical: height * 0.03,
+        
       },
       text2: {
         flex: 1, 
         alignItems: 'center',
         fontWeight: 'bold',
-        fontSize: 35,
+        fontSize: width * 0.09,
         color: '#FFFFFF',
-        fontFamily: "Avenir Next",
-        marginVertical: 75,
-        marginLeft: 40,
+        fontFamily: 'Avenir Next',
+        textAlign: "center",
+        marginTop: height * 0.08
       },
+      hyperLink: {
+        marginLeft: width * 0.13,
+        color: '#0091FF',
+        marginBottom: height * 0.004
+      }
     });
