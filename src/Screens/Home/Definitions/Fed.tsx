@@ -51,7 +51,7 @@ export default function Fed(){
         shadowRadius: 4,
       }}
     >
-        <Text style = {styles.text}>    {"This program is for skilled workers with foreign workexperience who want to immigrate to Canada permanently."}</Text>
+        <Text style = {styles.text}>    {"This program is for skilled workers with foreign work experience who want to immigrate to Canada permanently."}</Text>
         <Text style = {styles.hyperLink} onPress={()=> Linking.openURL("https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html")}>Learn More</Text>
       </View>
 
