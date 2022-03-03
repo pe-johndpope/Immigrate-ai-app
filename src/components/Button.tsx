@@ -1,7 +1,8 @@
 import React, { memo } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 import { Button as PaperButton } from 'react-native-paper';
 type Props = React.ComponentProps<typeof PaperButton>;
+const {width, height} = Dimensions.get('window');
 
 const Button = ({ mode, style, children, ...props }: Props) => (
   <PaperButton
@@ -20,15 +21,14 @@ const Button = ({ mode, style, children, ...props }: Props) => (
 
 const styles = StyleSheet.create({
   button: {
-    width: '70%',
-    height: '7%',
-    marginVertical: 4,
+    justifyContent: 'center',
+    width: width * 0.7,
+    height: height * 0.07,
     borderRadius: 20,
   },
   text: {
     fontWeight: '700',
     fontSize: 20,
-    lineHeight: 39,
     color: '#FFFFFF',
     fontFamily: "Avenir"
   },

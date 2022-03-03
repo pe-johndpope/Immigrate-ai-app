@@ -1,4 +1,4 @@
-import {View, SafeAreaView, StyleSheet,TextInput,TouchableOpacity, Switch, Dimensions, StatusBar} from 'react-native';
+import {View, SafeAreaView, StyleSheet,TextInput,TouchableOpacity, Switch, Dimensions, StatusBar, Platform} from 'react-native';
 import React, {useState} from 'react';
 import { auth } from '../Firebase/config'
 import {
@@ -7,10 +7,8 @@ import {
   Text,
 } from 'react-native-paper';
 import Button from '../components/Button'
-import ButtonSignup from '../components/ButtonSignup'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import * as ImagePicker from 'expo-image-picker';
-import { Button as PaperButton } from 'react-native-paper';
 const {width, height} = Dimensions.get('window');
 
 const ProfileScreen = ({navigation}) => {
@@ -69,19 +67,65 @@ const ProfileScreen = ({navigation}) => {
           <Text style={styles.profileTitle}>Profile</Text>
         </View>
         <View style={styles.topContainer} > 
-        <View style={{flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row', padding: 10, marginLeft: 5,}}>
             <TouchableOpacity onPress={pickImage}>
             <Avatar.Image 
                 source={{
                   uri: uriFB,
                 }}
-                size={80}
+                size={70}
               />
             </TouchableOpacity>
+            <Text style = {styles.userName}>{user.displayName}</Text>
         </View>
+        <View style = {{marginLeft: width * 0.05, marginTop: height *0.01}}>
+        <View style={styles.row}>
+          <Icon name="map-marker-radius" color="#4D4D4D" size={20}/>
+          <View style = {{marginLeft: 20,}}>
+              <TextInput
+                maxLength={100}
+                placeholder="Country:"
+                keyboardType="numeric"
+                caretHidden={true}
+                style = {{color: "#4D4D4D", fontSize: 18,fontFamily: "Avenir Next"}}
+            /></View>
+          
+        </View>
+        <View style={styles.row}>
+          <Icon name="phone" color="#777777" size={20}/>
+          <View style = {{marginLeft: 20,}}>
+              <TextInput
+                placeholder="Phone:"
+                keyboardType="numeric"
+                caretHidden={true}
+                style = {{color: "#4D4D4D", fontSize: 18,fontFamily: "Avenir Next"}}
+
+            /></View>
+        </View>
+        <View style={styles.row}>
+          <Icon name="email" color="#777777" size={20}/>
+          <Text style={{color:"#4D4D4D",fontSize: 18, marginLeft: 20, fontFamily: "Avenir Next"}}>{user.email}</Text>
+        </View>
+        <View style={styles.row}>
+          <Icon name="calendar-outline" color="#777777" size={20}/>
+          <View style = {{marginLeft: 20,}}>
+              <TextInput
+                placeholder="Date of Birth: MM/DD/YYYY"
+                keyboardType="numeric"
+                caretHidden={true}
+                style = {{color: "#4D4D4D",fontSize: 18,fontFamily: "Avenir Next"}}
+            /></View>
+        </View>
+        </View>
+       
+        </View>
+        <View style = {{flex: 0.2}}></View>
+        <View style={styles.settingContainer}>
+        <Button mode="contained" onPress={handleSignOut}>
+                            Logout?
+            </Button>
 
         </View>
-        <View style={{ flex: 3, backgroundColor: "green" }} />
       </View>
     );
 };
@@ -110,6 +154,54 @@ const styles = StyleSheet.create({
     flex: 3,
     backgroundColor: "#BFD3DA",
     borderRadius: 23,
+    paddingBottom: height * 0.04,
+
   },
+  settingContainer: {
+    flex: 2.4,
+    borderRadius: 23,
+    paddingBottom: height * 0.12,
+    alignContent: 'center',
+    marginLeft: '12%'
+
+  },
+  userName: {
+    justifyContent: 'center',
+    fontFamily: Platform.OS == 'ios' ? 'Avenir Next' : '',
+    fontSize: 22,
+    fontWeight: "600",
+    marginTop: height * 0.02,
+    marginLeft: width * 0.04,
+  },
+  row: {
+    flexDirection: 'row',
+    marginBottom: 10,
+  },
+  button: {
+    transform: Platform.OS == 'ios' ? [{ scaleX: .7 }, { scaleY: .7 }]: [{ scaleX: 1 }, { scaleY: 1 }], 
+    marginLeft: "80%", 
+    position: 'absolute',
+    marginTop: '50%'
+  },
+  button1: {
+    transform: Platform.OS == 'ios' ? [{ scaleX: .7 }, { scaleY: .7 }]: [{ scaleX: 1 }, { scaleY: 1 }], 
+    marginLeft: "80%", 
+    position: 'absolute',
+    marginTop: '32%'
+
+  },
+  button2: {
+    transform: Platform.OS == 'ios' ? [{ scaleX: .7 }, { scaleY: .7 }]: [{ scaleX: 1 }, { scaleY: 1 }], 
+    marginLeft: "80%", 
+    position: 'absolute',
+    marginTop: '14%'
+
+  },
+  logoutButton: {
+    marginTop: height * 0.0,
+    height: height * 0.085, 
+    width: width * 0.5, 
+    marginLeft: '17%'
+  }
 
 });
