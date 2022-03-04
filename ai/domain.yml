@@ -837,7 +837,7 @@ responses:
   - text: "The Interim Federal Health Program (IFHP) covers certain health-care benefits\
       \ for specific groups of people until they become eligible for provincial or\
       \ territorial health insurance, such as:\n\nprotected people, including resettled\
-      \ refugees,\nrefugee claimants, and\ncertain other groups.\n\nThe IFHP doesn\u2019\
+      \ refugees,\nrefugee claimants, and\ncertain other groups.\n\nThe IFHP doesn'\
       t provide services directly to you. Instead, the services are provided by health\
       \ professionals. A company called Medavie Blue Cross manages IFHP claims. They\
       \ cover the cost of services from IFHP-registered health-care providers (doctors,\
@@ -848,7 +848,7 @@ responses:
       \nbasic health-care services (such as doctor visits, hospital care, lab tests),\n\
       supplemental services (such as limited vision care, urgent dental care),\nprescription\
       \ drug coverage (medications and products), and \nin some cases, one Immigration\
-      \ Medical Exam (IME). \n\nThe\_IFHP\_doesn\u2019t cover services or products\
+      \ Medical Exam (IME). \n\nThe\_IFHP\_doesn't cover services or products\
       \ that you can claim under other insurance plans, such as:\n\nprovincial or\
       \ territorial health care, or\nprivate insurance plans.\n\nFind out more about\
       \ the products and services covered by the IFHP and how long you will be covered."
@@ -898,12 +898,12 @@ responses:
   - text: "Any of these documents will prove your eligibility for the Interim Federal\
       \ Health Program (IFHP):\n\nAn Acknowledgement of Claim and Notice to Return\
       \ for Interview Letter\u2014you get this letter after you make a refugee claim\
-      \ and you\u2019re scheduled for an interview.\nA Refugee Protection Claimant\
+      \ and you're scheduled for an interview.\nA Refugee Protection Claimant\
       \ Document\u2014you get this document after your interview and we either\n \
       \ \nrefer your refugee claim to the Immigration and Refugee Board of Canada\
-      \ (IRB), or\ndecide your claim isn\u2019t eligible to be referred to the IRB\
+      \ (IRB), or\ndecide your claim isn't eligible to be referred to the IRB\
       \ but you are eligible to apply for a pre-removal risk assessment\n\nAn Interim\
-      \ Federal Health Certificate\u2014you get this certificate if you\u2019re a\
+      \ Federal Health Certificate\u2014you get this certificate if you're a\
       \ resettled refugee going to live in Canada or a member of another eligible\
       \ beneficiary group.\n\nAn officer from Immigration, Refugees and Citizenship\
       \ Canada or the Canada Border Services Agency will give you your IFHP eligibility\
@@ -913,8 +913,8 @@ responses:
       \ on the date your eligibility document is issued.\nEnd date:\nIf you made a\
       \ refugee claim from within Canada\nYou are eligible for coverage until:\n\n\
       you withdraw your refugee claim, or\nthe Immigration and Refugee Board of Canada\
-      \ (IRB) finds you abandoned your refugee claim, or\nyour refugee claim isn\u2019\
-      t eligible and you can\u2019t apply for a pre-removal risk assessment (PRRA),\
+      \ (IRB) finds you abandoned your refugee claim, or\nyour refugee claim isn'\
+      t eligible and you can't apply for a pre-removal risk assessment (PRRA),\
       \ or\nyou leave Canada. \n\nYour IFHP coverage will automatically expire 90\
       \ days from the decision date if:\n\nthe IRB finds you to be a Convention refugee,\
       \ or \nyou get a positive decision on your PRRA application. \n\nDuring this\
@@ -940,35 +940,35 @@ responses:
   - text: "Follow these steps:\n\nFind a health-care provider who is registered with\
       \ Medavie Blue Cross.\n    \nMedavie Blue Cross is the company that manages\
       \ Interim Federal Health Program (IFHP) claims. \nIf your health-care provider\
-      \ isn\u2019t registered with Medavie Blue Cross, they can easily register.\n\
+      \ isn't registered with Medavie Blue Cross, they can easily register.\n\
       \n\nShow your IFHP eligibility document to your health-care provider before\
       \ they treat you.\nAfter you are treated, your health-care provider may give\
       \ you a claim form. You must sign this form to prove you were given the health\
       \ service or product.\n\n\nNote:\n\nBefore using any services, ask if the provider\
       \ takes part in the Interim Federal Health Program (IFHP) and agrees to send\
-      \ their bill to Medavie Blue Cross.\nYou don\u2019t have to accept services\
-      \ from health-care providers who don\u2019t take part in the IFHP. For example,\
+      \ their bill to Medavie Blue Cross.\nYou don't have to accept services\
+      \ from health-care providers who don't take part in the IFHP. For example,\
       \ if a pharmacy asks you to pay for medication, you can find another pharmacy\
       \ that is registered with the IFHP.\nIf you go to a pharmacy that is not located\
       \ in your province of residence (e.g. if you live in Ontario and request a prescription\
       \ medication in Quebec), your claim may be rejected. Make sure that you tell\
       \ us if you move to another province.\nIf you are eligible for coverage for\
-      \ the service or product under the IFHP, you won\u2019t have to pay for it.\
+      \ the service or product under the IFHP, you won't have to pay for it.\
       \ \nIf you pay a provider for a service or product that is covered by the IFHP,\
-      \ you won\u2019t get any money back.\nIf you need a health-care service or product\
-      \ that isn\u2019t covered you will have to pay for it.\n\n\nFind out more about\
+      \ you won't get any money back.\nIf you need a health-care service or product\
+      \ that isn't covered you will have to pay for it.\n\n\nFind out more about\
       \ how to get health services and products."
   utter_faq/209:
   - text: "After you are treated, your health-care provider may give you a claim form.\
       \ You must sign this form to prove you received the health service or product.\n\
       If you are eligible for coverage for the service or product under the Interim\
-      \ Federal Health Program, you won\u2019t have to pay for it."
+      \ Federal Health Program, you won't have to pay for it."
   utter_faq/210:
   - text: "You may get a letter from Medavie Blue Cross asking you to confirm if you\
       \ were given health services or products on a given date.\nYou should:\n\nanswer\
       \ the question,\nsign the letter, and\nreturn it to Medavie Blue Cross.\n\n\
-      This isn\u2019t a bill. This will help to prevent fraud. Signing this letter\
-      \ won\u2019t affect your health coverage or your immigration status."
+      This isn't a bill. This will help to prevent fraud. Signing this letter\
+      \ won't affect your health coverage or your immigration status."
   utter_faq/211:
   - text: 'No, you do not have to get certain vaccinations. The pre-departure vaccination
       services offered through the IFHP are voluntary.
@@ -989,7 +989,7 @@ responses:
       benefit grids, and\nthe IFHP Information Handbook for Health Care Professionals\
       \ (PDF, 6.89 MB)."
   utter_faq/213:
-  - text: "To check your patient\u2019s eligibility for the Interim Federal Health\
+  - text: "To check your patient's eligibility for the Interim Federal Health\
       \ Program (IFHP) before you provide a service:\n\nAsk for their eligibility\
       \ document. This could be\n  \nan Interim Federal Health Certificate\na Refugee\
       \ Protection Claimant Document\nan Acknowledgement of Claim and Notice to Return\
@@ -1067,7 +1067,7 @@ responses:
   utter_faq/217:
   - text: "The IFHP will initially  approve up to 10 one-hour sessions, not including\
       \ the initial assessment. If more  treatment is needed, providers can submit\
-      \ a request to the IFHP. It must be accompanied by a  physician\u2019s recommendation\
+      \ a request to the IFHP. It must be accompanied by a  physician's recommendation\
       \ for more sessions. A discharge summary report must  be submitted to both the\
       \ referring physician and IFHP once treatment is  completed.\nThe IFHP does\
       \ not cover group psychotherapy sessions or the following services:\n\nPsychoanalysis\n\
@@ -1111,7 +1111,7 @@ responses:
       \ insurance.\nThe IFHP does not cover the cost of health-care services or products\
       \ that a person may claim (even in part) under a public or private health insurance\
       \ plan. The IFHP does not coordinate benefits with other insurance plans/programs\
-      \ so co-payments aren\u2019t possible."
+      \ so co-payments aren't possible."
   utter_faq/222:
   - text: 'You can register as an IFHP pre-departure medical services provider if
       you are a:
@@ -1143,16 +1143,16 @@ responses:
       \ of each Interim Federal Health Program client before you provide any services.\n
       \ If you are affiliated with the International Organization for Migration (IOM),\
       \ you will have client eligibility confirmed by the IRCC visa office. To confirm\
-      \ client eligibility, you must: \n\nConfirm that the client\u2019s name appears\
+      \ client eligibility, you must: \n\nConfirm that the client's name appears\
       \ on the list received from visa offices. \nConfirm that the identity of the\
       \ person matches the person in the identification document. \nKeep a copy of\
       \ the list of eligible clients received from visa offices.\n\nIf you are not\
       \ affiliated with the IOM, you must:\n\nConfirm that the client has an Interim\
       \ Federal Health Certificate.\nConfirm that the identity of the person on the\
       \ Interim Federal Health Certificate matches the person in the identification\
-      \ document.\nKeep a photocopy of the client\u2019s Interim Federal Health Certificate\
+      \ document.\nKeep a photocopy of the client's Interim Federal Health Certificate\
       \ in their records.\n\nFor services to be reimbursed, as a non-IOM affiliated\
-      \ provider you must attach a copy of the client\u2019s Interim Federal Health\
+      \ provider you must attach a copy of the client's Interim Federal Health\
       \ Certificate to claims sent to Medavie Blue Cross."
   utter_faq/224:
   - text: 'If you are a panel physician affiliated with the International Organization
@@ -1278,22 +1278,22 @@ responses:
       \nFor proof, you must get official letters from any banks or financial institutions
       where you are keeping money.\n\nLetter(s) must list:\n\n- All current bank and
       investment accounts\n\n- All outstanding debts such as credit card debts and loans\n
-      \n\nIf you don\u2019t need to provide proof of funds, you must upload a letter 
+      \n\nIf you don't need to provide proof of funds, you must upload a letter 
       explaining either that you have been invited to apply under the Canadian Experience Class, 
       or that you have a valid job offer."
   utter_faq/53: # Question: What Express Entry programs can I apply to?
-  - text: "Find out which programs you\u2019re eligible for by using these steps:\n
+  - text: "Find out which programs you're eligible for by using these steps:\n
       \n1. Sign in to your account.\n\n 2. Go to the section 'View the applications you
       submitted'.\n\n3. Click on 'Check full application status.'\n\n4. Scroll
       down to the section called 'What am I eligible for?'\n\nThe programs
       are listed in the table. Beside each one, under 'Details', it will say
-      'met' or 'not met.'\n\nIf it says 'met' that means you\u2019
+      'met' or 'not met.'\n\nIf it says 'met' that means you'
       re eligible for that program.\n\nYou may be eligible for more than one program, 
       and can apply for multiple at the same time"
   utter_faq/54: # Question: I'm in the Express Entry pool. How can I look for a job in Canada?
   - text: "Note: As of June 6, 2017, It is now optional to create a Job Match account
       with Job Bank.\n\n\nTo start your job search, you can:\n\n- Create a Job Match
-      account with Canada\u2019s Job Bank\n\n- Promote yourself to employers in Canada
+      account with Canada's Job Bank\n\n- Promote yourself to employers in Canada
       using private sector job boards\n\nYou can use both while you are in the Express
       Entry pool. Once you come to Canada, you can keep using these services if
       you still need to find a job.\n\n\nJob Bank: A Job Match account with Job Bank
@@ -1306,7 +1306,7 @@ responses:
       online services that advertise jobs and give you tools for finding work. Some
       are free and others cost a small fee. Research to find one that suits you."
   utter_faq/55: # Question: Can I have more than one Express Entry profile?
-  - text: "No. You may only have one profile at a time. This is set out in Canada\u2019
+  - text: "No. You may only have one profile at a time. This is set out in Canada'
       s immigration  law.\n\nCreating  more than one profile will not give you a better
       chance at being invited or allow you to be invited under a different program.\n\n
       Note: Completing an Express Entry profile does not guarantee that you will receive
@@ -1315,9 +1315,9 @@ responses:
       Comprehensive Ranking System."
   utter_faq/56: # Question: How to fix validation error when creating Express Entry profile
   - text: "You may want to try using a different Web browser such as Firefox or Google
-      Chrome. You should also check your browser\u2019s language settings and make
+      Chrome. You should also check your browser's language settings and make
       sure it is set to English or French as special characters can cause errors.\n\n
-      If you are still having problems, try clearing your browser cache. Your browser\u2019
+      If you are still having problems, try clearing your browser cache. Your browser'
       s 'Help' section can tell you how to do this. If the problem continues, you can
       contact website support directly."
   utter_faq/57: # Question: Do I need an Educational Credential Assessment to apply under Express Entry?
@@ -1335,7 +1335,7 @@ responses:
   utter_faq/59: # Question: Can I use my existing Job Bank account to get matched with employers for Express Entry?
   - text: "Note: It is now optional to create a Job Match account with Job Bank. You
       can still create a Job Match account to help you find work.\n\nNo. If you
-      don\u2019t already have a valid job offer, you must create a Job Match account
+      don't already have a valid job offer, you must create a Job Match account
       in Job Bank using your Express Entry profile number and Job Seeker Validation
       Code. A Job Match account can help you start looking for work.\n\nOnce you complete
       your Express Entry profile and you are found to meet most of the requirements
@@ -1345,7 +1345,7 @@ responses:
       4. Follow the instructions to create an account."
   utter_faq/60: # Question: My personal reference code is not working. What should I do?
   - text: "If you haven't finished your Express Entry profile on your account,
-      the reference code won\u2019t work. To continue your profile:\n\n1. Go to the
+      the reference code won't work. To continue your profile:\n\n1. Go to the
       'View the applications you submitted' section at the top of your
       account page\n\nChoose the line with your Express Entry profile\n\n3. Click the 
       'Continue Profile' button\n\nIf you have not started creating your profile,
@@ -1413,7 +1413,7 @@ responses:
   - text: "To update  your profile, follow these steps:\n\nGo to the main  page of
       your account\nScroll down to  \u201CContinue my profile / application, not
       yet submitted\u201D\nChoose the line  with your Express Entry Profile\nClick
-      \u201CContinue Profile\u201D button \n\n\nOnce  you\u2019re on the \u201C
+      \u201CContinue Profile\u201D button \n\n\nOnce  you're on the \u201C
       Express Entry profile\u201D page:\n\n\nClick the \u201CUpdate form\u201D button
       for\_ the \u201CForm Name\u201D you want to update\nMake the changes you want
       to the fields\nClick the \u201CSave and exit\u201D button at the bottom of
@@ -1447,32 +1447,32 @@ responses:
       
       The 'pencil' button - Access the fields related to that question."
   utter_faq/69: # How do I confirm that my Express Entry profile is complete?
-  - text: "To confirm that you profile is complete:\n\nGo to the \u201CExpress  Entry
-      profile\u201D page\nClick the \u201CContinue form\u201D button for the section
-      with the status \u201Cin progress\u201D\nVerify that all circles to the right
-      have a  green check mark  in them.\n    If one section displays a progress
-      bar  instead of a green check mark, open the section and complete the missing
-      information.\n\nClick the \u201Csave and exit\u201D button to save your changes
-      and return to the \u201CExpress Entry profile\u201D page."
+  - text: "To confirm that you profile is complete:\n\n1. Go to the 'Express Entry
+      profile' page\n\n2. Click the 'Continue form' button for the section
+      with the status 'In progress'\n\n3. Verify that all circles to the right
+      have a  green check mark  in them.\n\n4. If one section displays a progress
+      bar instead of a green check mark, open the section and complete the missing
+      information.\n\n5. Click the 'Save and Exit' button to save your changes
+      and return to the 'Express Entry profile' page."
   utter_faq/70:
-  - text: "If you weren\u2019t found eligible, you won\u2019t be able to update your\
-      \ profile. You\u2019ll have to create a new profile. Be sure your profile is\
-      \ complete and correct before you submit it.\n If your profile was found eligible\
-      \ for the pool, you can still update it after you\u2019ve submitted it. Follow\
-      \ these steps:\n\nOn the main page of your account, go to the section \u201C\
-      View the applications you submitted\u201D.\nClick on \u201CCheck full application\
-      \ status\u201D.\nOn the \u201CExpress Entry profile status\u201D page, click\
-      \ on the \u201CView your profile\u201D under the heading \u201CYour Express\
-      \ Entry profile status\u201D.\nOn the \u201CExpress Entry profile\u201D page,\
-      \ click on the \u201CUpdate form\u201D button for the section you want to change.\n\
-      \nNote: If the button only says \u201CView form,\u201D your profile wasn\u2019\
-      t found eligible. You\u2019ll have to submit a new one.\n\n\nMake any changes\
-      \ you need to, and then click the \u201CSave and exit\u201D button at the bottom\
-      \ of the page.\nOnce you finish updating your profile, click on the \u201CContinue\u201D\
-      \ button at the bottom of the page. Follow the instructions provided to submit\
-      \ your updated profile.\n\nNote: The \u201CRevert changes\u201D button will\
-      \ appear each time you enter a form and click on the \u201CSave and exit\u201D\
-      \ button, even if you didn't make any changes."
+  - text: "If you weren't found eligible, you won't be able to update your
+      profile. You'll have to create a new profile. Be sure your profile is
+      complete and correct before you submit it.\n If your profile was found eligible
+      for the pool, you can still update it after you've submitted it. Follow
+      these steps:\n\nOn the main page of your account, go to the section \u201C
+      View the applications you submitted\u201D.\nClick on \u201CCheck full application
+      status\u201D.\nOn the \u201CExpress Entry profile status\u201D page, click
+      on the \u201CView your profile\u201D under the heading \u201CYour Express
+      Entry profile status\u201D.\nOn the \u201CExpress Entry profile\u201D page,
+      click on the \u201CUpdate form\u201D button for the section you want to change.\n
+      \nNote: If the button only says \u201CView form,\u201D your profile wasn'
+      t found eligible. You'll have to submit a new one.\n\n\nMake any changes
+      you need to, and then click the \u201CSave and exit\u201D button at the bottom
+      of the page.\nOnce you finish updating your profile, click on the \u201CContinue\u201D
+      button at the bottom of the page. Follow the instructions provided to submit
+      your updated profile.\n\nNote: The \u201CRevert changes\u201D button will
+      appear each time you enter a form and click on the \u201CSave and exit\u201D
+      button, even if you didn't make any changes."
   utter_faq/71:
   - text: "You can find these numbers in a message in your account. To find it:\n\n\
       Log into your account\nGo to the heading called \"View my submitted applications\
@@ -1483,7 +1483,7 @@ responses:
       \ the PDF letter (number 1 in the example below). The Job Seeker Validation\
       \ Code should be under the section \u201CTo register with Job Bank\u201D (number\
       \ 2 in the example).\nExample of letter:\n\nMake sure you are looking at the\
-      \ right message. If the text of the message doesn\u2019t match the example above,\
+      \ right message. If the text of the message doesn't match the example above,\
       \ check other messages in your account to find the right one.\nIf you did not\
       \ get a code, there are a few reasons why this may be.\nIf there is no profile\
       \ number, you should contact us using the Case Specific Enquiry form."
@@ -1511,20 +1511,20 @@ responses:
       \ NOC only states high school, this is the date you graduated from high school.)"
   utter_faq/75:
   - text: "\u201CMaintained status\u201D means you can stay in Canada and, if eligible,\
-      \ keep working while we make a decision on your application.\n\nIf you\u2019\
+      \ keep working while we make a decision on your application.\n\nIf you'\
       re in Canada with\_maintained status and are still authorized to work at the\
       \ time you complete your Express Entry profile:\n\nAnswer \u201Cyes\u201D to\
       \ the question \u201CDoes [your name] have a valid work permit for the current\
-      \ job in Canada?\u201D\n\n\nIf you\u2019re in Canada with maintained status,\
-      \ you\u2019re still authorized to work, and the original work permit was supported\
+      \ job in Canada?\u201D\n\n\nIf you're in Canada with maintained status,\
+      \ you're still authorized to work, and the original work permit was supported\
       \ by a positive Labour Market Impact Assessment (LMIA):\n\nAnswer \u201Cyes\u201D\
       \ to the question \u201CWas a positive LMIA issued for\_the current work permit?\u201D\
       \ \nWhere it asks for the LMIA number, enter the number of the expired LMIA.\n\
       \n\n\nIf (2) is true, for the question \u201CWas a positive LMIA issued for\_\
-      the job offer in Canada?\u201D\nanswer \u201Cno\u201D if:\n\nyou\u2019re still\
+      the job offer in Canada?\u201D\nanswer \u201Cno\u201D if:\n\nyou're still\
       \ working for the employer named on the original work permit, and\nyou have\
       \ a job offer from your current employer for at least 1 year\n\nanswer \u201C\
-      yes\u201D if:\n\nyou\u2019re working for a different employer than the one named\
+      yes\u201D if:\n\nyou're working for a different employer than the one named\
       \ on the original work permit\nyou have a job offer from your new employer for\
       \ at least 1 year and\nyour new employer has a positive LMIA"
   utter_faq/76:
@@ -1532,7 +1532,7 @@ responses:
       \ the credentials must be for a program of 3 or more years in length\nyou need\
       \ a valid educational credential assessment (ECA) for each credential\n\nNote:\
       \ The order that you complete your credentials in does not affect points.\n\
-      Fill in all fields in the Education history section in your profile. When you\u2019\
+      Fill in all fields in the Education history section in your profile. When you'\
       re done, click Save and add. After you do:\n\nthe details you entered about\
       \ your study period will be saved to the table below the Save and add button\n\
       the fields will go blank and you can add another study period\nmake sure to\
@@ -1565,26 +1565,26 @@ responses:
       \ three programs, the system would send you an invitation to apply for  the\
       \ CEC.\nIf you met the criteria  for CEC and FSWP, you would also get an invitation\
       \ to apply under the CEC.\nIf you met the criteria for  FSWP and FSTP, you would\
-      \ get an invitation to apply under FSWP.\n\nYou  can\u2019t choose which program\
+      \ get an invitation to apply under FSWP.\n\nYou  can't choose which program\
       \ you are invited to apply for. The system will sort  profiles based on the\
       \ information you enter.\nIf you decline the  invitation, the system will not\
       \ re-invite you under the next program. You will  go back in the pool, and if\
       \ we invite you again, the same order will apply."
   utter_faq/79:
-  - text: "Yes. If you\u2019re invited to apply, you\u2019ll get an email at the address\
+  - text: "Yes. If you're invited to apply, you'll get an email at the address\
       \ you provided. The email will say that you have a new message in your account.\n\
       \ To accept or decline your invitation, you need to sign in to your account.\n\
-      If you\u2019ve forgotten your password or username, follow these instructions.\n\
-      \ If you need to create a new account, you\u2019ll need to link your application\
+      If you've forgotten your password or username, follow these instructions.\n\
+      \ If you need to create a new account, you'll need to link your application\
       \ to your new account. You may need your profile or application number to do\
       \ this. You can find this number at the end of the subject line of an email\
-      \ we\u2019ve sent you (example: W300027607).\n After you change your password\
+      \ we've sent you (example: W300027607).\n After you change your password\
       \ or link your application, follow these steps:\n\nGo back to the main page\
       \ in your account.\nScroll down to the table under the heading \u201CContinue\
-      \ an application you haven\u2019t submitted.\u201D\nFind the application called\n\
+      \ an application you haven't submitted.\u201D\nFind the application called\n\
       \    \n\u201CWork permit\u201D for International Experience Canada, or\n\u201C\
       Permanent residence\u201D for Express Entry.\n\n\nTo accept your invitation\
-      \ to apply, click \u201CStart application.\u201D\n\nIf there\u2019s no application,\
+      \ to apply, click \u201CStart application.\u201D\n\nIf there's no application,\
       \ you can check the status and messages for your profile under the heading \u201C\
       View the applications you submitted.\u201D"
   utter_faq/80:
@@ -1597,7 +1597,7 @@ responses:
       \ changed on November 19, 2016.\nThose points caused the system to place too\
       \ much weight on job offers. This made it hard for highly skilled people without\
       \ job offers, who we want in our economy, to be invited to apply.\nThis change\
-      \ will better recognize both a person\u2019s skills and experience with the\
+      \ will better recognize both a person's skills and experience with the\
       \ value they bring to the economy."
   utter_faq/81:
   - text: 'No. As of November 19, 2016, a valid job offer for Express Entry only needs
@@ -1649,7 +1649,7 @@ responses:
       invited to apply.
   utter_faq/84:
   - text: "Your National Occupation Classification  (NOC) code is the number the job\
-      \ is listed under in Canada\u2019s official job  classification system.\nFind\
+      \ is listed under in Canada's official job  classification system.\nFind\
       \ the NOC code  and title for a job"
   utter_faq/85:
   - text: "To get points from the Comprehensive Ranking System for a job offer in\
@@ -1662,9 +1662,9 @@ responses:
       \ you are currently working in Canada but have not been offered a job that is\
       \ supported by a LMIA (or is exempt from needing one), you should:\n\nanswer\
       \ \u201CNo\u201D and \ncreate a Job Match account in Job Bank.\n\nNote: From\
-      \ January 1, 2015 to November 19, 2016, jobs offers that didn\u2019t need an\
+      \ January 1, 2015 to November 19, 2016, jobs offers that didn't need an\
       \ LMIA were not considered valid for Express Entry. We now accept certain job\
-      \ offers that don\u2019t need an LMIA.\nFind out more about what makes a job\
+      \ offers that don't need an LMIA.\nFind out more about what makes a job\
       \ offer valid."
   utter_faq/86:
   - text: "No, a work permit is not a job offer. A job offer is valid if your current\
@@ -1718,10 +1718,10 @@ responses:
       \ the work:\n\nwas paid by wages or commissions\nwas continuous (no gaps in\
       \ employment), and\nmeets all the other requirements of the Program\n\nThis\
       \ includes co-op terms and apprenticeships.\nCanadian Experience Class and Federal\
-      \ Skilled Trades Program\nStudent work experience doesn\u2019t count towards\
+      \ Skilled Trades Program\nStudent work experience doesn't count towards\
       \ the minimum requirements for the Canadian Experience Class or Federal Skilled\
       \ Trades Program.\nHow student work experience affects your profile ranking\n\
-      Canadian work experience gained while you were a full-time student doesn\u2019\
+      Canadian work experience gained while you were a full-time student doesn'\
       t count towards the score used to rank your profile.\nThe work experience gained\
       \ as a full-time student outside Canada counts towards the score used to rank\
       \ your profile."
@@ -1742,7 +1742,7 @@ responses:
   - text: "If you show in your Express Entry profile that you have a\_valid job offer,\
       \ you will automatically be awarded additional points towards your\_Comprehensive\
       \ Ranking System\_score.\nIf your job offer is from your current employer, and\
-      \ you\u2019ve maintained your status and are authorized to work, you must keep\
+      \ you've maintained your status and are authorized to work, you must keep\
       \ working for the employer on your existing permit and under the same conditions\
       \ in order to keep your job offer points."
   utter_faq/93:
@@ -1775,12 +1775,12 @@ responses:
       \ score for your round of invitation, we will refuse your application. If we\
       \ refuse your application, we will not refund your processing fees."
   utter_faq/94:
-  - text: "If you didn\u2019t apply for a new work permit before your original one\
+  - text: "If you didn't apply for a new work permit before your original one\
       \ expired, it may cause your score to drop. This could cause you to not be eligible\
       \ anymore.\nIf your score has dropped below the minimum cut-off for your round\
       \ of invitations, you should decline the invitation. If you submit your application\
-      \ anyway, we\u2019ll refuse it.\nIf we refuse your application, we won\u2019\
-      t refund your fees.\nIf you decline, you\u2019ll be put back in the pool. You\
+      \ anyway, we'll refuse it.\nIf we refuse your application, we won'\
+      t refund your fees.\nIf you decline, you'll be put back in the pool. You\
       \ should update your Express Entry profile to show the change in your work status.\n\
       You may be able to restore your status and get a work permit. If your status\
       \ is restored and you still have an eligible Express Entry profile, you may\
@@ -1792,10 +1792,10 @@ responses:
       To be eligible for Express Entry, you need to meet the minimum requirements
       and complete a profile.'
   utter_faq/96:
-  - text: "No, in most cases you don\u2019t need a job  offer.\nBut, you will need\
+  - text: "No, in most cases you don't need a job  offer.\nBut, you will need\
       \ one if you: \n\nare eligible for either the  Federal Skilled Worker Program\
       \ or the Federal Skilled Trades Program, and\ndo not have enough money to support\
-      \ yourself and your family in Canada.\n\nEven if you don\u2019t need one, you\
+      \ yourself and your family in Canada.\n\nEven if you don't need one, you\
       \ may want to try  and find a valid  job offer. It will give you a much higher\
       \ point score, and so a better  chance of being invited to apply."
   utter_faq/97:
@@ -1832,10 +1832,10 @@ responses:
       \nStarting November 8, 2019, you will not be able to log in using \"CHOICE Rewards\
       \ MasterCard.\" If you started an online application, submit it before November\
       \ 8, 2019. If you don't, you'll need to start over.\n\nWe want to know about\
-      \ any technical issues you\u2019re having so we can help solve the issue.\n\
-      If you\u2019re having problems with our forms, read about downloading and uploading\
+      \ any technical issues you're having so we can help solve the issue.\n\
+      If you're having problems with our forms, read about downloading and uploading\
       \ forms and documents first.\nIf you have problems before you apply  (while\
-      \ you\u2019re filling out your online application or uploading your documents):\
+      \ you're filling out your online application or uploading your documents):\
       \ Use the Report a technical issue button at the top of your account.\nIf you\
       \ have problems after you submit your application: Use our web form and choose\
       \ Technical difficulties as the type of enquiry.\nTo help us find and solve\
@@ -1850,7 +1850,7 @@ responses:
       \ Identifier (UCI)/Client ID Number\napplication number\npersonal reference\
       \ code\ncurrent status in Canada and the date of expiration\nthe date you applied\n\
       \nFor technical issues uploading a form or document, include:\n\na copy of the\
-      \ form or document you\u2019re trying to upload (with all fields completed),\
+      \ form or document you're trying to upload (with all fields completed),\
       \ and\nall your answers to the online questionnaire. To do this:\n    \nchoose\
       \ \u201CModify my Answers\u201D at the top of the page\nsave your answers into\
       \ a document by:\n        \ntaking screen shots or\ncopying and pasting the\
@@ -1858,11 +1858,11 @@ responses:
       \ include:\n\nall your answers on the \u201CLink an existing application to\
       \ this account\u201D page. Save them in a document by:\n    \ntak ing screenshots\
       \ or\ncopying and pasting the text\n\n\n\nFor all other technical issues, include:\n\
-      \nscreenshots showing the full browser window of the:\n    \npage where you\u2019\
+      \nscreenshots showing the full browser window of the:\n    \npage where you'\
       re having problems or trying to sign into your account\nerror message(s) you\
       \ got\n\n\n\nIf you need to send many documents and images, find out how to\
-      \ combine documents.\nWe\u2019ll try to answer within\_10 business days after\
-      \ you contact us . Don\u2019t send your question more than once. It can delay\
+      \ combine documents.\nWe'll try to answer within\_10 business days after\
+      \ you contact us . Don't send your question more than once. It can delay\
       \ our answer."
   utter_faq/100:
   - text: 'You can apply online to
@@ -1901,7 +1901,7 @@ responses:
       \ documents you need to include when you submit your application."
   utter_faq/102:
   - text: "Your personal reference code is a unique code given to you through Come\
-      \ to Canada, our online eligibility tool. You\u2019ll need to enter this code\
+      \ to Canada, our online eligibility tool. You'll need to enter this code\
       \ to:\n\nbegin an online application for a visitor visa, study or work permit\
       \ or\n carry your information from Come to Canada over to an Express Entry profile\n\
       \nYou can find your personal reference code at the top of your results page\
@@ -1944,17 +1944,17 @@ responses:
       1-800-7328-7358 (outside of North America)"
   utter_faq/108:
   - text: "To register for a GCKey, go to the sign in page and click the \u201CContinue\
-      \ to GCKey\u201D button.\nThen, choose a user name and a password. It\u2019\
+      \ to GCKey\u201D button.\nThen, choose a user name and a password. It'\
       ll ask you to create security questions. Keep a copy of this in a safe place\
       \ in case you forget."
   utter_faq/109:
   - text: "If you lost your GCKey password, you can create a new  password. Go to\
-      \ the sign-in page for GCKey and you\u2019ll be able to create a new  password\
+      \ the sign-in page for GCKey and you'll be able to create a new  password\
       \ after you answer the password recovery questions you previously set up  while\
       \ registering for a GCKey.\nIf you lost your GCKey username, you will have \
       \ to create a new GCKey. If you create  a new GCKey you can access an application\
       \ by linking the application to your  new account.\nSee also: I recently reset\
-      \ my account, but I don\u2019t see my application. How can I get  it back?"
+      \ my account, but I don't see my application. How can I get  it back?"
   utter_faq/110:
   - text: "Change your sign-in partner if you're using \"Choice Reward MasterCard\"\
       \nStarting November 8, 2019, you will not be able to log in using \"CHOICE Rewards\
@@ -1969,15 +1969,15 @@ responses:
       \ like to access. Have a copy of your application form on hand as you will have\
       \ to enter the information exactly as you did on your application form."
   utter_faq/111:
-  - text: "Once you submit your online application for permanent residence, you can\u2019\
+  - text: "Once you submit your online application for permanent residence, you can'\
       t send more documents through your account unless we ask for them.\n If we ask\
-      \ for a document, you\u2019ll get a message in your account.\n To upload a document:\n\
+      \ for a document, you'll get a message in your account.\n To upload a document:\n\
       \nSign in to your account.\nUnder \u201CView the applications you submitted\u201D\
       \ click on \u201CCheck full application status.\u201D\nUnder \u201CDetails about\
       \ your application status\u201D click on \u201CView submitted application.\u201D\
       \ \nOn this page, you can upload the additional document the same way you uploaded\
       \ the others when you first applied.\n\nIf you need to send documents that we\
-      \ didn\u2019t ask for (for example, an updated Travel History form), go to our\
+      \ didn't ask for (for example, an updated Travel History form), go to our\
       \ Web form and follow the instructions."
   utter_faq/112:
   - text: "We have been returning fees paid to the Department for Federal Skilled\
@@ -2020,7 +2020,7 @@ responses:
       \ you submit your electronic application for permanent residence, of continuous\
       \ full-time work experience (or the equivalent in continuous part-time work)\
       \ in a skilled occupation listed in Skill Type 0, or Skill Level A or B of the\
-      \ 2016 version of Canada\u2019s National Occupational Classification (NOC).\n\
+      \ 2016 version of Canada's National Occupational Classification (NOC).\n\
       Language ability\nYou must show that you meet or exceed the language threshold\
       \ of Canadian Language Benchmark (CLB)\_7 with test results from a IRCC-designated\
       \ language testing organization.\nEducation\nYou must provide either a Canadian\
@@ -2085,7 +2085,7 @@ responses:
       you work in a job listed as Skill Type 0, or Skill Level A or B in the 2016\
       \ National Occupational Classification, and\nthat employer already got an LMIA\
       \ to hire you before. \n\nIf you are working in Canada on a work permit that\
-      \ does not need an LMIA, your employer doesn\u2019t need to get one to make\
+      \ does not need an LMIA, your employer doesn't need to get one to make\
       \ your job offer valid.\nWhen you create your Express Entry profile, you can\
       \ show that you have a job offer. If we invite you to apply, you will need to\
       \ submit a copy of the documents with your application.\nBut, if you plan to\
@@ -2099,7 +2099,7 @@ responses:
       \ (LMIA).\nUnder Express Entry, some LMIA-exempt jobs count towards job offer\
       \ points. For example, if you are working in Canada on a LMIA-exempt work permit\
       \ that was issued\_under an international agreement or Federal-Provincial-Territorial\
-      \ agreement (or certain other cases), you don\u2019t need your current employer\
+      \ agreement (or certain other cases), you don't need your current employer\
       \ to get an LMIA for your job offer to be valid.\nIf your work permit is LMIA-exempt\
       \ for any other reason, your employer still needs to get an LMIA to improve\
       \ your chances of being invited to apply. These exemptions apply to temporary\
@@ -2107,18 +2107,18 @@ responses:
       \ could get you more points under the Comprehensive Ranking System.\nA work\
       \ permit on its own is not a job offer, even if it is an open work permit. You\
       \ need a written offer. Find out more about valid job offers.\nFind out more\
-      \ about which types of jobs don\u2019t need an LMIA."
+      \ about which types of jobs don't need an LMIA."
   utter_faq/121:
   - text: "Not necessarily.\nIf you are working in Canada on a post-graduation work\
       \ permit, and have a valid job offer, your current employer will need to get\
       \ an LMIA if:\n\nyou need one to meet the program requirements for the FSWP\
       \ or the FSTP and\nyour job is not exempt.\n\nIf a job is exempt, it means your\
       \ employer does not need an LMIA to support your job offer.\nIf you are invited\
-      \ under the Canadian Experience Class, you don\u2019t need an LMIA to meet the\
+      \ under the Canadian Experience Class, you don't need an LMIA to meet the\
       \ program requirements.\nBut, a valid job offer supported by an LMIA can get\
       \ you more points under the Comprehensive Ranking System. This can improve your\
       \ chances of being invited to apply. So in that case, your employer may want\
-      \ to get an LMIA, even though you don\u2019t need it to be eligible.\nYou must\
+      \ to get an LMIA, even though you don't need it to be eligible.\nYou must\
       \ complete an Express Entry profile as the first step to immigrate to Canada\
       \ permanently as a skilled worker."
   utter_faq/122:
@@ -2160,7 +2160,7 @@ responses:
       residence. An Invitation to Apply for permanent residence will be based on your
       score and rank in the Express Entry pool using the Comprehensive Ranking System.'
   utter_faq/124:
-  - text: "Yes, provided that it is still valid and that it\u2019s an ECA for immigration\
+  - text: "Yes, provided that it is still valid and that it's an ECA for immigration\
       \ purposes.\nImmigration, Refugees and Citizenship Canada (IRCC) will accept\
       \ ECA reports for five years from the date they are issued.\nWhen creating your\
       \ Express Entry profile, in your educational history you will be asked to include\
@@ -2229,14 +2229,14 @@ responses:
       \ (General test) can be taken through Paragon Testing Enterprises Inc.\nThe\
       \ International English Language Testing System (General test) can be taken\
       \ through Cambridge Assessment English, IDP Australia and The British Council\n\
-      The Test d\u2019\xE9valuation de fran\xE7ais (TEF Canada) can be taken through\
+      The Test d'\xE9valuation de fran\xE7ais (TEF Canada) can be taken through\
       \ The Paris Chamber of Commerce and Industry.\nThe Test de connaissance du fran\xE7\
       ais (TCF Canada) (in French only) can be taken through France Education International\
       \ (FEI).\n\nOutside Canada:\n\nThe Canadian English Language Proficiency Index\
       \ Program (General test) can be taken through Paragon Testing Enterprises Inc.\n\
       The International English Language Testing System (General test) can be taken\
       \ through Cambridge Assessment English, IDP Australia and The British Council.\n\
-      The Test d\u2019\xE9valuation de fran\xE7ais (TEF Canada) can be taken through\
+      The Test d'\xE9valuation de fran\xE7ais (TEF Canada) can be taken through\
       \ The Paris Chamber of Commerce and Industry.\nThe Test de connaissance du fran\xE7\
       ais (TCF Canada) (in French only) can be taken through le France Education International\
       \ (FEI).\n\nCheck the website of each approved language testing agency for test\
@@ -2246,32 +2246,32 @@ responses:
       \ follow the steps below.\nUnder Canadian law, Quebec can select its own immigrants\
       \ to settle in the province. However, these people must still meet our requirements\
       \ to be admitted to Canada. See reasons for inadmissibility.\nStep 1\nContact\
-      \ the Minist\xE8re de l\u2019Immigration, de la Diversit\xE9 et de l\u2019Inclusion\
+      \ the Minist\xE8re de l'Immigration, de la Diversit\xE9 et de l'Inclusion\
       \ du Qu\xE9bec and apply for a Certificat de s\xE9lection du Qu\xE9bec (CSQ).\n\
       Step 2\nIf Quebec approves your CSQ  application, mail a permanent residence\
       \  application to the Centralized Intake Office (CIO) in Sydney, Nova Scotia,\
       \ Canada. An IRCC officer will approve or refuse your application, based on\
       \ the  information you provide."
   utter_faq/130:
-  - text: "If you were educated outside Canada, you\u2019ll need an Educational Credential\
+  - text: "If you were educated outside Canada, you'll need an Educational Credential\
       \ Assessment (ECA) for immigration purposes to immigrate as a federal skilled\
-      \ worker.\nIf you were educated in Canada, you don\u2019t need an ECA."
+      \ worker.\nIf you were educated in Canada, you don't need an ECA."
   utter_faq/131:
   - text: "You can get an ECA at any of the designated organizations listed below.\
       \ We only accept assessments from these organizations.\nWhen they assess your\
       \ education, they will give you a report that tells you what your education\
       \ is equal to in Canada.\nWe only accept assessments issued on or after the\
       \ date the organizations were designated to do ECA reports for immigration purposes.\
-      \ If you got a report before that date, contact the organization to see if they\u2019\
+      \ If you got a report before that date, contact the organization to see if they'\
       ll re-issue it.\nAssessment of most foreign education\nYou must use an organization\
-      \ on our list. If an organization isn\u2019t on this list, we will not accept\
+      \ on our list. If an organization isn't on this list, we will not accept\
       \ assessments from them.\n\nComparative Education Service: University of Toronto\
       \ School of Continuing Studies\n\ndesignated April 17, 2013 \n\n\nInternational\
       \ Credential Assessment Service of Canada\n\ndesignated April 17, 2013\n\n\n\
       World Education Services\n\ndesignated April 17, 2013 \n\n\nInternational Qualifications\
       \ Assessment Service (IQAS)\n\ndesignated August 6, 2015 \n\n\nInternational\
       \ Credential Evaluation Service\n\ndesignated August 6, 2015 \n\n\n\nIf you\
-      \ aren\u2019t sure which organization to choose, contact them.\nAssessment for\
+      \ aren't sure which organization to choose, contact them.\nAssessment for\
       \ specialist and family physicians\nYou must get your report from the\_Medical\
       \ Council of Canada (designated April 17, 2013) if your primary occupation is\n\
       \nspecialist physician\n\t\t\n2016 NOC code 3111\n\n\ngeneral practitioner/family\
@@ -2312,7 +2312,7 @@ responses:
       \ the cost to have it delivered. Delivery costs depend on how you choose it\
       \ to be sent, with courier delivery being the most expensive.\nThe fees for\
       \ an ECA report and the length of time to get one vary and can change without\
-      \ notice.\nIf you\u2019re a family or specialist physician, or a pharmacist,\
+      \ notice.\nIf you're a family or specialist physician, or a pharmacist,\
       \ the cost will be higher. You will need to contact the professional body that\
       \ regulates your occupation to find out how much it will cost.\nThe time to\
       \ get your education assessed is different for each designated organization\
@@ -2326,11 +2326,11 @@ responses:
   - text: "Usually, you should choose the highest level degree, diploma or certificate\
       \ (or combination) that will award you the most points.\n For example, you would\
       \ get more points for an ECA report that shows you have a Canadian equivalent\
-      \ of a master\u2019s degree than for one that shows you have the equivalent\
-      \ of a bachelor\u2019s degree.\n But, if you have more than one degree or diploma\
-      \ (if the highest is at least at a bachelor\u2019s level), you will get more\
-      \ points than a single bachelor\u2019s degree.\n For example, you hold \n\n\
-      a Bachelor\u2019s degree and a diploma or certificate or \ntwo Bachelor\u2019\
+      \ of a master's degree than for one that shows you have the equivalent\
+      \ of a bachelor's degree.\n But, if you have more than one degree or diploma\
+      \ (if the highest is at least at a bachelor's level), you will get more\
+      \ points than a single bachelor's degree.\n For example, you hold \n\n\
+      a Bachelor's degree and a diploma or certificate or \ntwo Bachelor'\
       s degrees\n\nIn this case, you need to get an ECA for each credential to get\
       \ the maximum points.\nFind out more about getting your education assessed."
   utter_faq/136:
@@ -2414,7 +2414,7 @@ responses:
   - text: "Yes. Even if you had a medical exam previously, all applicants for permanent\
       \ residence must have a medical exam.\nA medical exam is needed to make sure\
       \ that: \n\nyou pose no health risk to the Canadian public and\nneither you\
-      \ nor a family member will place too much demand on Canada\u2019s health, education\
+      \ nor a family member will place too much demand on Canada's health, education\
       \ and social systems.\n\n\nNote: Completing an Express Entry profile is the\
       \ first step to  immigrate to Canada permanently as a skilled worker. Completing\
       \ an Express  Entry profile does not guarantee that you will receive an Invitation\
@@ -2423,8 +2423,8 @@ responses:
       \ Comprehensive Ranking System."
   utter_faq/142:
   - text: "Yes. You can apply and count your work experience in Quebec. \nIf you plan\
-      \ to live in  Quebec, you must apply to the Minist\xE8re de l\u2019Immigration,\
-      \ de la Diversit\xE9 et de  l\u2019Inclusion du Qu\xE9bec. Quebec selects its\
+      \ to live in  Quebec, you must apply to the Minist\xE8re de l'Immigration,\
+      \ de la Diversit\xE9 et de  l'Inclusion du Qu\xE9bec. Quebec selects its\
       \ own immigrants.\n\nNote: Completing an Express Entry profile is the first\
       \ step to  immigrate to Canada permanently as a skilled worker. Completing an\
       \ Express  Entry profile does not guarantee that you will receive an Invitation\
@@ -2436,25 +2436,25 @@ responses:
       \ international students. Those students must have graduated from a PGWP-eligible\
       \ program at a designated learning institution.\nIf you had to renew your passport\n\
       You can extend your PGWP with your new passport only if\n\nyou were eligible\
-      \ for a PGWP but\nyou didn\u2019t get the full length because your passport\
+      \ for a PGWP but\nyou didn't get the full length because your passport\
       \ was going to expire\n\nInclude this information in a letter of explanation\
-      \ when you apply to extend your PGWP.\nIf you\u2019re an Express Entry applicant\n\
-      You may be able to apply for a bridging open work permit if\n\nyou\u2019re waiting\
+      \ when you apply to extend your PGWP.\nIf you're an Express Entry applicant\n\
+      You may be able to apply for a bridging open work permit if\n\nyou're waiting\
       \ for a decision on a permanent residence application under Express Entry\n\
       your current work permit expires in 4 months or less\nyou have valid status\
-      \ on your work permit\nyou\u2019re currently in Canada\n\n\nCompleting an Express\
-      \ Entry profile doesn\u2019t guarantee you\u2019ll receive an Invitation to\
+      \ on your work permit\nyou're currently in Canada\n\n\nCompleting an Express\
+      \ Entry profile doesn't guarantee you'll receive an Invitation to\
       \ Apply for permanent residence. An Invitation to Apply for permanent residence\
       \ will be based on your score and rank in the Express Entry pool. The Express\
       \ Entry pool uses the Comprehensive Ranking System."
   utter_faq/144:
-  - text: "No. You don\u2019t need a certain level of education to apply to stay permanently\
+  - text: "No. You don't need a certain level of education to apply to stay permanently\
       \ in Canada.\_But, you can get Comprehensive Ranking System (CRS) points if\
       \ you have high school education or higher.\nTo get points for education outside\
       \ Canada, you must have an Education Credential Assessment.\nYou can now also\
       \ earn additional CRS points for study in Canada above high school:\n\n15 points\
       \ for a one- or two-year diploma or certificate\n30 points for a degree, diploma\
-      \ or certificate of three years or longer, or a Master\u2019s, professional\
+      \ or certificate of three years or longer, or a Master's, professional\
       \ or doctoral degree of at least one year.\n\nCompleting an Express Entry profile\
       \ is the first step to immigrate to Canada permanently as a skilled worker.\
       \ In it, you can give details about your education."
@@ -2516,11 +2516,11 @@ responses:
       \ Permit Program.\nStudents can now also earn additional Comprehensive Ranking\
       \ Score points for study in Canada above high school:\n\n15 points for a one-\
       \ or two-year diploma or certificate\n30 points for a degree, diploma or certificate\
-      \ of three years or longer, or a Master\u2019s, professional or doctoral degree\
+      \ of three years or longer, or a Master's, professional or doctoral degree\
       \ of at least one year.\n\nYou must complete an Express Entry profile as the\
       \ first step to immigrate to Canada permanently as a skilled worker."
   utter_faq/149:
-  - text: "Yes. All applicants must provide proof of language ability in one of Canada\u2019\
+  - text: "Yes. All applicants must provide proof of language ability in one of Canada'\
       s two official languages. You must give us official test results designated\
       \ by Immigration, Refugees and Citizenship Canada. See more information on language\
       \ testing.\n\nNote: Completing an Express Entry profile is the first step to\
