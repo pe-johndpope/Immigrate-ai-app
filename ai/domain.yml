@@ -1528,7 +1528,7 @@ responses:
       This would be the date when you finished the minimum level of education needed for the occupation 
       according to the National Occupational Classification code. (Note: if the NOC requirements are only high 
       school, this is the date you graduated from high school.)"
-  utter_faq/75: # How do I fill out my Express Entry profile when I have maintained my status?
+  utter_faq/75: # Question: How do I fill out my Express Entry profile when I have maintained my status?
   - text: "'Maintained status' means you can stay in Canada and, if eligible,
       keep working while we make a decision on your application.\n\n
       
@@ -1553,78 +1553,75 @@ responses:
       - For the question 'Was a positive LMIA issued for the job offer in Canada?', answer 'Yes' if 
       you're working for a different employer than the one named on the original work permit, you have 
       a job offer from your new employer for at least 1 year and your new employer has a positive LMIA"
-  utter_faq/76:
-  - text: "To get full points for having more than 1 credential:\n\nat least 1 of\
-      \ the credentials must be for a program of 3 or more years in length\nyou need\
-      \ a valid educational credential assessment (ECA) for each credential\n\nNote:\
-      \ The order that you complete your credentials in does not affect points.\n\
-      Fill in all fields in the Education history section in your profile. When you'\
-      re done, click Save and add. After you do:\n\nthe details you entered about\
-      \ your study period will be saved to the table below the Save and add button\n\
-      the fields will go blank and you can add another study period\nmake sure to\
-      \ add all study periods you want us to assess for points\n\nEach educational\
-      \ credential needs its own row in the Education history table."
-  utter_faq/77:
-  - text: 'No, the system will not keep your information. We had planned to allow
-      the system to save profile information, so it would be easier to complete a
-      new profile when the first one expired. We have found that this option is not
-      possible at this time. Should the option become available in the future, we
-      will update this information online.
+  utter_faq/76: # Question: How do I get education points for Express Entry if I have 2 or more degrees or diplomas?
+  - text: "To get full points for having more than 1 credential:\n\n
+      - At least 1 of the credentials must be for a program of 3 or more years in 
+      length\n\n
+      
+      - You need a valid educational credential assessment (ECA) for each credential\n\n
+      
+      Fill in all fields in the Education history section in your profile. When you'
+      re done, click Save and Add. Repeat the same steps for each credential."
+  utter_faq/77: # Question: If my Express Entry profile expires, will the system keep my information?
+  - text: "No, the system will not keep your information. If your profile is about to expire, 
+      you must complete and submit a new one if you want to stay in the Express Entry pool.\n\n
 
-      If your profile is about to expire, you must complete and submit a new one if
-      you want to stay in the Express Entry pool.
-
-      You can save screen shots of your profile to make it easier to re-enter your
-      data.
+      You can save screen shots of your profile to make it easier to re-enter your data.\n\n
 
       Do not create a new profile until your existing one expires. If you decide to
       create and submit a new profile before your existing one expires, you will need
-      to withdraw your existing profile first.
+      to withdraw your existing profile first."
+  utter_faq/78: # Question: Can I be eligible for more than one program under Express Entry?
+  - text: "Yes. Depending on the information in your profile, you may be eligible
+      for more than one program through Express Entry. In that case, you will
+      be invited to apply (ITA) for one program based on this order:\n\n
+      
+      First: Canadian Experience Class (CEC)\n\n
 
-      Find more information.'
-  utter_faq/78:
-  - text: "Yes.  Depending on the information in your profile, you may be eligible\
-      \ for more than  one program through Express Entry.\nIn  that case, you will\
-      \ be invited to apply for one program based on this order:\n\nCanadian Experience\
-      \ Class  (CEC),\nFederal Skilled Worker  Program (FSWP), then\nFederal Skilled\
-      \ Trades Program  (FSTP).\n\nFor  example:\n\nIf you met the criteria  for all\
-      \ three programs, the system would send you an invitation to apply for  the\
-      \ CEC.\nIf you met the criteria  for CEC and FSWP, you would also get an invitation\
-      \ to apply under the CEC.\nIf you met the criteria for  FSWP and FSTP, you would\
-      \ get an invitation to apply under FSWP.\n\nYou  can't choose which program\
-      \ you are invited to apply for. The system will sort  profiles based on the\
-      \ information you enter.\nIf you decline the  invitation, the system will not\
-      \ re-invite you under the next program. You will  go back in the pool, and if\
-      \ we invite you again, the same order will apply."
-  utter_faq/79:
-  - text: "Yes. If you're invited to apply, you'll get an email at the address\
-      \ you provided. The email will say that you have a new message in your account.\n\
-      \ To accept or decline your invitation, you need to sign in to your account.\n\
-      If you've forgotten your password or username, follow these instructions.\n\
-      \ If you need to create a new account, you'll need to link your application\
-      \ to your new account. You may need your profile or application number to do\
-      \ this. You can find this number at the end of the subject line of an email\
-      \ we've sent you (example: W300027607).\n After you change your password\
-      \ or link your application, follow these steps:\n\nGo back to the main page\
-      \ in your account.\nScroll down to the table under the heading \u201CContinue\
-      \ an application you haven't submitted.\u201D\nFind the application called\n\
-      \    \n\u201CWork permit\u201D for International Experience Canada, or\n\u201C\
-      Permanent residence\u201D for Express Entry.\n\n\nTo accept your invitation\
-      \ to apply, click \u201CStart application.\u201D\n\nIf there's no application,\
-      \ you can check the status and messages for your profile under the heading \u201C\
-      View the applications you submitted.\u201D"
-  utter_faq/80:
-  - text: "By awarding additional points for a job offer based on the NOC, we can\
-      \ get a better balance of top talent from the pool.\nThis means that if you\
-      \ have a high CRS score for your skills and experience alone, you are more likely\
-      \ to be invited to apply.\nFor a valid job offer under Express Entry, you can\
-      \ now get:\n\n200 CRS points for NOC 00 jobs\n50 CRS points for any other NOC\
-      \ 0, A and B jobs.\n\nWe used to award 600 points for a valid job offer. This\
-      \ changed on November 19, 2016.\nThose points caused the system to place too\
-      \ much weight on job offers. This made it hard for highly skilled people without\
-      \ job offers, who we want in our economy, to be invited to apply.\nThis change\
-      \ will better recognize both a person's skills and experience with the\
-      \ value they bring to the economy."
+      Second: Federal Skilled Worker Program (FSWP)\n\n
+      
+      Third: Federal Skilled Trades Program (FSTP)\n\n
+      
+      Unfortunately, you will only recieve one invitation, and you cannot choose which program
+      you are invited to apply for. The system will sort profiles based on the
+      information you enter.\n\n
+      
+      If you decline the invitation, the system will not re-invite you under the next program. You 
+      will go back in the pool, and if we invite you again, the same order will apply."
+  utter_faq/79: # Can I be invited to apply if I've lost my username or password?
+  - text: "Yes. If you're invited to apply, you will recieve an email at the address
+      you provided.\n\n
+      
+      To accept or decline your invitation, you need to sign in to your account.\n\n
+      
+      If you've forgotten your password or username, follow these instructions:\n\n
+      
+      If you need to create a new account, link your application
+      to your new account. You will need your profile or application number to do
+      this. You can find this number at the end of the subject line of an email
+      we've sent you (example: W300027607).\n\n 
+      
+      After you have changed your password or linked your application to new account, 
+      follow these steps:\n\n
+      
+      1. Go back to the main page in your account.\n\n
+      
+      2. Scroll down to the table under the heading 'Continue an application you haven't submitted.'\n\n
+
+      3. Find the application called 'Work permit' for International Experience Canada, or
+      'Permanent residence' for Express Entry.\n\n
+      
+      To accept your ITA, click 'Start application'.If there's no application,
+      you can check the status and messages for your profile under the heading
+      'View the applications you submitted'."
+  utter_faq/80: # Why did Canada change the number of points for a valid job offer in Express Entry?
+  - text: "By awarding additional points for a job offer based on the NOC, Canada can
+      get a better balance of top talent from the pool.\n\n
+      
+      For a valid job offer under Express Entry, you can now get:\n\n
+      
+      - 200 CRS points for NOC 00 jobs.\n\n
+      - 50 CRS points for any other NOC 0, A and B jobs."
   utter_faq/81:
   - text: 'No. As of November 19, 2016, a valid job offer for Express Entry only needs
       to be for one year or more.

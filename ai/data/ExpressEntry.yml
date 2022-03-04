@@ -219,10 +219,10 @@ nlu:
       - Should I include all my work experience for Express Entry?
   - intent: faq/74
     examples: |
-      - In an Express Entry profile, what do you mean by the \u201Cdate the applicant first became qualified to practice this occupation\u201D?
-      - What does \u201Cdate the applicant first became qualified to practice this occupation\u201D mean in my Express Entry profile?
-      - I don't understand what is meant by \u201Cdate the applicant first became qualified to practice this occupation\u201D?
-      - What is \u201Cdate the applicant first became qualified to practice this occupation\u201D?
+      - In an Express Entry profile, what do you mean by 'the date the applicant first became qualified to practice this occupation'?
+      - What does date the applicant first became qualified to practice this occupation mean in my Express Entry profile?
+      - I don't understand what is meant by  date the applicant first became qualified to practice this occupation?
+      - What is the date the applicant first became qualified to practice this occupation?
   - intent: faq/75
     examples: |
       - How do I fill out my Express Entry profile when I have maintained my status?
