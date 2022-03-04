@@ -22,7 +22,7 @@ export const Routes: React.FC<RoutesProps> = ({}) => {
         <Stack.Navigator
           screenOptions={{
             headerStyle: { elevation: 0 },
-            cardStyle: { backgroundColor: "#fff" },
+            cardStyle: { backgroundColor: "#EFF5F8" },
           }}
         >
           <Stack.Screen

@@ -3,7 +3,6 @@ import { View, StyleSheet, Animated, useWindowDimensions } from 'react-native';
 
 export default function Paginator({ data, scrollX }){
     const { width } = useWindowDimensions();
-
     return (
         <View style={{ flexDirection: 'row', height: 64 }}>
             {data.map((_, i) => {
@@ -47,3 +46,4 @@ const styles = StyleSheet.create({
         marginHorizontal: 8,
     },
 });
+

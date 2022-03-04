@@ -1,14 +1,16 @@
-import {View, SafeAreaView, StyleSheet,TextInput,TouchableOpacity, Switch, Dimensions, StatusBar, Platform} from 'react-native';
+import {View, SafeAreaView, StyleSheet,TextInput,TouchableOpacity, Switch, Dimensions, StatusBar, Platform, Linking} from 'react-native';
 import React, {useState} from 'react';
 import { auth } from '../Firebase/config'
 import {
   Avatar,
   Title,
   Text,
+  Button
 } from 'react-native-paper';
-import Button from '../components/Button'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import * as ImagePicker from 'expo-image-picker';
+import { theme } from "../components/theme";
+
 const {width, height} = Dimensions.get('window');
 
 const ProfileScreen = ({navigation}) => {
@@ -61,10 +63,8 @@ const ProfileScreen = ({navigation}) => {
         // Try setting `flexDirection` to `"row"`.
         flexDirection: "column"
       }]}>
-        <StatusBar barStyle = "dark-content" hidden = {false} backgroundColor = "#EFF5F8" translucent = {true} />
-
         <View style={{ flex: 1}} >
-          <Text style={styles.profileTitle}>Profile</Text>
+          <Text style={styles.profileTitle}>Profile & Settings</Text>
         </View>
         <View style={styles.topContainer} > 
         <View style={{flexDirection: 'row', padding: 10, marginLeft: 5,}}>
@@ -119,9 +119,59 @@ const ProfileScreen = ({navigation}) => {
         </View>
        
         </View>
-        <View style = {{flex: 0.2}}></View>
+        <View style = {{flex: 0.4}}></View>
         <View style={styles.settingContainer}>
-        <Button mode="contained" onPress={handleSignOut}>
+          <View style = {{paddingTop: height * 0.05,}}>
+        <View style = {{flexDirection:'row',justifyContent: 'center'}}>
+                <View style ={{flex:1}}>
+                  <Text style = {styles.settingHeaderText}>Emails & Promotions</Text>
+                  <Text style = {styles.settingSmallerText}>Don't Worry We Don't Spam :)</Text>
+                </View>
+                <Switch
+                  trackColor={{ false: "#676767", true: "#64B938"}}
+                  thumbColor={isEnabled2 ? "#FFFFFF" : "#FFFFFF"}
+                  ios_backgroundColor="#676767"
+                  onValueChange={toggleSwitch2}
+                  value={isEnabled2}
+                  style={{ transform: Platform.OS == 'ios' ? [{ scaleX: .7 }, { scaleY: .7 }]: [{ scaleX: .9 }, { scaleY: .9 }]}}
+                />
+        </View>
+        <View style = {{flexDirection:'row',justifyContent: 'center'}}>
+                <View style ={{flex:1}}>
+                  <Text style = {styles.settingHeaderText}>Analytics</Text>
+                  <Text style = {styles.settingSmallerText}>Help Immigrate.ai grow with your chat data!</Text>
+                </View>
+                <Switch
+                  trackColor={{ false: "#676767", true: "#64B938"}}
+                  thumbColor={isEnabled2 ? "#FFFFFF" : "#FFFFFF"}
+                  ios_backgroundColor="#676767"
+                  onValueChange={toggleSwitch2}
+                  value={isEnabled2}
+                  style={{ transform: Platform.OS == 'ios' ? [{ scaleX: .7 }, { scaleY: .7 }]: [{ scaleX: .9 }, { scaleY: .9 }]}}
+                />
+        </View>
+        <View style = {{flexDirection:'row',justifyContent: 'center'}}>
+                <View style ={{flex:1}}>
+                  <Text style = {styles.settingHeaderText}>Notifications</Text>
+                  <Text style = {styles.settingSmallerText}>See When new Facts & FAQ Release!</Text>
+                </View>
+                <Switch
+                  trackColor={{ false: "#676767", true: "#64B938"}}
+                  thumbColor={isEnabled2 ? "#FFFFFF" : "#FFFFFF"}
+                  ios_backgroundColor="#676767"
+                  onValueChange={toggleSwitch2}
+                  value={isEnabled2}
+                  style={{ transform: Platform.OS == 'ios' ? [{ scaleX: .7 }, { scaleY: .7 }]: [{ scaleX: .9 }, { scaleY: .9 }]}}
+                />
+        </View>
+        <View style={styles.row2}>
+        <Text style={styles.label}>Please make sure you have read our </Text>
+        <TouchableOpacity onPress={() => Linking.openURL("https://immigrate.ai")}>
+          <Text style={styles.link}>Privacy Policy</Text>
+        </TouchableOpacity>
+      </View>
+        </View>
+            <Button  onPress={handleSignOut}>
                             Logout?
             </Button>
 
@@ -138,32 +188,30 @@ export default ProfileScreen;
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "#EFF5F8",
     flex: 1,
     padding: 15,
     },
   profileTitle: {
-    fontSize: height * 0.035,
+    marginLeft: '1%',
+    fontSize: height * 0.03,
     color: "#493d8a",
     fontWeight: "bold",
-    textAlign: 'center',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: height * 0.06
+    marginTop: height * 0.07,
   },
   topContainer: {
     flex: 3,
     backgroundColor: "#BFD3DA",
     borderRadius: 23,
     paddingBottom: height * 0.04,
-
+    marginTop: '5%'
   },
   settingContainer: {
     flex: 2.4,
-    borderRadius: 23,
-    paddingBottom: height * 0.12,
+    paddingBottom: height * 0.10,
     alignContent: 'center',
-    marginLeft: '12%'
-
+    justifyContent: 'center',
+    marginLeft: '1%'
   },
   userName: {
     justifyContent: 'center',
@@ -198,10 +246,29 @@ const styles = StyleSheet.create({
 
   },
   logoutButton: {
-    marginTop: height * 0.0,
-    height: height * 0.085, 
-    width: width * 0.5, 
-    marginLeft: '17%'
-  }
+    color: "#493d8a"
+  },
+  settingHeaderText: {
+    fontWeight: '700',
+    fontSize: 15,
+  },
+  settingSmallerText:{
+    fontSize: 13,
+    paddingBottom: '5%',
+
+  },
+  row2: {
+    flexDirection: "row",
+    paddingBottom: 10,
+  },
+  label: {
+    color: theme.colors.secondary,
+    fontFamily: "Avenir Next",
+  },
+  link: {
+    fontWeight: "700",
+    fontFamily: "Avenir Next",
+    color: "#493d8a",
+  },
 
 });

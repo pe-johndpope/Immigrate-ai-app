@@ -163,7 +163,7 @@ const Home = () => {
       <View style={{ flex: 1, flexDirection: 'row'}}>
           <Text style={styles.nameText}>
             {"Hey,\n"}
-            {"Kendall"}
+            {auth?.currentUser?.displayName}
           </Text>
           <Image  style = {styles.logoHeader}source={require("../../Images/LogoTrans.png")}></Image>
       </View>
