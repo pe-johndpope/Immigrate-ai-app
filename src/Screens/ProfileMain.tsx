@@ -181,7 +181,7 @@ const ProfileScreen = ({navigation}) => {
 };
 
 
-  
+      
 
 
 export default ProfileScreen;
@@ -236,7 +236,7 @@ const styles = StyleSheet.create({
     marginLeft: "80%", 
     position: 'absolute',
     marginTop: '32%'
-
+   
   },
   button2: {
     transform: Platform.OS == 'ios' ? [{ scaleX: .7 }, { scaleY: .7 }]: [{ scaleX: 1 }, { scaleY: 1 }], 
