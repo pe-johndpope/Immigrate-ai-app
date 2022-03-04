@@ -85,7 +85,11 @@ function Chat({ navigation }) {
                 disabled={!props.text}
                 containerStyle={styles.sendContainer}
               >
-                <Text style={{ color: !props.text ? "#d6d3d1" : "#2097F3" }}>
+                <Text
+                  style={{
+                    color: !props.text ? "#d6d3d1" : "#2097F3",
+                  }}
+                >
                   Send
                 </Text>
               </Send>
