@@ -1,0 +1,40 @@
+{
+  "rule_only_slots": [
+    "desired_province"
+  ],
+  "rule_only_loops": [
+<<<<<<<< HEAD:example1/.rasa/cache/tmp_0zb1h0d/rule_only_data.json
+    "yukon_form",
+    "northwest_territories_form",
+    "prince_edward_island_form",
+    "nova_scotia_form",
+    "british_columbia_form",
+    "newfoundland_and_labrador_form",
+    "new_brunswick_form",
+    "manitoba_form",
+    "alberta_form",
+    "name_form",
+    "eligibility_form",
+    "quebec_form",
+    "provincial_form",
+    "ontario_form",
+    "saskatchewan_form"
+========
+    "name_form",
+    "prince_edward_island_form",
+    "saskatchewan_form",
+    "alberta_form",
+    "manitoba_form",
+    "eligibility_form",
+    "new_brunswick_form",
+    "quebec_form",
+    "provincial_form",
+    "northwest_territories_form",
+    "yukon_form",
+    "british_columbia_form",
+    "ontario_form",
+    "nova_scotia_form",
+    "newfoundland_and_labrador_form"
+>>>>>>>> 75d02f9e4ad10c5bceb30d2544f3d10e7760b9ac:ai/.rasa/cache/tmp5vucqgw0/rule_only_data.json
+  ]
+}
