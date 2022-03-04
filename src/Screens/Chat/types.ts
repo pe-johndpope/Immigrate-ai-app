@@ -17,18 +17,18 @@ export interface IRadioCheckbox {
     type?: string;
     title?: string;
     payload?: string;
-  }[]
+  }[];
 }
 
 export interface IRasaResponse {
   text?: string;
-  image?: string;  
+  image?: string;
   custom: IButtonTemplate; // this arrives when Rasa sends a json_message
   template?: string;
   response?: string;
   attachment?: string;
   buttons?: IButton[];
-  elements?: object[]
+  elements?: object[];
 }
 
 // Using as reference Facebook schemas

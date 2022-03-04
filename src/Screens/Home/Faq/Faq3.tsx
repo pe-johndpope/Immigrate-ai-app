@@ -1,34 +1,46 @@
-import React,{useState} from "react";
-import { View, Text, Image,StatusBar , StyleSheet,TouchableOpacity, Button, Linking, ScrollView} from "react-native";
-import { useFonts} from '@expo-google-fonts/dev';
-import { TouchableHighlight, TouchableWithoutFeedback } from "react-native-gesture-handler";
-import Icon from 'react-native-vector-icons/Ionicons';
+import React, { useState } from "react";
+import {
+  View,
+  Text,
+  Image,
+  StatusBar,
+  StyleSheet,
+  TouchableOpacity,
+  Button,
+  Linking,
+  ScrollView,
+} from "react-native";
+import { useFonts } from "@expo-google-fonts/dev";
+import {
+  TouchableHighlight,
+  TouchableWithoutFeedback,
+} from "react-native-gesture-handler";
+import Icon from "react-native-vector-icons/Ionicons";
 import { text } from "stream/consumers";
 
-
 const colors = {
-    themeColor: "#FFFFFF",
-    white: "#fff",
-    background: "#FFFFFF",
-    greyish: "#FFFFFF",
-    tint: "#2F4F4F",
-    purple: "#493d8a",
-    orange: "#FCA493",
-    lightPurp: "#CCC6EC"
-  };
+  themeColor: "#FFFFFF",
+  white: "#fff",
+  background: "#FFFFFF",
+  greyish: "#FFFFFF",
+  tint: "#2F4F4F",
+  purple: "#493d8a",
+  orange: "#FCA493",
+  lightPurp: "#CCC6EC",
+};
 
-  
-export default function Faq3(){
+export default function Faq3() {
+  const answer =
+    "If you want to study in Canada longer, you need to extend your study permit. You should apply to extend your study permit at least 30 days before your current permit expires. However, we recommend you apply more than 30 days before it expires. If you need to renew your Social Insur ance Number (SIN) or health insurance, you need a valid study permit. If you wait until there are only 30 days left, you may have problems renewing these, because your study permit will be expiring.";
 
-      const answer = "If you want to study in Canada longer, you need to extend your study permit. You should apply to extend your study permit at least 30 days before your current permit expires. However, we recommend you apply more than 30 days before it expires. If you need to renew your Social Insur ance Number (SIN) or health insurance, you need a valid study permit. If you wait until there are only 30 days left, you may have problems renewing these, because your study permit will be expiring."
-
-      const [flip, setFlip] = useState(false);
-      const card =  <View
+  const [flip, setFlip] = useState(false);
+  const card = (
+    <View
       style={{
         backgroundColor: "#EFF5F8",
         height: 125,
         width: 300,
-        flex:1,
+        flex: 1,
         justifyContent: "center",
         alignItems: "center",
         borderRadius: 23,
@@ -36,13 +48,16 @@ export default function Faq3(){
         shadowOffset: { width: 2, height: 2 },
         shadowOpacity: 0.35,
         shadowRadius: 4,
-      }}>
-                  <Text style = {styles.text2}>{"Question 3: How can I extend my stay as a student?"}</Text>
+      }}
+    >
+      <Text style={styles.text2}>
+        {"Question 3: How can I extend my stay as a student?"}
+      </Text>
+    </View>
+  );
 
-      </View>
-
-
-      const definition = <View
+  const definition = (
+    <View
       style={{
         backgroundColor: "#EFF5F8",
         height: 320,
@@ -53,58 +68,58 @@ export default function Faq3(){
         shadowOpacity: 0.35,
         shadowRadius: 4,
       }}
-    >   
-        <ScrollView>
-             <Text style = {styles.text}> {answer}</Text>
-             <Text style = {styles.flipButton} onPress = { () => setFlip(!flip)}>Back to Question</Text>
+    >
+      <ScrollView>
+        <Text style={styles.text}> {answer}</Text>
+        <Text style={styles.flipButton} onPress={() => setFlip(!flip)}>
+          Back to Question
+        </Text>
+      </ScrollView>
+    </View>
+  );
 
-        </ScrollView>
-       
-      </View>
+  return (
+    <TouchableWithoutFeedback onPress={() => setFlip(!flip)}>
+      {flip ? definition : card}
+    </TouchableWithoutFeedback>
+  );
+}
 
-      return(
-            <TouchableWithoutFeedback onPress = { () => setFlip(!flip)}>
-            { flip? definition: card}
-            </TouchableWithoutFeedback>
-      )
-  }
-
-
-  const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    button: {
-        height: '7%',
-        marginVertical: 4,
-      },
-      text: {
-        flex:1,
-        justifyContent: "center",
-        alignItems: "center",
-        fontFamily: 'Avenir Next',
-        fontWeight: "300",
-        padding: 25,
-        fontSize: 15,
-        color: '#000000',
-      },
-      text2: {
-        padding: 20,
-        flex:1,
-        fontWeight: "400",
-        justifyContent: "center",
-        alignItems: "center",
-        fontSize: 16,
-        fontFamily: 'Avenir Next',
-        color: '#000000',
-        marginVertical: 12,
-      },
-      flipButton: {
-        textAlign: 'center',
-        color: '#0091FF',
-        paddingBottom: 10,
-      }
-    });
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  button: {
+    height: "7%",
+    marginVertical: 4,
+  },
+  text: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    fontFamily: "Avenir Next",
+    fontWeight: "300",
+    padding: 25,
+    fontSize: 15,
+    color: "#000000",
+  },
+  text2: {
+    padding: 20,
+    flex: 1,
+    fontWeight: "400",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: 16,
+    fontFamily: "Avenir Next",
+    color: "#000000",
+    marginVertical: 12,
+  },
+  flipButton: {
+    textAlign: "center",
+    color: "#0091FF",
+    paddingBottom: 10,
+  },
+});
