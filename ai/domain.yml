@@ -1614,7 +1614,7 @@ responses:
       To accept your ITA, click 'Start application'.If there's no application,
       you can check the status and messages for your profile under the heading
       'View the applications you submitted'."
-  utter_faq/80: # Why did Canada change the number of points for a valid job offer in Express Entry?
+  utter_faq/80: # Question: Why did Canada change the number of points for a valid job offer in Express Entry?
   - text: "By awarding additional points for a job offer based on the NOC, Canada can
       get a better balance of top talent from the pool.\n\n
       
@@ -1622,73 +1622,55 @@ responses:
       
       - 200 CRS points for NOC 00 jobs.\n\n
       - 50 CRS points for any other NOC 0, A and B jobs."
-  utter_faq/81:
-  - text: 'No. As of November 19, 2016, a valid job offer for Express Entry only needs
-      to be for one year or more.
+  utter_faq/81: # Question: Do I need a permanent job offer for Express Entry?
+  - text: "No. As of November 19, 2016, a valid job offer for Express Entry only needs
+      to be for one year or more.\n\n
 
-      Job offers must still be:
+      Job offers must still be:\n\n
 
+      - At the NOC 0, A or B level\n\n
 
-      at the NOC 0, A or B level
+      - From one employer for the FSW or CEC, or up to two employers for the FST\n\n
 
-      from one employer for the FSW or CEC, or up to two employers for the FST
-
-      supported by an LMIA (if you need one) or be for a candidate that is exempt
-      from needing one.
-
-
-      Why we changed it
-
-      There are many types of skilled jobs where long-term contracts are typical,
-      such as research chairs, IT workers, CEOs, etc.
-
-      This change will make it easier for businesses to use Express Entry, and for
-      skilled workers to secure a job offer.'
-  utter_faq/82:
-  - text: "Generally, a valid offer is for a job that is:\n\nfull-time and non-seasonal,\n\
-      for at least one year,\nin a skilled job listed as Skill Type\_0, or Skill Level\_\
-      A or\_B in the 2016 National Occupational Classification.\n\nA job offer must\
-      \ be in writing, and must set out details of the job they are offering you,\
-      \ such as:\n\nyour pay and deductions\nyour job duties\nconditions of employment,\
-      \ like your hours of work.\n\nIn most cases, a valid job offer must be supported\
-      \ by a Labour Market Impact Assessment (LMIA). The employer has to apply for\
-      \ one from Employment and Social Development Canada/Service Canada.\nIf they\
-      \ get a positive LMIA, they must give you a copy and a written job offer.\n\
-      In some cases, your employer does not need an LMIA to support your job offer.\
-      \ Find out more about jobs that are exempt.\nUnder Express Entry, a valid job\
-      \ offer will give you additional points in the Comprehensive Ranking System.\n\
-      A work permit on its own is not a job offer, even if it is an open work permit.\n\
-      When you create your Express Entry profile, include the LMIA number to show\
-      \ that you have a valid job offer.\nIf you get invited to apply, we may ask\
-      \ you for the original document, so keep it in a safe place.\nA job offer is\
-      \ not valid if your employer is:\n\nan embassy, high commission or consulate\
-      \ in Canada, or\non the list of ineligible employers.\n\nIf your employer is\
-      \ not eligible, does not get a positive LMIA, or is not LMIA-exempt you will\
-      \ not meet the requirements of a valid job offer for arranged employment.\n\
-      Find out more about offers of employment and exemptions."
-  utter_faq/83:
-  - text: Your primary occupation means the job you have  experience in (within the
-      last ten years) and want to base your immigration  application on, if you are
+      - Supported by an LMIA (if you need one) or be for a candidate that is exempt
+      from needing one."
+  utter_faq/82: # Question: What makes a job offer valid under Express Entry?
+  - text: "Generally, a valid offer is for a job that is:\n\n- Full-time and non-seasonal.\n\n
+      - For at least one year.\n\n
+      
+      - In a skilled job listed as Skill Type 0, A or B.\n\n
+      
+      - The job offer must be in writing, and must set out details of the job they are offering you,
+      such as your pay, deductions, job duties, and conditions of employment.\n\n
+      
+      In most cases, a valid job offer must be supported by a Labour Market Impact Assessment (LMIA). 
+      The employer has to apply for one from Employment and Social Development Canada/Service Canada. 
+      If they get a positive LMIA, they must give you a copy alongside their written job offer."
+  utter_faq/83: # Question: What do you mean by Primary Occupation?
+  - text: Your primary occupation means the job you have experience in (within the
+      last ten years) and want to base your immigration application on, if you are
       invited to apply.
-  utter_faq/84:
-  - text: "Your National Occupation Classification  (NOC) code is the number the job\
-      \ is listed under in Canada's official job  classification system.\nFind\
-      \ the NOC code  and title for a job"
-  utter_faq/85:
-  - text: "To get points from the Comprehensive Ranking System for a job offer in\
-      \ Express Entry, your employer will usually need to get a Labour Market Impact\
-      \ Assessment (LMIA).\nYou should only answer \u201CYes\u201D to the question\
-      \ \u201CDoes [your name] have a job offer in Canada?\u201D if:\n\na Canadian\
-      \ employer (or up to two for the Federal Skilled Trades Program) has offered\
-      \ you a full-time, non-seasonal job for one year or more and\nthat job offer\
-      \ is supported by an LMIA, OR\nthe job is exempt from needing an LMIA.\n\nIf\
-      \ you are currently working in Canada but have not been offered a job that is\
-      \ supported by a LMIA (or is exempt from needing one), you should:\n\nanswer\
-      \ \u201CNo\u201D and \ncreate a Job Match account in Job Bank.\n\nNote: From\
-      \ January 1, 2015 to November 19, 2016, jobs offers that didn't need an\
-      \ LMIA were not considered valid for Express Entry. We now accept certain job\
-      \ offers that don't need an LMIA.\nFind out more about what makes a job\
-      \ offer valid."
+  utter_faq/84: # Question: Where can my National Occupation Classification code be found?
+  - text: "Your National Occupation Classification (NOC) code is the number the job
+      is listed under in Canada's official job classification system.\nFind
+      the NOC code and title for a job"
+  utter_faq/85: # Question: Why didn't I get points for my job offer in Express Entry?
+  - text: "To get points from the Comprehensive Ranking System for a job offer in
+      Express Entry, your employer will usually need to get a Labour Market Impact
+      Assessment (LMIA). You should only answer 'Yes' to the question
+      'Does [your name] have a job offer in Canada?' if:\n\n
+      
+      - A Canadian employer (or up to two for the Federal Skilled Trades Program) has offered
+      you a full-time, non-seasonal job for one year or more.\n\n
+      
+      - That job offer is supported by an LMIA.\n\nthe job is exempt from needing an LMIA.\n\nIf
+      you are currently working in Canada but have not been offered a job that is
+      supported by a LMIA (or is exempt from needing one), you should:\n\nanswer
+      \u201CNo\u201D and \ncreate a Job Match account in Job Bank.\n\nNote: From
+      January 1, 2015 to November 19, 2016, jobs offers that didn't need an
+      LMIA were not considered valid for Express Entry. We now accept certain job
+      offers that don't need an LMIA.\nFind out more about what makes a job
+      offer valid."
   utter_faq/86:
   - text: "No, a work permit is not a job offer. A job offer is valid if your current\
       \ or future employer:\n\nhas made a written offer to give you a full-time, non-seasonal\

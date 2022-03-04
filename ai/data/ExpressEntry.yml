@@ -305,8 +305,8 @@ nlu:
       - What does NOC mean?
   - intent: faq/85
     examples: |
-      - Why didn\u2019t I get points for my job offer in Express Entry?
-      - Why wasn\u2019t I eligible to recieve points from the ranking system for a job offer in Express Entry?
+      - Why didn't I get points for my job offer in Express Entry?
+      - Why wasn't I eligible to recieve points from the ranking system for a job offer in Express Entry?
       - What are the requirements to receive points for a job offer in Express Entry?
       - Why couldn't I get points for my job offer in Express Entry?
       - No points for my job offers in Express Entry
