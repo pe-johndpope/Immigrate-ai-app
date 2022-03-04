@@ -166,7 +166,7 @@ const ProfileScreen = ({navigation}) => {
         </View>
         <View style={styles.row2}>
         <Text style={styles.label}>Please make sure you have read our </Text>
-        <TouchableOpacity onPress={() => Linking.openURL("https://immigrate.ai")}>
+        <TouchableOpacity onPress={() => Linking.openURL("https://pages.flycricket.io/immigrate-ai/privacy.html")}>
           <Text style={styles.link}>Privacy Policy</Text>
         </TouchableOpacity>
       </View>
