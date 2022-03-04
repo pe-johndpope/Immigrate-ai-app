@@ -28,6 +28,19 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+      "androidStatusBar": {
+        "hidden": true
+      },
+      "plugins": [
+        [
+          "expo-navigation-bar",
+          {
+            "position": "relative",
+            "visibility": "hidden",
+            "behavior": "inset-touch"
+          }
+        ]
+      ]
     }
-  }
 }

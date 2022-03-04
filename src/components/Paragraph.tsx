@@ -1,5 +1,5 @@
-import React, { memo } from 'react';
-import { StyleSheet, Text } from 'react-native';
+import React, { memo } from "react";
+import { StyleSheet, Text } from "react-native";
 
 type Props = {
   children: React.ReactNode;
@@ -13,8 +13,8 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 16,
     lineHeight: 26,
-    color: '#000000',
-    textAlign: 'center',
+    color: "#000000",
+    textAlign: "center",
     marginBottom: -80,
   },
 });
