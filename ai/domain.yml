@@ -1515,8 +1515,7 @@ responses:
       Worker Program, you should include all work experience for the last 10 years.
       We also need this information for an application for permanent residence,
       no matter which program you are applying under."
-  utter_faq/74: # Question: In an Express Entry profile, what do you mean by 'the date the applicant first 
-      # became qualified to practice this occupation'?
+  utter_faq/74: # Question: In an Express Entry profile, what do you mean by 'the date the applicant first became qualified to practice this occupation'?
   - text: "If you are listing a skilled trade (jobs with a four-digit NOC code that
       begins with 632, 633, 72, 73, 82, 92) as your primary occupation:\n\n
       
@@ -1663,32 +1662,32 @@ responses:
       - A Canadian employer (or up to two for the Federal Skilled Trades Program) has offered
       you a full-time, non-seasonal job for one year or more.\n\n
       
-      - That job offer is supported by an LMIA.\n\nthe job is exempt from needing an LMIA.\n\nIf
-      you are currently working in Canada but have not been offered a job that is
-      supported by a LMIA (or is exempt from needing one), you should:\n\nanswer
-      \u201CNo\u201D and \ncreate a Job Match account in Job Bank.\n\nNote: From
-      January 1, 2015 to November 19, 2016, jobs offers that didn't need an
-      LMIA were not considered valid for Express Entry. We now accept certain job
-      offers that don't need an LMIA.\nFind out more about what makes a job
-      offer valid."
-  utter_faq/86:
-  - text: "No, a work permit is not a job offer. A job offer is valid if your current\
-      \ or future employer:\n\nhas made a written offer to give you a full-time, non-seasonal\
-      \ job for one year or more if you are accepted as a permanent resident and\n\
-      has a positive Labour Market Impact Assessment (LMIA) from Employment and Social\
-      \ Development Canada (or the job is LMIA-exempt)\n\nThis is true whether you\
-      \ are working in Canada or not.\nThere are only two reasons that an employer\
-      \ making you a job offer does not need to get a new LMIA: \n\nif you are already\
-      \ working for them with a work permit based on that LMIA\nif you work in a job\
-      \ that does not need an LMIA.\n\nFind out more about what makes a job offer\
-      \ valid."
-  utter_faq/87:
-  - text: 'If there is no National Occupational Classification (NOC)  code on your
-      work permit, you should find and use the NOC code of the job you  are currently
-      doing in Canada.
+      - That job offer is supported by an LMIA, or\n\n
+      
+      - The job is exempt from needing an LMIA.\n\n
 
-      Find the NOC code and title for your job.'
-  utter_faq/88:
+      If you are currently working in Canada but have not been offered a job that is
+      supported by a LMIA (or is exempt from needing one), you should:\n\n
+      
+      1. Answer 'No'.\n\n
+      
+      2. Create a Job Match account in Job Bank.\n\n
+      
+      Note: Canada now accepts certain job offers that don't need an LMIA."
+  utter_faq/86: # Question: I am working in Canada on a valid work permit. Does this count as a job offer?
+  - text: "No, a work permit is not a job offer. A job offer is valid if your current
+      or future employer:\n\n
+      
+      - Has made a written offer to give you a full-time, non-seasonal
+      job for one year or more if you are accepted as a permanent resident\n\n
+
+      - Has a positive Labour Market Impact Assessment (LMIA) from Employment and Social
+      Development Canada (or the job is LMIA-exempt).\n\n"
+  utter_faq/87: # Question: There is no National Occupation Classification (NOC) code on my work permit. What should I put in my Express Entry profile?
+  - text: "If there is no National Occupational Classification (NOC) code on your
+      work permit, you should find and use the NOC code of the job you are currently
+      doing in Canada."
+  utter_faq/88: # Question: Should I remove my job offer points if I am renewing my work permit?
   - text: "\u201CImplied status\u201D means you can stay in Canada and keep working\
       \ while we make a decision on your application.\nIf you have implied status,\
       \ and have applied to renew your work permit, you can keep working for the same\

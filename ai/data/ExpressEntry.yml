@@ -326,7 +326,7 @@ nlu:
   - intent: faq/88
     examples: |
       - If I am waiting for a new work permit and I have job offer points, do I have to remove the job offer from my Express Entry profile?
-      - I\u2019m currently awaiting a new work permit and have job offer points. Should I remove the job offer from my Express Entry profile?
+      - I'm currently awaiting a new work permit and have job offer points. Should I remove the job offer from my Express Entry profile?
       - Do I need to remove a job offer from my Express Entry profile if I have job offer points and am waiting for a new work permit?
       - Should I remove my job offer points if I am renewing my work permit?
   - intent: faq/89
