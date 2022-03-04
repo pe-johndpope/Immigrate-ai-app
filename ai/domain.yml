@@ -1418,32 +1418,42 @@ responses:
       for\_ the \u201CForm Name\u201D you want to update\nMake the changes you want
       to the fields\nClick the \u201CSave and exit\u201D button at the bottom of
       page to go back to \u201CExpress Entry Profile\u201D page."
-  utter_faq/68:
-  - text: "This is an example of greyed out fields in your Express  Entry profile:\n\
-      \nIn  some places, the fields will be coloured gray, and you will not be able\
-      \ to  update them. (A red circle with a diagonal line  will  also appear when\
-      \ you mouse over the field.) This is because the information was  brought forward\
-      \ from the first tool (Come to Canada) you completed. To update  them, you will\
-      \ have to update them in the previous step. To do this: \n\nFrom the \u201C\
-      Express Entry Profile\u201D page:\nClick on the \u201CModify Family Information\u201D\
-      \ button at the top of the page:\n\nChange the fields as needed.\nClick the\
-      \ \u201CUpdate Information\u201D button to save any changes:\n\n\nNote: Clicking\
-      \ the \u201CUpdate Information\u201D button will also  bring you to the next\
-      \ section if the change you want to make is not in the  first screen.\nOn the\
-      \ following screens:\n\nYou have a few options. You can  click: \n\nthe \u201C\
-      Next\u201D button to save your answers and go back to the \u201CExpress Entry\
-      \ Profile\u201D page,\nthe \u201CSave and exit questionnaire\u201D button to\
-      \ return to the main page of your account, or\nthe \u201CModify my Answers\u201D\
-      \ button to see all the  eligibility questions. \n\nClick the \u201Cpencil\u201D\
-      \ button to access  the fields related to that question."
-  utter_faq/69:
-  - text: "To confirm that you profile is complete:\n\nGo to the \u201CExpress  Entry\
-      \ profile\u201D page\nClick the \u201CContinue form\u201D button for the section\
-      \ with the status \u201Cin progress\u201D\nVerify that all circles to the right\
-      \ have a  green check mark  in them.\n    If one section displays a progress\
-      \ bar  instead of a green check mark, open the section and complete the missing\
-      \ information.\n\nClick the \u201Csave and exit\u201D button to save your changes\
-      \ and return to the \u201CExpress Entry profile\u201D page."
+  utter_faq/68: # Question: How do I modify fields that are greyed out in my Express Entry profile?
+  - text: "In some places, the fields will be coloured gray, and you will not be able
+      to update them. (A red circle with a diagonal line will also appear when
+      you mouse over the field.) This is because the information was given in
+      the first tool (Come to Canada) you completed. To update them, you will
+      have to update them in the 'Come to Canada' step. To do this: \n\n
+      
+      1. Go to the 'Express Entry Profile' page:\n\n
+      
+      2. Click on the 'Modify Family Information'
+      button at the top of the page:\n\n
+      
+      3. Change the fields as needed.\n\n
+      
+      4. Click the 'Update Information' button to save any changes 
+      (it will also bring you to the next section if the change you want to make 
+      is not in the first screen)\n\n
+      
+      On the following screens you have a few options. You can click: \n\n
+      
+      The 'Next' button - Saves your answers and goes back to the 
+      'Express Entry Profile' page,\n\n
+      
+      The 'Save and Exit Questionnaire' button - Returns to the main page of your account\n\n
+      
+      The 'Modify my Answers' button - Views all the eligibility questions.\n\n
+      
+      The 'pencil' button - Access the fields related to that question."
+  utter_faq/69: # How do I confirm that my Express Entry profile is complete?
+  - text: "To confirm that you profile is complete:\n\nGo to the \u201CExpress  Entry
+      profile\u201D page\nClick the \u201CContinue form\u201D button for the section
+      with the status \u201Cin progress\u201D\nVerify that all circles to the right
+      have a  green check mark  in them.\n    If one section displays a progress
+      bar  instead of a green check mark, open the section and complete the missing
+      information.\n\nClick the \u201Csave and exit\u201D button to save your changes
+      and return to the \u201CExpress Entry profile\u201D page."
   utter_faq/70:
   - text: "If you weren\u2019t found eligible, you won\u2019t be able to update your\
       \ profile. You\u2019ll have to create a new profile. Be sure your profile is\
