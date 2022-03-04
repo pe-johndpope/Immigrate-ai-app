@@ -1,95 +1,125 @@
 nlu:
   - intent: faq/0
     examples: |
-      - "Do I need to provide proof that I can pay the salary of the caregiver I\u2019m hiring through the caregiver pilots?"
+      - "Do I need to provide proof that I can pay the salary of the caregiver I'm hiring through the caregiver pilots?"
       - What information is needed when hiring through the child care provider pilot?
       - How much proof is needed to show that my job offer is genuine if I'm hiring through the home support worker pilot?
       - Do I need to prove that I am able to pay a caregiver's salary if I'm hiring through one of the caregiver pilots?
+      - How do I prove that my job offer through the child care provider pilot is genuine?
   - intent: faq/1
     examples: |
       - "Do I have to pay for the caregiver\u2019s travel costs if I\u2019m hiring them through the caregiver pilots?"
       - Who pays for travel costs if I hire a caregiver via the caregiver pilot?
       - Am I required to pay for the travel of a home child care provider through the caregiver pilot?
+      - Do I need to pay for my caregiver's travel?
+      - Who pays for my caregiver's travel costs?
   - intent: faq/2
     examples: |
       - "I want to hire a caregiver with a live-in arrangement. What\u2019s the maximum amount I can charge for room and board?"
       - How much can I charge a live-in caregiver for room and board?
       - I'm looking to hire a caregiver under a live-in agreement. Does the home support worker pilot set a maximum amount that I am allowed to charge them for room and board?
       - Does the home child care provider pilot have a maximum amount that I am allowed to charge a live-in caretaker for room and board?
+      - How much can I charge my caregiver for living with us?
   - intent: faq/3
     examples: |
-      - "I want to work in Canada as a caregiver, but I don\u2019t meet the requirements of the pilots. What are my options?"
+      - "I want to work in Canada as a caregiver, but I don't meet the requirements of the pilots. What are my options?"
       - I don't meet all of the requirements for the home child care provider pilot or home support worker pilot but would like to work in Canada as a caretaker. Is there anything else I can do?
       - What can I do if I don't meet the requirements of the caregiver pilots but still want to work in Canada as a caregiver?
+      - I want to work as a caregiver but don't meet the requirements
+      - Can I work as a caregiver if I don't meet the requirements for the pilot programs?
   - intent: faq/4
     examples: |
       - "I\u2019m working in Canada as a caregiver but I don\u2019t meet the requirements for the caregiver pilots. Can I apply to extend my work permit?"
-      - 'Am I able to extend my work permit if I''m currently working in Canada as a caregiver but haven''t met all of the requirements for the caregiver pilots? '
-      - 'Is it possible to keep my status as a caregiver if I''m working in Canada right now but don''t meet the requirements for the caregiver pilots? '
+      - 'Am I able to extend my work permit if I'm currently working in Canada as a caregiver but haven't met all of the requirements for the caregiver pilots?
+      - 'Is it possible to keep my status as a caregiver if I'm working in Canada right now but don''t meet the requirements for the caregiver pilots?
+      - Can I extend my work permit for caregiving if I don't meet the requirements for the pilots progeram?
+      - I want to extend my work permit for caregiving but don't meet the requirements for the pilots program
   - intent: faq/5
     examples: |
       - An employer in Quebec has offered me a job as a caregiver. What do I apply for?
       - What kind of work permit is needed if I've been offered a job as a caregiver in Quebec?
       - Under which program should I apply for a work permit if an employer from Quebec wants to hire me as a caregiver?
+      - Which program is for a caregiver in Quebec?
+      - I was offered a caregiving job in Quebec, what do I do?
   - intent: faq/6
     examples: |
-      - "What\u2019s an occupation-restricted open work permit?"
+      - "What is an occupation-restricted open work permit?"
       - 'What are the conditions of an occupation-restricted open work permit? '
       - How does an occupation-restricted open work permit work?
+      - Occupation-restricted open work permit
   - intent: faq/7
     examples: |
       - Can I apply to extend my work permit under the caregiver pilots?
       - What are the rules for extending a work permit under the home child care provider pilot?
       - Is it possible to extend my work permit under the home support worker pilot?
+      - Can I use the caregiver pilots program to extend my work permit?
+      - Can the caregiver pilots program extend my work permit?
   - intent: faq/8
     examples: |
       - When do I need to take a medical exam for the caregiver pilots?
       - Are any medical exams required under the caregiver pilot process?
       - Will I need to have any medical exams to prove my admissibility to Canada under the home support worker pilot?
+      - Medical exams for caregiver pilot program
+      - Caregiver pilot program medical exams
   - intent: faq/9
     examples: |
       - I already took a medical exam when I applied for the caregiver pilots. Why am I being asked to take another one?
       - Do I need to take a second medical exam for the caregiver pilot even if I've already taken one?
       - How long are medical exams valid for under the caregiver pilot?
+      - When does a medical exam expire?
+      - How long does a medical exam last?
   - intent: faq/10
     examples: |
       - Can I use work experience from more than 1 employer to apply to the caregiver pilots?
       - Am I allowed to use work experience from multiple employers of the same occupation to apply for the caregiver pilot?
       - I've been an employee for multiple companies with the same job title. Can I use my experience from multiple jobs in my application for the caregiver pilot?
+      - Can I use multiple jobs as work experience to the caregiver pilots program?
+      - Do multiple jobs count towards work experience?
+      - Can more than 1 job count towards work experience?
   - intent: faq/11
     examples: |
       - I worked in Canada illegally. Can I use that experience to meet the work requirement of the caregiver pilots?
       - Am I able to use my experience as an undocumented worker to meet the eligiblity requirements of the caregiver pilots?
       - Does undocumented or illegal work experience count towards the work requirement of the caregiver pilot?
+      - Does working as an illegal immigrant count towards the caregiver pilot program work experience?
+      - Can I work illegally to gain work experience for the caregiver pilot program?
   - intent: faq/12
     examples: |
       - I worked in Quebec as a home child care provider or home support worker. Can that work experience count for the caregiver pilots?
       - Does my experience as a home support worker in Quebec count towards meeting the work experience requirement for the caregiver pilot?
       - I worked as a home child care provider for 2 years in Quebec. Can this experience be used towards the experience requirement for the caregiver pilot?
+      - Does work as a caregiver in Quebec count towards the caregiver pilot program?
+      - Does caregiver work in Quebec count towards the caregiver pilot program?
   - intent: faq/13
     examples: |
       - Is there a limit on the number of caregiver applications you accept under the pilots?
       - How many caregiver pilot applications are processed each year?
       - Is there a maximum number of caregiver applications that can be submitted under the pilots?
+      - How many caregiver pilot applications are accepted per year?
+      - Is there a limit of how many caregiver applications are processed per year?
   - intent: faq/14
     examples: |
       - What can I do if the yearly limit on applications for the caregiver pilots has been reached before I apply?
       - I wanted to apply for the caregiver pilot but found out that the pilot is closed to new applications. What should I do?
       - What are my options if the caregiver pilot is closed to new applications and I haven't applied yet?
+      - What if the caregiver pilot application limit has been reached?
   - intent: faq/15
     examples: |
-      - "I applied as a caregiver, but haven\u2019t received a confirmation letter. What should I do?"
-      - What should I do if I submitted my caregiver application in 2020 and still haven't gotten a confirmation letter?
-      - I applied to the caregiver program but didn't receive any acknowledgement or letter confirming my application. Who should I contact about this?
+      - "I applied as a caregiver, but haven't received a confirmation letter. What should I do?"
+      - What should I do if I submitted my caregiver application recently and still haven't gotten a confirmation letter?
+      - I applied to the caregiver program but didn't receive any acknowledgement or letter confirming my application
+      - I did not get a confirmation letter after applying as a caregiver
+      - No confirmation letter when applying for caregiver
   - intent: faq/16
     examples: |
-      - I have a new employer. How do I give you my new job offer form?
+      - I have a new employer. How do I give Canada my new job offer form?
       - I haven't received my occupation-restricted open work permit yet but have a new employer, where should I submit my new offer of employment form?
-      - 'I''ve accepted a new job offer but haven''t received a confirmation letter regarding my caregiver application. How should I proceed?  '
+      - I've accepted a new job offer but haven't received a confirmation letter regarding my caregiver application. How should I proceed?
+      - How do I give my new job offer form?
   - intent: faq/17
     examples: |
-      - "I\u2019m not sure if my Home Child Care Provider Pilot application made it under the cap. Should I reapply?"
-      - 'I''m unsure whether or not my application was received before the pilot closed. Do I need to reapply for the caregiver pilot next year? '
+      - "I'm not sure if my Home Child Care Provider Pilot application made it under the cap. Should I reapply?"
+      - 'I'm unsure whether or not my application was received before the pilot closed. Do I need to reapply for the caregiver pilot next year? '
       - Should I reapply under the caregiver pilot next year if I don't know whether my application from this year was submitted before the pilot closed to new applications?
   - intent: faq/18
     examples: |

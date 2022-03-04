@@ -754,41 +754,41 @@ responses:
   utter_faq/letter_of_support:
   - text: You may work with Canada Startup Company to get a letter of support.
   utter_faq/why_canada:
-  - text: Canada is a nice country
+  - text: "Canada is a great country with an extremely diverse population and a universal healthcare system.\n\nCanada also provides quality education and has a low unemployment rate (6.5% in 2021)."
   utter_faq/0:
-  - text: "When hiring through the Home Child Care Provider or Home Support Worker Pilots, we use the information you give us in the Offer of Employment form IMM 5983 (PDF, 2.33MB) to help determine if your job offer is genuine and valid, including your ability to pay the caregiver's salary.\nIf we need more information, we'll contact you.\nWe may ask for things like:\n\nyour household annual income\nbank statements\nyour most recent Canada Revenue Agency notice of assessment"
+  - text: "When hiring through the Home Child Care Provider or Home Support Worker Pilots, we use the information you give us in the Offer of Employment form IMM 5983 (PDF, 2.33MB) to help determine if your job offer is genuine and valid, including your ability to pay the caregiver's salary.\n\nIf we need more information, Canadian immigration will contact you.\n\nWe may ask for things like:\n\nyour household annual income\n\nbank statements\n\nyour most recent Canada Revenue Agency notice of assessment"
   utter_faq/1:
-  - text: "No but you can pay for the travel costs, if you like.\nYou and the caregiver you're hiring should both agree on how to handle things like travel costs before you hire them.\nWhether or not you pay for their travel costs can be outlined in the Offer of Employment form IMM 5983 (PDF, 2.33MB).\nLearn more about hiring through the Home Child Care Provider and Home Support Worker Pilots."
+  - text: "No but you can pay for the travel costs, if you like. You and the caregiver you're hiring should both agree on how to handle things like travel costs before you hire them.\n\nWhether or not you pay for their travel costs can be outlined in the Offer of Employment form IMM 5983 (PDF, 2.33MB)."
   utter_faq/2:
   - text: "The maximum amount you can charge depends on the province or territory you're in. Each province and territory has an employment or labour standards office that deals with labour and employment laws.\nIf you're hiring through the Home Child Care Provider and Home Support Worker Pilots, and you and the caregiver agree that you provide housing, the details must be included in the Offer of Employment form IMM 5983 (PDF, 2.33MB)."
   utter_faq/3:
-  - text: "If you don't meet the requirements for the Home Child Care Provider or Home Support Worker pilots, you may be able to work temporarily as a caregiver through the Temporary Foreign Worker Program if 1 of the below applies to you:\n\nyou're already in Canada and eligible to apply for a work permit from inside Canada\nyou're outside Canada and your employer applied for an LMIA to hire you before June 18, 2019\nyou'll be working in Quebec\n\nYour employer needs to get a positive LMIA first."
+  - text: "If you don't meet the requirements for the Home Child Care Provider or Home Support Worker pilots, you may be able to work temporarily as a caregiver through the Temporary Foreign Worker Program if 1 of the below applies to you:\n\nYou're already in Canada and eligible to apply for a work permit from inside Canada\n\nYou're outside Canada and your employer applied for an LMIA to hire you before June 18, 2019\n\nYou'll be working in Quebec\n\nYour employer has a positive LMIA."
   utter_faq/4:
-  - text: "Yes. If you have an employer-specific work permit and you're working in Canada as a caregiver, you can apply to extend it through the Temporary Foreign Worker Program. To keep your status as a worker, you should apply to extend your work permit before it expires.\nYour employer needs to get another positive Labour Market Impact Assessment before you can extend your work permit.\nIf you meet the requirements in the future, you can apply for the Home Child Care Provider or Home Support Worker Pilot.\nYou can also check to see if you qualify for another immigration program."
+  - text: "Yes. If you have an employer-specific work permit and you're working in Canada as a caregiver, you can apply to extend it through the Temporary Foreign Worker Program. To keep your status as a worker, you should apply to extend your work permit before it expires.\n\nYour employer needs to get another positive Labour Market Impact Assessment before you can extend your work permit.\n\nIf you meet the requirements in the future, you can apply for the Home Child Care Provider or Home Support Worker Pilot. You can also check to see if you qualify for another immigration program."
   utter_faq/5:
   - text: "If an employer wants to hire you for a position in Quebec, you must apply for a work permit through the Temporary Foreign Worker Program. Your employer needs to get a positive Labour Market Impact Assessment before they can hire you.\nQuebec selects its own economic immigrants. If you want to settle in Quebec permanently, you won't be eligible for the Home Child Care Provider or Home Support Worker Pilots."
   utter_faq/6:
   - text: "An occupation-restricted open work permit lets you work for any employer, but only in the occupation listed on the work permit.\nFor example, in the Home Child Care Provider or Home Support Worker Pilots, you must work outside Quebec in 1 of these National Occupational Classification (NOC) jobs:\n\nHome child care provider - NOC 4411 (experience as a foster parent doesn't count), or\nHome support worker - NOC 4412 (experience as a housekeeper doesn't count)\n\nIf you have this type of work permit, your employer doesn't need a Labour Market Impact Assessment to hire you.\nYou can change employers without getting a new work permit, as long as your new job is in the same occupation and you continue to meet any other conditions on your work permit."
   utter_faq/7:
-  - text: "You can only apply to extend your work permit under the Home Child Care Provider or Home Support Worker Pilots if:\n\nyour work permit was issued for less than 36 months because your passport was expiring, and\nyou now have a new passport\n\nIn this case, you may be able to apply to extend your work permit up to a total of 36 months from the date it was issued.\nFor example, if we issued you a work permit that's valid for 24 months, you may be able to extend it for another 12 months.\nTo avoid having to do this, make sure your passport or travel document is valid for at least 36 months before you apply."
+  - text: "You can only apply to extend your work permit under the Home Child Care Provider or Home Support Worker Pilots if:\n\nYour work permit was issued for less than 36 months because your passport was expiring, and\nyou now have a new passport\n\nIn this case, you may be able to apply to extend your work permit up to a total of 36 months from the date it was issued.\nFor example, if we issued you a work permit that's valid for 24 months, you may be able to extend it for another 12 months.\nTo avoid having to do this, make sure your passport or travel document is valid for at least 36 months before you apply."
   utter_faq/8:
-  - text: "Under the Home Child Care Provider or Home Support Worker Pilots, you probably have to take 2 separate medical exams during the process. In both cases, we send you instructions on when and how to get your medical exam done.\nDo not go for your medical exam unless we tell you to.\nFirst medical exam\nAs a caregiver, you work in close contact with children, disabled people or the elderly, so you need to take a medical exam before you can come to Canada to work. \nSecond medical exam\nOnce you have 24 months of work experience in Canada, and submit proof of your work experience, you may be asked to take another medical exam to make sure you're still admissible to Canada.\nFamily members\nYour family members must take and pass a medical exam even if they're not coming with you to Canada. If they don't, they won't be eligible to be sponsored in the future. We contact them directly with instructions on how to get their medical exams.\nIf your family members are already Canadian citizens or permanent residents, they don't need to take a medical exam."
+  - text: "Under the Home Child Care Provider or Home Support Worker Pilots, you probably have to take 2 separate medical exams during the process. In both cases, Canada immigration will send you instructions on when and how to get your medical exam done.\n\nDo not go for your medical exam unless we tell you to.\n\nFirst medical exam:\nAs a caregiver, you work in close contact with children, disabled people or the elderly, so you need to take a medical exam before you can come to Canada to work.\n\nSecond medical exam:\nOnce you have 24 months of work experience in Canada, and submit proof of your work experience, you may be asked to take another medical exam to make sure you're still admissible to Canada.\n\nFamily members:\nYour family members must take and pass a medical exam even if they're not coming with you to Canada. If they don't, they won't be eligible to be sponsored in the future. We contact them directly with instructions on how to get their medical exams.\n\nIf your family members are already Canadian citizens or permanent residents, they don't need to take a medical exam."
   utter_faq/9:
-  - text: "Medical exams are valid for 12 months from the date of the exam. If you already took a medical exam but it expired, you and your family members will have to take another one to make sure you're still admissible to Canada.\nLearn more about medical exams for the Home Child Care Provider and Home Support Worker Pilots."
+  - text: "Medical exams are valid for 12 months from the date of the exam. If you already took a medical exam but it expired, you and your family members will have to take another one to make sure you're still admissible to Canada."
   utter_faq/10:
   - text: "Yes. You can use work experience from more than 1 employer to apply for the Home Child Care Provider or Home Support Worker Pilots as long as that work experience is in the same eligible occupation.\nYou can't combine work experience from 2 different occupations.\nDepending on which pilot you apply for, your work experience must be in 1 of these National Occupational Classification (NOC) jobs:\n\nHome child care provider - NOC 4411 (experience as a foster parent doesn't count)\nHome support worker - NOC 4412 (experience as a housekeeper doesn't count)\n\nFor example, if you worked full-time as a home child care provider for 2 different employers, you can use that work experience towards your eligibility. \nHowever, if you worked full-time as a home child care provider for 1 employer and as a home support worker for another employer, you can't combine that work experience."
   utter_faq/11:
   - text: No. For your work experience to count for the Home Child Care Provider or Home Support Worker Pilots, you must have gotten it while working in Canada legally with a work permit. If you've ever worked in Canada illegally, your application may be refused.
   utter_faq/12:
-  - text: "Yes. If you've worked in Quebec in 1 of the National Occupational Classification (NOC) jobs below, you can use that experience to meet the work experience requirement:\n\nHome child care provider - NOC 4411 (experience as a foster parent doesn't count), or\nHome support worker - NOC 4412 (experience as a housekeeper doesn't count)\n\nIf you're applying to the Home Child Care Provider Pilot or the Home Support Worker Pilots with less than 24 months of qualifying work experience, you need to have a valid and genuine job offer for a job outside of Quebec.\nAll 24 months of work experience must be gained within 36 months.\nLiving in Canada as a permanent residence\nUnder these pilots, you must plan to live outside the province of Quebec as a permanent resident. You may want to include supporting documents with your permanent resident application to prove that you're living or will live outside Quebec."
+  - text: "Yes. If you've worked in Quebec in 1 of the National Occupational Classification (NOC) jobs below, you can use that experience to meet the work experience requirement:\n\nHome child care provider - NOC 4411 (experience as a foster parent doesn't count)\n\nHome support worker - NOC 4412 (experience as a housekeeper doesn't count)\n\nIf you're applying to the Home Child Care Provider Pilot or the Home Support Worker Pilots with less than 24 months of qualifying work experience, you need to have a valid and genuine job offer for a job outside of Quebec.\n\nAll 24 months of work experience must be gained within 36 months.\n\nLiving in Canada as a permanent resident\n\nUnder these pilots, you must plan to live outside the province of Quebec as a permanent resident. You may want to include supporting documents with your permanent resident application to prove that you're living or will live outside Quebec."
   utter_faq/13:
-  - text: "Yes. We only process up to 5,500 applications each year under the caregiver pilots: \n\n2,750 applications for the Home Child Care Provider Pilot\n2,750 applications for the Home Support Worker Pilot\n\nIf your application is incomplete or we receive it after the limit has been reached, we return it to you along with your processing fees.\n\nHome Child Care Provider Pilot\nWe've received at least 2,750 applications under the Home Child Care Provider pilot. This means\n\nthe pilot is closed to new applications for 2021\nwe'll return any other applications we receive and refund the fees\n\nThe pilot will reopen to new applications on January 1, 2022. You can also look into other options for caregivers in Canada. Caregivers who are already in Canada could also have the opportunity to apply for permanent residence through the recently announced temporary residence to permanent residence pathway for essential workers.\nHome Support Worker Pilot\nWe're not close to reaching the cap for the Home Support Worker Pilot. You can still apply under this pilot. We'll update this page if and when we close this pilot to new applications for 2021.\nIf you already submitted an application\nYou don't need to contact us about an application you submitted in 2020 or 2021 under either pilot. We'll send you a notification letter as soon as possible to confirm we've received your application. It may take longer than usual for you to get this letter due to the COVID-19 pandemic."
+  - text: "Canada only processes up to 5,500 applications each year under the caregiver pilots:\n\n2,750 applications for the Home Child Care Provider Pilot\n\n2,750 applications for the Home Support Worker Pilot\n\nIf your application is incomplete or we receive it after the limit has been reached, Canadian immigration will return it to you along with your processing fees."
   utter_faq/14:
   - text: You can either wait until the Home Child Care Provider or Home Support Worker Pilots re-open the next year or find out if you're eligible for another immigration program.
   utter_faq/15:
-  - text: "The ongoing COVID-19 pandemic has caused service issues for our offices. The office that processes caregiver applications has been seriously affected.\nIf you applied for permanent residence as a caregiver in 2020, we may not have sent you a confirmation letter (\"acknowledgement of receipt”) yet. We are working to send confirmation letters to applicants but it may take longer due to the challenges the pandemic has caused.\nIf you applied in 2019 and you did not receive a confirmation from us, you may contact us to verify if we received your application. If you applied in 2020, we will not be able to answer, so please wait."
+  - text: "The ongoing COVID-19 pandemic has caused service issues for Canada's immigration offices. The office that processes caregiver applications has been seriously affected.\n\nIf you applied for permanent residence as a caregiver recently, Canadian immigration may not have sent you a confirmation letter (acknowledgement of receipt) yet. We are working to send confirmation letters to applicants but it may take longer due to the challenges the pandemic has caused.\nIf you applied in 2019 and you did not receive a confirmation from us, you may contact us to verify if we received your application. If you applied in 2020, we will not be able to answer, so please wait."
   utter_faq/16:
-  - text: "You may send us your new offer of employment form online if\n\nwe already sent you a confirmation letter (“acknowledgement of receipt”) for your Home Child Care Provider or Home Support Worker permanent residence application, and\nwe haven't issued your occupation-restricted open work permit yet\n\nYou can also send supporting documents, if you need to.  \nIf you didn't get the letter yet, wait until you do. It will include your application number. Once you have it, send us the new job offer form as soon as you can."
+  - text: "You may send Canadian immigration your new offer of employment form online if:\n\nWe already sent you a confirmation letter (acknowledgement of receipt) for your Home Child Care Provider or Home Support Worker permanent residence application\n\nWe haven't issued your occupation-restricted open work permit yet\n\nYou can also send supporting documents, if needed.  \n\nIf you didn't get the letter yet, wait until you do. It will include your application number. Once you have it, send us the new job offer form as soon as you can."
   utter_faq/17:
   - text: Unless you get a letter from us saying we rejected or refused your application, you don't need to apply again the next year.
   utter_faq/18:
@@ -1140,8 +1140,8 @@ responses:
       For more information, consult the IFHP PDMS Provider Website.'
   utter_faq/223:
   - text: "To ensure you will be reimbursed, you must check the eligibility status\
-      \ of each Interim Federal Health Program client before you provide any services.\n\
-      If you are affiliated with the International Organization for Migration (IOM),\
+      \ of each Interim Federal Health Program client before you provide any services.\n
+      \ If you are affiliated with the International Organization for Migration (IOM),\
       \ you will have client eligibility confirmed by the IRCC visa office. To confirm\
       \ client eligibility, you must: \n\nConfirm that the client\u2019s name appears\
       \ on the list received from visa offices. \nConfirm that the identity of the\
@@ -1188,219 +1188,236 @@ responses:
       Handbook for Pre-Departure Medical Services Providers.'
   utter_faq/226:
   - text: No, you cannot charge eligible clients for services covered by the IFHP.
-  utter_faq/47:
-  - text: "The CRS scores of all profiles in the pool will be updated automatically\
-      \ before the next invitation round after the updates. This could take up to\
-      \ two weeks.\nWe have made improvements to the Express Entry system.\nChanges\
-      \ as of October 20, 2020\nYou can get additional points for good French skills\n\
-      If you score NCLC 7 or higher on all four French language skills (listening,\
-      \ speaking, reading and writing), you will get\n\n25 additional points if you\
-      \ scored CLB 4 or lower in English (or you have not had an English test); or\n\
-      50 additional points if you scored CLB 5 or higher on all four English skills\n\
-      \nThis is in addition to points you get for official languages.\nWhat do I need\
-      \ to do?\nNot everyone will be affected by these changes. If you think you are\
-      \ not affected, you don\u2019t need to do anything.\nIf you think the changes\
-      \ affect you, you should:\n\nLog into your online account and check your Express\
-      \ Entry profile.\nIf you update your profile, the Comprehensive Ranking System\
-      \ (CRS) will update your score. (It may take up to 24 hours for the system to\
-      \ update your score)"
-  utter_faq/48:
-  - text: "We changed some questions in the education history section in both the\
-      \ online profile and application for Express Entry. Because of this, some people\
-      \ are getting errors when they try to move on to the next step. \nTo fix it:\
-      \ \n\n\nIn your profile, go to the Study and languages section of the form.\
-      \ Open the Education history sub-section. Scroll to the bottom and click Modify.\n\
-      \n\n\nYou will see the information you already entered. To make sure you filled\
-      \ all the fields, click Check for Completeness at the top of the form.\n\n\n\
-      \nIf there is a field you need to correct, you will see a red error message\
-      \ at the top. The question text will also be in red. Fill in the field(s) and\
-      \ click Save and exit.\n\nQuestions you need to answer are in red\n\n\nRepeat\
-      \ these steps for each entry in the section.\n\nIf you have been invited to\
-      \ apply, you also need to validate the Personal activities section:\n\nGo to\
-      \ the Personal history section of the web form.\nOpen the Personal activities\
-      \ sub-section and scroll down to the grid of saved entries.\nClick Modify and\
-      \ repeat the steps above for each entry."
-  utter_faq/49:
-  - text: 'No. Under Express Entry, the system will find which programs you qualify
+  utter_faq/47: # Question: What changes have recently been made to Express Entry?
+  - text: "Overall, Canada has made improvements to the Express Entry system.\n\n\n
+      October 20, 2020: You can get additional points if you score NCLC 7 or higher 
+      on all four French language skills (listening, speaking, reading and writing). 
+      \n\n- CLB 4 or lower in all four English skills (or did not take an English test): 
+      You will get 25 additional points.\n\n- CLB 5 or higher on all four English skills: 
+      You will get 50 additional points.\n\nThese points are in addition to points you get 
+      for official languages.\n\nIf you think the changes affect you, you should:\n\n
+      1. Log into your online account and check your Express Entry profile.\n\n 
+      2. Update your profile, and the Comprehensive Ranking System(CRS) will update 
+      your score (It may take up to 24 hours for the system to update your score)".
+  utter_faq/48: # Question: What should I do if I try to submit my Express Entry profie and I receive an error?
+  - text: "Canada has changed some questions in the education history section in both the 
+      online profile and application for Express Entry. Because of this, some people 
+      are getting errors when they try to move on to the next step.\n\n\n
+      
+      
+      To fix this: \n\n
+
+      1. In your profile, go to the Study and languages section of the form.\n\n
+
+      2. Open the Education history sub-section. Scroll to the bottom and click Modify.\n\n
+
+      3. You will see the information you already entered. To make sure you filled 
+      all the fields, click Check for Completeness at the top of the form.\n\n
+      
+      4. Fill in the field(s) that have a red error message and red question text.\n\n
+      
+      5. Click 'Save and Exit'.\n\n
+      
+      6. Repeat these steps for each entry in the section.\n\n\n
+      
+      
+      If you have been invited to apply, you also need to validate the 
+      'Personal Activities' section:\n\n
+      
+      1. Go to the Personal history section of the web form.\n\n
+      
+      2. Open the Personal activities sub-section and scroll down to the grid of saved entries.\n\n
+      
+      3. Click Modify and repeat the steps above for each entry."
+  utter_faq/49: # Question: Can I ask to only be considered for one of the programs under Express Entry?
+  - text: "No. Under Express Entry, the system will find which programs you qualify
       for based on the answers you give in your profile. If you qualify for more than
-      one program, we will decide which one to issue the invitation to apply under.
+      one program, Canada will decide which one to issue the invitation to apply under.
 
-      You can choose to decline an invitation to apply if it is not under the program
+      \n\nYou can choose to decline an invitation to apply if it is not under the program
       you were interested in. But, if you do this, there is no guarantee that you
-      will be invited again under a different program.'
-  utter_faq/50:
-  - text: "Yes, you must \ninclude all medical exam confirmation letters and police\
-      \ certificates for your application for permanent residence to be complete.\n\
-      The online system will not let you submit an application before you upload these\
-      \ documents.\nIf you upload something else instead (for example, a blank document),\
-      \ we will reject the application after reviewing it and we will refund your\
-      \ fees.\nExceptional cases\nIn rare cases, you may not be able to get a police\
-      \ certificate despite your best efforts. (For example, you applied in the first\
-      \ week after we invited you to apply, but it did not arrive within the 90-day\
-      \ timeframe).\nIf this happens, you need to upload, with your complete application:\n\
-      \nproof that you applied for a police certificate, and\na letter of explanation.\n\
-      \nProof includes things like receipts that prove you submitted paperwork and\
-      \ any fees related to your request.\nYou must show that you made your best efforts\
-      \ to get all the documents you needed.\nIf you need a police certificate from\
-      \ a country where we must request it from them, upload a letter of explanation\
-      \ that explains this.\nThere is no guarantee we will accept a letter of explanation\
-      \ in place of any required document, including a police certificate. We consider\
-      \ each application under Express Entry on its own merits.\nIf you did not submit\
-      \ a police certificate with your application, only proof that you applied for\
-      \ one, please do not send the police certificate when you get it. Only send\
-      \ it to us once we ask you to through your account.\nWe will send you new instructions\
-      \ on how to submit them."
-  utter_faq/51:
-  - text: 'We are aware that for some countries there are special procedures in place
-      to get police certificates.
+      will be invited again under a different program."
+  utter_faq/50: # Question: Do I need my medical exam and police check for my Express Entry application?
+  - text: "Yes, you must include all medical exam confirmation letters and police
+      certificates for your application for permanent residence to be complete.
+      The online system will not let you submit an application before you upload these
+      documents.\n\nIf you upload something else instead (for example, a blank document),
+      Canada will reject the application after reviewing it and we will refund your
+      fees.\n\n\nIn rare cases, you may not be able to get a police
+      certificate despite your best efforts. (For example, you applied in the first
+      week after we invited you to apply, but it did not arrive within the 90-day
+      timeframe). If this happens, you need to upload, with your complete application:\n
+      \n- Proof that you applied for a police certificate (things like receipts that prove you submitted paperwork and
+      any fees related to your request.)\n\n- A letter of explanation.\n
+      \n- You must also show that you made your best efforts
+      to get all the documents you needed.\n\nIf you need a police certificate from
+      a country where Canada must request it from them, upload a letter of explanation
+      that explains this.\n\nThere is no guarantee Canada will accept a letter of explanation
+      in place of any required document, including a police certificate. Canada considers
+      each application under Express Entry on its own merits.\n\nIf you did not submit
+      a police certificate with your application, only proof that you applied for
+      one, please do not send the police certificate when you get it. Only send
+      it to us once we ask you to through your account. We will send you new instructions
+      on how to submit them."
+  utter_faq/51: # Question: What happens if a country has special procedures for getting police certificates?
+  - text: "We are aware that for some countries there are special procedures in place
+      to get police certificates.\n\n
 
-      You can find country-specific information about police certificates on our website.'
-  utter_faq/52:
-  - text: "You will be asked to enter in your Express Entry profile the amount of\
-      \ money you will have to help you settle in Canada. This is to show that you\
-      \ can support yourself and any family who come with you to Canada, and helps\
-      \ us assess which programs you may be eligible for.\nYou will only need to meet\
-      \ the settlement fund requirement if it applies to the program you are invited\
-      \ to apply under.\nIf you are invited to apply under the Federal Skilled Worker\
-      \ Program or Federal Skilled Trades Program, you will need to show that you\
-      \ meet the settlement funds requirement unless you:\n\nare currently authorized\
-      \ to work in Canada, and\nhave a valid job offer from an employer in Canada.\n\
-      \nFor proof, you must get official letters from any banks or financial institutions\
-      \ where you are keeping money.\nLetter(s) must list:\n\nall current bank and\
-      \ investment accounts\noutstanding debts such as credit card debts and loans\n\
-      \nNote: You do not have to meet the funds requirement if you were invited to\
-      \ apply under the Canadian Experience Class.\nThe system currently asks all\
-      \ applicants to provide a proof of funds document. If you don\u2019t need to\
-      \ provide proof of funds, you must upload a letter explaining either that you\
-      \ have been invited to apply under the Canadian Experience Class, or that you\
-      \ have a valid job offer.\nFind out more about settlement funds and proof."
-  utter_faq/53:
-  - text: "Find out which programs you\u2019re eligible for by using these steps:\n\
-      \nSign in to your account.\nGo to the section \u201CView the applications you\
-      \ submitted.\u201D\nClick on \u201CCheck full application status.\u201D\nScroll\
-      \ down to the section called \u201CWhat am I eligible for?\u201D\nThe programs\
-      \ are listed in the table. Beside each one, under Details, it will say \u201C\
-      met\u2019 or \u201Cnot met.\u201D\nIf it says \u201Cmet,\u201D that means you\u2019\
-      re eligible for that program.\n\nYou may be eligible for more than one program.\
-      \ Find out more about eligibility."
-  utter_faq/54:
-  - text: "Note: As of June 6, 2017, It is now optional to create a Job Match account\
-      \ with Job Bank.\n\nTo start your job search, you can\n\ncreate a Job Match\
-      \ account with Canada\u2019s Job Bank\npromote yourself to employers in Canada\
-      \ using private sector job boards\n\nYou can use both while you are in the Express\
-      \ Entry pool. Once you come to Canada, you can keep using these services if\
-      \ you still need to find a job.\nJob Bank\nA Job Match account with Job Bank\
-      \ is an easy, online tool to help match you with employers looking for workers\
-      \ with your skills. To do so:\n\ngo to the Job Match sign-in page\nclick the\
-      \ \u201CSign up now!\u201D button\nread the privacy notice and click \u201C\
-      I agree\u201D if you agree\nfollow the instructions to create an account\n\n\
-      You will need your Express Entry profile number and job seeker validation code\
-      \ to create a Job Match account.\nJob boards\nPrivate-sector job boards are\
-      \ online services that advertise jobs and give you tools for finding work. Some\
-      \ are free and others cost a small fee. Research to find one that suits you."
-  utter_faq/55:
-  - text: "No.  You may only have one profile at a time. This is set out in Canada\u2019\
-      s immigration  law.\nCreating  more than one profile will not give you a better\
-      \ chance at being invited or  allow you to be invited under a different program.\n\
-      \nNote: Completing an Express Entry profile is the first step to immigrate to\
-      \ Canada permanently as a skilled worker. Completing an Express Entry profile\
-      \ does not guarantee that you will receive an Invitation to Apply for permanent\
-      \ residence. An Invitation to Apply for permanent residence will be based on\
-      \ your score and rank in the Express Entry pool using the Comprehensive Ranking\
-      \ System."
-  utter_faq/56:
-  - text: "You may want to try using a different Web browser such as Firefox or Google\
-      \ Chrome. You should also check your browser\u2019s language settings and make\
-      \ sure it is set to English or French as special characters can cause errors.\n\
-      If you are still having a problem, try clearing your browser cache. Your browser\u2019\
-      s Help section  can tell you how to do this. If the problem continues, you can\
-      \ contact us.\nSee also One of the forms in my International Experience Canada\
-      \ (IEC) profile is marked \u201CIn progress\u201D. How do I fix this?"
-  utter_faq/57:
-  - text: "To get points for your education under the Comprehensive Ranking System,\
-      \ you must either: \n\nhave been educated in Canada, or \nhave a valid Educational\
-      \ Credential Assessment (ECA) for immigration purposes for your completed foreign\
-      \ education."
-  utter_faq/58:
-  - text: "The online  tool asks general questions to see if you may be eligible for\
-      \ one of the programs under Express Entry.\n  The Express  Entry profile asks\
-      \ more specific and detailed questions about your  qualifications. It is possible\
-      \ that after you gave more detailed information in  your Express Entry profile\
-      \ that you are, in fact, not eligible.\nOnly a complete  Express Entry profile\
-      \ can be used to fully assess if you are eligible."
-  utter_faq/59:
-  - text: "Note: It is now optional to create a Job Match account with Job Bank. You\
-      \ can still create a Job Match account to help you find work.\n\nNo. If you\
-      \ don\u2019t already have a valid job offer, you can create a Job Match account\
-      \ in Job Bank using your Express Entry profile number and Job Seeker Validation\
-      \ Code. A Job Match account can help you start looking for work.\nOnce you complete\
-      \ your Express Entry profile, if you are found to meet most of the requirements\
-      \ to enter the pool, you should get a message in your account with this information.\n\
-      To create an account:\n\ngo to the Job Match sign-in page\nclick the \u201C\
-      Sign up now!\u201D button\nread the privacy notice and click \u201CI agree\u201D\
-      \nfollow the instructions to create an account"
-  utter_faq/60:
-  - text: "If you already started to create an Express Entry profile in your account,\
-      \ the reference code won\u2019t work. To continue your profile:\n\ngo to the\
-      \ \u201CView the applications you submitted\u201D section at the top of your\
-      \ account page\nchoose the line with your Express Entry profile\nclick the \u201C\
-      Continue Profile\u201D button\n\nIf you have not started creating your profile,\
-      \ you will have to go through the Come to Canada tool again for a new reference\
-      \ code."
-  utter_faq/61:
-  - text: You can find everything you need to complete an Express Entry profile on
-      our website.
-  utter_faq/62:
-  - text: 'Canada assesses everyone using the same standards, no matter their language
-      of origin, nationality or ethnicity.
+      You can find country-specific information about police certificates on Canada's website:\n
+      https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how.html"
+  utter_faq/52: # Question: Do I need to include proof of funds for Express Entry?
+  - text: "You will be asked to enter in your Express Entry profile the amount of
+      money you will have to help you settle in Canada. This is to show that you
+      can support yourself and any family who come with you to Canada, and helps
+      us assess which programs you may be eligible for. You will only need to meet
+      the settlement fund requirement if it applies to the program you are invited
+      to apply under.\n\n\nIf you are invited to apply under the Federal Skilled Worker
+      Program or Federal Skilled Trades Program, you will need to show that you
+      meet the settlement funds requirement unless you are currently authorized
+      to work in Canada and have a valid job offer from an employer in Canada.\n
+      \nFor proof, you must get official letters from any banks or financial institutions
+      where you are keeping money.\n\nLetter(s) must list:\n\n- All current bank and
+      investment accounts\n\n- All outstanding debts such as credit card debts and loans\n
+      \n\nIf you don\u2019t need to provide proof of funds, you must upload a letter 
+      explaining either that you have been invited to apply under the Canadian Experience Class, 
+      or that you have a valid job offer."
+  utter_faq/53: # Question: What Express Entry programs can I apply to?
+  - text: "Find out which programs you\u2019re eligible for by using these steps:\n
+      \n1. Sign in to your account.\n\n 2. Go to the section 'View the applications you
+      submitted'.\n\n3. Click on 'Check full application status.'\n\n4. Scroll
+      down to the section called 'What am I eligible for?'\n\nThe programs
+      are listed in the table. Beside each one, under 'Details', it will say
+      'met' or 'not met.'\n\nIf it says 'met' that means you\u2019
+      re eligible for that program.\n\nYou may be eligible for more than one program, 
+      and can apply for multiple at the same time"
+  utter_faq/54: # Question: I'm in the Express Entry pool. How can I look for a job in Canada?
+  - text: "Note: As of June 6, 2017, It is now optional to create a Job Match account
+      with Job Bank.\n\n\nTo start your job search, you can:\n\n- Create a Job Match
+      account with Canada\u2019s Job Bank\n\n- Promote yourself to employers in Canada
+      using private sector job boards\n\nYou can use both while you are in the Express
+      Entry pool. Once you come to Canada, you can keep using these services if
+      you still need to find a job.\n\n\nJob Bank: A Job Match account with Job Bank
+      is an easy, online tool to help match you with employers looking for workers
+      with your skills. To do so:\n\n1. Go to the Job Match sign-in page\n\n2. Click the
+      'Sign up now!' button\n\n3. Read the privacy notice and click 
+      I agree if you agree\n\n4. Follow the instructions to create an account\n\n
+      You will need your Express Entry profile number and job seeker validation code
+      to create a Job Match account.\n\n\nJob boards: Private-sector job boards are
+      online services that advertise jobs and give you tools for finding work. Some
+      are free and others cost a small fee. Research to find one that suits you."
+  utter_faq/55: # Question: Can I have more than one Express Entry profile?
+  - text: "No. You may only have one profile at a time. This is set out in Canada\u2019
+      s immigration  law.\n\nCreating  more than one profile will not give you a better
+      chance at being invited or allow you to be invited under a different program.\n\n
+      Note: Completing an Express Entry profile does not guarantee that you will receive
+      an Invitation to Apply for permanent residence. An Invitation to Apply (ITA) for permanent 
+      residence will be based on your score and rank in the Express Entry pool using the 
+      Comprehensive Ranking System."
+  utter_faq/56: # Question: How to fix validation error when creating Express Entry profile
+  - text: "You may want to try using a different Web browser such as Firefox or Google
+      Chrome. You should also check your browser\u2019s language settings and make
+      sure it is set to English or French as special characters can cause errors.\n\n
+      If you are still having problems, try clearing your browser cache. Your browser\u2019
+      s 'Help' section can tell you how to do this. If the problem continues, you can
+      contact website support directly."
+  utter_faq/57: # Question: Do I need an Educational Credential Assessment to apply under Express Entry?
+  - text: "To get points for your education under the Comprehensive Ranking System (CRS),
+      you must either: \n\n- Have been educated in Canada, or \n\n- Have a valid Educational
+      Credential Assessment (ECA) for immigration purposes for your completed foreign
+      education."
+  utter_faq/58: # Question: Online tool says I am eligible but I cannot after creating my Express Entry profile
+  - text: "The online tool asks general questions to see if you may be eligible for
+      one of the programs under Express Entry.\n\n The Express Entry profile asks
+      more specific and detailed questions about your qualifications. It is possible
+      that after you gave more detailed information in your Express Entry profile
+      that you are, in fact, not eligible.\n\nOnly a complete Express Entry profile
+      can be used to fully assess if you are eligible."
+  utter_faq/59: # Question: Can I use my existing Job Bank account to get matched with employers for Express Entry?
+  - text: "Note: It is now optional to create a Job Match account with Job Bank. You
+      can still create a Job Match account to help you find work.\n\nNo. If you
+      don\u2019t already have a valid job offer, you must create a Job Match account
+      in Job Bank using your Express Entry profile number and Job Seeker Validation
+      Code. A Job Match account can help you start looking for work.\n\nOnce you complete
+      your Express Entry profile and you are found to meet most of the requirements
+      to enter the pool, you should get a message in your account with this information.\n\n\n
+      To create an account:\n\n1. Go to the Job Match sign-in page\n2. Click the 
+      'Sign up now!' button\n\n3. Read the privacy notice and click 'Agree'\n\n
+      4. Follow the instructions to create an account."
+  utter_faq/60: # Question: My personal reference code is not working. What should I do?
+  - text: "If you haven't finished your Express Entry profile on your account,
+      the reference code won\u2019t work. To continue your profile:\n\n1. Go to the
+      'View the applications you submitted' section at the top of your
+      account page\n\nChoose the line with your Express Entry profile\n\n3. Click the 
+      'Continue Profile' button\n\nIf you have not started creating your profile,
+      you will have to go through the Come to Canada tool again for a new reference
+      code."
+  utter_faq/61: # Question: What do I need to create an Express Entry profile?
+  - text: "You actually don't need any documents to create your Express Entry profile, but
+      you will need information from the following documents:\n\n
+
+      - A passport or travel document\n\n
+      - Language test results\n\n
+      - Proof of work experience\n\n
+      - Proof of funds\n\n\n
+
+      You may also need the following depending on your program:\n\n
+
+      - Proof of Canadian education or ECA (for Federal Skilled Workers Program
+      or for CRS points)\n\n
+      - Provincial Nomination (if you have one)\n\n
+      - Written job offer from Canadian employer (if you have one)\n\n
+      - Certificate of qualification in a trade occupation issued by Canadian province 
+      or territory (if you have one)"
+  utter_faq/62: # Question: I am a native English or French speaker. Why do I need to take a language test for Express Entry?
+  - text: "Canada assesses everyone using the same standards, no matter their language
+      of origin, nationality or ethnicity.\n\n
 
       Every candidate must take a standard test by an objective third party. This
-      is to make sure your language skills are assessed in a fair and unbiased way.
+      is to make sure your language skills are assessed in a fair and unbiased way.\n\n
 
       Even someone from an English-speaking country, who speaks English as a first
       language, needs to take a test. Likewise, someone from a  French-speaking country,
-      who speaks French as a first language, needs to take a  test.
+      who speaks French as a first language, needs to take a test.\n\n
 
-      You need to submit third-party language results for all  programs under Express
-      Entry. You will have to include the results of your  test(s) in your Express
-      Entry profile.
+      You need to submit third-party language results for all programs under Express
+      Entry. You will have to include the results of your test(s) in your Express
+      Entry profile.\n\n
 
       Language tests have been required for our skilled immigration programs for many
-      years. Find out more about language testing.'
-  utter_faq/63:
-  - text: "We only accept these tests for Express Entry:\nFor English\n\nCELPIP: Canadian\
-      \ English Language Proficiency Index Program \u2013 CELPIP-General\nIELTS: International\
-      \ English Language Testing System \u2013 General Training\n\nFor French\n\n\
-      TEF Canada: Test d\u2019\xE9valuation de fran\xE7ais\nTCF Canada\_: Test de\
-      \ connaissance du fran\xE7ais\n\nFind out more about language testing."
-  utter_faq/64:
-  - text: "It may take up to 24\_hours for the system to send a message saying that\
-      \ your profile has been updated.\nFor example, if you made a change on Monday,\
-      \ you may only receive a message from your account on Tuesday."
-  utter_faq/65:
-  - text: 'If you withdrew your  profile, you will need to create a new one  if you
+      years."
+  utter_faq/63: # Question: What kind of language test can I use for Express Entry?
+  - text: "We only accept these tests for Express Entry:\n\n\nFor English:\n\nCELPIP: Canadian
+      English Language Proficiency Index Program (CELPIP-General)\n\nIELTS: International
+      English Language Testing System (General Training)\n\n\nFor French:\n\n
+      TEF Canada: Test d'évaluation de français\n\nTCF Canada: Test de
+      connaissance du français."
+  utter_faq/64: # Question: What does it mean if I receive a message saying my profile has been updated but I don't see an update?
+  - text: "It may take up to 24 hours for the system to send a message saying that
+      your profile has been updated.\n\nFor example, if you made a change on Monday,
+      you may only receive a message from your account on Tuesday."
+  utter_faq/65: # Question: I accidently withdrew my Express Entry profile. How can I fix this?
+  - text: "If you withdrew your profile, you will need to create a new one if you
       want to enter the pool.
 
-      You will have to meet the Express Entry requirements in  place at that time.'
-  utter_faq/66:
-  - text: "If you\u2019ve been found not eligible, you will need to create a new profile.\
-      \ An ineligible profile is no longer valid so you can\u2019t change it, even\
-      \ if you have new information.\nYou will still have to meet the Express Entry\
-      \ requirements that are in place. So, unless you made a mistake in your first\
-      \ profile or your circumstances have changed (for example,\_you have new language\
-      \ test results, you now have more work experience, etc.), there is a good chance\
-      \ you will be found ineligible again.\nYou can review the requirements to see\
-      \ which ones you did not meet. This can help you find what to do to meet the\
-      \ requirements so you can apply again."
-  utter_faq/67:
-  - text: "To update  your profile, follow these steps:\n\nGo to the main  page of\
-      \ your account\nScroll down to  \u201CContinue my profile / application, not\
-      \ yet submitted\u201D\nChoose the line  with your Express Entry Profile\nClick\
-      \ \u201CContinue Profile\u201D button \n\n\nOnce  you\u2019re on the \u201C\
-      Express Entry profile\u201D page:\n\n\nClick the \u201CUpdate form\u201D button\
-      \ for\_ the \u201CForm Name\u201D you want to update\nMake the changes you want\
-      \ to the fields\nClick the \u201CSave and exit\u201D button at the bottom of\
-      \ page to go back to \u201CExpress Entry Profile\u201D page."
+      You will have to meet the Express Entry requirements in  place at that time."
+  utter_faq/66: # Question: I was found not eligible for Express Entry and I can't change my profile. What do I do?
+  - text: "If you've been found not eligible, you will need to create a new profile.
+      An ineligible profile is no longer valid so you can't change it, even
+      if you have new information.\n\nYou will still have to meet the Express Entry
+      requirements that are in place. So, unless you made a mistake in your first
+      profile or your circumstances have changed (for example, you have new language
+      test results, you now have more work experience, etc.), there is a good chance
+      you will be found ineligible again.\n\nYou can use my eligibility checker to find 
+      other programs you are eligible for!"
+  utter_faq/67: # Question: How do I update my Express Entry profile before submitting it?
+  - text: "To update  your profile, follow these steps:\n\nGo to the main  page of
+      your account\nScroll down to  \u201CContinue my profile / application, not
+      yet submitted\u201D\nChoose the line  with your Express Entry Profile\nClick
+      \u201CContinue Profile\u201D button \n\n\nOnce  you\u2019re on the \u201C
+      Express Entry profile\u201D page:\n\n\nClick the \u201CUpdate form\u201D button
+      for\_ the \u201CForm Name\u201D you want to update\nMake the changes you want
+      to the fields\nClick the \u201CSave and exit\u201D button at the bottom of
+      page to go back to \u201CExpress Entry Profile\u201D page."
   utter_faq/68:
   - text: "This is an example of greyed out fields in your Express  Entry profile:\n\
       \nIn  some places, the fields will be coloured gray, and you will not be able\

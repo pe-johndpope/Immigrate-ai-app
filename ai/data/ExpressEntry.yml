@@ -2,228 +2,357 @@ nlu:
   - intent: faq/47
     examples: |
       - What changes have recently been made to Express Entry?
+      - Changes to Express Entry
+      - How did Express Entry change?
+      - Express Entry changes
       - How has Express Entry changed recently?
       - How has the Express Entry system changed?
+      - Express Entry changes
   - intent: faq/48
     examples: |
       - When I try to submit my Express Entry profile or my application, I get an error. What can I do?
+      - There is an error when submitting my Express Entry profile
+      - Error when submitting Express Entry profile
+      - How to fix an Express Entry profile error
+      - Error with Express Entry profile
       - What should I do if I try to submit my Express Entry profie and I receive an error?
       - I keep getting an error when I try to submit my Express Entry profile or my application. How do I fix this?
   - intent: faq/49
     examples: |
       - Can I ask to only be considered for one of the programs under Express Entry?
+      - Can I apply for only one Express Entry program?
       - Am I able to request that I only be considered for one of the programs available under Express Entry?
-      - Is it possible to be considered for only one of the progrms under Express Entry?
+      - How to apply for one Express Entry program?
+      - Apply to single program in Express Entry?
+      - Is it possible to be considered for only one of the programs under Express Entry?
   - intent: faq/50
     examples: |
       - Do I need to include medical exams and police certificates for an Express Entry application to be complete?
+      - Do I need my medical exam and police check for my Express Entry application?
+      - Do I need my medical exam and police check for Express Entry?
       - Am I required to include all medical exam confirmation letters and police certificates for my application for permanent residence to be complete?
-      - If I'm applying for Express Entry, do I have to provide all of my medical exams and police certificates in order to complete my application?
+      - Do I need a medical exam and police check to apply to Express Entry?
+      - Can I apply to Express Entry without a medical exam and police check?
+      - If I\u2019m applying for Express Entry, do I have to provide all of my medical exams and police certificates in order to complete my application?
+      - Do I need a medical and police exam for Express Entry?
   - intent: faq/51
     examples: |
       - What happens if a country has special procedures for getting police certificates?
+      - How to find special procedure to get police check?
+      - I don\u2019t know how to get my police certificate
+      - I don\u2019t know how to get my police check
+      - I am having trouble getting my police check
       - Where do I find more information about countries with special procedures for getting police certificates?
       - What do I do if a country has a certain process for obtaining police certificates?
+      - Special procedure for police check
+      - Special procedure for police certificate
   - intent: faq/52
     examples: |
       - Do I need to include proof of funds for Express Entry?
+      - Do I need proof of funds for Express Entry?
+      - How to find proof of funds?
+      - Proof of funds for Express Entry
       - Will I be asked to prove how much money I have for Express Entry?
+      - How to prove settlement funds for Express Entry?
       - How do I prove that I meet the settlement fund requirements for Express Entry?
+      - What documents can I submit for proof of funds?
+      - Proof of funds documents
+      - Settlement fund documents
   - intent: faq/53
     examples: |
       - I am in the Express Entry pool. How do I find out what programs I am eligible for?
+      - What Express Entry programs can I apply to?
+      - Which Express Entry programs can I apply for?
+      - Express Entry programs I can apply for
+      - How to find which Express Entry programs I can immigrate with
+      - Express Entry eligible Express Entry programs
       - Which programs am I eligible for if I am in the Express Entry pool?
-      - If I'm in the express entry pool, where do I go to see which programs I am eligible for?
+      - Which Express Entry program is best for me?
+      - If I\u2019m in the express entry pool, where do I go to see which programs I am eligible for?
   - intent: faq/54
     examples: |
-      - "I\u2019m in the Express Entry pool. How can I look for a job in Canada?"
+      - I'm in the Express Entry pool. How can I look for a job in Canada?
+      - How do I get a job in Canada while applying for Express Entry?
+      - What is Canada Job Bank?
+      - Canada Job Bank
       - How do I look for a job in Canada if I am in the Express Entry pool?
+      - How do I get a job offer when appling for Express Entry?
       - How do I start my job search in Canada if I am in the Express Entry pool?
   - intent: faq/55
     examples: |
       - Can I have more than one Express Entry profile?
+      - Should I create more Express Entry profiles?
+      - Does having many Express Entry profiles increase my chances of being accepted?
       - Can I create more than one Express Entry profile to increase my chance at finding a job?
       - Am I allowed to have multiple express entry profiles?
+      - Many Express Entry profiles
   - intent: faq/56
     examples: |
       - In my online profile or application I am getting validation errors or it tells me that fields are incomplete when they are not. What do I do?
-      - I finished my online profile and application but I keep getting validation errors and it is telling me that it's incomplete when it is not. How do I fix this?
-      - What do I do if I completed my online profile but I keep receiving validation errors or it tells me that fields are incomplete when they aren't?
+      - I finished my online profile and application but I keep getting validation errors and it is telling me that it\u2019s incomplete when it is not. How do I fix this?
+      - What do I do if I completed my online profile but I keep receiving validation errors or it tells me that fields are incomplete when they aren\u2019t?
+      - How to fix validation error when creating Express Entry profile
+      - Validation error in Express Entry
+      - Validation error when fields are complete Express Entry
+      - Fields are complete but still have a validation error?
   - intent: faq/57
     examples: |
-      - Do I need an Educational Credential Assessment to apply under Express  Entry?
+      - Do I need an Educational Credential Assessment to apply under Express Entry?
       - Is an Educational Credential Assessment required for my Express Entry application?
       - To apply for Express Entry do I need to have a valid Educational Credential Assessment?
-  - intent: faq/58
+      - Do I need an ECA for Express Entry?
+      - Can I apply to Express Entry without an ECA?
+      - ECA for Express Entry
+      - Is ECA required for Express Entry?
+  - intent: faq/58 
     examples: |
-      - "The online tool said I was eligible for Express Entry, but my completed profile says I\u2019m not. Which one is right?"
+      - The online tool said I was eligible for Express Entry, but my completed profile says I\u2019m not. Which one is right?
       - My Express Entry profile says that I am not eligible but the online tool that I used beforehand said that I was eligible. Which one is correct?
       - What does it mean if the online tool indicated that I would be eligible for Express Entry but after completing my profile, it is now stating that I am not eligible?
+      - Online tool says I am eligible but I cannot after creating my Express Entry profile
+      - Express Entry profile says I am not eligible after the online tool said I was eligible
   - intent: faq/59
     examples: |
       - Can I use my existing Job Bank account to get matched with employers for Express Entry?
       - I already have a Job Bank account. Can I use this to get matched with employers for Express Entry?
       - Will the Job Bank account I already have match me with employers for Express Entry?
+      - Do I need to make a new job bank account after applying Express Entry?
+      - Can I use the job bank account I already have?
+      - Do I need to make a new job bank account?
   - intent: faq/60
     examples: |
-      - My personal  reference code is not working. What should I do?
+      - My personal reference code is not working. What should I do?
       - What can I do if my personal reference code is not working?
       - I started an Express Entry profile but now my reference code isn't working. What do I do?
+      - Personal reference code is not working
+      - What to do if reference codes does not work
+      - Personal reference code not working
   - intent: faq/61
     examples: |
       - What do I need to create an Express Entry profile?
       - What's needed to create my Express Entry profile?
       - What information is required to complete my Express Entry profile?
+      - What information do I need to make an Express Entry profile?
   - intent: faq/62
     examples: |
       - I am a native English or French speaker. Why do I need to take a language test for Express Entry?
       - If my native language is English or French, why do I still have to take a language test for Express Entry?
       - Do I still need to complete a language test for Express Entry if my native language is English or French?
+      - Why do I need to take a language test if I already speak the language?
   - intent: faq/63
     examples: |
       - What kind of language test can I use for Express Entry?
       - Which language tests are accepted for Express Entry?
       - Are there certain language tests that Express Entry accepts?
+      - Lanuage tests for Express Entry
   - intent: faq/64
     examples: |
-      - "A message in my account says my profile was updated. I didn\u2019t update it  today (or don\u2019t see an update). What happened?"
+      - A message in my account says my profile was updated. I didn\u2019t update it  today (or don\u2019t see an update). What happened?
       - I just received a message saying that my Express Entry profile was updated, however, I haven't updated it today. Should I be concerned?
       - What does it mean if I receive a message saying my profile has been updated but I don't see an update?
+      - My Express Entry profile was updated but I did not do it
   - intent: faq/65
     examples: |
       - I accidently withdrew my Express Entry profile. How can I fix this?
       - What should I do if I withdrew my Express Entry profile not purposefully?
       - I've withdrawn my Express Entry profile accidentally. Is there a way to fix this?
+      - I accidentally withdrew my Express Entry profile
   - intent: faq/66
     examples: |
-      - "I was found not eligible for Express Entry and I can\u2019t change my  profile. What do I do?"
+      - I was found not eligible for Express Entry and I can\u2019t change my profile. What do I do?
       - I am ineligible for Express Entry and am now unable to make changes to my profile. What should I do?
       - If I've been found to be ineligible for Express Entry, how do I change my profile?
+      - How do I change my profile after being ineligible for Express Entry?
+      - How do I change my Express Entry profile?
   - intent: faq/67
     examples: |
       - How do I update my Express Entry profile before submitting it?
       - I would like to update my Express Entry profile before submitting it. How do I do this?
       - Is there a way to update my Express Entry profile before submitting it?
+      - How to change my Express Entry profile before submitting?
+      - I want to change my Express Entry profile before submitting it
   - intent: faq/68
     examples: |
-      - "Some fields in my Express Entry profile are greyed out and I can\u2019t  change them. How do I update them?"
+      - "Some fields in my Express Entry profile are greyed out and I can\u2019t change them. How do I update them?"
       - How do I modify fields that are greyed out in my Express Entry profile?
       - Is it possible to update some fields that have been greyed out in my Express Entry profile?
+      - How to fill in greyed fields on Express Entry profile
+      - Greyed fields in Express Entry profile
+      - Can I still fill greyed fields in Express Entry profile?
   - intent: faq/69
     examples: |
       - How do I confirm that my Express Entry profile is complete?
       - How can I confirm that I've completed my Express Entry profile?
       - Is there a way to tell that I've fully completed my Express Entry profile?
+      - How do I know when my Express Entry profile is complete?
+      - How to confirm my Express Entry profile is finished
+      - When is my Express Entry profile ready to submit?
   - intent: faq/70
     examples: |
       - I already submitted my Express Entry profile. Can I still update it?
       - Can I still update my Express Entry profile after I've submitted it?
       - How do I updated my Express Entry profile after submitting it?
+      - Can I change my Express Entry profile after submitting?
+      - Updating my Express Entry profile after submission
   - intent: faq/71
     examples: |
-      - Where can I find my Express Entry profile number and/or Job Seeker  validation code?
+      - Where can I find my Express Entry profile number and/or Job Seeker validation code?
       - Where would I find the validation code or Express Entry profile number?
       - I am looking for my job seeker validation code or Express Entry profile number. Where is it located in my profile?
+      - Where to find Express Entry profile number
+      - Where to find job seeker validation code
+      - How to find Express Entry profile number
+      - How to find job seeker validation code
   - intent: faq/72
     examples: |
       - How do I withdraw my Express Entry profile?
       - Am I able to withdraw my Express Entry profile?
       - Is it possible for an Express Entry profile to be withdrawn?
+      - How to withdraw an Express Entry profile
+      - Withdrawing my Express Entry profile
   - intent: faq/73
     examples: |
       - In an Express Entry profile, should I only include the minimum work experience needed to qualify for one of the programs, or should I include more?
       - Is there an advantage to including more work experience than the minimum needed to qualify for one of the programs in my Express Entry profile?
       - How much work experience should I include in my Express Entry profile?
+      - Should I include all my work experience or enough to meet the minimum requirements for Express Entry?
+      - Should I include all my work experience for Express Entry?
   - intent: faq/74
     examples: |
-      - "In an Express Entry profile, what do you mean by the \u201Cdate the applicant first became qualified to practice this occupation.\u201D?"
-      - What does "date the applicant first became qualified to practice this occupation" mean in my Express Entry profile?
-      - I don't understand what is meant by "date the applicant first became qualified to practice this occupation" ?
+      - In an Express Entry profile, what do you mean by the \u201Cdate the applicant first became qualified to practice this occupation\u201D?
+      - What does \u201Cdate the applicant first became qualified to practice this occupation\u201D mean in my Express Entry profile?
+      - I don't understand what is meant by \u201Cdate the applicant first became qualified to practice this occupation\u201D?
+      - What is \u201Cdate the applicant first became qualified to practice this occupation\u201D?
   - intent: faq/75
     examples: |
       - How do I fill out my Express Entry profile when I have maintained my status?
       - If I've maintained my status, how should I fill out my Express Entry profile?
       - How does maintained status affect my Express Entry profile?
+      - Do I have to change my Express Entry profile if I maintained my status
+      - What is different about applying for Express Entry if I maintained my status?
   - intent: faq/76
     examples: |
       - How do I get education points for Express Entry if I have 2 or more degrees or diplomas?
       - How do I ensure that I will get full education points for Express Entry if I have more than 2 degrees or diplomas?
       - What are the requirements to get education points for Express Entry if I've obtained 2 or more degrees or diplomas?
+      - How many points will I earn for 2 degrees?
+      - How many points will I earn for 3 degrees?
+      - How many points will I earn for 4 degrees?
+      - How many points will I earn for 2 diplomas?
+      - How many points will I earn for 3 diplomas?
+      - How many points will I earn for 4 diplomas?
   - intent: faq/77
     examples: |
       - If my Express Entry profile expires, will the system keep my information?
       - My Express Entry profile is about to expire, will the system automatically keep my information?
       - Will the system keep my information if my Express Entry profile expired?
+      - What happens to my information after my Express Entry profile expires?
+      - Is my information deleted after my Express Entry profile expires?
   - intent: faq/78
     examples: |
       - Can I be eligible for more than one program under Express Entry?
       - If I meet the requirements, can I be eligible for multiple programs under express entry?
       - Is it possible to meet the criteria for more than one program under Express Entry?
+      - Can I apply to multiple Express Entry programs?
+      - Applying to multiple Express Entry programs
+      - I want to apply to many Express Entry programs
+      - How to apply for multiple Express Entry programs
   - intent: faq/79
     examples: |
       - Can I be invited to apply if I've lost my username or password?
       - I've lost my username or password. Can I still be invited to apply?
       - What happens if I lose my username or password and am invited to apply?
+      - What do I do if I forgot my username after recieving my ITA?
+      - What do I do if I forgot my password after recieving my ITA?
+      - Can I still get an ITA after forgetting my username?
+      - Can I still get an ITA after forgetting my password?
   - intent: faq/80
     examples: |
-      - Why did you change the number of points for a valid job offer in Express Entry?
+      - Why did Canada change the number of points for a valid job offer in Express Entry?
       - What was the purpose of changing the point system for a valid job offer under Express Entry?
       - Why were the valid job offer points changed in Express Entry?
+      - Points system change for job offers
   - intent: faq/81
     examples: |
       - Do I need a permanent job offer for Express Entry?
       - Does Express Entry require that I have a permanent job?
       - Do permanent jobs only count as a valid job offer for Express Entry?
+      - Permanent job offer required for Express Entry?
+      - Does a valid job offer have to be permanent?
   - intent: faq/82
     examples: |
       - What makes a job offer valid under Express Entry?
       - What does Express Entry consider to be a valid job offer?
       - What is a valid job offer as per Express Entry?
+      - Requirements for a valid job offer Express Entry?
+      - How do I know if my job offer is valid for Express Entry?
+      - Valid job offers Express Entry
   - intent: faq/83
     examples: |
       - What do you mean by Primary Occupation?
       - What is a Primary Occupation?
-      - I don't understand what is meant by Primary Occupation?
+      - I don\u2019t understand what is meant by Primary Occupation?
+      - Primary Occupation
+      - What is my primary occupation?
   - intent: faq/84
     examples: |
       - How do I find my National Occupation Classification (NOC) code?
       - Where can my National Occupation Classification code be found?
       - What is my National Occupation Classification code?
+      - What is NOC?
+      - What is my job\u2019s NOC code?
+      - How to find my job\u2019s NOC code?
+      - What does NOC mean?
   - intent: faq/85
     examples: |
-      - "Why didn\u2019t I get points for my job offer in Express Entry?"
-      - Why wasn't I eligible to recieve points from the ranking system for a job offer in Express Entry?
+      - Why didn\u2019t I get points for my job offer in Express Entry?
+      - Why wasn\u2019t I eligible to recieve points from the ranking system for a job offer in Express Entry?
       - What are the requirements to receive points for a job offer in Express Entry?
+      - Why couldn't I get points for my job offer in Express Entry?
+      - No points for my job offers in Express Entry
   - intent: faq/86
     examples: |
       - I am working in Canada on a valid work permit. Does this count as a job offer?
       - Does working in Canada on a valid work permit count as a job offer?
       - If I am already working in Canada on a work permit can I use that to count as a job offer?
+      - Does working in Canada with a work permit countas a job offer?
+      - Can my current work in Canada count as a job offer?
   - intent: faq/87
     examples: |
       - There is no National Occupation Classification (NOC) code on my work permit. What should I put in my Express Entry profile?
-      - My work permit doesn't have a National Occupation Classification code, what should I put on my Express Entry profile?
-      - What should I enter on my Express Entry profile if my work permit doesn't have a National Occupation Classification code?
+      - My work permit doesn\u2019t have a National Occupation Classification code, what should I put on my Express Entry profile?
+      - What should I enter on my Express Entry profile if my work permit doesn\u2019t have a National Occupation Classification code?
+      - What if my work permit does not have a NOC code?
   - intent: faq/88
     examples: |
       - If I am waiting for a new work permit and I have job offer points, do I have to remove the job offer from my Express Entry profile?
-      - I'm currently awaiting a new work permit and have job offer points. Should I remove the job offer from my Express Entry profile?
+      - I\u2019m currently awaiting a new work permit and have job offer points. Should I remove the job offer from my Express Entry profile?
       - Do I need to remove a job offer from my Express Entry profile if I have job offer points and am waiting for a new work permit?
+      - Should I remove my job offer points if I am renewing my work permit?
   - intent: faq/89
     examples: |
-      - "What work experience can I count towards the Federal Skilled Trades Program\u2019s two-year requirement?"
+      - What work experience can I count towards the Federal Skilled Trades Program\u2019s two-year requirement?
       - What types of work experience can be counted towards the two-year requirement for the Federal Skilled Trades Program?
       - What work experience will count towards meeting the two-year requirement for the Federal Skilled Trades Program?
+      - What type of work counts towards the Federal SKilled Workers Program requirements?
+      - What kind of work counts towards the Federeal SKilled Workers Program?
+      - What type of work counts towards the FSWP?
+      - What kind of work counts towards the FSW Program?
   - intent: faq/90
     examples: |
       - Can I count student work experience toward the Express Entry work requirement?
       - Does student work experience count towards Express Entry work requirements?
       - Can work experience gained as a student satisfy Express Entry work requirements?
+      - Does work experience done while studying count towards Express Entry requirements?
+      - Can I work while I study for Express Entry?
+      - Can I work as a student to apply for Express Entry?
   - intent: faq/91
     examples: |
-      - "I have been working in Canada for the last six months but didn\u2019t get points for work experience. Why not?"
+      - I have been working in Canada for the last six months but didn\u2019t get points for work experience. Why not?
       - Why didn't I receive points for work experience that I gained while working in Canada for the last 6 months?
       - Why wasn't I awarded points for work experience while working in Canada for the last 6 months?
+      - I recieved no points for my work done in the last 6 months
+      - I worked in the last 6 months, but recieved no points
   - intent: faq/92
     examples: |
       - "If I\u2019ve maintained my status while in the Express Entry pool, will I still get the job offer points?"
@@ -234,16 +363,24 @@ nlu:
       - What if I am invited to apply for Express Entry while waiting for a new work permit?
       - I'm waiting for a new work permit and have been invited to apply for Express Entry. What happens now?
       - What happens if I am invited to apply for Express Entry while I'm waiting for a new work permit?
+      - What happens if I recieve my ITA before getting a new work permit?
+      - What do I do if I recieve my ITA but do not have a work permit yet?
   - intent: faq/94
     examples: |
       - I was invited to apply through Express Entry but my work permit expired. What do I do?
       - My work permit expired but I was invited to apply through Express Entry. What happens now?
       - What should I do if I was invited to apply through Express Entry but my work permit expired?
+      - I recieved my ITA after my work permit expired
+      - My work permit expired but I recieved my ITA
+      - What can I do if I recieved my ITA with an expired work permit?
   - intent: faq/95
     examples: |
-      - "I didn\u2019t get a Job Seeker Validation Code in the message you sent to my account. Why not?"
+      - I didn\u2019t get a Job Seeker Validation Code in the message you sent to my account. Why not?
       - Why wouldn't I have received a Job Seeker Validation Code in the message sent to my account?
       - I received an Express Entry profile number but not a Job Seeker Validation Code. Why did this happen?
+      - I can\u2019t find my Job Seeker Validation Code
+      - Where can I find my job seek validation code?
+      - I do not know where my job seek validation code is
   - intent: faq/96
     examples: |
       - Do I need a job offer to get into the Express Entry pool?
@@ -254,46 +391,63 @@ nlu:
       - How do I register with / create a Job Match account in Job Bank?
       - How do I make a Job Match account in Job Bank?
       - Do I have to register a Job Match account in Job Bank?
+      - How to make a job match account
   - intent: faq/98
     examples: |
       - I received a letter asking me to pay additional fees for my Express Entry application. How do I pay the additional fees?
       - How do I pay the additional fees for my Express Entry application?
       - How do I make additional payments or other fees for my Express Entry application?
+      - How to pay the additional fees for Express Entry
   - intent: faq/99
     examples: |
       - What do I do if I have technical problems when applying online?
       - I'm having techical difficulties with my online application. What should I do?
       - Who can I contact if I am having technical issues with my application process?
+      - What to do about technical difficulties when applying online?
+      - The website is not working when I'm applying online, what can I do?
+      - Wesbite is not working, what do I do?
   - intent: faq/100
     examples: |
       - What can I apply for online?
       - What permits am I able to apply for online?
       - Can I apply for all permits online?
+      - What permits are available online?
+      - What permits can I apply for?
   - intent: faq/101
     examples: |
       - What is a personal document checklist?
-      - What is meant by a peronal document checklist?
+      - What is meant by a personal document checklist?
       - What is a personal document checklist used for?
+      - Personal document checklist
+      - 
   - intent: faq/102
     examples: |
       - What is a personal reference code?
       - What is meant by a personal reference code?
       - What is a personal reference code used for?
+      - Personal reference code uses
+      - How do I use my personal reference code?
   - intent: faq/103
     examples: |
-      - "What if I don\u2019t know how to answer a question in my online application?"
+      - What if I don\u2019t know how to answer a question in my online application?
       - I am unsure of how to answer a certain question in my online applicaiton. What should I do?
       - I don't know how to answer a specific question in my online application, where do I go for a more detailed explanation?
+      - I don't understand a question online, where can I get help?
   - intent: faq/104
     examples: |
       - How do I exit and save my online application?
       - Can I save my online application to complete at a later time?
       - How do I exit and save my online application to come back to later?
+      - How can I save my online application?
+      - Will my application save if I leave?
+      - How to save my online application
   - intent: faq/105
     examples: |
       - What does it mean when I electronically sign my online application?
       - What is meant by "electronically signing" my application?
       - How does electronically signing my online application work?
+      - How do I electronically sign my application?
+      - What is electronically signing mean?
   - intent: faq/106
     examples: |
       - What do I do if the online application system is down?
@@ -304,31 +458,44 @@ nlu:
       - Who can I contact if I have questions about GCKey or Sign-In Partner (SecureKey Concierge)?
       - I have questions about GCKey or one of the other Sign-In Partners. Who should I speak to?
       - Is there somebody I can speak to if I have questions regarding GCKey?
+      - How do I get help signing in?
+      - How do I get help logging in?
+      - How do I get help signing up?
   - intent: faq/108
     examples: |
       - How do I get a GCKey?
       - How does one obtain a GCKey?
       - Can I create a GCKey?
+      - How to create a GCKey?
   - intent: faq/109
     examples: |
       - What do I do if I lost my GCKey username or password?
       - I've lost my GCKey username or password. What should I do?
       - I can't find my GCKey username or password. How do I create a new password?
+      - I lost my GCKey username
+      - I lost my GCKey password
+      - What to do if I lost my log in information?
   - intent: faq/110
     examples: |
-      - "I recently reset my account, but I don\u2019t see my application. How can I get it back?"
+      - I recently reset my account, but I don\u2019t see my application. How can I get it back?
       - I can't see my application after recently resetting my account. Is there a way of recovering the application?
       - How do I get my application back after resetting my account?
+      - Can I get my application after resetting my account?
+      - Can I recover my application after resetting?
   - intent: faq/111
     examples: |
       - How do I upload more supporting documents after I have already submitted my online application for permanent residence through Express Entry?
-      - Can I upload more supporting documents after aready having submitted my online appliation for PR through Express Entry?
+      - Can I upload more supporting documents after submitting my online appliation for PR through Express Entry?
       - Is it possible to send more documents through my account after submitting my application for permanent residence through Express Entry?
+      - Can I add more documents after submitting my Express Entry application?
+      - Can I add documents to my Express Entry application after submitting?
   - intent: faq/112
     examples: |
       - Who is a federal skilled worker?
       - What kinds of workers fall under the category of a federal skilled worker?
       - What occupations can make someone designated as a federal skilled worker?
+      - What jobs are considered for federal skilled workers?
+      - How do I know if my job applies for federeal skilled workers?
   - intent: faq/113
     examples: |
       - What is arranged employment for the Federal Skilled Worker Program?
@@ -339,10 +506,12 @@ nlu:
       - What are the minimum requirements to apply as a federal skilled worker?
       - Are there any minimum requirements for federal skilled workers?
       - How does one meet the requirements for federal skilled workers?
+      - Requirements for federeal skilled workers program
   - intent: faq/115
     examples: |
       - How do I find my Canadian Language Benchmark (CLB) level with my test results?
       - How can I confirm that I meet the minimum CLB level required with my test results?
+      - How do I find the CLB level for my language test result?
       - How can I find the CLB level of my language test results for IELTS?
       - How can I find the CLB level of my language test results for CELPIP?
       - How can I find the CLB level of my language test results for TEF?
@@ -351,6 +520,7 @@ nlu:
       - If I do not meet the language threshold in one of the four skill areas, can I still submit an Express Entry profile?
       - Do I need to meet the threshold in all four language skill areas in order to be considered under the Federal Skilled Worker program?
       - To be selected as a federal skilled worker, do I need to meet the language threshold in all four skill areas?
+      - 
   - intent: faq/117
     examples: |
       - What is the pass mark for the federal skilled worker selection grid?
