@@ -1427,8 +1427,7 @@ responses:
       
       1. Go to the 'Express Entry Profile' page:\n\n
       
-      2. Click on the 'Modify Family Information'
-      button at the top of the page:\n\n
+      2. Click on the 'Modify Family Information' button at the top of the page:\n\n
       
       3. Change the fields as needed.\n\n
       
@@ -1446,7 +1445,7 @@ responses:
       The 'Modify my Answers' button - Views all the eligibility questions.\n\n
       
       The 'pencil' button - Access the fields related to that question."
-  utter_faq/69: # How do I confirm that my Express Entry profile is complete?
+  utter_faq/69: # Question: How do I confirm that my Express Entry profile is complete?
   - text: "To confirm that you profile is complete:\n\n1. Go to the 'Express Entry
       profile' page\n\n2. Click the 'Continue form' button for the section
       with the status 'In progress'\n\n3. Verify that all circles to the right
@@ -1454,79 +1453,106 @@ responses:
       bar instead of a green check mark, open the section and complete the missing
       information.\n\n5. Click the 'Save and Exit' button to save your changes
       and return to the 'Express Entry profile' page."
-  utter_faq/70:
+  utter_faq/70: # Question: I already submitted my Express Entry profile. Can I still update it?
   - text: "If you weren't found eligible, you won't be able to update your
       profile. You'll have to create a new profile. Be sure your profile is
-      complete and correct before you submit it.\n If your profile was found eligible
-      for the pool, you can still update it after you've submitted it. Follow
-      these steps:\n\nOn the main page of your account, go to the section \u201C
-      View the applications you submitted\u201D.\nClick on \u201CCheck full application
-      status\u201D.\nOn the \u201CExpress Entry profile status\u201D page, click
-      on the \u201CView your profile\u201D under the heading \u201CYour Express
-      Entry profile status\u201D.\nOn the \u201CExpress Entry profile\u201D page,
-      click on the \u201CUpdate form\u201D button for the section you want to change.\n
-      \nNote: If the button only says \u201CView form,\u201D your profile wasn'
-      t found eligible. You'll have to submit a new one.\n\n\nMake any changes
-      you need to, and then click the \u201CSave and exit\u201D button at the bottom
-      of the page.\nOnce you finish updating your profile, click on the \u201CContinue\u201D
+      complete and correct before you submit it.\n\n
+      
+      If your profile was found eligible for the pool, you can still update 
+      it after you've submitted it. Follow these steps:\n\n
+    
+      1. On the main page of your account, go to the section 'View the applications 
+      you submitted'\n\n
+       
+      2. Click on 'Check full application status'.\n\n
+       
+      3. On 'Express Entry profile status' page, click on the 'View your profile' 
+      under the heading 'Your Express Entry profile status'.\n\n
+      
+      4. On the 'Express Entry profile' page, click on the 'Update form' button for the 
+      section you want to change (If the button only says 'View form', your profile wasn't 
+      found eligible. You will have to submit a new one).\n\n
+      
+      5. Make any changes you need to.\n\n
+      
+      6. Click the 'Save and Exit' button at the bottom of the page.\n\n
+      
+      Once you finish updating your profile, click on the 'Continue'
       button at the bottom of the page. Follow the instructions provided to submit
-      your updated profile.\n\nNote: The \u201CRevert changes\u201D button will
-      appear each time you enter a form and click on the \u201CSave and exit\u201D
+      your updated profile.\n\n
+      
+      Note: The 'Revert changes' button will appear each time you enter a form and click on the 'Save and Exit'
       button, even if you didn't make any changes."
-  utter_faq/71:
-  - text: "You can find these numbers in a message in your account. To find it:\n\n\
-      Log into your account\nGo to the heading called \"View my submitted applications\
-      \ or profiles\"\nClick on \"Check status and messages\" \nScroll down to the\
-      \ table called \u201CCorrespondence\u201D\nClick on the arrow in front of the\
-      \ message \u2013 it will open a drop-down menu with a link\nClick on the link\
-      \ to open the PDF message\n\n\nYou can find the profile number at the top of\
-      \ the PDF letter (number 1 in the example below). The Job Seeker Validation\
-      \ Code should be under the section \u201CTo register with Job Bank\u201D (number\
-      \ 2 in the example).\nExample of letter:\n\nMake sure you are looking at the\
-      \ right message. If the text of the message doesn't match the example above,\
-      \ check other messages in your account to find the right one.\nIf you did not\
-      \ get a code, there are a few reasons why this may be.\nIf there is no profile\
-      \ number, you should contact us using the Case Specific Enquiry form."
-  utter_faq/72:
-  - text: "To withdraw your profile:\n\nOn the main page of your account, go to the\
-      \ section \u201CView the applications you submitted\u201D\nClick on the orange\
-      \ \u201CWithdraw profile\u201D button\nUnder the heading \u201CWhat would you\
-      \ like to do today?\u201D below the \u201CWarning!\u201D text, click on the\
-      \ orange \u201CContinue\u201D button."
-  utter_faq/73:
-  - text: "To qualify for the broadest range of programs, including the Federal Skilled\
-      \ Worker Program, you should include work experience for the last 10\_years.\
-      \ We also need this information for an application for permanent residence,\
-      \ no matter which program you are applying under."
-  utter_faq/74:
-  - text: "If you are listing a skilled trade (jobs with a four-digit NOC code that\
-      \ begins with 632, 633, 72, 73, 82, 92) as your primary occupation:\nThis is\
-      \ the date when you first became qualified to practice on your own in that trade\
-      \ (for example, when you moved from apprentice to fully qualified tradesperson).\
-      \ \nNote: If you are being assessed for the Federal Skilled Trades program,\
-      \ work experience in a trade will only count if you are qualified to practice\
-      \ in that region.\nIf you are listing any other primary occupation: \nThis is\
-      \ the date when you finished the minimum level of education needed for the occupation\
-      \ according to the National Occupational Classification code. (Note: if the\
-      \ NOC only states high school, this is the date you graduated from high school.)"
-  utter_faq/75:
-  - text: "\u201CMaintained status\u201D means you can stay in Canada and, if eligible,\
-      \ keep working while we make a decision on your application.\n\nIf you'\
-      re in Canada with\_maintained status and are still authorized to work at the\
-      \ time you complete your Express Entry profile:\n\nAnswer \u201Cyes\u201D to\
-      \ the question \u201CDoes [your name] have a valid work permit for the current\
-      \ job in Canada?\u201D\n\n\nIf you're in Canada with maintained status,\
-      \ you're still authorized to work, and the original work permit was supported\
-      \ by a positive Labour Market Impact Assessment (LMIA):\n\nAnswer \u201Cyes\u201D\
-      \ to the question \u201CWas a positive LMIA issued for\_the current work permit?\u201D\
-      \ \nWhere it asks for the LMIA number, enter the number of the expired LMIA.\n\
-      \n\n\nIf (2) is true, for the question \u201CWas a positive LMIA issued for\_\
-      the job offer in Canada?\u201D\nanswer \u201Cno\u201D if:\n\nyou're still\
-      \ working for the employer named on the original work permit, and\nyou have\
-      \ a job offer from your current employer for at least 1 year\n\nanswer \u201C\
-      yes\u201D if:\n\nyou're working for a different employer than the one named\
-      \ on the original work permit\nyou have a job offer from your new employer for\
-      \ at least 1 year and\nyour new employer has a positive LMIA"
+  utter_faq/71: # Question: Where can I find my Express Entry profile number and/or Job Seeker validation code?
+  - text: "You can find these numbers in a message in your account. To find it:\n\n 
+      1. Log into your account\n\n
+      
+      2. Go to the heading called 'View my submitted applications
+      or profiles'\n\n
+      
+      3. Click on 'Check status and messages' \n\n
+      
+      4. Scroll down to the table called 'Correspondence'.\n\n
+      
+      5. Click on the arrow in front of the message, it will open a drop-down menu with a link.\n\n
+      
+      6. Click on the link to open the PDF message\n\n
+      
+      You can find the profile number at the top of the PDF letter. The Job Seeker Validation
+      Code should be under the section 'To register with Job Bank'."
+  utter_faq/72: # How do I withdraw my Express Entry profile?
+  - text: "To withdraw your profile:\n\n
+      
+      1. On the main page of your account, go to the
+      section 'View the applications you submitted'.\n\n
+      
+      2. Click on the orange 'Withdraw profile' button.\n\n
+      
+      3. Under the heading 'What would you like to do today?' below the 'Warning!' text, 
+      click on the orange 'Continue' button."
+  utter_faq/73: # Question: Should I include all my work experience for Express Entry?
+  - text: "To qualify for the broadest range of programs, including the Federal Skilled
+      Worker Program, you should include all work experience for the last 10 years.
+      We also need this information for an application for permanent residence,
+      no matter which program you are applying under."
+  utter_faq/74: # Question: In an Express Entry profile, what do you mean by 'the date the applicant first 
+      # became qualified to practice this occupation'?
+  - text: "If you are listing a skilled trade (jobs with a four-digit NOC code that
+      begins with 632, 633, 72, 73, 82, 92) as your primary occupation:\n\n
+      
+      This is the date when you first became qualified to practice on your own in that trade
+      (for example, when you moved from apprentice to fully qualified tradesperson).\n\n
+
+      If you are listing any other primary occupation: \n\n
+      
+      This would be the date when you finished the minimum level of education needed for the occupation 
+      according to the National Occupational Classification code. (Note: if the NOC requirements are only high 
+      school, this is the date you graduated from high school.)"
+  utter_faq/75: # How do I fill out my Express Entry profile when I have maintained my status?
+  - text: "'Maintained status' means you can stay in Canada and, if eligible,
+      keep working while we make a decision on your application.\n\n
+      
+      If you're in Canada with maintained status and are still authorized to work at the
+      time you complete your Express Entry profile:\n\n
+      
+      - Answer 'Yes' to the question 'Does [your name] have a valid work permit for the current
+      job in Canada?'\n\n\n
+
+      
+      If you're in Canada with maintained status, you're still authorized to work, and the 
+      original work permit was supported by a positive Labour Market Impact Assessment (LMIA):\n\n
+      
+      - Answer 'Yes' to the question 'Was a positive LMIA issued for the current work permit?'\n\n
+      
+      - Where it asks for the LMIA number, enter the number of the expired LMIA.\n\n
+      
+      - For the question 'Was a positive LMIA issued for the job offer in Canada?', answer 'No' if
+      you're still working for the employer named on the original work permit and you have
+      a job offer from your current employer for at least 1 year\n\n
+      
+      - For the question 'Was a positive LMIA issued for the job offer in Canada?', answer 'Yes' if 
+      you're working for a different employer than the one named on the original work permit, you have 
+      a job offer from your new employer for at least 1 year and your new employer has a positive LMIA"
   utter_faq/76:
   - text: "To get full points for having more than 1 credential:\n\nat least 1 of\
       \ the credentials must be for a program of 3 or more years in length\nyou need\
