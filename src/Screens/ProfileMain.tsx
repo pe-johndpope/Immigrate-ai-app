@@ -63,36 +63,12 @@ const ProfileScreen = ({ navigation }) => {
   });
 
   return (
-    <View
-      style={[
-        styles.container,
-        {
-          // Try setting `flexDirection` to `"row"`.
-          flexDirection: "column",
-        },
-      ]}
-    >
-      <StatusBar
-        barStyle="dark-content"
-        hidden={false}
-        backgroundColor="#EFF5F8"
-        translucent={true}
-      />
-
-      <View style={{ flex: 1 }}>
-        <Text style={styles.profileTitle}>Profile</Text>
-      </View>
-      <View style={styles.topContainer}>
-        <View style={{ flexDirection: "row", padding: 10, marginLeft: 5 }}>
-          <TouchableOpacity onPress={pickImage}>
-            <Avatar.Image
-              source={{
-                uri: uriFB,
-              }}
-              size={70}
-            />
-          </TouchableOpacity>
-          <Text style={styles.userName}>{user.displayName}</Text>
+    <View style={[styles.container, {
+        // Try setting `flexDirection` to `"row"`.
+        flexDirection: "column"
+      }]}>
+        <View style={{ flex: 1}} >
+          <Text style={styles.profileTitle}>Profile & Settings</Text>
         </View>
         <View
           style={{
@@ -151,14 +127,68 @@ const ProfileScreen = ({ navigation }) => {
                 placeholder="Date of Birth: MM/DD/YYYY"
                 keyboardType="numeric"
                 caretHidden={true}
-                style={{
-                  color: "#4D4D4D",
-                  fontSize: 18,
-                  fontFamily: "Avenir Next",
-                }}
-              />
-            </View>
-          </View>
+                style = {{color: "#4D4D4D",fontSize: 18,fontFamily: "Avenir Next"}}
+            /></View>
+        </View>
+        {/* </View> */}
+       
+        {/* </View> */}
+        <View style = {{flex: 0.4}}></View>
+        <View style={styles.settingContainer}>
+          <View style = {{paddingTop: height * 0.05,}}>
+        <View style = {{flexDirection:'row',justifyContent: 'center'}}>
+                <View style ={{flex:1}}>
+                  <Text style = {styles.settingHeaderText}>Emails & Promotions</Text>
+                  <Text style = {styles.settingSmallerText}>Don't Worry We Don't Spam :)</Text>
+                </View>
+                <Switch
+                  trackColor={{ false: "#676767", true: "#64B938"}}
+                  thumbColor={isEnabled ? "#FFFFFF" : "#FFFFFF"}
+                  ios_backgroundColor="#676767"
+                  onValueChange={toggleSwitch}
+                  value={isEnabled}
+                  style={{ transform: Platform.OS == 'ios' ? [{ scaleX: .7 }, { scaleY: .7 }]: [{ scaleX: .9 }, { scaleY: .9 }]}}
+                />
+        </View>
+        <View style = {{flexDirection:'row',justifyContent: 'center'}}>
+                <View style ={{flex:1}}>
+                  <Text style = {styles.settingHeaderText}>Analytics</Text>
+                  <Text style = {styles.settingSmallerText}>Help Immigrate.ai grow with your chat data!</Text>
+                </View>
+                <Switch
+                  trackColor={{ false: "#676767", true: "#64B938"}}
+                  thumbColor={isEnabled1 ? "#FFFFFF" : "#FFFFFF"}
+                  ios_backgroundColor="#676767"
+                  onValueChange={toggleSwitch1}
+                  value={isEnabled1}
+                  style={{ transform: Platform.OS == 'ios' ? [{ scaleX: .7 }, { scaleY: .7 }]: [{ scaleX: .9 }, { scaleY: .9 }]}}
+                />
+        </View>
+        <View style = {{flexDirection:'row',justifyContent: 'center'}}>
+                <View style ={{flex:1}}>
+                  <Text style = {styles.settingHeaderText}>Notifications</Text>
+                  <Text style = {styles.settingSmallerText}>See When new Facts & FAQ Release!</Text>
+                </View>
+                <Switch
+                  trackColor={{ false: "#676767", true: "#64B938"}}
+                  thumbColor={isEnabled2 ? "#FFFFFF" : "#FFFFFF"}
+                  ios_backgroundColor="#676767"
+                  onValueChange={toggleSwitch2}
+                  value={isEnabled2}
+                  style={{ transform: Platform.OS == 'ios' ? [{ scaleX: .7 }, { scaleY: .7 }]: [{ scaleX: .9 }, { scaleY: .9 }]}}
+                />
+        </View>
+        <View style={styles.row2}>
+        <Text style={styles.label}>Please make sure you have read our </Text>
+        <TouchableOpacity onPress={() => Linking.openURL("https://pages.flycricket.io/immigrate-ai/privacy.html")}>
+          <Text style={styles.link}>Privacy Policy</Text>
+        </TouchableOpacity>
+      </View>
+        </View>
+            <Button  onPress={handleSignOut}>
+                            Logout?
+            </Button>
+
         </View>
       </View>
       <View style={{ flex: 0.2 }}></View>
@@ -175,30 +205,30 @@ export default ProfileScreen;
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "#EFF5F8",
     flex: 1,
     padding: 15,
   },
   profileTitle: {
-    fontSize: height * 0.035,
+    marginLeft: '1%',
+    fontSize: height * 0.03,
     color: "#493d8a",
     fontWeight: "bold",
-    textAlign: "center",
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: height * 0.06,
+    marginTop: height * 0.07,
   },
   topContainer: {
     flex: 3,
     backgroundColor: "#BFD3DA",
     borderRadius: 23,
     paddingBottom: height * 0.04,
+    marginTop: '5%'
   },
   settingContainer: {
     flex: 2.4,
-    borderRadius: 23,
-    paddingBottom: height * 0.12,
-    alignContent: "center",
-    marginLeft: "12%",
+    paddingBottom: height * 0.10,
+    alignContent: 'center',
+    justifyContent: 'center',
+    marginLeft: '1%'
   },
   userName: {
     justifyContent: "center",
@@ -240,9 +270,29 @@ const styles = StyleSheet.create({
     marginTop: "14%",
   },
   logoutButton: {
-    marginTop: height * 0.0,
-    height: height * 0.085,
-    width: width * 0.5,
-    marginLeft: "17%",
+    color: "#493d8a"
   },
+  settingHeaderText: {
+    fontWeight: '700',
+    fontSize: 15,
+  },
+  settingSmallerText:{
+    fontSize: 13,
+    paddingBottom: '5%',
+
+  },
+  row2: {
+    flexDirection: "row",
+    paddingBottom: 10,
+  },
+  label: {
+    color: theme.colors.secondary,
+    fontFamily: "Avenir Next",
+  },
+  link: {
+    fontWeight: "700",
+    fontFamily: "Avenir Next",
+    color: "#493d8a",
+  },
+
 });

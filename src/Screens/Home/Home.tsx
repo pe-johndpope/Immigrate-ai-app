@@ -171,30 +171,17 @@ const Home = () => {
   );
 
   return (
-    <View
-      style={[
-        styles.containerMain,
-        {
-          // Try setting `flexDirection` to `"row"`.
-          flexDirection: "column",
-        },
-      ]}
-    >
-      <StatusBar
-        barStyle="dark-content"
-        hidden={false}
-        backgroundColor="#EFF5F8"
-        translucent={true}
-      />
-      <View style={{ flex: 1, flexDirection: "row" }}>
-        <Text style={styles.nameText}>
-          {"Hey,\n"}
-          {"Kendall"}
-        </Text>
-        <Image
-          style={styles.logoHeader}
-          source={require("../../Images/LogoTrans.png")}
-        ></Image>
+    <View style={[styles.containerMain, {
+      // Try setting `flexDirection` to `"row"`.
+      flexDirection: "column"
+    }]}>
+      <StatusBar barStyle = "dark-content" hidden = {false} backgroundColor = "#EFF5F8" translucent = {true} />
+      <View style={{ flex: 1, flexDirection: 'row'}}>
+          <Text style={styles.nameText}>
+            {"Hey,\n"}
+            {auth?.currentUser?.displayName}
+          </Text>
+          <Image  style = {styles.logoHeader}source={require("../../Images/LogoTrans.png")}></Image>
       </View>
       <View
         style={{
