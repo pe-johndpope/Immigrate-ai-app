@@ -1,11 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { SafeAreaView, StatusBar, Text, View } from "react-native";
 import Video from "react-native-video";
 import RasaChat, {
@@ -17,20 +10,23 @@ import RasaChat, {
 } from "./RNRasa";
 import styles from "./styles";
 
-// your host http://localhost:5005. Apps work better on https so you can use ngrok if development
+// const HOST = "http://localhost:5005"; // DEV
 const HOST = "https://chat.immigrate.ai";
 
 // Avatar images
-const botAvatar =
-  "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80";
-const userAvatar =
-  "https://images.unsplash.com/photo-1483884105135-c06ea81a7a80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80";
+const botAvatar = "https://media.istockphoto.com/vectors/chat-bot-ai-and-customer-service-support-concept-vector-flat-person-vector-id1221348467?k=20&m=1221348467&s=612x612&w=0&h=hp8h8MuGL7Ay-mxkmIKUsk3RY4O69MuiWjznS_7cCBw=";
+const userAvatar = "https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?k=20&m=1300845620&s=612x612&w=0&h=f4XTZDAv7NPuZbG0habSpU0sNgECM0X7nbKzTUta3n8=";
 
 //TODO: reset bot on destroy
 //TODO: handle when bot response error
 
 function Chat({ navigation }) {
   const rasaChatRef = useRef<IRasaChatHandles>(null);
+
+  useEffect(() => {
+    // Reset the chat on load 
+    resetBot();
+  }, [])
 
   const resetMessages = () => {
     rasaChatRef?.current?.resetMessages();
@@ -48,6 +44,7 @@ function Chat({ navigation }) {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.container}>
+      <View><Text style = {{fontFamily: "Avenir Next", textAlign: "center", fontSize: 23, fontWeight: '700', color: "#493d8a"}}>Chat</Text></View>
         <RasaChat
           ref={rasaChatRef}
           host={HOST}
@@ -69,7 +66,11 @@ function Chat({ navigation }) {
               options={{
                 "Start New Conversation": sendStartConversation,
                 "Clear messages": resetMessages,
-                "Reset Bot": resetBot,
+                //  Resets bot and clears messages
+                "Reset Bot": () => {
+                  resetBot();
+                  resetMessages();
+                },
                 Cancel: () => {},
               }}
             />

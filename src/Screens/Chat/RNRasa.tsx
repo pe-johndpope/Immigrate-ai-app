@@ -3,6 +3,7 @@ import React, {
   useCallback,
   useMemo,
   useImperativeHandle,
+  useEffect
 } from "react";
 import {
   GiftedChat,
@@ -25,9 +26,11 @@ import {
   utils,
   Reply,
   IMessage,
-  User,
-} from "react-native-gifted-chat";
-import { IRasaMessage, IRasaResponse } from "./types";
+  User
+} from 'react-native-gifted-chat';
+import { auth } from '../../Firebase';
+import { IRasaMessage, IRasaResponse } from './types';
+import uuid from 'react-native-uuid';
 
 import {
   createNewBotMessage,
@@ -65,11 +68,11 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
     onSendMessFailed,
     onEmptyResponse,
     emptyResponseMessage,
-    userId = "UserId1",
-    userName = "",
-    userAvatar = "",
-    botName = "RasaChat",
-    botAvatar = "",
+    userId = auth.currentUser.uid, 
+    userName = '',
+    userAvatar = '',
+    botName = 'RasaChat',
+    botAvatar = '',
     ...giftedChatProp
   } = props;
   const [messages, setMessages] = useState<IMessage[]>([]);
@@ -85,6 +88,12 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
     name: botName,
     avatar: botAvatar,
   };
+
+  useEffect(() => {
+    if (messages.length === 0) {
+      sendMessage("I need help")
+    }
+  }, [])
 
   // Inner function that cleans bot messages from a parent component
   useImperativeHandle(ref, () => ({
