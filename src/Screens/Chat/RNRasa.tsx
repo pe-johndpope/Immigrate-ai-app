@@ -30,6 +30,7 @@ import {
 } from 'react-native-gifted-chat';
 import { auth } from '../../Firebase';
 import { IRasaMessage, IRasaResponse } from './types';
+import uuid from 'react-native-uuid';
 
 import {
   createNewBotMessage,

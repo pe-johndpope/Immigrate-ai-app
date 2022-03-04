@@ -8,7 +8,7 @@ import Header from "../components/Header";
 import TextInput from "../components/TextInput";
 import { theme } from "../components/theme";
 import Button from "../components/Button";
-import { auth, db } from '../Firebase/config'
+import { auth, db } from "../Firebase/config";
 
 const ForgotPassword = ({ navigation }) => {
   const [email, setEmail] = useState({ value: "", error: "" });
@@ -20,21 +20,35 @@ const ForgotPassword = ({ navigation }) => {
       setEmail({ ...email, error: emailError });
       return;
     }
-    auth.sendPasswordResetEmail(email.value)
-    .then(() => {
-      alert("Password reset email sent. Check your inbox.")
-      navigation.navigate("Login");
-    })
-    .catch((error) => {
-      alert("Password Reset Failed, please make sure the email is correct.")
-      // ..
-    });
+    auth
+      .sendPasswordResetEmail(email.value)
+      .then(() => {
+        alert("Password reset email sent. Check your inbox.");
+        navigation.navigate("Login");
+      })
+      .catch((error) => {
+        alert("Password Reset Failed, please make sure the email is correct.");
+        // ..
+      });
   };
 
-return (
+  return (
     <Background>
       <BackButton goBack={() => navigation.navigate("Login")} />
-      <Text style = {{ fontSize: 32, fontFamily: 'Avenir Next', fontWeight: '700', color: "#493d8a", marginLeft: -4, marginTop: -60, paddingBottom: 20,}}> Forgot Password?</Text>
+      <Text
+        style={{
+          fontSize: 32,
+          fontFamily: "Avenir Next",
+          fontWeight: "700",
+          color: "#493d8a",
+          marginLeft: -4,
+          marginTop: -60,
+          paddingBottom: 20,
+        }}
+      >
+        {" "}
+        Forgot Password?
+      </Text>
 
       <LogoForgotPassword />
 

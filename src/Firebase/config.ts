@@ -1,5 +1,5 @@
-import firebase from 'firebase/app';
-import 'firebase/auth';
+import firebase from "firebase/app";
+import "firebase/auth";
 require("firebase/firestore");
 
 const firebaseConfig = {
@@ -9,20 +9,17 @@ const firebaseConfig = {
   storageBucket: "immigrate-540ad.appspot.com",
   messagingSenderId: "515786859241",
   appId: "1:515786859241:web:ed6014d02c73fd324b4678",
-  measurementId: "G-G2DY55WJNR"
-}; 
-
-
+  measurementId: "G-G2DY55WJNR",
+};
 
 let app;
-if (firebase.apps.length == 0){
-  app = firebase.initializeApp(firebaseConfig)
+if (firebase.apps.length == 0) {
+  app = firebase.initializeApp(firebaseConfig);
 } else {
-  app = firebase.app()
+  app = firebase.app();
 }
 
 const db = firebase.firestore();
 const auth = firebase.auth();
 
-
-export { auth, db, firebase }
+export { auth, db, firebase };
