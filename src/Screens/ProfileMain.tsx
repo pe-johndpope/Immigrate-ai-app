@@ -129,10 +129,10 @@ const ProfileScreen = ({navigation}) => {
                 </View>
                 <Switch
                   trackColor={{ false: "#676767", true: "#64B938"}}
-                  thumbColor={isEnabled2 ? "#FFFFFF" : "#FFFFFF"}
+                  thumbColor={isEnabled ? "#FFFFFF" : "#FFFFFF"}
                   ios_backgroundColor="#676767"
-                  onValueChange={toggleSwitch2}
-                  value={isEnabled2}
+                  onValueChange={toggleSwitch}
+                  value={isEnabled}
                   style={{ transform: Platform.OS == 'ios' ? [{ scaleX: .7 }, { scaleY: .7 }]: [{ scaleX: .9 }, { scaleY: .9 }]}}
                 />
         </View>
@@ -143,10 +143,10 @@ const ProfileScreen = ({navigation}) => {
                 </View>
                 <Switch
                   trackColor={{ false: "#676767", true: "#64B938"}}
-                  thumbColor={isEnabled2 ? "#FFFFFF" : "#FFFFFF"}
+                  thumbColor={isEnabled1 ? "#FFFFFF" : "#FFFFFF"}
                   ios_backgroundColor="#676767"
-                  onValueChange={toggleSwitch2}
-                  value={isEnabled2}
+                  onValueChange={toggleSwitch1}
+                  value={isEnabled1}
                   style={{ transform: Platform.OS == 'ios' ? [{ scaleX: .7 }, { scaleY: .7 }]: [{ scaleX: .9 }, { scaleY: .9 }]}}
                 />
         </View>
