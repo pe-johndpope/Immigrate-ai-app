@@ -24,11 +24,8 @@ import Fed from "./Definitions/Fed";
 import Ielts from "./Definitions/Ielts";
 import Refuge from "./Definitions/Refuge";
 import CSC from "./Definitions/CSC";
-import Faq1 from "./Faq/Faq1";
-import Faq2 from "./Faq/Faq2";
-import Faq3 from "./Faq/Faq3";
-import Faq4 from "./Faq/Faq4";
-import Faq5 from "./Faq/Faq5";
+import Faq from "./Faq/Faq";
+import FaqContent from "./Faq/FaqContent";
 import { auth, db } from "../../Firebase/config";
 import { platform } from "os";
 const { width, height } = Dimensions.get("window");
@@ -141,21 +138,9 @@ const Home = () => {
         style={styles.faqScrollView}
         showsHorizontalScrollIndicator={false}
       >
-        <View style={{ padding: 10 }}>
-          <Faq1 />
-        </View>
-        <View style={{ padding: 10 }}>
-          <Faq2 />
-        </View>
-        <View style={{ padding: 10 }}>
-          <Faq3 />
-        </View>
-        <View style={{ padding: 10 }}>
-          <Faq4 />
-        </View>
-        <View style={{ padding: 10 }}>
-          <Faq5 />
-        </View>
+        {FaqContent.map((f) => (
+          <Faq question={f.question} answer={f.answer} />
+        ))}
       </ScrollView>
     </View>
   );
@@ -171,17 +156,30 @@ const Home = () => {
   );
 
   return (
-    <View style={[styles.containerMain, {
-      // Try setting `flexDirection` to `"row"`.
-      flexDirection: "column"
-    }]}>
-      <StatusBar barStyle = "dark-content" hidden = {false} backgroundColor = "#EFF5F8" translucent = {true} />
-      <View style={{ flex: 1, flexDirection: 'row'}}>
-          <Text style={styles.nameText}>
-            {"Hey,\n"}
-            {auth?.currentUser?.displayName}
-          </Text>
-          <Image  style = {styles.logoHeader}source={require("../../Images/LogoTrans.png")}></Image>
+    <View
+      style={[
+        styles.containerMain,
+        {
+          // Try setting `flexDirection` to `"row"`.
+          flexDirection: "column",
+        },
+      ]}
+    >
+      <StatusBar
+        barStyle="dark-content"
+        hidden={false}
+        backgroundColor="#EFF5F8"
+        translucent={true}
+      />
+      <View style={{ flex: 1, flexDirection: "row" }}>
+        <Text style={styles.nameText}>
+          {"Hey,\n"}
+          {auth?.currentUser?.displayName}
+        </Text>
+        <Image
+          style={styles.logoHeader}
+          source={require("../../Images/LogoTrans.png")}
+        ></Image>
       </View>
       <View
         style={{

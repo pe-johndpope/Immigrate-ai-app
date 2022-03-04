@@ -28,16 +28,19 @@ const colors = {
   orange: "#FCA493",
   lightPurp: "#CCC6EC",
 };
+interface FaqProps {
+  answer: string;
+  question: string;
+}
 
-export default function Faq5() {
-  const answer =
-    "First, you must pitch your business idea to a designated organization and convince it to support your start-up company. Once a designated organization decides to support your business, it will send us a commitment certificate and give you a letter of support.The process to pitch your idea varies for each designated organization. You must contact the designated organization to find out what you must do to seek its support. If you meet all eligibility criteria, you can submit a completed application, which must include your letter of support. ";
+export default function Faq({ answer, question }: FaqProps) {
   const [flip, setFlip] = useState(false);
+
   const card = (
     <View
       style={{
         backgroundColor: "#EFF5F8",
-        height: 120,
+        height: 125,
         width: 300,
         flex: 1,
         justifyContent: "center",
@@ -49,11 +52,7 @@ export default function Faq5() {
         shadowRadius: 4,
       }}
     >
-      <Text style={styles.text2}>
-        {
-          "Question 5: What is the application process for the Start-up Visa Program?"
-        }
-      </Text>
+      <Text style={styles.text2}>{question}</Text>
     </View>
   );
 
@@ -64,7 +63,7 @@ export default function Faq5() {
         height: 200,
         width: 300,
         borderRadius: 23,
-        shadowColor: "#000000",
+        shadowColor: "#00000",
         shadowOffset: { width: 2, height: 2 },
         shadowOpacity: 0.35,
         shadowRadius: 4,
@@ -80,9 +79,11 @@ export default function Faq5() {
   );
 
   return (
-    <TouchableWithoutFeedback onPress={() => setFlip(!flip)}>
-      {flip ? definition : card}
-    </TouchableWithoutFeedback>
+    <View style={{ padding: 10 }}>
+      <TouchableWithoutFeedback onPress={() => setFlip(!flip)}>
+        {flip ? definition : card}
+      </TouchableWithoutFeedback>
+    </View>
   );
 }
 
@@ -113,7 +114,7 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     justifyContent: "center",
     alignItems: "center",
-    fontSize: 15,
+    fontSize: 16,
     fontFamily: "Avenir Next",
     color: "#000000",
     marginVertical: 12,
@@ -121,6 +122,6 @@ const styles = StyleSheet.create({
   flipButton: {
     textAlign: "center",
     color: "#0091FF",
-    paddingBottom: 10,
+    marginBottom: 4,
   },
 });
