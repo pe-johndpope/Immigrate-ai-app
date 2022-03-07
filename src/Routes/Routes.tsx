@@ -10,6 +10,7 @@ import LandingPage from "../Screens/LandingPage";
 import ProfileScreen from "../Screens/ProfileMain";
 import Dashboard from "../Screens/Home/Dashboard";
 import Home from "../Screens/Home/Home";
+import Onboarding from "../Screens/Onboarding/Onboarding";
 
 interface RoutesProps {}
 
@@ -60,6 +61,11 @@ export const Routes: React.FC<RoutesProps> = ({}) => {
           <Stack.Screen
             name="Home"
             component={Home}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Onboarding"
+            component={Onboarding}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>

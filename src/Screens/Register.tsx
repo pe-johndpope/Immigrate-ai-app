@@ -40,7 +40,7 @@ const RegisterScreen = ({ navigation }) => {
           displayName: name.value,
         })
         .then(() => {
-          navigation.navigate("Dashboard");
+          navigation.navigate("Onboarding");
         });
     });
   };
@@ -70,7 +70,7 @@ const RegisterScreen = ({ navigation }) => {
       <LogoRegister />
 
       <TextInput
-        label="Name"
+        label="User Name"
         returnKeyType="next"
         value={name.value}
         onChangeText={(text) => setName({ value: text, error: "" })}
