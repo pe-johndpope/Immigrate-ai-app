@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Icon from "react-native-vector-icons/Ionicons";
+import React, { useState, useContext } from "react";
 import { ScrollView } from "react-native-gesture-handler";
 import {
   View,
@@ -26,8 +25,7 @@ import Refuge from "./Definitions/Refuge";
 import CSC from "./Definitions/CSC";
 import Faq from "./Faq/Faq";
 import FaqContent from "./Faq/FaqContent";
-import { auth, db } from "../../Firebase/config";
-import { platform } from "os";
+import { FiygeAuthContext } from "../../Contexts";
 const { width, height } = Dimensions.get("window");
 
 const colors = {
@@ -41,11 +39,17 @@ const colors = {
 };
 
 const Home = () => {
+  const { user } = useContext(FiygeAuthContext)
+  
   const [isEnabled, setIsEnabled] = useState(false);
   const [faq, setFAQ] = useState(false);
 
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
   const toggleFAQ = () => setFAQ((previousState) => !previousState);
+
+  if (user === undefined) {
+    return null
+  }
 
   const move = (
     <Text
@@ -174,7 +178,7 @@ const Home = () => {
       <View style={{ flex: 1, flexDirection: "row" }}>
         <Text style={styles.nameText}>
           {"Hey,\n"}
-          {auth?.currentUser?.displayName}
+          {user.name}
         </Text>
         <Image
           style={styles.logoHeader}

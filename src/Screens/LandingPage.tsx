@@ -4,10 +4,10 @@ import { StyleSheet, View } from "react-native";
 import Onboarding from "../components/Onboarding";
 import Button from "../components/Button";
 import ButtonSignup from "../components/ButtonSignup";
-import { AuthContext } from "../Contexts";
+import { FiygeAuthContext } from "../Contexts";
 
 export default function LandingPage({ navigation }) {
-  const { authenticated } = useContext(AuthContext);
+  const { authenticated } = useContext(FiygeAuthContext);
 
   if (authenticated) {
     navigation.navigate("Dashboard");
