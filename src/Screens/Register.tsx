@@ -21,7 +21,7 @@ const RegisterScreen = ({ navigation }) => {
   const [name, setName] = useState({ value: "", error: "" });
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
-
+  
   const onSignUpPressed = () => {
     const nameError = nameValidator(name.value);
     const emailError = emailValidator(email.value);

@@ -1,152 +1,294 @@
 import React, { useState, useContext } from "react";
-import Icon from "react-native-vector-icons/Ionicons";
-import { View, Text, StyleSheet, TouchableOpacity, Dimensions} from "react-native";
-import { auth } from "../../Firebase/config";
-import Background from "../../components/Background";
-import LogoRegister from "../../components/LogoRegister";
-import Button from "../../components/Button";
-import TextInput from "../../components/TextInput";
-import { theme } from "../../components/theme";
 import {
-  emailValidator,
-  passwordValidator,
-  nameValidator,
-} from "../../components/utils";
-import { AuthContext } from "../../Contexts";
-import CountryPicker from 'react-native-country-picker-modal'
-import { CountryCode, Country } from './types'
-import DatePicker from 'react-native-datepicker';
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  Dimensions,
+  TextInput,
+} from "react-native";
+import Background from "../../components/Background";
+import TextInputOnboard from "../../components/TextInputOnboard";
+import Button from "../../components/Button";
+import { theme } from "../../components/theme";
+import { nameValidator } from "../../components/utils";
+import CountryPicker from "react-native-country-picker-modal";
+import { CountryCode, Country } from "./types";
+import DatePicker from "react-native-datepicker";
+import { ComingSoon_400Regular } from "@expo-google-fonts/dev";
 const { width, height } = Dimensions.get("window");
 
 const Onboarding = ({ navigation }) => {
-  const { onSignUpWithEmailAndPassword } = useContext(AuthContext);
-  const [selected, setSelected] = useState('');
+  const [first, setFirst] = useState("");
+  const [last, setLast] = useState("");
+  const [job, setJob] = useState("");
+  const [countryName, setCountryName] = useState("");
+  const [date, setDate] = useState("09-10-2021");
 
-  const [name, setName] = useState({ value: "", error: "" });
-  const [email, setEmail] = useState({ value: "", error: "" });
-  const [password, setPassword] = useState({ value: "", error: "" });
-  const [countryCode, setCountryCode] = useState<CountryCode>('FR')
-  const [country, setCountry] = useState<Country>(null)
-  const [withCountryNameButton, setWithCountryNameButton] = useState<boolean>(
-    false,
-  )
-  const [withFlag, setWithFlag] = useState<boolean>(true)
-  const [withEmoji, setWithEmoji] = useState<boolean>(true)
-  const [withFilter, setWithFilter] = useState<boolean>(true)
-  const [withAlphaFilter, setWithAlphaFilter] = useState<boolean>(false)
-  const [withCallingCode, setWithCallingCode] = useState<boolean>(false)
-  const [date, setDate] = useState('09-10-2021');
+  const [firstError, setFirstError] = useState(false);
+  const [lastError, setLastError] = useState(false);
+  const [jobError, setJobError] = useState(false);
+  const [countryNameError, setCountryNameError] = useState(false);
+  const [dateError, setDateError] = useState(false);
 
+  const [countryCode, setCountryCode] = useState<CountryCode>("FR");
+  const [country, setCountry] = useState<Country>(null);
+  const [withFlag, setWithFlag] = useState<boolean>(true);
+  const [withEmoji, setWithEmoji] = useState<boolean>(true);
+  const [withFilter, setWithFilter] = useState<boolean>(true);
+
+  const [error, setError] = useState("Please complete the follow fields");
   const onSelect = (country: Country) => {
-    setCountryCode(country.cca2)
-    setCountry(country)
-  }
-  const onSignUpPressed = () => {
-    const nameError = nameValidator(name.value);
-    const emailError = emailValidator(email.value);
-    const passwordError = passwordValidator(password.value);
-
-    if (emailError || passwordError || nameError) {
-      setName({ ...name, error: nameError });
-      setEmail({ ...email, error: emailError });
-      setPassword({ ...password, error: passwordError });
-      return;
-    }
-
-    onSignUpWithEmailAndPassword(email.value, password.value).then(async () => {
-      auth.currentUser
-        .updateProfile({
-          displayName: name.value,
-        })
-        .then(() => {
-          navigation.navigate("Dashboard");
-        });
-    });
+    setCountryCode(country.cca2);
+    setCountry(country);
+    setCountryName(country.flag);
   };
+
+  const onButtonPressed = () => {
+    if (countryName == "") {
+      setCountryNameError(true);
+    } else {
+      setCountryNameError(false);
+    }
+    if (first == "") {
+      setFirstError(true);
+    } else {
+      setFirstError(false);
+    }
+    if (last == "") {
+      setLastError(true);
+    } else {
+      setLastError(false);
+    }
+    if (job == "") {
+      setJobError(true);
+    } else {
+      setJobError(false);
+    }
+    if (date == "09-10-2021") {
+      setDateError(true);
+    } else {
+      setDateError(false);
+    }
+    navigation.navigate("Dashboard");
+  };
+
+
+
 
   return (
     <Background>
-         
-      <View style = {{flex:1.4, paddingTop: height * 0.025,flexDirection: 'column',width: width * 0.7,}}>
-      <Text style = {styles.textHeader}>Lets get to know you a little bit better!👋</Text>
-      </View>
-      <View style = {{flex:10, flexDirection: 'column'}}>
-      <Text style = {styles.optionHeader}>1.  Where do you live?</Text>
-      <View style = {styles.countryContainer}>
-    {country == null ? <Text style = {styles.countryPlaceholder}> Select Your Country... </Text> : 
-                    <Text style = {{
-                      fontSize: 15,
-                      fontFamily: "Avenir Next",
-                      fontWeight: "600",
-                      marginLeft: 10,
-                      textAlign: 'center',
-                    }}>
-                      <Text style = {{fontWeight: '400'}}>Selected Country: </Text>{country.name} </Text>}
-      <CountryPicker
-          {...{
-            countryCode,
-            withFilter,
-            withAlphaFilter,
-            withCallingCode,
-            onSelect,
-            preferredCountries: ['IN', 'CN'],
-        }}
-      />
-      
-      </View>
-        <View style ={{paddingTop: height * 0.025,flexDirection: 'row',}}>
-        <Text style = {styles.optionHeader}>1.  What is your Birth Date?</Text>
-        </View>
-        <View style = {{
-          alignItems: 'center',
-          flexDirection: 'row',
-          marginTop: 10,
+      <View
+        style={{
+          flex: 1.4,
+          paddingTop: height * 0.025,
+          flexDirection: "column",
           width: width * 0.7,
-          height: height * 0.05,
-          backgroundColor: '#E2E2E2',
-          borderRadius: 10,
-      
-        }}>
-        <DatePicker
-          style={styles.datePickerStyle}
-          date={date}
-          mode="date"
-          placeholder="Select Birthday..."
-          format="DD/MM/YYYY"
-          minDate="01-01-1900"
-          maxDate="01-01-2000"
-          confirmBtnText="Confirm"
-          cancelBtnText="Cancel"
-          customStyles={{
-            dateIcon: {
-              position: 'absolute',
-              right: 13,
-              top: 4,
-              marginLeft: 0,
-            },
-            dateInput: {
-              borderColor : "gray",
-              alignItems: "flex-start",
-              borderWidth: 0,
-              borderBottomWidth: 1,
-              marginLeft: 0,
-            },
-            placeholderText: {
-              fontSize: 15,
-              fontFamily: "Avenir Next",
-              color: "#5E5E5E",
-            },
-            dateText: {
-              fontSize: 15,
-              fontFamily: "Avenir Next",
-              marginLeft: 20,
-            }
-          }}
-          onDateChange={(date) => {
-            setDate(date);
-          }}
-        />
+        }}
+      >
+        <Text style={styles.textHeader}>
+          Lets get to know you a little bit better!👋
+        </Text>
       </View>
+      <View style={{ flex: 10, flexDirection: "column" }}>
+        <Text style={styles.optionHeader}>1. Where do you live?</Text>
+        <View style={styles.countryContainer}>
+          <CountryPicker
+            {...{
+              countryCode,
+              withFlag,
+              withFilter,
+              onSelect,
+              preferredCountries: ["IN", "CN"],
+            }}
+          />
+          {country !== null ? (
+            <Text
+              style={{ position: "relative", flexGrow: 0.825, fontSize: 15 }}
+            >
+              {country.name}
+            </Text>
+          ) : (
+            <Text
+              style={{ position: "relative", flexGrow: 0.825, fontSize: 15 }}
+            >
+              {" "}
+              Select Country...
+            </Text>
+          )}
+        </View>
+        {countryNameError ? (
+          <Text style={styles.errorText}> Please select your country</Text>
+        ) : (
+          console.log("First pass")
+        )}
+        <View style={{ paddingTop: height * 0.025, flexDirection: "row" }}>
+          <Text style={styles.optionHeader}>2. What is your Birth Date?</Text>
+        </View>
+        <View
+          style={{
+            alignItems: "center",
+            flexDirection: "row",
+            marginTop: 10,
+            width: width * 0.7,
+            height: height * 0.05,
+            backgroundColor: "#E2E2E2",
+            borderRadius: 10,
+          }}
+        >
+          <DatePicker
+            style={styles.datePickerStyle}
+            date={date}
+            mode="date"
+            placeholder="Select Birthday..."
+            format="DD/MM/YYYY"
+            minDate="01-01-1900"
+            maxDate="01-01-2000"
+            confirmBtnText="Confirm"
+            cancelBtnText="Cancel"
+            customStyles={{
+              dateIcon: {
+                position: "absolute",
+                right: 2,
+                top: 4,
+              },
+              dateInput: {
+                borderColor: "gray",
+                alignItems: "flex-start",
+                borderWidth: 0,
+                borderBottomWidth: 0,
+                marginLeft: 0,
+              },
+              placeholderText: {
+                fontSize: 15,
+                fontFamily: "Avenir Next",
+                color: "#5E5E5E",
+              },
+              dateText: {
+                fontSize: 15,
+                fontWeight: "600",
+                fontFamily: "Avenir Next",
+                marginLeft: 20,
+              },
+            }}
+            onDateChange={(date) => {
+              setDate(date);
+            }}
+          />
+        </View>
+        {dateError ? (
+          <Text style={styles.errorText}> Please choose your birth date</Text>
+        ) : (
+          console.log("Date pass")
+        )}
+        <View style={{ paddingTop: height * 0.025, flexDirection: "column" }}>
+          <Text style={styles.optionHeader}>3. Current Job Occupation?</Text>
+          <View
+            style={{
+              alignItems: "center",
+              flexDirection: "row-reverse",
+              backgroundColor: "#E2E2E2",
+              marginTop: 10,
+              width: width * 0.7,
+              height: height * 0.05,
+              borderRadius: 10,
+            }}
+          >
+            <TextInput
+              placeholder="Job Title"
+              caretHidden={true}
+              returnKeyType="next"
+              onChangeText={(text) => setJob(text)}
+              style={{
+                fontSize: 15,
+                height: height * 0.05,
+                width: width * 0.65,
+                backgroundColor: "#E2E2E2",
+                borderRadius: 10,
+              }}
+            />
+          </View>
+        </View>
+        {jobError ? (
+          <Text style={styles.errorText}> Please enter a valid job title</Text>
+        ) : (
+          console.log("Job pass")
+        )}
+        <View style={{ paddingTop: height * 0.025, flexDirection: "column" }}>
+          <Text style={styles.optionHeader}>3. What is your first name?</Text>
+          <View
+            style={{
+              alignItems: "center",
+              flexDirection: "row-reverse",
+              backgroundColor: "#E2E2E2",
+              marginTop: 10,
+              width: width * 0.7,
+              height: height * 0.05,
+              borderRadius: 10,
+            }}
+          >
+            <TextInput
+              placeholder="Legal first name"
+              caretHidden={true}
+              returnKeyType="done"
+              onChangeText={(text) => setFirst(text)}
+              style={{
+                fontSize: 15,
+                height: height * 0.05,
+                width: width * 0.65,
+                backgroundColor: "#E2E2E2",
+                borderRadius: 10,
+              }}
+            />
+          </View>
+        </View>
+        {firstError ? (
+          <Text style={styles.errorText}> Please enter a valid first name</Text>
+        ) : (
+          console.log("First pass")
+        )}
+        <View style={{ paddingTop: height * 0.025, flexDirection: "column" }}>
+          <Text style={styles.optionHeader}>4. What is your last name?</Text>
+          <View
+            style={{
+              alignItems: "center",
+              flexDirection: "row-reverse",
+              backgroundColor: "#E2E2E2",
+              marginTop: 10,
+              width: width * 0.7,
+              height: height * 0.05,
+              borderRadius: 10,
+            }}
+          >
+            <TextInput
+              placeholder="Legal last name"
+              caretHidden={true}
+              returnKeyType="done"
+              onChangeText={(text) => setLast(text)}
+              style={{
+                fontSize: 15,
+                height: height * 0.05,
+                width: width * 0.65,
+                backgroundColor: "#E2E2E2",
+                borderRadius: 10,
+              }}
+            />
+          </View>
+        </View>
+        {lastError ? (
+          <Text style={styles.errorText}> Please enter a valid last name</Text>
+        ) : (
+          console.log("First pass")
+        )}
+        <View style={{ paddingTop: 10 }}>
+          <Button
+            mode="contained"
+            onPress={onButtonPressed}
+            style={styles.button}
+          >
+            Lets Begin!
+          </Button>
+        </View>
       </View>
     </Background>
   );
@@ -176,7 +318,7 @@ const styles = StyleSheet.create({
     fontFamily: "Avenir Next",
     color: "#493d8a",
     fontWeight: "700",
-    flexDirection: 'column'
+    flexDirection: "column",
   },
   countryPlaceholder: {
     fontSize: 15,
@@ -185,27 +327,28 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     flex: 1,
     marginLeft: 10,
-    
   },
   countryContainer: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
+    alignItems: "center",
+    flexDirection: "row-reverse",
     marginTop: 10,
     width: width * 0.7,
     height: height * 0.05,
-    backgroundColor: '#E2E2E2',
+    backgroundColor: "#E2E2E2",
     borderRadius: 10,
-
   },
-  optionHeader:{
-    fontFamily: 'Avenir Next',
+  optionHeader: {
+    fontFamily: "Avenir Next",
     fontSize: 18,
-    fontWeight: '500',
+    fontWeight: "500",
     color: "#000000",
   },
   datePickerStyle: {
     width: width * 0.7,
+  },
+  errorText: {
+    fontSize: 12,
+    color: "#FF0000",
   },
 });
 
