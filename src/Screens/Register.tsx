@@ -73,7 +73,7 @@ const RegisterScreen = ({ navigation }) => {
       <LogoRegister />
 
       <TextInput
-        label="Name"
+        label="User Name"
         returnKeyType="next"
         value={name.value}
         onChangeText={(text) => setName({ value: text, error: "" })}

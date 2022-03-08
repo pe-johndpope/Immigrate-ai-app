@@ -74,7 +74,6 @@ const Login = ({ navigation }) => {
         error={!!password.error}
         errorText={password.error}
         secureTextEntry
-        placeholderTextColor="green"
         style={styles.input}
       />
       <View style={styles.forgotPassword}>
