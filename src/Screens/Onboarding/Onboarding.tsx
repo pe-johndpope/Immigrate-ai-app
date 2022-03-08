@@ -1,21 +1,17 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
   StyleSheet,
-  TouchableOpacity,
   Dimensions,
   TextInput,
 } from "react-native";
 import Background from "../../components/Background";
-import TextInputOnboard from "../../components/TextInputOnboard";
 import Button from "../../components/Button";
 import { theme } from "../../components/theme";
-import { nameValidator } from "../../components/utils";
 import CountryPicker from "react-native-country-picker-modal";
 import { CountryCode, Country } from "./types";
 import DatePicker from "react-native-datepicker";
-import { ComingSoon_400Regular } from "@expo-google-fonts/dev";
 const { width, height } = Dimensions.get("window");
 
 const Onboarding = ({ navigation }) => {
@@ -33,11 +29,7 @@ const Onboarding = ({ navigation }) => {
 
   const [countryCode, setCountryCode] = useState<CountryCode>("FR");
   const [country, setCountry] = useState<Country>(null);
-  const [withFlag, setWithFlag] = useState<boolean>(true);
-  const [withEmoji, setWithEmoji] = useState<boolean>(true);
-  const [withFilter, setWithFilter] = useState<boolean>(true);
 
-  const [error, setError] = useState("Please complete the follow fields");
   const onSelect = (country: Country) => {
     setCountryCode(country.cca2);
     setCountry(country);
@@ -70,7 +62,10 @@ const Onboarding = ({ navigation }) => {
     } else {
       setDateError(false);
     }
-    navigation.navigate("Dashboard");
+
+    if (firstError || jobError || countryNameError || lastError || dateError) {
+      alert("Incorrect Fields.")
+    }
   };
 
 
@@ -96,8 +91,6 @@ const Onboarding = ({ navigation }) => {
           <CountryPicker
             {...{
               countryCode,
-              withFlag,
-              withFilter,
               onSelect,
               preferredCountries: ["IN", "CN"],
             }}

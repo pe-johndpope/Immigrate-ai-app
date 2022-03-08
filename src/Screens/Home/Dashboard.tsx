@@ -14,7 +14,7 @@ import {
 // Screensh
 import Chat from "../Chat/Chat";
 import Home from "./Home";
-import ProfileScreen from "../ProfileMain";
+import ProfileScreen from "../ProfileScreen";
 const { width, height } = Dimensions.get("window");
 
 var dashHeight;

@@ -2,7 +2,6 @@ import React, { useState, useContext } from "react";
 import Icon from "react-native-vector-icons/Ionicons";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-import { auth } from "../Firebase/config";
 import Background from "../components/Background";
 import LogoRegister from "../components/LogoRegister";
 import Button from "../components/Button";
@@ -13,16 +12,16 @@ import {
   passwordValidator,
   nameValidator,
 } from "../components/utils";
-import { AuthContext } from "../Contexts";
+import { FiygeAuthContext } from "../Contexts";
 
 const RegisterScreen = ({ navigation }) => {
-  const { onSignUpWithEmailAndPassword } = useContext(AuthContext);
+  const { onSignUpWithEmailAndPassword } = useContext(FiygeAuthContext)
 
   const [name, setName] = useState({ value: "", error: "" });
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
-  
-  const onSignUpPressed = () => {
+
+  const onSignUpPressed = async () => {
     const nameError = nameValidator(name.value);
     const emailError = emailValidator(email.value);
     const passwordError = passwordValidator(password.value);
@@ -34,15 +33,19 @@ const RegisterScreen = ({ navigation }) => {
       return;
     }
 
-    onSignUpWithEmailAndPassword(email.value, password.value).then(async () => {
-      auth.currentUser
-        .updateProfile({
-          displayName: name.value,
-        })
-        .then(() => {
-          navigation.navigate("Onboarding");
-        });
-    });
+    await onSignUpWithEmailAndPassword({
+      email: email.value,
+      password: password.value,
+      firstName: name.value, 
+      lastName: name.value,
+      phone: "+19998887777"
+    })
+    navigation.navigate("Login");
+
+    // reset fields
+    setName({value: "", error: ""})
+    setEmail({value: "", error: ""})
+    setPassword({value: "", error: ""})
   };
 
   return (

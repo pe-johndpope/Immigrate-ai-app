@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { SafeAreaView, StatusBar, Text, View } from "react-native";
 import Video from "react-native-video";
+import { FiygeAuthContext } from "../../Contexts";
 import RasaChat, {
   Send,
   InputToolbar,
@@ -21,12 +22,17 @@ const userAvatar = "https://media.istockphoto.com/vectors/user-icon-flat-isolate
 //TODO: handle when bot response error
 
 function Chat({ navigation }) {
+  const { authenticated } = useContext(FiygeAuthContext)
   const rasaChatRef = useRef<IRasaChatHandles>(null);
 
   useEffect(() => {
     // Reset the chat on load 
     resetBot();
   }, [])
+
+  if (!authenticated) {
+    return null
+  }
 
   const resetMessages = () => {
     rasaChatRef?.current?.resetMessages();

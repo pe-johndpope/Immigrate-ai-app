@@ -2,18 +2,16 @@ import React, { memo, useState, useEffect, useContext } from "react";
 import { TouchableOpacity, StyleSheet, Text, View } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 
-import { auth } from "../Firebase/config";
 import Background from "../components/Background";
 import Logo from "../components/Logo";
 import Button from "../components/Button";
 import TextInput from "../components/TextInput";
 import BackButton from "../components/BackButton";
 import { theme } from "../components/theme";
-import { AuthContext } from "../Contexts";
+import { FiygeAuthContext } from "../Contexts";
 
 const Login = ({ navigation }) => {
-  const { authenticated, onSignInWithEmailAndPassword } =
-    useContext(AuthContext);
+  const { authenticated, onSignInWithEmailAndPassword } = useContext(FiygeAuthContext)
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
 
@@ -24,6 +22,10 @@ const Login = ({ navigation }) => {
 
   const handleLogin = async () => {
     await onSignInWithEmailAndPassword(email.value, password.value);
+
+    // reset fields
+    setEmail({value: "", error: ""})
+    setPassword({value: "", error: ""})
   };
 
   return (
