@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import { FiygeAuthContextProvider } from "../Contexts";
+import { FiygeAuthContext, FiygeAuthContextProvider } from "../Contexts";
 import Chat from "../Screens/Chat/Chat";
 import Login from "../Screens/Login";
 import Register from "../Screens/Register";
@@ -24,60 +24,68 @@ export const Routes: React.FC<RoutesProps> = ({}) => {
   );
 };
 
-const ScreenNavigator: React.FC<RoutesProps> = ({}) => (
-  <NavigationContainer>
-    <Stack.Navigator
-      screenOptions={{
-        headerStyle: { elevation: 0 },
-        cardStyle: { backgroundColor: "#EFF5F8" },
-      }}
-    >
-      <>
-        <Stack.Screen
-          name="LandingPage"
-          component={LandingPage}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Chat"
-          component={Chat}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Dashboard"
-          component={Dashboard}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Home"
-          component={Home}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
-      </>
-      <>
-        <Stack.Screen
-          name="Login"
-          component={Login}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Register"
-          component={Register}
-          options={{ headerShown: false }}
-        />
+const ScreenNavigator: React.FC<RoutesProps> = ({}) => {
+  const { authenticated, onboarded } = useContext(FiygeAuthContext);
 
-        <Stack.Screen
-          name="ForgotPassword"
-          component={ForgotPassword}
-          options={{ headerShown: false }}
-        />
-         <Stack.Screen
-          name="Onboarding"
-          component={Onboarding}
-          options={{ headerShown: false }}
-        />
-      </>
-    </Stack.Navigator>
-  </NavigationContainer>
-);
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerStyle: { elevation: 0 },
+          cardStyle: { backgroundColor: "#EFF5F8" },
+        }}
+      >
+        {authenticated && onboarded && <>
+            <Stack.Screen
+              name="LandingPage"
+              component={LandingPage}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Chat"
+              component={Chat}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Dashboard"
+              component={Dashboard}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Home"
+              component={Home}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+        </>}
+        {authenticated && !onboarded && <>
+            <Stack.Screen
+              name="Onboarding"
+              component={Onboarding}
+              options={{ headerShown: false }}
+            />
+          </>
+        }
+        {!authenticated && <>
+            <Stack.Screen
+              name="Login"
+              component={Login}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Register"
+              component={Register}
+              options={{ headerShown: false }}
+            />
+
+            <Stack.Screen
+              name="ForgotPassword"
+              component={ForgotPassword}
+              options={{ headerShown: false }}
+            />
+          </>
+        }
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};

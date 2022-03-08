@@ -11,8 +11,9 @@ const ACCESS_TOKEN = "access-token"
 
 interface FiygeAuthContextI {
   // AUTH
-  user: User;
-  authenticated: boolean;
+  user: User,
+  authenticated: boolean, // USER LOGGED IN?
+  onboarded: boolean,     // USER COMPLETED ONBOARDING?
 
   onSignInWithEmailAndPassword: (
     email: string,
@@ -23,6 +24,7 @@ interface FiygeAuthContextI {
   // onSubmitSignUpUserData: (signUpData: any) => void;
   onSignUpWithEmailAndPassword: (data: any) => Promise<void>,
   onActivateResetPassword: (email: string) => Promise<void>,
+  onOnboardUser: (data: any) => Promise<void>,
 
   // UPDATES
   onUpdateProfileImage: (imageUrl: string) => void;
@@ -33,7 +35,9 @@ const FiygeAuthContext = createContext<FiygeAuthContextI>(
 );
 
 const FiygeAuthContextProvider: React.FC = ({ children }) => {
+  // TODO: merge user and userData 
   const [user, setUser] = useState<User>();
+  const [userData, setUserData] = useState<any>();
 
   useEffect(() => {
     // get user authentication state from local storage
@@ -43,6 +47,11 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
         // TODO: request user data using access token (stay signed in)
       }
     }) 
+
+    // (async () => {
+    //   // retrieve the user data
+    //   return ""
+    // })
   }, []);
 
   const onSignInWithEmailAndPassword = async (
@@ -146,6 +155,44 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
     }
   };
 
+  const onOnboardUser = async (data: any): Promise<void> => {
+    let formData = new FormData()
+    formData.append("data[clients][birthday]", data.birthday)
+    formData.append("data[clients][country_code]", data.countryCode)
+    formData.append("data[clients][email]", user.email)
+    formData.append("data[clients][first_name]", data.firstName)
+    formData.append("data[clients][job_title]", data.jobTitle)
+    formData.append("data[clients][last_name]", data.lastName)
+    formData.append("data[clients][name]", data.firstName + data.lastName)
+    formData.append("data[clients][phone]", data.phone ?? "PLACEHOLDER")
+    formData.append("data[clients][user_id]", user.uid)
+
+    try {
+      const res = await fetch(`${FIYGE}/immigrate_ai/clients/add?`, {
+        method: "POST",
+        body: formData
+      })
+      const json = await res.json()
+
+      console.log(json)
+
+      if (json.errors.length === 0) {
+        console.log("SUCCESSFULLY ONBOARDED USER")
+        setUserData({
+          uid: user.uid,
+          birthday: data.birthday,
+          countryCode: data.countryCode,
+          email: user.email,
+          firstName: data.firstName,
+          lastName: data.lastName,
+          jobTitle: data.jobTitle
+        })
+      } else {
+        console.error("ERROR ONBOARDING USER")
+      }
+    } catch (e) { console.error(e) }
+  }
+
   const onActivateResetPassword = async (email: string): Promise<void> => {
     let formData = new FormData()
     formData.append("data[users][user_name]", email)
@@ -170,10 +217,6 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
     } catch (e) { console.error(e) }
   }
 
-  const onSubmitSignUpUserData = async (signUpData: any): Promise<void> => {
-    if (user === undefined) return;
-  };
-
   const onSignOut = async (): Promise<void> => {
     setUser(undefined);
     await AsyncStorage.removeItem(REFRESH_TOKEN)
@@ -190,9 +233,11 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
         onSignUpWithEmailAndPassword,
         // onSubmitSignUpUserData,
         onActivateResetPassword,
+        onOnboardUser,
 
         user,
         authenticated: user !== undefined,
+        onboarded: userData !== undefined,
 
         onUpdateProfileImage,
       }}

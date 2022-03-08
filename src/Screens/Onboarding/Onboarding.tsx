@@ -1,20 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {
   View,
   Text,
   StyleSheet,
   Dimensions,
-  TextInput,
+  TextInput
 } from "react-native";
+import DatePicker from "react-native-datepicker";
+import CountryPicker from "react-native-country-picker-modal";
+
 import Background from "../../components/Background";
 import Button from "../../components/Button";
 import { theme } from "../../components/theme";
-import CountryPicker from "react-native-country-picker-modal";
 import { CountryCode, Country } from "./types";
-import DatePicker from "react-native-datepicker";
+import { FiygeAuthContext } from "../../Contexts";
+
 const { width, height } = Dimensions.get("window");
 
 const Onboarding = ({ navigation }) => {
+  const { onOnboardUser } = useContext(FiygeAuthContext)
+
   const [first, setFirst] = useState("");
   const [last, setLast] = useState("");
   const [job, setJob] = useState("");
@@ -36,40 +41,26 @@ const Onboarding = ({ navigation }) => {
     setCountryName(country.flag);
   };
 
-  const onButtonPressed = () => {
-    if (countryName == "") {
-      setCountryNameError(true);
-    } else {
-      setCountryNameError(false);
-    }
-    if (first == "") {
-      setFirstError(true);
-    } else {
-      setFirstError(false);
-    }
-    if (last == "") {
-      setLastError(true);
-    } else {
-      setLastError(false);
-    }
-    if (job == "") {
-      setJobError(true);
-    } else {
-      setJobError(false);
-    }
-    if (date == "09-10-2021") {
-      setDateError(true);
-    } else {
-      setDateError(false);
-    }
+  const onSubmit = async () => {
+    setCountryNameError(countryName === '');
+    setFirstError(first === '')
+    setLastError(last === '')
+    setJobError(job === '')
+    setDateError(date === "09-10-2021")
 
-    if (firstError || jobError || countryNameError || lastError || dateError) {
+    if (!first || !countryName || !last || !job || date === "09-10-2021") {
       alert("Incorrect Fields.")
+      return;
     }
+
+    await onOnboardUser({
+      birthday: date,
+      firstName: first,
+      lastName: last,
+      countryCode: countryName,
+      jobTitle: job 
+    })
   };
-
-
-
 
   return (
     <Background>
@@ -110,10 +101,8 @@ const Onboarding = ({ navigation }) => {
             </Text>
           )}
         </View>
-        {countryNameError ? (
+        {countryNameError && (
           <Text style={styles.errorText}> Please select your country</Text>
-        ) : (
-          console.log("First pass")
         )}
         <View style={{ paddingTop: height * 0.025, flexDirection: "row" }}>
           <Text style={styles.optionHeader}>2. What is your Birth Date?</Text>
@@ -169,10 +158,8 @@ const Onboarding = ({ navigation }) => {
             }}
           />
         </View>
-        {dateError ? (
+        {dateError && (
           <Text style={styles.errorText}> Please choose your birth date</Text>
-        ) : (
-          console.log("Date pass")
         )}
         <View style={{ paddingTop: height * 0.025, flexDirection: "column" }}>
           <Text style={styles.optionHeader}>3. Current Job Occupation?</Text>
@@ -189,7 +176,6 @@ const Onboarding = ({ navigation }) => {
           >
             <TextInput
               placeholder="Job Title"
-              caretHidden={true}
               returnKeyType="next"
               onChangeText={(text) => setJob(text)}
               style={{
@@ -202,10 +188,8 @@ const Onboarding = ({ navigation }) => {
             />
           </View>
         </View>
-        {jobError ? (
+        {jobError && (
           <Text style={styles.errorText}> Please enter a valid job title</Text>
-        ) : (
-          console.log("Job pass")
         )}
         <View style={{ paddingTop: height * 0.025, flexDirection: "column" }}>
           <Text style={styles.optionHeader}>3. What is your first name?</Text>
@@ -222,7 +206,6 @@ const Onboarding = ({ navigation }) => {
           >
             <TextInput
               placeholder="Legal first name"
-              caretHidden={true}
               returnKeyType="done"
               onChangeText={(text) => setFirst(text)}
               style={{
@@ -235,10 +218,8 @@ const Onboarding = ({ navigation }) => {
             />
           </View>
         </View>
-        {firstError ? (
+        {firstError && (
           <Text style={styles.errorText}> Please enter a valid first name</Text>
-        ) : (
-          console.log("First pass")
         )}
         <View style={{ paddingTop: height * 0.025, flexDirection: "column" }}>
           <Text style={styles.optionHeader}>4. What is your last name?</Text>
@@ -255,7 +236,6 @@ const Onboarding = ({ navigation }) => {
           >
             <TextInput
               placeholder="Legal last name"
-              caretHidden={true}
               returnKeyType="done"
               onChangeText={(text) => setLast(text)}
               style={{
@@ -268,15 +248,13 @@ const Onboarding = ({ navigation }) => {
             />
           </View>
         </View>
-        {lastError ? (
+        {lastError && (
           <Text style={styles.errorText}> Please enter a valid last name</Text>
-        ) : (
-          console.log("First pass")
         )}
         <View style={{ paddingTop: 10 }}>
           <Button
             mode="contained"
-            onPress={onButtonPressed}
+            onPress={onSubmit}
             style={styles.button}
           >
             Lets Begin!
