@@ -27,6 +27,13 @@ intents:
     use_entities: true
 - faq:
     use_entities: true
+- request_agent:
+  use_entities: true
+- request_faqs:
+  use_entities: true
+- end_chat:
+  use_entities: true
+
 entities:
 - travel_purposes
 - number
@@ -516,7 +523,27 @@ slots:
         requested_slot: degree_canada
 responses:
   utter_default:
-  - text: I'm sorry, I don't understand that yet. Would you like to speak to an agent?
+  - text: I'm sorry, I don't understand. Can I help you with any of the following?
+    buttons: 
+    - payload: /request_eligibility
+      title: Determine my immigration eligibility.
+    - payload: /request_share_information
+      title: Connect me with an immigration progessional.
+    - payload: /request_faqs
+      title: Show me frequently asked immigration questions.
+  utter_show_faqs:
+  - text: FAQs (TODO)
+    # buttons: 
+    # - payload: /faq/0
+  utter_end_chat:
+  - text: Thanks for chatting! How did we do? We'll love to hear your feeback! 
+    buttons:
+    - payload: 5 star
+      title: I got all the answers I was looking for! 
+    - payload: 4 star
+      title: I got most of the answers I wanted.
+    - payload: 3 star
+      title: I still have many unanswered questions.  
   utter_ask_name:
   - text: Hi! I'm Andrea at Immigrate.ai! What's your name?
   utter_name:
@@ -751,6 +778,13 @@ responses:
   - text: You may reach out to Gurpreet Chandok at gurpreet@castlemorelaw.com
   - text: You may reach out to Shireen Kapoor at shireen@ace-law.ca
   - text: You may reach out to Rekha Samuel at rekha@canmerge.net
+  utter_require_eligibility_information:
+  - text: Okay. To connect you with the right agent we need to know more about your situation. Would you like to continue?
+    buttons:
+    - payload: /request_eligibility 
+      title: Yes, I want to connect with a professional.
+    - payload: /end_chat
+      title: No thanks!
   utter_faq/letter_of_support:
   - text: You may work with Canada Startup Company to get a letter of support.
   utter_faq/why_canada:

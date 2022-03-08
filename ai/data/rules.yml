@@ -33,7 +33,18 @@ rules:
       - intent: request_eligibility # intent that triggers form activation
       - action: eligibility_form # run the form
       - active_loop: eligibility_form # this form is active
-
+  - rule: request information and activate eligibility form
+    steps:
+      - intent: request_share_information
+      - action: utter_require_eligibility_information
+  - rule: show faqs when asked 
+    steps:
+      - intent: request_faqs
+      - action: utter_show_faqs
+  - rule: gracefully end chat 
+    steps:
+      - intent: end_chat
+      - action: utter_end_chat
   - rule: submit eligibility form
     condition:
       - active_loop: eligibility_form # this form must be active
