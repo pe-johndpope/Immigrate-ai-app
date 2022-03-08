@@ -1239,26 +1239,20 @@ responses:
       will be invited again under a different program."
   utter_faq/50: # Question: Do I need my medical exam and police check for my Express Entry application?
   - text: "Yes, you must include all medical exam confirmation letters and police
-      certificates for your application for permanent residence to be complete.
-      The online system will not let you submit an application before you upload these
-      documents.\n\nIf you upload something else instead (for example, a blank document),
-      Canada will reject the application after reviewing it and we will refund your
-      fees.\n\n\nIn rare cases, you may not be able to get a police
-      certificate despite your best efforts. (For example, you applied in the first
-      week after we invited you to apply, but it did not arrive within the 90-day
-      timeframe). If this happens, you need to upload, with your complete application:\n
-      \n- Proof that you applied for a police certificate (things like receipts that prove you submitted paperwork and
-      any fees related to your request.)\n\n- A letter of explanation.\n
-      \n- You must also show that you made your best efforts
-      to get all the documents you needed.\n\nIf you need a police certificate from
-      a country where Canada must request it from them, upload a letter of explanation
-      that explains this.\n\nThere is no guarantee Canada will accept a letter of explanation
-      in place of any required document, including a police certificate. Canada considers
-      each application under Express Entry on its own merits.\n\nIf you did not submit
-      a police certificate with your application, only proof that you applied for
-      one, please do not send the police certificate when you get it. Only send
-      it to us once we ask you to through your account. We will send you new instructions
-      on how to submit them."
+      certificates for your application for permanent residence to be complete.\n\n
+      
+      In rare cases, you may not be able to get a police certificate despite your best efforts. 
+      If this happens, you need to upload, with your complete application:\n\n
+
+      - Proof that you applied for a police certificate (things like receipts that prove 
+      you submitted paperwork and any fees related to your request.)\n\n
+      
+      - A letter of explanation.\n\n
+      
+      - You must also show that you made your best efforts to get all the documents you needed.\n\n
+
+      There is no guarantee Canada will accept a letter of explanation in place of any required document, 
+      including a police certificate. Canada considers each application under Express Entry on its own merits."
   utter_faq/51: # Question: What happens if a country has special procedures for getting police certificates?
   - text: "We are aware that for some countries there are special procedures in place
       to get police certificates.\n\n
@@ -1386,7 +1380,7 @@ responses:
       Language tests have been required for our skilled immigration programs for many
       years."
   utter_faq/63: # Question: What kind of language test can I use for Express Entry?
-  - text: "We only accept these tests for Express Entry:\n\n\nFor English:\n\nCELPIP: Canadian
+  - text: "Canada only accepts these tests for Express Entry:\n\n\nFor English:\n\nCELPIP: Canadian
       English Language Proficiency Index Program (CELPIP-General)\n\nIELTS: International
       English Language Testing System (General Training)\n\n\nFor French:\n\n
       TEF Canada: Test d'évaluation de français\n\nTCF Canada: Test de
@@ -1513,7 +1507,7 @@ responses:
   utter_faq/73: # Question: Should I include all my work experience for Express Entry?
   - text: "To qualify for the broadest range of programs, including the Federal Skilled
       Worker Program, you should include all work experience for the last 10 years.
-      We also need this information for an application for permanent residence,
+      Canada also needs this information for an application for permanent residence,
       no matter which program you are applying under."
   utter_faq/74: # Question: In an Express Entry profile, what do you mean by 'the date the applicant first became qualified to practice this occupation'?
   - text: "If you are listing a skilled trade (jobs with a four-digit NOC code that
@@ -1529,7 +1523,7 @@ responses:
       school, this is the date you graduated from high school.)"
   utter_faq/75: # Question: How do I fill out my Express Entry profile when I have maintained my status?
   - text: "'Maintained status' means you can stay in Canada and, if eligible,
-      keep working while we make a decision on your application.\n\n
+      keep working while Canada makes a decision on your application.\n\n
       
       If you're in Canada with maintained status and are still authorized to work at the
       time you complete your Express Entry profile:\n\n
@@ -1586,7 +1580,7 @@ responses:
       information you enter.\n\n
       
       If you decline the invitation, the system will not re-invite you under the next program. You 
-      will go back in the pool, and if we invite you again, the same order will apply."
+      will go back in the pool, and if Canada invites you again, the same order will apply."
   utter_faq/79: # Can I be invited to apply if I've lost my username or password?
   - text: "Yes. If you're invited to apply, you will recieve an email at the address
       you provided.\n\n
@@ -1689,7 +1683,7 @@ responses:
       doing in Canada."
   utter_faq/88: # Question: Should I remove my job offer points if I am renewing my work permit?
   - text: "'Implied status' means you can stay in Canada and keep working
-      while we make a decision on your application.\n\n
+      while Canada makes a decision on your application.\n\n
       
       If you have implied status, and have applied to renew your work permit, 
       you are also still eligible for job offer points."
@@ -1714,10 +1708,10 @@ responses:
       
       - Working full-time (or an equal amount in part-time), meaning 30 hours of work per week.\n\n
       
-      - Working for at least one year in the 10-year period before the day we assign 
+      - Working for at least one year in the 10-year period before the day Canada assigns 
       you points.\n\n
       
-      We do not count work experience if you were:\n\n
+      Canada does not count work experience if you were:\n\n
       
       - Studying full-time while you were working.\n\n
       
@@ -1766,134 +1760,99 @@ responses:
       offer. It will give you a much higher point score, and so a better chance of being 
       invited to apply."
   utter_faq/97: # Question: How do I register with or create a Job Match account in Job Bank?
-  - text: "Job Bank is a database that can help match you with employers looking for workers with
-      your skills.\nIf your Express Entry profile is found eligible, you can create
+  - text: "Job Bank is a database that can help match you with employers looking for workers with 
+      your skills.\nIf your Express Entry profile is found eligible, you can create 
       a Job Match account. To do so:\n\n
 
       1. Go to the Job Match sign-in page\n\n
       2. Click the 'Create an account' button\n\n
       3. Read the privacy notice and click 'I agree'\n\n
       4. Follow the instructions to create an account."
-  utter_faq/99:
-  - text: "Change your sign-in partner if you're using \"Choice Reward MasterCard\"\
-      \nStarting November 8, 2019, you will not be able to log in using \"CHOICE Rewards\
-      \ MasterCard.\" If you started an online application, submit it before November\
-      \ 8, 2019. If you don't, you'll need to start over.\n\nWe want to know about\
-      \ any technical issues you're having so we can help solve the issue.\n\
-      If you're having problems with our forms, read about downloading and uploading\
-      \ forms and documents first.\nIf you have problems before you apply  (while\
-      \ you're filling out your online application or uploading your documents):\
-      \ Use the Report a technical issue button at the top of your account.\nIf you\
-      \ have problems after you submit your application: Use our web form and choose\
-      \ Technical difficulties as the type of enquiry.\nTo help us find and solve\
-      \ the issue as fast as possible, include :\n\nsurname (last name)\ngiven name(s)\n\
-      date of birth\ncountry of birth\nthe type of device you were using (PC , Mac,\
-      \ iPad, etc.)\nthe browser you were using (including version)\nyour general\
-      \ location (Africa, Asia, Europe, etc.)\ndescription of the problem or error\
-      \ message, including the date and time (including time zone) it happened\nscreenshots\
-      \ of the page where you had the problem\na copy/paste text of the full URL of\
-      \ the page\nas much information as possible about the steps you took before\
-      \ you had the problem\n\nIf you have it, also include your:\n\nUnique Client\
-      \ Identifier (UCI)/Client ID Number\napplication number\npersonal reference\
-      \ code\ncurrent status in Canada and the date of expiration\nthe date you applied\n\
-      \nFor technical issues uploading a form or document, include:\n\na copy of the\
-      \ form or document you're trying to upload (with all fields completed),\
-      \ and\nall your answers to the online questionnaire. To do this:\n    \nchoose\
-      \ \u201CModify my Answers\u201D at the top of the page\nsave your answers into\
-      \ a document by:\n        \ntaking screen shots or\ncopying and pasting the\
-      \ text\n\n\n\n\n\nFor technical issues linking your application to a new account,\
-      \ include:\n\nall your answers on the \u201CLink an existing application to\
-      \ this account\u201D page. Save them in a document by:\n    \ntak ing screenshots\
-      \ or\ncopying and pasting the text\n\n\n\nFor all other technical issues, include:\n\
-      \nscreenshots showing the full browser window of the:\n    \npage where you'\
-      re having problems or trying to sign into your account\nerror message(s) you\
-      \ got\n\n\n\nIf you need to send many documents and images, find out how to\
-      \ combine documents.\nWe'll try to answer within\_10 business days after\
-      \ you contact us . Don't send your question more than once. It can delay\
-      \ our answer."
-  utter_faq/100:
-  - text: 'You can apply online to
+  utter_faq/99: # Question: What do I do if I have technical problems when applying online?
+  - text: "If you are having techincal issues while filling out your online application, 
+      then you can use the 'Report a Technical Issue' button at the top of your account page.\n\n
+      If you have problems after submitting your application, you should submit a web form 
+      and choose techincal difficulties as your type of enquiry.\n\n
+      
+      https://www.cic.gc.ca/english/contacts/web-form.asp?v1"
+  utter_faq/100: # Question: What can I apply for online?
+  - text: "You can apply online to:\n\n
+      - Get a study permit\n\n
 
+      - Get a work permit (including International Experience Canada (IEC))\n\n
 
-      get a study permit
+      - Get a visitor visa or an electronic travel authorization (eTA)\n\n
 
-      get a work permit (including International Experience Canada (IEC))
+      - Extend your stay in Canada as a visitor, student or worker\n\n
 
-      get a visitor visa or an electronic travel authorization (eTA)
+      - Immigrate as a skilled worker through Express Entry\n\n
 
-      extend your stay in Canada as a visitor, student or worker
+      - Transfer between schools (designated learning institutions (DLIs))\n\n
 
-      immigrate as a skilled worker (Canadian experience class, federal skilled trades
-      class, federal skilled worker class and some provincial nominees) through Express
-      Entry
+      - Restore your status as a visitor, student or worker (within 90 days of the date
+      your temporary resident status expired)\n\n
 
+      - Submit applications for your family members"
+  utter_faq/101: # Question: What is a personal document checklist?
+  - text: "A personal document checklist is a list of forms and documents you need
+      to complete and send in with your application."
+  utter_faq/102: # Question: What is a personal reference code?
+  - text: "Your personal reference code is a unique code given to you through 'Come 
+      to Canada', Canada's online eligibility tool. You'll need to enter this code 
+      to:\n\n
+      
+      - Begin an online application for a visitor visa, study or work permit\n\n 
 
-      You can also
+      - To carry your information from Come to Canada over to an Express Entry profile\n\n
+      
+      You can find your personal reference code at the top of your results page 
+      after you answer all the questions in the tool. This code is only valid 
+      for 60 days from the date you get it."
+  utter_faq/103: # Question: What if I don't know how to answer a question in my online application?
+  - text: "Some questions have help text that explains the question. To see it, click 
+      on the 'help (?)' icon on the right side of the question.\n\n
 
+      Canada's website also links some words to a glossary, so if a word in a question 
+      is underlined, you can click on the word to see the definition, or it will lead 
+      you to a page on our website with more details."
+  utter_faq/104: # Question: How do I exit and save my online application?
+  - text: "If you are in the application for services related to visas, study or work permits, 
+      click the blue 'Exit Questionnaire' button at the bottom left of the page to end your 
+      session, and your online application will automatically be saved.\n\n
+      
+      If you are in an Express Entry profile or online application for permanent residence, 
+      click the grey 'Save and Exit' button at the bottom left of the 
+      page."
+  utter_faq/105: # Question: What does it mean when I electronically sign my online application?
+  - text: "By electronically signing your online application or online request, you
+      are declaring that:\n\n
+      
+      - The information you have given in your application is true and\n\n 
 
-      transfer between schools (designated learning institutions (DLIs))
-
-      restore your status as a visitor, student or worker (within 90 days of the date
-      your temporary resident status expired)
-
-      submit applications for your family members when you apply for or extend a study
-      or work permit, or apply for a visitor visa or to extend your stay in Canada'
-  utter_faq/101:
-  - text: "A personal document checklist is a list of forms and documents you need\
-      \ to complete and send in with your application.\nIf you are applying for a\
-      \ visitor visa, study or work permit, this checklist is based on the answers\
-      \ you gave in the\_online immigration eligibility questionnaire.\nIf you are\
-      \ applying for permanent residence online, the checklist is based on the answers\
-      \ you gave while completing your application.\nUse this page to upload the supporting\
-      \ documents you need to include when you submit your application."
-  utter_faq/102:
-  - text: "Your personal reference code is a unique code given to you through Come\
-      \ to Canada, our online eligibility tool. You'll need to enter this code\
-      \ to:\n\nbegin an online application for a visitor visa, study or work permit\
-      \ or\n carry your information from Come to Canada over to an Express Entry profile\n\
-      \nYou can find your personal reference code at the top of your results page\
-      \ after you answer all the questions in the tool.\nYou should write it down\
-      \ and print a copy of your results and/or checklist. This code is only valid\
-      \ for 60 days from the date you get it."
-  utter_faq/103:
-  - text: 'Some questions have help  text that explains the question. To see it, click
-      on the help (?) icon on the right side of the question.
-
-      We have also linked some words to our glossary or website. If a word in a question
-      is underlined, you can click on the word to see the definition, or it will lead
-      you to a page on our website with more details.'
-  utter_faq/104:
-  - text: "When logged into your account:\n\nIf you are in the application for services\
-      \ related to visas, study or work permits, click the blue \u201CExit Questionnaire\u201D\
-      \ button at the bottom left of the page to end your session. When you click\
-      \ \u201CExit\u201D, your online application will automatically be saved. \n\
-      If you are in an Express Entry profile or online application for permanent residence,\
-      \ click the grey \u201CSave and Exit\u201D button at the bottom left of the\
-      \ page."
-  utter_faq/105:
-  - text: "By electronically signing your online application or online request, you\
-      \ are declaring that:\n\nthe information you have given in your application\
-      \ is true and\n the supporting documents you are sending are genuine."
-  utter_faq/106:
-  - text: 'There are times where the system will be down for routine maintenance.
-      Follow Immigration, Refugees and Citizenship Canada on Twitter for notifications
+      - The supporting documents you are sending are genuine."
+  utter_faq/106: # Question: What do I do if the online application system is down?
+  - text: "There are times where the system will be down for routine maintenance.
+      You can visit 'Immigration, Refugees and Citizenship Canada' on Twitter for notifications
       on when the system will be unavailable.
 
-      Notices will also be posted on our website.
+      Notices will also be posted on Canada's website.
 
-      If the system is down and it is not a scheduled outage for system maintenance,
-      please let us know, and try again later.'
-  utter_faq/107:
-  - text: "For questions about GCKey, please call 1-855-438-1102. The GCKey help desk\
-      \ is available 24 hours a day, 7 days a week. More information is available\
-      \ on the GCKey website.\nFor questions about Sign-In Partner (SecureKey Concierge),\
-      \ please call:\n\n1-855-433-5397 (in North America) \nTTY/TDD: 1-855-224-1714\n\
-      1-800-7328-7358 (outside of North America)"
-  utter_faq/108:
-  - text: "To register for a GCKey, go to the sign in page and click the \u201CContinue\
-      \ to GCKey\u201D button.\nThen, choose a user name and a password. It'\
-      ll ask you to create security questions. Keep a copy of this in a safe place\
-      \ in case you forget."
+      If the system is down without warning, unfortunately all you can do is try again later."
+  utter_faq/107: # Question: Who can I contact if I have questions about GCKey or Sign-In Partner (SecureKey Concierge)?
+  - text: "GCKey: 1-855-438-1102. The GCKey help desk is available 24 hours a day, 
+      7 days a week. More information is available on the GCKey page
+      (https://clegc-gckey.gc.ca/j/eng/AB-01?ReqID=s2e6035e751e59d5433d86bd4f3b51ffc2626b2c37).\n\n
+      
+      Sign-In Partner (SecureKey Concierge): 1-855-433-5397 (in North America), 1-855-224-1714
+      (Text), 1-800-7328-7358 (outside of North America)."
+  utter_faq/108: # Question: How do I get a GCKey?
+  - text: "To register for a GCKey:\n\n
+  
+      1. Go to the sign in page and click the 'Continue
+      to GCKey' button.\n\n
+      
+      2. Choose a user name and a password. Keep a copy of these and the security questions 
+      in a safe place in case you forget."
   utter_faq/109:
   - text: "If you lost your GCKey password, you can create a new  password. Go to\
       \ the sign-in page for GCKey and you'll be able to create a new  password\

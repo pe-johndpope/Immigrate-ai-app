@@ -422,7 +422,7 @@ nlu:
       - How do I use my personal reference code?
   - intent: faq/103
     examples: |
-      - What if I don\u2019t know how to answer a question in my online application?
+      - What if I don't know how to answer a question in my online application?
       - I am unsure of how to answer a certain question in my online applicaiton. What should I do?
       - I don't know how to answer a specific question in my online application, where do I go for a more detailed explanation?
       - I don't understand a question online, where can I get help?
