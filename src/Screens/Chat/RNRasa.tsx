@@ -1,6 +1,7 @@
 import React, {
   useState,
   useCallback,
+  useContext,
   useMemo,
   useImperativeHandle,
   useEffect
@@ -28,7 +29,6 @@ import {
   IMessage,
   User
 } from 'react-native-gifted-chat';
-import { auth } from '../../Firebase';
 import { IRasaMessage, IRasaResponse } from './types';
 import uuid from 'react-native-uuid';
 
@@ -39,6 +39,7 @@ import {
   createQuickUserReply,
   isValidNotEmptyArray,
 } from "./utils";
+import { FiygeAuthContext } from "../../Contexts";
 
 //TODO: reset bot on destroy
 export interface IRasaChat
@@ -63,12 +64,13 @@ export interface IRasaChatHandles {
 }
 
 const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
+  const { user } = useContext(FiygeAuthContext)
   const {
     host,
     onSendMessFailed,
     onEmptyResponse,
     emptyResponseMessage,
-    userId = auth.currentUser.uid, 
+    userId = user.uid, 
     userName = '',
     userAvatar = '',
     botName = 'RasaChat',

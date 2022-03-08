@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react";
+import React, { memo, useState, useContext } from "react";
 import { Text, StyleSheet, TouchableOpacity } from "react-native";
 import { emailValidator } from "../components/utils";
 import Background from "../components/Background";
@@ -8,28 +8,26 @@ import Header from "../components/Header";
 import TextInput from "../components/TextInput";
 import { theme } from "../components/theme";
 import Button from "../components/Button";
-import { auth, db } from "../Firebase/config";
+import { FiygeAuthContext } from "../Contexts";
 
 const ForgotPassword = ({ navigation }) => {
+  const { onActivateResetPassword } = useContext(FiygeAuthContext)
   const [email, setEmail] = useState({ value: "", error: "" });
 
-  const _onSendPressed = () => {
+  const onSendPressed = async () => {
     const emailError = emailValidator(email.value);
 
     if (emailError) {
       setEmail({ ...email, error: emailError });
       return;
     }
-    auth
-      .sendPasswordResetEmail(email.value)
-      .then(() => {
-        alert("Password reset email sent. Check your inbox.");
-        navigation.navigate("Login");
-      })
-      .catch((error) => {
-        alert("Password Reset Failed, please make sure the email is correct.");
-        // ..
-      });
+
+    // TODO: Add password reset through FIYGE
+    await onActivateResetPassword(email.value)
+    navigation.navigate("Login");
+
+    // reset field
+    setEmail({value: "", error: ""})
   };
 
   return (
@@ -64,7 +62,7 @@ const ForgotPassword = ({ navigation }) => {
         keyboardType="email-address"
       />
 
-      <Button onPress={_onSendPressed} style={styles.button}>
+      <Button onPress={onSendPressed} style={styles.button}>
         Reset Password
       </Button>
 
