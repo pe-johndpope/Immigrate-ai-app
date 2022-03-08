@@ -7,7 +7,6 @@ nlu:
       - Express Entry changes
       - How has Express Entry changed recently?
       - How has the Express Entry system changed?
-      - Express Entry changes
   - intent: faq/48
     examples: |
       - When I try to submit my Express Entry profile or my application, I get an error. What can I do?
@@ -300,8 +299,8 @@ nlu:
       - Where can my National Occupation Classification code be found?
       - What is my National Occupation Classification code?
       - What is NOC?
-      - What is my job\u2019s NOC code?
-      - How to find my job\u2019s NOC code?
+      - What is my job's NOC code?
+      - How to find my job's NOC code?
       - What does NOC mean?
   - intent: faq/85
     examples: |
@@ -348,14 +347,14 @@ nlu:
       - Can I work as a student to apply for Express Entry?
   - intent: faq/91
     examples: |
-      - I have been working in Canada for the last six months but didn\u2019t get points for work experience. Why not?
+      - I have been working in Canada for the last six months but didn't get points for work experience. Why not?
       - Why didn't I receive points for work experience that I gained while working in Canada for the last 6 months?
       - Why wasn't I awarded points for work experience while working in Canada for the last 6 months?
       - I recieved no points for my work done in the last 6 months
       - I worked in the last 6 months, but recieved no points
   - intent: faq/92
     examples: |
-      - "If I\u2019ve maintained my status while in the Express Entry pool, will I still get the job offer points?"
+      - If I've maintained my status while in the Express Entry pool, will I still get the job offer points?
       - Will I still get the job offer points if I've maintained my status while in the Express Entry pool?
       - If I show in my Express Entry profile that I have a job offer while maintaining my status in the Express Entry pool, will I still get points for the job offer?
   - intent: faq/93
@@ -375,7 +374,7 @@ nlu:
       - What can I do if I recieved my ITA with an expired work permit?
   - intent: faq/95
     examples: |
-      - I didn\u2019t get a Job Seeker Validation Code in the message you sent to my account. Why not?
+      - I didn't get a Job Seeker Validation Code in the message you sent to my account. Why not?
       - Why wouldn't I have received a Job Seeker Validation Code in the message sent to my account?
       - I received an Express Entry profile number but not a Job Seeker Validation Code. Why did this happen?
       - I can\u2019t find my Job Seeker Validation Code
@@ -392,12 +391,6 @@ nlu:
       - How do I make a Job Match account in Job Bank?
       - Do I have to register a Job Match account in Job Bank?
       - How to make a job match account
-  - intent: faq/98
-    examples: |
-      - I received a letter asking me to pay additional fees for my Express Entry application. How do I pay the additional fees?
-      - How do I pay the additional fees for my Express Entry application?
-      - How do I make additional payments or other fees for my Express Entry application?
-      - How to pay the additional fees for Express Entry
   - intent: faq/99
     examples: |
       - What do I do if I have technical problems when applying online?

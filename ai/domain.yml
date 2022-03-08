@@ -1598,7 +1598,7 @@ responses:
       If you need to create a new account, link your application
       to your new account. You will need your profile or application number to do
       this. You can find this number at the end of the subject line of an email
-      we've sent you (example: W300027607).\n\n 
+      Canada sent you (example: W300027607).\n\n 
       
       After you have changed your password or linked your application to new account, 
       follow these steps:\n\n
@@ -1688,149 +1688,92 @@ responses:
       work permit, you should find and use the NOC code of the job you are currently
       doing in Canada."
   utter_faq/88: # Question: Should I remove my job offer points if I am renewing my work permit?
-  - text: "\u201CImplied status\u201D means you can stay in Canada and keep working\
-      \ while we make a decision on your application.\nIf you have implied status,\
-      \ and have applied to renew your work permit, you can keep working for the same\
-      \ employer under the same conditions. You are still eligible for job offer points\
-      \ during this time.\nIf you are invited to apply, your Express Entry profile\
-      \ answers will be carried forward to your online application for permanent residence.\
-      \ It will show that you have a valid work permit supported by an LMIA (if you\
-      \ need one) in a NOC 0, A or B job. You will not need to  change the answers.\n\
-      You must submit a copy of your LMIA with the application if your work permit\
-      \ was supported by an LMIA.\nNote: The points you can get for a job offer has\
-      \ changed. You can now get:\n\n200 CRS points for a valid job offer in a NOC\
-      \ 00 job\n50 CRS points for a valid job offer in a NOC 0, NOC A or B job."
-  utter_faq/89:
-  - text: "In the Federal Skilled Trades program, work experience in a trade can only\
-      \ count if you are qualified to independently practice that trade in the region\
-      \ where you got your work experience. \nIf you are qualified in one country,\
-      \ you might work in another country that has different rules for practicing\
-      \ your trade. In that case, the work experience from the second country will\
-      \ only count towards the two-year work experience requirement if you also met\
-      \ the requirements to practice there independently. \nFor example, if you are\
-      \ a plumber from Germany and worked for one year in Poland, you need to prove\
-      \ that you were certified to be a plumber in Germany, and that you were qualified\
-      \ to work in Poland according to Polish regulations at the time for this work\
-      \ experience to count."
-  utter_faq/90:
-  - text: "It depends on where you were working and studying.\nTo be eligible for\
-      \ Express Entry, you must meet the minimum requirements for 1 or more Express\
-      \ Entry programs. This includes the work experience requirement.\nUsing student\
-      \ work experience for minimum requirements\nFederal Skilled Worker Program\n\
-      Student work experience gained while you were studying in Canada or abroad counts\
-      \ towards the minimum requirements for the Federal Skilled Worker Program if\
-      \ the work:\n\nwas paid by wages or commissions\nwas continuous (no gaps in\
-      \ employment), and\nmeets all the other requirements of the Program\n\nThis\
-      \ includes co-op terms and apprenticeships.\nCanadian Experience Class and Federal\
-      \ Skilled Trades Program\nStudent work experience doesn't count towards\
-      \ the minimum requirements for the Canadian Experience Class or Federal Skilled\
-      \ Trades Program.\nHow student work experience affects your profile ranking\n\
-      Canadian work experience gained while you were a full-time student doesn'\
-      t count towards the score used to rank your profile.\nThe work experience gained\
-      \ as a full-time student outside Canada counts towards the score used to rank\
-      \ your profile."
-  utter_faq/91:
-  - text: "Under the Express Entry Comprehensive Ranking System (CRS), to be awarded\
-      \ points for skilled work experience, you must have been:\n\nlegally allowed\
-      \ to work in Canada in one or more jobs listed in Skill Type\_0 or Skill Level\_\
-      A or\_B of the National Occupational Classification;\nworking full-time (or\
-      \ an equal amount in part-time), meaning 30\_hours of work per week, and \n\
-      working for at least one year in the 10-year period before the day we assign\
-      \ you points.\n\nWe do not count work experience if you were:\n\nstudying full-time\
-      \ while you were working, \nself-employed, or \nnot legally allowed to work\
-      \ in Canada. \n\nPlease note: Work experience does not need to be continuous\
-      \ to get points under the CRS. But, to qualify under the Federal Skilled Worker\
-      \ Program, you must have at least one year of continuous full-time paid work\
-      \ experience, either in Canada or abroad."
-  utter_faq/92:
-  - text: "If you show in your Express Entry profile that you have a\_valid job offer,\
-      \ you will automatically be awarded additional points towards your\_Comprehensive\
-      \ Ranking System\_score.\nIf your job offer is from your current employer, and\
-      \ you've maintained your status and are authorized to work, you must keep\
-      \ working for the employer on your existing permit and under the same conditions\
-      \ in order to keep your job offer points."
-  utter_faq/93:
-  - text: "If you applied for a new work permit before your old one expired, you are\
-      \ under \u201Cimplied status\u201D until we make a decision on your application.\n\
-      Job offer information from your current employer in your Express Entry profile\
-      \ will carry forward to your application if we invite you to apply for permanent\
-      \ residence while under implied status.\nIf you are not sure you answered correctly:\n\
-      \ngo to the \u201Cwork history\u201D screen, under the \u201CIntended work in\
-      \ Canada\u201D section\nscroll down to the section about Labour Market Impact\
-      \ Assessments (LMIA)\nif your employer had an LMIA for your work permit, make\
-      \ sure you answered \u201Cyes\u201D to the question \u201CWas a positive LMIA\
-      \ issued for the job offer in Canada?\u201D\nunder \u201CLMIA number,\u201D\
-      \ enter the number from the expired LMIA\nif your work permit is LMIA-exempt,\
-      \ for the question \u201CWas a positive LMIA issued for the job offer in Canada?\u201D\
-      \ choose the correct answer from the \u201CNo \u2013 My work permit is exempt\u2026\
-      \u201D options.\n\nTo prove that you are under implied status, include a copy\
-      \ of your new LMIA (if this applies) and work permit applications when you apply.\
-      \ When you get to the document checklist, select \u201Cadd letter of explanation\u201D\
-      \ to upload it into the \u201COptional documents\u201D section.\nAs long as\
-      \ you still have implied status at the time you apply, you do not need to wait\
-      \ for your new work permit to be approved.\nIf we issue you a new work permit\
-      \ before you submit your application, you need to update this information before\
-      \ you submit it.\nIf we refuse you a new work permit before you submit your\
-      \ application, you may want to decline the invitation to apply, since the information\
-      \ in your profile is no longer up to date. You will be put back in the pool,\
-      \ and should update your profile to show the change in your work status.\nYou\
-      \ can recalculate your score to see if you still have enough points to be invited\
-      \ to apply.\nIf losing job offer points brings your score below the minimum\
-      \ score for your round of invitation, we will refuse your application. If we\
-      \ refuse your application, we will not refund your processing fees."
-  utter_faq/94:
-  - text: "If you didn't apply for a new work permit before your original one\
-      \ expired, it may cause your score to drop. This could cause you to not be eligible\
-      \ anymore.\nIf your score has dropped below the minimum cut-off for your round\
-      \ of invitations, you should decline the invitation. If you submit your application\
-      \ anyway, we'll refuse it.\nIf we refuse your application, we won'\
-      t refund your fees.\nIf you decline, you'll be put back in the pool. You\
-      \ should update your Express Entry profile to show the change in your work status.\n\
-      You may be able to restore your status and get a work permit. If your status\
-      \ is restored and you still have an eligible Express Entry profile, you may\
-      \ be invited to apply for permanent residence again in the future."
-  utter_faq/95:
-  - text: 'If you got an Express Entry profile number but not a Job Seeker Validation
-      Code you should contact us using the Case Specific Enquiry form.
+  - text: "'Implied status' means you can stay in Canada and keep working
+      while we make a decision on your application.\n\n
+      
+      If you have implied status, and have applied to renew your work permit, 
+      you are also still eligible for job offer points."
+  utter_faq/89: # Question: What work experience can I count towards the Federal Skilled Trades Program's two-year requirement?
+  - text: "In the Federal Skilled Trades program, work experience in a trade can only
+      count if you are qualified to independently practice that trade in the region
+      where you got your work experience. The work experience from another country will
+      only count towards the two-year work experience requirement if you also met
+      the requirements to practice there independently. \n\n
+      
+      For example, if you are a plumber from Germany and worked for one year in Poland, 
+      you need to prove that you were certified to be a plumber in Germany, and that 
+      you were qualified to work in Poland according to Polish regulations at the time 
+      for this work experience to count."
+  utter_faq/90: # Question: Can I count student work experience toward the Express Entry work requirement?
+  - text: "Student work experience will only count towards the minimum requirments for the 
+      Federal Skilled Workers Program (FSWP). This work experience can also count towards your 
+      CRS score if it was completed outside of Canada."
+  utter_faq/91: # Question: I have been working in Canada for the last six months but didn't get points for work experience. Why not?
+  - text: "To be awarded points for work experience, you must meet all of the following:\n\n
+      - Legally allowed to work in Canada in jobs in NOC Type 0, A, or B.\n\n
+      
+      - Working full-time (or an equal amount in part-time), meaning 30 hours of work per week.\n\n
+      
+      - Working for at least one year in the 10-year period before the day we assign 
+      you points.\n\n
+      
+      We do not count work experience if you were:\n\n
+      
+      - Studying full-time while you were working.\n\n
+      
+      - Self-employed.\n\n
+      
+      - Not legally allowed to work in Canada."
+  utter_faq/92: # Question: If I've maintained my status while in the Express Entry pool, will I still get the job offer points?
+  - text: "If you show in your Express Entry profile that you have a valid job offer, 
+      you will automatically be awarded additional points towards your CRS score.\n\n
+      
+      If your job offer is from your current employer, and you've maintained your status 
+      and are authorized to work, you must keep working for the employer on your existing 
+      permit and under the same conditions in order to keep your job offer points."
+  utter_faq/93: # Question: What if I am invited to apply for Express Entry while waiting for a new work permit?
+  - text: "If you applied for a new work permit before your old one expired, you are
+      under 'implied status' until Canada makes a decision on your application.\n\n
+      
+      Job offer information from your current employer in your Express Entry profile 
+      will carry forward to your application if Canada invites you to apply for permanent 
+      residence while under implied status.\n\n
 
-      To be eligible for Express Entry, you need to meet the minimum requirements
-      and complete a profile.'
-  utter_faq/96:
-  - text: "No, in most cases you don't need a job  offer.\nBut, you will need\
-      \ one if you: \n\nare eligible for either the  Federal Skilled Worker Program\
-      \ or the Federal Skilled Trades Program, and\ndo not have enough money to support\
-      \ yourself and your family in Canada.\n\nEven if you don't need one, you\
-      \ may want to try  and find a valid  job offer. It will give you a much higher\
-      \ point score, and so a better  chance of being invited to apply."
-  utter_faq/97:
-  - text: "Note: It is now optional to create a Job Match account with Job Bank. You\
-      \ can still create a Job Match account to help you find work.\n\nJob Bank is\
-      \ a database that can help match you with employers looking for workers with\
-      \ your skills.\nIf your Express Entry profile is found eligible, you can create\
-      \ a Job Match account. To do so:\n\ngo to the Job Match sign-in page\nclick\
-      \ the \u201CCreate an account\u201D button\nread the privacy notice and click\
-      \ \u201CI agree\u201D\nfollow the instructions to create an account."
-  utter_faq/98:
-  - text: "On April 30, 2020, the fees increased for most economic immigration programs\
-      \ and the right of permanent residence.\nIf you received a letter from us asking\
-      \ you to pay additional fees, you should:\n\nCalculate the total fee difference\
-      \ you need to pay\n\nAdd up all the \u201Cpayable difference(s)\u201D in the\
-      \ table below that apply to your situation\nFor example, the payable difference\
-      \ for you, your spouse and 1 dependent child (including the right of permanent\
-      \ residence fee) would be $645 CAN.\n\nGo to the Make an additional payment\
-      \ or pay other fees page in the ePayment portal\nUnder Quantity, enter the payable\
-      \ difference amount \n\nEach payment generates 1 receipt. You can pay as a single\
-      \ payment or repeat this step to make multiple payments.\n\n\n\n\nFee difference\
-      \ schedule(All fee amounts are in Canadian Dollars)\n\n\nFees\nPrevious amount\
-      \ used in our systems ($CAN)\nNew fee effective April 30, 2020 ($CAN)\nPayable\
-      \ difference ($CAN)\n\n\n\n\nYour applicationProcessing fee and right of permanent\
-      \ residence fee\n1,040\n1,325\n285\n\n\nYour application (without right of permanent\
-      \ residence fee)\n550\n825\n275\n\n\nInclude your spouse or partnerProcessing\
-      \ fee  and right of permanent residence fee\n1,040\n1,325\n285\n\n\nInclude\
-      \ your spouse or partner (without right of permanent residence fee)\n550\n825\n\
-      275\n\n\nInclude a dependent child\n150 per child\n225 per child\n75 per child\n\
-      \n\nRight of permanent residence fee (may be paid at a later date)\n490\n500\n\
-      10"
+      As long as you still have implied status at the time you apply, you do not need 
+      to wait for your new work permit to be approved."
+  utter_faq/94: # Question: I was invited to apply through Express Entry but my work permit expired. What do I do?
+  - text: "If you didn't apply for a new work permit before your original one
+      expired, it may cause your score to drop. This could cause you to not be eligible
+      anymore.\n\n
+      
+      If your score has dropped below the minimum cut-off for your round of invitations, you 
+      should decline the invitation. If you submit your application anyway, Canada will refuse it, 
+      and not refund your fees."
+  utter_faq/95: # Question: I didn't get a Job Seeker Validation Code in the message you sent to my account. Why not?
+  - text: "If you got an Express Entry profile number but not a Job Seeker Validation
+      Code you should contact Canada's immigration office using the Case Specific Enquiry form.\n\n
+      
+      https://secure.cic.gc.ca/enquiries-renseignements/canada-case-cas-eng.aspx"
+  utter_faq/96: # Question: Do I need a job offer to get into the Express Entry pool? 
+  - text: "In most cases you don't need a job offer.\n\n
+      However, you will need one if you: \n\n
+      
+      - Are eligible for either the Federal Skilled Workers or the Federal Skilled 
+      Trades Program while not having enough to support yourself and your family 
+      in Canada.\n\n
+      
+      Even if you don't need one, you may want to try and find a valid job 
+      offer. It will give you a much higher point score, and so a better chance of being 
+      invited to apply."
+  utter_faq/97: # Question: How do I register with or create a Job Match account in Job Bank?
+  - text: "Job Bank is a database that can help match you with employers looking for workers with
+      your skills.\nIf your Express Entry profile is found eligible, you can create
+      a Job Match account. To do so:\n\n
+
+      1. Go to the Job Match sign-in page\n\n
+      2. Click the 'Create an account' button\n\n
+      3. Read the privacy notice and click 'I agree'\n\n
+      4. Follow the instructions to create an account."
   utter_faq/99:
   - text: "Change your sign-in partner if you're using \"Choice Reward MasterCard\"\
       \nStarting November 8, 2019, you will not be able to log in using \"CHOICE Rewards\
