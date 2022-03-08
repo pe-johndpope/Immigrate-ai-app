@@ -19,12 +19,14 @@ pipeline:
     max_ngram: 4
   - name: DIETClassifier
     model_confidence: softmax
-    epochs: 100
+    # epochs: 100
+    epochs: 20 # dev
     constrain_similarities: true
   - name: EntitySynonymMapper
   - name: ResponseSelector
     model_confidence: softmax
-    epochs: 100
+    # epochs: 100
+    epochs: 20 # dev
     constrain_similarities: true
   - name: FallbackClassifier
     threshold: 0.3
