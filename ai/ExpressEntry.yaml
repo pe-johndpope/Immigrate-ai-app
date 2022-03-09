@@ -473,7 +473,7 @@ nlu:
       - If I have experience from working or studying in Canada illegally, can I use that towards my application under the Canadian Experience Class?
   - intent: faq/141
     examples: |
-      - "Do I need a medical exam to apply for permanent residence, if I\u2019ve already had one for my permit?"
+      - Do I need a medical exam to apply for permanent residence, if I've already had one for my permit?
       - If I already had a medical exam for my work permit, do I need another one to apply for permanent residence?
       - Do I need to have another medical to apply for permanent residence if I had a medical exam previously for my permit?
   - intent: faq/142

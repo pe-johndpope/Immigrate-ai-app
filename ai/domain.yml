@@ -2090,142 +2090,80 @@ responses:
   - text: "Usually, you should choose the highest level degree, diploma or certificate
       (or combination) that will award you the most points."
   utter_faq/136: # Question: Am I eligible to apply as a permanent resident under the Canadian Experience Class?
-  - text: "To be eligible, you must:\n\nhave at least 12 months of full-time (or
-      an equal amount in part-time) skilled work experience in Canada in the three
-      years before you apply, and\nmeet or exceed the required language levels needed
-      for the National  Occupational Classification (NOC) skill level of your work
-      experience in each  language ability (speaking, reading, writing and listening).\n
-      \nTo find out if your work experience qualifies, search for it in the official
-      list.\nThere are also other requirements you must meet.\n\nNote: Completing
-      an Express Entry profile is the first step to  immigrate to Canada permanently
-      as a skilled worker. Completing an Express  Entry profile does not guarantee
-      that you will receive an Invitation to Apply  for permanent residence. An
-      Invitation to Apply for permanent residence will be  based on your score and
-      rank in the Express Entry pool using the Comprehensive Ranking System."
-  utter_faq/137:
-  - text: 'First you must fill out an Express Entry profile online to find out if
-      you meet the minimum criteria for the Express Entry pool.
+  - text: "To be eligible for the Canadian Exprience Class Program, you must:\n\n
+  
+      - Have at least 12 months of full-time (or an equal amount in part-time) skilled work 
+      experience in Canada in the three years before you apply. Must have been done under
+      proper authorization\n\n
+      
+      - Meet or exceed the required language ability according to your type of job completed 
+      (NOC 0 and A: CLB 7+ for all skills, NOC B: CLB 5+ for all skills).\n\n"
+  utter_faq/137: # Question: How do I apply to immigrate if I have work experience in Canada?
+  - text: "First, you must fill out an Express Entry profile online or consult a representative 
+      to find out if you meet the minimum criteria for the Express Entry pool:\n\n
 
-      If we invite you to apply:
+      Depending on the type of work you completed, this work experience can help make you eligibile 
+      for certain Express Entry programs, and increase your chances of being invited to apply."
+  utter_faq/138: # Question: Who cannot apply for permanent residence under the Canadian Experience Class?
+  - text: "The Canadian Experience Class is for people who already have skilled work 
+       experience in Canada. You are not eligible for permanent residence under 
+      the Canadian Experience Class if your work experience:\n\n
+      
+      - Was done without the proper authorization (for example, illegally, working without a visa)\n\n
+      
+      - Was done in a job not classified as NOC type 0, A, or B according 
+      to the National Occupational Classification.\n\n
+      
+      - Was done while you were self-employed.\n\n
+      
+      - Was done while on a student work permit (co-op, off-campus, or on-campus).\n\n
+      
+      - Totals to less than one year of full-time (or an equal amount 
+      in part-time) skilled work experience in Canada.\n\n
+      
+      You also cannot apply under the program if you plan on working in Quebec."
+  utter_faq/139: # Question: Can I complete an Express Entry profile before I have a year of work experience?
+  - text: "No, you should not complete an Express Entry profile in this case. If you 
+      do not have a full year of experience, the system will not find you eligible. 
 
-
-      complete your online application in 90 days
-
-      submit all the documents we need
-
-      pay your fees
-
-
-      You must also:
-
-
-      pass a medical exam and
-
-      pass criminal and security checks
-
-
-      Find out more about how to apply.'
-  utter_faq/138:
-  - text: "The  Canadian Experience Class is for people who already have skilled work\
-      \  experience in Canada.\n  You are not eligible for permanent residence under\
-      \ the Canadian Experience Class if  you gained your work experience: \n\nwithout\
-      \ the proper authorization (for example, illegally, working  without a visa),\n\
-      in a job not classified as skill type\_0, or skill level\_A or\_B  according\
-      \ to the National Occupational Classification,\nwhile you were self-employed,\
-      \ or\nwhile on a student work permit (co-op, off-campus, or on-campus).\n\n\
-      You also must not:\n\nhave less than one year of full-time (or an equal amount\
-      \ in  part-time) skilled work experience in Canada, or\nplan to live in Quebec.\n\
-      \n\nNote: Completing an Express Entry profile is the first step to  immigrate\
-      \ to Canada permanently as a skilled worker. Completing an Express  Entry profile\
-      \ does not guarantee that you will receive an Invitation to Apply  for permanent\
-      \ residence. An Invitation to Apply for permanent residence will be  based on\
-      \ your score and rank in the Express Entry pool using the Comprehensive Ranking\
-      \ System."
-  utter_faq/139:
-  - text: 'No, you should not complete an Express Entry profile in this case. If you
-      do not have a full year of experience, the system will not find you eligible.
-
-      To meet the minimum criteria for the Express Entry pool, you must be eligible
-      for at least one of the programs under Express Entry.
-
-
-      Note: Completing an Express Entry profile is the first step to immigrate to
-      Canada permanently as a skilled worker. Completing an Express Entry profile
-      does not guarantee that you will receive an Invitation to Apply for permanent
-      residence. An Invitation to Apply for permanent residence will be based on your
-      score and rank in the Express Entry pool using the Comprehensive Ranking System.'
-  utter_faq/140:
-  - text: 'No. Any experience you list in your application under the Canadian Experience
-      Class must be legal to be valid. You cannot have worked or studied without authorization.
-      If you have ever done so, your application will be refused.
-
-
-      Note: Completing an Express Entry profile is the first step to  immigrate to
-      Canada permanently as a skilled worker. Completing an Express  Entry profile
-      does not guarantee that you will receive an Invitation to Apply  for permanent
-      residence. An Invitation to Apply for permanent residence will be  based on
-      your score and rank in the Express Entry pool using the Comprehensive Ranking
-      System.'
-  utter_faq/141:
-  - text: "Yes. Even if you had a medical exam previously, all applicants for permanent\
-      \ residence must have a medical exam.\nA medical exam is needed to make sure\
-      \ that: \n\nyou pose no health risk to the Canadian public and\nneither you\
-      \ nor a family member will place too much demand on Canada's health, education\
-      \ and social systems.\n\n\nNote: Completing an Express Entry profile is the\
-      \ first step to  immigrate to Canada permanently as a skilled worker. Completing\
-      \ an Express  Entry profile does not guarantee that you will receive an Invitation\
-      \ to Apply  for permanent residence. An Invitation to Apply for permanent residence\
-      \ will be  based on your score and rank in the Express Entry pool using the\
-      \ Comprehensive Ranking System."
-  utter_faq/142:
-  - text: "Yes. You can apply and count your work experience in Quebec. \nIf you plan\
-      \ to live in  Quebec, you must apply to the Minist\xE8re de l'Immigration,\
-      \ de la Diversit\xE9 et de  l'Inclusion du Qu\xE9bec. Quebec selects its\
-      \ own immigrants.\n\nNote: Completing an Express Entry profile is the first\
-      \ step to  immigrate to Canada permanently as a skilled worker. Completing an\
-      \ Express  Entry profile does not guarantee that you will receive an Invitation\
-      \ to Apply  for permanent residence. An Invitation to Apply for permanent residence\
-      \ will be  based on your score and rank in the Express Entry pool using the\
-      \ Comprehensive Ranking System."
-  utter_faq/143:
-  - text: "No. Post-graduation work permits (PGWP) are a one-time opportunity for\
-      \ international students. Those students must have graduated from a PGWP-eligible\
-      \ program at a designated learning institution.\nIf you had to renew your passport\n\
-      You can extend your PGWP with your new passport only if\n\nyou were eligible\
-      \ for a PGWP but\nyou didn't get the full length because your passport\
-      \ was going to expire\n\nInclude this information in a letter of explanation\
-      \ when you apply to extend your PGWP.\nIf you're an Express Entry applicant\n\
-      You may be able to apply for a bridging open work permit if\n\nyou're waiting\
-      \ for a decision on a permanent residence application under Express Entry\n\
-      your current work permit expires in 4 months or less\nyou have valid status\
-      \ on your work permit\nyou're currently in Canada\n\n\nCompleting an Express\
-      \ Entry profile doesn't guarantee you'll receive an Invitation to\
-      \ Apply for permanent residence. An Invitation to Apply for permanent residence\
-      \ will be based on your score and rank in the Express Entry pool. The Express\
-      \ Entry pool uses the Comprehensive Ranking System."
-  utter_faq/144:
-  - text: "No. You don't need a certain level of education to apply to stay permanently\
-      \ in Canada.\_But, you can get Comprehensive Ranking System (CRS) points if\
-      \ you have high school education or higher.\nTo get points for education outside\
-      \ Canada, you must have an Education Credential Assessment.\nYou can now also\
-      \ earn additional CRS points for study in Canada above high school:\n\n15 points\
-      \ for a one- or two-year diploma or certificate\n30 points for a degree, diploma\
-      \ or certificate of three years or longer, or a Master's, professional\
-      \ or doctoral degree of at least one year.\n\nCompleting an Express Entry profile\
-      \ is the first step to immigrate to Canada permanently as a skilled worker.\
-      \ In it, you can give details about your education."
-  utter_faq/145:
-  - text: "Yes, you can be eligible  for the Canadian Experience Class so long as\
-      \ you meet the requirements under  the class, including having gained at least\
-      \ 12\_months of full-time (or an equal  amount of part-time) work experience\
-      \ in a NOC 0, A, or B occupation in Canada  in the three years before you are\
-      \ invited to apply.\n\nNote: Completing an Express Entry profile is the first\
-      \ step to  immigrate to Canada permanently as a skilled worker. Completing an\
-      \ Express  Entry profile does not guarantee that you will receive an Invitation\
-      \ to Apply  for permanent residence. An Invitation to Apply for permanent residence\
-      \ will be  based on your score and rank in the Express Entry pool using the\
-      \ Comprehensive Ranking System."
-  utter_faq/146:
+      To meet the minimum criteria for the Express Entry pool, you must be eligible 
+      for at least one of the programs under Express Entry."
+  utter_faq/140: # Question: Can I use experienced gained without authorization in my Canadian Experience Class application?
+  - text: "No. Any experience you list in your application under the Canadian Experience 
+      Class must be legal to be valid. You cannot have worked or studied without authorization. 
+      If you have ever done so, your application will be refused."
+  utter_faq/141: # Question: Do I need a medical exam to apply for permanent residence, if I've already had one for my permit?
+  - text: "Yes. Even if you had a medical exam previously, all applicants for permanent 
+      residence must have a medical exam."
+  utter_faq/142: # Question: If I am currently living in Quebec but plan to live elsewhere in Canada, can I apply for the Canadian Experience Class?
+  - text: "Yes. You can apply and count your work experience in Quebec."
+  utter_faq/143: # Question: Can I renew my post-graduation work permit?
+  - text: "No. Post-graduation work permits (PGWP) are a one-time opportunity for 
+      international students.\n\n
+      
+      If you had to renew your passport you can extend your PGWP with your new passport 
+      only if you are eligible for a PGWP but you didn't get the full length because your passport 
+      was going to expire. Include this information in a letter of explanation 
+      when you apply to extend your PGWP.\n\n
+      
+      If you're an Express Entry applicant, you may be able to apply for a bridging open work permit if:\n\n
+      
+      - You're waiting for a decision on a permanent residence application under Express Entry\n\n
+      
+      - Your current work permit expires in 4 months or less\n\n
+      
+      - You have valid status on your work permit\n\n
+      
+      - You're currently in Canada"
+  utter_faq/144: # Question: Do skilled temporary foreign workers need a certain education level to apply for permanent residence?
+  - text: "No. You don't need a certain level of education to apply to stay permanently
+      in Canada. But, you can get Comprehensive Ranking System (CRS) points if
+      you have high school education or higher.\nTo get points for education outside
+      Canada, you must have an Education Credential Assessment."
+  utter_faq/145: # Question: Can I still be eligible for Canadian Experience Class if I have returned to my country?
+  - text: "Yes, you can be eligible for the Canadian Experience Class so long as
+      you still meet the requirements under the class."
+  utter_faq/146: # Question: What are the language requirements I need to meet in order to apply for permanent residence under the Canadian Experience Class?
   - text: "The Canadian Language Benchmark (CLB) is the Canadian standard used  to\
       \ describe, measure and recognize language ability of adult immigrants and \
       \ prospective immigrants who plan to live and work in Canada. To apply under\
