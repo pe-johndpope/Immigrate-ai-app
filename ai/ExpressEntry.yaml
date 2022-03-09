@@ -428,7 +428,7 @@ nlu:
       - Where can I go to get an ECA for my immigration application?
   - intent: faq/132
     examples: |
-      - Does an Educational Credential Assessment (ECA) mean that I can be licensed in a regulated profession?
+      - Does an Educational Credential Assessment (ECA) mean that I am licensed in a regulated profession?
       - Does getting an ECA mean that my work experience and professional credentials are automatically recognized in Canada?
       - Do ECAs validate my work experience and credentials so that they are recgonzied in Canada?
   - intent: faq/133

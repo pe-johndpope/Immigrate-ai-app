@@ -1976,7 +1976,7 @@ responses:
       get them by adding up the points from up to two criteria. Even if more than 
       two of these apply to you and your spouse, you can only get 10 points in total.\n\n
       
-      Find out hwo you can gain these points:\n\n
+      Find out how you can gain these points:\n\n
       
       https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers/six-selection-factors-federal-skilled-workers.html"
   utter_faq/123: # Question: Can I count my work as a teaching assistant toward the work experience requirement?
@@ -1997,180 +1997,111 @@ responses:
       
       Keep your ECA report in a safe and accessible place as you may be requested to 
       submit it (or give information from it) if you are invited to apply."
-  utter_faq/125:
-  - text: "You must prove your language skills by taking a third-party language test\
-      \ from an agency designated by us.\n When creating your Express Entry profile,\
-      \ you must fill in all the information related to the language test you have\
-      \ taken in English and/or French for your first and second official language.\n\
-      \ You also need to make sure that you meet the minimum language threshold in\
-      \ order to be eligible for the program.\nYour language test results must be\
-      \ valid (written in the last two years) when you submit your application for\
-      \ permanent residence. If they expire, you should retake the test and provide\
-      \ us with valid results. Otherwise, your application will be rejected as incomplete\
-      \ or may be refused.\n\nNote: Completing an Express Entry profile is the first\
-      \ step to immigrate to Canada permanently as a skilled worker. Completing an\
-      \ Express Entry profile does not guarantee that you will receive an Invitation\
-      \ to Apply for permanent residence. An Invitation to Apply for permanent residence\
-      \ will be based on your score and rank in the Express Entry pool using the Comprehensive\
-      \ Ranking System."
-  utter_faq/126:
-  - text: 'No, there are no exceptions to this rule. Each of the programs under Express
+  utter_faq/125: # Question: What are the language requirements for the Federal Skilled Workers Program?
+  - text: "You must prove your language skills by taking a third-party language test
+      from an agency designated by us.\n\n
+      
+      Your score on the language test must meet or exceed the minimum language threshold in
+      order to be eligible for the program. For the Federal Skilled Workers Program this 
+      thereshold is a CLB score of 7."
+  utter_faq/126: # Question: Are any Federal Skilled Worker immigration applicants exempt from the mandatory language test?
+  - text: "No, there are no exceptions to this rule. Each of the programs under Express
       Entry requires the submission of third-party language results. You will include
-      the results of your test(s) in your Express Entry profile. Canada wants to assess
-      all applicants against the same standards, no matter their language of origin,
-      nationality or ethnicity.
-
-      Even someone from an English-speaking country, who speaks English as a first
-      language, would need to take the test. Similarly, someone from a French-speaking
-      country, who speaks French as a first language, needs to take a test.
-
-
-      Note: Completing an Express Entry profile is the first step to immigrate to
-      Canada permanently as a skilled worker. Completing an Express Entry profile
-      does not guarantee that you will receive an Invitation to Apply for permanent
-      residence. An Invitation to Apply for permanent residence will be based on your
-      score and rank in the Express Entry pool using the Comprehensive Ranking System.'
-  utter_faq/127:
-  - text: 'First, you will know ahead of time whether or not your language abilities
-      qualify to immigrate to Canada under one of these programs.
+      the results of your test(s) in your Express Entry profile."
+  utter_faq/127: # Question: How does a third-party language test help me with my immigration process?
+  - text: "First, you will know ahead of time whether or not your language abilities
+      qualify to immigrate to Canada under one of these programs.\n\n
 
       Second, you will get an objective, realistic assessment of your language ability.
-      The test will also reveal areas where you could improve.
+      The test will also reveal areas where you could improve.\n\n
 
-      A third-party language test is the most efficient way to have your language
-      skills assessed. This helps us to process applications more quickly.
+      Third, a third-party language test is the most efficient way to have your language
+      skills assessed. This helps us to process applications more quickly.\n\n
 
       Also, many regulatory bodies and industries will need you to have language testing.
-      Taking the test gets you one step closer toward getting a job in Canada.
+      Taking the test gets you one step closer toward getting a job in Canada."
+  utter_faq/128: # Question: Where can I take a third-party language test for my immigration application?
+  - text: "- Canadian English Language Proficiency Index Program (CELPIP, General test) can 
+      be taken through Paragon Testing Enterprises Inc.\n\n
 
+      - International English Language Testing System (IELTS, General test) can be taken
+      through Cambridge Assessment English, IDP Australia and The British Council\n\n
 
-      Note: Completing an Express Entry profile is the first step to immigrate to
-      Canada permanently as a skilled worker. Completing an Express Entry profile
-      does not guarantee that you will receive an Invitation to Apply for permanent
-      residence. An Invitation to Apply for permanent residence will be based on your
-      score and rank in the Express Entry pool using the Comprehensive Ranking System.'
-  utter_faq/128:
-  - text: "Inside Canada:\n\nThe Canadian English Language Proficiency Index Program\
-      \ (General test) can be taken through Paragon Testing Enterprises Inc.\nThe\
-      \ International English Language Testing System (General test) can be taken\
-      \ through Cambridge Assessment English, IDP Australia and The British Council\n\
-      The Test d'\xE9valuation de fran\xE7ais (TEF Canada) can be taken through\
-      \ The Paris Chamber of Commerce and Industry.\nThe Test de connaissance du fran\xE7\
-      ais (TCF Canada) (in French only) can be taken through France Education International\
-      \ (FEI).\n\nOutside Canada:\n\nThe Canadian English Language Proficiency Index\
-      \ Program (General test) can be taken through Paragon Testing Enterprises Inc.\n\
-      The International English Language Testing System (General test) can be taken\
-      \ through Cambridge Assessment English, IDP Australia and The British Council.\n\
-      The Test d'\xE9valuation de fran\xE7ais (TEF Canada) can be taken through\
-      \ The Paris Chamber of Commerce and Industry.\nThe Test de connaissance du fran\xE7\
-      ais (TCF Canada) (in French only) can be taken through le France Education International\
-      \ (FEI).\n\nCheck the website of each approved language testing agency for test\
-      \ locations and dates."
-  utter_faq/129:
-  - text: "If you want to immigrate to the province of Quebec as a skilled worker,\
-      \ follow the steps below.\nUnder Canadian law, Quebec can select its own immigrants\
-      \ to settle in the province. However, these people must still meet our requirements\
-      \ to be admitted to Canada. See reasons for inadmissibility.\nStep 1\nContact\
-      \ the Minist\xE8re de l'Immigration, de la Diversit\xE9 et de l'Inclusion\
-      \ du Qu\xE9bec and apply for a Certificat de s\xE9lection du Qu\xE9bec (CSQ).\n\
-      Step 2\nIf Quebec approves your CSQ  application, mail a permanent residence\
-      \  application to the Centralized Intake Office (CIO) in Sydney, Nova Scotia,\
-      \ Canada. An IRCC officer will approve or refuse your application, based on\
-      \ the  information you provide."
-  utter_faq/130:
-  - text: "If you were educated outside Canada, you'll need an Educational Credential\
-      \ Assessment (ECA) for immigration purposes to immigrate as a federal skilled\
-      \ worker.\nIf you were educated in Canada, you don't need an ECA."
-  utter_faq/131:
-  - text: "You can get an ECA at any of the designated organizations listed below.\
-      \ We only accept assessments from these organizations.\nWhen they assess your\
-      \ education, they will give you a report that tells you what your education\
-      \ is equal to in Canada.\nWe only accept assessments issued on or after the\
-      \ date the organizations were designated to do ECA reports for immigration purposes.\
-      \ If you got a report before that date, contact the organization to see if they'\
-      ll re-issue it.\nAssessment of most foreign education\nYou must use an organization\
-      \ on our list. If an organization isn't on this list, we will not accept\
-      \ assessments from them.\n\nComparative Education Service: University of Toronto\
-      \ School of Continuing Studies\n\ndesignated April 17, 2013 \n\n\nInternational\
-      \ Credential Assessment Service of Canada\n\ndesignated April 17, 2013\n\n\n\
-      World Education Services\n\ndesignated April 17, 2013 \n\n\nInternational Qualifications\
-      \ Assessment Service (IQAS)\n\ndesignated August 6, 2015 \n\n\nInternational\
-      \ Credential Evaluation Service\n\ndesignated August 6, 2015 \n\n\n\nIf you\
-      \ aren't sure which organization to choose, contact them.\nAssessment for\
-      \ specialist and family physicians\nYou must get your report from the\_Medical\
-      \ Council of Canada (designated April 17, 2013) if your primary occupation is\n\
-      \nspecialist physician\n\t\t\n2016 NOC code 3111\n\n\ngeneral practitioner/family\
-      \ physician\n\t\t\n2016 NOC code 3112\n\n\n\nAssessment for pharmacists\nIf\
-      \ you are a pharmacist (NOC code 3131), where you need to get your report depends\
-      \ on your job.\nIf you need a licence to practise you must get your report from\
-      \ the\_Pharmacy Examining Board of Canada (designated January 6, 2014). This\
-      \ applies to you if you care for patients in a\n\nhospital pharmacy\nlong-term\
-      \ care facility\ncommunity pharmacy\n\nIf you do not need a licence for your\
-      \ job, you can get your assessment from any other designated ECA organization.\
-      \ This includes jobs where you may need a pharmacy degree but may not need to\
-      \ have a licence to practise, such as\n\nthe government\nthe pharmaceutical\
-      \ industry\n\nContact the regulatory body in the province where you plan to\
-      \ live to find out if you need a licence to practise."
-  utter_faq/132:
-  - text: 'No. Getting an ECA to meet the requirements of the Federal Skilled Worker
+      - Test d'Évaluation de français (TEF Canada) can be taken through
+      The Paris Chamber of Commerce and Industry.\n\n
+      
+      - Test de connaissance du français (TCF Canada) can be taken through France Education 
+      International (FEI).\n\n"
+  utter_faq/129: # Question: How can I immigrate to the province of Quebec as a skilled worker?
+  - text: "If you want to immigrate to the province of Quebec as a skilled worker,
+      follow the steps below.
+      
+      1. Contact the Ministère de l'Immigration, de la Diversité et de l'Inclusion 
+      du Québec and apply for a Certificat de sélection du Québec (CSQ).\n\n
+
+      2. If Quebec approves your CSQ  application, mail a permanent residence
+      application to the Centralized Intake Office (CIO) in Sydney, Nova Scotia,
+      Canada. An IRCC officer will approve or refuse your application, based on
+      the information you provide."
+  utter_faq/130: # Question: Do I need an Educational Credential Assessment (ECA) to apply as a federal skilled worker?
+  - text: "If you were educated outside Canada, you'll need an Educational Credential
+      Assessment (ECA) for immigration purposes to immigrate as a Federal Skilled
+      Worker.\n\n
+      
+      If you were educated in Canada, you don't need an ECA."
+  utter_faq/131: # Question: Where can I get an educational credential assessment (ECA)?
+  - text: "- Comparative Education Service (University of Toronto, School of Continuing Studies)\n\n
+  
+      - International Credential Assessment Service of Canada\n\n
+      
+      - World Education Services\n\n
+      
+      - International Qualifications Assessment Service (IQAS)\n\n
+      
+      - International Credential Evaluation Service\n\n
+      
+      - Medical Council of Canada (if you primary occupation is: specialist physician, 
+      general practitioner/family physician)\n\n
+      
+      For pharmacists, where you need to get your report depends
+      on your job: \n\n
+      
+      - If you need a licence to practise you must get your report from
+      the Pharmacy Examining Board of Canada.\n\n
+      
+      - If you do not need a licence for your job, you can get your assessment from any 
+      other designated ECA organization."
+  utter_faq/132: # Question: Does an Educational Credential Assessment (ECA) mean that I am licensed in a regulated profession?
+  - text: "No. Getting an ECA to meet the requirements of the Federal Skilled Worker
       Program does not mean that your work experience and professional credentials
       are automatically recognized in Canada. You must still go through the process
-      of getting your license.
+      of getting your license."
+  utter_faq/133: # Question: How much does an Educational Credential Assessment (ECA) cost, and how long does it take to get one?
+  - text: "Each designated organization sets its own cost for an ECA. For most, 
+      the cost is about $200 CAD or more to have it delivered. Delivery costs depend 
+      on how you choose it to be sent, with courier delivery being the most expensive.\n\n
 
-      Each province or territory in Canada has the power to regulate and license professions.
-      Licensing is generally done through provincial or territorial regulatory bodies.
-
-      If you plan to work in a regulated profession, you should contact the regulatory
-      authority in the province where you plan to work to find out more about how
-      to get a license.
-
-
-      Note: Completing an Express Entry profile is the first step to immigrate to
-      Canada permanently as a skilled worker. Completing an Express Entry profile
-      does not guarantee that you will receive an Invitation to Apply for permanent
-      residence. An Invitation to Apply for permanent residence will be based on your
-      score and rank in the Express Entry pool using the Comprehensive Ranking System.'
-  utter_faq/133:
-  - text: "To apply for immigration to Canada, you need to get an ECA for immigration\
-      \ purposes from a designated organization. Each designated organization sets\
-      \ its own cost for an ECA.\nFor most people, the cost is about CAN$200 plus\
-      \ the cost to have it delivered. Delivery costs depend on how you choose it\
-      \ to be sent, with courier delivery being the most expensive.\nThe fees for\
-      \ an ECA report and the length of time to get one vary and can change without\
-      \ notice.\nIf you're a family or specialist physician, or a pharmacist,\
-      \ the cost will be higher. You will need to contact the professional body that\
-      \ regulates your occupation to find out how much it will cost.\nThe time to\
-      \ get your education assessed is different for each designated organization\
-      \ or professional body. It can take from a few weeks to a few months."
-  utter_faq/134:
-  - text: "We will accept ECA reports for five years from the date they are issued,\
-      \ so long as they were issued on or after April\_17, 2013.\nIf  you got an ECA\
-      \ report before that date, you should contact the organization to  see if they\
-      \ will re-issue it."
-  utter_faq/135:
-  - text: "Usually, you should choose the highest level degree, diploma or certificate\
-      \ (or combination) that will award you the most points.\n For example, you would\
-      \ get more points for an ECA report that shows you have a Canadian equivalent\
-      \ of a master's degree than for one that shows you have the equivalent\
-      \ of a bachelor's degree.\n But, if you have more than one degree or diploma\
-      \ (if the highest is at least at a bachelor's level), you will get more\
-      \ points than a single bachelor's degree.\n For example, you hold \n\n\
-      a Bachelor's degree and a diploma or certificate or \ntwo Bachelor'\
-      s degrees\n\nIn this case, you need to get an ECA for each credential to get\
-      \ the maximum points.\nFind out more about getting your education assessed."
-  utter_faq/136:
-  - text: "To be eligible, you must:\n\nhave at least 12\_months of full-time (or\
-      \ an equal amount in part-time) skilled work experience in Canada in the three\
-      \ years before you apply, and\nmeet or exceed the required language levels needed\
-      \ for the National  Occupational Classification (NOC) skill level of your work\
-      \ experience in each  language ability (speaking, reading, writing and listening).\n\
-      \nTo find out if your work experience qualifies, search for it in the official\
-      \ list.\nThere are also other requirements you must meet.\n\nNote: Completing\
-      \ an Express Entry profile is the first step to  immigrate to Canada permanently\
-      \ as a skilled worker. Completing an Express  Entry profile does not guarantee\
-      \ that you will receive an Invitation to Apply  for permanent residence. An\
-      \ Invitation to Apply for permanent residence will be  based on your score and\
-      \ rank in the Express Entry pool using the Comprehensive Ranking System."
+      The fees for an ECA report and the length of time to get one vary and can change without
+      notice."
+  utter_faq/134: # Question: How long is an Educational Credential Assessment (ECA) report valid for?
+  - text: "Canada will accept ECA reports for five years from the date they are issued,
+      so long as they were issued on or after April 17, 2013."
+  utter_faq/135: # Question: What credential should I get assessed for immigration purposes?
+  - text: "Usually, you should choose the highest level degree, diploma or certificate
+      (or combination) that will award you the most points."
+  utter_faq/136: # Question: Am I eligible to apply as a permanent resident under the Canadian Experience Class?
+  - text: "To be eligible, you must:\n\nhave at least 12 months of full-time (or
+      an equal amount in part-time) skilled work experience in Canada in the three
+      years before you apply, and\nmeet or exceed the required language levels needed
+      for the National  Occupational Classification (NOC) skill level of your work
+      experience in each  language ability (speaking, reading, writing and listening).\n
+      \nTo find out if your work experience qualifies, search for it in the official
+      list.\nThere are also other requirements you must meet.\n\nNote: Completing
+      an Express Entry profile is the first step to  immigrate to Canada permanently
+      as a skilled worker. Completing an Express  Entry profile does not guarantee
+      that you will receive an Invitation to Apply  for permanent residence. An
+      Invitation to Apply for permanent residence will be  based on your score and
+      rank in the Express Entry pool using the Comprehensive Ranking System."
   utter_faq/137:
   - text: 'First you must fill out an Express Entry profile online to find out if
       you meet the minimum criteria for the Express Entry pool.
