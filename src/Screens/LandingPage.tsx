@@ -24,7 +24,7 @@ export default function LandingPage({ navigation }) {
       </Button>
       <ButtonSignup
         style={{ marginBottom: "15%" }}
-        onPress={() => navigation.navigate("Register")}
+        onPress={() => navigation.navigate("Onboarding")}
       >
         Sign Up
       </ButtonSignup>

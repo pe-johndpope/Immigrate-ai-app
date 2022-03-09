@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b44a03c-56bf-4bd8-813c-515223705f83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/LandingPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screens/LandingPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Screens/Onboarding/Onboarding.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screens/Onboarding/Onboarding.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Screens/Profile.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screens/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

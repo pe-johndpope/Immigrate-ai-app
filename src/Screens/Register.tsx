@@ -40,7 +40,7 @@ const RegisterScreen = ({ navigation }) => {
       lastName: name.value,
       phone: "+19998887777"
     })
-    navigation.navigate("Login");
+    navigation.navigate("Onboarding");
 
     // reset fields
     setName({value: "", error: ""})
