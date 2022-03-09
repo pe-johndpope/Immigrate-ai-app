@@ -11,12 +11,12 @@ import { theme } from "../components/theme";
 import { FiygeAuthContext } from "../Contexts";
 
 const Login = ({ navigation }) => {
-  const { authenticated, onSignInWithEmailAndPassword } = useContext(FiygeAuthContext)
+  const { authenticated, onboarded, onSignInWithEmailAndPassword } = useContext(FiygeAuthContext)
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
 
   if (authenticated) {
-    navigation.navigate("Dashboard");
+    navigation.navigate(onboarded ? "Onboarding" : "Dashboard");
     return null;
   }
 

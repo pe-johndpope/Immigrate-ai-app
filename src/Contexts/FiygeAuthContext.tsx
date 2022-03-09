@@ -168,9 +168,14 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
     formData.append("data[clients][user_id]", user.uid)
 
     try {
-      const res = await fetch(`${FIYGE}/immigrate_ai/clients/add?`, {
+      const authToken = await AsyncStorage.getItem(ACCESS_TOKEN)
+      console.log(authToken)
+      const res = await fetch(`${FIYGE}/immigrate_ai/clients/add.json`, {
         method: "POST",
-        body: formData
+        body: formData,
+        headers: { 
+          "Authorization": `Bearer ${authToken}`
+        }
       })
       const json = await res.json()
 
