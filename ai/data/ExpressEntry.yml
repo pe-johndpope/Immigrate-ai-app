@@ -484,7 +484,7 @@ nlu:
       - Can I add documents to my Express Entry application after submitting?
   - intent: faq/112
     examples: |
-      - Who is a federal skilled worker?
+      - What is a federal skilled worker?
       - What kinds of workers fall under the category of a federal skilled worker?
       - What occupations can make someone designated as a federal skilled worker?
       - What jobs are considered for federal skilled workers?

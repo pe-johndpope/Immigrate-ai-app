@@ -1640,9 +1640,9 @@ responses:
       The employer has to apply for one from Employment and Social Development Canada/Service Canada. 
       If they get a positive LMIA, they must give you a copy alongside their written job offer."
   utter_faq/83: # Question: What do you mean by Primary Occupation?
-  - text: Your primary occupation means the job you have experience in (within the
+  - text: "Your primary occupation means the job you have experience in (within the
       last ten years) and want to base your immigration application on, if you are
-      invited to apply.
+      invited to apply."
   utter_faq/84: # Question: Where can my National Occupation Classification code be found?
   - text: "Your National Occupation Classification (NOC) code is the number the job
       is listed under in Canada's official job classification system.\nFind
@@ -1726,7 +1726,7 @@ responses:
       and are authorized to work, you must keep working for the employer on your existing 
       permit and under the same conditions in order to keep your job offer points."
   utter_faq/93: # Question: What if I am invited to apply for Express Entry while waiting for a new work permit?
-  - text: "If you applied for a new work permit before your old one expired, you are
+  - text: "If you applied for a new work permit before your old one expired, you are 
       under 'implied status' until Canada makes a decision on your application.\n\n
       
       Job offer information from your current employer in your Express Entry profile 
@@ -1736,15 +1736,15 @@ responses:
       As long as you still have implied status at the time you apply, you do not need 
       to wait for your new work permit to be approved."
   utter_faq/94: # Question: I was invited to apply through Express Entry but my work permit expired. What do I do?
-  - text: "If you didn't apply for a new work permit before your original one
-      expired, it may cause your score to drop. This could cause you to not be eligible
+  - text: "If you didn't apply for a new work permit before your original one 
+      expired, it may cause your score to drop. This could cause you to not be eligible 
       anymore.\n\n
       
       If your score has dropped below the minimum cut-off for your round of invitations, you 
       should decline the invitation. If you submit your application anyway, Canada will refuse it, 
       and not refund your fees."
   utter_faq/95: # Question: I didn't get a Job Seeker Validation Code in the message you sent to my account. Why not?
-  - text: "If you got an Express Entry profile number but not a Job Seeker Validation
+  - text: "If you got an Express Entry profile number but not a Job Seeker Validation 
       Code you should contact Canada's immigration office using the Case Specific Enquiry form.\n\n
       
       https://secure.cic.gc.ca/enquiries-renseignements/canada-case-cas-eng.aspx"
@@ -1789,12 +1789,12 @@ responses:
 
       - Transfer between schools (designated learning institutions (DLIs))\n\n
 
-      - Restore your status as a visitor, student or worker (within 90 days of the date
+      - Restore your status as a visitor, student or worker (within 90 days of the date 
       your temporary resident status expired)\n\n
 
       - Submit applications for your family members"
   utter_faq/101: # Question: What is a personal document checklist?
-  - text: "A personal document checklist is a list of forms and documents you need
+  - text: "A personal document checklist is a list of forms and documents you need 
       to complete and send in with your application."
   utter_faq/102: # Question: What is a personal reference code?
   - text: "Your personal reference code is a unique code given to you through 'Come 
@@ -1821,19 +1821,18 @@ responses:
       session, and your online application will automatically be saved.\n\n
       
       If you are in an Express Entry profile or online application for permanent residence, 
-      click the grey 'Save and Exit' button at the bottom left of the 
-      page."
+      click the grey 'Save and Exit' button at the bottom left of the page."
   utter_faq/105: # Question: What does it mean when I electronically sign my online application?
-  - text: "By electronically signing your online application or online request, you
+  - text: "By electronically signing your online application or online request, you 
       are declaring that:\n\n
       
       - The information you have given in your application is true and\n\n 
 
       - The supporting documents you are sending are genuine."
   utter_faq/106: # Question: What do I do if the online application system is down?
-  - text: "There are times where the system will be down for routine maintenance.
+  - text: "There are times where the system will be down for routine maintenance. 
       You can visit 'Immigration, Refugees and Citizenship Canada' on Twitter for notifications
-      on when the system will be unavailable.
+      on when the system will be unavailable. 
 
       Notices will also be posted on Canada's website.
 
@@ -1843,241 +1842,161 @@ responses:
       7 days a week. More information is available on the GCKey page
       (https://clegc-gckey.gc.ca/j/eng/AB-01?ReqID=s2e6035e751e59d5433d86bd4f3b51ffc2626b2c37).\n\n
       
-      Sign-In Partner (SecureKey Concierge): 1-855-433-5397 (in North America), 1-855-224-1714
+      Sign-In Partner (SecureKey Concierge): 1-855-433-5397 (in North America), 1-855-224-1714 
       (Text), 1-800-7328-7358 (outside of North America)."
   utter_faq/108: # Question: How do I get a GCKey?
   - text: "To register for a GCKey:\n\n
   
-      1. Go to the sign in page and click the 'Continue
+      1. Go to the sign in page and click the 'Continue 
       to GCKey' button.\n\n
       
       2. Choose a user name and a password. Keep a copy of these and the security questions 
       in a safe place in case you forget."
-  utter_faq/109:
-  - text: "If you lost your GCKey password, you can create a new  password. Go to\
-      \ the sign-in page for GCKey and you'll be able to create a new  password\
-      \ after you answer the password recovery questions you previously set up  while\
-      \ registering for a GCKey.\nIf you lost your GCKey username, you will have \
-      \ to create a new GCKey. If you create  a new GCKey you can access an application\
-      \ by linking the application to your  new account.\nSee also: I recently reset\
-      \ my account, but I don't see my application. How can I get  it back?"
-  utter_faq/110:
-  - text: "Change your sign-in partner if you're using \"Choice Reward MasterCard\"\
-      \nStarting November 8, 2019, you will not be able to log in using \"CHOICE Rewards\
-      \ MasterCard.\" If you started an online application, submit it before November\
-      \ 8, 2019. If you don't, you'll need to start over.\n\nIf you have just reset\
-      \ your account because you lost your username and/or password, as a security\
-      \ measure we need to ask you questions about the application you submitted before\
-      \ we give you access to it.\nTo link an application you have in progress to\
-      \ your account, sign in to your account and click on \u201CLink application\
-      \ to this account\u201D under the heading \u201CWhat would you like to do today?\u201D\
-      \nYou will have to tell us specific information about the application you would\
-      \ like to access. Have a copy of your application form on hand as you will have\
-      \ to enter the information exactly as you did on your application form."
-  utter_faq/111:
-  - text: "Once you submit your online application for permanent residence, you can'\
-      t send more documents through your account unless we ask for them.\n If we ask\
-      \ for a document, you'll get a message in your account.\n To upload a document:\n\
-      \nSign in to your account.\nUnder \u201CView the applications you submitted\u201D\
-      \ click on \u201CCheck full application status.\u201D\nUnder \u201CDetails about\
-      \ your application status\u201D click on \u201CView submitted application.\u201D\
-      \ \nOn this page, you can upload the additional document the same way you uploaded\
-      \ the others when you first applied.\n\nIf you need to send documents that we\
-      \ didn't ask for (for example, an updated Travel History form), go to our\
-      \ Web form and follow the instructions."
-  utter_faq/112:
-  - text: "We have been returning fees paid to the Department for Federal Skilled\
-      \ Worker (FSW) applications affected by the backlog elimination announced in\
-      \ 2012.\nIf you applied to the FSW program before February\_27, 2008, and have\
-      \ not heard from us about whether a decision has been made based on the assessment\
-      \ of your application, you may be affected by this law. Please see how you can\
-      \ get your fee returned \u2013 archived.\n\nSkilled workers are chosen as permanent\
-      \ residents based on their education, work experience, knowledge of English\
-      \ and/or French, and other factors. These things often help them succeed in\
-      \ Canada.\nSince January 1, 2015, completing an Express Entry profile is the\
-      \ first step in immigrating to Canada permanently as a skilled worker under\
-      \ the:\n\nFederal Skilled Worker Program,\nFederal Skilled Trades Program, and\n\
-      Canadian Experience Class.\n\nUnder the Express Entry system, we will invite\
-      \ people to apply for permanent residence based on the information they enter\
-      \ in an online profile. You cannot apply directly to any of these programs unless\
-      \ we send you an invitation to apply.\nSkilled workers who want to live in Quebec\
-      \ apply under a separate category. The province of Quebec selects its own skilled\
-      \ workers. Applicants who intend to go to Quebec are known as \u201CQuebec-selected\u201D\
-      \ skilled workers."
-  utter_faq/113:
-  - text: "Under the Federal Skilled Worker (FSW) Program, arranged employment means\
-      \ you have a valid job offer from a Canadian employer.\nHaving a valid job offer\
-      \ affects you in two different ways: for eligibility under the FSWP, and later,\
-      \ for points towards your total score.\nArranged employment is worth 15 points\
-      \ on the FSW selection factors. (This is how we find if you are eligible for\
-      \ the FSW program through Express Entry).\nTo immigrate to Canada as a FSW,\
-      \ you must complete an Express Entry profile and be invited to apply. \nUnder\
-      \ Express Entry, if you have a valid job offer from a Canadian employer, you\
-      \ can earn between 50 and 200 points under the Comprehensive Ranking System.\
-      \ This depends on the type of job. It will give you a better chance of being\
-      \ invited to apply at the next round of invitation. \nFor either, a job offer\
-      \ must be in writing, and must set out details of the job they are offering\
-      \ you, such as:\n\nyour pay and deductions\nyour job duties\nconditions of employment,\
-      \ like your hours of work.\n\nA work permit on its own is not a job offer, even\
-      \ if it is an open work permit."
-  utter_faq/114:
-  - text: "The minimum requirements for federal skilled workers are:\nSkilled work\
-      \ experience\n You must have at least one year, in the last ten years before\
-      \ you submit your electronic application for permanent residence, of continuous\
-      \ full-time work experience (or the equivalent in continuous part-time work)\
-      \ in a skilled occupation listed in Skill Type 0, or Skill Level A or B of the\
-      \ 2016 version of Canada's National Occupational Classification (NOC).\n\
-      Language ability\nYou must show that you meet or exceed the language threshold\
-      \ of Canadian Language Benchmark (CLB)\_7 with test results from a IRCC-designated\
-      \ language testing organization.\nEducation\nYou must provide either a Canadian\
-      \ educational credential or a foreign educational credential with an Educational\
-      \ Credential Assessment report for immigration purposes from a designated organization\
-      \ to prove that your overseas diploma, degree, or certificate is equivalent\
-      \ to a completed Canadian educational credential. (Points will be awarded based\
-      \ on the completed Canadian educational credential or the value of the foreign\
-      \ educational credential in Canadian standards.)\nIf you meet all the minimum\
-      \ requirements, we will assess your application based on the selection factors\
-      \ in the federal skilled worker points grid.\n\nNote: Completing an Express\
-      \ Entry profile is the first step to immigrate to Canada permanently as a skilled\
-      \ worker. Completing an Express Entry profile does not guarantee that you will\
-      \ receive an Invitation to Apply for permanent residence. An Invitation to Apply\
-      \ for permanent residence will be based on your score and rank in the Express\
-      \ Entry pool using the Comprehensive Ranking System."
-  utter_faq/115:
-  - text: "You can find the CLB level of your language test results for CELPIP, IELTS\
-      \ or TEF, with our\_language test equivalency charts.\nThe CLB level is what\
-      \ you will use on your permanent residence application."
-  utter_faq/116:
-  - text: "To be selected as a federal skilled worker, you need a minimum skill level\
-      \ of at least Canadian Language Benchmark (CLB)\_7 in each of the four abilities\
-      \ (speaking, listening, reading, and writing). You must meet the threshold in\
-      \ all four abilities or your Express Entry profile will not be considered under\
-      \ the Federal Skilled Worker program.\n In the case that you have a proven medical\
-      \ disability preventing you from being able to obtain a score in one or more\
-      \ of the four skill areas, you are required to include the average score based\
-      \ on your assessed abilities. Use the Comprehensive Ranking System \u2013 Language\
-      \ tool to find out on how to do this."
-  utter_faq/117:
-  - text: "Completing an Express Entry profile is the first step to immigrate to Canada\
-      \ permanently as a federal skilled worker. You will need to complete an Express\
-      \ Entry profile and meet the minimum criteria to be accepted into the pool.\n\
-      \ If you are interested in the Federal Skilled Worker stream, you will need\
-      \ to meet, at minimum, the pass mark of 67 points out of 100 on the Federal\
-      \ Skilled Worker grid.\n If you are accepted into the Express Entry pool, you\
-      \ are not guaranteed to receive an Invitation to Apply for permanent residence.\
-      \ An Invitation to Apply for permanent residence will be based on your score\
-      \ and rank in the Express Entry pool using the Comprehensive Ranking System."
-  utter_faq/118:
-  - text: "If you meet the criteria to get into the Express Entry pool: Yes. If you\
-      \ are 47 or over, you will not get any points under the Age factor of the Comprehensive\
-      \ Ranking System, but you may get points for other factors such as a job offer,\
-      \ your skills, your language abilities, etc. You may still be invited to apply\
-      \ based on your CRS score and your rank in the pool.\nIf you receive an Invitation\
-      \ to Apply for permanent residence through the Express Entry system under the\
-      \ FSW program: Yes. If you are over 47, you will not get any points under the\
-      \ Age factor of the FSW selection grid, but you can still apply.\_ The applicant's\
-      \ age is worth 12 percent of the overall selection criteria on the FSW selection\
-      \ grid.\n\nNote: Completing an Express Entry profile is the first step to immigrate\
-      \ to Canada permanently as a federal skilled worker. Completing an Express Entry\
-      \ profile does not guarantee that you will receive an Invitation to Apply for\
-      \ permanent residence. An Invitation to Apply for permanent residence will be\
-      \ based on your score and rank in the Express Entry pool using the Comprehensive\
-      \ Ranking System."
-  utter_faq/119:
-  - text: "In most cases, your current employer does not need to re-apply if they\
-      \ already got a Labour Market Impact Assessment (LMIA) to hire you.\nFor example,\
-      \ they do not need to re-apply if:\n\nyour work permit is still valid\nyou still\
-      \ work for the same employer (in a skilled job) as listed on your work permit\n\
-      you work in a job listed as Skill Type 0, or Skill Level A or B in the 2016\
-      \ National Occupational Classification, and\nthat employer already got an LMIA\
-      \ to hire you before. \n\nIf you are working in Canada on a work permit that\
-      \ does not need an LMIA, your employer doesn't need to get one to make\
-      \ your job offer valid.\nWhen you create your Express Entry profile, you can\
-      \ show that you have a job offer. If we invite you to apply, you will need to\
-      \ submit a copy of the documents with your application.\nBut, if you plan to\
-      \ work for a different employer and want job offer points (or a valid job offer\
-      \ for the Federal Skilled Worker or the Federal Skilled Trades programs), your\
-      \ new employer will usually need to apply for a new LMIA (unless the job is\
-      \ exempt).\nYou must complete an Express Entry profile as the first step to\
-      \ immigrate to Canada permanently as a skilled worker."
-  utter_faq/120:
-  - text: "It depends on why your permit is exempt from a Labour Market Impact Assessment\
-      \ (LMIA).\nUnder Express Entry, some LMIA-exempt jobs count towards job offer\
-      \ points. For example, if you are working in Canada on a LMIA-exempt work permit\
-      \ that was issued\_under an international agreement or Federal-Provincial-Territorial\
-      \ agreement (or certain other cases), you don't need your current employer\
-      \ to get an LMIA for your job offer to be valid.\nIf your work permit is LMIA-exempt\
-      \ for any other reason, your employer still needs to get an LMIA to improve\
-      \ your chances of being invited to apply. These exemptions apply to temporary\
-      \ workers, but not to Express Entry. A valid job offer supported by an LMIA\
-      \ could get you more points under the Comprehensive Ranking System.\nA work\
-      \ permit on its own is not a job offer, even if it is an open work permit. You\
-      \ need a written offer. Find out more about valid job offers.\nFind out more\
-      \ about which types of jobs don't need an LMIA."
-  utter_faq/121:
-  - text: "Not necessarily.\nIf you are working in Canada on a post-graduation work\
-      \ permit, and have a valid job offer, your current employer will need to get\
-      \ an LMIA if:\n\nyou need one to meet the program requirements for the FSWP\
-      \ or the FSTP and\nyour job is not exempt.\n\nIf a job is exempt, it means your\
-      \ employer does not need an LMIA to support your job offer.\nIf you are invited\
-      \ under the Canadian Experience Class, you don't need an LMIA to meet the\
-      \ program requirements.\nBut, a valid job offer supported by an LMIA can get\
-      \ you more points under the Comprehensive Ranking System. This can improve your\
-      \ chances of being invited to apply. So in that case, your employer may want\
-      \ to get an LMIA, even though you don't need it to be eligible.\nYou must\
-      \ complete an Express Entry profile as the first step to immigrate to Canada\
-      \ permanently as a skilled worker."
-  utter_faq/122:
-  - text: "The maximum amount of points for the adaptability factor is\_10.\nYou can\
-      \ get them by adding up the points from up to two criteria. Even if more than\
-      \ two of these apply to you and your spouse, you can only get 10 points in total.\n\
-      Find out more about how to get points for adaptability."
-  utter_faq/123:
-  - text: 'You may be able to count experience as a teaching, research or lab assistant
-      at a post-secondary educational institution, (see National Occupation Classification
-      4012) toward the work experience requirement, depending on the eligibility criteria
+  utter_faq/109: # Question: What do I do if I lost my GCKey username or password?
+  - text: "If you lost your GCKey password, you can create a new password. Go to 
+      the sign-in page for GCKey and you'll be able to create a new password 
+      after you answer the password recovery questions you previously set up while 
+      registering for a GCKey.\nIf you lost your GCKey username, you will have 
+      to create a new GCKey."
+  utter_faq/110: # Question: I recently reset my account, but I don't see my application. How can I get it back?
+  - text: "If you have just reset your account because you lost your username and/or 
+      password, as a security 
+      measure the website will ask you questions about the application you submitted.\n\n
+      
+      To link an application you have in progress to 
+      your account, sign in to your account and click on 'Link application 
+      to this account' under the heading 'What would you like to do today?'\n\n
+      
+      Have a copy of your application form on hand as you will have 
+      to enter the information exactly as you did on your application form."
+  utter_faq/111: # Question: Can I add documents to my Express Entry application after submitting?
+  - text: "Once you submit your online application for permanent residence, you can't 
+      send more documents through your account unless they are asked for.\n If you are asked 
+      for a document, you'll get a message in your account. To upload a document:\n\n
+      
+      1. Sign in to your account.
+      
+      2. Under 'View the applications you submitted' click on 'Check full application status.'\n\n
+      
+      2. Under 'Details about your application status' click on 'View submitted application.', 
+      On this page, you can upload the additional document the same way you uploaded 
+      the others when you first applied.\n\n
+      
+      If you need to send documents that was not asked for (for example, an updated Travel 
+      History form), go to our Web form and follow the instructions."
+  utter_faq/112: # Question: What is a federal skilled worker?
+  - text: "Skilled workers are chosen as permanent 
+      residents based on their education, work experience, knowledge of English 
+      and/or French, and other factors. These things often help them succeed in 
+      Canada."
+  utter_faq/113: # Question: What is arranged employment for the Federal Skilled Worker Program?
+  - text: "Under the Federal Skilled Worker (FSW) Program, arranged employment means 
+      you have a valid job offer from a Canadian employer.\nHaving a valid job offer 
+      affects you a few different ways\n
+      
+      - You gain 15 points on the Federal Skilled Workers selection factors.
+      
+      - You can earn between 50 and 200 points under the Comprehensive Ranking System 
+      for all Express Entry programs.\n\n
+      
+      For either, a job offer must be in writing, and must set out details of the job they 
+      are offering you, such as:\n\n
+      
+      - Your pay and deductions\n\n
+      - Your job duties\n\n
+      - Conditions of employment (i.e., your hours of work.)"
+  utter_faq/114: # Question: What are the minimum requirements to apply as a federal skilled worker?
+  - text: "The minimum requirements for federal skilled workers are:\n\n
+      - At least one year of continuous 
+      full-time work experience (or the equivalent in continuous part-time work) 
+      in a skilled occupation listed in NOC code 0, A, or B of the.\n\n
+
+      - Meet or exceed the language threshold of CLB 7 with test results from a IRCC-designated 
+      language testing organization.\n\n
+      
+      - A Canadian educational credential or an Educational Credential Assessment (for foreign 
+      educations) report for immigration purposes from a designated organization 
+      to prove that your overseas diploma, degree, or certificate is equivalent 
+      to a completed Canadian education credential.\n\n
+      
+      If you meet all the minimum requirements, Canada will assess your application based on the 
+      selection factors in the federal skilled worker points grid."
+  utter_faq/115: # Question: How do I find my Canadian Language Benchmark (CLB) level with my test results?
+  - text: "You can find the CLB level of your language test results for CELPIP, IELTS 
+      or TEF, with our language test equivalency charts:\n\n
+
+      https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/standard-requirements/language-requirements/test-equivalency-charts.html\n\n
+      
+      The CLB level is what you will use on your permanent residence application."
+  utter_faq/116: # Question: If I do not meet the language threshold in one of the four skill areas, can I still submit an Express Entry profile?
+  - text: "No, you must meet the threshold in all four abilities or your Express Entry 
+      profile will not be considered under the Federal Skilled Worker program.\n\n In the 
+      case that you have a proven medical disability preventing you from being able to 
+      obtain a score in one or more of the four skill areas, you are required to include 
+      the average score based on your assessed abilities."
+  utter_faq/117: # Question: What is the pass mark for the federal skilled worker selection grid?
+  - text: "If you are interested in the Federal Skilled Worker stream, you will need 
+      to meet, at minimum, the pass mark of 67 points out of 100 on the Federal 
+      Skilled Worker grid."
+  utter_faq/118: # Question: Can I be chosen to apply for permanent residence as a federal skilled worker if I am 47 years old or over?
+  - text: "Yes. If you are 47 or over, you will not get any points under the Age factor of the Comprehensive 
+      Ranking System, but you may get points for other factors such as a job offer, 
+      your skills, your language abilities, and more. The combinations of the other sections 
+      can still be enough for you to recieve an ITA."
+  utter_faq/119: # Question: The employer I work for temporarily in Canada wants to offer me a full-time job. Will I need a new LMIA for Express Entry?
+  - text: "In most cases, your current employer does not need to re-apply if they 
+      already got a Labour Market Impact Assessment (LMIA) to hire you, but if you plan to 
+      work for a different employer and want job offer points, your new employer will 
+      usually need to apply for a new LMIA (unless the job is exempt)."
+  utter_faq/120: # Question: I work in Canada on an LMIA-exempt work permit. How do I get job offer points for Express Entry?
+  - text: "It depends on why your permit is exempt from a Labour Market Impact Assessment 
+      (LMIA). Under Express Entry, some LMIA-exempt jobs count towards job offer 
+      points. For example, if you are working in Canada on a LMIA-exempt work permit 
+      that was issued under an international agreement or Federal-Provincial-Territorial 
+      agreement (or certain other cases), you don't need your current employer 
+      to get an LMIA for your job offer to be valid.\nIf your work permit is LMIA-exempt 
+      for any other reason, your employer still needs to get an LMIA to improve 
+      your chances of being invited to apply."
+  utter_faq/121: # Question: Do I need a LMIA if I am working in Canada on a post-graduation work permit?
+  - text: "Not necessarily.\nIf you are working in Canada on a post-graduation work 
+      permit, and have a valid job offer, your current employer will need to get 
+      an LMIA if:\n\n
+      
+      - You need one to meet the program requirements for the Federal Skilled Workers 
+      or Federal Skilled Trades Program, and\n\n
+      
+      - If your job is not exempt.\n\n
+      
+      A valid job offer supported by an LMIA can still get you more points under the 
+      Comprehensive Ranking System (CRS). This can improve your 
+      chances of being invited to apply. So in that case, your employer may want 
+      to get an LMIA, even though you don't need it to be eligible."
+  utter_faq/122: # Question: How can I get the most possible points for the Adaptability factor under the Federal Skilled Worker program?
+  - text: "The maximum amount of points for the adaptability factor is 10.\nYou can 
+      get them by adding up the points from up to two criteria. Even if more than 
+      two of these apply to you and your spouse, you can only get 10 points in total.\n\n
+      
+      Find out hwo you can gain these points:\n\n
+      
+      https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers/six-selection-factors-federal-skilled-workers.html"
+  utter_faq/123: # Question: Can I count my work as a teaching assistant toward the work experience requirement?
+  - text: "You may be able to count experience as a teaching, research or lab assistant 
+      at a post-secondary educational institution, (see National Occupation Classification 
+      4012) toward the work experience requirement, depending on the eligibility criteria 
       of the programs.
 
-      If after submitting your Express Entry profile you are invited to apply, you
-      must show that you did the job as described in the occupational description
-      of the NOC, meaning that you did all the essential duties and most of the main
-      duties listed. If you do not show that your experience meets the description
-      in NOC, your application will be refused.
-
-      To be considered under the Canadian Experience Class:
-
-      You cannot count work experience you gained while enrolled as a full-time student.
-      Your work experience must have been gained while on a valid work permit, such
-      as the Post-Graduation Work Permit.
-
-      You must have gained the equivalent amount of experience as someone who worked
-      full-time for at least one year (1,560 hours) in the three years before you
-      submit your Express Entry profile.
-
-      To be considered under the Federal Skilled Worker Program:
-
-      Your work experience must have been full-time (or the equivalent in part-time
-      hours), worked continuously and paid, for at least one year in the same occupation.
-
-
-      Note: Completing an Express Entry profile is the first step to immigrate to
-      Canada permanently as a skilled worker. Completing an Express Entry profile
-      does not guarantee that you will receive an Invitation to Apply for permanent
-      residence. An Invitation to Apply for permanent residence will be based on your
-      score and rank in the Express Entry pool using the Comprehensive Ranking System.'
-  utter_faq/124:
-  - text: "Yes, provided that it is still valid and that it's an ECA for immigration\
-      \ purposes.\nImmigration, Refugees and Citizenship Canada (IRCC) will accept\
-      \ ECA reports for five years from the date they are issued.\nWhen creating your\
-      \ Express Entry profile, in your educational history you will be asked to include\
-      \ certain details from your ECA report. Keep your ECA report in a safe and accessible\
-      \ place as you may be requested to submit it if you are invited to apply.\n\n\
-      Note: Completing an Express Entry profile is the first step to immigrate to\
-      \ Canada permanently as a skilled worker. Completing an Express Entry profile\
-      \ does not guarantee that you will receive an Invitation to Apply for permanent\
-      \ residence. An Invitation to Apply for permanent residence will be based on\
-      \ your score and rank in the Express Entry pool using the Comprehensive Ranking\
-      \ System."
+      If after submitting your Express Entry profile you are invited to apply, you 
+      must show that you did the job as described in the occupational description 
+      of the NOC, meaning that you did all the essential duties and most of the main 
+      duties listed. If you do not show that your experience meets the description 
+      in NOC, your application will be refused."
+  utter_faq/124: # Question: Can I re-use my Educational Credential Assessment (ECA) report to submit my Express Entry profile?
+  - text: "Yes, provided that it is still valid and that it's an ECA for immigration 
+      purposes.\nImmigration, Refugees and Citizenship Canada (IRCC) will accept 
+      ECA reports for five years from the date they are issued.\n\n
+      
+      Keep your ECA report in a safe and accessible place as you may be requested to 
+      submit it (or give information from it) if you are invited to apply."
   utter_faq/125:
   - text: "You must prove your language skills by taking a third-party language test\
       \ from an agency designated by us.\n When creating your Express Entry profile,\
