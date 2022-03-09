@@ -2164,130 +2164,58 @@ responses:
   - text: "Yes, you can be eligible for the Canadian Experience Class so long as
       you still meet the requirements under the class."
   utter_faq/146: # Question: What are the language requirements I need to meet in order to apply for permanent residence under the Canadian Experience Class?
-  - text: "The Canadian Language Benchmark (CLB) is the Canadian standard used  to\
-      \ describe, measure and recognize language ability of adult immigrants and \
-      \ prospective immigrants who plan to live and work in Canada. To apply under\
-      \ the  Canadian Experience Class you will need to take a language test that\
-      \ is  approved by Immigration, Refugees and Citizenship Canada and demonstrate\
-      \ that you meet the language requirements for your occupation. Your  test results\
-      \ need to be included with your application.\n  If  your work experience is\
-      \ in National  Occupational Classification (NOC) skill type 0 or skill level\
-      \ A occupations,  you must meet the minimum level of CLB\_7 in each language\
-      \ ability (speaking,  reading, writing and listening). If your work experience\
-      \ is in NOC skill level B  occupations, you must meet the minimum level of CLB\_\
-      5 in each language ability  (speaking, reading, writing and listening). If you\
-      \ do not meet the minimum  language skills needed for your NOC category, your\
-      \ application will not be  processed. \n\nNote: Completing an Express Entry\
-      \ profile is the first step to  immigrate to Canada permanently as a skilled\
-      \ worker. Completing an Express  Entry profile does not guarantee that you will\
-      \ receive an Invitation to Apply  for permanent residence. An Invitation to\
-      \ Apply for permanent residence will be  based on your score and rank in the\
-      \ Express Entry pool using the Comprehensive Ranking System."
-  utter_faq/147:
-  - text: "Yes, as long as you gained skilled work experience of at least one year\
-      \ in an occupation listed under the 2016 National Occupational Classification\
-      \ (NOC) as Skill Type\_0 (managerial occupations), Skill Level A (professional\
-      \ occupations) or Skill level B (technical and trade occupations).\nYour work\
-      \ experience must have been gained in Canada within the three years before we\
-      \ receive your Canadian Experience Class application. Work experience gained\
-      \ while studying full time on a student permit (for example, experience gained\
-      \ while on co-op) does not count.\n\nNote: Completing an Express Entry profile\
-      \ is the first step to  immigrate to Canada permanently as a skilled worker.\
-      \ Completing an Express  Entry profile does not guarantee that you will receive\
-      \ an Invitation to Apply  for permanent residence. An Invitation to Apply for\
-      \ permanent residence will be  based on your score and rank in the Express Entry\
-      \ pool using the Comprehensive Ranking System."
-  utter_faq/148:
-  - text: "You may be able to apply to immigrate permanently after you graduate. To\
-      \ do so, you need one year of skilled work experience in Canada.\nThe year of\
-      \ skilled work experience must be in a job that is listed in the 2016 National\
-      \ Occupation Classification as:\n\nSkill Type\_0 (managerial occupations)\n\
-      Skill Level A (professional occupations) or\nSkill level B (technical and trade\
-      \ occupations).\n\nTo qualify, you must also meet our language standards (depending\
-      \ on your job).\nOne way to get this work experience is through a post-graduation\
-      \ work permit. You can get one if you graduate from certain Canadian post-secondary\
-      \ schools. To qualify, the school must take part in our Post-Graduation Work\
-      \ Permit Program.\nStudents can now also earn additional Comprehensive Ranking\
-      \ Score points for study in Canada above high school:\n\n15 points for a one-\
-      \ or two-year diploma or certificate\n30 points for a degree, diploma or certificate\
-      \ of three years or longer, or a Master's, professional or doctoral degree\
-      \ of at least one year.\n\nYou must complete an Express Entry profile as the\
-      \ first step to immigrate to Canada permanently as a skilled worker."
-  utter_faq/149:
-  - text: "Yes. All applicants must provide proof of language ability in one of Canada'\
-      s two official languages. You must give us official test results designated\
-      \ by Immigration, Refugees and Citizenship Canada. See more information on language\
-      \ testing.\n\nNote: Completing an Express Entry profile is the first step to\
-      \  immigrate to Canada permanently as a skilled worker. Completing an Express\
-      \  Entry profile does not guarantee that you will receive an Invitation to Apply\
-      \  for permanent residence. An Invitation to Apply for permanent residence will\
-      \ be  based on your score and rank in the Express Entry pool using the Comprehensive\
-      \ Ranking System."
-  utter_faq/150:
-  - text: "Work experience gained while you were on a study permit will not count\
-      \ towards meeting the Canadian Experience Class requirements.\nBut, you may\
-      \ still be eligible if you: \n\nalready gained one year of skilled Canadian\
-      \ work experience while you were not on a study permit, and \nmeet the language\
-      \ threshold for that occupation .\n\n\nNote: Completing an Express Entry profile\
-      \ is the first step to  immigrate to Canada permanently as a skilled worker.\
-      \ Completing an Express  Entry profile does not guarantee that you will receive\
-      \ an Invitation to Apply  for permanent residence. An Invitation to Apply for\
-      \ permanent residence will be  based on your score and rank in the Express Entry\
-      \ pool using the Comprehensive Ranking System."
-  utter_faq/151:
-  - text: 'To apply for permanent residence under the Canadian Experience Class, your
-      skilled work experience must:
+  - text: "To apply under the Canadian Experience Class you will need to take a language test that
+      is approved by Immigration, Refugees and Citizenship Canada and demonstrate
+      that you meet the language requirements for your occupation. Your test results
+      need to be included with your application.\n\n
+      
+      If your work experience is in NOC skill type 0 or skill level A occupations, 
+      you must meet the minimum level of CLB 7 in each language
+      ability (speaking, reading, writing and listening). \n\n
+      
+      If your work experience is in NOC skill level B occupations, you must meet the 
+      minimum level of CLB 5 in each language ability (speaking, reading, writing and 
+      listening).\n\n
+      
+      If you do not meet the minimum language skills needed for your NOC category, your
+      application will not be processed."
+  utter_faq/147: # Question: I graduated a while ago, then earned one-year of work experience and now I am back in school. Can I apply for permanent residence under the Canadian Experience Class?
+  - text: "Yes, as long as you gained skilled work experience of at least one year
+      in an occupation in NOC types 0, A, or B.\n\n
 
-
-      be in a job classified as skill type 0, or skill level A or B according to the
-      2016 National Occupational Classification,
-
-      amount to at least one year of full-time (or an equal amount in part-time) in
-      the previous three years,
-
-      have been with an employer in Canada (self-employment does not count),
-
-      be gained with the proper legal authorization (for example, as a documented
-      worker with a valid work permit), and
-
-      not be gained while you were studying on a student permit.
-
-
-
-      Note: Completing an Express Entry profile is the first step to  immigrate to
-      Canada permanently as a skilled worker. Completing an Express  Entry profile
-      does not guarantee that you will receive an Invitation to Apply  for permanent
-      residence. An Invitation to Apply for permanent residence will be  based on
-      your score and rank in the Express Entry pool using the Comprehensive Ranking
-      System.'
-  utter_faq/152:
-  - text: "No. You can only count work experience in one or more of these 2016 National\
-      \ Occupational Classification (NOC) categories:\n\nSkill Type 0 (managerial\
-      \ occupations),\nSkill Level A (professional occupations) or\nSkill Level B\
-      \ (technical occupations and skilled trades), except for the six ineligible\
-      \ occupations (listed below). \n\nYou cannot count work experience in these\
-      \  National Occupational Classification (NOC) categories:\n\nSkill Level C,\
-      \ or \nSkill Level D. \n\n National Occupational Classification (NOC) Skill\
-      \ Levels\_C and\_D occupations include semi- and low-skilled workers in the\
-      \ trades, primary and manufacturing industries, sales and services, as well\
-      \ as certain clerical and assistant categories.\n\nNote: Completing an Express\
-      \ Entry profile is the first step to  immigrate to Canada permanently as a skilled\
-      \ worker. Completing an Express  Entry profile does not guarantee that you will\
-      \ receive an Invitation to Apply  for permanent residence. An Invitation to\
-      \ Apply for permanent residence will be  based on your score and rank in the\
-      \ Express Entry pool using the Comprehensive Ranking System."
-  utter_faq/153:
-  - text: "No. Under the Canadian Experience Class, you must have had temporary resident\
-      \ status and the proper work or study authorization when you gained the Canadian\
-      \ work experience or educational credential you are claiming. \nRefugee claimants\
-      \ who have authorization to work or study while waiting for a decision on their\
-      \ claim do not have temporary resident status and cannot apply under this category.\n\
-      \nNote: Completing an Express Entry profile is the first step to  immigrate\
-      \ to Canada permanently as a skilled worker. Completing an Express  Entry profile\
-      \ does not guarantee that you will receive an Invitation to Apply  for permanent\
-      \ residence. An Invitation to Apply for permanent residence will be  based on\
-      \ your score and rank in the Express Entry pool using the Comprehensive Ranking\
-      \ System."
+      Your work experience must have been gained in Canada within the three years 
+      before we receive your Canadian Experience Class application. Work experience 
+      gained while studying full time on a student permit (for example, experience 
+      gained while on co-op) does not count."
+  utter_faq/148: # Question: I am currently studying in Canada. Can I immigrate permanently?
+  - text: "You may be able to apply to immigrate permanently after you graduate. To
+      do so, you must meet the requirements for at least one Express Entry program.
+      If you complete you credential before applying however, your application will 
+      have a higher chance of being accepted."
+  utter_faq/149: # Question: I am from an English-speaking country. Do I still need to provide proof of language ability to apply under the Canadian Experience Class?
+  - text: "Yes. All applicants must provide proof of language ability in one of Canada's 
+      two official languages. You must give us official test results designated
+      by Immigration, Refugees and Citizenship Canada."
+  utter_faq/150: # Question: I have a PhD and am in a post-doctoral program. Do I qualify for the Canadian Experience Class?
+  - text: "You may still be eligible if you have already gained one year of skilled Canadian
+      work experience while you were not on a study permit, and meet the language
+      threshold for that occupation (according to the Canadian Experience Class requirements)."
+  utter_faq/151: # Question: What kind of work experience do I need to apply for permanent residence under the Canadian Experience Class?
+  - text: "To apply for permanent residence under the Canadian Experience Class, your
+      skilled work experience must be in a job classified as NOC type 0, A, or B. The 
+      work must also have been done under the proper authorization, under a canadian 
+      employer, and cannot have been completed while you were a student."
+  utter_faq/152: # Question: Can I count both high-skilled and low-skilled experience toward the work experience required to apply under the Canadian Experience Class?
+  - text: "No. You can only count work experience if one or more of your skilled work 
+  experience is in a job classified as NOC type 0, A, or B."
+  utter_faq/153: # Question: Can I count experience I got in Canada while waiting for a decision on my refugee application?
+  - text: "No, you must have had temporary resident status and the proper work or study 
+      authorization when you gained the Canadian work experience or educational credential 
+      you are claiming. \n\n
+      
+      Refugee claimants who have authorization to work or study while 
+      waiting for a decision on their claim do not have temporary resident status and 
+      therefore still cannot apply under this category."
   utter_faq/154:
   - text: 'You can count part-time work toward the work experience requirement, as
       long as you were not a full-time student at the time.
