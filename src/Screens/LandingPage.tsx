@@ -1,5 +1,8 @@
 import React, { useContext } from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View,TouchableOpacity, Dimensions, Text, StatusBar} from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+const { width, height } = Dimensions.get("window");
+import { theme } from "../components/theme";
 
 import Onboarding from "../components/Onboarding";
 import Button from "../components/Button";
@@ -14,21 +17,39 @@ export default function LandingPage({ navigation }) {
   }
 
   return (
-    <View style={styles.container}>
+    <LinearGradient
+    style={styles.gradientBackgroundStyle}
+    colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF",]}>
+      <StatusBar
+         translucent backgroundColor="transparent" 
+        barStyle="dark-content"
+        hidden={false}
+      />
       <Onboarding />
-      <Button
-        style={{ marginBottom: "2%" }}
-        onPress={() => navigation.navigate("Login")}
-      >
-        Login
-      </Button>
-      <ButtonSignup
-        style={{ marginBottom: "15%" }}
-        onPress={() => navigation.navigate("Onboarding")}
-      >
-        Sign Up
-      </ButtonSignup>
-    </View>
+      <View style = {{flex: 0.2, alignItems: "center",}}>
+      <TouchableOpacity
+          style={styles.buttonTouchableStyle}
+          onPress={() => navigation.navigate("Register")}
+        >
+          <LinearGradient
+            colors={["#605599", "#493d8a","#605599"]}
+            style={styles.gradientButtonStyle}
+          >
+            <Text
+              style={styles.buttonTextStyle}
+            >
+              Create an Account
+            </Text>
+          </LinearGradient>
+        </TouchableOpacity>
+        <View style={styles.row}>
+        <Text style={styles.label}>Already have an account? </Text>
+        <TouchableOpacity onPress={() => navigation.navigate("Login")}>
+          <Text style={styles.link}>Login</Text>
+        </TouchableOpacity>
+      </View>
+      </View>
+    </LinearGradient>
   );
 }
 
@@ -38,5 +59,42 @@ const styles = StyleSheet.create({
     backgroundColor: "#EFF5F8",
     alignItems: "center",
     justifyContent: "center",
+  },
+  gradientBackgroundStyle: {
+    flex: 1,
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  gradientButtonStyle:{
+    width: width * 0.6,
+    height: height * 0.074,
+    borderRadius: 32,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  buttonTextStyle:{
+    fontSize:18,
+    fontFamily: "Avenir Next",
+    color: "#FFFFFF", 
+    fontWeight: "600",
+  },
+  buttonTouchableStyle:{
+    shadowColor: "#ffffff",
+    shadowOpacity: 0.7,
+    shadowRadius: 4,
+  },
+  label: {
+    color: theme.colors.secondary,
+    fontFamily: 'Avenir Next'
+  },
+  row: {
+    flexDirection: "row",
+    marginTop: 4,
+  },
+  link: {
+    fontWeight: "bold",
+    fontFamily: "Avenir Next",
+    color: "#FF6584",
   },
 });

@@ -1,19 +1,17 @@
 import React, { memo } from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, Dimensions} from "react-native";
 import { TextInput as Input } from "react-native-paper";
 import { theme } from "./theme";
+const { width, height } = Dimensions.get("window");
+
 
 type Props = React.ComponentProps<typeof Input> & { errorText?: string };
 
-const TextInput = ({ errorText, ...props }: Props) => (
+const TextInputOnboard = ({ errorText, ...props }: Props) => (
   <View style={styles.container}>
     <Input
-      style={styles.input}
-      selectionColor={theme.colors.primary}
+      selectionColor="#493d8a"
       underlineColor="transparent"
-      mode="outlined"
-      activeOutlineColor="#493d8a"
-      outlineColor="#858585"
       {...props}
     />
     {errorText ? <Text style={styles.error}>{errorText}</Text> : null}
@@ -22,11 +20,16 @@ const TextInput = ({ errorText, ...props }: Props) => (
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
-    marginVertical: 12,
+        alignItems: 'center',
+        flexDirection: 'row-reverse',
+        marginTop: 10,
+        width: width * 0.7,
+        height: height * 0.04,
+        backgroundColor: '#E2E2E2',
+        borderRadius: 10,
   },
   input: {
-    backgroundColor: theme.colors.surface,
+    backgroundColor: "#493d8a",
   },
   error: {
     fontSize: 14,
@@ -36,4 +39,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default memo(TextInput);
+export default memo(TextInputOnboard);

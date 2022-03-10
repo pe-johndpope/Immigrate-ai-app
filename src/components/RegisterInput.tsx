@@ -5,16 +5,15 @@ import { theme } from "./theme";
 
 type Props = React.ComponentProps<typeof Input> & { errorText?: string };
 
-const TextInput = ({ errorText, ...props }: Props) => (
+const RegisterInput = ({ errorText, ...props }: Props) => (
   <View style={styles.container}>
     <Input
-      style={styles.input}
-      selectionColor={theme.colors.primary}
+    style = {{backgroundColor: "transparent", width: '100%',}}
+      {...props}
       underlineColor="transparent"
       mode="outlined"
       activeOutlineColor="#493d8a"
       outlineColor="#858585"
-      {...props}
     />
     {errorText ? <Text style={styles.error}>{errorText}</Text> : null}
   </View>
@@ -22,11 +21,17 @@ const TextInput = ({ errorText, ...props }: Props) => (
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
+    width: "90%",
+    height: 60,
     marginVertical: 12,
+    alignItems: 'center',
+    shadowColor: "#000000",
+    shadowOffset: { width: 2, height: 2 },
+    shadowOpacity: 0.35,
+    shadowRadius: 4,
   },
   input: {
-    backgroundColor: theme.colors.surface,
+    backgroundColor: "#000000",
   },
   error: {
     fontSize: 14,
@@ -36,4 +41,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default memo(TextInput);
+export default memo(RegisterInput);

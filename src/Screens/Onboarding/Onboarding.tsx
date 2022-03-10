@@ -65,14 +65,16 @@ const Onboarding = ({ navigation }) => {
 
     if (firstError || jobError || countryNameError || lastError || dateError) {
       alert("Incorrect Fields.");
+    } else {
     }
+    navigation.navigate("Dashboard");
+
   };
 
   return (
     <LinearGradient
       style={styles.gradientBackgroundStyle}
-      colors={["#CAD6D6", "#70C2C2"]}
-    >
+      colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF",]}>
       <Text style={styles.textHeader}>
         Let's get to know you a little bit better!👋
       </Text>
@@ -107,7 +109,7 @@ const Onboarding = ({ navigation }) => {
           placeholder="     Select Birthday..."
           format="DD/MM/YYYY"
           minDate="01-01-1900"
-          maxDate="01-01-2000"
+          maxDate="01-01-2020"
           confirmBtnText="Confirm"
           cancelBtnText="Cancel"
           customStyles={{
@@ -212,7 +214,7 @@ const Onboarding = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   textHeader: {
-    fontSize: 25,
+    fontSize: 27,
     paddingHorizontal: 45,
     fontFamily: "Avenir Next",
     color: "#493d8a",
@@ -301,10 +303,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   buttonTextStyle:{
-    fontSize: 21,
+    fontSize: 18,
     fontFamily: "Avenir Next",
     color: "#FFFFFF",
-    fontWeight: "700",
+    fontWeight: "500",
   },
   buttonTouchableStyle:{
     paddingTop: height * 0.05,

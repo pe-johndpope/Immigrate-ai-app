@@ -32,7 +32,6 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => (
         cardStyle: { backgroundColor: "#EFF5F8" },
       }}
     >
-      <>
         <Stack.Screen
           name="LandingPage"
           component={LandingPage}
@@ -53,9 +52,11 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => (
           component={Home}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
-      </>
-      <>
+        <Stack.Screen 
+        name="ProfileScreen" 
+        component={ProfileScreen} 
+        options={{ headerShown: false }} />
+
         <Stack.Screen
           name="Login"
           component={Login}
@@ -77,7 +78,6 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => (
           component={Onboarding}
           options={{ headerShown: false }}
         />
-      </>
     </Stack.Navigator>
   </NavigationContainer>
 );

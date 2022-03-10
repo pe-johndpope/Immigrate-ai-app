@@ -8,7 +8,6 @@ import {
   StatusBar,
   StyleSheet,
   Dimensions,
-  SafeAreaView,
   Platform,
 } from "react-native";
 import Agents from "./Agents/Agents";
@@ -27,6 +26,7 @@ import Faq from "./Faq/Faq";
 import FaqContent from "./Faq/FaqContent";
 import { FiygeAuthContext } from "../../Contexts";
 const { width, height } = Dimensions.get("window");
+import { LinearGradient } from "expo-linear-gradient";
 
 const colors = {
   themeColor: "#EFF5F8",
@@ -68,7 +68,7 @@ const Home = () => {
     <Text
       style={{
         fontSize: 23,
-        fontWeight: "500",
+        fontWeight: "400",
         marginBottom: -18,
         color: "#000000",
         fontFamily: "Avenir Next",
@@ -129,7 +129,8 @@ const Home = () => {
   );
 
   const AgentContainer = (
-    <View style={styles.agentContainer}>
+    <View
+    style={styles.agentContainer}>
       <Text style={styles.agentText}>Talk to an Agent!</Text>
       <Agents></Agents>
     </View>
@@ -160,6 +161,9 @@ const Home = () => {
   );
 
   return (
+    <LinearGradient
+    style = {{zIndex:-3, flex: 1}}
+    colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF",]}>
     <View
       style={[
         styles.containerMain,
@@ -178,7 +182,9 @@ const Home = () => {
       <View style={{ flex: 1, flexDirection: "row" }}>
         <Text style={styles.nameText}>
           {"Hey,\n"}
+          <Text style = {styles.userNameStyle}>
           {user.name}
+          </Text>
         </Text>
         <Image
           style={styles.logoHeader}
@@ -215,6 +221,7 @@ const Home = () => {
         />
       </View>
     </View>
+    </LinearGradient>
   );
 };
 
@@ -222,7 +229,6 @@ const styles = StyleSheet.create({
   containerMain: {
     flex: 1,
     padding: 20,
-    backgroundColor: "#EFF5F8",
   },
   nameText: {
     paddingTop: Platform.OS == "ios" ? height * 0.03 : height * 0.05,
@@ -231,6 +237,12 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     fontFamily: "Avenir Next",
   },
+  userNameStyle:{
+      fontSize: height * 0.04,
+      color: colors.purple,
+      fontWeight: "700",
+      fontFamily: "Avenir Next",
+},
   logoHeader: {
     position: "absolute",
     marginTop: height * 0.05,
@@ -260,15 +272,15 @@ const styles = StyleSheet.create({
   subHeading1: {
     fontFamily: "Avenir Next",
     marginTop: height * 0.008,
-    fontSize: 23,
-    fontWeight: "600",
+    fontSize: 20,
+    fontWeight: "400",
     color: "#000000",
   },
   subHeading2: {
     fontFamily: "Avenir Next",
     marginTop: Platform.OS == "ios" ? height * 0.03 : height * 0.007,
-    fontSize: 23,
-    fontWeight: "600",
+    fontSize: 20,
+    fontWeight: "400",
     color: "#000000",
   },
   faqContainer: {
@@ -287,16 +299,17 @@ const styles = StyleSheet.create({
   },
   faqText: {
     textAlign: "center",
-    marginBottom: Platform.OS == "ios" ? height * 0.015 : height * 0.01,
-    marginTop: 7,
+    fontFamily: "Avenir Next",
+    marginBottom: Platform.OS == "ios" ? height * 0.01 : height * 0.01,
+    marginTop: 9,
     fontSize: 19,
-    fontWeight: "700",
+    fontWeight: "600",
     color: "#262626",
   },
   faqScrollView: {},
   agentContainer: {
     marginTop: height * 0.01,
-    backgroundColor: "#CDC9E2",
+    backgroundColor: "#BFD3DA",
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
@@ -312,9 +325,10 @@ const styles = StyleSheet.create({
   agentText: {
     textAlign: "center",
     marginBottom: Platform.OS == "ios" ? height * 0.02 : -1 * height * 0.05,
-    marginTop: 7,
+    marginTop: 8,
     fontSize: 19,
-    fontWeight: "700",
+    fontFamily: "Avenir Next",
+    fontWeight: "600",
     color: "#262626",
   },
 });

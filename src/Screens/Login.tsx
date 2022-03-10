@@ -40,7 +40,7 @@ const Login = ({ navigation }) => {
 
       <Text
         style={{
-          fontSize: 35,
+          fontSize: 27,
           fontFamily: "Avenir Next",
           height: 100,
           fontWeight: "700",

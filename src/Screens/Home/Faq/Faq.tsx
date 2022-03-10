@@ -2,21 +2,13 @@ import React, { useState } from "react";
 import {
   View,
   Text,
-  Image,
-  StatusBar,
   StyleSheet,
-  TouchableOpacity,
-  Button,
-  Linking,
   ScrollView,
 } from "react-native";
-import { useFonts } from "@expo-google-fonts/dev";
 import {
-  TouchableHighlight,
   TouchableWithoutFeedback,
 } from "react-native-gesture-handler";
-import Icon from "react-native-vector-icons/Ionicons";
-import { text } from "stream/consumers";
+
 
 const colors = {
   themeColor: "#FFFFFF",
@@ -112,12 +104,10 @@ const styles = StyleSheet.create({
     padding: 20,
     flex: 1,
     fontWeight: "400",
-    justifyContent: "center",
-    alignItems: "center",
+    textAlign: 'center',
     fontSize: 16,
     fontFamily: "Avenir Next",
     color: "#000000",
-    marginVertical: 12,
   },
   flipButton: {
     textAlign: "center",
