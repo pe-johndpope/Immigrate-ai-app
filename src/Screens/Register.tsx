@@ -1,8 +1,7 @@
 import React, { useState, useContext } from "react";
-import Icon from 'react-native-vector-icons/Ionicons';
-import { View, Text, StyleSheet, TouchableOpacity} from "react-native";
+import Icon from "react-native-vector-icons/Ionicons";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-import { auth } from '../Firebase/config'
 import Background from "../components/Background";
 import LogoRegister from "../components/LogoRegister";
 import Button from "../components/Button";
@@ -13,56 +12,76 @@ import {
   passwordValidator,
   nameValidator,
 } from "../components/utils";
-import { AuthContext } from "../Contexts";
+import { FiygeAuthContext } from "../Contexts";
 
 const RegisterScreen = ({ navigation }) => {
-  const { onSignUpWithEmailAndPassword } = useContext(AuthContext)
+  const { onSignUpWithEmailAndPassword } = useContext(FiygeAuthContext)
 
   const [name, setName] = useState({ value: "", error: "" });
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
 
-    const onSignUpPressed = () => {
-      const nameError = nameValidator(name.value);
-      const emailError = emailValidator(email.value);
-      const passwordError = passwordValidator(password.value);
-  
-      if (emailError || passwordError || nameError) {
-        setName({ ...name, error: nameError });
-        setEmail({ ...email, error: emailError });
-        setPassword({ ...password, error: passwordError });
-        return;
-      }
+  const onSignUpPressed = async () => {
+    const nameError = nameValidator(name.value);
+    const emailError = emailValidator(email.value);
+    const passwordError = passwordValidator(password.value);
 
-      onSignUpWithEmailAndPassword(email.value, password.value)
-      .then(async () => {
-        auth.currentUser.updateProfile({
-          displayName: name.value,
-        })
-        .then(() => {
-          navigation.navigate('Dashboard');
-        })
-      })
-    };
-   
-         
+    if (emailError || passwordError || nameError) {
+      setName({ ...name, error: nameError });
+      setEmail({ ...email, error: emailError });
+      setPassword({ ...password, error: passwordError });
+      return;
+    }
+
+    await onSignUpWithEmailAndPassword({
+      email: email.value,
+      password: password.value,
+      firstName: name.value, 
+      lastName: name.value,
+      phone: "+19998887777"
+    })
+    navigation.navigate("Login");
+
+    // reset fields
+    setName({value: "", error: ""})
+    setEmail({value: "", error: ""})
+    setPassword({value: "", error: ""})
+  };
 
   return (
     <Background>
-      <TouchableOpacity onPress={() => navigation.navigate("LandingPage")} style = {{marginLeft: -325}}><Icon name="arrow-back-outline" size={28} color="#000000" /></TouchableOpacity>
-      <Text style = {{ fontSize: 35, fontFamily: 'Avenir Next', height: 60, fontWeight: '700', color: "#493d8a", marginLeft: -4,marginTop:20}}> Create Account</Text>
+      <TouchableOpacity
+        onPress={() => navigation.navigate("LandingPage")}
+        style={{ marginLeft: -325 }}
+      >
+        <Icon name="arrow-back-outline" size={28} color="#000000" />
+      </TouchableOpacity>
+      <Text
+        style={{
+          fontSize: 35,
+          fontFamily: "Avenir Next",
+          height: 60,
+          fontWeight: "700",
+          color: "#493d8a",
+          marginLeft: -4,
+          marginTop: 20,
+        }}
+      >
+        {" "}
+        Create Account
+      </Text>
       <LogoRegister />
 
       <TextInput
-        label="Name"
+        label="User Name"
         returnKeyType="next"
         value={name.value}
         onChangeText={(text) => setName({ value: text, error: "" })}
         error={!!name.error}
         errorText={name.error}
-        style = {{width: "100%"}}
+        style={{ width: "100%" }}
       />
-      
+
       <TextInput
         label="Email"
         returnKeyType="next"
@@ -73,8 +92,7 @@ const RegisterScreen = ({ navigation }) => {
         autoCapitalize="none"
         textContentType="emailAddress"
         keyboardType="email-address"
-        style = {{width: "100%"}}
-
+        style={{ width: "100%" }}
       />
       <TextInput
         label="Password"
@@ -83,7 +101,7 @@ const RegisterScreen = ({ navigation }) => {
         onChangeText={(text) => setPassword({ value: text, error: "" })}
         error={!!password.error}
         errorText={password.error}
-        style = {{width: "100%"}}
+        style={{ width: "100%" }}
         secureTextEntry
       />
 
@@ -116,10 +134,9 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontFamily: "Avenir Next",
     color: "#FF6584",
-
   },
   container: {
-    flex: 1
+    flex: 1,
   },
 });
 

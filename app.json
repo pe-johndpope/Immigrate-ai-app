@@ -2,7 +2,7 @@
   "expo": {
     "name": "expo-finalapp",
     "slug": "immigrate-app",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     // "owner": "sohom1357",
@@ -21,13 +21,28 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": ["CAMERA", "CAMERA_ROLL"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "ai.immigrate"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+      "androidStatusBar": {
+        "hidden": true
+      },
+      "plugins": [
+        [
+          "expo-navigation-bar",
+          {
+            "position": "relative",
+            "visibility": "hidden",
+            "behavior": "inset-touch"
+          }
+        ]
+      ]
     }
-  }
 }
