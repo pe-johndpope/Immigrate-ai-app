@@ -138,18 +138,10 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
     });
     const json = await res.json();
 
-    console.log(json);
+    // console.log(json);
 
     if (json.errors.length === 0) {
       console.log("SUCCESSFULLY SIGNED UP");
-      // store refresh token + access token
-      // setUser({
-      //   uid: json.user_id,
-      //   name: json.user_fullname,
-      //   email: json.data.users.user_name
-      // })
-      // await AsyncStorage.setItem(REFRESH_TOKEN, json.refresh_token)
-      // await AsyncStorage.setItem(ACCESS_TOKEN, json.access_token)
     } else {
       console.error("ERROR SIGNING UP");
     }
@@ -179,7 +171,7 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
       })
       const json = await res.json()
 
-      console.log(json)
+      // console.log(json)
 
       if (json.errors.length === 0) {
         console.log("SUCCESSFULLY ONBOARDED USER")
@@ -210,7 +202,7 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
       })
       const json = await res.json()
 
-      console.log(json)
+      // console.log(json)
 
       if (json.errors.length === 0) {
         console.log("SUCCESSFULLY ACTIVATED PASSWORD RESET")
