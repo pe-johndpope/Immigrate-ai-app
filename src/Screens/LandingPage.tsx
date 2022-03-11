@@ -3,10 +3,7 @@ import { StyleSheet, View,TouchableOpacity, Dimensions, Text, StatusBar} from "r
 import { LinearGradient } from "expo-linear-gradient";
 const { width, height } = Dimensions.get("window");
 import { theme } from "../components/theme";
-
 import Onboarding from "../components/Onboarding";
-import Button from "../components/Button";
-import ButtonSignup from "../components/ButtonSignup";
 import { FiygeAuthContext } from "../Contexts";
 
 export default function LandingPage({ navigation }) {

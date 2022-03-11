@@ -11,10 +11,19 @@ import ProfileScreen from "../Screens/ProfileScreen";
 import Dashboard from "../Screens/Home/Dashboard";
 import Home from "../Screens/Home/Home";
 import Onboarding from "../Screens/Onboarding/Onboarding";
-
+import SocialFeed from "../Screens/SocialFeed/SocialFeed"
 interface RoutesProps {}
 
 const Stack = createStackNavigator();
+
+const navTheme = {
+  colors: {
+    dark: '#ffffff',
+    background: '#ffffff',
+  },
+};
+
+
 
 export const Routes: React.FC<RoutesProps> = ({}) => {
   return (
@@ -25,11 +34,12 @@ export const Routes: React.FC<RoutesProps> = ({}) => {
 };
 
 const ScreenNavigator: React.FC<RoutesProps> = ({}) => (
-  <NavigationContainer>
+  <NavigationContainer
+  >
     <Stack.Navigator
       screenOptions={{
         headerStyle: { elevation: 0 },
-        cardStyle: { backgroundColor: "#EFF5F8" },
+        cardStyle: { backgroundColor: "#ffffff" },
       }}
     >
         <Stack.Screen
@@ -76,6 +86,11 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => (
          <Stack.Screen
           name="Onboarding"
           component={Onboarding}
+          options={{ headerShown: false }}
+        />
+         <Stack.Screen
+          name="SocialFeed"
+          component={SocialFeed}
           options={{ headerShown: false }}
         />
     </Stack.Navigator>

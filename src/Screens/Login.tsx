@@ -1,7 +1,6 @@
-import React, { memo, useState, useEffect, useContext } from "react";
+import React, { memo, useState, useContext } from "react";
 import { TouchableOpacity, StyleSheet, Text, View } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
-
 import Background from "../components/Background";
 import Logo from "../components/Logo";
 import Button from "../components/Button";

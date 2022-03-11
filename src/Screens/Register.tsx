@@ -12,8 +12,8 @@ import {
   nameValidator,
 } from "../components/utils";
 import { FiygeAuthContext } from "../Contexts";
-const { width, height } = Dimensions.get("window");
-import { NativeBaseProvider, Box, Checkbox } from 'native-base';
+const { height } = Dimensions.get("window");
+import { NativeBaseProvider,Checkbox } from 'native-base';
 
 
 const RegisterScreen = ({ navigation }) => {
@@ -26,9 +26,7 @@ const RegisterScreen = ({ navigation }) => {
   const phoneInput = useRef<PhoneInput>(null);
   const [value, setValue] = useState("");
   const [formattedValue, setFormattedValue] = useState("");
-  const [valid, setValid] = useState(false);
 
-  const [checked, setChecked] = useState(false);
 
 
   const onSignUpPressed = async () => {

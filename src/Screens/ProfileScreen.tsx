@@ -1,17 +1,14 @@
 import {
   View,
-  SafeAreaView,
   StyleSheet,
   TextInput,
   TouchableOpacity,
   Switch,
   Dimensions,
-  StatusBar,
   Platform,
-  Linking,
 } from "react-native";
 import React, { useState, useContext } from "react";
-import { Avatar, Title, Text, Button } from "react-native-paper";
+import { Avatar, Text, Button } from "react-native-paper";
 import { FiygeAuthContext } from "../Contexts";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import * as ImagePicker from "expo-image-picker";

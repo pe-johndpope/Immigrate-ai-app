@@ -14,6 +14,7 @@ import {
 import Chat from "../Chat/Chat";
 import Home from "./Home";
 import ProfileScreen from "../ProfileScreen";
+import SocialFeed from "../SocialFeed/SocialFeed"
 const { width, height } = Dimensions.get("window");
 
 var dashHeight;
@@ -41,7 +42,9 @@ function Dashboard({ navigation }) {
               <Icon name="chatbubbles-outline" size={25} color={"#493d8a"} />
             );
           } else if (rn === "Home") {
-            return <Icon name="home-outline" size={25} color={color} />;
+            return <Icon name="home-outline" size={25} color={color} />
+          } else if (rn === "Explore") {
+            return <Icon name ="rocket-outline" size={25} color={color} />
           } else if (rn === "Profile") {
             return (
               <Icon name="person-circle-outline" size={25} color={color} />
@@ -57,6 +60,7 @@ function Dashboard({ navigation }) {
     >
       <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
       <Tab.Screen name="Chat" component={Chat} options={{ headerShown: false  }}/>
+      <Tab.Screen name="Explore" component={SocialFeed} options={{ headerShown: false }} />
       <Tab.Screen name="Profile" component={ProfileScreen} options={{ headerShown: false }} />
      </Tab.Navigator>
   );
