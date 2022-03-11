@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Icon from "react-native-vector-icons/Ionicons";
 import {
   SafeAreaView,
@@ -18,6 +18,8 @@ import { LinearGradient } from "expo-linear-gradient";
 import { theme } from "../../components/theme";
 import { Center, themeTools } from "native-base";
 import Heart from "react-animated-heart";
+
+import { BlogContext } from "../../Contexts"
 
 
 const { width, height } = Dimensions.get("window");
@@ -66,6 +68,12 @@ const DATA = [
 ];
 
 const SocialFeed = () => {
+  const { posts, tags, categories, authors } = useContext(BlogContext)
+  
+  // see https://developer.wordpress.org/rest-api/ for type information
+  // (eg. for posts) https://developer.wordpress.org/rest-api/reference/posts/
+  console.log(posts[0])
+
   const renderItem = ({ item }) =>
       <Item
         id={item.id}

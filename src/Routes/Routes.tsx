@@ -1,7 +1,7 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import { FiygeAuthContextProvider } from "../Contexts";
+import { FiygeAuthContextProvider, BlogContextProvider } from "../Contexts";
 import Chat from "../Screens/Chat/Chat";
 import Login from "../Screens/Login";
 import Register from "../Screens/Register";
@@ -28,7 +28,9 @@ const navTheme = {
 export const Routes: React.FC<RoutesProps> = ({}) => {
   return (
     <FiygeAuthContextProvider>
-      <ScreenNavigator />
+      <BlogContextProvider>
+        <ScreenNavigator />
+      </BlogContextProvider>
     </FiygeAuthContextProvider>
   );
 };
