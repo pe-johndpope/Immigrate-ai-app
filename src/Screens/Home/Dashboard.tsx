@@ -39,7 +39,7 @@ function Dashboard({ navigation }) {
 
           if (rn === "Chat") {
             return (
-              <Icon name="chatbubbles-outline" size={25} color={"#493d8a"} />
+              <Icon name="chatbubbles-outline" size={25} color={color} />
             );
           } else if (rn === "Home") {
             return <Icon name="home-outline" size={25} color={color} />
