@@ -33,17 +33,17 @@ const DATA = [
   },
   {
     id: "bd7acbea-c1b1-46c2-aed5-1",
-    title: "Why Vancouver is the Perfect Place",
-    image: "https://i.postimg.cc/8z2gDZDQ/vancouver.png",
-    tag: "Destinations",
+    title: "Canada Startup Visa new policies shock immigration companies around Ontario ",
+    image: "https://i.postimg.cc/nVwZV6yg/image.jpg",
+    tag: "NEWS",
     author: "Kendall Chan",
     date: "2020-01-01",
   },
   {
     id: "bd7acbea-c1b1-46c2-aed5-12",
-    title: "Why Vancouver is the Perfect Place",
-    image: "https://i.postimg.cc/8z2gDZDQ/vancouver.png",
-    tag: "Destinations",
+    title: "10 Things all new Canadian Immigrants should do before landing",
+    image: "https://i.postimg.cc/8P1y35XV/charter-citizenship-ceremony-20190417.webp",
+    tag: "LIFESTYLE",
     author: "Kendall Chan",
     date: "2020-01-01",
   },
@@ -95,7 +95,7 @@ const SocialFeed = () => {
         </View>
     </TouchableOpacity>
   );
-  
+
   const [isClick, setClick] = useState(false);
 
 
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
   },
   frontContainer: {
     width: width * 0.8,
-    height: height * 0.325,
+    height: height * 0.327,
     borderRadius: 10,
     marginBottom: 10,
     backgroundColor: "#E5E5E5",
@@ -137,6 +137,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "500",
     marginLeft: 7.5,
+    paddingHorizontal: 10,
+    paddingBottom: 5,
     fontFamily: 'Avenir',
 
   },
@@ -148,7 +150,7 @@ const styles = StyleSheet.create({
   },
   blogImageStyle:{
     width: '100%',
-    height: '73%',
+    height: '70%',
     borderRadius: 10,
   },
   tagStyle: {
