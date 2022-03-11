@@ -41,7 +41,8 @@
             "position": "relative",
             "visibility": "hidden",
             "behavior": "inset-touch"
-          }
+          },
+          "./android-manifest.plugin.js"
         ]
       ]
     }

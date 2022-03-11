@@ -1,0 +1,22 @@
+{
+  "rule_only_slots": [
+    "desired_province"
+  ],
+  "rule_only_loops": [
+    "newfoundland_and_labrador_form",
+    "prince_edward_island_form",
+    "eligibility_form",
+    "british_columbia_form",
+    "ontario_form",
+    "manitoba_form",
+    "new_brunswick_form",
+    "quebec_form",
+    "provincial_form",
+    "saskatchewan_form",
+    "nova_scotia_form",
+    "yukon_form",
+    "northwest_territories_form",
+    "alberta_form",
+    "name_form"
+  ]
+}
