@@ -1198,7 +1198,7 @@ responses:
       for official languages.\n\nIf you think the changes affect you, you should:\n\n
       1. Log into your online account and check your Express Entry profile.\n\n 
       2. Update your profile, and the Comprehensive Ranking System(CRS) will update 
-      your score (It may take up to 24 hours for the system to update your score)".
+      your score (It may take up to 24 hours for the system to update your score)."
   utter_faq/48: # Question: What should I do if I try to submit my Express Entry profie and I receive an error?
   - text: "Canada has changed some questions in the education history section in both the 
       online profile and application for Express Entry. Because of this, some people 

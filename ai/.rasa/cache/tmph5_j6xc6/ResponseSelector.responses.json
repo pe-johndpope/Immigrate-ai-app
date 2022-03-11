@@ -1,0 +1,932 @@
+{
+  "utter_faq/letter_of_support": [
+    {
+      "text": "You may work with Canada Startup Company to get a letter of support."
+    }
+  ],
+  "utter_faq/why_canada": [
+    {
+      "text": "Canada is a great country with an extremely diverse population and a universal healthcare system.\n\nCanada also provides quality education and has a low unemployment rate (6.5% in 2021)."
+    }
+  ],
+  "utter_faq/0": [
+    {
+      "text": "When hiring through the Home Child Care Provider or Home Support Worker Pilots, we use the information you give us in the Offer of Employment form IMM 5983 (PDF, 2.33MB) to help determine if your job offer is genuine and valid, including your ability to pay the caregiver's salary.\n\nIf we need more information, Canadian immigration will contact you.\n\nWe may ask for things like:\n\nyour household annual income\n\nbank statements\n\nyour most recent Canada Revenue Agency notice of assessment"
+    }
+  ],
+  "utter_faq/1": [
+    {
+      "text": "No but you can pay for the travel costs, if you like. You and the caregiver you're hiring should both agree on how to handle things like travel costs before you hire them.\n\nWhether or not you pay for their travel costs can be outlined in the Offer of Employment form IMM 5983 (PDF, 2.33MB)."
+    }
+  ],
+  "utter_faq/2": [
+    {
+      "text": "The maximum amount you can charge depends on the province or territory you're in. Each province and territory has an employment or labour standards office that deals with labour and employment laws.\nIf you're hiring through the Home Child Care Provider and Home Support Worker Pilots, and you and the caregiver agree that you provide housing, the details must be included in the Offer of Employment form IMM 5983 (PDF, 2.33MB)."
+    }
+  ],
+  "utter_faq/3": [
+    {
+      "text": "If you don't meet the requirements for the Home Child Care Provider or Home Support Worker pilots, you may be able to work temporarily as a caregiver through the Temporary Foreign Worker Program if 1 of the below applies to you:\n\nYou're already in Canada and eligible to apply for a work permit from inside Canada\n\nYou're outside Canada and your employer applied for an LMIA to hire you before June 18, 2019\n\nYou'll be working in Quebec\n\nYour employer has a positive LMIA."
+    }
+  ],
+  "utter_faq/4": [
+    {
+      "text": "Yes. If you have an employer-specific work permit and you're working in Canada as a caregiver, you can apply to extend it through the Temporary Foreign Worker Program. To keep your status as a worker, you should apply to extend your work permit before it expires.\n\nYour employer needs to get another positive Labour Market Impact Assessment before you can extend your work permit.\n\nIf you meet the requirements in the future, you can apply for the Home Child Care Provider or Home Support Worker Pilot. You can also check to see if you qualify for another immigration program."
+    }
+  ],
+  "utter_faq/5": [
+    {
+      "text": "If an employer wants to hire you for a position in Quebec, you must apply for a work permit through the Temporary Foreign Worker Program. Your employer needs to get a positive Labour Market Impact Assessment before they can hire you.\nQuebec selects its own economic immigrants. If you want to settle in Quebec permanently, you won't be eligible for the Home Child Care Provider or Home Support Worker Pilots."
+    }
+  ],
+  "utter_faq/6": [
+    {
+      "text": "An occupation-restricted open work permit lets you work for any employer, but only in the occupation listed on the work permit.\nFor example, in the Home Child Care Provider or Home Support Worker Pilots, you must work outside Quebec in 1 of these National Occupational Classification (NOC) jobs:\n\nHome child care provider - NOC 4411 (experience as a foster parent doesn't count), or\nHome support worker - NOC 4412 (experience as a housekeeper doesn't count)\n\nIf you have this type of work permit, your employer doesn't need a Labour Market Impact Assessment to hire you.\nYou can change employers without getting a new work permit, as long as your new job is in the same occupation and you continue to meet any other conditions on your work permit."
+    }
+  ],
+  "utter_faq/7": [
+    {
+      "text": "You can only apply to extend your work permit under the Home Child Care Provider or Home Support Worker Pilots if:\n\nYour work permit was issued for less than 36 months because your passport was expiring, and\nyou now have a new passport\n\nIn this case, you may be able to apply to extend your work permit up to a total of 36 months from the date it was issued.\nFor example, if we issued you a work permit that's valid for 24 months, you may be able to extend it for another 12 months.\nTo avoid having to do this, make sure your passport or travel document is valid for at least 36 months before you apply."
+    }
+  ],
+  "utter_faq/8": [
+    {
+      "text": "Under the Home Child Care Provider or Home Support Worker Pilots, you probably have to take 2 separate medical exams during the process. In both cases, Canada immigration will send you instructions on when and how to get your medical exam done.\n\nDo not go for your medical exam unless we tell you to.\n\nFirst medical exam:\nAs a caregiver, you work in close contact with children, disabled people or the elderly, so you need to take a medical exam before you can come to Canada to work.\n\nSecond medical exam:\nOnce you have 24 months of work experience in Canada, and submit proof of your work experience, you may be asked to take another medical exam to make sure you're still admissible to Canada.\n\nFamily members:\nYour family members must take and pass a medical exam even if they're not coming with you to Canada. If they don't, they won't be eligible to be sponsored in the future. We contact them directly with instructions on how to get their medical exams.\n\nIf your family members are already Canadian citizens or permanent residents, they don't need to take a medical exam."
+    }
+  ],
+  "utter_faq/9": [
+    {
+      "text": "Medical exams are valid for 12 months from the date of the exam. If you already took a medical exam but it expired, you and your family members will have to take another one to make sure you're still admissible to Canada."
+    }
+  ],
+  "utter_faq/10": [
+    {
+      "text": "Yes. You can use work experience from more than 1 employer to apply for the Home Child Care Provider or Home Support Worker Pilots as long as that work experience is in the same eligible occupation.\nYou can't combine work experience from 2 different occupations.\nDepending on which pilot you apply for, your work experience must be in 1 of these National Occupational Classification (NOC) jobs:\n\nHome child care provider - NOC 4411 (experience as a foster parent doesn't count)\nHome support worker - NOC 4412 (experience as a housekeeper doesn't count)\n\nFor example, if you worked full-time as a home child care provider for 2 different employers, you can use that work experience towards your eligibility. \nHowever, if you worked full-time as a home child care provider for 1 employer and as a home support worker for another employer, you can't combine that work experience."
+    }
+  ],
+  "utter_faq/11": [
+    {
+      "text": "No. For your work experience to count for the Home Child Care Provider or Home Support Worker Pilots, you must have gotten it while working in Canada legally with a work permit. If you've ever worked in Canada illegally, your application may be refused."
+    }
+  ],
+  "utter_faq/12": [
+    {
+      "text": "Yes. If you've worked in Quebec in 1 of the National Occupational Classification (NOC) jobs below, you can use that experience to meet the work experience requirement:\n\nHome child care provider - NOC 4411 (experience as a foster parent doesn't count)\n\nHome support worker - NOC 4412 (experience as a housekeeper doesn't count)\n\nIf you're applying to the Home Child Care Provider Pilot or the Home Support Worker Pilots with less than 24 months of qualifying work experience, you need to have a valid and genuine job offer for a job outside of Quebec.\n\nAll 24 months of work experience must be gained within 36 months.\n\nLiving in Canada as a permanent resident\n\nUnder these pilots, you must plan to live outside the province of Quebec as a permanent resident. You may want to include supporting documents with your permanent resident application to prove that you're living or will live outside Quebec."
+    }
+  ],
+  "utter_faq/13": [
+    {
+      "text": "Canada only processes up to 5,500 applications each year under the caregiver pilots:\n\n2,750 applications for the Home Child Care Provider Pilot\n\n2,750 applications for the Home Support Worker Pilot\n\nIf your application is incomplete or we receive it after the limit has been reached, Canadian immigration will return it to you along with your processing fees."
+    }
+  ],
+  "utter_faq/14": [
+    {
+      "text": "You can either wait until the Home Child Care Provider or Home Support Worker Pilots re-open the next year or find out if you're eligible for another immigration program."
+    }
+  ],
+  "utter_faq/15": [
+    {
+      "text": "The ongoing COVID-19 pandemic has caused service issues for Canada's immigration offices. The office that processes caregiver applications has been seriously affected.\n\nIf you applied for permanent residence as a caregiver recently, Canadian immigration may not have sent you a confirmation letter (acknowledgement of receipt) yet. We are working to send confirmation letters to applicants but it may take longer due to the challenges the pandemic has caused.\nIf you applied in 2019 and you did not receive a confirmation from us, you may contact us to verify if we received your application. If you applied in 2020, we will not be able to answer, so please wait."
+    }
+  ],
+  "utter_faq/16": [
+    {
+      "text": "You may send Canadian immigration your new offer of employment form online if:\n\nWe already sent you a confirmation letter (acknowledgement of receipt) for your Home Child Care Provider or Home Support Worker permanent residence application\n\nWe haven't issued your occupation-restricted open work permit yet\n\nYou can also send supporting documents, if needed.  \n\nIf you didn't get the letter yet, wait until you do. It will include your application number. Once you have it, send us the new job offer form as soon as you can."
+    }
+  ],
+  "utter_faq/17": [
+    {
+      "text": "Unless you get a letter from us saying we rejected or refused your application, you don't need to apply again the next year."
+    }
+  ],
+  "utter_faq/18": [
+    {
+      "text": "If you had a valid work permit when you applied for permanent residence (PR) in one of the caregiver pilots, you may have maintained status. This applies to the Home Child Care Provider and Home Support Worker Pilots.\nYou have maintained status if you\n\napplied for a work permit with your PR application before your initial work permit expired\nstay in Canada until we make a decision on the new work permit application\n\nYou don't need to renew your current work permit if you keep working for the same employer and in the same job. But you may want to renew your current work permit separately from your PR application if you can.\nPR applications take longer to process and the COVID-19 pandemic has caused more delays. This affects when we can issue the work permit related to your PR application. Even though you will have maintained status, it may be harder to get some government services or benefits.\nIf we refuse your PR application, reject it for being incomplete, or return it for being over that year's cap, we'll return the related work permit application as well.\nIf this happens\n\nyou'll lose your maintained status\nif you're not eligible to restore your status, you'd have to leave Canada\n\nFind out more about how to extend or change the conditions on your work permit. We've also put a public policy in place to help you change jobs or employers."
+    }
+  ],
+  "utter_faq/19": [
+    {
+      "text": "If you already applied for a work permit under the Home Child Care Provider or Home Support Worker Pilots, it will take a while to process your application.\nYou may also want to apply separately for a work permit or extend your current one under the\n\nTemporary Foreign Worker Program or\nInternational Mobility Program\n\nFind out how to renew your work permit or status as a foreign worker.\nDue to COVID-19, we've put some measures in place to help you. If you have an employer-specific work permit and you want to change jobs or employers, you\n\nmust apply for a new work permit from inside Canada\ndon't need to wait until we approve the application to start your new job or work for a new employer\njust need an email from us that says you have permission to change jobs\n\nFind out more about changing jobs or employers."
+    }
+  ],
+  "utter_faq/20": [
+    {
+      "text": "Find out what to do if your work permit has expired."
+    }
+  ],
+  "utter_faq/21": [
+    {
+      "text": "An employment contract is a written agreement. It outlines the conditions of your employment and helps protect your rights as an employee. If there is a misunderstanding between you and your employer over your job and duties, refer to the contract when you talk to your employer."
+    }
+  ],
+  "utter_faq/22": [
+    {
+      "text": "As a live-in caregiver, you have legal rights to fair working conditions and fair treatment under labour laws in most provinces and territories. Nothing in your contract or working conditions can violate these rights.\nYour employment contract will help protect your rights as an employee. Find out more about the information that should be in your contract.\nYou also have the right to leave an unsatisfactory employer. Find out more about extending your stay if you change, lose or quit your job.\nRegulation 185 of the Immigration and Refugee Protection Regulations lists the conditions that may be put on your work permit.\nWorking conditions, such as minimum hourly wages, vary widely across Canada. You should find out what the labour laws are where you work by checking with your provincial or territorial labour standards office.\nLabour laws may cover rights in areas such as:\n\ndays off each week;\nvacation time with pay;\npaid public holidays;\novertime pay;\nminimum wage;\n\nmaximum charges for room and board.\n\nPublic holidays are days when most workers, including live-in caregivers, can have the day off with pay or receive a premium for working, which could be overtime pay. In Canada, some common holidays are:\n\nNew Year's Day (January 1);\nGood Friday (the Friday before Easter);\nVictoria Day (late May);\nCanada Day (July 1);\nLabour Day (early September);\nThanksgiving (mid-October); and\nChristmas Day (December 25).\n\nSome provinces or territories have one or two other public holidays.\nSee also Temporary Foreign Workers: Your rights and the law."
+    }
+  ],
+  "utter_faq/23": [
+    {
+      "text": "If you lose your job, you should find a new employer under the Live-in Caregiver Program as soon as possible. However, you may be eligible for Employment Insurance (EI) benefits while you look for another job. If so, EI will provide you with benefits if you lose your job through no fault of your own. The number of hours you must work before you qualify for EI will depend on the unemployment rate in your region when you file a claim for benefits.\nYou may also be eligible for EI benefits that are provided at certain times when you are unable to work. This includes sickness, maternity, parental and compassionate care benefits.\nWhile you are working, your employer deducts EI premiums from your wages. The amount deducted depends on how much you earn. Your employer sends your EI premiums to the government.\nFor more information, contact the Service Canada office nearest you."
+    }
+  ],
+  "utter_faq/24": [
+    {
+      "text": "If your employer is moving to a new province or territory, he or she must get a new Labour Market Opinion from Employment and Social Development Canada. Also, you must get a new work permit before you can work in the new location.\nApply for a new work permit well before you move to the new location with your employer. Be sure to apply at least 30 days before your current work permit expires."
+    }
+  ],
+  "utter_faq/25": [
+    {
+      "text": "No, you cannot work for more than one employer at a time under the Live-in Caregiver Program. Under this program, your work permit specifies your employer and the type of work you may do in Canada."
+    }
+  ],
+  "utter_faq/26": [
+    {
+      "text": "Yes, you may change employers under the Live-in Caregiver Program. However, you must first sign an employment contract with your new employer so that your new employer may apply for a Labour Market Impact Assessment (LMIA). After Employment and Social Development Canada issues a positive LMIA, you must apply for a new work permit.\nThere are several other steps you must take before you change employers, including asking your current employer for some documents. For more information, see Changing Jobs."
+    }
+  ],
+  "utter_faq/27": [
+    {
+      "text": "As a temporary worker, your employment contract should clearly define your:\n\nmandatory employer-paid benefits,\njob duties, \nhours of work,\nwages,\naccommodation arrangements (when applicable),\nholiday and sick leave entitlements, and\ntermination and resignation terms.\n\nIf you think your employer is treating you unfairly, you can call or write to the nearest provincial or territorial labour standards office for help. Your employer is not allowed to punish you for complaining to a labour standards office.\nSee also As an immigrant or temporary resident, what can I do if I'm victim of abuse?"
+    }
+  ],
+  "utter_faq/28": [
+    {
+      "text": "Family members do not normally come to Canada with people working under the Live-in Caregiver Program. Even if an employer agrees that a family member can live with you in the home where you will provide care, future employers may not agree to the same terms. Also, you may not make enough money to support your family members in Canada.\nHowever, you may be allowed to bring your family with you if you satisfy a visa officer that:\n\nyou have enough money to care for and support your family members in Canada, and\nyour employer will let them live in the home where you will provide care."
+    }
+  ],
+  "utter_faq/29": [
+    {
+      "text": "As a temporary worker, your employment contract should clearly define your:\n\nmandatory employer-paid benefits,\njob duties, \nhours of work,\nwages,\naccommodation arrangements (when applicable),\nholiday and sick leave entitlements, and\ntermination and resignation terms.\n\nIf you think your employer is treating you unfairly, you can call or write to the nearest provincial or territorial labour standards office for help. Your employer is not allowed to punish you for complaining to a labour standards office.\nSee also As an immigrant or temporary resident, what can I do if I'm victim of abuse?"
+    }
+  ],
+  "utter_faq/30": [
+    {
+      "text": "No, your employer cannot deport you from Canada. If your employer is threatening to do so, you can file a complaint with your provincial or territorial labour standards office. Threats or intimidation are considered forms of abuse in Canada. A caregiver support network or advocacy group can also give you counselling and help."
+    }
+  ],
+  "utter_faq/31": [
+    {
+      "text": "As a live-in caregiver, you can apply for an open work permit when you apply for permanent residence under the Live-in Caregiver Class.\nYou must also have:\n\nheld valid work permits under the program for two years or more; and\nworked for at least 3,900 hours or 2 years as a live-in caregiver within no more than 4 years.\n\nSend your work permit application in the same envelop as your permanent residence application before your current work permit expires.\nAn open work permit allows you to work for any employer for the length of time specified on the work permit.\nSee also: May I send my open work permit application and permanent residence applications separately?"
+    }
+  ],
+  "utter_faq/32": [
+    {
+      "text": "Yes. If you did not send an open work permit application with your permanent residence application, you can send it separately. Write, “Open Work Permit — Live-in Caregiver” on the top of the application form.\nNote, however, that if your application for permanent residence in Canada cannot be located, the application for an open work permit may be refused.  This is why we advise you to submit both applications at the same time."
+    }
+  ],
+  "utter_faq/33": [
+    {
+      "text": "You should submit your open work permit application with your permanent residence application. If you do so, you do not need to renew your current Live-in Caregiver Program work permit to keep working for your employer.\nHowever, you may need a valid work permit to renew documents such as your social insurance card or your health card. In these cases, you would need to renew your work permit."
+    }
+  ],
+  "utter_faq/34": [
+    {
+      "text": "If your work permit expires, you're authorized to keep working if\n\nyou had a valid work permit at the time you applied for your open work permit and\nyou'll continue to work under the conditions of your original work permit\n\nSee also Can I keep working if my permit expires? How do I prove this to my employer?"
+    }
+  ],
+  "utter_faq/35": [
+    {
+      "text": "No. To be eligible to apply for permanent residence under the Live-in Caregiver Program (LCP), you must have applied for the program from outside Canada. Also, a visa officer must have decided that you met the criteria of the Live-in Caregiver Program before you entered Canada and worked as a live-in caregiver. Only time you have worked as a live-in caregiver with a valid work permit under the Live-in Caregiver Program in Canada counts toward the employment requirement for permanent residence."
+    }
+  ],
+  "utter_faq/36": [
+    {
+      "text": "You must include all your family members even if they are not coming to Canada with you. This includes:\n\nspouse or partner\ndependent children\ndependent children of dependent children (grandchildren)\n\nAlso, for you to become a permanent resident, all your family members must pass a medical exam and background checks even if they are not coming to Canada with you.\nIf you don't include all of them:\n\nyou could be refused entry into Canada, and\nyou may not be able to sponsor the family members you didn't include in your application to come to Canada at a later date."
+    }
+  ],
+  "utter_faq/37": [
+    {
+      "text": "Live-in caregivers working in Canada under the Live-in Caregiver Program need a certain amount of work experience to apply for permanent residence. They can qualify with one of two amounts of experience:\n\n24 months of authorized full-time employment; or\n3,900 hours of authorized full-time employment.\n\nLive-in caregivers applying for permanent residence under the Live-in Caregiver Program, must choose one of these options. We will assess the application according to the option the applicant chooses."
+    }
+  ],
+  "utter_faq/38": [
+    {
+      "text": "If your application is complex, it may take us longer than normal processing times to process your application.\nYour application may be more complex if:\n\nthe contact information on file (address, telephone, email) is outdated and we can't contact you or a family member\nwe requested more documents and they weren't submitted on time, or at all\nyour dependant(s) turned 18 since you applied\nyou added dependant(s) to your application since you applied\nyour dependant(s) got married and/or had children of their own since you applied\nyou provided legal documents to confirm a change to your marital status, or about child custody\nyou or your family member were asked to resubmit a medical exam because one expired (exams for every person must all be valid at the same time)\nyou or a family member were asked to appear for an interview\nyou or a family member might not be eligible\nbackground checks are still in progress for you or your family members"
+    }
+  ],
+  "utter_faq/203": [
+    {
+      "text": "The Interim Federal Health Program (IFHP) covers certain health-care benefits for specific groups of people until they become eligible for provincial or territorial health insurance, such as:\n\nprotected people, including resettled refugees,\nrefugee claimants, and\ncertain other groups.\n\nThe IFHP doesn't provide services directly to you. Instead, the services are provided by health professionals. A company called Medavie Blue Cross manages IFHP claims. They cover the cost of services from IFHP-registered health-care providers (doctors, dentists, hospitals, pharmacies) if you are eligible.\nFind out more about who is eligible for IFHP and the services available to them."
+    }
+  ],
+  "utter_faq/204": [
+    {
+      "text": "The Interim Federal Health Program (IFHP) provides the following coverages:\n\nbasic health-care services (such as doctor visits, hospital care, lab tests),\nsupplemental services (such as limited vision care, urgent dental care),\nprescription drug coverage (medications and products), and \nin some cases, one Immigration Medical Exam (IME). \n\nThe IFHP doesn't cover services or products that you can claim under other insurance plans, such as:\n\nprovincial or territorial health care, or\nprivate insurance plans.\n\nFind out more about the products and services covered by the IFHP and how long you will be covered."
+    }
+  ],
+  "utter_faq/205": [
+    {
+      "text": "Yes. The Interim Federal Health Program provides coverage for mental health services provided by:\n\ngeneral practitioners/family doctors,\nmental health hospitals and\nclinics.\n\nFamily doctors/general practitioners can diagnose and treat some mental health problems. Depending on your situation, they may refer you to other mental health professionals, such as:\n\nclinical psychologists,\npsychotherapists,\ncounselling therapists or\npsychiatrists who specialize in mental health.\n\nWhen your physician refers you, you are also covered for the mental health services these professionals provide. Mental health professionals can help you improve or maintain your mental health with:\n\ntherapy,\ncounselling,\nmedication or\na combination of these options.\n\nAny health-care providers you see must be registered with the Interim Federal Health Program administrator, Medavie Blue Cross."
+    }
+  ],
+  "utter_faq/206": [
+    {
+      "text": "Any of these documents will prove your eligibility for the Interim Federal Health Program (IFHP):\n\nAn Acknowledgement of Claim and Notice to Return for Interview Letter—you get this letter after you make a refugee claim and you're scheduled for an interview.\nA Refugee Protection Claimant Document—you get this document after your interview and we either\n  \nrefer your refugee claim to the Immigration and Refugee Board of Canada (IRB), or\ndecide your claim isn't eligible to be referred to the IRB but you are eligible to apply for a pre-removal risk assessment\n\nAn Interim Federal Health Certificate—you get this certificate if you're a resettled refugee going to live in Canada or a member of another eligible beneficiary group.\n\nAn officer from Immigration, Refugees and Citizenship Canada or the Canada Border Services Agency will give you your IFHP eligibility document.\nFind out how to get health services through IFHP"
+    }
+  ],
+  "utter_faq/207": [
+    {
+      "text": "Start date:\nYour Interim Federal Health Program (IFHP) coverage starts on the date your eligibility document is issued.\nEnd date:\nIf you made a refugee claim from within Canada\nYou are eligible for coverage until:\n\nyou withdraw your refugee claim, or\nthe Immigration and Refugee Board of Canada (IRB) finds you abandoned your refugee claim, or\nyour refugee claim isn't eligible and you can't apply for a pre-removal risk assessment (PRRA), or\nyou leave Canada. \n\nYour IFHP coverage will automatically expire 90 days from the decision date if:\n\nthe IRB finds you to be a Convention refugee, or \nyou get a positive decision on your PRRA application. \n\nDuring this time, you must contact the province or territory you live in to find out when you can apply for health coverage. In some provinces, you can apply as soon as you get a positive decision. In these cases, you should apply right away.\nIf you are a refugee resettled from outside Canada\nIn Canada, the government of your province or territory covers health services. When you first arrive, it may take some time for you to be covered for these services. Until then, your health care will be covered by the Interim Federal Health Program (IFHP). \nBasic Coverage\nThe IFHP gives you basic coverage (for example, doctor visits and hospital care) until you become eligible for provincial or territorial health coverage, which typically occurs within 3 months. During this time, you must apply for health insurance from the province or territory where you live. \nSupplemental and Prescription Drug Coverage\nIn most cases, your supplemental and prescription drug coverage will be valid for 12 months from the date you arrive in Canada. If you are still eligible after this, you must apply to extend your IFHP coverage or contact the Immigration, Refugees, Citizenship Canada office in your area.\nFind out more about who is eligible for the IFHP and the services available to them.\n\nNote: Your coverage can be cancelled without notice if your immigration status changes."
+    }
+  ],
+  "utter_faq/208": [
+    {
+      "text": "Follow these steps:\n\nFind a health-care provider who is registered with Medavie Blue Cross.\n    \nMedavie Blue Cross is the company that manages Interim Federal Health Program (IFHP) claims. \nIf your health-care provider isn't registered with Medavie Blue Cross, they can easily register.\n\n\nShow your IFHP eligibility document to your health-care provider before they treat you.\nAfter you are treated, your health-care provider may give you a claim form. You must sign this form to prove you were given the health service or product.\n\n\nNote:\n\nBefore using any services, ask if the provider takes part in the Interim Federal Health Program (IFHP) and agrees to send their bill to Medavie Blue Cross.\nYou don't have to accept services from health-care providers who don't take part in the IFHP. For example, if a pharmacy asks you to pay for medication, you can find another pharmacy that is registered with the IFHP.\nIf you go to a pharmacy that is not located in your province of residence (e.g. if you live in Ontario and request a prescription medication in Quebec), your claim may be rejected. Make sure that you tell us if you move to another province.\nIf you are eligible for coverage for the service or product under the IFHP, you won't have to pay for it. \nIf you pay a provider for a service or product that is covered by the IFHP, you won't get any money back.\nIf you need a health-care service or product that isn't covered you will have to pay for it.\n\n\nFind out more about how to get health services and products."
+    }
+  ],
+  "utter_faq/209": [
+    {
+      "text": "After you are treated, your health-care provider may give you a claim form. You must sign this form to prove you received the health service or product.\nIf you are eligible for coverage for the service or product under the Interim Federal Health Program, you won't have to pay for it."
+    }
+  ],
+  "utter_faq/210": [
+    {
+      "text": "You may get a letter from Medavie Blue Cross asking you to confirm if you were given health services or products on a given date.\nYou should:\n\nanswer the question,\nsign the letter, and\nreturn it to Medavie Blue Cross.\n\nThis isn't a bill. This will help to prevent fraud. Signing this letter won't affect your health coverage or your immigration status."
+    }
+  ],
+  "utter_faq/211": [
+    {
+      "text": "No, you do not have to get certain vaccinations. The pre-departure vaccination services offered through the IFHP are voluntary.\nIf a panel physician associated with the International Organization for Migration does your immigration medical exam, they may offer you vaccines to update your immunization status before you arrive in Canada. If you choose to get vaccinated overseas, you should bring your vaccination record to Canada."
+    }
+  ],
+  "utter_faq/212": [
+    {
+      "text": "You can register to become a health-care provider with the Interim Federal Health Program (IFHP) online or on paper (PDF, 335 KB). For detailed instructions on how to register, call Medavie Blue Cross at 1-888-614-1880.\nNote: Pharmacies must register to become IFHP providers by calling Medavie Blue Cross. Once registered, pharmacies must contact their software vendors to update their carrier codes so that IFHP pharmacy claims can be submitted electronically to Medavie Blue Cross.\nEach new registered provider will receive a complete kit including:\n\nwelcome letter,\nclaim forms,\ndirect deposit request form,\nbenefit grids, and\nthe IFHP Information Handbook for Health Care Professionals (PDF, 6.89 MB)."
+    }
+  ],
+  "utter_faq/213": [
+    {
+      "text": "To check your patient's eligibility for the Interim Federal Health Program (IFHP) before you provide a service:\n\nAsk for their eligibility document. This could be\n  \nan Interim Federal Health Certificate\na Refugee Protection Claimant Document\nan Acknowledgement of Claim and Notice to Return for Interview Letter\n\nConfirm their identity with:\n  \nan immigration document that has a photo\na government-issued identification that has a photo\n\nCheck their eligibility for IFHP using their identification number (the 8 to 10 digit number on their eligibility document) and by either \n  \ncalling Medavie Blue Cross\nlogging into the IFHP Secure Provider Web Portal\n\n\nIf you have questions about the types of benefits and services covered, you can also contact Medavie Blue Cross by\n\nemail: CIC_Inquiry@medavie.bluecross.ca\nfax: 506-867-3841\n\nTo find out more about checking patient eligibility, see our quick reference guide (PDF, 242 KB). You can also see examples of IFHP eligibility documents in the IFHP Information Handbook for Health Care Professionals (PDF, 6.9 MB)."
+    }
+  ],
+  "utter_faq/214": [
+    {
+      "text": "It takes two business days for the Medavie Blue Cross system to show if a patient is eligible. Patients are still eligible during this period.\nAll Interim Federal Health Program (IFHP) clients are eligible for coverage starting on the date their IFHP eligibility document is issued.\nIf a patient requests services or products during this period, please follow these procedures, also found on the Medavie Provider website (PDF, 229 KB)."
+    }
+  ],
+  "utter_faq/215": [
+    {
+      "text": "Yes. The IFHP Basic Coverage covers:\n\nmental  health services provided by physicians (such as psychiatrists, general or  family practitioners), or\nservices  provided by mental health hospitals.\n\nThe  IFHP also covers mental health services provided by allied health professionals  (such as clinical psychologists, psychotherapists, or counselling therapists)  under the IFHP Supplemental Coverage (PDF, 484 KB). To become an IFHP registered provider, allied health professionals must be  licensed in the province or territory in which they practice with their  provincial or territorial licensing body.\nNotes:\n\nThe  IFHP does not require prior approval for the services provided by physicians or  mental health hospitals.\nMedavie Blue Cross  requires prior approval for mental health services provided by allied health  professionals."
+    }
+  ],
+  "utter_faq/216": [
+    {
+      "text": "Prior  approval requests must be accompanied by:\n\nA letter from a  physician that indicates the diagnosis and referral for assessment / psychotherapy / counselling therapy and\nthe Initial  Assessment report.\n\nThe  Initial Assessment can be conducted upon referral from a physician and must  include a:\n\nclinical  interview,\nbrief  psychometric screening (where appropriate) and\na  report to the IFHP indicating a treatment plan and expected duration of  treatment (if applicable).\n\nThis  assessment can be billed to a maximum of 2 hours. The provider should not  proceed with further treatment until they get prior approval.\nFor more information,  refer to the IFHP  Supplemental Benefit Grid (PDF, 484 KB), Note 2."
+    }
+  ],
+  "utter_faq/217": [
+    {
+      "text": "The IFHP will initially  approve up to 10 one-hour sessions, not including the initial assessment. If more  treatment is needed, providers can submit a request to the IFHP. It must be accompanied by a  physician's recommendation for more sessions. A discharge summary report must  be submitted to both the referring physician and IFHP once treatment is  completed.\nThe IFHP does not cover group psychotherapy sessions or the following services:\n\nPsychoanalysis\nPsycho-educational assessments\nLife skills training\nExpressive arts therapy\nHypnotherapy\nSex therapy"
+    }
+  ],
+  "utter_faq/218": [
+    {
+      "text": "If  interpretation is needed during the treatment/counselling, the IFHP will  reimburse $28.95/per hour for interpretation services (i.e., for 10 hours of  therapy IFHP will reimburse 10 hours of interpretation services)\nInterpreters must be  registered with the IFHP to be reimbursed for their services."
+    }
+  ],
+  "utter_faq/219": [
+    {
+      "text": "Rates for services/products provided are in line with:\n\nprovincial/territorial health insurance rates (where applicable),\nusual or customary fees for a given service (where applicable), or\nstandard Interim Federal Health Program rates.\n\nThe IFHP Benefit Grids list the services and products covered. Benefits are subject to limits and maximum dollar amounts, and some benefits require special authorization from Medavie Blue Cross.\nFor more information, please consult the IFHP Information Handbook for Health Care Professionals (PDF, 6.9 MB)."
+    }
+  ],
+  "utter_faq/220": [
+    {
+      "text": "No. Health-care providers may not charge the Interim Federal Health Program (IFHP) clients for covered services.\nFor more information on the IFHP, see the Medavie Blue Cross guides:\n\nIFHP Information Handbook for Health Care Professionals (PDF, 6.9 MB)\nQuick Reference Guide – Verify Patient Coverage (PDF, 242 KB)\nSecure Web Portal and Electronic Claims Submissions Service Guide (October 2011) (PDF, 3.1 MB)\nElectronic Dental Claims Quick Reference Guide (PDF, 166 KB)\nClaims Procedures for Point of Sale (POS) Claims Transmissions (PDF, 229 KB)"
+    }
+  ],
+  "utter_faq/221": [
+    {
+      "text": "No. The IFHP is a payer of last resort, meaning that it provides benefits to those who lack public health insurance or comprehensive private health insurance.\nThe IFHP does not cover the cost of health-care services or products that a person may claim (even in part) under a public or private health insurance plan. The IFHP does not coordinate benefits with other insurance plans/programs so co-payments aren't possible."
+    }
+  ],
+  "utter_faq/222": [
+    {
+      "text": "You can register as an IFHP pre-departure medical services provider if you are a:\n\npanel physician or\npanel radiologist or\ncertified secondary care provider (such as a hospital or facility) that provides services to refugees overseas\n\nRegistration with IFHP is based on your:\n\nlocation\nscope of clinical practice\naffiliation with the International Organization for Migration (IOM)\npanel membership status.\n\nFor more information, consult the IFHP PDMS Provider Website."
+    }
+  ],
+  "utter_faq/223": [
+    {
+      "text": "To ensure you will be reimbursed, you must check the eligibility status of each Interim Federal Health Program client before you provide any services.\n  If you are affiliated with the International Organization for Migration (IOM), you will have client eligibility confirmed by the IRCC visa office. To confirm client eligibility, you must: \n\nConfirm that the client's name appears on the list received from visa offices. \nConfirm that the identity of the person matches the person in the identification document. \nKeep a copy of the list of eligible clients received from visa offices.\n\nIf you are not affiliated with the IOM, you must:\n\nConfirm that the client has an Interim Federal Health Certificate.\nConfirm that the identity of the person on the Interim Federal Health Certificate matches the person in the identification document.\nKeep a photocopy of the client's Interim Federal Health Certificate in their records.\n\nFor services to be reimbursed, as a non-IOM affiliated provider you must attach a copy of the client's Interim Federal Health Certificate to claims sent to Medavie Blue Cross."
+    }
+  ],
+  "utter_faq/224": [
+    {
+      "text": "If you are a panel physician affiliated with the International Organization for Migration (IOM), you can provide vaccination services covered by the IFHP to eligible clients.\nImmunizations can only be provided in countries where IOM has the capacity to deliver vaccinations. The IFHP has developed instructions for the delivery of vaccination services, including:\n\nstandard operating procedures\nvaccination schedules\nconsent forms\ndocumentation worksheets"
+    }
+  ],
+  "utter_faq/225": [
+    {
+      "text": "Rates for services/products provided are in line with:\n\nusual or customary fees for a given service or product (where applicable) or\nmaximum fees or rates for specific benefits as approved by the IFHP\n\nCertain services and products covered by the IFHP need prior approval to confirm clinical and/or administrative criteria. Benefits are subject to limits and maximum dollar amounts as determined by IFHP.\nConsult the IFHP pre-departure medical services benefit grid or the IFHP Information Handbook for Pre-Departure Medical Services Providers."
+    }
+  ],
+  "utter_faq/226": [
+    {
+      "text": "No, you cannot charge eligible clients for services covered by the IFHP."
+    }
+  ],
+  "utter_faq/47": [
+    {
+      "text": "Overall, Canada has made improvements to the Express Entry system.\n\n\n October 20, 2020: You can get additional points if you score NCLC 7 or higher on all four French language skills (listening, speaking, reading and writing). \n\n- CLB 4 or lower in all four English skills (or did not take an English test): You will get 25 additional points.\n\n- CLB 5 or higher on all four English skills: You will get 50 additional points.\n\nThese points are in addition to points you get for official languages.\n\nIf you think the changes affect you, you should:\n\n 1. Log into your online account and check your Express Entry profile.\n\n 2. Update your profile, and the Comprehensive Ranking System(CRS) will update your score (It may take up to 24 hours for the system to update your score)."
+    }
+  ],
+  "utter_faq/48": [
+    {
+      "text": "Canada has changed some questions in the education history section in both the online profile and application for Express Entry. Because of this, some people are getting errors when they try to move on to the next step.\n\n\n\n\nTo fix this: \n\n\n1. In your profile, go to the Study and languages section of the form.\n\n\n2. Open the Education history sub-section. Scroll to the bottom and click Modify.\n\n\n3. You will see the information you already entered. To make sure you filled all the fields, click Check for Completeness at the top of the form.\n\n\n4. Fill in the field(s) that have a red error message and red question text.\n\n\n5. Click 'Save and Exit'.\n\n\n6. Repeat these steps for each entry in the section.\n\n\n\n\nIf you have been invited to apply, you also need to validate the 'Personal Activities' section:\n\n\n1. Go to the Personal history section of the web form.\n\n\n2. Open the Personal activities sub-section and scroll down to the grid of saved entries.\n\n\n3. Click Modify and repeat the steps above for each entry."
+    }
+  ],
+  "utter_faq/49": [
+    {
+      "text": "No. Under Express Entry, the system will find which programs you qualify for based on the answers you give in your profile. If you qualify for more than one program, Canada will decide which one to issue the invitation to apply under.\n\n\nYou can choose to decline an invitation to apply if it is not under the program you were interested in. But, if you do this, there is no guarantee that you will be invited again under a different program."
+    }
+  ],
+  "utter_faq/50": [
+    {
+      "text": "Yes, you must include all medical exam confirmation letters and police certificates for your application for permanent residence to be complete.\n\n\nIn rare cases, you may not be able to get a police certificate despite your best efforts. If this happens, you need to upload, with your complete application:\n\n\n- Proof that you applied for a police certificate (things like receipts that prove you submitted paperwork and any fees related to your request.)\n\n\n- A letter of explanation.\n\n\n- You must also show that you made your best efforts to get all the documents you needed.\n\n\nThere is no guarantee Canada will accept a letter of explanation in place of any required document, including a police certificate. Canada considers each application under Express Entry on its own merits."
+    }
+  ],
+  "utter_faq/51": [
+    {
+      "text": "We are aware that for some countries there are special procedures in place to get police certificates.\n\n\nYou can find country-specific information about police certificates on Canada's website:\n https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how.html"
+    }
+  ],
+  "utter_faq/52": [
+    {
+      "text": "You will be asked to enter in your Express Entry profile the amount of money you will have to help you settle in Canada. This is to show that you can support yourself and any family who come with you to Canada, and helps us assess which programs you may be eligible for. You will only need to meet the settlement fund requirement if it applies to the program you are invited to apply under.\n\n\nIf you are invited to apply under the Federal Skilled Worker Program or Federal Skilled Trades Program, you will need to show that you meet the settlement funds requirement unless you are currently authorized to work in Canada and have a valid job offer from an employer in Canada.\n \nFor proof, you must get official letters from any banks or financial institutions where you are keeping money.\n\nLetter(s) must list:\n\n- All current bank and investment accounts\n\n- All outstanding debts such as credit card debts and loans\n \n\nIf you don't need to provide proof of funds, you must upload a letter explaining either that you have been invited to apply under the Canadian Experience Class, or that you have a valid job offer."
+    }
+  ],
+  "utter_faq/53": [
+    {
+      "text": "Find out which programs you're eligible for by using these steps:\n \n1. Sign in to your account.\n\n 2. Go to the section 'View the applications you submitted'.\n\n3. Click on 'Check full application status.'\n\n4. Scroll down to the section called 'What am I eligible for?'\n\nThe programs are listed in the table. Beside each one, under 'Details', it will say 'met' or 'not met.'\n\nIf it says 'met' that means you' re eligible for that program.\n\nYou may be eligible for more than one program, and can apply for multiple at the same time"
+    }
+  ],
+  "utter_faq/54": [
+    {
+      "text": "Note: As of June 6, 2017, It is now optional to create a Job Match account with Job Bank.\n\n\nTo start your job search, you can:\n\n- Create a Job Match account with Canada's Job Bank\n\n- Promote yourself to employers in Canada using private sector job boards\n\nYou can use both while you are in the Express Entry pool. Once you come to Canada, you can keep using these services if you still need to find a job.\n\n\nJob Bank: A Job Match account with Job Bank is an easy, online tool to help match you with employers looking for workers with your skills. To do so:\n\n1. Go to the Job Match sign-in page\n\n2. Click the 'Sign up now!' button\n\n3. Read the privacy notice and click I agree if you agree\n\n4. Follow the instructions to create an account\n\n You will need your Express Entry profile number and job seeker validation code to create a Job Match account.\n\n\nJob boards: Private-sector job boards are online services that advertise jobs and give you tools for finding work. Some are free and others cost a small fee. Research to find one that suits you."
+    }
+  ],
+  "utter_faq/55": [
+    {
+      "text": "No. You may only have one profile at a time. This is set out in Canada' s immigration  law.\n\nCreating  more than one profile will not give you a better chance at being invited or allow you to be invited under a different program.\n\n Note: Completing an Express Entry profile does not guarantee that you will receive an Invitation to Apply for permanent residence. An Invitation to Apply (ITA) for permanent residence will be based on your score and rank in the Express Entry pool using the Comprehensive Ranking System."
+    }
+  ],
+  "utter_faq/56": [
+    {
+      "text": "You may want to try using a different Web browser such as Firefox or Google Chrome. You should also check your browser's language settings and make sure it is set to English or French as special characters can cause errors.\n\n If you are still having problems, try clearing your browser cache. Your browser' s 'Help' section can tell you how to do this. If the problem continues, you can contact website support directly."
+    }
+  ],
+  "utter_faq/57": [
+    {
+      "text": "To get points for your education under the Comprehensive Ranking System (CRS), you must either: \n\n- Have been educated in Canada, or \n\n- Have a valid Educational Credential Assessment (ECA) for immigration purposes for your completed foreign education."
+    }
+  ],
+  "utter_faq/58": [
+    {
+      "text": "The online tool asks general questions to see if you may be eligible for one of the programs under Express Entry.\n\n The Express Entry profile asks more specific and detailed questions about your qualifications. It is possible that after you gave more detailed information in your Express Entry profile that you are, in fact, not eligible.\n\nOnly a complete Express Entry profile can be used to fully assess if you are eligible."
+    }
+  ],
+  "utter_faq/59": [
+    {
+      "text": "Note: It is now optional to create a Job Match account with Job Bank. You can still create a Job Match account to help you find work.\n\nNo. If you don't already have a valid job offer, you must create a Job Match account in Job Bank using your Express Entry profile number and Job Seeker Validation Code. A Job Match account can help you start looking for work.\n\nOnce you complete your Express Entry profile and you are found to meet most of the requirements to enter the pool, you should get a message in your account with this information.\n\n\n To create an account:\n\n1. Go to the Job Match sign-in page\n2. Click the 'Sign up now!' button\n\n3. Read the privacy notice and click 'Agree'\n\n 4. Follow the instructions to create an account."
+    }
+  ],
+  "utter_faq/60": [
+    {
+      "text": "If you haven't finished your Express Entry profile on your account, the reference code won't work. To continue your profile:\n\n1. Go to the 'View the applications you submitted' section at the top of your account page\n\nChoose the line with your Express Entry profile\n\n3. Click the 'Continue Profile' button\n\nIf you have not started creating your profile, you will have to go through the Come to Canada tool again for a new reference code."
+    }
+  ],
+  "utter_faq/61": [
+    {
+      "text": "You actually don't need any documents to create your Express Entry profile, but you will need information from the following documents:\n\n\n- A passport or travel document\n\n - Language test results\n\n - Proof of work experience\n\n - Proof of funds\n\n\n\nYou may also need the following depending on your program:\n\n\n- Proof of Canadian education or ECA (for Federal Skilled Workers Program or for CRS points)\n\n - Provincial Nomination (if you have one)\n\n - Written job offer from Canadian employer (if you have one)\n\n - Certificate of qualification in a trade occupation issued by Canadian province or territory (if you have one)"
+    }
+  ],
+  "utter_faq/62": [
+    {
+      "text": "Canada assesses everyone using the same standards, no matter their language of origin, nationality or ethnicity.\n\n\nEvery candidate must take a standard test by an objective third party. This is to make sure your language skills are assessed in a fair and unbiased way.\n\n\nEven someone from an English-speaking country, who speaks English as a first language, needs to take a test. Likewise, someone from a  French-speaking country, who speaks French as a first language, needs to take a test.\n\n\nYou need to submit third-party language results for all programs under Express Entry. You will have to include the results of your test(s) in your Express Entry profile.\n\n\nLanguage tests have been required for our skilled immigration programs for many years."
+    }
+  ],
+  "utter_faq/63": [
+    {
+      "text": "Canada only accepts these tests for Express Entry:\n\n\nFor English:\n\nCELPIP: Canadian English Language Proficiency Index Program (CELPIP-General)\n\nIELTS: International English Language Testing System (General Training)\n\n\nFor French:\n\n TEF Canada: Test d'évaluation de français\n\nTCF Canada: Test de connaissance du français."
+    }
+  ],
+  "utter_faq/64": [
+    {
+      "text": "It may take up to 24 hours for the system to send a message saying that your profile has been updated.\n\nFor example, if you made a change on Monday, you may only receive a message from your account on Tuesday."
+    }
+  ],
+  "utter_faq/65": [
+    {
+      "text": "If you withdrew your profile, you will need to create a new one if you want to enter the pool.\nYou will have to meet the Express Entry requirements in  place at that time."
+    }
+  ],
+  "utter_faq/66": [
+    {
+      "text": "If you've been found not eligible, you will need to create a new profile. An ineligible profile is no longer valid so you can't change it, even if you have new information.\n\nYou will still have to meet the Express Entry requirements that are in place. So, unless you made a mistake in your first profile or your circumstances have changed (for example, you have new language test results, you now have more work experience, etc.), there is a good chance you will be found ineligible again.\n\nYou can use my eligibility checker to find other programs you are eligible for!"
+    }
+  ],
+  "utter_faq/67": [
+    {
+      "text": "To update  your profile, follow these steps:\n\nGo to the main  page of your account\nScroll down to  “Continue my profile / application, not yet submitted”\nChoose the line  with your Express Entry Profile\nClick “Continue Profile” button \n\n\nOnce  you're on the “ Express Entry profile” page:\n\n\nClick the “Update form” button for  the “Form Name” you want to update\nMake the changes you want to the fields\nClick the “Save and exit” button at the bottom of page to go back to “Express Entry Profile” page."
+    }
+  ],
+  "utter_faq/68": [
+    {
+      "text": "In some places, the fields will be coloured gray, and you will not be able to update them. (A red circle with a diagonal line will also appear when you mouse over the field.) This is because the information was given in the first tool (Come to Canada) you completed. To update them, you will have to update them in the 'Come to Canada' step. To do this: \n\n\n1. Go to the 'Express Entry Profile' page:\n\n\n2. Click on the 'Modify Family Information' button at the top of the page:\n\n\n3. Change the fields as needed.\n\n\n4. Click the 'Update Information' button to save any changes (it will also bring you to the next section if the change you want to make is not in the first screen)\n\n\nOn the following screens you have a few options. You can click: \n\n\nThe 'Next' button - Saves your answers and goes back to the 'Express Entry Profile' page,\n\n\nThe 'Save and Exit Questionnaire' button - Returns to the main page of your account\n\n\nThe 'Modify my Answers' button - Views all the eligibility questions.\n\n\nThe 'pencil' button - Access the fields related to that question."
+    }
+  ],
+  "utter_faq/69": [
+    {
+      "text": "To confirm that you profile is complete:\n\n1. Go to the 'Express Entry profile' page\n\n2. Click the 'Continue form' button for the section with the status 'In progress'\n\n3. Verify that all circles to the right have a  green check mark  in them.\n\n4. If one section displays a progress bar instead of a green check mark, open the section and complete the missing information.\n\n5. Click the 'Save and Exit' button to save your changes and return to the 'Express Entry profile' page."
+    }
+  ],
+  "utter_faq/70": [
+    {
+      "text": "If you weren't found eligible, you won't be able to update your profile. You'll have to create a new profile. Be sure your profile is complete and correct before you submit it.\n\n\nIf your profile was found eligible for the pool, you can still update it after you've submitted it. Follow these steps:\n\n\n1. On the main page of your account, go to the section 'View the applications you submitted'\n\n\n2. Click on 'Check full application status'.\n\n\n3. On 'Express Entry profile status' page, click on the 'View your profile' under the heading 'Your Express Entry profile status'.\n\n\n4. On the 'Express Entry profile' page, click on the 'Update form' button for the section you want to change (If the button only says 'View form', your profile wasn't found eligible. You will have to submit a new one).\n\n\n5. Make any changes you need to.\n\n\n6. Click the 'Save and Exit' button at the bottom of the page.\n\n\nOnce you finish updating your profile, click on the 'Continue' button at the bottom of the page. Follow the instructions provided to submit your updated profile.\n\n\nNote: The 'Revert changes' button will appear each time you enter a form and click on the 'Save and Exit' button, even if you didn't make any changes."
+    }
+  ],
+  "utter_faq/71": [
+    {
+      "text": "You can find these numbers in a message in your account. To find it:\n\n 1. Log into your account\n\n\n2. Go to the heading called 'View my submitted applications or profiles'\n\n\n3. Click on 'Check status and messages' \n\n\n4. Scroll down to the table called 'Correspondence'.\n\n\n5. Click on the arrow in front of the message, it will open a drop-down menu with a link.\n\n\n6. Click on the link to open the PDF message\n\n\nYou can find the profile number at the top of the PDF letter. The Job Seeker Validation Code should be under the section 'To register with Job Bank'."
+    }
+  ],
+  "utter_faq/72": [
+    {
+      "text": "To withdraw your profile:\n\n\n1. On the main page of your account, go to the section 'View the applications you submitted'.\n\n\n2. Click on the orange 'Withdraw profile' button.\n\n\n3. Under the heading 'What would you like to do today?' below the 'Warning!' text, click on the orange 'Continue' button."
+    }
+  ],
+  "utter_faq/73": [
+    {
+      "text": "To qualify for the broadest range of programs, including the Federal Skilled Worker Program, you should include all work experience for the last 10 years. Canada also needs this information for an application for permanent residence, no matter which program you are applying under."
+    }
+  ],
+  "utter_faq/74": [
+    {
+      "text": "If you are listing a skilled trade (jobs with a four-digit NOC code that begins with 632, 633, 72, 73, 82, 92) as your primary occupation:\n\n\nThis is the date when you first became qualified to practice on your own in that trade (for example, when you moved from apprentice to fully qualified tradesperson).\n\n\nIf you are listing any other primary occupation: \n\n\nThis would be the date when you finished the minimum level of education needed for the occupation according to the National Occupational Classification code. (Note: if the NOC requirements are only high school, this is the date you graduated from high school.)"
+    }
+  ],
+  "utter_faq/75": [
+    {
+      "text": "'Maintained status' means you can stay in Canada and, if eligible, keep working while Canada makes a decision on your application.\n\n\nIf you're in Canada with maintained status and are still authorized to work at the time you complete your Express Entry profile:\n\n\n- Answer 'Yes' to the question 'Does [your name] have a valid work permit for the current job in Canada?'\n\n\n\n\nIf you're in Canada with maintained status, you're still authorized to work, and the original work permit was supported by a positive Labour Market Impact Assessment (LMIA):\n\n\n- Answer 'Yes' to the question 'Was a positive LMIA issued for the current work permit?'\n\n\n- Where it asks for the LMIA number, enter the number of the expired LMIA.\n\n\n- For the question 'Was a positive LMIA issued for the job offer in Canada?', answer 'No' if you're still working for the employer named on the original work permit and you have a job offer from your current employer for at least 1 year\n\n\n- For the question 'Was a positive LMIA issued for the job offer in Canada?', answer 'Yes' if you're working for a different employer than the one named on the original work permit, you have a job offer from your new employer for at least 1 year and your new employer has a positive LMIA"
+    }
+  ],
+  "utter_faq/76": [
+    {
+      "text": "To get full points for having more than 1 credential:\n\n - At least 1 of the credentials must be for a program of 3 or more years in length\n\n\n- You need a valid educational credential assessment (ECA) for each credential\n\n\nFill in all fields in the Education history section in your profile. When you' re done, click Save and Add. Repeat the same steps for each credential."
+    }
+  ],
+  "utter_faq/77": [
+    {
+      "text": "No, the system will not keep your information. If your profile is about to expire, you must complete and submit a new one if you want to stay in the Express Entry pool.\n\n\nYou can save screen shots of your profile to make it easier to re-enter your data.\n\n\nDo not create a new profile until your existing one expires. If you decide to create and submit a new profile before your existing one expires, you will need to withdraw your existing profile first."
+    }
+  ],
+  "utter_faq/78": [
+    {
+      "text": "Yes. Depending on the information in your profile, you may be eligible for more than one program through Express Entry. In that case, you will be invited to apply (ITA) for one program based on this order:\n\n\nFirst: Canadian Experience Class (CEC)\n\n\nSecond: Federal Skilled Worker Program (FSWP)\n\n\nThird: Federal Skilled Trades Program (FSTP)\n\n\nUnfortunately, you will only recieve one invitation, and you cannot choose which program you are invited to apply for. The system will sort profiles based on the information you enter.\n\n\nIf you decline the invitation, the system will not re-invite you under the next program. You will go back in the pool, and if Canada invites you again, the same order will apply."
+    }
+  ],
+  "utter_faq/79": [
+    {
+      "text": "Yes. If you're invited to apply, you will recieve an email at the address you provided.\n\n\nTo accept or decline your invitation, you need to sign in to your account.\n\n\nIf you've forgotten your password or username, follow these instructions:\n\n\nIf you need to create a new account, link your application to your new account. You will need your profile or application number to do this. You can find this number at the end of the subject line of an email Canada sent you (example: W300027607).\n\n\nAfter you have changed your password or linked your application to new account, follow these steps:\n\n\n1. Go back to the main page in your account.\n\n\n2. Scroll down to the table under the heading 'Continue an application you haven't submitted.'\n\n\n3. Find the application called 'Work permit' for International Experience Canada, or 'Permanent residence' for Express Entry.\n\n\nTo accept your ITA, click 'Start application'.If there's no application, you can check the status and messages for your profile under the heading 'View the applications you submitted'."
+    }
+  ],
+  "utter_faq/80": [
+    {
+      "text": "By awarding additional points for a job offer based on the NOC, Canada can get a better balance of top talent from the pool.\n\n\nFor a valid job offer under Express Entry, you can now get:\n\n\n- 200 CRS points for NOC 00 jobs.\n\n - 50 CRS points for any other NOC 0, A and B jobs."
+    }
+  ],
+  "utter_faq/81": [
+    {
+      "text": "No. As of November 19, 2016, a valid job offer for Express Entry only needs to be for one year or more.\n\n\nJob offers must still be:\n\n\n- At the NOC 0, A or B level\n\n\n- From one employer for the FSW or CEC, or up to two employers for the FST\n\n\n- Supported by an LMIA (if you need one) or be for a candidate that is exempt from needing one."
+    }
+  ],
+  "utter_faq/82": [
+    {
+      "text": "Generally, a valid offer is for a job that is:\n\n- Full-time and non-seasonal.\n\n - For at least one year.\n\n\n- In a skilled job listed as Skill Type 0, A or B.\n\n\n- The job offer must be in writing, and must set out details of the job they are offering you, such as your pay, deductions, job duties, and conditions of employment.\n\n\nIn most cases, a valid job offer must be supported by a Labour Market Impact Assessment (LMIA). The employer has to apply for one from Employment and Social Development Canada/Service Canada. If they get a positive LMIA, they must give you a copy alongside their written job offer."
+    }
+  ],
+  "utter_faq/83": [
+    {
+      "text": "Your primary occupation means the job you have experience in (within the last ten years) and want to base your immigration application on, if you are invited to apply."
+    }
+  ],
+  "utter_faq/84": [
+    {
+      "text": "Your National Occupation Classification (NOC) code is the number the job is listed under in Canada's official job classification system.\nFind the NOC code and title for a job"
+    }
+  ],
+  "utter_faq/85": [
+    {
+      "text": "To get points from the Comprehensive Ranking System for a job offer in Express Entry, your employer will usually need to get a Labour Market Impact Assessment (LMIA). You should only answer 'Yes' to the question 'Does [your name] have a job offer in Canada?' if:\n\n\n- A Canadian employer (or up to two for the Federal Skilled Trades Program) has offered you a full-time, non-seasonal job for one year or more.\n\n\n- That job offer is supported by an LMIA, or\n\n\n- The job is exempt from needing an LMIA.\n\n\nIf you are currently working in Canada but have not been offered a job that is supported by a LMIA (or is exempt from needing one), you should:\n\n\n1. Answer 'No'.\n\n\n2. Create a Job Match account in Job Bank.\n\n\nNote: Canada now accepts certain job offers that don't need an LMIA."
+    }
+  ],
+  "utter_faq/86": [
+    {
+      "text": "No, a work permit is not a job offer. A job offer is valid if your current or future employer:\n\n\n- Has made a written offer to give you a full-time, non-seasonal job for one year or more if you are accepted as a permanent resident\n\n\n- Has a positive Labour Market Impact Assessment (LMIA) from Employment and Social Development Canada (or the job is LMIA-exempt).\n\n"
+    }
+  ],
+  "utter_faq/87": [
+    {
+      "text": "If there is no National Occupational Classification (NOC) code on your work permit, you should find and use the NOC code of the job you are currently doing in Canada."
+    }
+  ],
+  "utter_faq/88": [
+    {
+      "text": "'Implied status' means you can stay in Canada and keep working while Canada makes a decision on your application.\n\n\nIf you have implied status, and have applied to renew your work permit, you are also still eligible for job offer points."
+    }
+  ],
+  "utter_faq/89": [
+    {
+      "text": "In the Federal Skilled Trades program, work experience in a trade can only count if you are qualified to independently practice that trade in the region where you got your work experience. The work experience from another country will only count towards the two-year work experience requirement if you also met the requirements to practice there independently. \n\n\nFor example, if you are a plumber from Germany and worked for one year in Poland, you need to prove that you were certified to be a plumber in Germany, and that you were qualified to work in Poland according to Polish regulations at the time for this work experience to count."
+    }
+  ],
+  "utter_faq/90": [
+    {
+      "text": "Student work experience will only count towards the minimum requirments for the Federal Skilled Workers Program (FSWP). This work experience can also count towards your CRS score if it was completed outside of Canada."
+    }
+  ],
+  "utter_faq/91": [
+    {
+      "text": "To be awarded points for work experience, you must meet all of the following:\n\n - Legally allowed to work in Canada in jobs in NOC Type 0, A, or B.\n\n\n- Working full-time (or an equal amount in part-time), meaning 30 hours of work per week.\n\n\n- Working for at least one year in the 10-year period before the day Canada assigns you points.\n\n\nCanada does not count work experience if you were:\n\n\n- Studying full-time while you were working.\n\n\n- Self-employed.\n\n\n- Not legally allowed to work in Canada."
+    }
+  ],
+  "utter_faq/92": [
+    {
+      "text": "If you show in your Express Entry profile that you have a valid job offer, you will automatically be awarded additional points towards your CRS score.\n\n\nIf your job offer is from your current employer, and you've maintained your status and are authorized to work, you must keep working for the employer on your existing permit and under the same conditions in order to keep your job offer points."
+    }
+  ],
+  "utter_faq/93": [
+    {
+      "text": "If you applied for a new work permit before your old one expired, you are under 'implied status' until Canada makes a decision on your application.\n\n\nJob offer information from your current employer in your Express Entry profile will carry forward to your application if Canada invites you to apply for permanent residence while under implied status.\n\n\nAs long as you still have implied status at the time you apply, you do not need to wait for your new work permit to be approved."
+    }
+  ],
+  "utter_faq/94": [
+    {
+      "text": "If you didn't apply for a new work permit before your original one expired, it may cause your score to drop. This could cause you to not be eligible anymore.\n\n\nIf your score has dropped below the minimum cut-off for your round of invitations, you should decline the invitation. If you submit your application anyway, Canada will refuse it, and not refund your fees."
+    }
+  ],
+  "utter_faq/95": [
+    {
+      "text": "If you got an Express Entry profile number but not a Job Seeker Validation Code you should contact Canada's immigration office using the Case Specific Enquiry form.\n\n\nhttps://secure.cic.gc.ca/enquiries-renseignements/canada-case-cas-eng.aspx"
+    }
+  ],
+  "utter_faq/96": [
+    {
+      "text": "In most cases you don't need a job offer.\n\n However, you will need one if you: \n\n\n- Are eligible for either the Federal Skilled Workers or the Federal Skilled Trades Program while not having enough to support yourself and your family in Canada.\n\n\nEven if you don't need one, you may want to try and find a valid job offer. It will give you a much higher point score, and so a better chance of being invited to apply."
+    }
+  ],
+  "utter_faq/97": [
+    {
+      "text": "Job Bank is a database that can help match you with employers looking for workers with your skills.\nIf your Express Entry profile is found eligible, you can create a Job Match account. To do so:\n\n\n1. Go to the Job Match sign-in page\n\n 2. Click the 'Create an account' button\n\n 3. Read the privacy notice and click 'I agree'\n\n 4. Follow the instructions to create an account."
+    }
+  ],
+  "utter_faq/99": [
+    {
+      "text": "If you are having techincal issues while filling out your online application, then you can use the 'Report a Technical Issue' button at the top of your account page.\n\n If you have problems after submitting your application, you should submit a web form and choose techincal difficulties as your type of enquiry.\n\n\nhttps://www.cic.gc.ca/english/contacts/web-form.asp?v1"
+    }
+  ],
+  "utter_faq/100": [
+    {
+      "text": "You can apply online to:\n\n - Get a study permit\n\n\n- Get a work permit (including International Experience Canada (IEC))\n\n\n- Get a visitor visa or an electronic travel authorization (eTA)\n\n\n- Extend your stay in Canada as a visitor, student or worker\n\n\n- Immigrate as a skilled worker through Express Entry\n\n\n- Transfer between schools (designated learning institutions (DLIs))\n\n\n- Restore your status as a visitor, student or worker (within 90 days of the date your temporary resident status expired)\n\n\n- Submit applications for your family members"
+    }
+  ],
+  "utter_faq/101": [
+    {
+      "text": "A personal document checklist is a list of forms and documents you need to complete and send in with your application."
+    }
+  ],
+  "utter_faq/102": [
+    {
+      "text": "Your personal reference code is a unique code given to you through 'Come to Canada', Canada's online eligibility tool. You'll need to enter this code to:\n\n\n- Begin an online application for a visitor visa, study or work permit\n\n\n- To carry your information from Come to Canada over to an Express Entry profile\n\n\nYou can find your personal reference code at the top of your results page after you answer all the questions in the tool. This code is only valid for 60 days from the date you get it."
+    }
+  ],
+  "utter_faq/103": [
+    {
+      "text": "Some questions have help text that explains the question. To see it, click on the 'help (?)' icon on the right side of the question.\n\n\nCanada's website also links some words to a glossary, so if a word in a question is underlined, you can click on the word to see the definition, or it will lead you to a page on our website with more details."
+    }
+  ],
+  "utter_faq/104": [
+    {
+      "text": "If you are in the application for services related to visas, study or work permits, click the blue 'Exit Questionnaire' button at the bottom left of the page to end your session, and your online application will automatically be saved.\n\n\nIf you are in an Express Entry profile or online application for permanent residence, click the grey 'Save and Exit' button at the bottom left of the page."
+    }
+  ],
+  "utter_faq/105": [
+    {
+      "text": "By electronically signing your online application or online request, you are declaring that:\n\n\n- The information you have given in your application is true and\n\n\n- The supporting documents you are sending are genuine."
+    }
+  ],
+  "utter_faq/106": [
+    {
+      "text": "There are times where the system will be down for routine maintenance. You can visit 'Immigration, Refugees and Citizenship Canada' on Twitter for notifications on when the system will be unavailable.\nNotices will also be posted on Canada's website.\nIf the system is down without warning, unfortunately all you can do is try again later."
+    }
+  ],
+  "utter_faq/107": [
+    {
+      "text": "GCKey: 1-855-438-1102. The GCKey help desk is available 24 hours a day, 7 days a week. More information is available on the GCKey page (https://clegc-gckey.gc.ca/j/eng/AB-01?ReqID=s2e6035e751e59d5433d86bd4f3b51ffc2626b2c37).\n\n\nSign-In Partner (SecureKey Concierge): 1-855-433-5397 (in North America), 1-855-224-1714 (Text), 1-800-7328-7358 (outside of North America)."
+    }
+  ],
+  "utter_faq/108": [
+    {
+      "text": "To register for a GCKey:\n\n\n1. Go to the sign in page and click the 'Continue to GCKey' button.\n\n\n2. Choose a user name and a password. Keep a copy of these and the security questions in a safe place in case you forget."
+    }
+  ],
+  "utter_faq/109": [
+    {
+      "text": "If you lost your GCKey password, you can create a new password. Go to the sign-in page for GCKey and you'll be able to create a new password after you answer the password recovery questions you previously set up while registering for a GCKey.\nIf you lost your GCKey username, you will have to create a new GCKey."
+    }
+  ],
+  "utter_faq/110": [
+    {
+      "text": "If you have just reset your account because you lost your username and/or password, as a security measure the website will ask you questions about the application you submitted.\n\n\nTo link an application you have in progress to your account, sign in to your account and click on 'Link application to this account' under the heading 'What would you like to do today?'\n\n\nHave a copy of your application form on hand as you will have to enter the information exactly as you did on your application form."
+    }
+  ],
+  "utter_faq/111": [
+    {
+      "text": "Once you submit your online application for permanent residence, you can't send more documents through your account unless they are asked for.\n If you are asked for a document, you'll get a message in your account. To upload a document:\n\n\n1. Sign in to your account.\n2. Under 'View the applications you submitted' click on 'Check full application status.'\n\n\n2. Under 'Details about your application status' click on 'View submitted application.', On this page, you can upload the additional document the same way you uploaded the others when you first applied.\n\n\nIf you need to send documents that was not asked for (for example, an updated Travel History form), go to our Web form and follow the instructions."
+    }
+  ],
+  "utter_faq/112": [
+    {
+      "text": "Skilled workers are chosen as permanent residents based on their education, work experience, knowledge of English and/or French, and other factors. These things often help them succeed in Canada."
+    }
+  ],
+  "utter_faq/113": [
+    {
+      "text": "Under the Federal Skilled Worker (FSW) Program, arranged employment means you have a valid job offer from a Canadian employer.\nHaving a valid job offer affects you a few different ways\n\n- You gain 15 points on the Federal Skilled Workers selection factors.\n- You can earn between 50 and 200 points under the Comprehensive Ranking System for all Express Entry programs.\n\n\nFor either, a job offer must be in writing, and must set out details of the job they are offering you, such as:\n\n\n- Your pay and deductions\n\n - Your job duties\n\n - Conditions of employment (i.e., your hours of work.)"
+    }
+  ],
+  "utter_faq/114": [
+    {
+      "text": "The minimum requirements for federal skilled workers are:\n\n - At least one year of continuous full-time work experience (or the equivalent in continuous part-time work) in a skilled occupation listed in NOC code 0, A, or B of the.\n\n\n- Meet or exceed the language threshold of CLB 7 with test results from a IRCC-designated language testing organization.\n\n\n- A Canadian educational credential or an Educational Credential Assessment (for foreign educations) report for immigration purposes from a designated organization to prove that your overseas diploma, degree, or certificate is equivalent to a completed Canadian education credential.\n\n\nIf you meet all the minimum requirements, Canada will assess your application based on the selection factors in the federal skilled worker points grid."
+    }
+  ],
+  "utter_faq/115": [
+    {
+      "text": "You can find the CLB level of your language test results for CELPIP, IELTS or TEF, with our language test equivalency charts:\n\n\nhttps://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/standard-requirements/language-requirements/test-equivalency-charts.html\n\n\nThe CLB level is what you will use on your permanent residence application."
+    }
+  ],
+  "utter_faq/116": [
+    {
+      "text": "No, you must meet the threshold in all four abilities or your Express Entry profile will not be considered under the Federal Skilled Worker program.\n\n In the case that you have a proven medical disability preventing you from being able to obtain a score in one or more of the four skill areas, you are required to include the average score based on your assessed abilities."
+    }
+  ],
+  "utter_faq/117": [
+    {
+      "text": "If you are interested in the Federal Skilled Worker stream, you will need to meet, at minimum, the pass mark of 67 points out of 100 on the Federal Skilled Worker grid."
+    }
+  ],
+  "utter_faq/118": [
+    {
+      "text": "Yes. If you are 47 or over, you will not get any points under the Age factor of the Comprehensive Ranking System, but you may get points for other factors such as a job offer, your skills, your language abilities, and more. The combinations of the other sections can still be enough for you to recieve an ITA."
+    }
+  ],
+  "utter_faq/119": [
+    {
+      "text": "In most cases, your current employer does not need to re-apply if they already got a Labour Market Impact Assessment (LMIA) to hire you, but if you plan to work for a different employer and want job offer points, your new employer will usually need to apply for a new LMIA (unless the job is exempt)."
+    }
+  ],
+  "utter_faq/120": [
+    {
+      "text": "It depends on why your permit is exempt from a Labour Market Impact Assessment (LMIA). Under Express Entry, some LMIA-exempt jobs count towards job offer points. For example, if you are working in Canada on a LMIA-exempt work permit that was issued under an international agreement or Federal-Provincial-Territorial agreement (or certain other cases), you don't need your current employer to get an LMIA for your job offer to be valid.\nIf your work permit is LMIA-exempt for any other reason, your employer still needs to get an LMIA to improve your chances of being invited to apply."
+    }
+  ],
+  "utter_faq/121": [
+    {
+      "text": "Not necessarily.\nIf you are working in Canada on a post-graduation work permit, and have a valid job offer, your current employer will need to get an LMIA if:\n\n\n- You need one to meet the program requirements for the Federal Skilled Workers or Federal Skilled Trades Program, and\n\n\n- If your job is not exempt.\n\n\nA valid job offer supported by an LMIA can still get you more points under the Comprehensive Ranking System (CRS). This can improve your chances of being invited to apply. So in that case, your employer may want to get an LMIA, even though you don't need it to be eligible."
+    }
+  ],
+  "utter_faq/122": [
+    {
+      "text": "The maximum amount of points for the adaptability factor is 10.\nYou can get them by adding up the points from up to two criteria. Even if more than two of these apply to you and your spouse, you can only get 10 points in total.\n\n\nFind out how you can gain these points:\n\n\nhttps://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers/six-selection-factors-federal-skilled-workers.html"
+    }
+  ],
+  "utter_faq/123": [
+    {
+      "text": "You may be able to count experience as a teaching, research or lab assistant at a post-secondary educational institution, (see National Occupation Classification 4012) toward the work experience requirement, depending on the eligibility criteria of the programs.\nIf after submitting your Express Entry profile you are invited to apply, you must show that you did the job as described in the occupational description of the NOC, meaning that you did all the essential duties and most of the main duties listed. If you do not show that your experience meets the description in NOC, your application will be refused."
+    }
+  ],
+  "utter_faq/124": [
+    {
+      "text": "Yes, provided that it is still valid and that it's an ECA for immigration purposes.\nImmigration, Refugees and Citizenship Canada (IRCC) will accept ECA reports for five years from the date they are issued.\n\n\nKeep your ECA report in a safe and accessible place as you may be requested to submit it (or give information from it) if you are invited to apply."
+    }
+  ],
+  "utter_faq/125": [
+    {
+      "text": "You must prove your language skills by taking a third-party language test from an agency designated by us.\n\n\nYour score on the language test must meet or exceed the minimum language threshold in order to be eligible for the program. For the Federal Skilled Workers Program this thereshold is a CLB score of 7."
+    }
+  ],
+  "utter_faq/126": [
+    {
+      "text": "No, there are no exceptions to this rule. Each of the programs under Express Entry requires the submission of third-party language results. You will include the results of your test(s) in your Express Entry profile."
+    }
+  ],
+  "utter_faq/127": [
+    {
+      "text": "First, you will know ahead of time whether or not your language abilities qualify to immigrate to Canada under one of these programs.\n\n\nSecond, you will get an objective, realistic assessment of your language ability. The test will also reveal areas where you could improve.\n\n\nThird, a third-party language test is the most efficient way to have your language skills assessed. This helps us to process applications more quickly.\n\n\nAlso, many regulatory bodies and industries will need you to have language testing. Taking the test gets you one step closer toward getting a job in Canada."
+    }
+  ],
+  "utter_faq/128": [
+    {
+      "text": "- Canadian English Language Proficiency Index Program (CELPIP, General test) can be taken through Paragon Testing Enterprises Inc.\n\n\n- International English Language Testing System (IELTS, General test) can be taken through Cambridge Assessment English, IDP Australia and The British Council\n\n\n- Test d'Évaluation de français (TEF Canada) can be taken through The Paris Chamber of Commerce and Industry.\n\n\n- Test de connaissance du français (TCF Canada) can be taken through France Education International (FEI).\n\n"
+    }
+  ],
+  "utter_faq/129": [
+    {
+      "text": "If you want to immigrate to the province of Quebec as a skilled worker, follow the steps below.\n1. Contact the Ministère de l'Immigration, de la Diversité et de l'Inclusion du Québec and apply for a Certificat de sélection du Québec (CSQ).\n\n\n2. If Quebec approves your CSQ  application, mail a permanent residence application to the Centralized Intake Office (CIO) in Sydney, Nova Scotia, Canada. An IRCC officer will approve or refuse your application, based on the information you provide."
+    }
+  ],
+  "utter_faq/130": [
+    {
+      "text": "If you were educated outside Canada, you'll need an Educational Credential Assessment (ECA) for immigration purposes to immigrate as a Federal Skilled Worker.\n\n\nIf you were educated in Canada, you don't need an ECA."
+    }
+  ],
+  "utter_faq/131": [
+    {
+      "text": "- Comparative Education Service (University of Toronto, School of Continuing Studies)\n\n\n- International Credential Assessment Service of Canada\n\n\n- World Education Services\n\n\n- International Qualifications Assessment Service (IQAS)\n\n\n- International Credential Evaluation Service\n\n\n- Medical Council of Canada (if you primary occupation is: specialist physician, general practitioner/family physician)\n\n\nFor pharmacists, where you need to get your report depends on your job: \n\n\n- If you need a licence to practise you must get your report from the Pharmacy Examining Board of Canada.\n\n\n- If you do not need a licence for your job, you can get your assessment from any other designated ECA organization."
+    }
+  ],
+  "utter_faq/132": [
+    {
+      "text": "No. Getting an ECA to meet the requirements of the Federal Skilled Worker Program does not mean that your work experience and professional credentials are automatically recognized in Canada. You must still go through the process of getting your license."
+    }
+  ],
+  "utter_faq/133": [
+    {
+      "text": "Each designated organization sets its own cost for an ECA. For most, the cost is about $200 CAD or more to have it delivered. Delivery costs depend on how you choose it to be sent, with courier delivery being the most expensive.\n\n\nThe fees for an ECA report and the length of time to get one vary and can change without notice."
+    }
+  ],
+  "utter_faq/134": [
+    {
+      "text": "Canada will accept ECA reports for five years from the date they are issued, so long as they were issued on or after April 17, 2013."
+    }
+  ],
+  "utter_faq/135": [
+    {
+      "text": "Usually, you should choose the highest level degree, diploma or certificate (or combination) that will award you the most points."
+    }
+  ],
+  "utter_faq/136": [
+    {
+      "text": "To be eligible for the Canadian Exprience Class Program, you must:\n\n\n- Have at least 12 months of full-time (or an equal amount in part-time) skilled work experience in Canada in the three years before you apply. Must have been done under proper authorization\n\n\n- Meet or exceed the required language ability according to your type of job completed (NOC 0 and A: CLB 7+ for all skills, NOC B: CLB 5+ for all skills).\n\n"
+    }
+  ],
+  "utter_faq/137": [
+    {
+      "text": "First, you must fill out an Express Entry profile online or consult a representative to find out if you meet the minimum criteria for the Express Entry pool:\n\n\nDepending on the type of work you completed, this work experience can help make you eligibile for certain Express Entry programs, and increase your chances of being invited to apply."
+    }
+  ],
+  "utter_faq/138": [
+    {
+      "text": "The Canadian Experience Class is for people who already have skilled work experience in Canada. You are not eligible for permanent residence under the Canadian Experience Class if your work experience:\n\n\n- Was done without the proper authorization (for example, illegally, working without a visa)\n\n\n- Was done in a job not classified as NOC type 0, A, or B according to the National Occupational Classification.\n\n\n- Was done while you were self-employed.\n\n\n- Was done while on a student work permit (co-op, off-campus, or on-campus).\n\n\n- Totals to less than one year of full-time (or an equal amount in part-time) skilled work experience in Canada.\n\n\nYou also cannot apply under the program if you plan on working in Quebec."
+    }
+  ],
+  "utter_faq/139": [
+    {
+      "text": "No, you should not complete an Express Entry profile in this case. If you do not have a full year of experience, the system will not find you eligible.\nTo meet the minimum criteria for the Express Entry pool, you must be eligible for at least one of the programs under Express Entry."
+    }
+  ],
+  "utter_faq/140": [
+    {
+      "text": "No. Any experience you list in your application under the Canadian Experience Class must be legal to be valid. You cannot have worked or studied without authorization. If you have ever done so, your application will be refused."
+    }
+  ],
+  "utter_faq/141": [
+    {
+      "text": "Yes. Even if you had a medical exam previously, all applicants for permanent residence must have a medical exam."
+    }
+  ],
+  "utter_faq/142": [
+    {
+      "text": "Yes. You can apply and count your work experience in Quebec."
+    }
+  ],
+  "utter_faq/143": [
+    {
+      "text": "No. Post-graduation work permits (PGWP) are a one-time opportunity for international students.\n\n\nIf you had to renew your passport you can extend your PGWP with your new passport only if you are eligible for a PGWP but you didn't get the full length because your passport was going to expire. Include this information in a letter of explanation when you apply to extend your PGWP.\n\n\nIf you're an Express Entry applicant, you may be able to apply for a bridging open work permit if:\n\n\n- You're waiting for a decision on a permanent residence application under Express Entry\n\n\n- Your current work permit expires in 4 months or less\n\n\n- You have valid status on your work permit\n\n\n- You're currently in Canada"
+    }
+  ],
+  "utter_faq/144": [
+    {
+      "text": "No. You don't need a certain level of education to apply to stay permanently in Canada. But, you can get Comprehensive Ranking System (CRS) points if you have high school education or higher.\nTo get points for education outside Canada, you must have an Education Credential Assessment."
+    }
+  ],
+  "utter_faq/145": [
+    {
+      "text": "Yes, you can be eligible for the Canadian Experience Class so long as you still meet the requirements under the class."
+    }
+  ],
+  "utter_faq/146": [
+    {
+      "text": "To apply under the Canadian Experience Class you will need to take a language test that is approved by Immigration, Refugees and Citizenship Canada and demonstrate that you meet the language requirements for your occupation. Your test results need to be included with your application.\n\n\nIf your work experience is in NOC skill type 0 or skill level A occupations, you must meet the minimum level of CLB 7 in each language ability (speaking, reading, writing and listening). \n\n\nIf your work experience is in NOC skill level B occupations, you must meet the minimum level of CLB 5 in each language ability (speaking, reading, writing and listening).\n\n\nIf you do not meet the minimum language skills needed for your NOC category, your application will not be processed."
+    }
+  ],
+  "utter_faq/147": [
+    {
+      "text": "Yes, as long as you gained skilled work experience of at least one year in an occupation in NOC types 0, A, or B.\n\n\nYour work experience must have been gained in Canada within the three years before we receive your Canadian Experience Class application. Work experience gained while studying full time on a student permit (for example, experience gained while on co-op) does not count."
+    }
+  ],
+  "utter_faq/148": [
+    {
+      "text": "You may be able to apply to immigrate permanently after you graduate. To do so, you must meet the requirements for at least one Express Entry program. If you complete you credential before applying however, your application will have a higher chance of being accepted."
+    }
+  ],
+  "utter_faq/149": [
+    {
+      "text": "Yes. All applicants must provide proof of language ability in one of Canada's two official languages. You must give us official test results designated by Immigration, Refugees and Citizenship Canada."
+    }
+  ],
+  "utter_faq/150": [
+    {
+      "text": "You may still be eligible if you have already gained one year of skilled Canadian work experience while you were not on a study permit, and meet the language threshold for that occupation (according to the Canadian Experience Class requirements)."
+    }
+  ],
+  "utter_faq/151": [
+    {
+      "text": "To apply for permanent residence under the Canadian Experience Class, your skilled work experience must be in a job classified as NOC type 0, A, or B. The work must also have been done under the proper authorization, under a canadian employer, and cannot have been completed while you were a student."
+    }
+  ],
+  "utter_faq/152": [
+    {
+      "text": "No. You can only count work experience if one or more of your skilled work experience is in a job classified as NOC type 0, A, or B."
+    }
+  ],
+  "utter_faq/153": [
+    {
+      "text": "No, you must have had temporary resident status and the proper work or study authorization when you gained the Canadian work experience or educational credential you are claiming. \n\n\nRefugee claimants who have authorization to work or study while waiting for a decision on their claim do not have temporary resident status and therefore still cannot apply under this category."
+    }
+  ],
+  "utter_faq/154": [
+    {
+      "text": "You can count part-time work toward the work experience requirement, as long as you were not a full-time student at the time.\nHowever, you must have gained the equivalent amount of experience as someone who worked full-time for at least one year (1560 hours)"
+    }
+  ],
+  "utter_faq/155": [
+    {
+      "text": "Yes. The post-graduation work permit is an “open” work permit, meaning that you can work for any Canadian employer unless there are restrictions listed on the work permit.  Keep in mind that skilled work experience is needed to qualify for the Canadian Experience Class. Skilled work experience means working in an occupation that is listed under the National Occupational Classification (NOC) at Skill Type 0 (managerial occupations), or Skill Level A (professional occupations) or Skill level B (technical and trade occupations).\nMore information on 2016 NOC codes is available on the Social Development Canada website.\n\nNote: Completing an Express Entry profile is the first step to immigrate to Canada permanently as a skilled worker. Completing an Express Entry profile does not guarantee that you will receive an Invitation to Apply for permanent residence. An Invitation to Apply for permanent residence will be based on your score and rank in the Express Entry pool using the Comprehensive Ranking System."
+    }
+  ],
+  "utter_faq/156": [
+    {
+      "text": "To be eligible for permanent residence under the Canadian Experience Class you must have completed, within the three years before you apply, at least:\n\n12 months of full-time work:\n    \n30 hours/week for 12 months = 1 year full time (1,560 hours), OR\n\n\nequal amount in part-time hours, such as:\n    \n15 hours/week for 24 months = 1 year full time (1,560 hours)\n30 hours/week for 12 months at more than 1 job = 1 year full time (1,560 hours)\n\n\n\nYou must also complete an Express Entry  profile."
+    }
+  ],
+  "utter_faq/157": [
+    {
+      "text": "Non-paid employment does not qualify under the Canadian Experience Class. You must  have been paid a wage (or earned a commission) but there is no minimum wage requirement  for your qualifying work experience.\nFull-time work experience means working at least 30 paid hours per week. To qualify, you  must have skilled work experience, meaning work in occupations listed at NOC  Skill Type 0 (managerial), or NOC Skill Level A (professional occupations) or NOC skill Level B (technical and trade occupations). \nSee jobs and their National Occupational Classification descriptions.\n\nNote: Completing an Express Entry profile is the first step to  immigrate to Canada permanently as a skilled worker. Completing an Express  Entry profile does not guarantee that you will receive an Invitation to Apply  for permanent residence. An Invitation to Apply for permanent residence will be  based on your score and rank in the Express Entry pool using the Comprehensive Ranking System."
+    }
+  ],
+  "utter_faq/158": [
+    {
+      "text": "No, there are no exceptions to this rule. Each of the programs under Express Entry requires the submission of third-party language results. You will include the results of your test(s) in your Express Entry profile. Canada wants to assess all applicants against the same standards, no matter their language of origin, nationality or ethnicity.\nEven someone from an English-speaking country, who speaks English as a first language, would need to take the test. Similarly, someone from a French-speaking country, who speaks French as a first language, needs to take a test.\n\nNote: Completing an Express Entry profile is the first step to immigrate to Canada permanently as a skilled worker. Completing an Express Entry profile does not guarantee that you will receive an Invitation to Apply for permanent residence. An Invitation to Apply for permanent residence will be based on your score and rank in the Express Entry pool using the Comprehensive Ranking System."
+    }
+  ],
+  "utter_faq/159": [
+    {
+      "text": "You need to make  sure that you meet the minimum  language threshold in order to be eligible for the program.\n  You  must meet the minimum level of \n\nCLB 5 (English) or NCLC 5 (French) for speaking and listening, and \nCLB 4 (English) or NCLC 4 (French) for reading and writing.\n\nYou must prove your language skills by taking a third-party  language test from an  agency approved by Immigration, Refugees and Citizenship Canada (IRCC).\n  When creating your Express Entry profile,  you must fill in all the information related to the language test you have  taken for your first and, if applicable, second official languages.\n  If you are invited to apply, your test  results must  not be more than two years old on the day you submit your application for  permanent residence.\n  This rule applies to all applicants who  want to be considered under the Federal Skilled Trades Program.\n\nNote: Completing an Express Entry profile is the first step to  immigrate to Canada permanently as a skilled worker. Completing an Express  Entry profile does not guarantee that you will receive an Invitation to Apply  for permanent residence. An Invitation to Apply for permanent residence will be  based on your score and rank in the Express Entry pool using the Comprehensive Ranking System."
+    }
+  ],
+  "utter_faq/160": [
+    {
+      "text": "Before you complete an Express Entry profile, you need to take a language test. This will show that your language skills meet minimum requirements in each of these four categories:\n\nlistening,\nspeaking,\nreading and\nwriting.\n\nYou will then need to include the test results when you complete your Express Entry profile.\nYou will need to take a language test to meet the eligibility criteria of these programs:\n\nFederal Skilled Worker Program\nCanadian Experience Class\nFederal Skilled Trades Program\n\nThe language standard you need to meet depends on the program you apply for.\nWe do not provide language testing. You will need to be tested by a “third-party” agency that we have approved.\nYou need to arrange to take a language test from any of the approved agencies. You will have to pay the cost to write the test.\n\nNote: Completing an Express Entry profile is the first step to immigrate to Canada permanently as a skilled worker. Completing an Express Entry profile does not guarantee that you will receive an Invitation to Apply for permanent residence. An Invitation to Apply for permanent residence will be based on your score and rank in the Express Entry pool using the Comprehensive Ranking System."
+    }
+  ],
+  "utter_faq/161": [
+    {
+      "text": "It proves that a person is qualified to work in a certain skilled trade in Canada. This means that they:\n\nhave passed a certification exam, and \nmeet all the requirements to practice their trade in that province or territory.\n\nThis certificate is issued by the body that governs trades in a Canadian province or territory or by a federal authority.\nDepending on which body or authority issues it, this certificate may be called a “certificate of qualification” or a “qualification certificate”. Find out how to get a certificate.\nYou must complete an Express Entry profile as the first step to immigrate to Canada permanently as a skilled worker.\n\nNote: Completing an Express Entry profile is the first step to immigrate to Canada permanently as a skilled worker. Completing an Express Entry profile does not guarantee that you will receive an invitation to apply for permanent residence. An invitation to apply for permanent residence is based on your score and rank in the Express Entry pool, using the Comprehensive Ranking System."
+    }
+  ],
+  "utter_faq/162": [
+    {
+      "text": "In Canada, provinces and territories\n\nare in charge of education and training, including skilled trades apprenticeships\nusually decide on the standards and conditions used to assess and recognize foreign credentials for certain trades\n\nThe regulatory body that governs trades in a province or territory\n\nmust assess your training, trade experience and skills \ndecides if you are eligible to write an exam to be certified\n\nTo get a certificate of qualification, you\n\nwill likely have to physically go to the specific province or territory to write the certification exam \nmay need an employer in Canada to give you training and work experience before you are allowed to write the exam\n\nIf your trade is not regulated by a province or territory (for example, airplane mechanic), it may be federally regulated. The Canadian Information Centre for International Credentials provides information on credential assessment for all regulated trades in Canada.\nContact the provincial, territorial or federal regulatory body for more information.\n\nNote: Completing an Express Entry profile is the first step to immigrate to Canada permanently as a skilled worker. Completing an Express Entry profile does not guarantee that you will receive an invitation to apply for permanent residence. An invitation to apply for permanent residence is based on your score and rank in the Express Entry pool, using the Comprehensive Ranking System."
+    }
+  ],
+  "utter_faq/163": [
+    {
+      "text": "In that case, to qualify for the Federal  Skilled Trades Program you must have a qualifying  job offer in your trade from a Canadian employer.\n\nNote: Completing an Express Entry profile is the first step to  immigrate to Canada permanently as a skilled worker. Completing an Express  Entry profile does not guarantee that you will receive an Invitation to Apply  for permanent residence. An Invitation to Apply for permanent residence will be  based on your score and rank in the Express Entry pool using the Comprehensive Ranking System."
+    }
+  ],
+  "utter_faq/164": [
+    {
+      "text": "This means an offer of continuous, full-time employment from up to two Canadian employers, for at least 30 hours a week. The job offer must be for a period of at least one year.\nYou must have a job offer if you do not have a certificate of qualification in your skilled trade issued by a Canadian province or territory.\nUnder Express Entry, most job offers need a Labour Market Impact Assessment (LMIA).\nThe LMIA verifies that Canadian labour market has a need for this type of worker, and that your employer(s) have tried to hire a Canadian or permanent resident first.\nIn some cases, your employer does not need an LMIA to support your job offer. Find out more about jobs that are exempt.\nYou must complete an Express Entry profile as the first step to immigrate to Canada permanently as a skilled worker."
+    }
+  ],
+  "utter_faq/165": [
+    {
+      "text": "Not necessarily. Standards and conditions of training for specific trades vary depending on the province or territory. (for example, ways to register apprentices, training curriculum, how to get accredited/certified/licensed)\nIt is up to you and your employer to make sure you have the documents needed to practice in the province or territory where you will work.\nWhen we assess your application, we may check that you meet the requirements to be certified, licensed or registered to work in a regulated occupation in Canada.\nIf you have a valid job offer from a Canadian employer but do not meet the requirements, we must be satisfied that you are capable of doing the job you were offered and that you are likely to qualify to be licensed or certified when in Canada.\nNote: Even if you get certified in one province or territory, you may not be able to practise in another. After you immigrate, if you want to work in a different province or territory, check the requirements of the regulatory body that governs trades for that province or territory."
+    }
+  ],
+  "utter_faq/166": [
+    {
+      "text": "To be awarded 600 points under the Comprehensive Ranking System for having a Provincial Nominee Program (PNP) nomination, you must have a provincial nomination certificate that: \n\nwas issued after January 1, 2015, \nwas issued for a PNP Express Entry stream, \nis valid (i.e., not expired) when you submit your application for permanent residence, and,\nis accepted in the system by both you and the province or territory."
+    }
+  ],
+  "utter_faq/167": [
+    {
+      "text": "The requirements for provincial nominees to use Express  Entry are different from the existing Provincial nominees program. Please contact the province that nominated you to find out what you should do."
+    }
+  ],
+  "utter_faq/168": [
+    {
+      "text": "To qualify for Express Entry, candidates need to meet the  program requirements of one of the three  federal programs it covers. This also applies to provincial nominees when  going through Express Entry.\nIf you already have a nomination (and/or if you started the nomination  process before January 1, 2015), you should contact  the province to find out what you should do next."
+    }
+  ]
+}
