@@ -24,7 +24,7 @@ const ProfileScreen = ({ navigation }) => {
   const [isEnabled1, setIsEnabled1] = useState(false);
   const [isEnabled2, setIsEnabled2] = useState(false);
 
-  const { authenticated, user, onSignOut } = useContext(FiygeAuthContext);
+  const { authenticated, user, userData, onSignOut } = useContext(FiygeAuthContext);
 
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
   const toggleSwitch1 = () => setIsEnabled1((previousState) => !previousState);
@@ -87,7 +87,7 @@ const ProfileScreen = ({ navigation }) => {
             <View style={{ marginLeft: 20 }}>
               <TextInput
                 maxLength={100}
-                placeholder="Country:"
+                placeholder={`Country: ${userData.countryCode}`}
                 keyboardType="numeric"
                 caretHidden={true}
                 style={{
@@ -102,7 +102,7 @@ const ProfileScreen = ({ navigation }) => {
             <Icon name="phone" color="#777777" size={20} />
             <View style={{ marginLeft: 20 }}>
               <TextInput
-                placeholder="Phone:"
+                placeholder={`Phone: ${userData.phone}`}
                 keyboardType="numeric"
                 caretHidden={true}
                 style={{
@@ -130,7 +130,7 @@ const ProfileScreen = ({ navigation }) => {
             <Icon name="calendar-outline" color="#777777" size={20} />
             <View style={{ marginLeft: 20 }}>
               <TextInput
-                placeholder="Date of Birth: MM/DD/YYYY"
+                placeholder={`Date of Birth: ${userData.birthday}`}
                 keyboardType="numeric"
                 caretHidden={true}
                 style={{
