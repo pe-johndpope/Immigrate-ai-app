@@ -8,6 +8,7 @@ const USER_ROLE_ID = "61ef0dfa-a3cc-40d0-8062-4c0fac69033c";
 const USER_GROUP_ID = 1694;
 const REFRESH_TOKEN = "refresh-token";
 const ACCESS_TOKEN = "access-token";
+const USER_UID = "uid"
 
 interface FiygeAuthContextI {
   // AUTH
@@ -42,11 +43,13 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
 
   useEffect(() => {
     // get user authentication state from local storage
-    async () => {
+    (async () => {
       const accessToken = await AsyncStorage.getItem(ACCESS_TOKEN);
-      if (accessToken !== undefined) {
+      const uid = await AsyncStorage.getItem(USER_UID)
+      if (accessToken !== undefined && uid !== undefined) {
+        await onFetchClientData(uid as unknown as number)
       }
-    };
+    })()
   }, []);
 
   const onSignInWithEmailAndPassword = async (
@@ -75,6 +78,7 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
           email: json.data.users.user_name,
         });
         await AsyncStorage.setItem(REFRESH_TOKEN, json.refresh_token);
+        await AsyncStorage.setItem(USER_UID, json.user_id)
         await AsyncStorage.setItem(ACCESS_TOKEN, json.access_token);
 
         // fetch user data
@@ -187,7 +191,7 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
       );
       const json = await res.json();
 
-      // console.log(json);
+      console.log(json)
 
       if (json.errors.length === 0 && json.paginate.data.length > 0) {
         console.log("SUCCESSFULLY FETCHED CLIENT");
@@ -282,8 +286,10 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
 
   const onSignOut = async (): Promise<void> => {
     setUser(undefined);
+    setUserData(undefined);
     await AsyncStorage.removeItem(REFRESH_TOKEN);
     await AsyncStorage.removeItem(ACCESS_TOKEN);
+    await AsyncStorage.removeItem(USER_UID);
   };
 
   return (
