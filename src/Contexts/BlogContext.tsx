@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 
-import { Post, Category, Tag, Author } from "../Types";
+import { Post, Category, Tag, Author, Image } from "../Types";
 
 const WPAPI = require("wpapi")
 
@@ -10,7 +10,8 @@ interface BlogContextI {
   posts: Post[],
   tags: Tag[],
   categories: Category[],
-  authors: Author[]
+  authors: Author[],
+  images: Image[]
 }
 
 const BlogContext = createContext<BlogContextI>(
@@ -23,6 +24,7 @@ const BlogContextProvider: React.FC = ({ children }) => {
   const [tags, setTags] = useState<Tag[]>([])
   const [categories, setCategories] = useState<Category[]>([])
   const [authors, setAuthors] = useState<Author[]>([])
+  const [images, setImages] = useState<Image[]>([])
 
   useEffect(() => {
     (async () => {
@@ -30,13 +32,14 @@ const BlogContextProvider: React.FC = ({ children }) => {
       await onFetchAuthors()
       await onFetchCategories()
       await onFetchTags()
+      await onFetchImages()
     })() 
   }, []);
 
   const onFetchBlogPosts = async () : Promise<void> => {
     try {
       setPosts(await wp.posts().get())
-
+      console.log(posts)
       console.log(`SUCCESSFULLY FETCHED BLOG POSTS. COUNT: ${posts.length}`)
     } catch (e) { console.error(e) }
   }
@@ -65,6 +68,13 @@ const BlogContextProvider: React.FC = ({ children }) => {
     } catch (e) { console.error(e) }
   }
 
+  const onFetchImages = async () : Promise<void> => {
+    try {
+      setImages(await wp.categories().get())
+      console.log(`SUCCESSFULLY FETCHED IMAGES`)
+    } catch (e) { console.error(e) }
+  }
+
   return (
     // TODO: set value to be a BlogContextI type
     <BlogContext.Provider
@@ -72,7 +82,8 @@ const BlogContextProvider: React.FC = ({ children }) => {
         tags,
         authors,
         categories,
-        posts
+        posts,
+        images
       }}
     >
       {children}

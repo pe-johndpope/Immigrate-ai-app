@@ -64,7 +64,8 @@
     "react-native-web": "0.17.1",
     "uuid": "^8.3.2",
     "wp-types": "^3.59.1",
-    "wpapi": "^1.2.2"
+    "wpapi": "^1.2.2",
+    "wpapi-extensions": "^1.0.12"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
