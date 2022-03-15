@@ -301,7 +301,8 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
         user,
         userData,
         authenticated: user !== undefined,
-        onboarded: userData !== undefined,
+        onboarded: true,
+        // onboarded: userData !== undefined,
 
         onUpdateProfileImage,
       }}
