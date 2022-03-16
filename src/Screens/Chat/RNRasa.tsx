@@ -78,6 +78,7 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
     ...giftedChatProp
   } = props;
   const [messages, setMessages] = useState<IMessage[]>([]);
+  const [rasaTyping, setRasaTyping] = useState<boolean>(false);
   const [lastRasaCustomResponse, setLastRasaCustomResponse] =
     useState<IRasaResponse>();
   const userData: User = {
@@ -96,6 +97,20 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
       sendMessage("I need help")
     }
   }, [])
+
+  const onRasaResponse = (response: IMessage[]) : void => {
+    setRasaTyping(true);
+    setTimeout(() => {
+      setRasaTyping(false);
+      const nextMessage = [response[response.length - 1]]
+      setMessages((previousMessages) =>
+        GiftedChat.append(previousMessages, nextMessage)
+      ); 
+      if (response.length > 1) {
+        onRasaResponse(response.slice(0, response.length - 1))
+      }
+    }, 1500 + (Math.random() * 750));
+  }
 
   // Inner function that cleans bot messages from a parent component
   useImperativeHandle(ref, () => ({
@@ -158,16 +173,22 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
               emptyResponseMessage,
               botData
             );
-            setMessages((previousMessages) =>
-              GiftedChat.append(previousMessages, [emptyMessageReceive])
-            );
+
+            // delay response 
+            // ponderResponse()
+
+            // setMessages((previousMessages) =>
+            //   GiftedChat.append(previousMessages, [emptyMessageReceive])
+            // );
+            onRasaResponse([emptyMessageReceive])
           }
           return;
         }
         setLastRasaCustomResponse(customMessage);
-        setMessages((previousMessages) =>
-          GiftedChat.append(previousMessages, newRecivieMess.reverse())
-        );
+        onRasaResponse(newRecivieMess.reverse())
+        // setMessages((previousMessages) =>
+        //   GiftedChat.append(previousMessages, newRecivieMess.reverse())
+        // );
       } catch (error) {
         alert(error);
         onSendMessFailed && onSendMessFailed(error);
@@ -232,6 +253,7 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
       onSend={(mess) => onSend(mess)}
       messages={messages}
       onQuickReply={onQuickReply}
+      isTyping={rasaTyping}
       {...giftedChatProp}
     />
   );

@@ -287,149 +287,167 @@ class ActionDetermineEligibilty(Action):
 
 # This action validates the eligibility form by removing slots that aren't required (based on the value of prior slots)
 
+from .countries import is_valid_country 
 
 class ValidateEligibilityForm(FormValidationAction):
     def name(self) -> Text:
         return "validate_eligibility_form"
-
+    
+    def validate_passport_country(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> Dict[Text, Any]:
+        print("VALIDATE COUNTRY slot value")
+        if is_valid_country(slot_value): 
+            return {"passport_country": slot_value}
+        else:
+            # validation failed
+            dispatcher.utter_message(text=f"That's not a country I know. I'm assuming you mis-spelled.")
+            return {"passport_country": None}
+    
     async def required_slots(
         self,
-        slots_mapped_in_domain: List[Text],
+        domain_slots: List[Text],
         dispatcher: "CollectingDispatcher",
         tracker: Tracker,
         domain: DomainDict,
     ) -> Optional[List[Text]]:
         additional_slots = []
 
-        print(tracker.slots.get("travel_purposes"))
-        '''
+        print(tracker.slots, len(tracker.slots))
+        print(domain_slots, len(domain_slots))
+        remove = lambda key: domain_slots.remove(key) if (key in domain_slots) else None
+
         if tracker.slots.get("travel_purposes") == "move":
+            pass
             # If the user didn't take the English test, don't ask for their scores
-            slots_mapped_in_domain.remove("passport_country")
-            slots_mapped_in_domain.remove("visit_length")
-            slots_mapped_in_domain.remove("program_length")
-            slots_mapped_in_domain.remove("children_canada")
-            slots_mapped_in_domain.remove("education_acceptance")
+            # remove("passport_country")
+            # remove("visit_length")
+            # remove("program_length")
+            # remove("children_canada")
+            # remove("education_acceptance")
 
-        if tracker.slots.get("french_test") is False:
+        if tracker.slots.get("french_test") == False:
             # If the user didn't take the English test, don't ask for their scores
-            slots_mapped_in_domain.remove("french_speaking_score")
-            slots_mapped_in_domain.remove("french_listening_score")
-            slots_mapped_in_domain.remove("french_writing_score")
-            slots_mapped_in_domain.remove("french_reading_score")
+            remove("french_speaking_score")
+            remove("french_listening_score")
+            remove("french_writing_score")
+            remove("french_reading_score")
 
-        if tracker.slots.get("english_test") is "neither":
+        if tracker.slots.get("english_test") == "neither":
             # If the user didn't take the English test, don't ask for their scores
-            slots_mapped_in_domain.remove("english_speaking_score")
-            slots_mapped_in_domain.remove("english_listening_score")
-            slots_mapped_in_domain.remove("english_writing_score")
-            slots_mapped_in_domain.remove("english_reading_score")
+            remove("english_speaking_score")
+            remove("english_listening_score")
+            remove("english_writing_score")
+            remove("english_reading_score")
 
-        if tracker.slots.get("skilled_trade") is False:
-            slots_mapped_in_domain.remove("certified_skill_trade")
+        if tracker.slots.get("skilled_trade") == False:
+            remove("certified_skill_trade")
 
         if tracker.slots.get("travel_purposes") == "visit":
             # If the user didn't take the English test, don't ask for their scores
-            slots_mapped_in_domain.remove("program_length")
-            slots_mapped_in_domain.remove("education_acceptance")
-            slots_mapped_in_domain.remove("date_of_birth")
+            remove("program_length")
+            remove("education_acceptance")
+            # slots_mapped_in_domain.remove("date_of_birth")
             # slots_mapped_in_domain.remove("healthcare_professional")
-            slots_mapped_in_domain.remove("occupation")
-            slots_mapped_in_domain.remove("skilled_trade")
-            slots_mapped_in_domain.remove("certified_skill_trade")
-            slots_mapped_in_domain.remove("english_test")
-            slots_mapped_in_domain.remove("english_speaking_score")
-            slots_mapped_in_domain.remove("english_listening_score")
-            slots_mapped_in_domain.remove("english_writing_score")
-            slots_mapped_in_domain.remove("english_reading_score")
-            slots_mapped_in_domain.remove("french_test")
-            slots_mapped_in_domain.remove("french_speaking_score")
-            slots_mapped_in_domain.remove("french_listening_score")
-            slots_mapped_in_domain.remove("french_writing_score")
-            slots_mapped_in_domain.remove("french_reading_score")
-            slots_mapped_in_domain.remove("education")
-            slots_mapped_in_domain.remove("work_experience_global")
-            slots_mapped_in_domain.remove("work_experience_canada")
-            slots_mapped_in_domain.remove("job_offer")
-            slots_mapped_in_domain.remove("net_worth")
+            remove("occupation")
+            remove("skilled_trade")
+            remove("certified_skill_trade")
+            remove("english_test")
+            remove("english_speaking_score")
+            remove("english_listening_score")
+            remove("english_writing_score")
+            remove("english_reading_score")
+            remove("french_test")
+            remove("french_speaking_score")
+            remove("french_listening_score")
+            remove("french_writing_score")
+            remove("french_reading_score")
+            remove("education")
+            remove("work_experience_global")
+            remove("work_experience_canada")
+            remove("job_offer")
+            remove("net_worth")
 
         if (
             tracker.slots.get("travel_purposes") == "visit"
             and tracker.slots.get("visit_length") == True
             and tracker.slots.get("children_canada") == True
         ):
-            slots_mapped_in_domain.remove("passport_country")
+            remove("passport_country")
 
         if (
             tracker.slots.get("travel_purposes") == "visit"
             and tracker.slots.get("visit_length") == False
         ):
-            slots_mapped_in_domain.remove("children_canada")
+            remove("children_canada")
 
         if tracker.slots.get("travel_purposes") == "study":
             # If the user didn't take the English test, don't ask for their scores
-            slots_mapped_in_domain.remove("visit_length")
-            slots_mapped_in_domain.remove("children_canada")
-            slots_mapped_in_domain.remove("date_of_birth")
-            slots_mapped_in_domain.remove("english_test")
-            slots_mapped_in_domain.remove("english_speaking_score")
-            slots_mapped_in_domain.remove("english_listening_score")
-            slots_mapped_in_domain.remove("english_writing_score")
-            slots_mapped_in_domain.remove("english_reading_score")
-            slots_mapped_in_domain.remove("french_test")
-            slots_mapped_in_domain.remove("french_speaking_score")
-            slots_mapped_in_domain.remove("french_listening_score")
-            slots_mapped_in_domain.remove("french_writing_score")
-            slots_mapped_in_domain.remove("french_reading_score")
-            # slots_mapped_in_domain.remove("healthcare_professional")
-            slots_mapped_in_domain.remove("occupation")
-            slots_mapped_in_domain.remove("skilled_trade")
-            slots_mapped_in_domain.remove("certified_skill_trade")
-            slots_mapped_in_domain.remove("education")
-            slots_mapped_in_domain.remove("work_experience_global")
-            slots_mapped_in_domain.remove("work_experience_canada")
-            slots_mapped_in_domain.remove("job_offer")
-            slots_mapped_in_domain.remove("net_worth")
+            remove("visit_length")
+            remove("children_canada")
+            remove("date_of_birth")
+            remove("english_test")
+            remove("english_speaking_score")
+            remove("english_listening_score")
+            remove("english_writing_score")
+            remove("english_reading_score")
+            remove("french_test")
+            remove("french_speaking_score")
+            remove("french_listening_score")
+            remove("french_writing_score")
+            remove("french_reading_score")
+            remove("healthcare_professional")
+            remove("occupation")
+            remove("skilled_trade")
+            remove("certified_skill_trade")
+            remove("education")
+            remove("work_experience_global")
+            remove("work_experience_canada")
+            remove("job_offer")
+            remove("net_worth")
 
         if tracker.slots.get("travel_purposes") == "work":
             # If the user didn't take the English test, don't ask for their scores
-            slots_mapped_in_domain.remove("visit_length")
-            slots_mapped_in_domain.remove("passport_country")
-            slots_mapped_in_domain.remove("education_acceptance")
-            slots_mapped_in_domain.remove("program_length")
-            slots_mapped_in_domain.remove("children_canada")
-            slots_mapped_in_domain.remove("date_of_birth")
-            slots_mapped_in_domain.remove("english_test")
-            slots_mapped_in_domain.remove("english_speaking_score")
-            slots_mapped_in_domain.remove("english_listening_score")
-            slots_mapped_in_domain.remove("english_writing_score")
-            slots_mapped_in_domain.remove("english_reading_score")
-            slots_mapped_in_domain.remove("french_test")
-            slots_mapped_in_domain.remove("french_speaking_score")
-            slots_mapped_in_domain.remove("french_listening_score")
-            slots_mapped_in_domain.remove("french_writing_score")
-            slots_mapped_in_domain.remove("french_reading_score")
-            # slots_mapped_in_domain.remove("healthcare_professional")
-            slots_mapped_in_domain.remove("occupation")
-            slots_mapped_in_domain.remove("skilled_trade")
-            slots_mapped_in_domain.remove("certified_skill_trade")
-            slots_mapped_in_domain.remove("education")
-            slots_mapped_in_domain.remove("work_experience_global")
-            slots_mapped_in_domain.remove("work_experience_canada")
-            slots_mapped_in_domain.remove("job_offer")
-            slots_mapped_in_domain.remove("net_worth")
+            remove("visit_length")
+            remove("passport_country")
+            remove("education_acceptance")
+            remove("program_length")
+            remove("children_canada")
+            remove("date_of_birth")
+            remove("english_test")
+            remove("english_speaking_score")
+            remove("english_listening_score")
+            remove("english_writing_score")
+            remove("english_reading_score")
+            remove("french_test")
+            remove("french_speaking_score")
+            remove("french_listening_score")
+            remove("french_writing_score")
+            remove("french_reading_score")
+            remove("healthcare_professional")
+            remove("occupation")
+            remove("skilled_trade")
+            remove("certified_skill_trade")
+            remove("education")
+            remove("work_experience_global")
+            remove("work_experience_canada")
+            remove("job_offer")
+            remove("net_worth")
 
         if (
             tracker.slots.get("travel_purposes") == "study"
             and tracker.slots.get("program_length") == True
         ):
-            slots_mapped_in_domain.remove("passport_country")
+            remove("passport_country")
 
         if (
             tracker.slots.get("travel_purposes") == "study"
             and tracker.slots.get("program_length") == False
         ):
-            slots_mapped_in_domain.remove("education_acceptance")
-        '''
+            remove("education_acceptance")
 
-        return additional_slots + slots_mapped_in_domain
+        return additional_slots + domain_slots 
