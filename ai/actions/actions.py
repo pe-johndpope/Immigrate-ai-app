@@ -322,16 +322,14 @@ class ValidateEligibilityForm(FormValidationAction):
         remove = lambda key: domain_slots.remove(key) if (key in domain_slots) else None
 
         if tracker.slots.get("travel_purposes") == "move":
-            pass
-            # If the user didn't take the English test, don't ask for their scores
-            # remove("passport_country")
-            # remove("visit_length")
-            # remove("program_length")
-            # remove("children_canada")
-            # remove("education_acceptance")
+            remove("passport_country")
+            remove("visit_length")
+            remove("program_length")
+            remove("children_canada")
+            remove("education_acceptance")
 
         if tracker.slots.get("french_test") == False:
-            # If the user didn't take the English test, don't ask for their scores
+            # If the user didn't take the Frnech test, don't ask for their scores
             remove("french_speaking_score")
             remove("french_listening_score")
             remove("french_writing_score")
@@ -389,7 +387,6 @@ class ValidateEligibilityForm(FormValidationAction):
             # If the user didn't take the English test, don't ask for their scores
             remove("visit_length")
             remove("children_canada")
-            remove("date_of_birth")
             remove("english_test")
             remove("english_speaking_score")
             remove("english_listening_score")

@@ -4,7 +4,8 @@ import React, {
   useContext,
   useMemo,
   useImperativeHandle,
-  useEffect
+  useEffect,
+  Dispatch
 } from "react";
 import {
   GiftedChat,
@@ -56,6 +57,9 @@ export interface IRasaChat
   userName?: string;
   botName?: string;
   botAvatar?: string;
+  
+  // user defined
+  setTextInputVisible: Dispatch<boolean>
 }
 export interface IRasaChatHandles {
   resetMessages(): void;
@@ -75,6 +79,7 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
     userAvatar = '',
     botName = 'RasaChat',
     botAvatar = '',
+    setTextInputVisible,
     ...giftedChatProp
   } = props;
   const [messages, setMessages] = useState<IMessage[]>([]);
@@ -103,6 +108,18 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
     setTimeout(() => {
       setRasaTyping(false);
       const nextMessage = [response[response.length - 1]]
+      const containsQuickReplies = nextMessage[0].quickReplies.values.length > 0
+
+      if (containsQuickReplies) {
+        /*
+        User is expected to reply using the quick reply options. Remove
+        their text input temporarily. 
+        */
+        setTextInputVisible(false)
+      } else {
+        setTextInputVisible(true)
+      }
+      
       setMessages((previousMessages) =>
         GiftedChat.append(previousMessages, nextMessage)
       ); 
@@ -138,8 +155,7 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
   }, [lastRasaCustomResponse]);
 
   // Parse the array message
-  const parseMessages = useCallback(
-    (messArr: IRasaResponse[]): IMessage[] => {
+  const parseMessages = useCallback((messArr: IRasaResponse[]): IMessage[] => {
       return (messArr || []).map((singleMess) =>
         createNewBotMessage(singleMess, botData)
       );
@@ -155,7 +171,7 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
         sender: `${userId}`,
       };
       try {
-        console.log(rasaMessageObj);
+        // console.log(rasaMessageObj);
         const response = await fetch(`${host}/webhooks/rest/webhook`, {
           ...fetchOptions,
           body: JSON.stringify(rasaMessageObj),

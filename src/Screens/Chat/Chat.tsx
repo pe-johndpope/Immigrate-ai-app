@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import { SafeAreaView, StatusBar, Text, View } from "react-native";
 import Video from "react-native-video";
 import { FiygeAuthContext } from "../../Contexts";
@@ -24,6 +24,7 @@ const userAvatar = "https://media.istockphoto.com/vectors/user-icon-flat-isolate
 function Chat({ navigation }) {
   const { authenticated } = useContext(FiygeAuthContext)
   const rasaChatRef = useRef<IRasaChatHandles>(null);
+  const [textInputVisible, setTextInputVisible] = useState<boolean>(true)
 
   useEffect(() => {
     // Reset the chat on load 
@@ -54,6 +55,7 @@ function Chat({ navigation }) {
         <RasaChat
           ref={rasaChatRef}
           host={HOST}
+          setTextInputVisible={setTextInputVisible}
           placeholder="Chat with Immigrate.ai for help!"
           botAvatar={botAvatar}
           userAvatar={userAvatar}
@@ -65,6 +67,7 @@ function Chat({ navigation }) {
               primaryStyle={{ alignItems: "center" }}
             />
           )}
+          // renderInputToolbar={(props) => null}
           renderActions={(props) => (
             <Actions
               {...props}
@@ -81,27 +84,25 @@ function Chat({ navigation }) {
               }}
             />
           )}
-          renderComposer={(props) => (
+          renderComposer={(props) => !textInputVisible ? null : (
             <Composer {...props} textInputStyle={styles.textComposer} />
           )}
           alwaysShowSend
-          renderSend={(props) => {
-            return (
-              <Send
-                {...props}
-                disabled={!props.text}
-                containerStyle={styles.sendContainer}
+          renderSend={(props) => !textInputVisible ? null : (
+            <Send
+              {...props}
+              disabled={!props.text}
+              containerStyle={styles.sendContainer}
+            >
+              <Text
+                style={{
+                  color: !props.text ? "#d6d3d1" : "#2097F3",
+                }}
               >
-                <Text
-                  style={{
-                    color: !props.text ? "#d6d3d1" : "#2097F3",
-                  }}
-                >
-                  Send
-                </Text>
-              </Send>
-            );
-          }}
+                Send
+              </Text>
+            </Send>
+          )}
           // @ts-ignore
           renderMessageVideo={(props) => {
             const { currentMessage } = props;
