@@ -191,7 +191,7 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
       );
       const json = await res.json();
 
-      console.log(json)
+      // console.log(json)
 
       if (json.errors.length === 0 && json.paginate.data.length > 0) {
         console.log("SUCCESSFULLY FETCHED CLIENT");
@@ -206,6 +206,11 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
           firstName: client["clients.first_name"],
           lastName: client["clients.last_name"],
           jobTitle: client["clients.job_title"],
+        });
+        setUser({
+          uid: client["clients.uid"],
+          name: client["clients.first_name"] + " " + client["clients.last_name"],
+          email: client["clients.email"],
         });
       } else {
         console.error("ERROR FETCHING USER DATA");
@@ -227,7 +232,7 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
     formData.append("data[clients][first_name]", data.firstName);
     formData.append("data[clients][job_title]", data.jobTitle);
     formData.append("data[clients][last_name]", data.lastName);
-    formData.append("data[clients][name]", data.firstName + data.lastName);
+    formData.append("data[clients][name]", data.firstName + " " + data.lastName);
     formData.append("data[clients][phone]", data.phone ?? "PLACEHOLDER");
     formData.append("data[clients][uid]", user.uid);
 
@@ -243,7 +248,7 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
       });
       const json = await res.json();
 
-      console.log(json);
+      // console.log(json);
 
       if (json.errors.length === 0) {
         console.log("SUCCESSFULLY ONBOARDED USER");
