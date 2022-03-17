@@ -41,6 +41,7 @@ function Chat({ navigation }) {
 
   const resetBot = () => {
     rasaChatRef?.current?.resetBot();
+    setTextInputVisible(true)
   };
 
   const sendStartConversation = () => {
