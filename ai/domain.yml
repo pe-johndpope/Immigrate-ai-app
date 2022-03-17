@@ -27,6 +27,7 @@ intents:
     use_entities: true
 - faq:
     use_entities: true
+- trigger_faq_selector
 - request_share_information
 - request_faqs
 - review_chat
@@ -42,7 +43,11 @@ entities:
 - duration
 - desired_province
 - english_test
+- faq_id
 slots:
+  faq_id:
+    type: text 
+    influence_conversation: false
   name:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
@@ -533,9 +538,9 @@ responses:
   utter_show_faqs:
   - text: Here are some frequently asked questions! 
     buttons: 
-    - payload: Why should I immigrate to Canada?
+    - payload: /trigger_faq_selector{"faq_id": "why_canada"} 
       title: Why should I immigrate to Canada?
-    - payload: How can I get a letter of support to apply for a startup visa?
+    - payload: /trigger_faq_selector{"faq_id": "letter_of_support"} 
       title: How can I get a letter of support to apply for a startup visa?
   utter_review_chat:
   - text: Thanks for chatting! How did we do? We'll love to hear your feeback! 
@@ -2794,6 +2799,7 @@ responses:
 
 actions:
 - ask_faq
+- action_trigger_faq_selector
 - action_show_video
 - action_determine_eligibility
 - validate_eligibility_form

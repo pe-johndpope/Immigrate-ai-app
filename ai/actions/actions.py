@@ -448,3 +448,22 @@ class ValidateEligibilityForm(FormValidationAction):
             remove("education_acceptance")
 
         return additional_slots + domain_slots 
+
+class ActionTriggerFaqSelector(Action):
+    """Returns the requested FAQ based on faq_id"""
+    """https://github.com/RasaHQ/rasa/issues/5576#issuecomment-799409794"""
+
+    def name(self) -> Text:
+        return "action_trigger_faq_selector"
+    
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any]
+    ) -> Dict[Text, Any]:
+        faq_id = tracker.get_slot("faq_id")
+        if faq_id:
+            dispatcher.utter_message(template = f"utter_ask_faq/{faq_id}")
+
+        return [SlotSet("faq_id", None)]
