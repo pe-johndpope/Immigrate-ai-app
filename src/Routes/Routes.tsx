@@ -48,11 +48,6 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => {
       >
         {authenticated && onboarded && <>
             <Stack.Screen
-              name="LandingPage"
-              component={LandingPage}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
               name="Chat"
               component={Chat}
               options={{ headerShown: false }}
@@ -78,6 +73,11 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => {
           </>
         }
         {!authenticated && <>
+          <Stack.Screen
+              name="LandingPage"
+              component={LandingPage}
+              options={{ headerShown: false }}
+            />
             <Stack.Screen
               name="Login"
               component={Login}
