@@ -59,7 +59,7 @@ const BlogContextProvider: React.FC = ({ children }) => {
       console.log(`SUCCESSFULLY FETCHED AUTHORS`)
     } catch (e) { console.error(e) }
   }
-
+  
   const onFetchCategories = async () : Promise<void> => {
     try {
       setCategories(await wp.categories().get())

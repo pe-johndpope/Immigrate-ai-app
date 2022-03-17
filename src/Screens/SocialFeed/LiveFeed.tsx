@@ -6,87 +6,62 @@ import {
   FlatList,
   StyleSheet,
   Text,
+  StatusBar,
+  ScrollView,
   Image,
+  ListRenderItem,
   Dimensions,
-  TextInput,
   Platform,
 } from "react-native";
+import { Avatar, Title } from "react-native-paper";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { LinearGradient } from "expo-linear-gradient";
 import { theme } from "../../components/theme";
+import { Center, themeTools } from "native-base";
+import Heart from "react-animated-heart";
+
+import { BlogContext } from "../../Contexts"
+import { Post, Image as ImageWP, Tag } from "../../Types";
 
 
 const { width, height } = Dimensions.get("window");
 
 
 const SocialFeed = () => {
-  const [query, setQuery] = useState('');
-  const [fullData, setFullData] = useState([]);
-  const [data, setData] = useState([]);
+  const { posts, tags, categories, authors, images } = useContext(BlogContext)
+  console.log(posts[0])
 
-  const DATA = [
-    {
-      id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-      title: "Why Vancouver is the Perfect Place Why Vancouver is the Perfect Place",
-      image: "https://i.postimg.cc/8z2gDZDQ/vancouver.png",
-      tag: "LOCATIONS",
-      author: "Kendall Chan",
-      date: "2020-01-01",
-    },
-    {
-      id: "bd7acbea-c1b1-46c2-aed5-1",
-      title: "Canada Startup Visa new policies shock immigration companies around Ontario ",
-      image: "https://i.postimg.cc/nVwZV6yg/image.jpg",
-      tag: "NEWS",
-      author: "Kendall Chan",
-      date: "2020-01-01",
-    },
-    {
-      id: "bd7acbea-c1b1-46c2-aed5-12",
-      title: "10 Things all new Canadian Immigrants should do before landing",
-      image: "https://i.postimg.cc/8P1y35XV/charter-citizenship-ceremony-20190417.webp",
-      tag: "LIFESTYLE",
-      author: "Kendall Chan",
-      date: "2020-01-01",
-    },
-    {
-      id: "bd7acbea-c1b1-46c2-aed5-221212",
-      title: "Why Vancouver is the Perfect Place",
-      image: "https://i.postimg.cc/8z2gDZDQ/vancouver.png",
-      tag: "Destinations",
-      author: "Kendall Chan",
-      date: "2020-01-01",
-    },{
-      id: "bd7acbea-c1b1-46c2-aed5-1112",
-      title: "Why Vancouver is the Perfect Place",
-      image: "https://i.postimg.cc/8z2gDZDQ/vancouver.png",
-      tag: "Destinations",
-      author: "Kendall Chan",
-      date: "2020-01-01",
-    },
-  
-  ];
+
+  const DATA = [...Array(30).keys()].map((_, i) => {
+    return {
+        id: posts[i].id,
+        image: images[i].link,
+        title: posts[i].title,
+        tagWP: posts[i].tags[1],
+        date: posts[i].date,
+    };
+  });
   // see https://developer.wordpress.org/rest-api/ for type information
   // (eg. for posts) https://developer.wordpress.org/rest-api/reference/posts/
 
-  const renderItem = ({ item }) =>
+  const renderItem = ({ item}) =>
   <Item
     id={item.id}
-    title={item.title}
     image={item.image}
-    tag={item.tag}
-    author={item.author}
+    title={item.title}
+    tagWP={item.tagWP}
     date={item.date}
+
   />
 
 
-  const Item = ({ id, title, image, tag, date, author }) => (
+  const Item = ({ id, title, image, date, tagWP }) => (
     <TouchableOpacity>
       <View style={styles.frontContainer}>
         <Image style = {styles.blogImageStyle}source={{ uri: image }}/>
         <View style = {{flexDirection:'row', alignItems: 'center', marginLeft: 7.5, paddingTop: 7.5,}}>
         <Icon name="pricetag" size={12} color={theme.colors.pink} />
-        <Text style = {styles.tagStyle}>{tag} </Text>
+        <Text style = {styles.tagStyle}>{tagWP} </Text>
         <Icon name="calendar-outline" size={12} color={theme.colors.secondary} />
         <Text style = {styles.dateStyle}>{date}</Text>
         </View>
@@ -97,6 +72,9 @@ const SocialFeed = () => {
         </View>
     </TouchableOpacity>
   );
+
+  const [isClick, setClick] = useState(false);
+
 
 
   return (
