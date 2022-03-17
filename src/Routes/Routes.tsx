@@ -48,13 +48,13 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => {
       >
         {authenticated && onboarded && <>
             <Stack.Screen
-              name="Chat"
-              component={Chat}
+              name="Dashboard"
+              component={Dashboard}
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="Dashboard"
-              component={Dashboard}
+              name="Chat"
+              component={Chat}
               options={{ headerShown: false }}
             />
             <Stack.Screen
