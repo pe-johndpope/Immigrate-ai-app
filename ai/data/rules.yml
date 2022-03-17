@@ -10,6 +10,11 @@ rules:
     steps:
       - intent: request_agent
       - action: utter_agent
+  
+  - rule: trigger faq selector from button payload
+    steps:
+      - intent: trigger_faq_selector
+      - action: action_trigger_faq_selector
 
   - rule: activate name form
     conversation_start: true
