@@ -14,6 +14,7 @@ import {
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { LinearGradient } from "expo-linear-gradient";
 import { theme } from "../../components/theme";
+import SearchBar from 'react-native-search-bar';
 
 
 const { width, height } = Dimensions.get("window");
@@ -104,6 +105,8 @@ const SocialFeed = () => {
     colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF",]}>
 
     <SafeAreaView>
+      <View>
+      </View>
       <View style = {{alignItems: 'center'}}>
       <FlatList
         data={DATA}
