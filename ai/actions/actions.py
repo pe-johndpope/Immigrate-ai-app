@@ -463,8 +463,8 @@ class ActionTriggerFaqSelector(Action):
         domain: Dict[Text, Any]
     ) -> Dict[Text, Any]:
         faq_id = tracker.get_slot("faq_id")
-        print("HERE", faq_id)
         if faq_id:
             dispatcher.utter_message(template=f"utter_faq/{faq_id}")
+            dispatcher.utter_message(template="utter_faq_answered")
 
         return [SlotSet("faq_id", None)]
