@@ -4,7 +4,6 @@ import { emailValidator } from "../components/utils";
 import Background from "../components/Background";
 import BackButton from "../components/BackButton";
 import LogoForgotPassword from "../components/LogoForgotPassword";
-import Header from "../components/Header";
 import TextInput from "../components/TextInput";
 import { theme } from "../components/theme";
 import Button from "../components/Button";

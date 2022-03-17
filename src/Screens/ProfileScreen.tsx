@@ -1,17 +1,14 @@
 import {
   View,
-  SafeAreaView,
   StyleSheet,
   TextInput,
   TouchableOpacity,
   Switch,
   Dimensions,
-  StatusBar,
   Platform,
-  Linking,
 } from "react-native";
 import React, { useState, useContext } from "react";
-import { Avatar, Title, Text, Button } from "react-native-paper";
+import { Avatar, Text, Button } from "react-native-paper";
 import { FiygeAuthContext } from "../Contexts";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import * as ImagePicker from "expo-image-picker";
@@ -36,9 +33,9 @@ const ProfileScreen = ({ navigation }) => {
   };
   const [uriFB, seturiFB] = useState("https://www.jbrhomes.com/wp-content/uploads/blank-avatar.png");
 
-  if (!authenticated) {
+  /*if (!authenticated) {
     return null
-  }
+  }*/
 
   const pickImage = async () => {
     // No permissions request is necessary for launching the image library
@@ -79,7 +76,7 @@ const ProfileScreen = ({ navigation }) => {
               size={70}
             />
           </TouchableOpacity>
-          <Text style={styles.userName}>{user.name}</Text>
+          <Text style={styles.userName}>{"SohomSaha"}</Text>
         </View>
         <View style={{ marginLeft: width * 0.05, marginTop: height * 0.01 }}>
           <View style={styles.row}>
@@ -148,7 +145,7 @@ const ProfileScreen = ({ navigation }) => {
         <View style={{ paddingTop: height * 0.05 }}>
           <View style={{ flexDirection: "row", justifyContent: "center" }}>
             <View style={{ flex: 1 }}>
-              <Text style={styles.settingHeaderText}>Emails & Promotions</Text>
+              <Text style={styles.settingHeaderText}>Emails &Promotions</Text>
               <Text style={styles.settingSmallerText}>
                 Don't Worry We Don't Spam :)
               </Text>
@@ -209,16 +206,6 @@ const ProfileScreen = ({ navigation }) => {
               }}
             />
           </View>
-          <View style={styles.row2}>
-            <Text style={styles.label}>
-              Please make sure you have read our{" "}
-            </Text>
-            <TouchableOpacity
-              onPress={() => Linking.openURL("https://pages.flycricket.io/immigrate-ai/privacy.html")}
-            >
-              <Text style={styles.link}>Privacy Policy</Text>
-            </TouchableOpacity>
-          </View>
         </View>
         <Button onPress={handleSignOut}>Logout?</Button>
       </View>
@@ -238,8 +225,10 @@ const styles = StyleSheet.create({
     marginLeft: "1%",
     fontSize: height * 0.03,
     color: "#493d8a",
+    fontFamily: 'Avenir Next',
     fontWeight: "bold",
-    marginTop: height * 0.07,
+    textAlign: 'center',
+    marginTop: height * 0.065,
   },
   topContainer: {
     flex: 3,
@@ -316,6 +305,6 @@ const styles = StyleSheet.create({
   link: {
     fontWeight: "700",
     fontFamily: "Avenir Next",
-    color: "#493d8a",
+    color: "#493d8a",  
   },
 });

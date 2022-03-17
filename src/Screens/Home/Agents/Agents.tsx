@@ -14,6 +14,8 @@ import {
 } from "react-native";
 import { Avatar, Title } from "react-native-paper";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import { LinearGradient } from "expo-linear-gradient";
+
 const { width, height } = Dimensions.get("window");
 
 const DATA = [
@@ -157,29 +159,21 @@ const styles = StyleSheet.create({
   },
   frontContainer: {
     justifyContent: "center",
-    backgroundColor: "#ECEBF4",
+    backgroundColor: "#EFF4F6",
     height: 80,
     width: width * 0.8,
     borderRadius: 16,
     padding: 4,
     marginBottom: height * 0.013,
-    shadowColor: "#000000",
-    shadowOffset: { width: 1, height: 1 },
-    shadowOpacity: 0.35,
-    shadowRadius: 3,
   },
   backContainer: {
     justifyContent: "center",
-    backgroundColor: "#ECEBF4",
+    backgroundColor: "#EFF4F6",
     height: 80,
     width: width * 0.8,
     borderRadius: 16,
     padding: 4,
     marginBottom: height * 0.013,
-    shadowColor: "#000000",
-    shadowOffset: { width: 1, height: 1 },
-    shadowOpacity: 0.35,
-    shadowRadius: 3,
   },
   name: {
     fontSize: 15,

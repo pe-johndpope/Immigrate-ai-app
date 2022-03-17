@@ -4,16 +4,17 @@ import {
   Text,
   StyleSheet,
   Dimensions,
-  TextInput
+  TextInput,
+  TouchableOpacity
 } from "react-native";
 import DatePicker from "react-native-datepicker";
 import CountryPicker from "react-native-country-picker-modal";
-
 import Background from "../../components/Background";
 import Button from "../../components/Button";
 import { theme } from "../../components/theme";
 import { CountryCode, Country } from "./types";
 import { FiygeAuthContext } from "../../Contexts";
+import { LinearGradient } from "expo-linear-gradient";
 
 const { width, height } = Dimensions.get("window");
 
@@ -24,7 +25,7 @@ const Onboarding = ({ navigation }) => {
   const [last, setLast] = useState("");
   const [job, setJob] = useState("");
   const [countryName, setCountryName] = useState("");
-  const [date, setDate] = useState("09-10-2021");
+  const [date, setDate] = useState("");
 
   const [firstError, setFirstError] = useState(false);
   const [lastError, setLastError] = useState(false);
@@ -63,256 +64,190 @@ const Onboarding = ({ navigation }) => {
   };
 
   return (
-    <Background>
-      <View
-        style={{
-          flex: 1.4,
-          paddingTop: height * 0.025,
-          flexDirection: "column",
-          width: width * 0.7,
-        }}
-      >
-        <Text style={styles.textHeader}>
-          Lets get to know you a little bit better!👋
-        </Text>
+    <LinearGradient
+      style={styles.gradientBackgroundStyle}
+      colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF",]}>
+      <Text style={styles.textHeader}>
+        Let's get to know you a little bit better!👋
+      </Text>
+      <View style={styles.viewColumn}>
+        <Text style={styles.optionHeaderTop}>1. Where do you live?</Text>
       </View>
-      <View style={{ flex: 10, flexDirection: "column" }}>
-        <Text style={styles.optionHeader}>1. Where do you live?</Text>
-        <View style={styles.countryContainer}>
-          <CountryPicker
-            {...{
-              countryCode,
-              onSelect,
-              preferredCountries: ["IN", "CN"],
-            }}
-          />
-          {country !== null ? (
-            <Text
-              style={{ position: "relative", flexGrow: 0.825, fontSize: 15 }}
-            >
-              {country.name}
-            </Text>
-          ) : (
-            <Text
-              style={{ position: "relative", flexGrow: 0.825, fontSize: 15 }}
-            >
-              {" "}
-              Select Country...
-            </Text>
-          )}
-        </View>
-        {countryNameError && (
-          <Text style={styles.errorText}> Please select your country</Text>
-        )}
-        <View style={{ paddingTop: height * 0.025, flexDirection: "row" }}>
-          <Text style={styles.optionHeader}>2. What is your Birth Date?</Text>
-        </View>
-        <View
-          style={{
-            alignItems: "center",
-            flexDirection: "row",
-            marginTop: 10,
-            width: width * 0.7,
-            height: height * 0.05,
-            backgroundColor: "#E2E2E2",
-            borderRadius: 10,
+      <View style={styles.textViewStyle}>
+        <CountryPicker
+          {...{
+            countryCode,
+            onSelect,
+            preferredCountries: ["IN", "CN"],
           }}
-        >
-          <DatePicker
-            style={styles.datePickerStyle}
-            date={date}
-            mode="date"
-            placeholder="Select Birthday..."
-            format="DD/MM/YYYY"
-            minDate="01-01-1900"
-            maxDate="01-01-2000"
-            confirmBtnText="Confirm"
-            cancelBtnText="Cancel"
-            customStyles={{
-              dateIcon: {
-                position: "absolute",
-                right: 2,
-                top: 4,
-              },
-              dateInput: {
-                borderColor: "gray",
-                alignItems: "flex-start",
-                borderWidth: 0,
-                borderBottomWidth: 0,
-                marginLeft: 0,
-              },
-              placeholderText: {
-                fontSize: 15,
-                fontFamily: "Avenir Next",
-                color: "#5E5E5E",
-              },
-              dateText: {
-                fontSize: 15,
-                fontWeight: "600",
-                fontFamily: "Avenir Next",
-                marginLeft: 20,
-              },
-            }}
-            onDateChange={(date) => {
-              setDate(date);
-            }}
+        />
+        {country !== null ? (
+          <Text style={styles.countrySelectStyle}>{country.name}</Text>
+        ) : (
+          <Text style={styles.countryPlaceholder}>Select Country...</Text>
+        )}
+      </View>
+      {countryNameError && (
+        <Text style={styles.errorText}> Please select your country</Text>
+      )}
+      <View style={styles.viewColumn}>
+        <Text style={styles.optionHeaderTop1}>2. What is your Birth Date?</Text>
+      </View>
+      <View style={styles.textViewStyle}>
+        <DatePicker
+          style={styles.datePickerStyle}
+          date={date}
+          mode="date"
+          placeholder="     Select Birthday..."
+          format="DD/MM/YYYY"
+          minDate="01-01-1900"
+          maxDate="01-01-2020"
+          confirmBtnText="Confirm"
+          cancelBtnText="Cancel"
+          customStyles={{
+            dateIcon: {
+              position: "absolute",
+              right: 2,
+              top: 4,
+            },
+            dateInput: {
+              borderColor: "gray",
+              alignItems: "flex-start",
+              borderWidth: 0,
+              borderBottomWidth: 0,
+              marginLeft: 0,
+            },
+            placeholderText: {
+              fontSize: 15,
+              fontWeight: "400",
+              fontFamily: "Avenir Next",
+              color: "#5E5E5E",
+            },
+            dateText: {
+              fontSize: 15,
+              fontWeight: "500",
+              fontFamily: "Avenir Next",
+              marginLeft: 20,
+            },
+          }}
+          onDateChange={(date) => {
+            setDate(date);
+          }}
+        />
+      </View>
+      {dateError && (
+        <Text style={styles.errorText}> Please choose your birth date</Text>
+      )}
+      <View style={styles.viewColumn}>
+        <Text style={styles.optionHeader}>3. Current Job Occupation?</Text>
+        <View style={styles.textViewStyle}>
+          <TextInput
+            placeholder="Job Title"
+            placeholderTextColor={"#5E5E5E"}
+            returnKeyType="next"
+            onChangeText={(text) => setJob(text)}
+            style={styles.textInputStyle}
           />
         </View>
-        {dateError && (
-          <Text style={styles.errorText}> Please choose your birth date</Text>
-        )}
-        <View style={{ paddingTop: height * 0.025, flexDirection: "column" }}>
-          <Text style={styles.optionHeader}>3. Current Job Occupation?</Text>
-          <View
-            style={{
-              alignItems: "center",
-              flexDirection: "row-reverse",
-              backgroundColor: "#E2E2E2",
-              marginTop: 10,
-              width: width * 0.7,
-              height: height * 0.05,
-              borderRadius: 10,
-            }}
-          >
-            <TextInput
-              placeholder="Job Title"
-              returnKeyType="next"
-              onChangeText={(text) => setJob(text)}
-              style={{
-                fontSize: 15,
-                height: height * 0.05,
-                width: width * 0.65,
-                backgroundColor: "#E2E2E2",
-                borderRadius: 10,
-              }}
-            />
-          </View>
-        </View>
-        {jobError && (
-          <Text style={styles.errorText}> Please enter a valid job title</Text>
-        )}
-        <View style={{ paddingTop: height * 0.025, flexDirection: "column" }}>
-          <Text style={styles.optionHeader}>3. What is your first name?</Text>
-          <View
-            style={{
-              alignItems: "center",
-              flexDirection: "row-reverse",
-              backgroundColor: "#E2E2E2",
-              marginTop: 10,
-              width: width * 0.7,
-              height: height * 0.05,
-              borderRadius: 10,
-            }}
-          >
-            <TextInput
-              placeholder="Legal first name"
-              returnKeyType="done"
-              onChangeText={(text) => setFirst(text)}
-              style={{
-                fontSize: 15,
-                height: height * 0.05,
-                width: width * 0.65,
-                backgroundColor: "#E2E2E2",
-                borderRadius: 10,
-              }}
-            />
-          </View>
-        </View>
-        {firstError && (
-          <Text style={styles.errorText}> Please enter a valid first name</Text>
-        )}
-        <View style={{ paddingTop: height * 0.025, flexDirection: "column" }}>
-          <Text style={styles.optionHeader}>4. What is your last name?</Text>
-          <View
-            style={{
-              alignItems: "center",
-              flexDirection: "row-reverse",
-              backgroundColor: "#E2E2E2",
-              marginTop: 10,
-              width: width * 0.7,
-              height: height * 0.05,
-              borderRadius: 10,
-            }}
-          >
-            <TextInput
-              placeholder="Legal last name"
-              returnKeyType="done"
-              onChangeText={(text) => setLast(text)}
-              style={{
-                fontSize: 15,
-                height: height * 0.05,
-                width: width * 0.65,
-                backgroundColor: "#E2E2E2",
-                borderRadius: 10,
-              }}
-            />
-          </View>
-        </View>
-        {lastError && (
-          <Text style={styles.errorText}> Please enter a valid last name</Text>
-        )}
-        <View style={{ paddingTop: 10 }}>
-          <Button
-            mode="contained"
-            onPress={onSubmit}
-            style={styles.button}
-          >
-            Lets Begin!
-          </Button>
+      </View>
+      {jobError && (
+        <Text style={styles.errorText}> Please enter a valid job title</Text>
+      )}
+      <View style={styles.viewColumn}>
+        <Text style={styles.optionHeader}>4. What is your first name?</Text>
+        <View style={styles.textViewStyle}>
+          <TextInput
+            placeholder="Legal first name"
+            placeholderTextColor={"#5E5E5E"}
+            returnKeyType="done"
+            onChangeText={(text) => setFirst(text)}
+            style={styles.textInputStyle}
+          />
         </View>
       </View>
-    </Background>
+      {firstError && (
+        <Text style={styles.errorText}> Please enter a valid first name</Text>
+      )}
+      <View style={styles.viewColumn}>
+        <Text style={styles.optionHeader}>5. What is your last name?</Text>
+        <View style={styles.textViewStyle}>
+          <TextInput
+            placeholder="Legal last name"
+            placeholderTextColor={"#5E5E5E"}
+            returnKeyType="done"
+            onChangeText={(text) => setLast(text)}
+            style={styles.textInputStyle}
+          />
+        </View>
+      </View>
+      {lastError && (
+        <Text style={styles.errorText}> Please enter a valid last name</Text>
+      )}
+      <View style={{ paddingTop: 10 }}>
+        <TouchableOpacity
+          style={styles.buttonTouchableStyle}
+          onPress={onSubmit}
+        >
+          <LinearGradient
+            colors={["#DDB724", "#9A7A00"]}
+            style={styles.gradientButtonStyle}
+          >
+            <Text
+              style={styles.buttonTextStyle}
+            >
+              Let's Begin!
+            </Text>
+          </LinearGradient>
+        </TouchableOpacity>
+      </View>
+    </LinearGradient>
   );
 };
 
 const styles = StyleSheet.create({
-  label: {
-    color: theme.colors.secondary,
-  },
-  button: {
-    marginTop: 24,
-  },
-  row: {
-    flexDirection: "row",
-    marginTop: 4,
-  },
-  link: {
-    fontWeight: "bold",
-    fontFamily: "Avenir Next",
-    color: "#FF6584",
-  },
-  container: {
-    flex: 1,
-  },
   textHeader: {
-    fontSize: 25,
+    fontSize: 27,
+    paddingHorizontal: 45,
     fontFamily: "Avenir Next",
     color: "#493d8a",
     fontWeight: "700",
     flexDirection: "column",
+    textAlign: "center",
   },
   countryPlaceholder: {
+    position: "relative",
+    flexGrow: 0.825,
     fontSize: 15,
-    fontFamily: "Avenir Next",
+    fontWeight: "400",
     color: "#5E5E5E",
-    fontWeight: "500",
-    flex: 1,
-    marginLeft: 10,
+    fontFamily: "Avenir Next",
   },
-  countryContainer: {
-    alignItems: "center",
-    flexDirection: "row-reverse",
-    marginTop: 10,
-    width: width * 0.7,
-    height: height * 0.05,
+  textInputStyle: {
+    height: height * 0.049,
+    width: width * 0.65,
     backgroundColor: "#E2E2E2",
     borderRadius: 10,
+    fontSize: 15,
+    fontWeight: "400",
+    fontFamily: "Avenir Next",
+    color: "#000000",
   },
   optionHeader: {
     fontFamily: "Avenir Next",
     fontSize: 18,
     fontWeight: "500",
-    color: "#000000",
+  },
+  optionHeaderTop: {
+    right: width * 0.12,
+    fontFamily: "Avenir Next",
+    fontSize: 18,
+    fontWeight: "500",
+  },
+  optionHeaderTop1: {
+    right: width * 0.07,
+    fontFamily: "Avenir Next",
+    fontSize: 18,
+    fontWeight: "500",
   },
   datePickerStyle: {
     width: width * 0.7,
@@ -321,6 +256,56 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: "#FF0000",
   },
+  textViewStyle: {
+    alignItems: "center",
+    flexDirection: "row-reverse",
+    backgroundColor: "#E2E2E2",
+    marginTop: 10,
+    width: width * 0.7,
+    height: height * 0.05,
+    borderRadius: 10,
+    shadowColor: "#000000",
+    shadowOffset: { width: 2, height: 2 },
+    shadowOpacity: 0.35,
+    shadowRadius: 4,
+  },
+  viewColumn: {
+    paddingTop: height * 0.025,
+    flexDirection: "column",
+  },
+  gradientBackgroundStyle: {
+    flex: 1,
+    padding: 4,
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  countrySelectStyle: {
+    position: "relative",
+    flexGrow: 0.85,
+    fontSize: 15,
+    fontWeight: "500",
+    fontFamily: "Avenir Next",
+  },
+  gradientButtonStyle:{
+    width: width * 0.5,
+    height: height * 0.074,
+    borderRadius: 32,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  buttonTextStyle:{
+    fontSize: 18,
+    fontFamily: "Avenir Next",
+    color: "#FFFFFF",
+    fontWeight: "500",
+  },
+  buttonTouchableStyle:{
+    paddingTop: height * 0.05,
+    shadowColor: "#ffffff",
+    shadowOpacity: 0.7,
+    shadowRadius: 4,
+  }
 });
 
 export default Onboarding;

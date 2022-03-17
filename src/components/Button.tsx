@@ -20,13 +20,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     width: width * 0.7,
     height: height * 0.07,
-    borderRadius: 20,
+    borderRadius: 30,
   },
   text: {
-    fontWeight: "700",
-    fontSize: 20,
+    fontWeight: "500",
+    fontSize: 18,
     color: "#FFFFFF",
-    fontFamily: "Avenir",
+    fontFamily: "Avenir Next",
   },
 });
 
