@@ -39,7 +39,7 @@ const Onboarding = ({ navigation }) => {
   const onSelect = (country: Country) => {
     setCountryCode(country.cca2);
     setCountry(country);
-    setCountryName(country.flag);
+    setCountryName(country.name ?? country.name['common']);
   };
 
   const onSubmit = async () => {

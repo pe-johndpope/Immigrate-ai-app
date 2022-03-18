@@ -76,7 +76,7 @@ const ProfileScreen = ({ navigation }) => {
               size={70}
             />
           </TouchableOpacity>
-          <Text style={styles.userName}>{"SohomSaha"}</Text>
+          <Text style={styles.userName}>{userData.firstName + " " + userData.lastName}</Text>
         </View>
         <View style={{ marginLeft: width * 0.05, marginTop: height * 0.01 }}>
           <View style={styles.row}>
