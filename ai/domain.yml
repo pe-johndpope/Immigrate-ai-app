@@ -529,7 +529,7 @@ slots:
         requested_slot: degree_canada
 responses:
   utter_default:
-  - text: I'm sorry, I don't understand. Can I help you with any of the following?
+  - text: Can I help you with any of the following?
     buttons: 
     - payload: /request_eligibility
       title: Determine my immigration eligibility.
