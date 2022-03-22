@@ -1,20 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {
   View,
   Text,
   StyleSheet,
   Dimensions,
   TextInput,
-  TouchableOpacity,
+  TouchableOpacity
 } from "react-native";
+import DatePicker from "react-native-datepicker";
 import CountryPicker from "react-native-country-picker-modal";
 import { CountryCode, Country } from "./types";
-import DatePicker from "react-native-datepicker";
+import { FiygeAuthContext } from "../../Contexts";
 import { LinearGradient } from "expo-linear-gradient";
 
 const { width, height } = Dimensions.get("window");
 
 const Onboarding = ({ navigation }) => {
+  const { onOnboardUser } = useContext(FiygeAuthContext)
+
   const [first, setFirst] = useState("");
   const [last, setLast] = useState("");
   const [job, setJob] = useState("");
@@ -33,42 +36,28 @@ const Onboarding = ({ navigation }) => {
   const onSelect = (country: Country) => {
     setCountryCode(country.cca2);
     setCountry(country);
-    setCountryName(country.flag);
+    setCountryName(country.name ?? country.name['common']);
   };
 
-  const onButtonPressed = () => {
-    if (countryName == "") {
-      setCountryNameError(true);
-    } else {
-      setCountryNameError(false);
-    }
-    if (first == "") {
-      setFirstError(true);
-    } else {
-      setFirstError(false);
-    }
-    if (last == "") {
-      setLastError(true);
-    } else {
-      setLastError(false);
-    }
-    if (job == "") {
-      setJobError(true);
-    } else {
-      setJobError(false);
-    }
-    if (date == "") {
-      setDateError(true);
-    } else {
-      setDateError(false);
+  const onSubmit = async () => {
+    setCountryNameError(countryName === '');
+    setFirstError(first === '')
+    setLastError(last === '')
+    setJobError(job === '')
+    setDateError(date === "09-10-2021")
+
+    if (!first || !countryName || !last || !job || date === "09-10-2021") {
+      alert("Incorrect Fields.")
+      return;
     }
 
-    if (firstError || jobError || countryNameError || lastError || dateError) {
-      alert("Incorrect Fields.");
-    } else {
-    }
-    navigation.navigate("Dashboard");
-
+    await onOnboardUser({
+      birthday: date,
+      firstName: first,
+      lastName: last,
+      countryCode: countryName,
+      jobTitle: job 
+    })
   };
 
   return (
@@ -194,7 +183,7 @@ const Onboarding = ({ navigation }) => {
       <View style={{ paddingTop: 10 }}>
         <TouchableOpacity
           style={styles.buttonTouchableStyle}
-          onPress={onButtonPressed}
+          onPress={onSubmit}
         >
           <LinearGradient
             colors={["#DDB724", "#9A7A00"]}

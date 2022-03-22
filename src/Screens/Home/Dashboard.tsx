@@ -1,32 +1,19 @@
 import * as React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from "react-native-vector-icons/Ionicons";
-import { BlurView } from "expo-blur";
 import {
-  Button,
-  View,
-  StyleSheet,
   Dimensions,
   Platform,
 } from "react-native";
-
-// Screensh
 import Chat from "../Chat/Chat";
 import Home from "./Home";
 import ProfileScreen from "../ProfileScreen";
-import SocialFeed from "../SocialFeed/SocialFeed"
-const { width, height } = Dimensions.get("window");
+import Feed from "../SocialFeed/screens/Feed";
 
-var dashHeight;
-function ChooseHeight() {
-  if (height / width > 1920 / 1080) {
-    return height * 0.06;
-  } else {
-    return height * 0.09;
-  }
-}
 
-const DashHeightPerOS = {};
+const {height } = Dimensions.get("window");
+
+
 const Tab = createBottomTabNavigator();
 
 function Dashboard({ navigation }) {
@@ -60,7 +47,7 @@ function Dashboard({ navigation }) {
     >
       <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
       <Tab.Screen name="Chat" component={Chat} options={{ headerShown: false  }}/>
-      <Tab.Screen name="Explore" component={SocialFeed} options={{ headerShown: false }} />
+      <Tab.Screen name="Explore" component={Feed} options={{ headerShown: false }} />
       <Tab.Screen name="Profile" component={ProfileScreen} options={{ headerShown: false }} />
      </Tab.Navigator>
   );

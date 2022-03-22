@@ -50,7 +50,7 @@ function Chat({ navigation }) {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.container}>
-      <View><Text style = {{fontFamily: "Avenir Next", textAlign: "center", fontSize: 23, fontWeight: '700', color: "#493d8a"}}>Chat</Text></View>
+      <View><Text style = {{fontFamily: "Avenir Next", textAlign: "center", fontSize: 27.5, fontWeight: '700', color: "#493d8a"}}>Chat</Text></View>
         <RasaChat
           ref={rasaChatRef}
           host={HOST}

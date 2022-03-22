@@ -1,4 +1,6 @@
 import { DefaultTheme } from "react-native-paper";
+import {Platform} from 'react-native'
+
 
 export const theme = {
   ...DefaultTheme,
@@ -10,4 +12,7 @@ export const theme = {
     purple: "#493d8a",
     pink: "#FF6584"
   },
+  fontType: {
+    primary: Platform.OS == "ios"? "Avenir Next" : "Avenir Next"
+  }
 };

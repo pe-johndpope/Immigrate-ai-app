@@ -13,6 +13,7 @@ import { FiygeAuthContext } from "../Contexts";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import * as ImagePicker from "expo-image-picker";
 import { theme } from "../components/theme";
+import { LinearGradient } from "expo-linear-gradient";
 
 const { width, height } = Dimensions.get("window");
 
@@ -55,6 +56,9 @@ const ProfileScreen = ({ navigation }) => {
   };
 
   return (
+    <LinearGradient
+    style = {{zIndex:-3, flex: 1}}
+    colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"]}>
     <View
       style={[
         styles.container,
@@ -210,6 +214,7 @@ const ProfileScreen = ({ navigation }) => {
         <Button onPress={handleSignOut}>Logout?</Button>
       </View>
     </View>
+    </LinearGradient>
   );
 };
 
@@ -217,23 +222,21 @@ export default ProfileScreen;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#EFF5F8",
     flex: 1,
     padding: 15,
   },
   profileTitle: {
     marginLeft: "1%",
-    fontSize: height * 0.03,
-    color: "#493d8a",
+    fontSize: 27.5,
+    color: "#000000",
     fontFamily: 'Avenir Next',
     fontWeight: "bold",
-    textAlign: 'center',
     marginTop: height * 0.065,
   },
   topContainer: {
     flex: 3,
     backgroundColor: "#BFD3DA",
-    borderRadius: 23,
+    borderRadius: 10,
     paddingBottom: height * 0.04,
     marginTop: "5%",
   },
