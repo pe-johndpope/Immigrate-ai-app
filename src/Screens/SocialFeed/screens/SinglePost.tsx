@@ -221,10 +221,8 @@ class SinglePost extends Component {
                     </Text>
                     <Text  style = {styles.authorStyle}>  |</Text>
                     <Text  style = {styles.authorStyle}>   
-                        {`  Published on ${moment(
-                          post[0].date,
-                          'YYYYMMDD',
-                        ).fromNow()}`}
+                        {`  Published on ${
+                          post[0].date}`}
                     </Text>
                 
                 </View>
