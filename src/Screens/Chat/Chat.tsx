@@ -11,8 +11,8 @@ import RasaChat, {
 } from "./RNRasa";
 import styles from "./styles";
 
-const HOST = "http://localhost:5005"; // DEV
-// const HOST = "https://chat.immigrate.ai";
+//const HOST = "http://localhost:5005"; // DEV
+const HOST = "https://chat.immigrate.ai";
 
 // Avatar images
 const botAvatar = "https://media.istockphoto.com/vectors/chat-bot-ai-and-customer-service-support-concept-vector-flat-person-vector-id1221348467?k=20&m=1221348467&s=612x612&w=0&h=hp8h8MuGL7Ay-mxkmIKUsk3RY4O69MuiWjznS_7cCBw=";
