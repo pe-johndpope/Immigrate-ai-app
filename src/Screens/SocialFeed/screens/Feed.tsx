@@ -137,11 +137,11 @@ class Feed extends Component {
       colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"]}>
       <SafeAreaView style = {{flex: 1,}}>
         <View style = {{ flexDirection: 'row',justifyContent:'space-between'}}>
-        <Title style = {{fontSize: 27.5, fontFamily: "Avenir Next", fontWeight: "700", paddingTop: 20,paddingHorizontal: 20,}}>Explore Canada!</Title>
+        <Title style = {{fontSize: 27.5, fontFamily: "Avenir Next", fontWeight: "700", paddingTop: 20,paddingHorizontal: 20,color: theme.colors.purple}}>Explore Canada 🇨🇦</Title>
         <TouchableOpacity 
          onPress={() =>
           this.props.navigation.navigate('Bookmark')}>
-          <Icon  style = {{paddingHorizontal: 20, paddingTop: 20,}} name="bookmarks" size={25} color={theme.colors.purple} />
+          <Icon  style = {{paddingHorizontal: 20, paddingTop: 20,}} name="bookmarks-outline" size={25} color={theme.colors.grey} />
           </TouchableOpacity>      
         </View>
         <Categories  navigation={this.props.navigation}></Categories>

@@ -13,7 +13,6 @@ import { FiygeAuthContext } from "../Contexts";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import * as ImagePicker from "expo-image-picker";
 import { theme } from "../components/theme";
-import { LinearGradient } from "expo-linear-gradient";
 
 const { width, height } = Dimensions.get("window");
 
@@ -22,7 +21,7 @@ const ProfileScreen = ({ navigation }) => {
   const [isEnabled1, setIsEnabled1] = useState(false);
   const [isEnabled2, setIsEnabled2] = useState(false);
 
-  const { authenticated, user, onSignOut } = useContext(FiygeAuthContext);
+  const { authenticated, user, userData, onSignOut } = useContext(FiygeAuthContext);
 
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
   const toggleSwitch1 = () => setIsEnabled1((previousState) => !previousState);
@@ -56,9 +55,6 @@ const ProfileScreen = ({ navigation }) => {
   };
 
   return (
-    <LinearGradient
-    style = {{zIndex:-3, flex: 1}}
-    colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"]}>
     <View
       style={[
         styles.container,
@@ -80,7 +76,7 @@ const ProfileScreen = ({ navigation }) => {
               size={70}
             />
           </TouchableOpacity>
-          <Text style={styles.userName}>{"SohomSaha"}</Text>
+          <Text style={styles.userName}>{userData.firstName + " " + userData.lastName}</Text>
         </View>
         <View style={{ marginLeft: width * 0.05, marginTop: height * 0.01 }}>
           <View style={styles.row}>
@@ -88,7 +84,7 @@ const ProfileScreen = ({ navigation }) => {
             <View style={{ marginLeft: 20 }}>
               <TextInput
                 maxLength={100}
-                placeholder="Country:"
+                placeholder={`Country: ${userData.countryCode}`}
                 keyboardType="numeric"
                 caretHidden={true}
                 style={{
@@ -103,7 +99,7 @@ const ProfileScreen = ({ navigation }) => {
             <Icon name="phone" color="#777777" size={20} />
             <View style={{ marginLeft: 20 }}>
               <TextInput
-                placeholder="Phone:"
+                placeholder={`Phone: ${userData.phone}`}
                 keyboardType="numeric"
                 caretHidden={true}
                 style={{
@@ -131,7 +127,7 @@ const ProfileScreen = ({ navigation }) => {
             <Icon name="calendar-outline" color="#777777" size={20} />
             <View style={{ marginLeft: 20 }}>
               <TextInput
-                placeholder="Date of Birth: MM/DD/YYYY"
+                placeholder={`Date of Birth: ${userData.birthday}`}
                 keyboardType="numeric"
                 caretHidden={true}
                 style={{
@@ -214,7 +210,6 @@ const ProfileScreen = ({ navigation }) => {
         <Button onPress={handleSignOut}>Logout?</Button>
       </View>
     </View>
-    </LinearGradient>
   );
 };
 
@@ -222,21 +217,23 @@ export default ProfileScreen;
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "#EFF5F8",
     flex: 1,
     padding: 15,
   },
   profileTitle: {
     marginLeft: "1%",
-    fontSize: 27.5,
-    color: "#000000",
+    fontSize: height * 0.03,
+    color: "#493d8a",
     fontFamily: 'Avenir Next',
     fontWeight: "bold",
+    textAlign: 'center',
     marginTop: height * 0.065,
   },
   topContainer: {
     flex: 3,
     backgroundColor: "#BFD3DA",
-    borderRadius: 10,
+    borderRadius: 23,
     paddingBottom: height * 0.04,
     marginTop: "5%",
   },

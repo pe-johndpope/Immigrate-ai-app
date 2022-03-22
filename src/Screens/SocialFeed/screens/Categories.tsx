@@ -91,7 +91,7 @@ export default class Categories extends React.Component {
               }>
  
               <LinearGradient
-            colors={[theme.colors.pink]}
+            colors={["#0060ff", theme.colors.purple]}
             style={styles.buttonStyle}
           >
             <Text

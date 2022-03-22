@@ -9,6 +9,9 @@ import AsyncStorage from  '@react-native-async-storage/async-storage'
 import { NavigationContainer } from '@react-navigation/native';
 import Categories from './Categories'
 import { Mada_500Medium } from '@expo-google-fonts/dev';
+import {LinearGradient} from 'expo-linear-gradient'
+import { themeTools } from 'native-base';
+import { theme } from '../../../components/theme';
 
 class CategoryList extends React.Component {
   constructor(props) {
@@ -59,8 +62,17 @@ class CategoryList extends React.Component {
   render() {
     let title = this.props.route.params.categorie_name
     return (
+      <LinearGradient
+      style = {{zIndex:-3, flex: 1}}
+      colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"]}>
       <SafeAreaView style = {{flex: 1,}}>
-        <Title style = {{paddingTop: 10, paddingHorizontal: 21, fontSize: 30, fontFamily: "Avenir Next", fontWeight: "700"}}>{title}</Title>  
+        <Title style = {{paddingTop: 10,
+                       paddingBottom: 10, 
+                       paddingHorizontal: 21, 
+                       fontSize: 27.5, 
+                       fontFamily: "Avenir Next", 
+                       fontWeight: "700", 
+                       color: theme.colors.purple}}>{title}</Title>  
         <FlatList
           data={this.state.posts}
           renderItem={({item}) => (
@@ -79,6 +91,7 @@ class CategoryList extends React.Component {
           keyExtractor={item => item.id}
         />
         </SafeAreaView>
+        </LinearGradient>
     );
   }
 }

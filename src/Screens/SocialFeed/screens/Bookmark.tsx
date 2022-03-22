@@ -14,6 +14,7 @@ import AsyncStorage from  '@react-native-async-storage/async-storage'
 import moment from 'moment';
 import {withNavigationFocus} from 'react-navigation';
 import NetInfo from '@react-native-community/netinfo';
+import { LinearGradient } from 'expo-linear-gradient';
 
 
 const cacheKey = 'Bookmark';
@@ -84,9 +85,13 @@ class Bookmark extends Component {
 
   render() {
     return (
+      <LinearGradient
+      style = {{zIndex:-3, flex: 1}}
+      colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"]}>
       <View>
         <SafeAreaView>
         {this.state.isFetching ? (
+           
           <View
             style={{
               paddingVertical: 20,
@@ -96,8 +101,9 @@ class Bookmark extends Component {
             <ActivityIndicator animating size="large" />
           </View>
         ) : (
+       
           <View>
-            <Title style = {{paddingTop: 10, paddingHorizontal: 21, fontSize: 30, fontFamily: "Avenir Next", fontWeight: "700"}}>Favourites</Title>  
+            <Title style = {{paddingTop: 10, paddingBottom: 10, paddingHorizontal: 21, fontSize: 27.5, fontFamily: "Avenir Next", fontWeight: "700"}}>Favourites</Title>  
             <FlatList
               data={this.state.bookmark_post}
               renderItem={({item}) => (
@@ -113,6 +119,8 @@ class Bookmark extends Component {
                       borderRadius: 10,
                       alignSelf: 'center',
                       marginBottom: 10,
+                      shadowOpacity: 0.3,
+                      shadowRadius: 4,
                     }}>
                     <Card.Cover
                       source={{uri: item.jetpack_featured_media_url}}
@@ -133,6 +141,7 @@ class Bookmark extends Component {
         )}
         </SafeAreaView>
       </View>
+      </LinearGradient>
     );
   }
 }
