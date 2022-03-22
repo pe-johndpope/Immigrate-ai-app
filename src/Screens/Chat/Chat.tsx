@@ -12,48 +12,38 @@ import RasaChat, {
 import styles from "./styles";
 
 // const HOST = "http://localhost:5005"; // DEV
-const HOST = "https://chat.immigrate.ai";
+// const HOST = "https://chat.immigrate.ai";
 
 // Avatar images
-const botAvatar = "https://media.istockphoto.com/vectors/chat-bot-ai-and-customer-service-support-concept-vector-flat-person-vector-id1221348467?k=20&m=1221348467&s=612x612&w=0&h=hp8h8MuGL7Ay-mxkmIKUsk3RY4O69MuiWjznS_7cCBw=";
-const userAvatar = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Circle-icons-chat.svg/1024px-Circle-icons-chat.svg.png"
+// const botAvatar = "https://media.istockphoto.com/vectors/chat-bot-ai-and-customer-service-support-concept-vector-flat-person-vector-id1221348467?k=20&m=1221348467&s=612x612&w=0&h=hp8h8MuGL7Ay-mxkmIKUsk3RY4O69MuiWjznS_7cCBw=";
+// const userAvatar = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Circle-icons-chat.svg/1024px-Circle-icons-chat.svg.png"
 
 //TODO: reset bot on destroy
 //TODO: handle when bot response error
 
 function Chat({ navigation }) {
-  const { authenticated } = useContext(FiygeAuthContext)
-  const rasaChatRef = useRef<IRasaChatHandles>(null);
-  const [textInputVisible, setTextInputVisible] = useState<boolean>(true)
+  // const { user, authenticated } = useContext(FiygeAuthContext)
+  // const [textInputVisible, setTextInputVisible] = useState<boolean>(true)
+  // const [eligibilityInfo, setEligibilityInfo] = useState<any>()
 
-  useEffect(() => {
-    // Reset the chat on load 
-    resetBot();
-  }, [])
+  // if (!authenticated) {
+  //   return null
+  // }
 
-  if (!authenticated) {
-    return null
-  }
+  // const resetMessages = () => {
+  //   rasaChatRef?.current?.resetMessages();
+  // };
 
-  const resetMessages = () => {
-    rasaChatRef?.current?.resetMessages();
-  };
-
-  const resetBot = () => {
-    rasaChatRef?.current?.resetBot();
-    setTextInputVisible(true)
-  };
-
-  const sendStartConversation = () => {
-    rasaChatRef?.current?.sendCustomMessage("Hi");
-  };
+  // const sendStartConversation = () => {
+  //   rasaChatRef?.current?.sendCustomMessage("Hi");
+  // };
 
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.container}>
       <View><Text style = {{fontFamily: "Avenir Next", textAlign: "center", fontSize: 23, fontWeight: '700', color: "#493d8a"}}>Chat</Text></View>
-        <RasaChat
+        {/* <RasaChat
           ref={rasaChatRef}
           host={HOST}
           setTextInputVisible={setTextInputVisible}
@@ -125,7 +115,7 @@ function Chat({ navigation }) {
           }}
         />
       </SafeAreaView>
-    </>
+    </> */}
   );
 }
 

@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import { FiygeAuthContextProvider, BlogContextProvider, FiygeAuthContext } from "../Contexts";
+
+import { FiygeAuthContextProvider, ChatbotContextProvider, BlogContextProvider, FiygeAuthContext } from "../Contexts";
 import Chat from "../Screens/Chat/Chat";
 import Login from "../Screens/Login";
 import Register from "../Screens/Register";
@@ -11,19 +12,10 @@ import ProfileScreen from "../Screens/ProfileScreen";
 import Dashboard from "../Screens/Home/Dashboard";
 import Home from "../Screens/Home/Home";
 import Onboarding from "../Screens/Onboarding/Onboarding";
-import SocialFeed from "../Screens/SocialFeed/SocialFeed"
+
 interface RoutesProps {}
 
 const Stack = createStackNavigator();
-
-const navTheme = {
-  colors: {
-    dark: '#ffffff',
-    background: '#ffffff',
-  },
-};
-
-
 
 export const Routes: React.FC<RoutesProps> = ({}) => {
   return (
@@ -52,12 +44,14 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => {
               component={Dashboard}
               options={{ headerShown: false }}
             />
-            <Stack.Screen
-              name="Chat"
-              component={Chat}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
+            <ChatbotContextProvider>
+              <Stack.Screen
+                name="Chat"
+                component={Chat}
+                options={{ headerShown: false }}
+              />
+            </ChatbotContextProvider>
+           <Stack.Screen
               name="Home"
               component={Home}
               options={{ headerShown: false }}

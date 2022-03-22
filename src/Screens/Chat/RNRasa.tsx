@@ -5,11 +5,11 @@ import React, {
   useMemo,
   useImperativeHandle,
   useEffect,
+  useRef,
   Dispatch
 } from "react";
 import {
   GiftedChat,
-  GiftedChatProps,
   Actions,
   Avatar,
   Bubble,
@@ -28,74 +28,46 @@ import {
   utils,
   Reply,
   IMessage,
-  User
 } from 'react-native-gifted-chat';
 import { IRasaMessage, IRasaResponse } from './types';
-import uuid from 'react-native-uuid';
 
 import {
-  createNewBotMessage,
   createBotEmptyMessage,
   fetchOptions,
   createQuickUserReply,
   isValidNotEmptyArray,
 } from "./utils";
-import { FiygeAuthContext } from "../../Contexts";
+import { ChatbotContext, FiygeAuthContext } from "../../Contexts";
 
 //TODO: reset bot on destroy
-export interface IRasaChat
-  extends Omit<
-    GiftedChatProps,
-    "user" | "onSend" | "messages" | "onQuickReply"
-  > {
-  host: string;
-  onSendMessFailed?: (error) => void;
-  onEmptyResponse?: () => void;
-  emptyResponseMessage?: string;
-  userId?: string | number;
-  userAvatar?: string;
-  userName?: string;
-  botName?: string;
-  botAvatar?: string;
+// export interface IRasaChat
+//   extends Omit<
+//     GiftedChatProps,
+//     "user" | "onSend" | "messages" | "onQuickReply"
+//   > {
+//   host: string;
+//   onSendMessFailed?: (error) => void;
   
-  // user defined
-  setTextInputVisible: Dispatch<boolean>
-}
-export interface IRasaChatHandles {
-  resetMessages(): void;
-  resetBot(): void;
-  sendCustomMessage(string): void;
-}
+//   // user defined
+//   setTextInputVisible: Dispatch<boolean>
+// }
+// export interface IRasaChatHandles {
+//   resetMessages(): void;
+//   resetBot(): void;
+//   sendCustomMessage(string): void;
+// }
 
-const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
-  const { user } = useContext(FiygeAuthContext)
-  const {
-    host,
-    onSendMessFailed,
-    onEmptyResponse,
-    emptyResponseMessage,
-    userId = user.uid, 
-    userName = '',
-    userAvatar = '',
-    botName = 'RasaChat',
-    botAvatar = '',
-    setTextInputVisible,
-    ...giftedChatProp
-  } = props;
+const ChatBot: React.FC = ({
+
+}) => {
+  // const {
+  //   host,
+  //   onSendMessFailed,
+  //   setTextInputVisible,
+  //   ...giftedChatProp
+  // } = props;
   const [messages, setMessages] = useState<IMessage[]>([]);
   const [rasaTyping, setRasaTyping] = useState<boolean>(false);
-  const [lastRasaCustomResponse, setLastRasaCustomResponse] =
-    useState<IRasaResponse>();
-  const userData: User = {
-    _id: userId,
-    name: userName,
-    avatar: userAvatar,
-  };
-  const botData: User = {
-    _id: "bot_Id_1",
-    name: botName,
-    avatar: botAvatar,
-  };
 
   useEffect(() => {
     if (messages.length === 0) {
@@ -107,24 +79,34 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
     setRasaTyping(true);
     setTimeout(() => {
       setRasaTyping(false);
-      const nextMessage = [response[response.length - 1]]
-      const containsQuickReplies = nextMessage[0].quickReplies.values.length > 0
+      const firstResponse = [response[response.length - 1]]
+      const restResponses =  response.slice(0, response.length - 1)
 
-      if (containsQuickReplies) {
+      // if (previousMessageRef.current )
+      firstResponse[0].quickReplies.values.push({
+        "title": "Back",
+        "value": "back" // previousMessageRef.current,
+      })
+      // previousMessageRef.current = firstResponse[0]
+      // console.log("nextMessage", nextMessage)
+      // const containsQuickReplies = nextMessage[0].quickReplies.values.length > 0
+
+
+      // if (containsQuickReplies) {
         /*
         User is expected to reply using the quick reply options. Remove
         their text input temporarily. 
         */
-        setTextInputVisible(false)
-      } else {
-        setTextInputVisible(true)
-      }
+      //   setTextInputVisible(false)
+      // } else {
+      //   setTextInputVisible(true)
+      // }
       
       setMessages((previousMessages) =>
-        GiftedChat.append(previousMessages, nextMessage)
+        GiftedChat.append(previousMessages, firstResponse)
       ); 
-      if (response.length > 1) {
-        onRasaResponse(response.slice(0, response.length - 1))
+      if (restResponses.length > 0) {
+        onRasaResponse(restResponses)
       }
     }, 1500 + (Math.random() * 750));
   }
@@ -147,22 +129,6 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
     },
   }));
 
-  // Check if last message contains a checkbox or not
-  const hasLastRasaMessageACheckbox = useMemo(() => {
-    if (lastRasaCustomResponse?.custom?.payload?.template_type === "checkbox")
-      return true;
-    return false;
-  }, [lastRasaCustomResponse]);
-
-  // Parse the array message
-  const parseMessages = useCallback((messArr: IRasaResponse[]): IMessage[] => {
-      return (messArr || []).map((singleMess) =>
-        createNewBotMessage(singleMess, botData)
-      );
-    },
-    [botData]
-  );
-
   // Send message to rasa rest webhook
   const sendMessage = useCallback(
     async (text: string): Promise<void> => {
@@ -178,10 +144,9 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
         });
         const messagesJson: IRasaResponse[] = await response.json();
         console.log(messagesJson);
-        let customMessage = messagesJson?.find((message) =>
-          message.hasOwnProperty("custom")
-        );
         const newRecivieMess = parseMessages(messagesJson);
+
+        responseStackRef.current.push(newRecivieMess)
         if (!isValidNotEmptyArray(newRecivieMess)) {
           onEmptyResponse && onEmptyResponse();
           if (emptyResponseMessage) {
@@ -190,17 +155,11 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
               botData
             );
 
-            // delay response 
-            // ponderResponse()
-
-            // setMessages((previousMessages) =>
-            //   GiftedChat.append(previousMessages, [emptyMessageReceive])
-            // );
             onRasaResponse([emptyMessageReceive])
           }
           return;
         }
-        setLastRasaCustomResponse(customMessage);
+        // setLastRasaCustomResponse(customMessage);
         onRasaResponse(newRecivieMess.reverse())
         // setMessages((previousMessages) =>
         //   GiftedChat.append(previousMessages, newRecivieMess.reverse())
@@ -237,7 +196,7 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
       let quickMessage: IMessage[] = [];
       let userText2Rasa: string = "";
       // Case when reply is a radio -> just one option and not a checkbox with 1 option choosen
-      if (replies.length <= 1 && !hasLastRasaMessageACheckbox) {
+      if (replies.length <= 1) { //&& !hasLastRasaMessageACheckbox) {
         const { value = "", title = "" } = replies[0] ?? {};
         quickMessage = [createQuickUserReply(title, userData)];
         userText2Rasa = value;
@@ -250,8 +209,8 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
           ),
         ];
         const checkboxOptions = replies.map((reply) => reply.value);
-        const { payload = "/custom_intent", slot = "custom_slot" } =
-          lastRasaCustomResponse?.custom?.payload ?? {};
+        const { payload = "/custom_intent", slot = "custom_slot" } = {}
+          // lastRasaCustomResponse?.custom?.payload ?? {};
         const newPayload = JSON.stringify({ [slot]: checkboxOptions });
         userText2Rasa = `${payload}${newPayload}`;
       }
