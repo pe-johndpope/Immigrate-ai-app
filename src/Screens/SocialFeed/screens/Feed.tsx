@@ -101,7 +101,7 @@ class Feed extends Component {
       }
       let page = this.state.page;
       const response = await fetch(
-        `https://rasa.immigrate.ai/wp-json/wp/v2/posts?per_page=10&page=${page}`,
+        `https://rasa.immigrate.ai/wp-json/wp/v2/posts?per_page=5&page=${page}`,
       );
       const post = await response.json();
       await AsyncStorage.setItem(
