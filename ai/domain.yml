@@ -27,6 +27,13 @@ intents:
     use_entities: true
 - faq:
     use_entities: true
+- trigger_faq_selector
+- request_share_information
+- request_faqs
+- review_chat
+- submit_review
+- end_chat
+
 entities:
 - travel_purposes
 - number
@@ -36,7 +43,13 @@ entities:
 - duration
 - desired_province
 - english_test
+- faq_id
 slots:
+  faq_id:
+    type: text 
+    mappings:
+    - type: from_entity
+      entity: faq_id
   name:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
@@ -516,7 +529,40 @@ slots:
         requested_slot: degree_canada
 responses:
   utter_default:
-  - text: I'm sorry, I don't understand that yet. Would you like to speak to an agent?
+  - text: Can I help you with any of the following?
+    buttons: 
+    - payload: /request_eligibility
+      title: Determine my immigration eligibility.
+    - payload: /request_share_information
+      title: Connect me with an immigration professional!
+    - payload: /request_faqs
+      title: Show me frequently asked immigration questions.
+  utter_show_faqs:
+  - text: Here are some frequently asked questions! 
+    buttons: 
+    - payload: '/trigger_faq_selector{{"faq_id":"why_canada"}}'
+      title: Why should I immigrate to Canada?
+    - payload: '/trigger_faq_selector{{"faq_id":"letter_of_support"}}'
+      title: How can I get a letter of support to apply for a startup visa?
+    - payload: '/trigger_faq_selector{{"faq_id":"49"}}'
+      title: Can I ask to only be considered for one of the programs under Express Entry?
+    - payload: '/trigger_faq_selector{{"faq_id":"50"}}'
+      title: Do I need to include medical exams and police certificates for an Express Entry application to be complete?
+    - payload: '/trigger_faq_selector{{"faq_id":"51"}}'
+      title: What happens if a country has special procedures for getting police certificates?
+    - payload: '/trigger_faq_selector{{"faq_id":"52"}}'
+      title: Do I need to include proof of funds for Express Entry?
+  utter_review_chat:
+  - text: Thanks for chatting! How did we do? We'll love to hear your feeback! 
+    buttons:
+    - payload: /submit_review # TODO: add rating entity
+      title: I got all the answers I was looking for! 
+    - payload: /submit_review 
+      title: I got most of the answers I wanted.
+    - payload: /submit_review 
+      title: I still have many unanswered questions.  
+  utter_end_chat:
+  - text: Thanks for chatting! Bye for now
   utter_ask_name:
   - text: Hi! I'm Andrea at Immigrate.ai! What's your name?
   utter_name:
@@ -524,14 +570,10 @@ responses:
     buttons:
     - payload: /request_eligibility
       title: Determine eligibility
-    - payload: Do I have to invest my own money if I want to apply through the Start-up Visa Program?
-      title: Do I have to invest my own money if I want to apply through the Start-up Visa Program?
-    - payload: Where can I take a third-party language test for my immigration application?
-      title: Where can I take a third-party language test for my immigration application?
-    - payload: Does the one year of work experience to qualify under the Canadian Experience Class include non-paid employment?
-      title: Does the one year of work experience to qualify under the Canadian Experience Class include non-paid employment?
-    - payload: What happens if my PR card expires?
-      title: What happens if my PR card expires?
+    - payload: /request_share_information
+      title: Connect me with an immigration professional!
+    - payload: /request_faqs
+      title: Show me frequently asked immigration questions.
   utter_greet:
   - text: Hey! How are you?
   utter_did_that_help:
@@ -699,6 +741,14 @@ responses:
       title: Yes
     - payload: /deny
       title: No
+  utter_faq_answered:
+  - text: Did that answer your question?
+    buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+ 
   utter_ask_desired_province:
   - text: What is your preferred province to migrate to?
     buttons:
@@ -751,6 +801,13 @@ responses:
   - text: You may reach out to Gurpreet Chandok at gurpreet@castlemorelaw.com
   - text: You may reach out to Shireen Kapoor at shireen@ace-law.ca
   - text: You may reach out to Rekha Samuel at rekha@canmerge.net
+  utter_require_eligibility_information:
+  - text: To connect you with the right agent we need to learn more about your situation.  
+    buttons:
+    - payload: /request_eligibility 
+      title: Okay!
+    - payload: /review_chat
+      title: No thanks.
   utter_faq/letter_of_support:
   - text: You may work with Canada Startup Company to get a letter of support.
   utter_faq/why_canada:
@@ -2760,6 +2817,7 @@ responses:
 
 actions:
 - ask_faq
+- action_trigger_faq_selector
 - action_show_video
 - action_determine_eligibility
 - validate_eligibility_form

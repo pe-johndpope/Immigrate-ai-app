@@ -145,7 +145,7 @@ const Home = () => {
         showsHorizontalScrollIndicator={false}
       >
         {FaqContent.map((f) => (
-          <Faq question={f.question} answer={f.answer} />
+          <Faq key={f.question} question={f.question} answer={f.answer} />
         ))}
       </ScrollView>
     </View>

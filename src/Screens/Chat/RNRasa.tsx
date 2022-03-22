@@ -4,7 +4,8 @@ import React, {
   useContext,
   useMemo,
   useImperativeHandle,
-  useEffect
+  useEffect,
+  Dispatch
 } from "react";
 import {
   GiftedChat,
@@ -56,6 +57,9 @@ export interface IRasaChat
   userName?: string;
   botName?: string;
   botAvatar?: string;
+  
+  // user defined
+  setTextInputVisible: Dispatch<boolean>
 }
 export interface IRasaChatHandles {
   resetMessages(): void;
@@ -75,9 +79,11 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
     userAvatar = '',
     botName = 'RasaChat',
     botAvatar = '',
+    setTextInputVisible,
     ...giftedChatProp
   } = props;
   const [messages, setMessages] = useState<IMessage[]>([]);
+  const [rasaTyping, setRasaTyping] = useState<boolean>(false);
   const [lastRasaCustomResponse, setLastRasaCustomResponse] =
     useState<IRasaResponse>();
   const userData: User = {
@@ -96,6 +102,32 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
       sendMessage("I need help")
     }
   }, [])
+
+  const onRasaResponse = (response: IMessage[]) : void => {
+    setRasaTyping(true);
+    setTimeout(() => {
+      setRasaTyping(false);
+      const nextMessage = [response[response.length - 1]]
+      const containsQuickReplies = nextMessage[0].quickReplies.values.length > 0
+
+      if (containsQuickReplies) {
+        /*
+        User is expected to reply using the quick reply options. Remove
+        their text input temporarily. 
+        */
+        setTextInputVisible(false)
+      } else {
+        setTextInputVisible(true)
+      }
+      
+      setMessages((previousMessages) =>
+        GiftedChat.append(previousMessages, nextMessage)
+      ); 
+      if (response.length > 1) {
+        onRasaResponse(response.slice(0, response.length - 1))
+      }
+    }, 1500 + (Math.random() * 750));
+  }
 
   // Inner function that cleans bot messages from a parent component
   useImperativeHandle(ref, () => ({
@@ -123,8 +155,7 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
   }, [lastRasaCustomResponse]);
 
   // Parse the array message
-  const parseMessages = useCallback(
-    (messArr: IRasaResponse[]): IMessage[] => {
+  const parseMessages = useCallback((messArr: IRasaResponse[]): IMessage[] => {
       return (messArr || []).map((singleMess) =>
         createNewBotMessage(singleMess, botData)
       );
@@ -140,7 +171,7 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
         sender: `${userId}`,
       };
       try {
-        console.log(rasaMessageObj);
+        // console.log(rasaMessageObj);
         const response = await fetch(`${host}/webhooks/rest/webhook`, {
           ...fetchOptions,
           body: JSON.stringify(rasaMessageObj),
@@ -158,16 +189,22 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
               emptyResponseMessage,
               botData
             );
-            setMessages((previousMessages) =>
-              GiftedChat.append(previousMessages, [emptyMessageReceive])
-            );
+
+            // delay response 
+            // ponderResponse()
+
+            // setMessages((previousMessages) =>
+            //   GiftedChat.append(previousMessages, [emptyMessageReceive])
+            // );
+            onRasaResponse([emptyMessageReceive])
           }
           return;
         }
         setLastRasaCustomResponse(customMessage);
-        setMessages((previousMessages) =>
-          GiftedChat.append(previousMessages, newRecivieMess.reverse())
-        );
+        onRasaResponse(newRecivieMess.reverse())
+        // setMessages((previousMessages) =>
+        //   GiftedChat.append(previousMessages, newRecivieMess.reverse())
+        // );
       } catch (error) {
         alert(error);
         onSendMessFailed && onSendMessFailed(error);
@@ -232,6 +269,7 @@ const RasaChat = React.forwardRef<IRasaChatHandles, IRasaChat>((props, ref) => {
       onSend={(mess) => onSend(mess)}
       messages={messages}
       onQuickReply={onQuickReply}
+      isTyping={rasaTyping}
       {...giftedChatProp}
     />
   );

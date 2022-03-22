@@ -8,7 +8,7 @@ nlu:
     examples: |
       - I need help
       - Help me immigrate
-      - How can I come to Canada,
+      - How can I come to Canada
       - I want to come to Canada
       - I need help now
       - Please help me
@@ -17,9 +17,10 @@ nlu:
     examples: |
       - How can I get support from a designated organization for the startup visa?
       - How can I get the letter of support to apply for the startup visa?
+      - How can I get a letter of support to apply for a startup visa?
   - intent: faq/why_canada
     examples: |
-      - Why should I migrate to Canada?
+      - Why should I immigrate to Canada?
       - Whats so nice about Canada?
       - Why should I visit Canada?
   - intent: greet

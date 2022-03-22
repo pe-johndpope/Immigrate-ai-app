@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import { SafeAreaView, StatusBar, Text, View } from "react-native";
 import Video from "react-native-video";
 import { FiygeAuthContext } from "../../Contexts";
@@ -11,12 +11,12 @@ import RasaChat, {
 } from "./RNRasa";
 import styles from "./styles";
 
-// const HOST = "http://localhost:5005"; // DEV
-const HOST = "https://chat.immigrate.ai";
+const HOST = "http://localhost:5005"; // DEV
+// const HOST = "https://chat.immigrate.ai";
 
 // Avatar images
 const botAvatar = "https://media.istockphoto.com/vectors/chat-bot-ai-and-customer-service-support-concept-vector-flat-person-vector-id1221348467?k=20&m=1221348467&s=612x612&w=0&h=hp8h8MuGL7Ay-mxkmIKUsk3RY4O69MuiWjznS_7cCBw=";
-const userAvatar = "https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?k=20&m=1300845620&s=612x612&w=0&h=f4XTZDAv7NPuZbG0habSpU0sNgECM0X7nbKzTUta3n8=";
+const userAvatar = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Circle-icons-chat.svg/1024px-Circle-icons-chat.svg.png"
 
 //TODO: reset bot on destroy
 //TODO: handle when bot response error
@@ -24,6 +24,7 @@ const userAvatar = "https://media.istockphoto.com/vectors/user-icon-flat-isolate
 function Chat({ navigation }) {
   const { authenticated } = useContext(FiygeAuthContext)
   const rasaChatRef = useRef<IRasaChatHandles>(null);
+  const [textInputVisible, setTextInputVisible] = useState<boolean>(true)
 
   useEffect(() => {
     // Reset the chat on load 
@@ -40,6 +41,7 @@ function Chat({ navigation }) {
 
   const resetBot = () => {
     rasaChatRef?.current?.resetBot();
+    setTextInputVisible(true)
   };
 
   const sendStartConversation = () => {
@@ -54,6 +56,7 @@ function Chat({ navigation }) {
         <RasaChat
           ref={rasaChatRef}
           host={HOST}
+          setTextInputVisible={setTextInputVisible}
           placeholder="Chat with Immigrate.ai for help!"
           botAvatar={botAvatar}
           userAvatar={userAvatar}
@@ -65,6 +68,7 @@ function Chat({ navigation }) {
               primaryStyle={{ alignItems: "center" }}
             />
           )}
+          // renderInputToolbar={(props) => null}
           renderActions={(props) => (
             <Actions
               {...props}
@@ -81,27 +85,25 @@ function Chat({ navigation }) {
               }}
             />
           )}
-          renderComposer={(props) => (
+          renderComposer={(props) => !textInputVisible ? null : (
             <Composer {...props} textInputStyle={styles.textComposer} />
           )}
           alwaysShowSend
-          renderSend={(props) => {
-            return (
-              <Send
-                {...props}
-                disabled={!props.text}
-                containerStyle={styles.sendContainer}
+          renderSend={(props) => !textInputVisible ? null : (
+            <Send
+              {...props}
+              disabled={!props.text}
+              containerStyle={styles.sendContainer}
+            >
+              <Text
+                style={{
+                  color: !props.text ? "#d6d3d1" : "#2097F3",
+                }}
               >
-                <Text
-                  style={{
-                    color: !props.text ? "#d6d3d1" : "#2097F3",
-                  }}
-                >
-                  Send
-                </Text>
-              </Send>
-            );
-          }}
+                Send
+              </Text>
+            </Send>
+          )}
           // @ts-ignore
           renderMessageVideo={(props) => {
             const { currentMessage } = props;
