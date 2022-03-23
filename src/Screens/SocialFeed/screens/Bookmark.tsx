@@ -16,7 +16,6 @@ import {withNavigationFocus} from 'react-navigation';
 import NetInfo from '@react-native-community/netinfo';
 import { LinearGradient } from 'expo-linear-gradient';
 
-
 const cacheKey = 'Bookmark';
 class Bookmark extends Component {
   constructor(props) {

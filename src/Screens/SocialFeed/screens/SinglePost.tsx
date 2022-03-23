@@ -30,6 +30,7 @@ import { StatusBar } from 'expo-status-bar';
 import { LinearGradient } from 'expo-linear-gradient';
 import { theme } from '../../../components/theme';
 import { NavigationContainer } from '@react-navigation/native';
+
 const cacheKey = 'CacheData';
 const { width, height } = Dimensions.get("window");
 class SinglePost extends Component {
@@ -134,7 +135,6 @@ class SinglePost extends Component {
     });
   };
 
-
   render() {
     let post = this.state.post;
     const postImage = {}
@@ -221,16 +221,17 @@ class SinglePost extends Component {
                     </Text>
                     <Text  style = {styles.authorStyle}>  |</Text>
                     <Text  style = {styles.authorStyle}>   
-                        {`  Published on ${
-                          post[0].date}`}
+                    {`  Published ${moment(
+                  post[0].date,
+                  'YYYYMMDD',
+                ).fromNow()}`}
                     </Text>
                 
                 </View>
-                <Card>
-                  <Card.Content>
-                  <HTML value={post[0].content.rendered} addLineBreaks={false} stylesheet = {styles}/>
-                  </Card.Content>
-                </Card>
+                <View>
+                <HTML value={post[0].content.rendered} addLineBreaks={false} stylesheet = {styles}/>
+                </View>
+                
 
           </View>
         )}
@@ -238,7 +239,6 @@ class SinglePost extends Component {
     );
   }
 }
-
 
 const styles = StyleSheet.create({
   container: {
@@ -251,10 +251,17 @@ const styles = StyleSheet.create({
     margin: 4,
   },
   p:{
+    paddingHorizontal: 20,
     fontSize: 17,
     fontFamily: 'Avenir Next',
   },
-
+  h4: {
+    paddingHorizontal: 20,
+    fontSize: 20,
+    fontWeight: 'bold',
+    fontFamily: 'Avenir Next',
+    color: theme.colors.purple,
+  },
   blogImageStyle:{
     width: '100%',
     height: height * 0.3,
@@ -263,11 +270,11 @@ const styles = StyleSheet.create({
       padding: 20,
       fontSize: 25,
       fontWeight: "bold",
-      fontFamily: theme.fontType.primary,
+      fontFamily: 'Avenir Next',
   },
   authorStyle: {
       left: 15,
-      fontFamily: theme.fontType.primary,
+      fontFamily: 'Avenir Next',
       fontSize: 14,
       color: theme.colors.secondary,
   },
