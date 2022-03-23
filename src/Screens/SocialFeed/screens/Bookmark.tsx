@@ -90,7 +90,6 @@ class Bookmark extends Component {
       <View>
         <SafeAreaView>
         {this.state.isFetching ? (
-           
           <View
             style={{
               paddingVertical: 20,
@@ -100,7 +99,6 @@ class Bookmark extends Component {
             <ActivityIndicator animating size="large" />
           </View>
         ) : (
-       
           <View>
             <Title style = {{paddingTop: 10, paddingBottom: 10, paddingHorizontal: 21, fontSize: 27.5, fontFamily: "Avenir Next", fontWeight: "700"}}>Favourites</Title>  
             <FlatList
