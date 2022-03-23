@@ -30,6 +30,7 @@ import { StatusBar } from 'expo-status-bar';
 import { LinearGradient } from 'expo-linear-gradient';
 import { theme } from '../../../components/theme';
 import { NavigationContainer } from '@react-navigation/native';
+
 const cacheKey = 'CacheData';
 const { width, height } = Dimensions.get("window");
 class SinglePost extends Component {
@@ -221,8 +222,10 @@ class SinglePost extends Component {
                     </Text>
                     <Text  style = {styles.authorStyle}>  |</Text>
                     <Text  style = {styles.authorStyle}>   
-                        {`  Published on ${
-                          post[0].date}`}
+                    {`  Published ${moment(
+                  post[0].date,
+                  'YYYYMMDD',
+                ).fromNow()}`}
                     </Text>
                 
                 </View>
@@ -254,10 +257,16 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontFamily: 'Avenir Next',
   },
-
+  imgwp: {
+    alignContent: 'center',
+    alignItems: 'center',
+  },
   blogImageStyle:{
     width: '100%',
     height: height * 0.3,
+  },
+  img: {
+    maxWidth: 0.95 * width,
   },
   titleStyle: {
       padding: 20,
