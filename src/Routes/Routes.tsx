@@ -16,6 +16,7 @@ import SinglePost from "../Screens/SocialFeed/screens/SinglePost"
 import Categories from "../Screens/SocialFeed/screens/Categories"
 import CategoryList from "../Screens/SocialFeed/screens/CategoryList"
 import Bookmark from "../Screens/SocialFeed/screens/Bookmark"
+import Otp from "../Screens/TwillioAuth/Otp"
 
 
 interface RoutesProps {}
@@ -125,6 +126,11 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => {
               name="ForgotPassword"
               component={ForgotPassword}
               options={{ headerShown: false }}
+            />
+             <Stack.Screen
+              name="Otp"
+              component={Otp}
+              options={{ headerShown: true }}
             />
           </>
         }

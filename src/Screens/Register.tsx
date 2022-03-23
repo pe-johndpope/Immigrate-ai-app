@@ -14,6 +14,7 @@ import {
 import { FiygeAuthContext } from "../Contexts";
 const { height } = Dimensions.get("window");
 import { NativeBaseProvider,Checkbox } from 'native-base';
+import { sendSmsVerification }  from "../Api/verify";
 
 
 const RegisterScreen = ({ navigation }) => {
@@ -22,9 +23,8 @@ const RegisterScreen = ({ navigation }) => {
   const [name, setName] = useState({ value: "", error: "" });
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
-
-  const phoneInput = useRef<PhoneInput>(null);
   const [value, setValue] = useState("");
+  const phoneInput = useRef<PhoneInput>(null);
   const [formattedValue, setFormattedValue] = useState("");
 
 
@@ -108,20 +108,21 @@ const RegisterScreen = ({ navigation }) => {
         secureTextEntry
       />
       <View style = {{flexDirection:'column', paddingTop: height * 0.04 , flex: 0.5}}>
-       <PhoneInput
-            ref={phoneInput}
-            defaultValue={value}
-            defaultCode="CA"
-            layout="first"
-            onChangeText={(text) => {
-              setValue(text);
-            }}
-            onChangeFormattedText={(text) => {
-              setFormattedValue(text);
-            }}
-            withShadow
-            autoFocus
-          />
+      <PhoneInput
+           ref={phoneInput}
+           defaultValue={value}
+           defaultCode="US"
+           layout="first"
+           onChangeText={(text) => {
+             setValue(text);
+           }}
+           onChangeFormattedText={(text) => {
+             setFormattedValue(text);
+           }}
+           countryPickerProps={{ withAlphaFilter: true }}
+           withShadow
+           autoFocus
+         />
           <View style = {{alignItems: 'center', paddingTop: height * 0.025}}>
               <NativeBaseProvider>
               <Checkbox shadow={2} value="test" colorScheme="purple">
@@ -138,7 +139,12 @@ const RegisterScreen = ({ navigation }) => {
           </View>
         
 
-      <Button mode="contained" onPress={onSignUpPressed} style={styles.button}>
+      <Button mode="contained" 
+      onPress={() => {
+        sendSmsVerification(formattedValue).then((sent) => {
+          navigation.navigate("Otp", { phoneNumber: formattedValue });
+        })}}
+         style={styles.button}>
         Get Started
       </Button>
 
