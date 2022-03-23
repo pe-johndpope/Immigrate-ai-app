@@ -9,9 +9,6 @@ import {
 } from "react-native";
 import DatePicker from "react-native-datepicker";
 import CountryPicker from "react-native-country-picker-modal";
-import Background from "../../components/Background";
-import Button from "../../components/Button";
-import { theme } from "../../components/theme";
 import { CountryCode, Country } from "./types";
 import { FiygeAuthContext } from "../../Contexts";
 import { LinearGradient } from "expo-linear-gradient";

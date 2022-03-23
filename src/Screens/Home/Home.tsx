@@ -27,6 +27,7 @@ import FaqContent from "./Faq/FaqContent";
 import { FiygeAuthContext } from "../../Contexts";
 const { width, height } = Dimensions.get("window");
 import { LinearGradient } from "expo-linear-gradient";
+import { theme } from "../../components/theme";
 
 const colors = {
   themeColor: "#EFF5F8",
@@ -182,9 +183,7 @@ const Home = () => {
       <View style={{ flex: 1, flexDirection: "row" }}>
         <Text style={styles.nameText}>
           {"Hey,\n"}
-          <Text style = {styles.userNameStyle}>
           {user.name}
-          </Text>
         </Text>
         <Image
           style={styles.logoHeader}
@@ -202,7 +201,7 @@ const Home = () => {
         {isEnabled ? defSubHeading : moveSubHeading}
         <Switch
           style={styles.switch1}
-          trackColor={{ false: "#493d8a", true: "#ec6468" }}
+          trackColor={{ false: "#493d8a", true: theme.colors.pink }}
           thumbColor={isEnabled ? "#FFFFFF" : "#FFFFFF"}
           onValueChange={toggleSwitch}
           value={isEnabled}
@@ -214,7 +213,7 @@ const Home = () => {
         {faq ? FaqContainer : AgentContainer}
         <Switch
           style={styles.switch2}
-          trackColor={{ false: "#493d8a", true: "#ec6468" }}
+          trackColor={{ false: "#493d8a", true: theme.colors.pink }}
           thumbColor={isEnabled ? "#FFFFFF" : "#FFFFFF"}
           onValueChange={toggleFAQ}
           value={faq}
@@ -238,7 +237,7 @@ const styles = StyleSheet.create({
     fontFamily: "Avenir Next",
   },
   userNameStyle:{
-      fontSize: height * 0.04,
+      fontSize: 27.5,
       color: colors.purple,
       fontWeight: "700",
       fontFamily: "Avenir Next",
@@ -291,7 +290,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     height: height * 0.43,
     width: width * 0.9,
-    borderRadius: 16,
+    borderRadius: 10,
     shadowColor: "#000000",
     shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.35,
@@ -315,7 +314,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     height: height * 0.43,
     width: width * 0.9,
-    borderRadius: 16,
+    borderRadius: 10,
     elevation: 8,
     shadowColor: "#000000",
     shadowOffset: { width: 1, height: 1 },

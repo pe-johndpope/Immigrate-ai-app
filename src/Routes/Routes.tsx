@@ -12,6 +12,11 @@ import ProfileScreen from "../Screens/ProfileScreen";
 import Dashboard from "../Screens/Home/Dashboard";
 import Home from "../Screens/Home/Home";
 import Onboarding from "../Screens/Onboarding/Onboarding";
+import Feed from "../Screens/SocialFeed/screens/Feed"
+import SinglePost from "../Screens/SocialFeed/screens/SinglePost"
+import Categories from "../Screens/SocialFeed/screens/Categories"
+import CategoryList from "../Screens/SocialFeed/screens/CategoryList"
+import Bookmark from "../Screens/SocialFeed/screens/Bookmark"
 
 interface RoutesProps {}
 
@@ -35,7 +40,7 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => {
       <Stack.Navigator
         screenOptions={{
           headerStyle: { elevation: 0 },
-          cardStyle: { backgroundColor: "#EFF5F8" },
+          cardStyle: { backgroundColor: "#ffffff" },
         }}
       >
         {authenticated && onboarded && <>
@@ -54,7 +59,34 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => {
               component={Home}
               options={{ headerShown: false }}
             />
-            <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+             <Stack.Screen
+              name="Feed"
+              component={Feed}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="SinglePost"
+              component={SinglePost}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Categories"
+              component={Categories}
+            />
+            <Stack.Screen
+              name="CategoryList"
+              component={CategoryList}
+              options={{ headerShown: false }}
+            />
+              <Stack.Screen
+              name="Bookmark"
+              component={Bookmark}
+              options={{ headerShown: false }}
+            />
+              <Stack.Screen 
+              name="ProfileScreen" 
+              component={ProfileScreen} 
+            />
         </>}
         {authenticated && !onboarded && <>
             <Stack.Screen

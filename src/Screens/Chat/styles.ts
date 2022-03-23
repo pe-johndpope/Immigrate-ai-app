@@ -5,20 +5,20 @@ const { width } = Dimensions.get("window");
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#EFF5F8",
+    backgroundColor: "#ffffff",
   },
   messageButton: {
     flexDirection: "row",
   },
   scrollView: {
-    backgroundColor: "#EFF5F8",
+    backgroundColor: "#ffffff",
   },
   engine: {
     position: "absolute",
     right: 0,
   },
   body: {
-    backgroundColor: "#EFF5F8",
+    backgroundColor: "#ffffff",
   },
   sectionContainer: {
     marginTop: 32,
@@ -49,7 +49,7 @@ export default StyleSheet.create({
   textComposer: {
     color: "#222B45",
     width: 20,
-    backgroundColor: "#EDF1F7",
+    backgroundColor: "#ffffff",
     borderWidth: 1,
     borderRadius: 5,
     borderColor: "#E4E9F2",
@@ -75,7 +75,7 @@ export default StyleSheet.create({
   },
   InputToolbar: {
     paddingTop: 3,
-    backgroundColor: "#EFF5F8",
+    backgroundColor: "#ffffff",
     paddingBottom: 3,
     marginTop: 10,
     marginBottom: -2,

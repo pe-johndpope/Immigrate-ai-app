@@ -26,6 +26,7 @@ const BlogContextProvider: React.FC = ({ children }) => {
   const [authors, setAuthors] = useState<Author[]>([])
   const [images, setImages] = useState<Image[]>([])
 
+  
   useEffect(() => {
     (async () => {
       await onFetchBlogPosts()
