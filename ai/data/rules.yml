@@ -216,7 +216,6 @@ rules:
       - slot_was_set:
           - requested_slot: null
       - action: action_determine_province
-
   - rule: trigger nova_scotia form
     condition:
       - active_loop: provincial_form

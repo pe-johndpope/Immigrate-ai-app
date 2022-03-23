@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
+
 import { FiygeAuthContextProvider, BlogContextProvider, FiygeAuthContext } from "../Contexts";
-import Chat from "../Screens/Chat/Chat";
+import { Chat } from "../Screens/Chat/Chat";
 import Login from "../Screens/Login";
 import Register from "../Screens/Register";
 import ForgotPassword from "../Screens/ForgotPassword";
@@ -20,14 +21,6 @@ import Bookmark from "../Screens/SocialFeed/screens/Bookmark"
 interface RoutesProps {}
 
 const Stack = createStackNavigator();
-
-const navTheme = {
-  colors: {
-    dark: '#ffffff',
-    background: '#ffffff',
-  },
-};
-
 
 export const Routes: React.FC<RoutesProps> = ({}) => {
   return (
@@ -56,12 +49,12 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => {
               component={Dashboard}
               options={{ headerShown: false }}
             />
-            <Stack.Screen
-              name="Chat"
-              component={Chat}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
+              <Stack.Screen
+                name="Chat"
+                component={Chat}
+                options={{ headerShown: false }}
+              />
+           <Stack.Screen
               name="Home"
               component={Home}
               options={{ headerShown: false }}

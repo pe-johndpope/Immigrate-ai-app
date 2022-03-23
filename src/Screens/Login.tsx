@@ -15,7 +15,7 @@ const Login = ({ navigation }) => {
   const [password, setPassword] = useState({ value: "", error: "" });
 
   if (authenticated) {
-    navigation.navigate(onboarded ? "Onboarding" : "Dashboard");
+    navigation.navigate(onboarded ? "Onboarding" : "Onboarding");
     return null;
   }
 

@@ -91,10 +91,10 @@ const Agents = () => {
 
     if (flipped) {
       // show back (flip)
-      setFlippedAgentIds([...flippedAgentIds].filter((id) => id !== agentId));
+      setFlippedAgentIds(ids => ids.filter((id) => id !== agentId));
     } else {
       // show front
-      setFlippedAgentIds([...flippedAgentIds, agentId]);
+      setFlippedAgentIds(ids => [...ids, agentId]);
     }
   };
 
