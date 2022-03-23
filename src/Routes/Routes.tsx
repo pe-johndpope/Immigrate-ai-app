@@ -17,6 +17,7 @@ import Categories from "../Screens/SocialFeed/screens/Categories"
 import CategoryList from "../Screens/SocialFeed/screens/CategoryList"
 import Bookmark from "../Screens/SocialFeed/screens/Bookmark"
 
+
 interface RoutesProps {}
 
 const Stack = createStackNavigator();

@@ -229,11 +229,10 @@ class SinglePost extends Component {
                     </Text>
                 
                 </View>
-                <Card>
-                  <Card.Content>
-                  <HTML value={post[0].content.rendered} addLineBreaks={false} stylesheet = {styles}/>
-                  </Card.Content>
-                </Card>
+                <View>
+                <HTML value={post[0].content.rendered} addLineBreaks={false} stylesheet = {styles}/>
+                </View>
+                
 
           </View>
         )}
@@ -254,29 +253,30 @@ const styles = StyleSheet.create({
     margin: 4,
   },
   p:{
+    paddingHorizontal: 20,
     fontSize: 17,
     fontFamily: 'Avenir Next',
   },
-  imgwp: {
-    alignContent: 'center',
-    alignItems: 'center',
+  h4: {
+    paddingHorizontal: 20,
+    fontSize: 20,
+    fontWeight: 'bold',
+    fontFamily: 'Avenir Next',
+    color: theme.colors.purple,
   },
   blogImageStyle:{
     width: '100%',
     height: height * 0.3,
   },
-  img: {
-    maxWidth: 0.95 * width,
-  },
   titleStyle: {
       padding: 20,
       fontSize: 25,
       fontWeight: "bold",
-      fontFamily: theme.fontType.primary,
+      fontFamily: 'Avenir Next',
   },
   authorStyle: {
       left: 15,
-      fontFamily: theme.fontType.primary,
+      fontFamily: 'Avenir Next',
       fontSize: 14,
       color: theme.colors.secondary,
   },
