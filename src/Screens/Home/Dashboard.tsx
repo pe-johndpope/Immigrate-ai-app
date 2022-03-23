@@ -11,7 +11,7 @@ import {
 } from "react-native";
 
 // Screensh
-import Chat from "../Chat/Chat";
+import { Chat } from "../Chat/Chat";
 import Home from "./Home";
 import ProfileScreen from "../ProfileScreen";
 import SocialFeed from "../SocialFeed/SocialFeed"

@@ -1,9 +1,9 @@
 import React, { useState, createContext, useEffect, useContext } from "react"
-import { IMessage, User, GiftedChat } from "react-native-gifted-chat"
+import { IMessage, User, GiftedChat, Reply } from "react-native-gifted-chat"
 
 import { FiygeAuthContext } from "./FiygeAuthContext";
 import { IRasaMessage, IRasaResponse } from "../Types"
-import { createNewBotMessage, isValidNotEmptyArray } from "../Screens/Chat/utils";
+import { createNewBotMessage, createQuickUserReply } from "../Screens/Chat/utils";
 
 
 // const HOST = "http://localhost:5005"; // DEV
@@ -14,11 +14,18 @@ const botAvatar = "https://media.istockphoto.com/vectors/chat-bot-ai-and-custome
 const userAvatar = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Circle-icons-chat.svg/1024px-Circle-icons-chat.svg.png"
 
 interface ChatbotContextI {
-  slots: any,
-  messageStack: any[],
-  onSendMessage: (message: string) => Promise<void>,
-  messages: any[],
-  reset: () => void,
+  slots: any
+  // messageStack: any[]
+  onSendMessage: (messages: IMessage[]) => Promise<void>
+  onRasaResponse: (response: IMessage[]) => void
+  onQuickReply: (replies: Reply[]) => void
+  onStartChat: () => Promise<void> 
+  onClearMessages: () => void
+  messages: IMessage[]
+  onResetBot: () => void
+  userProfile: User
+  botProfile: User
+  botTyping: boolean
 }
 
 const ChatbotContext = createContext<ChatbotContextI>({} as ChatbotContextI)
@@ -28,8 +35,11 @@ const ChatbotContextProvider: React.FC = ({
 }) => {
   const { user } = useContext(FiygeAuthContext)
   const [slots, setSlots] = useState<any>({})
+  const [botTyping, setBotTyping] = useState<boolean>(false)
+
   // TODO: make this a ref?
-  const [messageStack, setMessageStack] = useState<any>({})
+  // const [messageStack, setMessageStack] = useState<any>({})
+
   const [messages, setMessages] = useState<IMessage[]>([])
 
   const botProfile: User =  { _id: "bot_Id_1", name: "Immigrate AI Bot", avatar: botAvatar }
@@ -37,22 +47,35 @@ const ChatbotContextProvider: React.FC = ({
 
   useEffect(() => {
     // Reset the chat on load 
-    reset();
+    onResetBot();
 
     const pollRasaSlots = setInterval(fetchRasaSlots, 5000)
     return () => { clearInterval(pollRasaSlots) }
   }, [])
 
-  const reset = async () : Promise<void> => {
-    setMessages([])
+  const onResetBot = async () : Promise<void> => {
+    onClearMessages()
     await sendMessage("/restart")
     await onStartChat()
   }
+
+  const onClearMessages = () => setMessages([])
+
   const parseMessages = (rasaMessages: IRasaResponse[]): IMessage[] => {
     if (rasaMessages === undefined) return []
     else {
-      rasaMessages.map(message => createNewBotMessage(message, botProfile))
+      return rasaMessages.map(message => createNewBotMessage(message, botProfile))
     } 
+  }
+
+  const onQuickReply = (replies: Reply[]) : void => {
+    const { value, title } = replies[0];
+    const quickMessage = [createQuickUserReply(title, userProfile)];
+
+    sendMessage(value);
+    setMessages((previousMessages) =>
+      GiftedChat.append(previousMessages, quickMessage.reverse())
+    );
   }
 
   const sendMessage = async (message: string): Promise<void> => {
@@ -61,7 +84,6 @@ const ChatbotContextProvider: React.FC = ({
       sender: `${user.uid}`,
     };
     try {
-      // console.log(rasaMessageObj);
       const response = await fetch(`${HOST}/webhooks/rest/webhook`, {
         method: "POST",
         headers: {
@@ -71,20 +93,27 @@ const ChatbotContextProvider: React.FC = ({
       });
       const rasaResponse: IRasaResponse[] = await response.json();
 
-      console.log(rasaResponse)
+      // console.log("RASA RESPONSE: ", rasaResponse)
 
       const newMessages = parseMessages(rasaResponse);
       onRasaResponse(newMessages.reverse())
     } catch (error) { console.error(error); }
   }
 
+  const onSendMessage = async (messages: IMessage[]) : Promise<void> => {
+    const messageText = messages[0].text
+    await sendMessage(messageText)
+    setMessages(previousMessages => GiftedChat.append(previousMessages, messages))
+  }
+
   // prompt the user
   const onStartChat = () => sendMessage("I need help.")
 
   const onRasaResponse = (response: IMessage[]) : void => {
-    // setRasaTyping(true);
+    if (response.length === 0) return
+    setBotTyping(true);
     setTimeout(() => {
-      // setRasaTyping(false);
+      setBotTyping(false);
       const firstResponse = [response[response.length - 1]]
       const restResponses =  response.slice(0, response.length - 1)
 
@@ -92,11 +121,8 @@ const ChatbotContextProvider: React.FC = ({
         "title": "Back",
         "value": "back" 
       })
-      // const containsQuickReplies = nextMessage[0].quickReplies.values.length > 0
 
-      setMessages((previousMessages) =>
-        GiftedChat.append(previousMessages, firstResponse)
-      ); 
+      setMessages(previousMessages => GiftedChat.append(previousMessages, firstResponse)); 
       if (restResponses.length > 0) {
         onRasaResponse(restResponses)
       }
@@ -119,9 +145,16 @@ const ChatbotContextProvider: React.FC = ({
       value={{
         slots,
         messages,
-        messageStack,
-        onSendMessage: async (message: string) => await sendMessage(message),
-        reset,
+        // messageStack,
+        onSendMessage,
+        onRasaResponse,
+        onQuickReply,
+        onStartChat,
+        onClearMessages,
+        onResetBot,
+        userProfile,
+        botProfile,
+        botTyping
       }} 
     >
       {children}
