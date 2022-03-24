@@ -37,9 +37,8 @@ const ChatbotContextProvider: React.FC = ({
   const [botTyping, setBotTyping] = useState<boolean>(false)
   const slotChangedRef = useRef<boolean>(false)
 
-  // TODO: make this a ref?
-  const [trackerStack, setTrackerStack] = useState<any>([])
 
+  const [tracker, setTracker] = useState<any>({})
   const [messages, setMessages] = useState<IMessage[]>([])             // all messages, as a list
   const [chatBotReplies, setChatBotReplies] = useState<IMessage[][]>([]) // chatbot messages, grouped by individual reply 
   const [userMessages, setUserMessages] = useState<IMessage[][]>([])     // user messages, group by individual message
@@ -53,7 +52,11 @@ const ChatbotContextProvider: React.FC = ({
   }, [])
 
   const onResetBot = async () : Promise<void> => {
-    onClearMessages()
+    setMessages([])
+    setChatBotReplies([])
+    setUserMessages([])
+    setTracker([])
+
     await sendMessage("/restart")
     await onStartChat()
   }
@@ -67,78 +70,64 @@ const ChatbotContextProvider: React.FC = ({
     } 
   }
 
-  const onBack = async () : Promise<void> => {
-    if (chatBotReplies.length === 0 || userMessages.length === 0 || trackerStack.length === 0) return;
-
-    const prevChatBotReply: IMessage[] = chatBotReplies[chatBotReplies.length - 1]
-    const prevUserMessage: IMessage[] = userMessages[userMessages.length - 1]
-    // const messagesToUndo = prevChatBotReply.length + prevUserMessage.length
-    // const prevTracker: any = trackerStack.at(-1)
-
-    // NOTE: might be worthwhile to add a "back" reply just so the user knows what they did
-
-    // reset the slots to the slots at state before the user message
-
-    // setChatBotReplies(replies => replies.slice(0, replies.length - 1))
-    // setUserMessages(messages => messages.slice(0, messages.length - 1))
-    // setMessages(messages => messages.slice(0, messages.length - messagesToUndo))
-
+  const rewind = async () : Promise<void> => {
     try {
+      const events = tracker.events
+      let repeatedEvents = []
+      let collect = false
+      
+      for (let i = events.length - 1; i >= 0; --i) {
+        if (events[i].event === "user") {
+          break; 
+        } else {
+          repeatedEvents = [...repeatedEvents, events[i].event];
+        }
+        // if (collect) {
+        //   if (events[i].event === "user") {
+        //     break;
+        //   } else {
+        //     repeatedEvents = [...repeatedEvents, events[i].event];
+        //   }
+        // } else if (events[i].event === "user") {
+        //   collect = true
+        // }
+      }
+
       const res = await fetch(`${HOST}/conversations/${user.uid}/tracker/events?include_events=NONE`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          event: "rewind",
-        })
+        body: JSON.stringify([
+          {
+            event: "rewind",
+          },
+          ...repeatedEvents
+        ])
       })
-      // await fetchRasaTracker()
-      let events = trackerStack[trackerStack.length - 1].events 
-      const lastEvent = events[events.length - 1]
-      let lastSlotIndex = events.length - 1
-      while (events[lastSlotIndex].event !== "action" || events[lastSlotIndex].name === null) {
-        lastSlotIndex -= 1
-      }
-      events[lastSlotIndex].name="name_form"
-      console.log(events[lastSlotIndex])
-      // console.log(events)
-      await fetch(`${HOST}/conversations/${user.uid}/tracker/events?include_events=NONE`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(
-          events[lastSlotIndex]
-        )
-      })
-      // const json = await res.json()
-      // console.log(trackerStack[trackerStack.length - 1])
-      onRasaResponse(chatBotReplies[chatBotReplies.length - 2].map(message => {return { ...message, _id: uuidv4() }}))
     } catch (e) { console.error(e) }
+  }
 
+  const onBack = async () : Promise<void> => {
+    if (chatBotReplies.length === 0 || userMessages.length === 0) return;
 
-    // try {
-    //   const response = await fetch(`${HOST}/webhooks/rest/webhook`, {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(rasaMessageObj),
-    //   });
-    //   const rasaResponse: IRasaResponse[] = await response.json();
+    let tracker = await fetchRasaTracker(false)
+    let events = tracker.events
 
-    //   // console.log("RASA RESPONSE: ", rasaResponse)
+    await rewind()
 
-    //   const newMessages = parseMessages(rasaResponse);
-    //   onRasaResponse(newMessages.reverse())
+    tracker = await fetchRasaTracker(false)
+    events = tracker.events
+    console.log("After rewind: ", events.map(e => e.event))
 
-    //   // update the trackerStack (used for undo) 
-    //   await fetchRasaTracker()
-    // } catch (error) { console.error(error); }
+    const replyToRepeat = chatBotReplies[chatBotReplies.length - 2]
+    onRasaResponse(replyToRepeat.map(message => {
+      // set new ids
+      return { ...message, _id: uuidv4() }
+    }))
 
-
-
+    tracker = await fetchRasaTracker(false)
+    console.log("After listening: ", tracker.events.map(e => e.event))
   }
 
   const onQuickReply = (replies: Reply[]) : void => {
@@ -159,6 +148,9 @@ const ChatbotContextProvider: React.FC = ({
       sender: `${user.uid}`,
     };
     try {
+      // update the trackerStack (used for undo) 
+      let tracker = await fetchRasaTracker()
+
       const response = await fetch(`${HOST}/webhooks/rest/webhook`, {
         method: "POST",
         headers: {
@@ -173,16 +165,19 @@ const ChatbotContextProvider: React.FC = ({
       const newMessages = parseMessages(rasaResponse);
       onRasaResponse(newMessages.reverse())
 
-      // update the trackerStack (used for undo) 
-      await fetchRasaTracker()
+      console.log(tracker.slots)
+
+      const events = tracker.events
+      console.log("Before message: ", events.map(e => e.event))
     } catch (error) { console.error(error); }
   }
 
   const onSendMessage = async (messages: IMessage[]) : Promise<void> => {
     const messageText = messages[0].text
-    await sendMessage(messageText)
     setUserMessages(previousMessages => [...previousMessages, messages])
     setMessages(previousMessages => GiftedChat.append(previousMessages, messages))
+
+    await sendMessage(messageText)
   }
 
   // prompt the user
@@ -203,11 +198,15 @@ const ChatbotContextProvider: React.FC = ({
         const restResponses =  response.slice(0, response.length - 1)
 
         // add back button if the user has sent a message
+        // and a back button does not already exist
         if (userMessages.length > 0) {
-          currentResponse[0].quickReplies.values.push({
-            "title": "🔙",
-            "value": BACK
-          })
+          const quickReplies = currentResponse[0].quickReplies.values
+          if (quickReplies.length === 0 || quickReplies[quickReplies.length - 1].value !== BACK) {
+            currentResponse[0].quickReplies.values.push({
+              "title": "🔙",
+              "value": BACK
+            })
+          }
         }
 
         setMessages(previousMessages => GiftedChat.append(previousMessages, currentResponse)); 
@@ -222,7 +221,7 @@ const ChatbotContextProvider: React.FC = ({
     recur(response)
   }
 
-  const fetchRasaTracker = async () : Promise<void> => {
+  const fetchRasaTracker = async (store: boolean = true) : Promise<any> => {
     try {
       const res = await fetch(`${HOST}/conversations/${user.uid}/tracker`)
       const json = await res.json()
@@ -230,8 +229,14 @@ const ChatbotContextProvider: React.FC = ({
       const tracker = json
 
       // console.log(tracker)
-      console.log(user.uid, tracker.slots)
-      setTrackerStack(trackerStack => [...trackerStack, tracker])
+      // console.log(user.uid, tracker.slots)
+      console.log(tracker.events.length)
+
+      if (store) {
+        setTracker(tracker)
+      }
+
+      return tracker
     } catch (e) { console.error(e) }
   }
 
