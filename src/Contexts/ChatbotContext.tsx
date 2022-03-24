@@ -73,25 +73,20 @@ const ChatbotContextProvider: React.FC = ({
   const rewind = async () : Promise<void> => {
     try {
       const events = tracker.events
-      let repeatedEvents = []
-      let collect = false
-      
-      for (let i = events.length - 1; i >= 0; --i) {
-        if (events[i].event === "user") {
-          break; 
-        } else {
-          repeatedEvents = [...repeatedEvents, events[i].event];
-        }
-        // if (collect) {
-        //   if (events[i].event === "user") {
-        //     break;
-        //   } else {
-        //     repeatedEvents = [...repeatedEvents, events[i].event];
-        //   }
-        // } else if (events[i].event === "user") {
-        //   collect = true
-        // }
-      }
+      // let repeatedEvents = []
+      // let collect = false
+      // 
+      // for (let i = events.length - 1; i >= 0; --i) {
+      //   if (collect) {
+      //     if (events[i].event === "user") {
+      //       break;
+      //     } else {
+      //       repeatedEvents = [...repeatedEvents, events[i].event];
+      //     }
+      //   } else if (events[i].event === "user") {
+      //     collect = true
+      //   }
+      // }
 
       const res = await fetch(`${HOST}/conversations/${user.uid}/tracker/events?include_events=NONE`, {
         method: "POST",
@@ -102,7 +97,11 @@ const ChatbotContextProvider: React.FC = ({
           {
             event: "rewind",
           },
-          ...repeatedEvents
+          {
+            event: "action",
+            name: "action_listen"
+          }
+          // ...repeatedEvents
         ])
       })
     } catch (e) { console.error(e) }
@@ -148,9 +147,6 @@ const ChatbotContextProvider: React.FC = ({
       sender: `${user.uid}`,
     };
     try {
-      // update the trackerStack (used for undo) 
-      let tracker = await fetchRasaTracker()
-
       const response = await fetch(`${HOST}/webhooks/rest/webhook`, {
         method: "POST",
         headers: {
@@ -164,6 +160,9 @@ const ChatbotContextProvider: React.FC = ({
 
       const newMessages = parseMessages(rasaResponse);
       onRasaResponse(newMessages.reverse())
+
+      // update the trackerStack (used for undo) 
+      let tracker = await fetchRasaTracker()
 
       console.log(tracker.slots)
 
