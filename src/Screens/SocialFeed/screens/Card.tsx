@@ -30,7 +30,7 @@ export default ({item, navigation, textColor}) => {
           </View>
         <Card.Content>
           <Title numberOfLines={3} style = {{fontFamily: 'Avenir', paddingTop: 5,}}>{titleFormatted.replace("&#8217;", "'")}</Title>
-          <Paragraph style = {{fontFamily: 'Avenir Next'}}>Published on {item.date}</Paragraph>
+          <Paragraph style = {{fontFamily: 'Avenir Next'}}>Published {moment(item.date).fromNow()}</Paragraph>
         </Card.Content>
       </Card>
     </TouchableOpacity>

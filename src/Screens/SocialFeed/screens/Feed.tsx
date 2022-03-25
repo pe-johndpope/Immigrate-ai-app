@@ -26,8 +26,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { themeTools } from 'native-base';
 import filter from 'lodash.filter';
 
-
-
 const cacheKey = 'CacheData';
 
 class Feed extends Component {
@@ -124,10 +122,6 @@ class Feed extends Component {
     console.log('banner error: ');
     console.log(e);
   };
-
-
-
-
 
   render() {
 

@@ -1,9 +1,7 @@
 import React, { memo } from "react";
 import {
-  ImageBackground,
   StyleSheet,
   View,
-  KeyboardAvoidingView,
 } from "react-native";
 
 type Props = {
