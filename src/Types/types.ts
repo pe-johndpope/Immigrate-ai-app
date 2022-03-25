@@ -5,7 +5,8 @@ export type { Post, Category, Tag, Author, Image }
 export interface User {
   uid: string,
   name: string,
-  email: string
+  email: string,
+  phone: string
 }
 
 export interface IRasaMessage {

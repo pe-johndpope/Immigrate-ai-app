@@ -33,7 +33,7 @@ const ChatbotContext = createContext<ChatbotContextI>({} as ChatbotContextI)
 const ChatbotContextProvider: React.FC = ({
   children
 }) => {
-  const { user } = useContext(FiygeAuthContext)
+  const { authenticated, user } = useContext(FiygeAuthContext)
   const [botTyping, setBotTyping] = useState<boolean>(false)
   const slotChangedRef = useRef<boolean>(false)
 
@@ -44,12 +44,16 @@ const ChatbotContextProvider: React.FC = ({
   const [userMessages, setUserMessages] = useState<IMessage[][]>([])     // user messages, group by individual message
 
   const botProfile: User =  { _id: "Mr.Chatbot", name: "Immigrate AI Bot", avatar: botAvatar }
-  const userProfile: User = { _id: user.uid, name: user.name, avatar: userAvatar }
+  const userProfile: User = { _id: user?.uid, name: user?.name, avatar: userAvatar }
 
   useEffect(() => {
     // Reset the chat on load 
     onResetBot();
   }, [])
+
+  if (!authenticated) {
+    return null;
+  }
 
   const onResetBot = async () : Promise<void> => {
     setMessages([])
@@ -73,21 +77,6 @@ const ChatbotContextProvider: React.FC = ({
   const rewind = async () : Promise<void> => {
     try {
       const events = tracker.events
-      // let repeatedEvents = []
-      // let collect = false
-      // 
-      // for (let i = events.length - 1; i >= 0; --i) {
-      //   if (collect) {
-      //     if (events[i].event === "user") {
-      //       break;
-      //     } else {
-      //       repeatedEvents = [...repeatedEvents, events[i].event];
-      //     }
-      //   } else if (events[i].event === "user") {
-      //     collect = true
-      //   }
-      // }
-
       const res = await fetch(`${HOST}/conversations/${user.uid}/tracker/events?include_events=NONE`, {
         method: "POST",
         headers: {
@@ -101,7 +90,6 @@ const ChatbotContextProvider: React.FC = ({
             event: "action",
             name: "action_listen"
           }
-          // ...repeatedEvents
         ])
       })
     } catch (e) { console.error(e) }
