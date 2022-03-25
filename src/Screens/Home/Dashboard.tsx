@@ -10,7 +10,7 @@ import { Chat } from "../Chat/Chat";
 import Home from "./Home";
 import ProfileScreen from "../ProfileScreen";
 import Feed from "../SocialFeed/screens/Feed";
-
+import Onboarding from "../Onboarding/Onboarding"
 const { height } = Dimensions.get("window");
 
 const Tab = createBottomTabNavigator();
@@ -47,7 +47,7 @@ function Dashboard({ navigation }) {
       <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
       <Tab.Screen name="Chat" component={Chat} options={{ headerShown: false  }}/>
       <Tab.Screen name="Explore" component={Feed} options={{ headerShown: false }} />
-      <Tab.Screen name="Profile" component={ProfileScreen} options={{ headerShown: false }} />
+      <Tab.Screen name="Profile" component={Onboarding} options={{ headerShown: false }} />
      </Tab.Navigator>
   );
 }

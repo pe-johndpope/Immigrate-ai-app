@@ -112,6 +112,7 @@ class Feed extends Component {
       this.setState({
         lastestpost: page === 1 ? post : [...this.state.lastestpost, ...post],
         isFetching: false,
+        searchData: post,
       });
     } catch (error) {
       console.log('geoFetch error', error);
@@ -122,6 +123,21 @@ class Feed extends Component {
     console.log('banner error: ');
     console.log(e);
   };
+
+  handleSearch = text => {
+    const formattedQuery = text.toLowerCase()
+    const data = filter(searchData, item => {
+      return this.contains(item, formattedQuery)
+    })
+    this.setState({ data, query: text })
+  }
+
+  contains = ({ title }, query) => {
+    if (title.includes(query)) {
+      return true
+    }
+    return false
+  }
 
   render() {
 
@@ -148,12 +164,11 @@ class Feed extends Component {
             fontFamily: 'Avenir Next'}}
           placeholder="Search"
           value = {this.state.query}
-          onChangeText = {(text) => text}
+          onChangeText={this.handleSearch}
         />
           </View>
         <FlatList
           data={this.state.lastestpost}
-          onRefresh={() => this.onRefresh()}
           refreshing={this.state.isFetching}
           onEndReached={this.handleLoadMore}
           onEndReachedThreshold={0.1}

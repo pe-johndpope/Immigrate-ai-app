@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-
 import { FiygeAuthContextProvider, BlogContextProvider, FiygeAuthContext } from "../Contexts";
-import { Chat } from "../Screens/Chat/Chat";
+import {Chat} from "../Screens/Chat/Chat";
 import Login from "../Screens/Login";
 import Register from "../Screens/Register";
 import ForgotPassword from "../Screens/ForgotPassword";
@@ -17,7 +16,7 @@ import SinglePost from "../Screens/SocialFeed/screens/SinglePost"
 import Categories from "../Screens/SocialFeed/screens/Categories"
 import CategoryList from "../Screens/SocialFeed/screens/CategoryList"
 import Bookmark from "../Screens/SocialFeed/screens/Bookmark"
-
+import Otp from "../Screens/TwillioAuth/Otp"
 
 interface RoutesProps {}
 
@@ -117,6 +116,11 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => {
             <Stack.Screen
               name="ForgotPassword"
               component={ForgotPassword}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Otp"
+              component={Otp}
               options={{ headerShown: false }}
             />
           </>

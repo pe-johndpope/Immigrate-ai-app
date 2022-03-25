@@ -12,7 +12,6 @@ import CountryPicker from "react-native-country-picker-modal";
 import { CountryCode, Country } from "./types";
 import { FiygeAuthContext } from "../../Contexts";
 import { LinearGradient } from "expo-linear-gradient";
-import DateTimePicker from '@react-native-community/datetimepicker'
 
 const { width, height } = Dimensions.get("window");
 
@@ -206,6 +205,7 @@ const styles = StyleSheet.create({
   textHeader: {
     fontSize: 27,
     paddingHorizontal: 45,
+    paddingTop: 10,
     fontFamily: "Avenir Next",
     color: "#493d8a",
     fontWeight: "700",
@@ -306,4 +306,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Onboarding;
+export default Onboarding;  

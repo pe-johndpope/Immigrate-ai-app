@@ -1,5 +1,5 @@
 import React, { memo, useState, useContext } from "react";
-import { TouchableOpacity, StyleSheet, Text, View } from "react-native";
+import { TouchableOpacity, StyleSheet, Text, View, Dimensions } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import Background from "../components/Background";
 import Logo from "../components/Logo";
@@ -8,6 +8,7 @@ import TextInput from "../components/TextInput";
 import BackButton from "../components/BackButton";
 import { theme } from "../components/theme";
 import { FiygeAuthContext } from "../Contexts";
+const { height, width } = Dimensions.get("window");
 
 const Login = ({ navigation }) => {
   const { authenticated, onboarded, onSignInWithEmailAndPassword } = useContext(FiygeAuthContext)
@@ -31,7 +32,7 @@ const Login = ({ navigation }) => {
     <Background>
       <TouchableOpacity
         onPress={() => navigation.navigate("LandingPage")}
-        style={{ marginLeft: -325, marginTop: -70 }}
+        style={styles.backButton}
       >
         <Icon name="arrow-back-outline" size={28} color="#000000" />
       </TouchableOpacity>
@@ -123,6 +124,13 @@ const styles = StyleSheet.create({
     overflow: "hidden",
     marginTop: -5,
   },
+  backButton:{
+    position: 'absolute',
+     left: width * 0.03,
+     right: 0,
+     top: height * 0.075,
+     bottom: 0
+}
 });
 
 export default memo(Login);
