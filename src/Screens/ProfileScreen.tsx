@@ -28,8 +28,8 @@ const ProfileScreen = ({ navigation }) => {
   const toggleSwitch2 = () => setIsEnabled2((previousState) => !previousState);
 
   const handleSignOut = async () => {
-    navigation.navigate("Login");
     await onSignOut()
+    navigation.navigate("Login");
   };
   const [uriFB, seturiFB] = useState("https://www.jbrhomes.com/wp-content/uploads/blank-avatar.png");
 
@@ -53,6 +53,10 @@ const ProfileScreen = ({ navigation }) => {
       // TODO: update user image with { photoURL: uriFB } 
     }
   };
+
+  if (!authenticated) {
+    return null;
+  }    
 
   return (
     <View
