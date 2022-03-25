@@ -41,11 +41,7 @@ const Otp = ({ route, navigation }) => {
        codeInputHighlightStyle={styles.underlineStyleHighLighted}
        onCodeFilled={(code) => {
          checkVerification(phoneNumber, code).then((success) => {
-           if (code === '123456') 
-           {setInvalidCode(true)}
-           else {
              setValidCode(true);
-           }
          });
        }}
      />

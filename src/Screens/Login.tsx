@@ -22,11 +22,10 @@ const Login = ({ navigation }) => {
 
   const handleLogin = async () => {
     await onSignInWithEmailAndPassword(email.value, password.value);
-
-    // reset fields
     setEmail({value: "", error: ""})
     setPassword({value: "", error: ""})
   };
+
 
   return (
     <Background>
