@@ -1,9 +1,9 @@
-import React, { useState, createContext, useEffect, useContext } from "react"
+import React, { useState, useRef, createContext, useEffect, useContext } from "react"
 import { IMessage, User, GiftedChat, Reply } from "react-native-gifted-chat"
 
 import { FiygeAuthContext } from "./FiygeAuthContext";
 import { IRasaMessage, IRasaResponse } from "../Types"
-import { createNewBotMessage, createQuickUserReply } from "../Screens/Chat/utils";
+import { createNewBotMessage, createQuickUserReply, uuidv4 } from "../Screens/Chat/utils";
 
 
 // const HOST = "http://localhost:5005"; // DEV
@@ -13,9 +13,9 @@ const HOST = "https://chat.immigrate.ai";
 const botAvatar = "https://media.istockphoto.com/vectors/chat-bot-ai-and-customer-service-support-concept-vector-flat-person-vector-id1221348467?k=20&m=1221348467&s=612x612&w=0&h=hp8h8MuGL7Ay-mxkmIKUsk3RY4O69MuiWjznS_7cCBw=";
 const userAvatar = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Circle-icons-chat.svg/1024px-Circle-icons-chat.svg.png"
 
+const BACK = "Back"
+
 interface ChatbotContextI {
-  slots: any
-  // messageStack: any[]
   onSendMessage: (messages: IMessage[]) => Promise<void>
   onRasaResponse: (response: IMessage[]) => void
   onQuickReply: (replies: Reply[]) => void
@@ -34,27 +34,29 @@ const ChatbotContextProvider: React.FC = ({
   children
 }) => {
   const { user } = useContext(FiygeAuthContext)
-  const [slots, setSlots] = useState<any>({})
   const [botTyping, setBotTyping] = useState<boolean>(false)
+  const slotChangedRef = useRef<boolean>(false)
 
-  // TODO: make this a ref?
-  // const [messageStack, setMessageStack] = useState<any>({})
 
-  const [messages, setMessages] = useState<IMessage[]>([])
+  const [tracker, setTracker] = useState<any>({})
+  const [messages, setMessages] = useState<IMessage[]>([])             // all messages, as a list
+  const [chatBotReplies, setChatBotReplies] = useState<IMessage[][]>([]) // chatbot messages, grouped by individual reply 
+  const [userMessages, setUserMessages] = useState<IMessage[][]>([])     // user messages, group by individual message
 
-  const botProfile: User =  { _id: "bot_Id_1", name: "Immigrate AI Bot", avatar: botAvatar }
+  const botProfile: User =  { _id: "Mr.Chatbot", name: "Immigrate AI Bot", avatar: botAvatar }
   const userProfile: User = { _id: user.uid, name: user.name, avatar: userAvatar }
 
   useEffect(() => {
     // Reset the chat on load 
     onResetBot();
-
-    const pollRasaSlots = setInterval(fetchRasaSlots, 5000)
-    return () => { clearInterval(pollRasaSlots) }
   }, [])
 
   const onResetBot = async () : Promise<void> => {
-    onClearMessages()
+    setMessages([])
+    setChatBotReplies([])
+    setUserMessages([])
+    setTracker([])
+
     await sendMessage("/restart")
     await onStartChat()
   }
@@ -68,11 +70,72 @@ const ChatbotContextProvider: React.FC = ({
     } 
   }
 
+  const rewind = async () : Promise<void> => {
+    try {
+      const events = tracker.events
+      // let repeatedEvents = []
+      // let collect = false
+      // 
+      // for (let i = events.length - 1; i >= 0; --i) {
+      //   if (collect) {
+      //     if (events[i].event === "user") {
+      //       break;
+      //     } else {
+      //       repeatedEvents = [...repeatedEvents, events[i].event];
+      //     }
+      //   } else if (events[i].event === "user") {
+      //     collect = true
+      //   }
+      // }
+
+      const res = await fetch(`${HOST}/conversations/${user.uid}/tracker/events?include_events=NONE`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify([
+          {
+            event: "rewind",
+          },
+          {
+            event: "action",
+            name: "action_listen"
+          }
+          // ...repeatedEvents
+        ])
+      })
+    } catch (e) { console.error(e) }
+  }
+
+  const onBack = async () : Promise<void> => {
+    if (chatBotReplies.length === 0 || userMessages.length === 0) return;
+
+    let tracker = await fetchRasaTracker(false)
+    let events = tracker.events
+
+    await rewind()
+
+    tracker = await fetchRasaTracker(false)
+    events = tracker.events
+    console.log("After rewind: ", events.map(e => e.event))
+
+    const replyToRepeat = chatBotReplies[chatBotReplies.length - 2]
+    onRasaResponse(replyToRepeat.map(message => {
+      // set new ids
+      return { ...message, _id: uuidv4() }
+    }))
+
+    tracker = await fetchRasaTracker(false)
+    console.log("After listening: ", tracker.events.map(e => e.event))
+  }
+
   const onQuickReply = (replies: Reply[]) : void => {
     const { value, title } = replies[0];
     const quickMessage = [createQuickUserReply(title, userProfile)];
 
-    sendMessage(value);
+    if (value === BACK) onBack()
+    else sendMessage(value);
+
     setMessages((previousMessages) =>
       GiftedChat.append(previousMessages, quickMessage.reverse())
     );
@@ -93,17 +156,27 @@ const ChatbotContextProvider: React.FC = ({
       });
       const rasaResponse: IRasaResponse[] = await response.json();
 
-      // console.log("RASA RESPONSE: ", rasaResponse)
+      console.log("RASA RESPONSE: ", rasaResponse)
 
       const newMessages = parseMessages(rasaResponse);
       onRasaResponse(newMessages.reverse())
+
+      // update the trackerStack (used for undo) 
+      let tracker = await fetchRasaTracker()
+
+      console.log(tracker.slots)
+
+      const events = tracker.events
+      console.log("Before message: ", events.map(e => e.event))
     } catch (error) { console.error(error); }
   }
 
   const onSendMessage = async (messages: IMessage[]) : Promise<void> => {
     const messageText = messages[0].text
-    await sendMessage(messageText)
+    setUserMessages(previousMessages => [...previousMessages, messages])
     setMessages(previousMessages => GiftedChat.append(previousMessages, messages))
+
+    await sendMessage(messageText)
   }
 
   // prompt the user
@@ -111,39 +184,87 @@ const ChatbotContextProvider: React.FC = ({
 
   const onRasaResponse = (response: IMessage[]) : void => {
     if (response.length === 0) return
+
+    setChatBotReplies(replies => [...replies, response])
     setBotTyping(true);
-    setTimeout(() => {
-      setBotTyping(false);
-      const firstResponse = [response[response.length - 1]]
-      const restResponses =  response.slice(0, response.length - 1)
 
-      firstResponse[0].quickReplies.values.push({
-        "title": "Back",
-        "value": "back" 
-      })
+    // recurring here so each message has a delay
+    const recur = (response: IMessage[]) : void => {
+      setTimeout(() => {
+        setBotTyping(false);
 
-      setMessages(previousMessages => GiftedChat.append(previousMessages, firstResponse)); 
-      if (restResponses.length > 0) {
-        onRasaResponse(restResponses)
-      }
-    }, 1500 + (Math.random() * 750));
+        const currentResponse = [response[response.length - 1]]
+        const restResponses =  response.slice(0, response.length - 1)
+
+        // add back button if the user has sent a message
+        // and a back button does not already exist
+        if (userMessages.length > 0) {
+          const quickReplies = currentResponse[0].quickReplies.values
+          if (quickReplies.length === 0 || quickReplies[quickReplies.length - 1].value !== BACK) {
+            currentResponse[0].quickReplies.values.push({
+              "title": "🔙",
+              "value": BACK
+            })
+          }
+        }
+
+        setMessages(previousMessages => GiftedChat.append(previousMessages, currentResponse)); 
+
+        // recur on remaining messages
+        if (restResponses.length > 0) {
+          recur(restResponses)
+        }
+      }, 1500 + (Math.random() * 750));
+    }
+
+    recur(response)
   }
 
-  const fetchRasaSlots = async () : Promise<void> => {
+  const fetchRasaTracker = async (store: boolean = true) : Promise<any> => {
     try {
       const res = await fetch(`${HOST}/conversations/${user.uid}/tracker`)
       const json = await res.json()
 
-      const slots = json.slots
+      const tracker = json
 
-      setSlots(slots)
+      // console.log(tracker)
+      // console.log(user.uid, tracker.slots)
+      console.log(tracker.events.length)
+
+      if (store) {
+        setTracker(tracker)
+      }
+
+      return tracker
     } catch (e) { console.error(e) }
+  }
+
+  const setSlot = async (name: string, value: string) : Promise<void> => {
+    try {
+      const res = await fetch(`${HOST}/conversations/${user.uid}/tracker/events?include_events=NONE`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          event: "slot",
+          name: name,
+          value: value
+        })
+      })
+      const json = await res.json()
+    } catch (e) { console.error(e) }
+  }
+
+  const setSlots = async (slots: any) : Promise<void> => {
+    for (let slotName of slots) {
+      await setSlot(slotName, slots[slotName])
+    }
   }
 
   return (
     <ChatbotContext.Provider
       value={{
-        slots,
         messages,
         // messageStack,
         onSendMessage,
