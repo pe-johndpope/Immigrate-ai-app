@@ -16,7 +16,6 @@ const Otp = ({ route, navigation }) => {
    }
  }
 
-
  return (
    <SafeAreaView style={styles.wrapper}>
        <TouchableOpacity style = {styles.backButton}
