@@ -1,5 +1,5 @@
 
-const BASE_URL = 'https://verify-2655-x6vblt.twil.io'
+const BASE_URL = 'https://verify-8084-dcijba.twil.io'
 
 export  const sendSmsVerification = async (phoneNumber) => {
  try {

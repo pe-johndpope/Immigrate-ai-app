@@ -1,6 +1,6 @@
 import React, { useState, useContext, useRef } from "react";
 import Icon from "react-native-vector-icons/Ionicons";
-import { View, Text, StyleSheet, TouchableOpacity, Dimensions } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, Dimensions, Linking } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import Button from "../components/Button";
 import RegisterInput from "../components/RegisterInput";
@@ -12,22 +12,28 @@ import {
   nameValidator,
 } from "../components/utils";
 import { FiygeAuthContext } from "../Contexts";
-const { height } = Dimensions.get("window");
-import { NativeBaseProvider,Checkbox } from 'native-base';
-import { sendSmsVerification }  from "../Api/verify";
-
+const { height, width } = Dimensions.get("window");
+import { CheckBox } from 'react-native-elements'
+import {sendSmsVerification} from "../Api/verify"
+import { ThemeColors } from "react-navigation";
 
 const RegisterScreen = ({ navigation }) => {
-  const { onSignUpWithEmailAndPassword } = useContext(FiygeAuthContext)
+  const { onSignUpWithEmailAndPassword, onSignInWithEmailAndPassword} = useContext(FiygeAuthContext)
 
   const [name, setName] = useState({ value: "", error: "" });
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
-  const [value, setValue] = useState("");
+  const [terms, setTerms] = useState(false);
   const phoneInput = useRef<PhoneInput>(null);
+  const [value, setValue] = useState("");
   const [formattedValue, setFormattedValue] = useState("");
 
+  const PRIVACY_POLICY = 'https://www.generateprivacypolicy.com/live.php?token=hgHil58v5jZxDDNDeJr9JwLMRbZljkMb'
 
+  const Terms = <Text style = {styles.termsBoldedStyle}>Terms & Agreements</Text>
+
+
+const Privacy = <Text style = {styles.termsBoldedStyle}>Privacy Policy</Text>
 
   const onSignUpPressed = async () => {
     console.log(email.value);
@@ -36,12 +42,14 @@ const RegisterScreen = ({ navigation }) => {
     const emailError = emailValidator(email.value);
     const passwordError = passwordValidator(password.value);
 
-    if (emailError || passwordError || nameError) {
+    if (emailError || passwordError || nameError || !terms) {
       setName({ ...name, error: nameError });
       setEmail({ ...email, error: emailError });
       setPassword({ ...password, error: passwordError });
       return;
     }
+    console.log(formattedValue)
+   
 
     await onSignUpWithEmailAndPassword({
       email: email.value,
@@ -51,25 +59,22 @@ const RegisterScreen = ({ navigation }) => {
       phone: (formattedValue).toString()
       })
     
-    navigation.navigate("Onboarding");
 
+    sendSmsVerification(formattedValue).then(navigation.replace("Otp", { phoneNumber: formattedValue }))
     // reset fields
     setName({value: "", error: ""})
     setEmail({value: "", error: ""})
     setPassword({value: "", error: ""})
 
   };
-
   return (
     <LinearGradient
     style={styles.gradientBackgroundStyle}
     colors={["#EFF5F8","#EFF5F8"]}>
-      <View style = {{flexDirection: 'row', right: "19%"}}>
-      <TouchableOpacity
+      <TouchableOpacity style = {styles.backButton}
         onPress={() => navigation.navigate("LandingPage")}>
         <Icon name="arrow-back-outline" size={25} color="#000000" />
       </TouchableOpacity>
-      </View>
       <Text style={styles.textHeader}>
         Create an Account.
       </Text>
@@ -107,7 +112,7 @@ const RegisterScreen = ({ navigation }) => {
         style={{ width: "90%" }}
         secureTextEntry
       />
-      <View style = {{flexDirection:'column', paddingTop: height * 0.04 , flex: 0.5}}>
+      <View style = {{flexDirection:'column', paddingTop: height * 0.04 , flex: 0.5, alignItems: 'center'}}>
       <PhoneInput
            ref={phoneInput}
            defaultValue={value}
@@ -123,28 +128,22 @@ const RegisterScreen = ({ navigation }) => {
            withShadow
            autoFocus
          />
-          <View style = {{alignItems: 'center', paddingTop: height * 0.025}}>
-              <NativeBaseProvider>
-              <Checkbox shadow={2} value="test" colorScheme="purple">
-                       <Text style = {{padding: 5,}}>
-                       <Text style = {{fontFamily: 'Avenir Next', fontWeight: '400', fontSize: 12}}>   I accept the </Text>
-                       <Text style = {{fontFamily: 'Avenir Next', fontWeight:"bold", color: "#FF6584",fontSize: 12}}>Terms & Conditions</Text>
-                       {"\n"}
-                       <Text style = {{fontFamily: 'Avenir Next', fontWeight:"400",fontSize: 12}}>   and the </Text>
-                       <Text style = {{fontFamily: 'Avenir Next', fontWeight:"bold", color: "#FF6584",fontSize: 12}}>Privacy Policy</Text>
-                       </Text>
-                  </Checkbox>
-              </NativeBaseProvider>
+          <View style = {{paddingTop: height * 0.025, flexDirection: 'row', alignItems: 'center',marginRight: "5%",}}>
+          <CheckBox
+              checkedColor= {theme.colors.pink}
+              checked={terms}
+              onPress={() => setTerms(!terms)}
+            />
+            <View style = {{alignItems: 'center', justifyContent: 'center'}}>
+            <TouchableOpacity onPress={() => Linking.openURL(PRIVACY_POLICY)}>
+            <Text style = {styles.termsRegularStyle}>I agree to the {Terms}{'\n'} and the {Privacy}</Text>
+            </TouchableOpacity>
+            </View>
           </View>
           </View>
         
 
-      <Button mode="contained" 
-      onPress={() => {
-        sendSmsVerification(formattedValue).then((sent) => {
-          navigation.navigate("Otp", { phoneNumber: formattedValue });
-        })}}
-         style={styles.button}>
+      <Button mode="contained" onPress={onSignUpPressed}>
         Get Started
       </Button>
 
@@ -197,6 +196,19 @@ const styles = StyleSheet.create({
     alignContent: "center",
     textAlign: 'center'
   },
+  backButton:{
+    position: 'absolute',
+     left: width * 0.03,
+     right: 0,
+     top: height * 0.075,
+     bottom: 0
+},
+termsBoldedStyle:{
+  fontFamily: 'Avenir Next', fontWeight:"bold", color: "#FF6584",fontSize: 12
+},
+termsRegularStyle: {
+  fontFamily: 'Avenir Next', fontWeight: '400', fontSize: 12
+}
 });
 
 export default RegisterScreen;

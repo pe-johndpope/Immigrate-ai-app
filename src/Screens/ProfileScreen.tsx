@@ -1,4 +1,3 @@
-// @ts-nocheck
 import {
   View,
   StyleSheet,
@@ -29,8 +28,8 @@ const ProfileScreen = ({ navigation }) => {
   const toggleSwitch2 = () => setIsEnabled2((previousState) => !previousState);
 
   const handleSignOut = async () => {
-    await onSignOut()
     navigation.navigate("Login");
+    await onSignOut()
   };
   const [uriFB, seturiFB] = useState("https://www.jbrhomes.com/wp-content/uploads/blank-avatar.png");
 
@@ -146,7 +145,7 @@ const ProfileScreen = ({ navigation }) => {
         <View style={{ paddingTop: height * 0.05 }}>
           <View style={{ flexDirection: "row", justifyContent: "center" }}>
             <View style={{ flex: 1 }}>
-              <Text style={styles.settingHeaderText}>Emails & Promotions</Text>
+              <Text style={styles.settingHeaderText}>Emails &Promotions</Text>
               <Text style={styles.settingSmallerText}>
                 Don't Worry We Don't Spam :)
               </Text>

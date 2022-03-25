@@ -159,7 +159,6 @@ class Feed extends Component {
           </View>
         <FlatList
           data={this.state.lastestpost}
-          onRefresh={() => this.onRefresh()}
           refreshing={this.state.isFetching}
           onEndReached={this.handleLoadMore}
           onEndReachedThreshold={0.1}

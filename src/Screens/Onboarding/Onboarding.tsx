@@ -12,7 +12,6 @@ import CountryPicker from "react-native-country-picker-modal";
 import { CountryCode, Country } from "./types";
 import { FiygeAuthContext } from "../../Contexts";
 import { LinearGradient } from "expo-linear-gradient";
-import DateTimePicker from '@react-native-community/datetimepicker'
 
 const { width, height } = Dimensions.get("window");
 
