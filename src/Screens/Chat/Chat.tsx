@@ -1,14 +1,15 @@
 import React from "react";
-import { SafeAreaView, StatusBar, Text, View } from "react-native";
+import { SafeAreaView, Text, View } from "react-native";
 
 import { ChatBot } from "./ChatBot";
 import { ChatbotContextProvider } from "../../Contexts";
 import styles from "./styles";
+import { StatusBar } from "expo-status-bar";
 
 export const Chat = ({ navigation }) => {
   return (
     <ChatbotContextProvider>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar style="dark" />
       <SafeAreaView style={styles.container}>
         <View>
           <Text
