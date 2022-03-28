@@ -65,23 +65,20 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
         method: "POST",
         body: formData,
       });
-
       const json = await res.json();
 
-      console.log(json);
+      // console.log(json);
+
       if (json.errors.length === 0) {
         console.log("SUCCESSFULLY LOGGED IN");
-        // store refresh token + access token
-        setUser({
-          uid: json.user_id,
-          name: json.user_fullname.split(" ")[0],
-          email: json.data.users.user_name,
-        });
+        
         await AsyncStorage.setItem(REFRESH_TOKEN, json.refresh_token);
         await AsyncStorage.setItem(USER_UID, json.user_id)
         await AsyncStorage.setItem(ACCESS_TOKEN, json.access_token);
 
-        // fetch user data
+        // fetch user model data
+        await onFetchUserData(json.user_id)
+        // fetch client model data
         await onFetchClientData(json.user_id);
       } else {
         console.error("ERROR LOGGIN IN");
@@ -91,6 +88,37 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
       console.error(e);
     }
   };
+
+  const onFetchUserData = async (userId: string) : Promise<void> => {
+    try {
+      const authToken = await AsyncStorage.getItem(ACCESS_TOKEN);
+
+      const res = await fetch(`${FIYGE}/access_controls/users/view.json?id=${userId}`, {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${authToken}`
+        }
+      });
+      const json = await res.json();
+
+      // console.log(json);
+
+      if (json.errors.length === 0) {
+        console.log("SUCCESSFULLY FETCHED USER DATA");
+        setUser({
+          uid: json.data.users.id,
+          name: json.data.users.first_name + " " + json.data.users.last_name,
+          email: json.data.users.email_addresses[0].email,
+          phone: json.data.users.phone_numbers[0].number
+        });
+      } else {
+        console.error("ERROR FETCHING USER DATA");
+        setUser(undefined);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }
 
   const onUpdateProfileImage = async (imageUrl: string): Promise<void> => {};
 
@@ -144,11 +172,13 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
 
     if (json.errors.length === 0) {
       console.log("SUCCESSFULLY SIGNED UP");
+      await onSignInWithEmailAndPassword(data.email, data.password);
     } else {
       console.error("ERROR SIGNING UP");
     }
   };
 
+  // fetch client model data
   const onFetchClientData = async (uid: number): Promise<void> => {
     const query = {
       fields: [
@@ -207,11 +237,6 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
           lastName: client["clients.last_name"],
           jobTitle: client["clients.job_title"],
         });
-        setUser({
-          uid: client["clients.uid"],
-          name: client["clients.first_name"] + " " + client["clients.last_name"],
-          email: client["clients.email"],
-        });
       } else {
         console.error("ERROR FETCHING USER DATA");
       }
@@ -224,6 +249,8 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
     onFetchClientData(user.uid as unknown as number);
   }
 
+  console.log(user)
+
   const onOnboardUser = async (data: any): Promise<void> => {
     let formData = new FormData();
     formData.append("data[clients][birthday]", data.birthday);
@@ -233,12 +260,11 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
     formData.append("data[clients][job_title]", data.jobTitle);
     formData.append("data[clients][last_name]", data.lastName);
     formData.append("data[clients][name]", data.firstName + " " + data.lastName);
-    formData.append("data[clients][phone]", data.phone ?? "PLACEHOLDER");
+    formData.append("data[clients][phone]", user.phone ?? "PLACEHOLDER");
     formData.append("data[clients][uid]", user.uid);
 
     try {
       const authToken = await AsyncStorage.getItem(ACCESS_TOKEN);
-      console.log(authToken);
       const res = await fetch(`${FIYGE}/immigrate_ai/clients/add.json`, {
         method: "POST",
         body: formData,

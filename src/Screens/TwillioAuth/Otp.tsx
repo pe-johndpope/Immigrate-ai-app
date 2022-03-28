@@ -1,20 +1,25 @@
-import React, { useState } from "react";
+import  { useState, useContext } from "react";
 import { SafeAreaView, StyleSheet, Button as Button2, Text, TouchableOpacity, View, Dimensions} from "react-native";
-import Button  from "../../components/Button";
 import { checkVerification } from "../../Api/verify";
 import OTPInputView from "@twotalltotems/react-native-otp-input";
 import { theme } from "../../components/theme";
 const { width, height } = Dimensions.get("window");
+import { FiygeAuthContext } from "../../Contexts";
 import Icon from "react-native-vector-icons/Ionicons";
+
 const Otp = ({ route, navigation }) => {
- const { phoneNumber } = route.params;
+ const { phoneNumber, email, password } = route.params;
+ const {onSignInWithEmailAndPassword } = useContext(FiygeAuthContext)
+
  const [invalidCode, setInvalidCode] = useState(false);
  const [validCode, setValidCode] = useState(false);
- const VerifyCode = () => {
+
+ const VerifyCode = async () => {
    if (!invalidCode) {
-     navigation.navigate("Login")
+      await onSignInWithEmailAndPassword(email, password).then(navigation.navigate('Onboarding'))
+    };
    }
- }
+ 
 
  return (
    <SafeAreaView style={styles.wrapper}>
@@ -41,18 +46,16 @@ const Otp = ({ route, navigation }) => {
        codeInputHighlightStyle={styles.underlineStyleHighLighted}
        onCodeFilled={(code) => {
          checkVerification(phoneNumber, code).then((success) => {
-             setValidCode(true);
+           if (code.length == 6){
+            setValidCode(true);
+            VerifyCode();
+           }
+           
          });
        }}
      />
      {invalidCode && <Text style={styles.error}>Incorrect code please try again.</Text>}
      {validCode && <Text style={styles.success}>Verified! Your account has been created</Text>}
-
-     <View>
-      <Button mode="contained" onPress={VerifyCode} style={styles.button}>
-          Log In
-        </Button>
-     </View>
    </SafeAreaView>
  );
 };

@@ -135,7 +135,6 @@ class SinglePost extends Component {
     });
   };
 
-
   render() {
     let post = this.state.post;
     const postImage = {}
@@ -241,7 +240,6 @@ class SinglePost extends Component {
     );
   }
 }
-
 
 const styles = StyleSheet.create({
   container: {

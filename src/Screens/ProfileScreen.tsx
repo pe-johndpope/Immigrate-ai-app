@@ -54,6 +54,10 @@ const ProfileScreen = ({ navigation }) => {
     }
   };
 
+  if (!authenticated) {
+    return null;
+  }    
+
   return (
     <View
       style={[

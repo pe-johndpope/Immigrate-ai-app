@@ -1,5 +1,4 @@
 // @ts-nocheck
-
 import React from 'react';
 import {
   FlatList,
@@ -69,9 +68,6 @@ export default class Categories extends React.Component {
       return Promise.reject(error);
     }
   }
-
-  
-
   render() {
     return (
       <View style = {{alignItems: "center", marginBottom: 5,}}>

@@ -10,7 +10,6 @@ export default function BackButton({ goBack }) {
     ></TouchableOpacity>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     position: "absolute",
