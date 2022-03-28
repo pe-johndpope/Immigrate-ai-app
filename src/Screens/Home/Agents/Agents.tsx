@@ -20,6 +20,15 @@ const { width, height } = Dimensions.get("window");
 
 const DATA = [
   {
+    id: "58694a0f-3da1-471f-bd96-145571e29d32",
+    title: "Ajay Malhotra",
+    image:
+      "https://media-exp1.licdn.com/dms/image/C5603AQHYKt88jp-L4g/profile-displayphoto-shrink_800_800/0/1600283110094?e=1651104000&v=beta&t=Wc-eGKFuEWnww9axqCIR70yw1xA8ucb53RDAsgqcRQg",
+    email: "ajay@immigrate.ai",
+    position: "RCIC @ Immigrate.ai",
+    phone: "647-555-9955",
+  },
+  {
     id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
     title: "Gurpreet Chandok",
     image: "https://i.postimg.cc/xdshNpdt/Gurpreet.jpg",
@@ -35,15 +44,7 @@ const DATA = [
     position: "Partner @ Ace Law",
     phone: "647-555-9955",
   },
-  {
-    id: "58694a0f-3da1-471f-bd96-145571e29d32",
-    title: "Ajay Malhotra",
-    image:
-      "https://media-exp1.licdn.com/dms/image/C5603AQHYKt88jp-L4g/profile-displayphoto-shrink_800_800/0/1600283110094?e=1651104000&v=beta&t=Wc-eGKFuEWnww9axqCIR70yw1xA8ucb53RDAsgqcRQg",
-    email: "ajay@immigrate.ai",
-    position: "CEO @ CSC",
-    phone: "647-555-9955",
-  },
+
   {
     id: "58694a0f-3da1-471f-bd96-145571e29d72",
     title: "Rekha Samuel",

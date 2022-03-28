@@ -228,6 +228,7 @@ class SinglePost extends Component {
                     </Text>
                 
                 </View>
+                <View><Text></Text></View>
                 <View>
                 <HTML value={post[0].content.rendered} addLineBreaks={false} stylesheet = {styles}/>
                 </View>

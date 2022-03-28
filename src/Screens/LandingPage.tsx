@@ -9,9 +9,6 @@ import { FiygeAuthContext } from "../Contexts";
 export default function LandingPage({ navigation }) {
   const { authenticated } = useContext(FiygeAuthContext);
 
-  if (authenticated) {
-    navigation.navigate("Dashboard");
-  }
 
   return (
     <LinearGradient

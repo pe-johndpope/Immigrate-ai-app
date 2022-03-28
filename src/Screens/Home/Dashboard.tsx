@@ -10,7 +10,7 @@ import { Chat } from "../Chat/Chat";
 import Home from "./Home";
 import ProfileScreen from "../ProfileScreen";
 import Feed from "../SocialFeed/screens/Feed";
-
+import Onboarding from "../Onboarding/Onboarding"
 const { height } = Dimensions.get("window");
 
 const Tab = createBottomTabNavigator();

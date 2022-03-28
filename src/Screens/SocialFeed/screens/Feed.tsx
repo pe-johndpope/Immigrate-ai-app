@@ -13,7 +13,6 @@ import {
   Alert,
   TextInput
 } from 'react-native';
-import SearchBar from 'react-native-elements';
 import {Headline, withTheme, Title} from 'react-native-paper';
 import Card from './Card';
 import Categories from './Categories'
@@ -25,6 +24,8 @@ import { theme } from '../../../components/theme';
 import { NavigationContainer } from '@react-navigation/native';
 import { themeTools } from 'native-base';
 import filter from 'lodash.filter';
+import {Input} from '@ui-kitten/components'
+import {SearchBar} from 'react-native-elements';
 
 const cacheKey = 'CacheData';
 
@@ -108,10 +109,10 @@ class Feed extends Component {
           post,
         }),
       );
-
       this.setState({
         lastestpost: page === 1 ? post : [...this.state.lastestpost, ...post],
         isFetching: false,
+        searchData: post,
       });
     } catch (error) {
       console.log('geoFetch error', error);
@@ -123,15 +124,52 @@ class Feed extends Component {
     console.log(e);
   };
 
-  render() {
+  contains1 = ({ title }, query) => {
+    if (
+      title.rendered.includes(query)
+    ) {
+      return true
+    }
+    return false
+  }
 
+  handleSearch = text => {
+    const formattedQuery = text.toLowerCase()
+    const data = filter(this.state.lastestposts, item => {
+      return this.contains1(item, formattedQuery)
+    })
+    this.setState({ data, query: text })
+  }
+
+  renderHeader = () => (
+    <TextInput
+    style = {{borderRadius: 10, 
+      borderWidth: 1, 
+      borderColor: "#b2b2b2", 
+      padding: 10, 
+      fontFamily: 'Avenir Next'}}
+    placeholder="Search"
+    onChangeText={this.search}
+    value={this.state.query}
+  />
+  )
+
+  search = (query) => {
+    this.setState({query: query});
+    let data = this.state.lastestpost.filter(function (item) {
+      return item.title.rendered.includes(query);
+    });
+    this.setState({searchData: data});
+  };
+
+  render() {
     return (
       <LinearGradient
       style = {{zIndex:-3, flex: 1}}
       colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"]}>
       <SafeAreaView style = {{flex: 1,}}>
         <View style = {{ flexDirection: 'row',justifyContent:'space-between'}}>
-        <Title style = {{fontSize: 27.5, fontFamily: "Avenir Next", fontWeight: "700", paddingTop: 20,paddingHorizontal: 20,color: theme.colors.purple}}>Explore Canada 🇨🇦</Title>
+        <Title style = {styles.titleHeader}>Explore Canada 🇨🇦</Title>
         <TouchableOpacity 
          onPress={() =>
           this.props.navigation.navigate('Bookmark')}>
@@ -147,14 +185,12 @@ class Feed extends Component {
             padding: 10, 
             fontFamily: 'Avenir Next'}}
           placeholder="Search"
-          value = {this.state.query}
-          onChangeText = {(text) => text}
+          onChangeText={this.search}
+          value={this.state.query}
         />
           </View>
         <FlatList
-          data={this.state.lastestpost}
-          onRefresh={() => this.onRefresh()}
-          refreshing={this.state.isFetching}
+          data={this.state.searchData.length > 0 ? this.state.searchData : this.state.lastesposts}
           onEndReached={this.handleLoadMore}
           onEndReachedThreshold={0.1}
           renderItem={({item}) => (
@@ -181,6 +217,14 @@ const styles = StyleSheet.create({
     margin: 10,
     fontSize: 20,
   },
-
+  titleHeader: {
+    fontSize: 27.5, 
+    fontFamily: "Avenir Next", 
+    fontWeight: "700", 
+    paddingTop: 20,
+    paddingBottom: 5,
+    paddingHorizontal: 20,
+    color: theme.colors.purple
+  }
 });
 export default withTheme(Feed);
