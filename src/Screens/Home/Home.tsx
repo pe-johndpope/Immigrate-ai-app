@@ -5,7 +5,6 @@ import {
   Text,
   Switch,
   Image,
-  StatusBar,
   StyleSheet,
   Dimensions,
   Platform,
@@ -28,6 +27,7 @@ import { FiygeAuthContext } from "../../Contexts";
 const { width, height } = Dimensions.get("window");
 import { LinearGradient } from "expo-linear-gradient";
 import { theme } from "../../components/theme";
+import { StatusBar } from 'expo-status-bar';
 
 const colors = {
   themeColor: "#EFF5F8",
@@ -174,12 +174,8 @@ const Home = () => {
         },
       ]}
     >
-      <StatusBar
-        barStyle="dark-content"
-        hidden={false}
-        backgroundColor="#EFF5F8"
-        translucent={true}
-      />
+    <StatusBar style="dark" />
+
       <View style={{ flex: 1, flexDirection: "row" }}>
         <Text style={styles.nameText}>
           {"Hey,\n"}

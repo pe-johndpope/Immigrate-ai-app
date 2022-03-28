@@ -11,7 +11,8 @@ import {
   SafeAreaView,
   StatusBar,
   Alert,
-  TextInput
+  TextInput,
+  Dimensions
 } from 'react-native';
 import {Headline, withTheme, Title} from 'react-native-paper';
 import Card from './Card';
@@ -26,6 +27,7 @@ import { themeTools } from 'native-base';
 import filter from 'lodash.filter';
 import {Input} from '@ui-kitten/components'
 import {SearchBar} from 'react-native-elements';
+const { width, height } = Dimensions.get("window");
 
 const cacheKey = 'CacheData';
 
@@ -173,7 +175,7 @@ class Feed extends Component {
         <TouchableOpacity 
          onPress={() =>
           this.props.navigation.navigate('Bookmark')}>
-          <Icon  style = {{paddingHorizontal: 20, paddingTop: 20,}} name="bookmarks-outline" size={25} color={theme.colors.grey} />
+          <Icon  style = {styles.iconStyle} name="bookmarks-outline" size={25} color={theme.colors.grey} />
           </TouchableOpacity>      
         </View>
         <Categories  navigation={this.props.navigation}></Categories>
@@ -221,10 +223,14 @@ const styles = StyleSheet.create({
     fontSize: 27.5, 
     fontFamily: "Avenir Next", 
     fontWeight: "700", 
-    paddingTop: 20,
+    paddingTop: Platform.OS === 'ios' ? 20 : height * 0.075,
     paddingBottom: 5,
     paddingHorizontal: 20,
     color: theme.colors.purple
+  },
+  iconStyle:{
+    paddingHorizontal: 20, 
+    paddingTop: Platform.OS === 'ios' ? 20 : height * 0.075
   }
 });
 export default withTheme(Feed);

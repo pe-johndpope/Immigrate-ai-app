@@ -586,7 +586,7 @@ responses:
   - text: What is your purpose for travelling to Canada?
     buttons:
     - payload: move
-      title: Move
+      title: Immigrate
     - payload: study
       title: Study
     - payload: work
