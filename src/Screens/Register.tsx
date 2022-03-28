@@ -60,7 +60,11 @@ const Privacy = <Text style = {styles.termsBoldedStyle}>Privacy Policy</Text>
       })
     
 
-    sendSmsVerification(formattedValue).then(navigation.replace("Otp", { phoneNumber: formattedValue }))
+    sendSmsVerification(formattedValue).then(navigation.replace("Otp", 
+    { phoneNumber: formattedValue, 
+      email: email.value, 
+      password: password.value
+    }))
     // reset fields
     setName({value: "", error: ""})
     setEmail({value: "", error: ""})
@@ -149,7 +153,7 @@ const Privacy = <Text style = {styles.termsBoldedStyle}>Privacy Policy</Text>
 
       <View style={styles.row}>
         <Text style={styles.label}>Already have an account? </Text>
-        <TouchableOpacity onPress={() => navigation.navigate("Login")}>
+        <TouchableOpacity onPress={onSignUpPressed}>
           <Text style={styles.link}>Login</Text>
         </TouchableOpacity>
       </View>

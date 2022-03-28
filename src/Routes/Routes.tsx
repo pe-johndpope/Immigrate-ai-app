@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import { FiygeAuthContextProvider, BlogContextProvider, FiygeAuthContext } from "../Contexts";
-import {Chat} from "../Screens/Chat/Chat";
+import { Chat } from "../Screens/Chat/Chat";
 import Login from "../Screens/Login";
 import Register from "../Screens/Register";
 import ForgotPassword from "../Screens/ForgotPassword";
@@ -90,8 +90,18 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => {
         </>}
         {authenticated && !onboarded && <>
             <Stack.Screen
+              name="Otp"
+              component={Otp}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
               name="Onboarding"
               component={Onboarding}
+              options={{ headerShown: false }}
+            />
+             <Stack.Screen
+              name="Register"
+              component={Register}
               options={{ headerShown: false }}
             />
           </>

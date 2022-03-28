@@ -47,7 +47,7 @@ function Dashboard({ navigation }) {
       <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
       <Tab.Screen name="Chat" component={Chat} options={{ headerShown: false  }}/>
       <Tab.Screen name="Explore" component={Feed} options={{ headerShown: false }} />
-      <Tab.Screen name="Profile" component={Onboarding} options={{ headerShown: false }} />
+      <Tab.Screen name="Profile" component={ProfileScreen} options={{ headerShown: false }} />
      </Tab.Navigator>
   );
 }
