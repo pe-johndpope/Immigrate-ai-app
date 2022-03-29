@@ -8,11 +8,16 @@ import { FiygeAuthContext } from "../../Contexts";
 import Icon from "react-native-vector-icons/Ionicons";
 
 const Otp = ({ route, navigation }) => {
- const { phoneNumber, email, password } = route.params;
- const {onSignInWithEmailAndPassword } = useContext(FiygeAuthContext)
+ const {onSignInWithEmailAndPassword, onboarded} = useContext(FiygeAuthContext)
+
+ if (onboarded) {
+  navigation.navigate('Dashboard')
+  return
+ }
 
  const [invalidCode, setInvalidCode] = useState(false);
  const [validCode, setValidCode] = useState(false);
+ const { phoneNumber, email, password} = route.params;
 
  const VerifyCode = async () => {
    if (!invalidCode) {
@@ -29,7 +34,7 @@ const Otp = ({ route, navigation }) => {
       </TouchableOpacity>
      <Text style={styles.prompt}>Enter the OTP</Text>
      <View style = {{flexDirection: 'row'}}>
-     <Text style={styles.message}>{'We sent a 4 digit code to  '}
+     <Text style={styles.message}>{'We sent a 6 digit code to  '}
        <Text style={styles.messageNumber}>{phoneNumber}</Text>
     </Text>
      </View>
@@ -94,7 +99,7 @@ const styles = StyleSheet.create({
    fontSize: 27,
    paddingHorizontal: 30,
    paddingBottom: 20,
-   fontFamily: 'Avenir Next',
+   fontFamily: theme.fonts.main,
    fontWeight: 'bold',
    color: theme.colors.purple
  },
@@ -104,7 +109,7 @@ const styles = StyleSheet.create({
    fontWeight: '400',
    paddingHorizontal: 30,
    textAlign: 'center',
-   fontFamily: 'Avenir Next'
+   fontFamily: theme.fonts.main
 
  },
  messageNumber: {
@@ -112,14 +117,14 @@ const styles = StyleSheet.create({
   fontWeight: '400',
   paddingHorizontal: 30,
   textAlign: 'center',
-  fontFamily: 'Avenir Next',
+  fontFamily: theme.fonts.main,
 },
  message2: {
   fontSize: 16,
   fontWeight: '400',
   paddingHorizontal: 30,
   textAlign: 'center',
-  fontFamily: 'Avenir Next',
+  fontFamily: theme.fonts.main,
   color: theme.colors.purple
  },
  error: {
@@ -134,12 +139,12 @@ const styles = StyleSheet.create({
 },
 label: {
   color: theme.colors.secondary,
-  fontFamily: "Avenir Next",
+  fontFamily: theme.fonts.main,
   textAlign: 'center'
 },
 link: {
   fontWeight: "700",
-  fontFamily: "Avenir Next",
+  fontFamily: theme.fonts.main,
   color: "#FF6584",
 },
 button: {

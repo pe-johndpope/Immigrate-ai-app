@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions } from "react-native";
+import { StyleSheet, Dimensions, Platform } from "react-native";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 const { width } = Dimensions.get("window");
 
@@ -53,7 +53,7 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderRadius: 5,
     borderColor: "#E4E9F2",
-    paddingTop: 8.5,
+    paddingTop: Platform.OS == 'ios'? 8.5 : 0,
     paddingHorizontal: 12,
     marginLeft: 10,
   },
@@ -63,7 +63,7 @@ export default StyleSheet.create({
   },
   sendContainer: {
     width: 46,
-    height: 44,
+    height: 40,
     alignItems: "center",
     justifyContent: "center",
     marginHorizontal: 4,

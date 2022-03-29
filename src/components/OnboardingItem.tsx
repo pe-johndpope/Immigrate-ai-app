@@ -6,6 +6,7 @@ import {
   Image,
   useWindowDimensions,
 } from "react-native";
+import { theme } from "./theme";
 
 export default function OnboardingItem({ item }) {
   const { width } = useWindowDimensions();
@@ -42,14 +43,14 @@ const styles = StyleSheet.create({
     fontSize: 28,
     marginBottom: 10,
     color: "#493d8a",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     textAlign: "center",
   },
   description: {
     fontWeight: "300",
     fontSize: 15,
     color: "#62656b",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     textAlign: "center",
     paddingHorizontal: 50,
   },

@@ -12,6 +12,7 @@ import {
   Dimensions,
 } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
+import { theme } from "../../../components/theme";
 const { width, height } = Dimensions.get("window");
 
 export default function PEI() {
@@ -98,7 +99,7 @@ const styles = StyleSheet.create({
   factHeaderText: {
     fontWeight: "700",
     fontSize: width * 0.039,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#D8F2FF",
     marginTop: height * 0.02,
     textAlign: "center",
@@ -108,14 +109,14 @@ const styles = StyleSheet.create({
     fontSize: width * 0.031,
     color: "#FFFFFF",
     marginTop: height * 0.015,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     textAlign: "center",
   },
   hashtags: {
     fontWeight: "700",
     fontSize: width * 0.031,
     color: "#D8F2FF",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     textAlign: "center",
     marginTop: height * 0.01,
   },
@@ -123,7 +124,7 @@ const styles = StyleSheet.create({
     zIndex: 1,
     fontSize: width * 0.04,
     fontWeight: "700",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#FFFFFF",
     marginLeft: "17%",
     marginVertical: "-22%",

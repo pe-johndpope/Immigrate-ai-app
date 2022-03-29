@@ -6,7 +6,8 @@ import {
   TouchableOpacity,
   ActivityIndicator,
   Alert,
-  SafeAreaView
+  SafeAreaView,
+  Dimensions
 } from 'react-native';
 import {Card, Title, Paragraph, Headline} from 'react-native-paper';
 import HTML from 'react-native-htmlview';
@@ -15,6 +16,9 @@ import moment from 'moment';
 import {withNavigationFocus} from 'react-navigation';
 import NetInfo from '@react-native-community/netinfo';
 import { LinearGradient } from 'expo-linear-gradient';
+import { theme } from '../../../components/theme';
+import { StatusBar } from 'expo-status-bar';
+const { width, height } = Dimensions.get("window");
 
 const cacheKey = 'Bookmark';
 class Bookmark extends Component {
@@ -84,15 +88,17 @@ class Bookmark extends Component {
 
   render() {
     return (
+      
       <LinearGradient
       style = {{zIndex:-3, flex: 1}}
       colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"]}>
+        <StatusBar backgroundColor={'transparent'} translucent/>
       <View>
         <SafeAreaView>
         {this.state.isFetching ? (
           <View
             style={{
-              paddingVertical: 20,
+              paddingVertical: Platform.OS == 'ios'? 20: 20,
               borderTopWidth: 1,
               borderColor: '#CED0CE',
             }}>
@@ -100,7 +106,7 @@ class Bookmark extends Component {
           </View>
         ) : (
           <View>
-            <Title style = {{paddingTop: 10, paddingBottom: 10, paddingHorizontal: 21, fontSize: 27.5, fontFamily: "Avenir Next", fontWeight: "700"}}>Favourites</Title>  
+            <Title style = {{paddingTop:  Platform.OS == 'ios'? 10: height * 0.075, paddingBottom: 10, paddingHorizontal: 21, fontSize: 27.5, fontFamily: theme.fonts.main, fontWeight: "700"}}>Favourites</Title>  
             <FlatList
               data={this.state.bookmark_post}
               renderItem={({item}) => (
@@ -124,7 +130,7 @@ class Bookmark extends Component {
                     />
                     <Card.Content>
                       <Title numberOfLines={3} style = {{fontFamily: 'Avenir', paddingTop: 5,}}>{item.title.rendered.replace("&#8217;", "'").replace("&#8217;", "'")}</Title>
-                      <Paragraph style = {{fontFamily: 'Avenir Next'}}>Published on {moment(item.date).fromNow()}</Paragraph>
+                      <Paragraph style = {{fontFamily: theme.fonts.main}}>Published on {moment(item.date).fromNow()}</Paragraph>
                     </Card.Content>
                  
                     <Card.Content>

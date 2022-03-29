@@ -35,7 +35,7 @@ const ForgotPassword = ({ navigation }) => {
       <Text
         style={{
           fontSize: 32,
-          fontFamily: "Avenir Next",
+          fontFamily: theme.fonts.main,
           fontWeight: "700",
           color: "#493d8a",
           marginLeft: -4,

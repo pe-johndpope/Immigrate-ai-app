@@ -8,6 +8,8 @@ import {
   StyleSheet,
   Dimensions,
   Platform,
+  SafeAreaView,
+  MaskedViewIOS,
 } from "react-native";
 import Agents from "./Agents/Agents";
 import Vancouver from "./Destinations/Vancouver";
@@ -28,6 +30,7 @@ const { width, height } = Dimensions.get("window");
 import { LinearGradient } from "expo-linear-gradient";
 import { theme } from "../../components/theme";
 import { StatusBar } from 'expo-status-bar';
+import MaskedView from '@react-native-community/masked-view'
 
 const colors = {
   themeColor: "#EFF5F8",
@@ -39,7 +42,7 @@ const colors = {
   orange: "#FF8A73",
 };
 
-const Home = () => {
+const HomePage = () => {
   const { user, userData } = useContext(FiygeAuthContext)
   
   const [isEnabled, setIsEnabled] = useState(false);
@@ -165,64 +168,25 @@ const Home = () => {
   );
 
 
-  return (
-    <LinearGradient
-    style = {{zIndex:-3, flex: 1}}
-    colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"]}>
-    <View
-      style={[
-        styles.containerMain,
-        {
-          // Try setting `flexDirection` to `"row"`.
-          flexDirection: "column",
-        },
-      ]}
-    >
-    <StatusBar style="dark" />
 
-      <View style={{ flex: 1, flexDirection: "row" }}>
-        <Text style={styles.nameText}>
-          {"Hey "}
-          {userData.firstName}! 👋
-        </Text>
+
+  return (
+    <SafeAreaView>
+    <View style = {{padding: 15}}>
+         <View style = {{ flexDirection: 'row',}}>
         <Image
           style={styles.logoHeader}
           source={require("../../Images/LogoTrans.png")}
         ></Image>
-      </View>
-      <View
-        style={{
-          flex: 2,
-          flexDirection: "row",
-          flexWrap: "wrap",
-          width: "120%",
-        }}
-      >
-        {isEnabled ? defSubHeading : moveSubHeading}
-        <Switch
-          style={styles.switch1}
-          trackColor={{ false: "#493d8a", true: theme.colors.pink }}
-          thumbColor={isEnabled ? "#FFFFFF" : "#FFFFFF"}
-          onValueChange={toggleSwitch}
-          value={isEnabled}
-        />
-        <View>{isEnabled ? definition : locations}</View>
-      </View>
-      <View style={{ flex: 3 }}>
-        {faq ? helpSubHeading : moveSubheading}
-        {faq ? FaqContainer : AgentContainer}
-        <Switch
-          style={styles.switch2}
-          trackColor={{ false: "#493d8a", true: theme.colors.pink }}
-          thumbColor={isEnabled ? "#FFFFFF" : "#FFFFFF"}
-          onValueChange={toggleFAQ}
-          value={faq}
-        />
-      </View>
+        <Text style={styles.nameText}>{"Hey "}{userData.firstName}! </Text>
+
+        </View>
     </View>
-    </LinearGradient>
-  );
+    </SafeAreaView>
+  )
+  
 };
+
 
 const styles = StyleSheet.create({
   containerMain: {
@@ -230,25 +194,20 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   nameText: {
-    paddingTop: Platform.OS == "ios" ? height * 0.03 : height * 0.055,
-    fontSize: height * 0.045,
-    color: colors.purple,
-    fontWeight: "bold",
+    fontSize: 28,
+    fontWeight: "700",
     fontFamily: theme.fonts.main,
   },
   userNameStyle:{
-      fontSize: 27.5,
+      fontSize: 30,
       color: colors.purple,
       fontWeight: "700",
       fontFamily: theme.fonts.main,
 },
   logoHeader: {
-    position: "absolute",
-    marginTop: height * 0.05,
-    marginLeft: "90%",
-    height: height * 0.07,
-    transform: [{ rotate: "90deg" }],
-    width: width * 0.3,
+    height: height * 0.045,
+    transform: [{ rotate: "0deg" }],
+    width: width * 0.12,
   },
   switch1: {
     position: "absolute",
@@ -332,4 +291,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default HomePage;

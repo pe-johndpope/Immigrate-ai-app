@@ -254,13 +254,13 @@ const styles = StyleSheet.create({
   p:{
     paddingHorizontal: 20,
     fontSize: 17,
-    fontFamily: 'Avenir Next',
+    fontFamily: theme.fonts.main,
   },
   h4: {
     paddingHorizontal: 20,
     fontSize: 20,
     fontWeight: 'bold',
-    fontFamily: 'Avenir Next',
+    fontFamily: theme.fonts.main,
     color: theme.colors.purple,
   },
   blogImageStyle:{
@@ -271,11 +271,11 @@ const styles = StyleSheet.create({
       padding: 20,
       fontSize: 25,
       fontWeight: "bold",
-      fontFamily: 'Avenir Next',
+      fontFamily: theme.fonts.main,
   },
   authorStyle: {
       left: 15,
-      fontFamily: 'Avenir Next',
+      fontFamily: theme.fonts.main,
       fontSize: 14,
       color: theme.colors.secondary,
   },

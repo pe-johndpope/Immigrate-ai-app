@@ -1,3 +1,5 @@
+import React from 'react';
+import {Platform} from 'react-native'
 
 export const theme = {
   colors: {
@@ -8,4 +10,7 @@ export const theme = {
     pink: "#FF6584",
     grey: "#8e8e8e",
   },
+  fonts: {
+    main: Platform.OS == 'ios'? 'Avenir Next': 'Roboto'
+  }
 };

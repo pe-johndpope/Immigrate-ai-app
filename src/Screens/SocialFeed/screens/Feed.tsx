@@ -149,7 +149,7 @@ class Feed extends Component {
       borderWidth: 1, 
       borderColor: "#b2b2b2", 
       padding: 10, 
-      fontFamily: 'Avenir Next'}}
+      fontFamily: theme.fonts.main}}
     placeholder="Search"
     onChangeText={this.search}
     value={this.state.query}
@@ -168,7 +168,7 @@ class Feed extends Component {
     return (
       <LinearGradient
       style = {{zIndex:-3, flex: 1}}
-      colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"]}>
+      colors={["#B4C6CF","#eeeeee","#eeeeee","#eeeeee","#eeeeee","#eeeeee","#eeeeee","#eeeeee","#eeeeee"]}>
       <SafeAreaView style = {{flex: 1,}}>
         <View style = {{ flexDirection: 'row',justifyContent:'space-between'}}>
         <Title style = {styles.titleHeader}>Explore Canada 🇨🇦</Title>
@@ -185,7 +185,7 @@ class Feed extends Component {
             borderWidth: 1, 
             borderColor: "#b2b2b2", 
             padding: 10, 
-            fontFamily: 'Avenir Next'}}
+            fontFamily: theme.fonts.main}}
           placeholder="Search"
           onChangeText={this.search}
           value={this.state.query}
@@ -221,7 +221,7 @@ const styles = StyleSheet.create({
   },
   titleHeader: {
     fontSize: 27.5, 
-    fontFamily: "Avenir Next", 
+    fontFamily: theme.fonts.main, 
     fontWeight: "700", 
     paddingTop: Platform.OS === 'ios' ? 20 : height * 0.075,
     paddingBottom: 5,

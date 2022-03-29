@@ -8,6 +8,7 @@ import {
 import {
   TouchableWithoutFeedback,
 } from "react-native-gesture-handler";
+import { theme } from "../../../components/theme";
 
 
 const colors = {
@@ -94,7 +95,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     fontWeight: "300",
     padding: 25,
     fontSize: 17,
@@ -106,7 +107,7 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     textAlign: 'center',
     fontSize: 16,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#000000",
   },
   flipButton: {

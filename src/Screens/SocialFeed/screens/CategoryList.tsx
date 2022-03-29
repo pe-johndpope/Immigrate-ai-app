@@ -1,6 +1,7 @@
 // @ts-nocheck
+
 import React from 'react';
-import {View, Text, FlatList, TouchableOpacity, Alert, SafeAreaView} from 'react-native';
+import {View, Text, FlatList, TouchableOpacity, Alert, SafeAreaView, Platform, Dimensions} from 'react-native';
 import {Title, withTheme} from 'react-native-paper';
 import Card from './Card';
 import NetInfo from '@react-native-community/netinfo';
@@ -12,6 +13,7 @@ import { Mada_500Medium } from '@expo-google-fonts/dev';
 import {LinearGradient} from 'expo-linear-gradient'
 import { themeTools } from 'native-base';
 import { theme } from '../../../components/theme';
+const { height, width } = Dimensions.get("window");
 
 class CategoryList extends React.Component {
   constructor(props) {
@@ -66,11 +68,11 @@ class CategoryList extends React.Component {
       style = {{zIndex:-3, flex: 1}}
       colors={["#B4C6CF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"]}>
       <SafeAreaView style = {{flex: 1,}}>
-        <Title style = {{paddingTop: 10,
+        <Title style = {{paddingTop:  Platform.OS == 'ios'? 10: height * 0.075,
                        paddingBottom: 10, 
                        paddingHorizontal: 21, 
                        fontSize: 27.5, 
-                       fontFamily: "Avenir Next", 
+                       fontFamily: theme.fonts.main, 
                        fontWeight: "700", 
                        color: theme.colors.purple}}>{title}</Title>  
         <FlatList

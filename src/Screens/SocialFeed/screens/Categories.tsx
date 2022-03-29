@@ -91,7 +91,7 @@ export default class Categories extends React.Component {
             style={styles.buttonStyle}
           >
             <Text
-              style={{padding: 10, fontFamily: 'Avenir Next', fontWeight: '700', color: "#ffffff" }}
+              style={{padding: 10, fontFamily: theme.fonts.main, fontWeight: '700', color: "#ffffff" }}
             >
               {item.name}
             </Text>
@@ -109,7 +109,7 @@ export default class Categories extends React.Component {
 const styles = StyleSheet.create({
   title: {
     fontSize: 25, 
-    fontFamily: "Avenir Next", 
+    fontFamily: theme.fonts.main, 
     fontWeight: "bold", 
     color: "#493d8a"
   },

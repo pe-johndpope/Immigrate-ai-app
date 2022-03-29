@@ -12,6 +12,7 @@ import CountryPicker from "react-native-country-picker-modal";
 import { CountryCode, Country } from "./types";
 import { FiygeAuthContext } from "../../Contexts";
 import { LinearGradient } from "expo-linear-gradient";
+import { theme } from "../../components/theme";
 
 const { width, height } = Dimensions.get("window");
 
@@ -117,13 +118,13 @@ const Onboarding = ({ navigation }) => {
             placeholderText: {
               fontSize: 15,
               fontWeight: "400",
-              fontFamily: "Avenir Next",
+              fontFamily: theme.fonts.main,
               color: "#5E5E5E",
             },
             dateText: {
               fontSize: 15,
               fontWeight: "500",
-              fontFamily: "Avenir Next",
+              fontFamily: theme.fonts.main,
               marginLeft: 20,
             },
           }}
@@ -206,7 +207,7 @@ const styles = StyleSheet.create({
     fontSize: 27,
     paddingHorizontal: 45,
     paddingTop: 10,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#493d8a",
     fontWeight: "700",
     flexDirection: "column",
@@ -218,7 +219,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "400",
     color: "#5E5E5E",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
   },
   textInputStyle: {
     height: height * 0.049,
@@ -227,23 +228,23 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     fontSize: 15,
     fontWeight: "400",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#000000",
   },
   optionHeader: {
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     fontSize: 18,
     fontWeight: "500",
   },
   optionHeaderTop: {
     right: width * 0.12,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     fontSize: 18,
     fontWeight: "500",
   },
   optionHeaderTop1: {
     right: width * 0.07,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     fontSize: 18,
     fontWeight: "500",
   },
@@ -283,7 +284,7 @@ const styles = StyleSheet.create({
     flexGrow: 0.85,
     fontSize: 15,
     fontWeight: "500",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
   },
   gradientButtonStyle:{
     width: width * 0.5,
@@ -294,7 +295,7 @@ const styles = StyleSheet.create({
   },
   buttonTextStyle:{
     fontSize: 18,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#FFFFFF",
     fontWeight: "500",
   },

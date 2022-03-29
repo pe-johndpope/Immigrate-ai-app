@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { StyleSheet, View,TouchableOpacity, Dimensions, Text, StatusBar} from "react-native";
+import { StyleSheet, View,TouchableOpacity, Dimensions, Text, StatusBar, Platform} from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 const { width, height } = Dimensions.get("window");
 import { theme } from "../components/theme";
@@ -69,9 +69,9 @@ const styles = StyleSheet.create({
   },
   buttonTextStyle:{
     fontSize:18,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#FFFFFF", 
-    fontWeight: "600",
+    fontWeight: Platform.OS == 'ios'? "600" : "bold",
   },
   buttonTouchableStyle:{
     shadowColor: "#ffffff",
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   },
   label: {
     color: theme.colors.secondary,
-    fontFamily: 'Avenir Next'
+    fontFamily: theme.fonts.main
   },
   row: {
     flexDirection: "row",
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   },
   link: {
     fontWeight: "bold",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#FF6584",
   },
 });

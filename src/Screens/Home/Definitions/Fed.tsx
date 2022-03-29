@@ -17,6 +17,7 @@ import {
 } from "react-native-gesture-handler";
 import Icon from "react-native-vector-icons/Ionicons";
 import { text } from "stream/consumers";
+import { theme } from "../../../components/theme";
 const { width, height } = Dimensions.get("window");
 
 const colors = {
@@ -101,22 +102,22 @@ const styles = StyleSheet.create({
     marginVertical: 4,
   },
   text: {
+    paddingHorizontal: 5,
     flex: 1,
     fontWeight: "300",
     alignItems: "center",
-    fontSize: 14,
+    fontSize: 15,
     color: "#000000",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     marginVertical: height * 0.03,
     textAlign: "center",
-    padding: 5,
   },
   text2: {
     flex: 1,
     fontWeight: "bold",
     fontSize: width * 0.08,
     color: "#FFFFFF",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     textAlign: "center",
     marginTop: height * 0.03,
   },

@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, Text, View } from "react-native";
+import { SafeAreaView, Text, View, KeyboardAvoidingView, Platform } from "react-native";
 
 import { ChatBot } from "./ChatBot";
 import { ChatbotContextProvider } from "../../Contexts";
@@ -11,19 +11,7 @@ export const Chat = ({ navigation }) => {
     <ChatbotContextProvider>
       <StatusBar style="dark" />
       <SafeAreaView style={styles.container}>
-        <View>
-          <Text
-            style={{
-              fontFamily: "Avenir Next",
-              textAlign: "center",
-              fontSize: 27.5,
-              fontWeight: "700",
-              color: "#493d8a",
-            }}
-          >
-            Chat
-          </Text>
-        </View>
+        {Platform.OS == 'android'? <KeyboardAvoidingView></KeyboardAvoidingView>:<View></View>}
         <ChatBot />
       </SafeAreaView>
     </ChatbotContextProvider>

@@ -5,9 +5,9 @@ import {
   Dimensions,
   Platform,
 } from "react-native";
-
 import { Chat } from "../Chat/Chat";
 import Home from "./Home";
+import HomePage from "./HomePage";
 import ProfileScreen from "../ProfileScreen";
 import Feed from "../SocialFeed/screens/Feed";
 import Onboarding from "../Onboarding/Onboarding"
@@ -22,7 +22,6 @@ function Dashboard({ navigation }) {
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
           let rn = route.name;
-
           if (rn === "Chat") {
             return (
               <Icon name="chatbubbles-outline" size={25} color={color} />
@@ -30,7 +29,7 @@ function Dashboard({ navigation }) {
           } else if (rn === "Home") {
             return <Icon name="home-outline" size={25} color={color} />
           } else if (rn === "Explore") {
-            return <Icon name ="rocket-outline" size={25} color={color} />
+            return <Icon name ="globe-outline" size={25} color={color} />
           } else if (rn === "Profile") {
             return (
               <Icon name="person-circle-outline" size={25} color={color} />
@@ -41,7 +40,9 @@ function Dashboard({ navigation }) {
         tabBarStyle: {
           height: Platform.OS == "ios" ? height * 0.09 : height * 0.06,
           backgroundColor: "#ffffff",
+
         },
+        tabBarHideOnKeyboard: true
       })}
     >
       <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />

@@ -1,6 +1,6 @@
 import React, { useState, useContext, useRef } from "react";
 import Icon from "react-native-vector-icons/Ionicons";
-import { View, Text, StyleSheet, TouchableOpacity, Dimensions, Linking } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, Dimensions, Linking, KeyboardAvoidingView,ScrollView } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import Button from "../components/Button";
 import RegisterInput from "../components/RegisterInput";
@@ -72,9 +72,11 @@ const Privacy = <Text style = {styles.termsBoldedStyle}>Privacy Policy</Text>
 
   };
   return (
-    <LinearGradient
-    style={styles.gradientBackgroundStyle}
-    colors={["#EFF5F8","#EFF5F8"]}>
+    <KeyboardAvoidingView style={{flex: 1, backgroundColor: '#EFF5F8' }}
+    enabled={true}
+    >
+    <View
+    style={styles.gradientBackgroundStyle}>
       <TouchableOpacity style = {styles.backButton}
         onPress={() => navigation.navigate("LandingPage")}>
         <Icon name="arrow-back-outline" size={25} color="#000000" />
@@ -82,8 +84,6 @@ const Privacy = <Text style = {styles.termsBoldedStyle}>Privacy Policy</Text>
       <Text style={styles.textHeader}>
         Create an Account.
       </Text>
-
-
       <RegisterInput
         label="User Name"
         returnKeyType="next"
@@ -121,7 +121,6 @@ const Privacy = <Text style = {styles.termsBoldedStyle}>Privacy Policy</Text>
            ref={phoneInput}
            defaultValue={value}
            defaultCode="US"
-           layout="first"
            onChangeText={(text) => {
              setValue(text);
            }}
@@ -132,6 +131,7 @@ const Privacy = <Text style = {styles.termsBoldedStyle}>Privacy Policy</Text>
            withShadow
            autoFocus
          />
+        
           <View style = {{paddingTop: height * 0.025, flexDirection: 'row', alignItems: 'center',marginRight: "5%",}}>
           <CheckBox
               checkedColor= {theme.colors.pink}
@@ -145,9 +145,8 @@ const Privacy = <Text style = {styles.termsBoldedStyle}>Privacy Policy</Text>
             </View>
           </View>
           </View>
-        
 
-      <Button mode="contained" onPress={onSignUpPressed}>
+      <Button style = {{top: 0, bottom: 0, left: 0, right: 0,}} mode="contained" onPress={onSignUpPressed}>
         Get Started
       </Button>
 
@@ -157,14 +156,15 @@ const Privacy = <Text style = {styles.termsBoldedStyle}>Privacy Policy</Text>
           <Text style={styles.link}>Login</Text>
         </TouchableOpacity>
       </View>
-    </LinearGradient>
+    </View>
+    </KeyboardAvoidingView>
   );
 };
 
 const styles = StyleSheet.create({
   label: {
     color: theme.colors.secondary,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
 
   },
   button: {
@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
   },
   link: {
     fontWeight: "bold",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#FF6584",
   },
   container: {
@@ -187,18 +187,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     fontSize: 27,
     paddingBottom: height * 0.025,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     fontWeight: "700",
     color: "#493d8a",
   },
   gradientBackgroundStyle: {
-    flex: 1,
-    padding: 4,
     width: "100%",
     justifyContent: "center",
     alignItems: "center",
     alignContent: "center",
-    textAlign: 'center'
+    textAlign: 'center',
+    backgroundColor: '#EFF5F8',
+    minHeight: Math.round(Dimensions.get('window').height)
   },
   backButton:{
     position: 'absolute',
@@ -208,10 +208,10 @@ const styles = StyleSheet.create({
      bottom: 0
 },
 termsBoldedStyle:{
-  fontFamily: 'Avenir Next', fontWeight:"bold", color: "#FF6584",fontSize: 12
+  fontFamily: theme.fonts.main, fontWeight:"bold", color: "#FF6584",fontSize: 12
 },
 termsRegularStyle: {
-  fontFamily: 'Avenir Next', fontWeight: '400', fontSize: 12
+  fontFamily: theme.fonts.main, fontWeight: '400', fontSize: 12
 }
 });
 

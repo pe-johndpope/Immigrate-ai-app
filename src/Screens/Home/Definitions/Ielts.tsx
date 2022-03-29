@@ -10,6 +10,7 @@ import {
   Linking,
   Dimensions,
 } from "react-native";
+import { theme } from "../../../components/theme";
 const { width, height } = Dimensions.get("window");
 
 const colors = {
@@ -98,7 +99,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     fontWeight: "300",
     fontSize: 13.5,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#000000",
     marginVertical: height * 0.03,
     textAlign: "center",
@@ -109,7 +110,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     fontWeight: "bold",
     fontSize: width * 0.09,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#FFFFFF",
     textAlign: "center",
     marginTop: height * 0.08,

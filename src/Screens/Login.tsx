@@ -1,10 +1,10 @@
 import React, { memo, useState, useContext } from "react";
-import { TouchableOpacity, StyleSheet, Text, View, Dimensions } from "react-native";
+import { TouchableOpacity, StyleSheet, Text, View, Dimensions, SafeAreaView, KeyboardAvoidingView } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import Background from "../components/Background";
 import Logo from "../components/Logo";
 import Button from "../components/Button";
-import TextInput from "../components/TextInput";
+import RegisterInput from "../components/RegisterInput";
 import BackButton from "../components/BackButton";
 import { theme } from "../components/theme";
 import { FiygeAuthContext } from "../Contexts";
@@ -16,7 +16,7 @@ const Login = ({ navigation }) => {
   const [password, setPassword] = useState({ value: "", error: "" });
 
   if (authenticated) {
-    navigation.navigate(onboarded ? "Onboarding" : "Onboarding");
+    navigation.navigate("Dashboard");
     return null;
   }
 
@@ -28,7 +28,10 @@ const Login = ({ navigation }) => {
 
 
   return (
-    <Background>
+    <KeyboardAvoidingView style={{flex: 1, backgroundColor: '#EFF5F8' }}
+    enabled={true}
+    >
+      <View style = {styles.gradientBackgroundStyle}>
       <TouchableOpacity
         onPress={() => navigation.navigate("LandingPage")}
         style={styles.backButton}
@@ -40,7 +43,7 @@ const Login = ({ navigation }) => {
       <Text
         style={{
           fontSize: 27,
-          fontFamily: "Avenir Next",
+          fontFamily: theme.fonts.main,
           height: 100,
           fontWeight: "700",
           color: "#493d8a",
@@ -52,7 +55,7 @@ const Login = ({ navigation }) => {
       </Text>
 
       <Logo />
-      <TextInput
+      <RegisterInput
         label="Email"
         returnKeyType="next"
         value={email.value}
@@ -62,18 +65,17 @@ const Login = ({ navigation }) => {
         autoCapitalize="none"
         textContentType="emailAddress"
         keyboardType="email-address"
-        style={styles.input}
+        style={{ width: "90%" }}
       />
-
-      <TextInput
+      <RegisterInput
         label="Password"
         returnKeyType="done"
         value={password.value}
         onChangeText={(text) => setPassword({ value: text, error: "" })}
         error={!!password.error}
         errorText={password.error}
+        style={{ width: "90%" }}
         secureTextEntry
-        style={styles.input}
       />
       <View style={styles.forgotPassword}>
         <TouchableOpacity onPress={() => navigation.navigate("ForgotPassword")}>
@@ -89,7 +91,8 @@ const Login = ({ navigation }) => {
           <Text style={styles.link}>Sign up</Text>
         </TouchableOpacity>
       </View>
-    </Background>
+      </View>
+      </KeyboardAvoidingView>
   );
 };
 
@@ -108,11 +111,11 @@ const styles = StyleSheet.create({
   },
   label: {
     color: theme.colors.secondary,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
   },
   link: {
     fontWeight: "700",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#FF6584",
   },
   input: {
@@ -129,7 +132,15 @@ const styles = StyleSheet.create({
      right: 0,
      top: height * 0.075,
      bottom: 0
-}
+},
+gradientBackgroundStyle: {
+  width: "100%",
+  justifyContent: "center",
+  alignItems: "center",
+  textAlign: 'center',
+  backgroundColor: '#EFF5F8',
+  minHeight: Math.round(Dimensions.get('window').height)
+},
 });
 
 export default memo(Login);

@@ -1,6 +1,7 @@
 import React, { memo } from "react";
 import { StyleSheet, Dimensions } from "react-native";
 import { Button as PaperButton } from "react-native-paper";
+import { theme } from "./theme";
 type Props = React.ComponentProps<typeof PaperButton>;
 const { width, height } = Dimensions.get("window");
 
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     fontSize: 18,
     color: "#FFFFFF",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
   },
 });
 

@@ -17,6 +17,9 @@ import Categories from "../Screens/SocialFeed/screens/Categories"
 import CategoryList from "../Screens/SocialFeed/screens/CategoryList"
 import Bookmark from "../Screens/SocialFeed/screens/Bookmark"
 import Otp from "../Screens/TwillioAuth/Otp"
+import Profile from "../Screens/Profile";
+import HomePage from "../Screens/Home/HomePage";
+
 
 interface RoutesProps {}
 
@@ -86,6 +89,14 @@ const ScreenNavigator: React.FC<RoutesProps> = ({}) => {
               <Stack.Screen 
               name="ProfileScreen" 
               component={ProfileScreen} 
+            />
+            <Stack.Screen 
+              name="Profile" 
+              component={Profile} 
+            />
+             <Stack.Screen 
+              name="HomePage" 
+              component={HomePage} 
             />
         </>}
         {authenticated && !onboarded && <>

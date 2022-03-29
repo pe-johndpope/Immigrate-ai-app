@@ -84,44 +84,37 @@ const ProfileScreen = ({ navigation }) => {
         </View>
         <View style={{ marginLeft: width * 0.05, marginTop: height * 0.01 }}>
           <View style={styles.row}>
-            <Icon name="map-marker-radius" color="#4D4D4D" size={20} />
+            <Icon name="map-marker-radius" color="#777777" size={20} />
             <View style={{ marginLeft: 20 }}>
-              <TextInput
-                maxLength={100}
-                placeholder={`Country: ${userData.countryCode}`}
-                keyboardType="numeric"
-                caretHidden={true}
+              <Text
                 style={{
-                  color: "#4D4D4D",
+                  color: "#000000",
                   fontSize: 18,
-                  fontFamily: "Avenir Next",
+                  fontFamily: theme.fonts.main,
                 }}
-              />
+              >{`${userData.countryCode}`}</Text>
             </View>
           </View>
           <View style={styles.row}>
             <Icon name="phone" color="#777777" size={20} />
             <View style={{ marginLeft: 20 }}>
-              <TextInput
-                placeholder={`Phone: ${userData.phone}`}
-                keyboardType="numeric"
-                caretHidden={true}
+            <Text
                 style={{
-                  color: "#4D4D4D",
+                  color: "#000000",
                   fontSize: 18,
-                  fontFamily: "Avenir Next",
+                  fontFamily: theme.fonts.main,
                 }}
-              />
+              >{userData.phone}</Text>
             </View>
           </View>
           <View style={styles.row}>
             <Icon name="email" color="#777777" size={20} />
             <Text
               style={{
-                color: "#4D4D4D",
+                color: "#000000",
                 fontSize: 18,
                 marginLeft: 20,
-                fontFamily: "Avenir Next",
+                fontFamily: theme.fonts.main,
               }}
             >
               {user.email}
@@ -130,16 +123,13 @@ const ProfileScreen = ({ navigation }) => {
           <View style={styles.row}>
             <Icon name="calendar-outline" color="#777777" size={20} />
             <View style={{ marginLeft: 20 }}>
-              <TextInput
-                placeholder={`Date of Birth: ${userData.birthday}`}
-                keyboardType="numeric"
-                caretHidden={true}
+            <Text
                 style={{
-                  color: "#4D4D4D",
+                  color: "#000000",
                   fontSize: 18,
-                  fontFamily: "Avenir Next",
+                  fontFamily: theme.fonts.main,
                 }}
-              />
+              >{userData.birthday}</Text>
             </View>
           </View>
         </View>
@@ -149,7 +139,7 @@ const ProfileScreen = ({ navigation }) => {
         <View style={{ paddingTop: height * 0.05 }}>
           <View style={{ flexDirection: "row", justifyContent: "center" }}>
             <View style={{ flex: 1 }}>
-              <Text style={styles.settingHeaderText}>Emails &Promotions</Text>
+              <Text style={styles.settingHeaderText}>Emails & Promotions</Text>
               <Text style={styles.settingSmallerText}>
                 Don't Worry We Don't Spam :)
               </Text>
@@ -221,23 +211,23 @@ export default ProfileScreen;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#EFF5F8",
+    backgroundColor: "#ffffff",
     flex: 1,
     padding: 15,
   },
   profileTitle: {
     marginLeft: "1%",
-    fontSize: height * 0.03,
+    fontSize: height * 0.035,
     color: "#493d8a",
-    fontFamily: 'Avenir Next',
+    fontFamily: theme.fonts.main,
     fontWeight: "bold",
     textAlign: 'center',
     marginTop: height * 0.065,
   },
   topContainer: {
     flex: 3,
-    backgroundColor: "#BFD3DA",
-    borderRadius: 23,
+    backgroundColor: "#e4e4e4",
+    borderRadius: 10,
     paddingBottom: height * 0.04,
     marginTop: "5%",
   },
@@ -250,7 +240,7 @@ const styles = StyleSheet.create({
   },
   userName: {
     justifyContent: "center",
-    fontFamily: Platform.OS == "ios" ? "Avenir Next" : "",
+    fontFamily: Platform.OS == "ios" ? theme.fonts.main : "",
     fontSize: 22,
     fontWeight: "600",
     marginTop: height * 0.02,
@@ -304,11 +294,11 @@ const styles = StyleSheet.create({
   },
   label: {
     color: theme.colors.secondary,
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
   },
   link: {
     fontWeight: "700",
-    fontFamily: "Avenir Next",
+    fontFamily: theme.fonts.main,
     color: "#493d8a",  
   },
 });

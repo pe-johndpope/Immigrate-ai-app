@@ -5,6 +5,7 @@ import {Avatar, Button, Card, Title, Paragraph} from 'react-native-paper';
 import HTML from 'react-native-htmlview';
 import moment from 'moment';
 import RenderHtml from 'react-native-render-html';
+import { theme } from '../../../components/theme';
 
 export default ({item, navigation, textColor}) => {
   let titleFormatted = item.title.rendered.replace("&#8217;", "'").replace("&#8217;", "'").replace("&#8216;", "'");
@@ -30,7 +31,7 @@ export default ({item, navigation, textColor}) => {
           </View>
         <Card.Content>
           <Title numberOfLines={3} style = {{fontFamily: 'Avenir', paddingTop: 5,}}>{titleFormatted.replace("&#8217;", "'")}</Title>
-          <Paragraph style = {{fontFamily: 'Avenir Next'}}>Published {moment(item.date).fromNow()}</Paragraph>
+          <Paragraph style = {{fontFamily: theme.fonts.main}}>Published {moment(item.date).fromNow()}</Paragraph>
         </Card.Content>
       </Card>
     </TouchableOpacity>
