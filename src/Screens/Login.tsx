@@ -21,9 +21,13 @@ const Login = ({ navigation }) => {
   }
 
   const handleLogin = async () => {
-    await onSignInWithEmailAndPassword(email.value, password.value);
-    setEmail({value: "", error: ""})
-    setPassword({value: "", error: ""})
+    const success = await onSignInWithEmailAndPassword(email.value, password.value);
+    if (success) {
+      setEmail({value: "", error: ""})
+      setPassword({value: "", error: ""})
+    } else {
+      alert("Error: Invalid credentials");
+    }
   };
 
 

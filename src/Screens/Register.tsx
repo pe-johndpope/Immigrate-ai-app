@@ -10,15 +10,15 @@ import {
   emailValidator,
   passwordValidator,
   nameValidator,
+  phoneValidator,
 } from "../components/utils";
 import { FiygeAuthContext } from "../Contexts";
 const { height, width } = Dimensions.get("window");
 import { CheckBox } from 'react-native-elements'
 import {sendSmsVerification} from "../Api/verify"
-import { ThemeColors } from "react-navigation";
 
 const RegisterScreen = ({ navigation }) => {
-  const { onSignUpWithEmailAndPassword, onSignInWithEmailAndPassword} = useContext(FiygeAuthContext)
+  const { onSignUpWithEmailAndPassword } = useContext(FiygeAuthContext)
 
   const [name, setName] = useState({ value: "", error: "" });
   const [email, setEmail] = useState({ value: "", error: "" });
@@ -36,29 +36,33 @@ const RegisterScreen = ({ navigation }) => {
 const Privacy = <Text style = {styles.termsBoldedStyle}>Privacy Policy</Text>
 
   const onSignUpPressed = async () => {
-    console.log(email.value);
-    console.log(formattedValue);
     const nameError = nameValidator(name.value);
     const emailError = emailValidator(email.value);
     const passwordError = passwordValidator(password.value);
+    const phoneError = phoneValidator(formattedValue)
 
-    if (emailError || passwordError || nameError || !terms) {
+    if (emailError || passwordError || nameError || !terms || phoneError) {
       setName({ ...name, error: nameError });
       setEmail({ ...email, error: emailError });
       setPassword({ ...password, error: passwordError });
+      if (phoneError) {
+        alert(phoneError);
+      }
       return;
     }
-    console.log(formattedValue)
-   
 
-    await onSignUpWithEmailAndPassword({
+    const success = await onSignUpWithEmailAndPassword({
       email: email.value,
       password: password.value,
       firstName: name.value, 
       lastName: name.value,
       phone: (formattedValue).toString()
-      })
-    
+    })
+
+    if (!success) {
+      alert("Error: unable to create account. Double-check the input fields!")
+      return;
+    }
 
     sendSmsVerification(formattedValue).then(navigation.replace("Otp", 
     { phoneNumber: formattedValue, 
@@ -69,8 +73,12 @@ const Privacy = <Text style = {styles.termsBoldedStyle}>Privacy Policy</Text>
     setName({value: "", error: ""})
     setEmail({value: "", error: ""})
     setPassword({value: "", error: ""})
-
   };
+
+  const onLoginPressed = () : void => {
+    navigation.navigate("Login");
+  }
+
   return (
     <LinearGradient
     style={styles.gradientBackgroundStyle}
@@ -153,7 +161,7 @@ const Privacy = <Text style = {styles.termsBoldedStyle}>Privacy Policy</Text>
 
       <View style={styles.row}>
         <Text style={styles.label}>Already have an account? </Text>
-        <TouchableOpacity onPress={onSignUpPressed}>
+        <TouchableOpacity onPress={onLoginPressed}>
           <Text style={styles.link}>Login</Text>
         </TouchableOpacity>
       </View>

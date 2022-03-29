@@ -20,13 +20,13 @@ interface FiygeAuthContextI {
   onSignInWithEmailAndPassword: (
     email: string,
     password: string
-  ) => Promise<void>;
+  ) => Promise<boolean>;
   // onSignInWithGoogle: () => void;
-  onSignOut: () => Promise<void>;
+  onSignOut: () => Promise<boolean>;
   // onSubmitSignUpUserData: (signUpData: any) => void;
-  onSignUpWithEmailAndPassword: (data: any) => Promise<void>;
-  onActivateResetPassword: (email: string) => Promise<void>;
-  onOnboardUser: (data: any) => Promise<void>;
+  onSignUpWithEmailAndPassword: (data: any) => Promise<boolean>;
+  onActivateResetPassword: (email: string) => Promise<boolean>;
+  onOnboardUser: (data: any) => Promise<boolean>;
 
   // UPDATES
   onUpdateProfileImage: (imageUrl: string) => void;
@@ -55,7 +55,7 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
   const onSignInWithEmailAndPassword = async (
     email: string,
     password: string
-  ): Promise<void> => {
+  ): Promise<boolean> => {
     let formData = new FormData();
     formData.append("data[users][user_name]", email);
     formData.append("data[users][user_password]", password);
@@ -80,16 +80,21 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
         await onFetchUserData(json.user_id)
         // fetch client model data
         await onFetchClientData(json.user_id);
+
+        return true; // success = true
       } else {
         console.error("ERROR LOGGIN IN");
         setUser(undefined);
+
+        return false; // success = false
       }
     } catch (e) {
       console.error(e);
+      return false; // success = false
     }
   };
 
-  const onFetchUserData = async (userId: string) : Promise<void> => {
+  const onFetchUserData = async (userId: string) : Promise<boolean> => {
     try {
       const authToken = await AsyncStorage.getItem(ACCESS_TOKEN);
 
@@ -111,12 +116,17 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
           email: json.data.users.email_addresses[0].email,
           phone: json.data.users.phone_numbers[0].number
         });
+
+        return true;
       } else {
         console.error("ERROR FETCHING USER DATA");
         setUser(undefined);
+
+        return false;
       }
     } catch (e) {
       console.error(e);
+      return false;
     }
   }
 
@@ -124,7 +134,7 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
 
   const onSignInWithGoogle = async (): Promise<void> => {};
 
-  const onSignUpWithEmailAndPassword = async (data: any): Promise<void> => {
+  const onSignUpWithEmailAndPassword = async (data: any): Promise<boolean> => {
     let formData = new FormData();
     formData.append("data[users][email_addresses][0][email]", data.email);
     formData.append("data[users][user_name]", data.email);
@@ -173,13 +183,15 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
     if (json.errors.length === 0) {
       console.log("SUCCESSFULLY SIGNED UP");
       await onSignInWithEmailAndPassword(data.email, data.password);
+      return true;
     } else {
       console.error("ERROR SIGNING UP");
+      return false;
     }
   };
 
   // fetch client model data
-  const onFetchClientData = async (uid: number): Promise<void> => {
+  const onFetchClientData = async (uid: number): Promise<boolean> => {
     const query = {
       fields: [
         "clients.birthday",
@@ -237,11 +249,15 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
           lastName: client["clients.last_name"],
           jobTitle: client["clients.job_title"],
         });
+
+        return true;
       } else {
         console.error("ERROR FETCHING USER DATA");
+        return false;
       }
     } catch (e) {
       console.error(e);
+      return false;
     }
   };
 
@@ -251,7 +267,7 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
 
   console.log(user)
 
-  const onOnboardUser = async (data: any): Promise<void> => {
+  const onOnboardUser = async (data: any): Promise<boolean> => {
     let formData = new FormData();
     formData.append("data[clients][birthday]", data.birthday);
     formData.append("data[clients][country_code]", data.countryCode);
@@ -279,15 +295,18 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
       if (json.errors.length === 0) {
         console.log("SUCCESSFULLY ONBOARDED USER");
         await onFetchClientData(user.uid as unknown as number)
+        return true;
       } else {
         console.error("ERROR ONBOARDING USER");
+        return false;
       }
     } catch (e) {
+      return false;
       console.error(e);
     }
   };
 
-  const onActivateResetPassword = async (email: string): Promise<void> => {
+  const onActivateResetPassword = async (email: string): Promise<boolean> => {
     let formData = new FormData();
     formData.append("data[users][user_name]", email);
     formData.append("data[users][callback_url]", "NOT_RELEVANT");
@@ -307,20 +326,25 @@ const FiygeAuthContextProvider: React.FC = ({ children }) => {
       if (json.errors.length === 0) {
         console.log("SUCCESSFULLY ACTIVATED PASSWORD RESET");
         alert("Email sent. Check your email for password reset instructions!");
+        return true;
       } else {
         console.error("ERROR ACTIVATING PASSWORD RESET");
+        return false;
       }
     } catch (e) {
       console.error(e);
+      return false;
     }
   };
 
-  const onSignOut = async (): Promise<void> => {
+  const onSignOut = async (): Promise<boolean> => {
     setUser(undefined);
     setUserData(undefined);
     await AsyncStorage.removeItem(REFRESH_TOKEN);
     await AsyncStorage.removeItem(ACCESS_TOKEN);
     await AsyncStorage.removeItem(USER_UID);
+
+    return true;
   };
 
   return (

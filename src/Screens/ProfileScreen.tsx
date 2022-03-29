@@ -28,8 +28,10 @@ const ProfileScreen = ({ navigation }) => {
   const toggleSwitch2 = () => setIsEnabled2((previousState) => !previousState);
 
   const handleSignOut = async () => {
-    await onSignOut()
-    navigation.navigate("Login");
+    const success = await onSignOut()
+    if (success) {
+      navigation.navigate("Login");
+    }
   };
   const [uriFB, seturiFB] = useState("https://www.jbrhomes.com/wp-content/uploads/blank-avatar.png");
 
