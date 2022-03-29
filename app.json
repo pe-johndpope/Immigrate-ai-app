@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "expo-finalapp",
+    "name": "Immigrate AI",
     "slug": "immigrate-app",
     "version": "3.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
 //    "owner": "sohom1357",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,19 +19,19 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "buildNumber": "2.0.0"
+      "buildNumber": "3.0.0"
     },
     "android": {
       "permissions": ["CAMERA", "CAMERA_ROLL"],
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/logo.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "ai.immigrate",
-      "versionCode": 2
+      "versionCode": 3
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logo.png"
     },
       "androidStatusBar": {
         "hidden": true
