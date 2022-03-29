@@ -52,13 +52,17 @@ const Onboarding = ({ navigation }) => {
       return;
     }
 
-    await onOnboardUser({
+    const success = await onOnboardUser({
       birthday: date,
       firstName: first,
       lastName: last,
       countryCode: countryName,
       jobTitle: job 
     })
+
+    if (!success) {
+      alert("Error: unable to submit form. Please doudle-check the inputs.");
+    }
   };
 
   return (
